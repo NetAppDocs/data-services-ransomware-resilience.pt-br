@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: rp-start-login.html 
+keywords: bluexp login, ransomware protection, cyber attack, log in, access 
+summary: Comece a usar o NetApp Ransomware Resilience por meio do NetApp Console. 
+---
+= Acesse a resiliência do NetApp Ransomware
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Efetue login no NetApp Ransomware Resilience por meio do NetApp Console.
+
+Para fazer login no Console, você pode usar suas credenciais do Site de Suporte da NetApp ou pode se inscrever para um login na nuvem da NetApp usando seu e-mail e uma senha. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["Saiba mais sobre como fazer login"^] .
+
+*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto, administrador do Ransomware Resilience ou visualizador do Ransomware Resilience. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do BlueXP para todos os serviços"^] .
+
+.Passos
+. Abra um navegador da web e vá paralink:https://console.netapp.com/["o Console"^] .
++
+A página de login do Console é exibida.
+
+. Efetue login no Console.
+. Na navegação à esquerda do Console, selecione *Proteção* > *Resiliência a Ransomware*.
++
+Se esta for a primeira vez que você faz login neste serviço, a página de destino será exibida.
+
++
+
+NOTE: Se você não tiver um agente de console ou se ele não for o adequado para esse serviço, será necessário implantar um. link:rp-start-setup.html["Aprenda a configurar um agente de console"] .
+
++
+image:screen-landing.png["Captura de tela da página inicial do Ransomware Resilience."]
+
++
+Caso contrário, o painel de resiliência do Ransomware será exibido.
+
++
+image:screen-dashboard.png["Captura de tela do painel de resiliência do Ransomware"]
+
+. Se você ainda não fez isso, selecione a opção *Descobrir cargas de trabalho*.
++
+Consulte link:rp-start-discover.html["Descubra cargas de trabalho"] .
+
+

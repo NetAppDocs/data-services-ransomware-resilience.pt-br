@@ -1,0 +1,31 @@
+= Atualizações da página de destino
+:allow-uri-read: 
+
+
+
+
+=== Atualizações da página de destino
+
+Esta versão inclui atualizações na página inicial da BlueXP ransomware protection, o que facilita o início do teste gratuito e a descoberta.
+
+
+
+=== Atualizações de exercícios de prontidão
+
+Anteriormente, você podia executar um exercício de prontidão para ransomware simulando um ataque em uma nova carga de trabalho de amostra.  Com esse recurso, você pode investigar o ataque simulado e recuperar a carga de trabalho.  Use este recurso para testar notificações de alerta, resposta e recuperação.  Execute e programe esses exercícios sempre que necessário.
+
+Com esta versão, você pode usar um novo botão no Painel de BlueXP ransomware protection para executar um exercício de prontidão para ransomware em uma carga de trabalho de teste, facilitando a simulação de ataques de ransomware, a investigação de seu impacto e a recuperação eficiente de cargas de trabalho, tudo em um ambiente controlado.
+
+Agora você pode executar exercícios de prontidão em cargas de trabalho CIFS (SMB), além de cargas de trabalho NFS.
+
+Para mais detalhes, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["Realizar um exercício de preparação para ataques de ransomware"] .
+
+
+
+=== Habilitar atualizações de BlueXP classification
+
+Antes de usar a BlueXP classification no serviço de BlueXP ransomware protection , você precisa habilitar a BlueXP classification para verificar seus dados.  Classificar dados ajuda você a encontrar informações de identificação pessoal (PII), o que pode aumentar os riscos de segurança.
+
+Você pode implantar a BlueXP classification em uma carga de trabalho de compartilhamento de arquivos a partir da BlueXP ransomware protection.  Na coluna *Exposição de privacidade*, selecione a opção *Identificar exposição*.  Se você ativou o serviço de classificação, esta ação identifica a exposição.  Caso contrário, com esta versão, uma caixa de diálogo apresenta a opção de implantar a BlueXP classification.  Selecione *Implantar* para ir para a página inicial do serviço de BlueXP classification , onde você pode implantar esse serviço.  C
+
+Para mais detalhes, consulte https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html["Implantar a BlueXP classification na nuvem"^] e para usar o serviço dentro da BlueXP ransomware protection, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html["Escaneie informações de identificação pessoal com a BlueXP classification"] .

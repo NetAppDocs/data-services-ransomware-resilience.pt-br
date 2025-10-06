@@ -1,0 +1,181 @@
+---
+sidebar: sidebar 
+permalink: rp-use-dashboard.html 
+keywords: ransomware protection, ransomware protection dashboard, detect ransomware attacks, recover from ransomware attack 
+summary: O NetApp Ransomware Resilience Dashboard fornece informações sobre a integridade da proteção de suas cargas de trabalho.  Você pode determinar rapidamente as cargas de trabalho que estão em risco ou protegidas, as cargas de trabalho impactadas por um incidente ou em recuperação e avaliar a extensão da proteção observando quanto armazenamento está protegido ou em risco.  Você também pode usar o Painel para revisar e agir de acordo com as recomendações de proteção. 
+---
+= Monitore a integridade da carga de trabalho usando o Painel de Resiliência do NetAPp Ransomware
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+O NetApp Ransomware Resilience Dashboard fornece informações rápidas sobre a integridade da proteção de suas cargas de trabalho.  Você pode determinar rapidamente as cargas de trabalho que estão em risco ou protegidas, identificar as cargas de trabalho impactadas por um incidente ou em recuperação e avaliar a extensão da proteção observando quanto armazenamento está protegido ou em risco.
+
+Use o Painel para revisar sugestões de proteção, alterar configurações, baixar relatórios e visualizar documentação.
+
+*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto, administrador do Ransomware Resilience ou visualizador do Ransomware Resilience. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do BlueXP para todos os serviços"^] .
+
+
+
+== Revise a integridade da carga de trabalho usando o Painel
+
+.Passos
+. Depois que o Console descobre suas cargas de trabalho, o painel de resiliência contra ransomware exibe a integridade da proteção de dados da carga de trabalho.
++
+image:screen-dashboard.png["Página do painel"]
+
+. No Painel, você pode realizar as seguintes ações em cada um dos painéis:
++
+** *Proteção de dados da carga de trabalho*: selecione *Exibir tudo* para ver todas as cargas de trabalho que estão em risco ou protegidas na página Proteção.  As cargas de trabalho correm risco quando os níveis de proteção não correspondem a uma política de proteção. Consulte link:rp-use-protect.html["Proteja as cargas de trabalho"] .
++
+
+TIP: Selecione a dica de ferramenta "i" para ver dicas sobre esses dados.  Para aumentar o limite de carga de trabalho, selecione *Aumentar limite de carga de trabalho* dentro desta nota.  Selecionar isso leva você para a página de Suporte do Console, onde você pode criar um tíquete de caso.
+
+** *Alertas e recuperação de dados de carga de trabalho*: selecione *Exibir tudo* para ver incidentes ativos que impactaram sua carga de trabalho, estão prontos para recuperação após os incidentes serem neutralizados ou estão em recuperação. Consulte link:rp-use-alert.html["Responder a um alerta detectado"] .
++
+*** Um incidente é categorizado em um dos seguintes estados:
++
+**** Novo
+**** Demitido
+**** Dispensando
+**** Resolvido
+
+
+*** Um alerta pode ter um dos seguintes status:
++
+**** Novo
+**** Inativo
+
+
+*** Uma carga de trabalho pode ter um dos seguintes status de restauração:
++
+**** Restauração necessária
+**** Em andamento
+**** Restaurado
+**** Fracassado
+
+
+
+
+** *Ações recomendadas*: Para aumentar a proteção, revise cada recomendação e selecione *Revisar e corrigir*.
++
+Ver link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard["Revise as sugestões de proteção no Painel"] ou link:rp-use-protect.html["Proteja as cargas de trabalho"] .
+
++
+O Ransomware Resilience exibe novas recomendações desde sua última visita ao Painel com a tag "Novo" por 24 horas.  As ações aparecem em ordem de prioridade, com as mais importantes no topo.  Revise, aja ou descarte cada recomendação.
+
++
+O número total de ações não inclui ações que você descartou.
+
+** *Dados de carga de trabalho*: Monitore as alterações na cobertura de proteção nos últimos 7 dias.
+** *Backups de carga de trabalho*: monitore alterações em backups de carga de trabalho criados pelo Ransomware Resilience que falharam ou foram concluídos com sucesso nos últimos 7 dias.
+
+
+
+
+
+
+== Revise as recomendações de proteção no Painel
+
+O Ransomware Resilience avalia a proteção em suas cargas de trabalho e recomenda ações para melhorar essa proteção.
+
+Você pode revisar uma recomendação e agir de acordo com ela, o que altera o status da recomendação para Concluído.  Ou, se quiser agir mais tarde, você pode descartá-lo.  Descartar uma ação move a recomendação para uma lista de ações descartadas, que você pode revisar mais tarde.
+
+Aqui está uma amostra das recomendações que o Ransomware Resilience oferece.
+
+[cols="30,30,30"]
+|===
+| Recomendação | Descrição | Como resolver 
+
+
+| Adicione uma política de proteção contra ransomware. | A carga de trabalho não está protegida no momento. | Atribua uma política à carga de trabalho. Consulte link:rp-use-protect.html["Proteja cargas de trabalho contra ataques de ransomware"] . 
+
+
+| Conecte-se ao SIEM para relatórios de ameaças. | Envie dados para um sistema de gerenciamento de segurança e eventos (SIEM) para análise e detecção de ameaças. | Insira os detalhes do servidor SIEM/XDR para habilitar a detecção de ameaças. Consulte link:rp-use-settings.html["Configurar definições de proteção"] . 
+
+
+| Habilite proteção consistente com a carga de trabalho para aplicativos ou VMware. | Essas cargas de trabalho não são gerenciadas pelo SnapCenter Software ou pelo SnapCenter Plug-in for VMware vSphere. | Para que eles sejam gerenciados pelo SnapCenter, ative a proteção consistente com a carga de trabalho. Consulte link:rp-use-protect.html["Proteja a carga de trabalho contra ataques de ransomware"] . 
+
+
+| Melhore a postura de segurança do sistema | O NetApp Digital Advisor identificou pelo menos um risco de segurança alto ou crítico. | Revise todos os riscos de segurança no NetApp Digital Advisor. Consulte https://docs.netapp.com/us-en/active-iq/index.html["Documentação do Digital Advisor"^] . 
+
+
+| Fortaleça uma política. | Algumas cargas de trabalho podem não ter proteção suficiente.  Fortaleça a proteção das cargas de trabalho com uma política. | Aumente a retenção, adicione backups, imponha backups imutáveis, bloqueie extensões de arquivo suspeitas, habilite a detecção em armazenamento secundário e muito mais. Consulte link:rp-use-protect.html["Proteja cargas de trabalho contra ataques de ransomware"] . 
+
+
+| Prepare <provedor de backup> como um destino de backup para fazer backup dos dados da sua carga de trabalho. | A carga de trabalho não tem nenhum destino de backup no momento. | Adicione destinos de backup a esta carga de trabalho para protegê-la. Consulte link:rp-use-settings.html["Configurar definições de proteção"] . 
+
+
+| Proteja cargas de trabalho de aplicativos críticos ou altamente importantes contra ransomware. | A página Proteger exibe cargas de trabalho de aplicativos críticas ou altamente importantes (com base no nível de prioridade atribuído) que não estão protegidas. | Atribua uma política a essas cargas de trabalho. Consulte link:rp-use-protect.html["Proteja cargas de trabalho contra ataques de ransomware"] . 
+
+
+| Proteja cargas de trabalho de compartilhamento de arquivos críticos ou altamente importantes contra ransomware. | A página Proteção exibe cargas de trabalho críticas ou altamente importantes do tipo Compartilhamento de Arquivos ou Armazenamento de Dados que não estão protegidas. | Atribua uma política a cada uma das cargas de trabalho. Consulte link:rp-use-protect.html["Proteja cargas de trabalho contra ataques de ransomware"] . 
+
+
+| Registre o plugin SnapCenter disponível para VMware vSphere (SCV) com o Console | Uma carga de trabalho de VM não é protegida. | Atribua proteção consistente de VM à carga de trabalho da VM habilitando o plug-in SnapCenter para VMware vSphere. Consulte link:rp-use-protect.html["Proteja cargas de trabalho contra ataques de ransomware"] . 
+
+
+| Registre o SnapCenter Server disponível com o Console | Um aplicativo não está protegido. | Atribua proteção consistente com o aplicativo à carga de trabalho habilitando o SnapCenter Server. Consulte link:rp-use-protect.html["Proteja cargas de trabalho contra ataques de ransomware"] . 
+
+
+| Revise novos alertas. | Existem novos alertas. | Revise os novos alertas. Consulte link:rp-use-alert.html["Responder a um alerta de ransomware detectado"] . 
+|===
+.Passos
+. No painel Ações recomendadas em Resiliência contra Ransomware, selecione uma recomendação e depois *Revisar e corrigir*.
+. Para descartar a ação até mais tarde, selecione *Descartar*.
++
+A recomendação sai da lista de Tarefas e aparece na lista de Descartados.
+
++
+
+TIP: Mais tarde, você pode transformar um item descartado em um item de Tarefa.  Quando você marca um item como concluído ou transforma um item descartado em uma ação A Fazer, o Total de ações aumenta em 1.
+
+. Para revisar informações sobre como agir de acordo com as recomendações, selecione o ícone *informações*.
+
+
+
+
+== Exportar dados de proteção para arquivos CSV
+
+Você pode exportar dados e baixar arquivos CSV que mostram detalhes de proteção, alertas e recuperação.
+
+Você pode baixar arquivos CSV de qualquer uma das opções do menu principal:
+
+* *Proteção*: Contém o status e os detalhes de todas as cargas de trabalho, incluindo o número total de cargas de trabalho que o Ransomware Resilience marca como protegidas ou em risco.
+* *Alertas*: Inclui o status e os detalhes de todos os alertas, incluindo o número total de alertas e instantâneos automatizados.
+* *Recuperação*: Inclui o status e os detalhes de todas as cargas de trabalho que precisam ser restauradas, incluindo o número total de cargas de trabalho que o Ransomware Resilience marca como "Restauração necessária", "Em andamento", "Falha na restauração" e "Restaurada com sucesso".
+
+
+Baixar um arquivo CSV de uma página inclui apenas os dados dessa página.
+
+Os arquivos CSV incluem dados para todas as cargas de trabalho em todos os sistemas do Console.
+
+.Passos
+. No painel de Resiliência do Ransomware, selecione *Atualizar*image:button-refresh.png["Opção de atualização"] opção no canto superior direito para atualizar os dados que aparecerão nos arquivos.
+. Faça um dos seguintes:
++
+** Na página, selecione *Download*image:button-download.png["Opção de download"] opção.
+** No menu Resiliência contra Ransomware, selecione *Relatórios*.
+
+
+. Se você selecionou a opção *Relatórios*, selecione um dos arquivos nomeados pré-configurados e selecione *Baixar (CSV)* ou *Baixar (JSON)*.
+
+
+
+
+== Acessar documentação técnica
+
+Você pode acessar a documentação técnica do Ransomware Resilience emlink:https://docs.netapp.com["docs.netapp.com"^] ou de dentro do Ransomware Resilience.
+
+.Passos
+. No painel de Resiliência do Ransomware, selecione a vertical *Ações*image:button-actions-vertical.png["Opção Ações Verticais"] opção.
+. Selecione uma destas opções:
++
+** *Novidades* para ver informações sobre os recursos das versões atuais ou anteriores nas Notas de Versão.
+** *Documentação* para visualizar a página inicial da documentação do Ransomware Resilience e esta documentação.
+
+
+

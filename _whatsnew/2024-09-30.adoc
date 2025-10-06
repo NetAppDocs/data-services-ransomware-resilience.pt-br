@@ -1,0 +1,11 @@
+= Agrupamento personalizado de cargas de trabalho de compartilhamento de arquivos
+:allow-uri-read: 
+
+
+
+
+=== Agrupamento personalizado de cargas de trabalho de compartilhamento de arquivos
+
+Com esta versão, agora você pode agrupar compartilhamentos de arquivos para facilitar a proteção do seu patrimônio de dados.  O serviço pode proteger todos os volumes de um grupo ao mesmo tempo.  Anteriormente, você precisava proteger cada volume separadamente.
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Saiba mais sobre o agrupamento de cargas de trabalho de compartilhamento de arquivos em estratégias de proteção contra ransomware"] .

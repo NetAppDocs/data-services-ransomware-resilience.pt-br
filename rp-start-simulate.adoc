@@ -1,0 +1,215 @@
+---
+sidebar: sidebar 
+permalink: rp-start-simulate.html 
+keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert, simulate, readiness drill, practice, ransomware attack, ransomware attack response, ransomware attack readiness drill 
+summary: Realize um exercício de preparação para ransomware simulando um ataque de ransomware em uma carga de trabalho de amostra recém-criada.  Em seguida, investigue o ataque simulado e recupere a carga de trabalho de amostra.  Você pode executar um exercício de prontidão para ransomware várias vezes. 
+---
+= Realizar um exercício de preparação para ataques de ransomware no NetApp Ransomware Resilience
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Execute um exercício de preparação para ataque de ransomware simulando um ataque em uma nova carga de trabalho de amostra.  Investigue o ataque simulado e recupere a carga de trabalho.  Use este recurso para testar notificações de alerta, resposta e recuperação.  Execute a broca sempre que necessário.
+
+
+TIP: Seus dados reais de carga de trabalho não são afetados.
+
+Você pode executar exercícios de prontidão em cargas de trabalho NFS e CIFS (SMB).
+
+
+
+== Configurar um exercício de preparação para ataque de ransomware
+
+Antes de executar uma simulação, configure um exercício na página Configurações.  Acesse a página Configurações na opção Ações no menu superior.
+
+Você precisa inserir um nome de usuário e uma senha para as seguintes situações:
+
+* Se ocorrerem alterações no nome de usuário ou na senha da VM de armazenamento selecionada anteriormente
+* Se você selecionar uma VM de armazenamento CIFS (SMB) diferente
+* Se você inserir um nome de carga de trabalho de teste diferente
+
+
+*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console para todos os serviços"^] .
+
+.Passos
+. No menu NetApp Ransomware Resilience, selecione o botão *Executar teste de prontidão* no canto superior direito.
++
+image:screen-dashboard.png["Página do painel mostrando o botão Executar exercício de prontidão"]
+
+. No cartão de exercício de prontidão na página Configurações, selecione *Configurar*.
++
+O Console exibe a página Configurar exercício de prontidão.
+
++
+image:screen-settings-alert-drill-configure.png["Configurar página de treinamento de prontidão"]
+
+. Faça o seguinte:
++
+.. Selecione o agente do Console que você deseja usar para o exercício de prontidão.
+.. Selecione um sistema de teste.
+.. Selecione um SVM de armazenamento de teste.
+.. Se você selecionou uma VM de armazenamento CIFS (SMB), os campos **Nome de usuário** e **Senha** serão exibidos.  Digite o nome de usuário e a senha para a VM de armazenamento.
+.. Insira o nome de uma nova carga de trabalho de teste a ser criada.  Não inclua hífens no nome.
+
+
+. Selecione *Salvar*.
+
+
+
+TIP: Você pode editar a configuração do exercício de prontidão mais tarde usando a página Configurações.
+
+
+
+== Iniciar um exercício de prontidão
+
+Depois de configurar o exercício de prontidão, você pode iniciá-lo.
+
+*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console para todos os serviços"^] .
+
+Quando você inicia o exercício de prontidão, o Ransomware Resilience ignora o modo de aprendizado e inicia o exercício no modo ativo.  O status de detecção da carga de trabalho é Ativo.
+
+
+TIP: Uma carga de trabalho pode ter um status de detecção de ransomware *Modo de aprendizagem* quando uma política de detecção é atribuída recentemente e o Ransomware Resilience verifica as cargas de trabalho.
+
+.Passos
+. Faça um dos seguintes:
++
+** No menu Resiliência contra Ransomware, selecione o botão *Executar teste de prontidão* no canto superior direito.
++
+image:screen-dashboard.png["Página do painel mostrando o botão Executar exercício de prontidão"]
+
+** OU, na página Configurações, no cartão de exercício de prontidão, selecione *Iniciar*.
+
+
+. Se você já configurou o exercício de prontidão, após selecionar *Iniciar*, o exercício de prontidão será iniciado.
+
+
+
+NOTE: Após o início do exercício, não é possível editar a configuração do exercício de prontidão.  Você pode reiniciá-lo para começar de novo.
+
+
+
+== Responder a um alerta de exercício de prontidão
+
+Teste sua prontidão respondendo a um alerta de treinamento de prontidão.
+
+*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console para todos os serviços"^] .
+
+.Passos
+. No menu Resiliência contra Ransomware, selecione *Alertas*.
++
+O Console exibe a página Alertas.  Na coluna ID do alerta, você vê "Exercício de prontidão" ao lado do ID.
+
++
+image:screen-alerts-readiness.png["Página de alertas mostrando o alerta de exercício de prontidão"]
+
+. Selecione o alerta com a indicação "Exercício de prontidão".  Uma lista de alertas de incidentes aparece na página de detalhes Alertas.
++
+image:screen-alerts-readiness-details.png["Página de detalhes de alertas mostrando o alerta de exercício de prontidão"]
+
+. Revise os incidentes de alerta.
+. Selecione um incidente de alerta.
++
+image:screen-alerts-readiness-incidents2.png["Página de incidente mostrando o alerta de treinamento de prontidão"]
+
+
+
+Aqui estão algumas coisas que você deve procurar:
+
+* Observe o tipo de ataque potencial.
++
+Se o Tipo indicar que um usuário é suspeito de atividade maliciosa, revise o nome do usuário.  Talvez você queira investigar mais o usuário em Segurança de carga de trabalho do Data Infrastructure Insights selecionando *Investigar em segurança de carga de trabalho*.
+
+
+
+* Observe a atividade do arquivo e os processos suspeitos:
++
+** Observe os dados detectados recebidos em comparação com os dados esperados.
+** Observe a taxa de criação de arquivos detectada em comparação com a taxa esperada.
+** Observe a taxa de renomeação de arquivos detectada em comparação com a taxa esperada.
+** Observe a taxa de exclusão em comparação com a taxa esperada.
+
+
+* Veja a lista de arquivos afetados.  Veja as extensões que podem estar causando o ataque.
+* Determine o impacto e a amplitude do ataque analisando o número de arquivos e diretórios afetados.
+
+
+
+
+== Restaurar a carga de trabalho de teste
+
+Após revisar o alerta do exercício de prontidão, restaure a carga de trabalho do teste, se necessário.
+
+*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console para todos os serviços"^] .
+
+.Passos
+. Retorne à página de detalhes do alerta.
+. Se a carga de trabalho de teste precisar ser restaurada, faça o seguinte:
++
+** Selecione *Marcar restauração necessária*.
+** Revise a confirmação e selecione *Marcar restauração necessária* na caixa de confirmação.
++
+*** No menu Resiliência contra Ransomware, selecione *Recuperação*.
+*** Selecione a carga de trabalho de teste marcada com "Exercício de prontidão" que você deseja restaurar.
+*** Selecione *Restaurar*.
+*** Na página Restaurar, forneça informações para a restauração:
+
+
+** Selecione a cópia do instantâneo de origem.
+** Selecione o volume de destino.
+
+
+. Na página de revisão de restauração, selecione *Restaurar*.
++
+O Console exibe o status da restauração do exercício de prontidão como "Em andamento" na página Recuperação.
+
++
+Após a conclusão da restauração, o Console altera o status da carga de trabalho para *Restaurada*.
+
+. Revise a carga de trabalho restaurada.
+
+
+
+TIP: Para obter detalhes sobre o processo de restauração, consultelink:rp-use-recover.html["Recuperar-se de um ataque de ransomware (após os incidentes serem neutralizados)"] .
+
+
+
+== Alterar o status dos alertas após o exercício de prontidão
+
+Após revisar o alerta do exercício de prontidão e restaurar a carga de trabalho, altere o status do alerta, se necessário.
+
+*Função necessária no Console* Administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console para todos os serviços"^] .
+
+.Passos
+. Retorne à página de detalhes do alerta.
+. Selecione o alerta novamente.
+. Indique o status selecionando *Editar status* e altere o status para um dos seguintes:
++
+** Descartado: se você suspeitar que a atividade não é um ataque de ransomware, altere o status para Descartado.
++
+
+IMPORTANT: Depois de rejeitar um ataque, você não pode alterá-lo de volta.  Se você descartar uma carga de trabalho, todas as cópias de snapshot feitas automaticamente em resposta ao possível ataque de ransomware serão excluídas permanentemente.  Se você ignorar o alerta, o exercício de prontidão será considerado concluído.
+
+** Resolvido: O incidente foi atenuado.
+
+
+
+
+
+
+== Relatórios de revisão sobre o exercício de prontidão
+
+Após a conclusão do exercício de prontidão, talvez você queira revisar e salvar um relatório sobre o exercício.
+
+*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto, administrador do Ransomware Resilience ou visualizador do Ransomware Resilience. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do BlueXP para todos os serviços"^] .
+
+.Passos
+. No menu Resiliência contra Ransomware, selecione *Relatórios*.
++
+image:screen-reports.png["Página de relatórios mostrando o relatório do exercício de prontidão"]
+
+. Selecione *Exercícios de prontidão* e *Baixar* para baixar o relatório do exercício de prontidão.
+

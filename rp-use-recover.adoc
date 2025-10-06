@@ -1,0 +1,342 @@
+---
+sidebar: sidebar 
+permalink: rp-use-recover.html 
+keywords: ransomware protection recovery, recover from a ransomware attack, recovery point, RPA 
+summary: 'Após um ataque, o NetApp Ransomware Resilience verifica se os dados de backup no armazenamento secundário estão limpos, recomenda um ponto de recuperação real (RPA) e orquestra o fluxo de trabalho para uma recuperação resistente a falhas.' 
+---
+= Recupere-se de um ataque de ransomware (após a neutralização dos incidentes) com a resiliência do NetApp Ransomware
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Depois que as cargas de trabalho são marcadas como "Restauração necessária", o NetApp Ransomware Resilience recomenda um ponto de recuperação real (RPA) e orquestra o fluxo de trabalho para uma recuperação resistente a falhas.
+
+* Se o aplicativo ou a VM for gerenciado pelo SnapCenter, o Ransomware Resilience restaurará o aplicativo ou a VM ao seu estado anterior e à última transação usando o processo consistente com o aplicativo ou com a VM.  A restauração consistente com o aplicativo ou com a VM adiciona quaisquer dados que não foram armazenados, por exemplo, dados no cache ou em uma operação de E/S, aos dados no volume.
+* Se o aplicativo ou a VM _não_ for gerenciado pelo SnapCenter e for gerenciado pelo NetApp Backup and Recovery ou pelo Ransomware Resilience, o Ransomware Resilience executará uma restauração consistente em caso de falha, em que todos os dados que estavam no volume no mesmo ponto no tempo serão restaurados, por exemplo, se o sistema travar.
++
+Você pode restaurar a carga de trabalho selecionando todos os volumes, volumes específicos ou arquivos específicos.
+
+
+
+
+TIP: A recuperação da carga de trabalho pode afetar as cargas de trabalho em execução.  Você deve coordenar os processos de recuperação com as partes interessadas apropriadas.
+
+Uma carga de trabalho pode ter um dos seguintes status de restauração:
+
+* *Restauração necessária*: A carga de trabalho precisa ser restaurada.
+* *Em andamento*: A operação de restauração está em andamento.
+* *Restaurado*: A carga de trabalho foi restaurada.
+* *Falha*: O processo de restauração da carga de trabalho não pôde ser concluído.
+
+
+
+
+== Exibir cargas de trabalho que estão prontas para serem restauradas
+
+Revise as cargas de trabalho que estão no status de recuperação "Restauração necessária".
+
+.Passos
+. Faça um dos seguintes:
++
+** No Painel, revise os totais de "Restauração necessária" no painel Alertas e selecione *Exibir tudo*.
+** No menu, selecione *Recuperação*.
+
+
+. Revise as informações da carga de trabalho na página *Recuperação*.
++
+image:screen-recovery2.png["Página de recuperação"]
+
+
+
+
+
+== Restaurar uma carga de trabalho gerenciada pelo SnapCenter
+
+Usando o Ransomware Resilience, o administrador de armazenamento pode determinar a melhor forma de restaurar cargas de trabalho a partir do ponto de restauração recomendado ou do ponto de restauração preferencial.
+
+O estado do aplicativo será alterado se necessário para a restauração.  O aplicativo será restaurado ao seu estado anterior a partir dos arquivos de controle, se eles estiverem incluídos no backup.  Após a conclusão da restauração, o aplicativo é aberto no modo LEITURA-GRAVAÇÃO.
+
+*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console para todos os serviços"^] .
+
+.Passos
+. Em Ransomware Resilience, selecione *Recuperação*.
+. Revise as informações da carga de trabalho na página *Recuperação*.
+. Selecione uma carga de trabalho que esteja no estado "Restauração necessária".
+. Para restaurar, selecione *Restaurar*.
+. *Escopo de restauração*: consistente com o aplicativo (ou para SnapCenter para VMs, o escopo de restauração é "Por VM")
+. *Fonte*: Selecione a seta para baixo ao lado de Fonte para ver detalhes.  Selecione o ponto de restauração que você deseja usar para restaurar os dados.
++
+
+TIP: O Ransomware Resilience identifica o melhor ponto de restauração como o backup mais recente imediatamente anterior ao incidente e mostra uma indicação “Recomendado”.
+
+. *Destino*: Selecione a seta para baixo ao lado de Destino para ver detalhes.
++
+.. Selecione o local original ou alternativo.
+.. Selecione o sistema.
+.. Selecione a VM de armazenamento.
+
+
+. Se o destino original não tiver espaço suficiente para restaurar a carga de trabalho, uma linha "Armazenamento temporário" será exibida.  Você pode selecionar o armazenamento temporário para restaurar os dados da carga de trabalho.  Os dados restaurados serão copiados do armazenamento temporário para o local original.  Clique na *Seta para baixo* na linha Armazenamento temporário e defina o cluster de destino, a VM de armazenamento e a camada local.
+. Selecione *Salvar*.
+. Selecione *Avançar*.
+. Revise suas seleções.
+. Selecione *Restaurar*.
+. No menu superior, selecione *Recuperação* para revisar a carga de trabalho na página Recuperação, onde o status da operação passa pelos estados.
+
+
+
+
+== Restaurar uma carga de trabalho não gerenciada pelo SnapCenter
+
+Usando o Ransomware Resilience, o administrador de armazenamento pode determinar a melhor forma de restaurar cargas de trabalho a partir do ponto de restauração recomendado ou do ponto de restauração preferencial.
+
+*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console para todos os serviços"^] .
+
+O administrador de armazenamento de segurança pode recuperar dados em diferentes níveis:
+
+* Recuperação de todos os volumes
+* Recuperar um aplicativo no nível de volume ou de arquivo e pasta.
+* Recupere um compartilhamento de arquivos no nível de volume, diretório ou arquivo/pasta.
+* Recuperar de um armazenamento de dados no nível de VM.
+
+
+O processo difere dependendo do tipo de carga de trabalho.
+
+.Passos
+. No menu Resiliência contra Ransomware, selecione *Recuperação*.
+. Revise as informações da carga de trabalho na página *Recuperação*.
+. Selecione uma carga de trabalho que esteja no estado "Restauração necessária".
+. Para restaurar, selecione *Restaurar*.
+. *Escopo de restauração*: Selecione o tipo de restauração que deseja concluir:
++
+** Todos os volumes
+** Por volume
+** Por arquivo: você pode especificar uma pasta ou arquivos individuais para restaurar.
++
+
+IMPORTANT: Para cargas de trabalho SAN, você só pode restaurar por carga de trabalho.
+
++
+
+TIP: Você pode selecionar até 100 arquivos ou uma única pasta.
+
+
+
+. Continue com um dos procedimentos a seguir, dependendo se você escolheu aplicativo, volume ou arquivo.
+
+
+
+
+=== Restaurar todos os volumes
+
+. No menu Resiliência contra Ransomware, selecione *Recuperação*.
+. Selecione uma carga de trabalho que esteja no estado "Restauração necessária".
+. Para restaurar, selecione *Restaurar*.
+. Na página Restaurar, no escopo Restaurar, selecione *Todos os volumes*.
++
+image:screen-recovery-all-volumes.png["Restaurar página de todos os volumes"]
+
+. *Fonte*: Selecione a seta para baixo ao lado de Fonte para ver detalhes.
++
+.. Selecione o ponto de restauração que você deseja usar para restaurar os dados.
++
+
+TIP: O Ransomware Resilience identifica o melhor ponto de restauração como o backup mais recente imediatamente anterior ao incidente e mostra uma indicação "Mais seguro para todos os volumes".  Isso significa que todos os volumes serão restaurados para uma cópia anterior ao primeiro ataque ao primeiro volume detectado.
+
+
+
+. *Destino*: Selecione a seta para baixo ao lado de Destino para ver detalhes.
++
+.. Selecione o sistema.
+.. Selecione a VM de armazenamento.
+.. Selecione o agregado.
+.. Altere o prefixo de volume que será adicionado a todos os novos volumes.
++
+
+TIP: O novo nome do volume aparece como prefixo + nome do volume original + nome do backup + data do backup.
+
+
+
+. Selecione *Salvar*.
+. Selecione *Avançar*.
+. Revise suas seleções.
+. Selecione *Restaurar*.
+. No menu superior, selecione *Recuperação* para revisar a carga de trabalho na página Recuperação, onde o status da operação passa pelos estados.
+
+
+
+
+=== Restaurar uma carga de trabalho do aplicativo no nível do volume
+
+. No menu Resiliência contra Ransomware, selecione *Recuperação*.
+. Selecione uma carga de trabalho do aplicativo que esteja no estado "Restauração necessária".
+. Para restaurar, selecione *Restaurar*.
+. Na página Restaurar, no escopo Restaurar, selecione *Por volume*.
++
+image:screen-recovery-byvolume.png["Restaurar por página de volume"]
+
+. Na lista de volumes, selecione o volume que você deseja restaurar.
+. *Fonte*: Selecione a seta para baixo ao lado de Fonte para ver detalhes.
++
+.. Selecione o ponto de restauração que você deseja usar para restaurar os dados.
++
+
+TIP: O Ransomware Resilience identifica o melhor ponto de restauração como o backup mais recente imediatamente anterior ao incidente e mostra uma indicação "Recomendado".
+
+
+
+. *Destino*: Selecione a seta para baixo ao lado de Destino para ver detalhes.
++
+.. Selecione o sistema.
+.. Selecione a VM de armazenamento.
+.. Selecione o agregado.
+.. Revise o novo nome do volume.
++
+
+TIP: O novo nome do volume aparece como o nome do volume original + nome do backup + data do backup.
+
+
+
+. Selecione *Salvar*.
+. Selecione *Avançar*.
+. Revise suas seleções.
+. Selecione *Restaurar*.
+. No menu superior, selecione *Recuperação* para revisar a carga de trabalho na página Recuperação, onde o status da operação passa pelos estados.
+
+
+
+
+=== Restaurar uma carga de trabalho do aplicativo no nível do arquivo
+
+Antes de restaurar uma carga de trabalho de aplicativo no nível de arquivo, você pode visualizar uma lista de arquivos afetados.  Você pode acessar a página Alertas para baixar uma lista de arquivos afetados.  Em seguida, use a página Recuperação para carregar a lista e escolher quais arquivos restaurar.
+
+Você pode restaurar uma carga de trabalho de aplicativo no nível de arquivo para o mesmo sistema ou para um sistema diferente.
+
+.Etapas para obter a lista de arquivos afetados
+Use a página Alertas para recuperar a lista de arquivos afetados.
+
+
+TIP: Se um volume tiver vários alertas, você precisará baixar a lista CSV dos arquivos afetados para cada alerta.
+
+. No menu Resiliência contra Ransomware, selecione *Alertas*.
+. Na página Alertas, classifique os resultados por carga de trabalho para mostrar os alertas para a carga de trabalho do aplicativo que você deseja restaurar.
+. Na lista de alertas para essa carga de trabalho, selecione um alerta.
+. Para esse alerta, selecione um único incidente.
++
+image:screen-alerts-incidents-impacted-files.png["lista de arquivos impactados para um alerta específico"]
+
+. Para ver a lista completa de arquivos, selecione *Clique aqui* na parte superior do painel Arquivos afetados.
+. Para esse incidente, selecione o ícone de download e baixe a lista de arquivos afetados no formato CSV.
+
+
+.Etapas para restaurar esses arquivos
+. No menu Resiliência contra Ransomware, selecione *Recuperação*.
+. Selecione uma carga de trabalho do aplicativo que esteja no estado "Restauração necessária".
+. Para restaurar, selecione *Restaurar*.
+. Na página Restaurar, no escopo Restaurar, selecione *Por arquivo*.
+. Na lista de volumes, selecione o volume que contém os arquivos que você deseja restaurar.
+. *Ponto de restauração*: Selecione a seta para baixo ao lado de *Ponto de restauração* para ver detalhes.  Selecione o ponto de restauração que você deseja usar para restaurar os dados.
++
+
+NOTE: A coluna Motivo no painel Pontos de restauração mostra o motivo do snapshot ou backup como "Agendado" ou "Resposta automatizada ao incidente de ransomware".
+
+. *Arquivos*:
++
+** *Selecionar arquivos automaticamente*: Deixe o Ransomware Resilience selecionar os arquivos a serem restaurados.
+** *Carregar lista de arquivos*: Carregue um arquivo CSV que contenha a lista de arquivos afetados que você obteve na página Alertas ou que você possui.  Você pode restaurar até 10.000 arquivos por vez.
++
+image:screen-recovery-app-by-file-upload-csv.png["Carregar arquivo CSV que lista os arquivos afetados para o alerta"]
+
+** *Selecionar arquivos manualmente*: Selecione até 10.000 arquivos ou uma única pasta para restaurar.
++
+image:screen-recovery-app-by-file-select-files.png["Selecione manualmente os arquivos para restaurar"]
+
++
+
+NOTE: Se algum arquivo não puder ser restaurado usando o ponto de restauração selecionado, uma mensagem será exibida indicando o número de arquivos que não podem ser restaurados e permitirá que você baixe a lista desses arquivos selecionando *Baixar lista de arquivos afetados*.
+
+
+
+. *Destino*: Selecione a seta para baixo ao lado de Destino para ver detalhes.
++
+.. Escolha onde restaurar os dados: local de origem ou um local alternativo que você pode especificar.
++
+
+TIP: Embora os arquivos ou diretórios originais sejam substituídos pelos dados restaurados, os nomes dos arquivos e pastas originais permanecerão os mesmos, a menos que você especifique novos nomes.
+
+.. Selecione o sistema.
+.. Selecione a VM de armazenamento.
+.. Opcionalmente, insira o caminho.
++
+
+TIP: Se você não especificar um caminho para a restauração, os arquivos serão restaurados em um novo volume no diretório de nível superior.
+
+.. Selecione se você deseja que os nomes dos arquivos ou diretórios restaurados sejam os mesmos nomes do local atual ou nomes diferentes.
+
+
+. Selecione *Avançar*.
+. Revise suas seleções.
+. Selecione *Restaurar*.
+. No menu superior, selecione *Recuperação* para revisar a carga de trabalho na página Recuperação, onde o status da operação passa pelos estados.
+
+
+
+
+=== Restaurar um compartilhamento de arquivos ou armazenamento de dados
+
+. Depois de selecionar um compartilhamento de arquivos ou armazenamento de dados para restaurar, na página Restaurar, no escopo Restaurar, selecione *Por volume*.
++
+image:screen-recovery-fileshare.png["Página de recuperação mostrando a recuperação do compartilhamento de arquivos"]
+
+. Na lista de volumes, selecione o volume que você deseja restaurar.
+. *Fonte*: Selecione a seta para baixo ao lado de Fonte para ver detalhes.
++
+.. Selecione o ponto de restauração que você deseja usar para restaurar os dados.
++
+
+TIP: O Ransomware Resilience identifica o melhor ponto de restauração como o backup mais recente imediatamente anterior ao incidente e mostra uma indicação "Recomendado".
+
+
+
+. *Destino*: Selecione a seta para baixo ao lado de Destino para ver detalhes.
++
+.. Escolha onde restaurar os dados: local de origem ou um local alternativo que você pode especificar.
++
+
+TIP: Embora os arquivos ou diretórios originais sejam substituídos pelos dados restaurados, os nomes dos arquivos e pastas originais permanecerão os mesmos, a menos que você especifique novos nomes.
+
+.. Selecione o sistema.
+.. Selecione a VM de armazenamento.
+.. Opcionalmente, insira o caminho.
++
+
+TIP: Se você não especificar um caminho para a restauração, os arquivos serão restaurados em um novo volume no diretório de nível superior.
+
+
+
+. Selecione *Salvar*.
+. Revise suas seleções.
+. Selecione *Restaurar*.
+. No menu, selecione *Recuperação* para revisar a carga de trabalho na página Recuperação, onde o status da operação passa pelos estados.
+
+
+
+
+=== Restaurar um compartilhamento de arquivos de VM no nível da VM
+
+Na página Recuperação, depois de selecionar uma VM para restaurar, continue com estas etapas.
+
+. *Fonte*: Selecione a seta para baixo ao lado de Fonte para ver detalhes.
++
+image:screen-recovery-vm.png["Página de recuperação mostrando uma VM sendo restaurada"]
+
+. Selecione o ponto de restauração que você deseja usar para restaurar os dados.
+. *Destino*: Para o local original.
+. Selecione *Avançar*.
+. Revise suas seleções.
+. Selecione *Restaurar*.
+. No menu, selecione *Recuperação* para revisar a carga de trabalho na página Recuperação, onde o status da operação passa pelos estados.
+

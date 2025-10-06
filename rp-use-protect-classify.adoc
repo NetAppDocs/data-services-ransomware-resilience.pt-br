@@ -1,0 +1,121 @@
+---
+sidebar: sidebar 
+permalink: rp-use-protect-classify.html 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, cds, sensitive, pii, classification 
+summary: Melhore a segurança e a conformidade de privacidade dos seus dados com a Classificação de Dados da NetApp para identificar se seus dados incluem informações pessoais ou privadas. 
+---
+= Procure informações de identificação pessoal com a Classificação de Dados da NetApp no ​​Ransomware Resilience
+:allow-uri-read: 
+
+
+[role="lead"]
+No NetApp Ransomware Resilience, você pode usar o NetApp Data Classification para verificar e classificar os dados em uma carga de trabalho de compartilhamento de arquivos.  Classificar dados ajuda a determinar se o conjunto de dados inclui informações de identificação pessoal (PII), o que pode aumentar os riscos de segurança.  A Classificação de Dados é um componente central do Console e está disponível sem custo adicional.
+
+link:https://docs.netapp.com/us-en/bluexp-classification/["Classificação de Dados"^]utiliza processamento de linguagem natural orientado por IA para análise e categorização de dados contextuais, fornecendo insights acionáveis sobre seus dados para atender aos requisitos de conformidade, detectar vulnerabilidades de segurança, otimizar custos e acelerar a migração.
+
+
+TIP: Esse processo pode impactar a importância da carga de trabalho para ajudar a garantir que você tenha a proteção adequada.
+
+*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console para todos os serviços"^] .
+
+
+
+== Identifique a exposição à privacidade com a Classificação de Dados
+
+Antes de usar a Classificação de Dados na Resiliência do Ransomware, você precisalink:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html["para permitir que a Classificação de Dados escaneie seus dados"^] .
+
+Você pode implantar a Classificação de Dados na página Proteção do Ransomware Resilience.  Siga o procedimento para identificar a exposição de privacidade.  Ao selecionar **Identificar exposição**, caso você ainda não tenha implantado a Classificação de Dados, uma caixa de diálogo permitirá que você habilite a Classificação de Dados.
+
+image:classification-deploy.png["Captura de tela da classificação de implantação"]
+
+Para mais informações sobre Classificação de Dados, consulte:
+
+* https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Aprenda sobre Classificação de Dados"^]
+* https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["Categorias de dados privados"^]
+* https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["Investigue os dados armazenados em sua organização"^]
+
+
+.Antes de começar
+A varredura de dados PII no Ransomware Resilience está disponível se você tiverlink:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html["Classificação de Dados implantada"^] .  A Classificação de Dados está disponível como parte do Console sem custo adicional e pode ser implantada no local ou na nuvem do cliente.
+
+.Passos
+. No menu Resiliência contra Ransomware, selecione *Proteção*.
+. Na página Proteção, localize uma carga de trabalho de compartilhamento de arquivos na coluna Carga de trabalho.
++
+image:screen-protection-sensitive-preview-column.png["Página de proteção mostrando a coluna Exposição de privacidade"]
+
+. Para permitir que a Classificação de Dados verifique seus dados em busca de PII, na coluna *Exposição de privacidade*, selecione *Identificar exposição*.
+
+
+
+NOTE: Se você não tiver implantado a Classificação de Dados, selecionar *Identificar exposição* abrirá uma caixa de diálogo para implantar a Classificação de Dados.  Selecione *Implantar*.  Depois de implantar a Classificação de Dados, você pode retornar à página Proteção e selecionar *Identificar exposição*.
+
+.Resultado
+A digitalização pode levar vários minutos, dependendo do tamanho e do número de arquivos.  Durante a verificação, a página Proteção indica que está identificando arquivos e fornece uma contagem de arquivos.  Quando a digitalização estiver concluída, a coluna Exposição de privacidade classificará o nível de exposição como Baixo, Médio ou Alto.
+
+
+
+== Revise a exposição da privacidade
+
+Após a verificação da Classificação de Dados em busca de PII, avalie o risco.
+
+Os dados PII são classificados em uma das três designações:
+
+* *Alto*: Mais de 70% dos arquivos contêm PII
+* *Médio*: Mais de 30% e menos de 70% dos arquivos contêm PII
+* *Baixo*: Mais de 0% e menos de 30% dos arquivos contêm PII
+
+
+.Passos
+. No menu Resiliência contra Ransomware, selecione *Proteção*.
+. Na página Proteção, localize a carga de trabalho do compartilhamento de arquivos na coluna Carga de trabalho que mostra um status na coluna Exposição de privacidade.
++
+image:screen-protection-sensitive-preview-column.png["Página de proteção mostrando a coluna Exposição de privacidade"]
+
+. Selecione o link da carga de trabalho na coluna Carga de trabalho para ver detalhes da carga de trabalho.
++
+image:screen-protection-workload-details-privacy-exposure.png["Tela de detalhes da carga de trabalho mostrando o bloco de exposição de privacidade"]
+
+. Na página Detalhes da carga de trabalho, observe os detalhes no bloco Exposição de privacidade.
+
+
+
+
+== Impacto da exposição à privacidade na importância da carga de trabalho
+
+Alterações na exposição da privacidade podem impactar a importância da carga de trabalho.
+
+[cols="15,20a,20,20"]
+|===
+| Quando a exposição da privacidade: | A partir desta exposição de privacidade: | Para esta exposição de privacidade: | Então, a importância da carga de trabalho faz isso: . 
+
+
+| *Diminui*  a| 
+Alto, Médio ou Baixo
+| Médio, Baixo ou Nenhum | Permanece o mesmo 
+
+
+.3+| *Aumenta*  a| 
+Nenhum
+| Baixo | Permanece no padrão 
+
+
+| Baixo  a| 
+Médio
+| Mudanças de Padrão para Importante 
+
+
+| Baixo ou Médio  a| 
+Alto
+| Mudanças de Padrão ou Importante para Crítico 
+|===
+
+
+== Para maiores informações
+
+Para obter detalhes sobre a Classificação de Dados, consulte a documentação da Classificação de Dados:
+
+* https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Aprenda sobre Classificação de Dados"^]
+* https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["Categorias de dados privados"^]
+* https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["Investigue os dados armazenados em sua organização"^]
+

@@ -1,0 +1,32 @@
+= Simule um ataque e responda
+:allow-uri-read: 
+
+
+
+
+=== Simule um ataque e responda
+
+Com esta versão, simule um ataque de ransomware para testar sua resposta a um alerta de ransomware.  Esse recurso ajuda você a saber se está preparado no caso de um ataque real de ransomware, testando processos de notificação de alerta, resposta e recuperação.
+
+Para mais detalhes, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["Realizar um exercício de preparação para ataques de ransomware"] .
+
+
+
+=== Melhorias no processo de descoberta
+
+Esta versão inclui melhorias nos processos seletivos de descoberta e redescoberta:
+
+* Com esta versão, você pode descobrir cargas de trabalho recém-criadas que foram adicionadas aos ambientes de trabalho selecionados anteriormente.
+* Você também pode selecionar _novos_ ambientes de trabalho nesta versão.  Esse recurso ajuda a proteger novas cargas de trabalho adicionadas ao seu ambiente.
+* Você pode executar esses processos de descoberta durante o processo de descoberta inicialmente ou na opção Configurações.
+
+
+Para mais detalhes, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Descubra cargas de trabalho recém-criadas para ambientes de trabalho selecionados anteriormente"] e https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Configurar recursos com a opção Configurações"] .
+
+
+
+=== Alertas gerados quando alta criptografia é detectada
+
+Com esta versão, você pode visualizar alertas quando alta criptografia for detectada em suas cargas de trabalho, mesmo sem grandes alterações na extensão do arquivo.  Este recurso, que usa a IA de proteção autônoma contra ransomware (ARP) do ONTAP , ajuda você a identificar cargas de trabalho que correm risco de ataques de ransomware.  Use este recurso e baixe a lista completa de arquivos afetados com ou sem alterações de extensão.
+
+Para mais detalhes, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Responder a um alerta de ransomware detectado"] .

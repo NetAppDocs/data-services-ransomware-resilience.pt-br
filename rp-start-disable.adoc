@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: rp-start-disable.html 
+keywords: bluexp, ransomware protection, netapp, disable protection 
+summary: Se você não quiser mais usar o NetApp Ransomware Resilience, pode deixar a licença expirar. 
+---
+= Desabilitar a resiliência do NetApp Ransomware
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Se você não quiser mais usar o NetApp Ransomware Resilience, pode deixar a licença expirar.  Você também pode desabilitar políticas que não deseja mais usar.
+
+
+
+== Desabilitar a resiliência do ransomware
+
+Após o vencimento da assinatura ou licença, o Ransomware Resilience desabilita automaticamente os recursos que exigem uma assinatura ou licença.
+
+Para obter detalhes sobre as ações que você ainda pode realizar após o vencimento da licença, consultelink:rp-start-licenses.html["Configurar o licenciamento de resiliência contra ransomware"] .
+
+
+
+== Desativar políticas de proteção
+
+Se quiser parar de usar políticas de proteção aplicadas às cargas de trabalho, você pode desativá-las usando o Gerenciador do Sistema, chamadas de API ou CLI.
+
+Você pode desabilitar FPolicy e políticas de backup no Ransomware Resilience aplicando uma política diferente que não as inclua.  Para obter instruções sobre como definir políticas de proteção, consultelink:rp-use-protect.html["Proteja cargas de trabalho contra ataques de ransomware"] .
+
+
+TIP: Recomendamos que você não desabilite as políticas de snapshot.

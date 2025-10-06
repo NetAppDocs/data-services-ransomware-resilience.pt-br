@@ -1,0 +1,15 @@
+= Relatório de ambientes de trabalho não suportados na BlueXP ransomware protection
+:allow-uri-read: 
+
+
+
+
+=== Relatório de ambientes de trabalho não suportados na BlueXP ransomware protection
+
+Durante o fluxo de trabalho de descoberta, a BlueXP ransomware protection relata mais detalhes quando você passa o mouse sobre Cargas de trabalho suportadas ou não suportadas.  Isso ajudará você a entender por que algumas de suas cargas de trabalho não são descobertas pelo serviço de BlueXP ransomware protection .
+
+Há muitos motivos pelos quais o serviço não oferece suporte a um ambiente de trabalho, por exemplo, a versão do ONTAP no seu ambiente de trabalho pode ser inferior à versão necessária.  Quando você passa o mouse sobre um ambiente de trabalho sem suporte, uma dica de ferramenta exibe o motivo.
+
+Você pode visualizar os ambientes de trabalho sem suporte durante a descoberta inicial, onde também pode baixar os resultados.  Você também pode visualizar os resultados da descoberta na opção *Descoberta de carga de trabalho* na página Configurações.
+
+Para mais detalhes, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Descubra cargas de trabalho na BlueXP ransomware protection"] .

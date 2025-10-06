@@ -1,0 +1,554 @@
+---
+sidebar: sidebar 
+permalink: rp-use-settings.html 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware settings, backup destination 
+summary: Você pode configurar várias opções, incluindo um destino de backup, detecção de ameaças e conexão com o Data Infrastructure Insights Workload Security no Ransomware Resilience. 
+---
+= Configurar as definições de proteção no NetApp Ransomware Resilience
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Você pode configurar destinos de backup, enviar dados para um sistema externo de gerenciamento de segurança e eventos (SIEM), conduzir um exercício de prontidão para ataque, configurar a descoberta de carga de trabalho ou configurar a conexão com a segurança de carga de trabalho do Data Infrastructure Insights acessando a opção *Configurações*.
+
+*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console para todos os serviços"^] .
+
+*O que você pode fazer na página Configurações?*  Na página Configurações, você pode fazer o seguinte:
+
+* Simule um ataque de ransomware realizando um exercício de prontidão e respondendo a um alerta simulado de ransomware. Para obter detalhes, consulte link:rp-start-simulate.html["Realizar um exercício de preparação para ataques de ransomware"] .
+* Configurar descoberta de carga de trabalho.
+* Configure a conexão com a segurança da carga de trabalho do Data Infrastructure Insights para ver informações de usuários suspeitos em alertas de ransomware.
+* Adicione um destino de backup.
+* Conecte seu sistema de gerenciamento de segurança e eventos (SIEM) para análise e detecção de ameaças.  Habilitar a detecção de ameaças envia automaticamente dados ao seu SIEM para análise de ameaças.
+
+
+
+
+== Acesse a página Configurações diretamente
+
+Você pode acessar facilmente a página Configurações na opção Ações, próxima ao menu superior.
+
+. Em Resiliência de Ransomware, selecione a verticalimage:button-actions-vertical.png["Ações Verticais"] ... opção no canto superior direito.
+. No menu suspenso, selecione *Configurações*.
+
+
+
+
+== Simule um ataque de ransomware
+
+Realize um exercício de preparação para ransomware simulando um ataque de ransomware em uma carga de trabalho de amostra recém-criada.  Em seguida, investigue o ataque simulado e recupere a carga de trabalho de amostra.  Esse recurso ajuda você a saber se está preparado no caso de um ataque real de ransomware, testando processos de notificação de alerta, resposta e recuperação.  Você pode executar um exercício de prontidão para ransomware várias vezes.
+
+Para mais detalhes, consultelink:rp-start-simulate.html["Realizar um exercício de preparação para ataques de ransomware"] .
+
+
+
+== Configurar descoberta de carga de trabalho
+
+Você pode configurar a descoberta de carga de trabalho para descobrir automaticamente novas cargas de trabalho em seu ambiente.
+
+. Na página Configurações, localize o bloco *Descoberta de carga de trabalho*.
+. No bloco *Descoberta de carga de trabalho*, selecione *Descobrir cargas de trabalho*.
++
+Esta página mostra agentes do Console com sistemas que não foram selecionados anteriormente, agentes do Console recentemente disponíveis e sistemas recentemente disponíveis.  Esta página não mostra os sistemas que foram selecionados anteriormente.
+
+. Selecione o agente do Console onde você deseja descobrir cargas de trabalho.
+. Revise a lista de sistemas.
+. Marque os sistemas nos quais você deseja descobrir cargas de trabalho ou selecione a caixa na parte superior da tabela para descobrir cargas de trabalho em todos os ambientes de carga de trabalho descobertos.
+. Faça isso para outros sistemas, conforme necessário.
+. Selecione *Descobrir* para que o Ransomware Resilience descubra automaticamente novas cargas de trabalho no agente do Console selecionado.
+
+
+
+
+== Veja comportamento anômalo suspeito do usuário conectando-se à segurança da carga de trabalho do Data Infrastructure Insights
+
+Antes de poder visualizar detalhes de comportamento anômalo suspeito do usuário no Ransomware Resilience, você precisa configurar a conexão com o sistema de segurança do Data Infrastructure Insights Workload.
+
+
+
+=== Obtenha um token de acesso à API do sistema de segurança de carga de trabalho do Data Infrastructure Insights
+
+Obtenha um token de acesso à API do sistema de segurança de carga de trabalho do Data Infrastructure Insights .
+
+. Efetue login no sistema de segurança de carga de trabalho do Data Infrastructure Insights .
+. Na navegação à esquerda, selecione *Admin* > *Acesso à API*.
++
+image:../media/screen-alerts-ci-api-access-token.png["Página de acesso à API no Data Infrastructure Insights Segurança da carga de trabalho"]
+
+. Crie um token de acesso à API ou use um existente.
+. Copie o token de acesso da API.
+
+
+
+
+=== Conecte-se ao Data Infrastructure Insights Segurança da carga de trabalho
+
+. No menu Configurações de resiliência contra ransomware, localize o bloco *Conexão de segurança da carga de trabalho*.
+. Selecione *Conectar*.
+. Insira a URL para a interface de segurança da carga de trabalho da infraestrutura de dados.
+. Insira o token de acesso da API que fornece acesso à segurança da carga de trabalho.
+. Selecione *Conectar*.
+
+
+
+
+== Adicionar um destino de backup
+
+O Ransomware Resilience pode identificar cargas de trabalho que ainda não têm backups e também cargas de trabalho que ainda não têm destinos de backup atribuídos.
+
+Para proteger essas cargas de trabalho, você deve adicionar um destino de backup.  Você pode escolher um dos seguintes destinos de backup:
+
+* NetApp StorageGRID
+* Serviços Web da Amazon (AWS)
+* Plataforma Google Cloud
+* Microsoft Azure
+
+
+
+NOTE: Os destinos de backup não estão disponíveis para cargas de trabalho no Amazon FSx for NetApp ONTAP.  Execute operações de backup usando o serviço de backup FSx for ONTAP .
+
+Você pode adicionar um destino de backup com base em uma ação recomendada no Painel ou acessando a opção Configurações no menu.
+
+
+
+=== Acesse as opções de destino de backup nas ações recomendadas do painel
+
+O Painel fornece muitas recomendações.  Uma recomendação pode ser configurar um destino de backup.
+
+.Passos
+. No painel Resiliência de Ransomware, revise o painel Ações recomendadas.
++
+image:screen-dashboard.png["Página do painel"]
+
+. No Painel, selecione *Revisar e corrigir* para a recomendação de "Preparar <provedor de backup> como destino de backup".
+. Continue com as instruções dependendo do provedor de backup.
+
+
+
+
+=== Adicionar StorageGRID como destino de backup
+
+Para configurar o NetApp StorageGRID como um destino de backup, insira as seguintes informações.
+
+.Passos
+. Na página *Configurações > Destinos de backup*, selecione *Adicionar*.
+. Digite um nome para o destino do backup.
++
+image:screen-settings-backup-destination.png["Página de destinos de backup"]
+
+. Selecione * StorageGRID*.
+. Selecione a seta para baixo ao lado de cada configuração e insira ou selecione valores:
++
+** *Configurações do provedor*:
++
+*** Crie um novo bucket ou traga seu próprio bucket que armazenará os backups.
+*** Nome de domínio totalmente qualificado do nó do gateway StorageGRID , porta, chave de acesso do StorageGRID e credenciais de chave secreta.
+
+
+** *Rede*: Escolha o IPspace.
++
+*** O IPspace é o cluster onde residem os volumes que você deseja fazer backup. Os LIFs intercluster para este IPspace devem ter acesso de saída à Internet.
+
+
+
+
+. Selecione *Adicionar*.
+
+
+.Resultado
+O novo destino de backup é adicionado à lista de destinos de backup.
+
+image:screen-settings-backup-destinations-list2.png["Página de destinos de backup, opção Configurações"]
+
+
+
+=== Adicionar Amazon Web Services como destino de backup
+
+Para configurar a AWS como destino de backup, insira as seguintes informações.
+
+Para obter detalhes sobre como gerenciar seu armazenamento AWS no Console, consulte https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html["Gerencie seus buckets do Amazon S3"^] .
+
+.Passos
+. Na página *Configurações > Destinos de backup*, selecione *Adicionar*.
+. Digite um nome para o destino do backup.
++
+image:screen-settings-backup-destination.png["Página de destinos de backup"]
+
+. Selecione *Amazon Web Services*.
+. Selecione a seta para baixo ao lado de cada configuração e insira ou selecione valores:
++
+** *Configurações do provedor*:
++
+*** Crie um novo bucket, selecione um bucket existente se já houver um no Console ou traga seu próprio bucket que armazenará os backups.
+*** Conta AWS, região, chave de acesso e chave secreta para credenciais AWS
++
+https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["Se você quiser trazer seu próprio bucket, consulte Adicionar buckets S3"^] .
+
+
+
+** *Criptografia*: Se você estiver criando um novo bucket S3, insira as informações da chave de criptografia fornecidas pelo provedor.  Se você escolher um bucket existente, as informações de criptografia já estarão disponíveis.
++
+Os dados no bucket são criptografados com chaves gerenciadas pela AWS por padrão.  Você pode continuar usando chaves gerenciadas pela AWS ou pode gerenciar a criptografia dos seus dados usando suas próprias chaves.
+
+** *Rede*: Escolha o espaço IP e se você usará um ponto de extremidade privado.
++
+*** O IPspace é o cluster onde residem os volumes que você deseja fazer backup. Os LIFs intercluster para este IPspace devem ter acesso de saída à Internet.
+*** Opcionalmente, escolha se você usará um endpoint privado da AWS (PrivateLink) que você configurou anteriormente.
++
+Se você quiser usar o AWS PrivateLink, consulte https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html["AWS PrivateLink para Amazon S3"^] .
+
+
+
+** *Bloqueio de backup*: escolha se deseja que o Ransomware Resilience proteja os backups contra modificações ou exclusão.  Esta opção usa a tecnologia NetApp DataLock.  Cada backup será bloqueado durante o período de retenção, ou por um mínimo de 30 dias, mais um período de buffer de até 14 dias.
++
+
+CAUTION: Se você configurar a configuração de bloqueio de backup agora, não poderá alterá-la depois que o destino do backup for configurado.
+
++
+*** *Modo de governança*: Usuários específicos (com permissão s3:BypassGovernanceRetention) podem substituir ou excluir arquivos protegidos durante o período de retenção.
+*** *Modo de conformidade*: Os usuários não podem substituir ou excluir arquivos de backup protegidos durante o período de retenção.
+
+
+
+
+. Selecione *Adicionar*.
+
+
+.Resultado
+O novo destino de backup é adicionado à lista de destinos de backup.
+
+image:screen-settings-backup-destinations-list2.png["Página de destinos de backup, opção Configurações"]
+
+
+
+=== Adicionar o Google Cloud Platform como destino de backup
+
+Para configurar o Google Cloud Platform (GCP) como destino de backup, insira as seguintes informações.
+
+Para obter detalhes sobre como gerenciar seu armazenamento GCP no Console, consulte https://docs.netapp.com/us-en/bluexp-setup-admin/concept-install-options-google.html["Opções de instalação do agente de console no Google Cloud"^] .
+
+.Passos
+. Na página *Configurações > Destinos de backup*, selecione *Adicionar*.
+. Digite um nome para o destino do backup.
++
+image:screen-settings-backup-destination-gcp.png["Página de destinos de backup"]
+
+. Selecione *Google Cloud Platform*.
+. Selecione a seta para baixo ao lado de cada configuração e insira ou selecione valores:
++
+** *Configurações do provedor*:
++
+*** Crie um novo bucket.  Digite a chave de acesso e a chave secreta.
+*** Insira ou selecione seu projeto e região do Google Cloud Platform.
+
+
+** *Criptografia*: Se você estiver criando um novo bucket, insira as informações da chave de criptografia fornecidas pelo provedor.  Se você escolher um bucket existente, as informações de criptografia já estarão disponíveis.
++
+Os dados no bucket são criptografados com chaves gerenciadas pelo Google por padrão.  Você pode continuar usando as chaves gerenciadas pelo Google.
+
+** *Rede*: Escolha o espaço IP e se você usará um ponto de extremidade privado.
++
+*** O IPspace é o cluster onde residem os volumes que você deseja fazer backup. Os LIFs intercluster para este IPspace devem ter acesso de saída à Internet.
+*** Opcionalmente, escolha se você usará um ponto de extremidade privado do GCP (PrivateLink) que você configurou anteriormente.
+
+
+
+
+. Selecione *Adicionar*.
+
+
+.Resultado
+O novo destino de backup é adicionado à lista de destinos de backup.
+
+
+
+=== Adicionar o Microsoft Azure como destino de backup
+
+Para configurar o Azure como um destino de backup, insira as seguintes informações.
+
+Para obter detalhes sobre como gerenciar suas credenciais do Azure e assinaturas do marketplace no Console, consulte https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["Gerencie suas credenciais do Azure e assinaturas do marketplace"^] .
+
+.Passos
+. Na página *Configurações > Destinos de backup*, selecione *Adicionar*.
+. Digite um nome para o destino do backup.
++
+image:screen-settings-backup-destination.png["Página de destinos de backup"]
+
+. Selecione *Azure*.
+. Selecione a seta para baixo ao lado de cada configuração e insira ou selecione valores:
++
+** *Configurações do provedor*:
++
+*** Crie uma nova conta de armazenamento, selecione uma existente se já houver uma no Console ou traga sua própria conta de armazenamento que armazenará os backups.
+*** Assinatura, região e grupo de recursos do Azure para credenciais do Azure
++
+https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["Se você quiser trazer sua própria conta de armazenamento, consulte Adicionar contas de armazenamento de Blobs do Azure"^] .
+
+
+
+** *Criptografia*: Se você estiver criando uma nova conta de armazenamento, insira as informações da chave de criptografia fornecidas pelo provedor.  Se você escolheu uma conta existente, as informações de criptografia já estarão disponíveis.
++
+Os dados na conta são criptografados com chaves gerenciadas pela Microsoft por padrão.  Você pode continuar usando chaves gerenciadas pela Microsoft ou pode gerenciar a criptografia dos seus dados usando suas próprias chaves.
+
+** *Rede*: Escolha o espaço IP e se você usará um ponto de extremidade privado.
++
+*** O IPspace é o cluster onde residem os volumes que você deseja fazer backup. Os LIFs intercluster para este IPspace devem ter acesso de saída à Internet.
+*** Opcionalmente, escolha se você usará um ponto de extremidade privado do Azure que você configurou anteriormente.
++
+Se você quiser usar o Azure PrivateLink, consulte https://azure.microsoft.com/en-us/products/private-link/["Link Privado do Azure"^] .
+
+
+
+
+
+. Selecione *Adicionar*.
+
+
+.Resultado
+O novo destino de backup é adicionado à lista de destinos de backup.
+
+image:screen-settings-backup-destinations-list2.png["Página de destinos de backup, opção Configurações"]
+
+
+
+== Conecte-se a um sistema de gerenciamento de segurança e eventos (SIEM) para análise e detecção de ameaças
+
+Você pode enviar dados automaticamente para seu sistema de gerenciamento de segurança e eventos (SIEM) para análise e detecção de ameaças.  Você pode selecionar o AWS Security Hub, o Microsoft Sentinel ou o Splunk Cloud como seu SIEM.
+
+Antes de habilitar o SIEM no Ransomware Resilience, você precisa configurar seu sistema SIEM.
+
+.Sobre os dados do evento enviados para um SIEM
+O Ransomware Resilience pode enviar os seguintes dados de eventos para o seu sistema SIEM:
+
+* *contexto*:
++
+** *os*: Esta é uma constante com o valor de ONTAP.
+** *os_version*: A versão do ONTAP em execução no sistema.
+** *connector_id*: O ID do agente do Console que gerencia o sistema.
+** *cluster_id*: O ID do cluster relatado pelo ONTAP para o sistema.
+** *svm_name*: O nome do SVM onde o alerta foi encontrado.
+** *volume_name*: O nome do volume no qual o alerta é encontrado.
+** *volume_id*: O ID do volume relatado pelo ONTAP para o sistema.
+
+
+* *incidente*:
++
+** *incident_id*: O ID do incidente gerado pelo Ransomware Resilience para o volume sob ataque no Ransomware Resilience.
+** *alert_id*: O ID gerado pelo Ransomware Resilience para a carga de trabalho.
+** *gravidade*: Um dos seguintes níveis de alerta: "CRÍTICO", "ALTO", "MÉDIO", "BAIXO".
+** *description*: Detalhes sobre o alerta que foi detectado, por exemplo, "Um possível ataque de ransomware detectado na carga de trabalho arp_learning_mode_test_2630"
+
+
+
+
+
+
+=== Configurar o AWS Security Hub para detecção de ameaças
+
+Antes de habilitar o AWS Security Hub no Ransomware Resilience, você precisará executar as seguintes etapas de alto nível no AWS Security Hub:
+
+* Configure permissões no AWS Security Hub.
+* Configure a chave de acesso de autenticação e a chave secreta no AWS Security Hub.  (Essas etapas não são fornecidas aqui.)
+
+
+.Etapas para configurar permissões no AWS Security Hub
+. Acesse o *console do AWS IAM*.
+. Selecione *Políticas*.
+. Crie uma política usando o seguinte código no formato JSON:
++
+[listing]
+----
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "NetAppSecurityHubFindings",
+      "Effect": "Allow",
+      "Action": [
+        "securityhub:BatchImportFindings",
+        "securityhub:BatchUpdateFindings"
+      ],
+      "Resource": [
+        "arn:aws:securityhub:*:*:product/*/default",
+        "arn:aws:securityhub:*:*:hub/default"
+      ]
+    }
+  ]
+}
+----
+
+
+
+
+=== Configurar o Microsoft Sentinel para detecção de ameaças
+
+Antes de habilitar o Microsoft Sentinel no Ransomware Resilience, você precisará executar as seguintes etapas de alto nível no Microsoft Sentinel:
+
+* *Pré-requisitos*
++
+** Ativar o Microsoft Sentinel.
+** Crie uma função personalizada no Microsoft Sentinel.
+
+
+* *Inscrição*
++
+** Registre o Ransomware Resilience para receber eventos do Microsoft Sentinel.
+** Crie um segredo para o registro.
+
+
+* *Permissões*: Atribua permissões ao aplicativo.
+* *Autenticação*: Insira as credenciais de autenticação para o aplicativo.
+
+
+.Etapas para habilitar o Microsoft Sentinel
+. Acesse o Microsoft Sentinel.
+. Crie um *espaço de trabalho do Log Analytics*.
+. Habilite o Microsoft Sentinel para usar o espaço de trabalho do Log Analytics que você acabou de criar.
+
+
+.Etapas para criar uma função personalizada no Microsoft Sentinel
+. Acesse o Microsoft Sentinel.
+. Selecione *Assinatura* > *Controle de acesso (IAM)*.
+. Insira um nome de função personalizado.  Use o nome *Ransomware Resilience Sentinel Configurator*.
+. Copie o seguinte JSON e cole-o na aba *JSON*.
++
+[listing]
+----
+{
+  "roleName": "Ransomware Resilience Sentinel Configurator",
+  "description": "",
+  "assignableScopes":["/subscriptions/{subscription_id}"],
+  "permissions": [
+
+  ]
+}
+----
+. Revise e salve suas configurações.
+
+
+.Etapas para registrar o Ransomware Resilience para receber eventos do Microsoft Sentinel
+. Acesse o Microsoft Sentinel.
+. Selecione *Entra ID* > *Aplicativos* > *Registros de aplicativos*.
+. Para o *Nome de exibição* do aplicativo, digite "*Resiliência ao Ransomware*".
+. No campo *Tipo de conta compatível*, selecione *Contas somente neste diretório organizacional*.
+. Selecione um *Índice Padrão* onde os eventos serão enviados.
+. Selecione *Revisar*.
+. Selecione *Registrar* para salvar suas configurações.
++
+Após o registro, o centro de administração do Microsoft Entra exibe o painel Visão geral do aplicativo.
+
+
+
+.Etapas para criar um segredo para o registro
+. Acesse o Microsoft Sentinel.
+. Selecione *Certificados e segredos* > *Segredos do cliente* > *Novo segredo do cliente*.
+. Adicione uma descrição para o segredo do seu aplicativo.
+. Selecione uma *Expiração* para o segredo ou especifique um tempo de vida personalizado.
++
+
+TIP: A vida útil do segredo do cliente é limitada a dois anos (24 meses) ou menos.  A Microsoft recomenda que você defina um valor de expiração inferior a 12 meses.
+
+. Selecione *Adicionar* para criar seu segredo.
+. Registre o segredo a ser usado na etapa de Autenticação.  O segredo nunca mais será exibido depois que você sair desta página.
+
+
+.Etapas para atribuir permissões ao aplicativo
+. Acesse o Microsoft Sentinel.
+. Selecione *Assinatura* > *Controle de acesso (IAM)*.
+. Selecione *Adicionar* > *Adicionar atribuição de função*.
+. Para o campo *Funções de administrador privilegiado*, selecione *Configurador do Ransomware Resilience Sentinel*.
++
+
+TIP: Esta é a função personalizada que você criou anteriormente.
+
+. Selecione *Avançar*.
+. No campo *Atribuir acesso a*, selecione *Usuário, grupo ou entidade de serviço*.
+. Selecione *Selecionar membros*.  Em seguida, selecione *Ransomware Resilience Sentinel Configurator*.
+. Selecione *Avançar*.
+. No campo *O que o usuário pode fazer*, selecione *Permitir que o usuário atribua todas as funções, exceto as funções de administrador privilegiado Proprietário, UAA, RBAC (recomendado)*.
+. Selecione *Avançar*.
+. Selecione *Revisar e atribuir* para atribuir as permissões.
+
+
+.Etapas para inserir credenciais de autenticação para o aplicativo
+. Acesse o Microsoft Sentinel.
+. Insira as credenciais:
++
+.. Insira o ID do locatário, o ID do aplicativo cliente e o segredo do aplicativo cliente.
+.. Clique em *Autenticar*.
++
+
+NOTE: Após a autenticação ser bem-sucedida, uma mensagem "Autenticado" será exibida.
+
+
+
+. Insira os detalhes do espaço de trabalho do Log Analytics para o aplicativo.
++
+.. Selecione o ID da assinatura, o grupo de recursos e o espaço de trabalho do Log Analytics.
+
+
+
+
+
+
+=== Configurar o Splunk Cloud para detecção de ameaças
+
+Antes de habilitar o Splunk Cloud no Ransomware Resilience, você precisará seguir as seguintes etapas de alto nível no Splunk Cloud:
+
+* Habilite um Coletor de Eventos HTTP no Splunk Cloud para receber dados de eventos via HTTP ou HTTPS do Console.
+* Crie um token do Event Collector no Splunk Cloud.
+
+
+.Etapas para habilitar um coletor de eventos HTTP no Splunk
+. Acesse o Splunk Cloud.
+. Selecione *Configurações* > *Entradas de dados*.
+. Selecione *Coletor de Eventos HTTP* > *Configurações Globais*.
+. Na alternância Todos os tokens, selecione *Ativado*.
+. Para que o Coletor de Eventos escute e se comunique por HTTPS em vez de HTTP, selecione *Ativar SSL*.
+. Insira uma porta em *Número da porta HTTP* para o Coletor de eventos HTTP.
+
+
+.Etapas para criar um token do Event Collector no Splunk
+. Acesse o Splunk Cloud.
+. Selecione *Configurações* > *Adicionar dados*.
+. Selecione *Monitor* > *Coletor de Eventos HTTP*.
+. Digite um nome para o token e selecione *Avançar*.
+. Selecione um *Índice Padrão* onde os eventos serão enviados e, em seguida, selecione *Revisar*.
+. Confirme se todas as configurações do ponto de extremidade estão corretas e selecione *Enviar*.
+. Copie o token e cole-o em outro documento para deixá-lo pronto para a etapa de Autenticação.
+
+
+
+
+=== Conecte o SIEM na resiliência do ransomware
+
+A ativação do SIEM envia dados do Ransomware Resilience para seu servidor SIEM para análise e geração de relatórios de ameaças.
+
+.Passos
+. No menu Console, selecione *Proteção* > *Resiliência ao Ransomware*.
+. No menu Resiliência do Ransomware, selecione a verticalimage:button-actions-vertical.png["Ações Verticais"] ... opção no canto superior direito.
+. Selecione *Configurações*.
++
+A página Configurações é exibida.
+
++
+image:screen-settings2.png["Página de configurações"]
+
+. Na página Configurações, selecione *Conectar* no bloco de conexão SIEM.
++
+image:screen-settings-threat-detection-3options.png["Habilitar página de detalhes de detecção de ameaças"]
+
+. Escolha um dos sistemas SIEM.
+. Insira o token e os detalhes de autenticação que você configurou no AWS Security Hub ou no Splunk Cloud.
++
+
+NOTE: As informações inseridas dependem do SIEM selecionado.
+
+. Selecione *Ativar*.
++
+A página Configurações mostra "Conectado".
+
+
