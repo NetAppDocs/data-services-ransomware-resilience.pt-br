@@ -2,9 +2,7 @@
 <blocks>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="doc"></block>
   <block id="34397c830c77af93d96e3ed470658d45" category="inline-link">Saiba mais sobre as funções de acesso do BlueXP para todos os serviços</block>
-  <block id="f6f8a831b6873e1e5da1270ad87f05d4" category="paragraph">*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto, administrador do Ransomware Resilience ou visualizador do Ransomware Resilience.<block ref="c46fcff617e849cb6f8ded33051f7905" category="inline-link-rx"></block> .</block>
   <block id="2152a2d176eba534e81c7e1450f6b5e0" category="inline-link-macro">Saiba mais sobre as funções de acesso do Console para todos os serviços</block>
-  <block id="2a465f11b258ac43576eefa270c6049c" category="paragraph">*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. <block ref="c63b2c8d20974c1834bc75207be469f3" category="inline-link-macro-rx"></block> .</block>
   <block id="997bcd377ced78770953e6e3775b8ef8" category="doc">Avaliação de risco de segurança do Digital Advisor</block>
   <block id="ca38b24749c1b379aa526166d650709c" category="paragraph">A BlueXP ransomware protection agora coleta informações sobre riscos de segurança altos e críticos relacionados a um cluster do NetApp Digital Advisor.  Se algum risco for encontrado, a BlueXP ransomware protection fornece uma recomendação no painel *Ações recomendadas* do Painel: "Corrigir uma vulnerabilidade de segurança conhecida no cluster &lt;nome&gt;".  Na recomendação no Painel, clicar em *Revisar e corrigir* sugere revisar o Digital Advisor e um artigo sobre Vulnerabilidade e Exposição Comuns (CVE) para resolver o risco de segurança.  Se houver vários riscos de segurança, revise as informações no Digital Advisor.</block>
   <block id="ea7b2437ddd14dce6ba3f65494d634fd" category="inline-link">Documentação do Digital Advisor</block>
@@ -12,27 +10,21 @@
   <block id="d6e1df3f33358ae7e917c338cf462ca0" category="section-title">Fazer backup no Google Cloud Platform</block>
   <block id="a789dfb53f35524e96878624b0f44be1" category="paragraph">Com esta versão, você pode definir um destino de backup para um bucket do Google Cloud Platform.  Anteriormente, você só podia adicionar destinos de backup ao NetApp StorageGRID, Amazon Web Services e Microsoft Azure.</block>
   <block id="0d0fda3a15e7f6f6406a0dde3997c91f" category="inline-link">Saiba mais sobre como configurar as configurações de BlueXP ransomware protection</block>
-  <block id="5b0f75e0c31233c18e6f9318b8569cf7" category="paragraph"><block ref="25291e882ba76639fccc7a13f1838641" category="inline-link-rx"></block> .</block>
   <block id="be2bdfb658850d167c76f763879faa2f" category="section-title">Suporte para Google Cloud Platform</block>
   <block id="1a5bbf622fa944b888ced1dd36e43b20" category="paragraph">O serviço agora oferece suporte ao Cloud Volumes ONTAP para Google Cloud Platform para proteção de armazenamento.  Anteriormente, o serviço suportava apenas o Cloud Volumes ONTAP para Amazon Web Services e Microsoft Azure, além de NAS local.</block>
   <block id="571e1080641fe631491306478d4572a1" category="inline-link">Saiba mais sobre a BlueXP ransomware protection e fontes de dados suportadas, destinos de backup e ambientes de trabalho</block>
-  <block id="5c6a145c454aef23e256b2459f8c4c75" category="paragraph"><block ref="e1153028bb0f55bf33080551a5d7f6f3" category="inline-link-rx"></block> .</block>
   <block id="01ab8fe0565c01eb93456b579d969d66" category="section-title">Controle de acesso baseado em função</block>
   <block id="1431c64521322df79808c76466af3b70" category="paragraph">Agora você pode limitar o acesso a atividades específicas com o controle de acesso baseado em função (RBAC).  A BlueXP ransomware protection usa duas funções do BlueXP: Administrador de conta do BlueXP e Administrador sem conta (Visualizador).</block>
   <block id="c7038711405bbbe2f0f37c53c5eb81ad" category="inline-link">Privilégios de controle de acesso baseados em funções</block>
-  <block id="edf15150f2ed24145a29e67792372ecc" category="paragraph">Para obter detalhes sobre as ações que cada função pode executar, consulte<block ref="03cd1069228e8895d221bed8eef34f69" category="inline-link-rx"></block> .</block>
   <block id="4d330e714e6183f0c61932d7c00a8ff3" category="doc">Agrupamento personalizado de cargas de trabalho de compartilhamento de arquivos</block>
   <block id="52a2bb712de6112a9a5d29a047f3a073" category="paragraph">Com esta versão, agora você pode agrupar compartilhamentos de arquivos para facilitar a proteção do seu patrimônio de dados.  O serviço pode proteger todos os volumes de um grupo ao mesmo tempo.  Anteriormente, você precisava proteger cada volume separadamente.</block>
   <block id="a1c75029051cebc5ca5ea85a84cfc065" category="inline-link">Saiba mais sobre o agrupamento de cargas de trabalho de compartilhamento de arquivos em estratégias de proteção contra ransomware</block>
-  <block id="9a2ed93898be76fbc237cf9fca13d650" category="paragraph"><block ref="8790005620a6e0339d9d5a6985b6f062" category="inline-link-rx"></block> .</block>
   <block id="86510b95a05ce4c22c6d48d2fd9228a9" category="doc">Habilitar classificação de dados e busca de informações de identificação pessoal (PII)</block>
   <block id="d599e3d1b6a5137e404ea89f314a22e4" category="paragraph">Com esta versão, você pode habilitar a BlueXP classification, um componente principal da família BlueXP , para escanear e classificar dados em suas cargas de trabalho de compartilhamento de arquivos.  Classificar dados ajuda você a identificar se seus dados incluem informações pessoais ou privadas, o que pode aumentar os riscos de segurança.  Esse processo também afeta a importância da carga de trabalho e ajuda a garantir que você esteja protegendo as cargas de trabalho com o nível certo de proteção.</block>
   <block id="3406306d1e826f71d49547332136491d" category="paragraph">A verificação de dados PII na BlueXP ransomware protection geralmente está disponível para clientes que implantaram a BlueXP classification.  A BlueXP classification está disponível como parte da plataforma BlueXP sem custo adicional e pode ser implantada no local ou na nuvem do cliente.</block>
   <block id="006f40c12cb6b543cd40a6cd5a750b98" category="inline-link">Configurar as definições de BlueXP ransomware protection</block>
-  <block id="14712989ac072dc4b44e9acf1def5f1f" category="paragraph">Consulte<block ref="a5026777e609bf5c1f12922a89f75f5b" category="inline-link-rx"></block> .</block>
   <block id="dc2ee5afb67051a37353df40cc16729a" category="paragraph">Para iniciar a verificação, na página Proteção, clique em *Identificar exposição* na coluna Exposição de privacidade.</block>
   <block id="e7d05f872780d58e08011a44ce4be77b" category="inline-link">Escaneie dados pessoais confidenciais com a BlueXP classification</block>
-  <block id="4dc0491313939f9597e6bce367054443" category="paragraph"><block ref="0e7ea879583dcbdf58a2050df8592221" category="inline-link-rx"></block> .</block>
   <block id="a2c442ceb4053f2fbfe23023529b9acb" category="section-title">Integração do SIEM com o Microsoft Sentinel</block>
   <block id="5148a0988dead45b54188f22121bb178" category="paragraph">Agora você pode enviar dados ao seu sistema de gerenciamento de segurança e eventos (SIEM) para análise e detecção de ameaças usando o Microsoft Sentinel.  Anteriormente, você podia selecionar o AWS Security Hub ou o Splunk Cloud como seu SIEM.</block>
   <block id="178324624f63d3f322bedd1a0cf9e6fc" category="section-title">Teste grátis agora por 30 dias</block>
@@ -40,11 +32,9 @@
   <block id="131dcf966228f0c4a90e6e64618c8def" category="section-title">Restaurar a carga de trabalho do aplicativo no nível de arquivo para Podman</block>
   <block id="b4a1818e2de3da83b0e71c710c96525c" category="paragraph">Antes de restaurar uma carga de trabalho de aplicativo no nível de arquivo, agora você pode visualizar uma lista de arquivos que podem ter sido afetados por um ataque e identificar aqueles que deseja restaurar.  Anteriormente, se os Conectores BlueXP em uma organização (anteriormente uma conta) estivessem usando o Podman, esse recurso era desabilitado.  Agora está habilitado para o Podman.  Você pode deixar que a BlueXP ransomware protection escolha os arquivos a serem restaurados, pode enviar um arquivo CSV que lista todos os arquivos afetados por um alerta ou pode identificar manualmente quais arquivos deseja restaurar.</block>
   <block id="f013b90a0fd96db59795b7cb0b9d2d1b" category="inline-link">Saiba mais sobre como se recuperar de um ataque de ransomware</block>
-  <block id="48e006c40a370e7b0dcc3f4f1e42eda7" category="paragraph"><block ref="17c138513bf5a78d755bed4038999b20" category="inline-link-rx"></block> .</block>
   <block id="e6ecd439699f8fefa13e20f9536a72a6" category="doc">Detecte comportamento anômalo do usuário usando o Data Infrastructure Insights Storage Workload Security</block>
   <block id="4b9b02f7da7210970cff1fcbe2d8369e" category="paragraph">Com esta versão, você pode usar o Data Infrastructure Insights Storage Workload Security para detectar comportamento anômalo do usuário em suas cargas de trabalho de armazenamento.  Este recurso ajuda você a identificar potenciais ameaças à segurança e bloquear usuários potencialmente mal-intencionados para proteger seus dados.</block>
   <block id="839e0e7efb1b67f6416081c6e82a4aa9" category="inline-link">Responder a um alerta de ransomware detectado</block>
-  <block id="51713ddd834a60df7d06db728cf08e05" category="paragraph">Para mais detalhes, consulte<block ref="7a6c0b2db283aa3c348e6e1a2f1f32b0" category="inline-link-rx"></block> .</block>
   <block id="f06819927bc06d4d2a9a3e3e868f76de" category="paragraph">Antes de usar o Data Infrastructure Insights Storage Workload Security para detectar comportamento anômalo do usuário, você precisa configurar a opção usando a opção *Configurações* de BlueXP ransomware protection .</block>
   <block id="ae65c0d044427130470e493bcfa5e9a3" category="section-title">Selecione cargas de trabalho para descobrir e proteger</block>
   <block id="df7afd566315c6467b9ae3e88d9f948d" category="paragraph">Com esta versão, agora você pode fazer o seguinte:</block>
@@ -52,11 +42,9 @@
   <block id="b26d0bf0b9d2f848756ba4fcb103860d" category="list-text">Durante a descoberta de carga de trabalho, você pode habilitar a descoberta automática de cargas de trabalho por Conector.  Este recurso permite que você selecione as cargas de trabalho que deseja proteger.</block>
   <block id="c6ac79f6ec82abd57b723ae67e39d12b" category="list-text">Descubra cargas de trabalho recém-criadas para ambientes de trabalho selecionados anteriormente.</block>
   <block id="bd03ede87c82adb65c788a5ae08c50b6" category="inline-link">Descubra cargas de trabalho</block>
-  <block id="9ac7153dab130e828e160c247e5ccb61" category="paragraph">Consulte<block ref="24a34ebfc2a0852de6406d8f5a18bd02" category="inline-link-rx"></block> .</block>
   <block id="ad84f24c65dd6930a049e0903256dc97" category="doc">Simule um ataque e responda</block>
   <block id="6cadf1d9d5289622136d042488809e73" category="paragraph">Com esta versão, simule um ataque de ransomware para testar sua resposta a um alerta de ransomware.  Esse recurso ajuda você a saber se está preparado no caso de um ataque real de ransomware, testando processos de notificação de alerta, resposta e recuperação.</block>
   <block id="50b24b085ac9888ffc4b0ba727107bd7" category="inline-link">Realizar um exercício de preparação para ataques de ransomware</block>
-  <block id="9b1eb2dbe181e9f7b73db8a0785c0419" category="paragraph">Para mais detalhes, consulte<block ref="83090590e567818593b829ba2ced1db1" category="inline-link-rx"></block> .</block>
   <block id="d36ca1f9466b055dd6adb80de5cce7d4" category="section-title">Melhorias no processo de descoberta</block>
   <block id="61541c0b99aec5f11fccef5bcb3fe5a1" category="paragraph">Esta versão inclui melhorias nos processos seletivos de descoberta e redescoberta:</block>
   <block id="cb3c0a83218c46d38ab0842ce49a7e6e" category="list-text">Com esta versão, você pode descobrir cargas de trabalho recém-criadas que foram adicionadas aos ambientes de trabalho selecionados anteriormente.</block>
@@ -64,7 +52,6 @@
   <block id="28573ff4f820730a3eeae9cdd51b54d4" category="list-text">Você pode executar esses processos de descoberta durante o processo de descoberta inicialmente ou na opção Configurações.</block>
   <block id="33e99171183cf72ac66db77d8dd5792a" category="inline-link">Descubra cargas de trabalho recém-criadas para ambientes de trabalho selecionados anteriormente</block>
   <block id="210e4b14373af6b033275b95f93f9177" category="inline-link">Configurar recursos com a opção Configurações</block>
-  <block id="b094aa2183c533f36783add64e674cad" category="paragraph">Para mais detalhes, consulte<block ref="7d31e5b11cc548279f7c20a9569ec8fc" category="inline-link-rx"></block> e<block ref="852406c43f066a159f215dbd2c4abfc1" category="inline-link-rx"></block> .</block>
   <block id="d957d0c80017f235b131c557ae0876b1" category="section-title">Alertas gerados quando alta criptografia é detectada</block>
   <block id="8c8c1a747835015c86248b11a2097c02" category="paragraph">Com esta versão, você pode visualizar alertas quando alta criptografia for detectada em suas cargas de trabalho, mesmo sem grandes alterações na extensão do arquivo.  Este recurso, que usa a IA de proteção autônoma contra ransomware (ARP) do ONTAP , ajuda você a identificar cargas de trabalho que correm risco de ataques de ransomware.  Use este recurso e baixe a lista completa de arquivos afetados com ou sem alterações de extensão.</block>
   <block id="4fe331eaa4881ca37fd2ff947e6b8bec" category="doc">Relatórios de exercícios de prontidão</block>
@@ -74,11 +61,9 @@
   <block id="a95fe9e5a7b678fa4abc81ea69f1e257" category="list-text">Administrador de proteção contra ransomware</block>
   <block id="6a05decc7d63f19c1d5812a3c728ce8a" category="list-text">Visualizador de proteção contra ransomware</block>
   <block id="51871ed75f741b0dab90d2d1612f6499" category="inline-link">Acesso baseado em função de BlueXP ransomware protection aos recursos</block>
-  <block id="b42fe8f702412cfa14541d3fab58efa6" category="paragraph">Para obter detalhes sobre permissões, consulte<block ref="01046b99aab91b10679a0fac299864df" category="inline-link-rx"></block> .</block>
   <block id="25ccc48b022e2433d5b379cc51530139" category="section-title">Melhorias de pagamento</block>
   <block id="a3d54846581a4bb8314f87602a4ba2c0" category="paragraph">Esta versão inclui diversas melhorias no processo de pagamento.</block>
   <block id="7ffb0c59c068d14b0ee6581cde479463" category="inline-link">Configurar opções de licenciamento e pagamento</block>
-  <block id="52a7f2b6af87f28195cf6badbad6c667" category="paragraph">Para mais detalhes, consulte<block ref="a8b1ada7f83ee5659f868a512032628f" category="inline-link-rx"></block> .</block>
   <block id="f65bfe10577ea64b648eddd04f107545" category="doc">Suporte para Amazon FSx for NetApp ONTAP</block>
   <block id="24964ea0918b681c02283685b1da1438" category="paragraph">Esta versão oferece suporte ao Amazon FSx for NetApp ONTAP.  Este recurso ajuda você a proteger suas cargas de trabalho FSx para ONTAP com a BlueXP ransomware protection.</block>
   <block id="1e2a1ff777d742c50d6c64a6b6350f90" category="paragraph">O FSx for ONTAP é um serviço totalmente gerenciado que fornece o poder do armazenamento NetApp ONTAP na nuvem.  Ele fornece os mesmos recursos, desempenho e capacidades administrativas que você usa no local, com a agilidade e escalabilidade de um serviço nativo da AWS.</block>
@@ -88,18 +73,14 @@
   <block id="2e09d92e8822f80e9aac61fdb75fa3c8" category="admonition">Políticas de backup para uma carga de trabalho em execução no FSx para ONTAP não podem ser definidas no BlueXP.  Todas as políticas de backup existentes definidas no Amazon FSx for NetApp ONTAP permanecem inalteradas.</block>
   <block id="97c627f1fcd3a299ac19157a8f566694" category="list-text">Incidentes de alerta mostram o novo ambiente de trabalho do FSx para ONTAP .</block>
   <block id="1d40c591d842224b16a448bc26a6bfab" category="inline-link">Saiba mais sobre a BlueXP ransomware protection e ambientes de trabalho</block>
-  <block id="280931b406a1e00d83a4a8faa2e537a0" category="paragraph">Para mais detalhes, consulte<block ref="4517bbdfa51110822f93ef44df6a4f92" category="inline-link-rx"></block> .</block>
   <block id="08ceca9f9a853977a5c71c8c66b68b55" category="inline-link">Limitações da BlueXP ransomware protection</block>
-  <block id="eb745462fc54b055b8087d694fb01b5f" category="paragraph">Para obter informações sobre as opções suportadas, consulte o<block ref="875047b763859105fc2c6e622181cfbb" category="inline-link-rx"></block> .</block>
   <block id="1da5a40083bd16c3443e7eda42875506" category="section-title">Função de acesso BlueXP necessária</block>
   <block id="4dd9f1961ea018706909f1155d36c91a" category="paragraph">Agora você precisa de uma das seguintes funções de acesso para visualizar, descobrir ou gerenciar a BlueXP ransomware protection: administrador da organização, administrador de pasta ou projeto, administrador de proteção contra ransomware ou visualizador de proteção contra ransomware.</block>
-  <block id="0d46f65a7717513cadcb109363fb6c6d" category="paragraph"><block ref="06a5d1f4c488b014d10a11f3fe7273ba" category="inline-link-rx"></block> .</block>
   <block id="3c2a45fff6f8bee383d20bf70ff8535a" category="doc">Relatório de ambientes de trabalho não suportados na BlueXP ransomware protection</block>
   <block id="670b6a838a9eab9baafd717669b2bcc5" category="paragraph">Durante o fluxo de trabalho de descoberta, a BlueXP ransomware protection relata mais detalhes quando você passa o mouse sobre Cargas de trabalho suportadas ou não suportadas.  Isso ajudará você a entender por que algumas de suas cargas de trabalho não são descobertas pelo serviço de BlueXP ransomware protection .</block>
   <block id="960c5f3106f70ebe4000fa5d5121f60f" category="paragraph">Há muitos motivos pelos quais o serviço não oferece suporte a um ambiente de trabalho, por exemplo, a versão do ONTAP no seu ambiente de trabalho pode ser inferior à versão necessária.  Quando você passa o mouse sobre um ambiente de trabalho sem suporte, uma dica de ferramenta exibe o motivo.</block>
   <block id="e7aba228bdeba9407e415c5afb1137a2" category="paragraph">Você pode visualizar os ambientes de trabalho sem suporte durante a descoberta inicial, onde também pode baixar os resultados.  Você também pode visualizar os resultados da descoberta na opção *Descoberta de carga de trabalho* na página Configurações.</block>
   <block id="40ed4b70f990ecbd2b29cdd99fe63ea3" category="inline-link">Descubra cargas de trabalho na BlueXP ransomware protection</block>
-  <block id="61583743ac80f4ba16bec0d30aa9b643" category="paragraph">Para mais detalhes, consulte<block ref="fccc7436e00c13bc9cd8b09f936b4c8c" category="inline-link-rx"></block> .</block>
   <block id="07008bfe30be6fadcf287348a234142c" category="doc">Atualizações da página de destino</block>
   <block id="1f054df4aa4b46ec1a714386afb99b06" category="paragraph">Esta versão inclui atualizações na página inicial da BlueXP ransomware protection, o que facilita o início do teste gratuito e a descoberta.</block>
   <block id="473497e2f273f2b53065b2de9535b764" category="section-title">Atualizações de exercícios de prontidão</block>
@@ -111,32 +92,22 @@
   <block id="960c237c5456a08952ee4a0c6bc67ab9" category="paragraph">Você pode implantar a BlueXP classification em uma carga de trabalho de compartilhamento de arquivos a partir da BlueXP ransomware protection.  Na coluna *Exposição de privacidade*, selecione a opção *Identificar exposição*.  Se você ativou o serviço de classificação, esta ação identifica a exposição.  Caso contrário, com esta versão, uma caixa de diálogo apresenta a opção de implantar a BlueXP classification.  Selecione *Implantar* para ir para a página inicial do serviço de BlueXP classification , onde você pode implantar esse serviço.  C</block>
   <block id="55d5a81a565b7cb4265c8c73ecd4aa37" category="inline-link">Implantar a BlueXP classification na nuvem</block>
   <block id="6b0e91bb98e8a9394dda94307f3217d0" category="inline-link">Escaneie informações de identificação pessoal com a BlueXP classification</block>
-  <block id="1ebb3fd0e37e111d097f72f481a8495f" category="paragraph">Para mais detalhes, consulte<block ref="3daa2f037f0ac9e3dc92dfaca32cdfd8" category="inline-link-rx"></block> e para usar o serviço dentro da BlueXP ransomware protection, consulte<block ref="92298fee5b4e50be64de76505f153d1a" category="inline-link-rx"></block> .</block>
   <block id="90b6690e6ff7c4f6c224ce1794630ced" category="doc">Suporte de carga de trabalho SAN</block>
   <block id="bbc67024ab73d889ccf53c2243f12ec0" category="paragraph">Esta versão inclui suporte para cargas de trabalho SAN na BlueXP ransomware protection.  Agora você pode proteger cargas de trabalho SAN, além de cargas de trabalho NFS e CIFS.</block>
   <block id="1e4e512c953bb68c6492ac3e8c1ea138" category="inline-link-macro">Pré-requisitos de BlueXP ransomware protection</block>
-  <block id="b0be1d6aabf21f92b904023f7be7a58f" category="paragraph">Para mais informações, consulte <block ref="33be8222deb74c9ad42f0bbaa1bb9ee8" category="inline-link-macro-rx"></block> .</block>
   <block id="e155741c288e2488f325db0165488b59" category="section-title">Proteção aprimorada da carga de trabalho</block>
   <block id="9bd93ada9b2fbfbf189c8da933c74698" category="paragraph">Esta versão melhora o processo de configuração para cargas de trabalho com políticas de snapshot e backup de outras ferramentas da NetApp , como SnapCenter ou BlueXP backup and recovery.  Em versões anteriores, a BlueXP ransomware protection descobria as políticas de outras ferramentas, permitindo apenas que você alterasse a política de detecção.  Com esta versão, agora você pode substituir políticas de snapshot e backup por políticas de BlueXP ransomware protection ou continuar a usar as políticas de outras ferramentas.</block>
   <block id="bf4011ddd9ae5a6521f75843972999ab" category="inline-link-macro">Proteja as cargas de trabalho</block>
-  <block id="e987acfdc962b0eb42352c6d8ec215e7" category="paragraph">Para mais detalhes, consulte<block ref="dbda711c6a230fdddbe71a22c957db68" category="inline-link-macro-rx"></block> .</block>
   <block id="a67ce68ccac082ad54a552bdbcb6ecd7" category="section-title">Notificações por e-mail</block>
   <block id="2e56c79ddae096c75542884a58378a73" category="paragraph">Se a BlueXP ransomware protection detectar um possível ataque, uma notificação aparecerá nas Notificações do BlueXP e um e-mail será enviado para o endereço de e-mail que você configurou.</block>
   <block id="bc3b495f0e6ccbb6814f27f401bf0cfd" category="paragraph">O e-mail inclui informações sobre a gravidade, a carga de trabalho impactada e um link para o alerta na guia *Alertas* da BlueXP ransomware protection .</block>
   <block id="a10971f24efc7a9c00402bf3e28fa1f0" category="paragraph">Se você configurou um sistema de gerenciamento de segurança e eventos (SIEM) na BlueXP ransomware protection, o serviço envia detalhes de alerta para seu sistema SIEM.</block>
   <block id="62addb7514a50d7194a434db543d1e3f" category="inline-link-macro">Lidar com alertas de ransomware detectados</block>
-  <block id="473c570ea2acf44ac968aff271fe6ce8" category="paragraph">Para mais detalhes, consulte<block ref="8a71d50b7ca933f633225cea05d9764f" category="inline-link-macro-rx"></block> .</block>
   <block id="3662750346c2942117b5e1492f2bdcd4" category="paragraph">Esta versão inclui aprimoramentos e melhorias gerais.</block>
   <block id="c6fdca864c59429ff2c0a1e35c775ae4" category="doc">A BlueXP ransomware protection agora é NetApp Ransomware Resilience</block>
-  <block id="b1243a3724853addea33e0cf141fe5df" category="paragraph">A replicação do ransomware BlueXP foi renomeada para NetApp Ransomware Resilience.</block>
   <block id="bc2fe31b1e2682a9a79513d792e9c721" category="section-title">BlueXP agora é NetApp Console</block>
-  <block id="745be0d280d894f70c3f88e76f519456" category="paragraph">O BlueXP foi renomeado e redesenhado para refletir melhor seu papel no gerenciamento de sua infraestrutura de dados.</block>
   <block id="7e4f7c37590688c797d9b40e3a3423e3" category="paragraph">O NetApp Console fornece gerenciamento centralizado de serviços de armazenamento e dados em ambientes locais e na nuvem em nível empresarial, fornecendo insights em tempo real, fluxos de trabalho mais rápidos e administração simplificada.</block>
   <block id="2ef9d641d45afe99b74ad6f9a9f797ad" category="inline-link">Notas de versão do NetApp Console</block>
-  <block id="9d88b780dd182bc558e5dd7624d35838" category="paragraph">Para obter detalhes sobre o que mudou, consulte o<block ref="857ac87b6d807bceb0af9d0ff774da69" category="inline-link-rx"></block> .</block>
-  <block id="3278d01b12f302fee3970d06e2035613" category="section-title">Proteção contra violação de dados</block>
-  <block id="0b7fbe71416aae576f3f9b80f0b8ce2b" category="section-title">SIEM</block>
-  <block id="80ed787d3b87a1d4d3e2c407d908a538" category="section-title">Limpar ambiente de restauração</block>
   <block id="dac562783f47866b5833397fa3343ac7" category="summary">O Ransomware Resilience permite que você visualize informações relevantes sobre segurança cibernética e avalie o quão resiliente sua organização é a um ataque cibernético.  Ele também fornece uma lista de alertas e etapas de correção para tornar seus dados mais seguros.</block>
   <block id="e1303fde203d17c93a36144831175152" category="doc">Saiba mais sobre a resiliência do NetApp Ransomware</block>
   <block id="841f32df73c3e26168caae171cbe303e" category="paragraph">Ataques de ransomware podem bloquear o acesso aos seus dados e os invasores podem pedir resgate em troca da liberação de dados ou descriptografia.  De acordo com o IDC, não é incomum que vítimas de ransomware sofram múltiplos ataques de ransomware.  O ataque pode interromper o acesso aos seus dados por um dia ou várias semanas.</block>
@@ -181,14 +152,12 @@
   <block id="6e9aa43e61b748fc94327a81b1b6fe77" category="paragraph">Com o Ransomware Resilience, você pode usar diferentes planos de licenciamento, incluindo um teste gratuito, uma assinatura paga conforme o uso ou trazer sua própria licença.</block>
   <block id="c69a0cc5cf253fb4b33607ed2eb36b95" category="paragraph">O Ransomware Resilience requer uma licença NetApp ONTAP One.</block>
   <block id="d202839716b3b53cff2ead368389b10d" category="paragraph">A licença do Ransomware Resilience não inclui produtos NetApp adicionais.  O Ransomware Resilience pode usar o Backup and Recovery mesmo que você não tenha uma licença para ele.</block>
-  <block id="73f0ec31cc113d977a13333c0c1f036e" category="paragraph">Para detectar comportamento anômalo do usuário, o Ransomware Resilience usa o NetApp Autonomous Ransomware Protection, um modelo de aprendizado de máquina (ML) dentro do ONTAP que detecta atividades de arquivos maliciosos.  Este modelo está incluído na licença Ransomware Resilience.  Você também pode usar o Data Infrastructure Insights (antigo Cloud Insights) Workload Security (licença necessária) para investigar o comportamento do usuário e bloquear usuários específicos de atividades futuras.</block>
   <block id="e907b41f5f3d7332bee5a43fbbf78a08" category="inline-link-macro">Configurar licenciamento</block>
   <block id="a32a4ff09bd226323b3477bc70b5effe" category="paragraph">Para obter detalhes, consulte <block ref="92c4728cc5c0729bcbef66420d0a7a81" category="inline-link-macro-rx"></block> .</block>
   <block id="3c031b939f6ec312ee601d021e7a6644" category="section-title">Console NetApp</block>
   <block id="ddf52fb0677b5f9f1c4b564b82866d6e" category="paragraph">O Ransomware Resilience pode ser acessado por meio do NetApp Console.</block>
   <block id="0a0979a6d279475a420ea5c279943daa" category="paragraph">O NetApp Console fornece gerenciamento centralizado de serviços de armazenamento e dados da NetApp em ambientes locais e na nuvem em nível empresarial. O Console é necessário para acessar e usar os serviços de dados do NetApp . Como uma interface de gerenciamento, ele permite que você gerencie muitos recursos de armazenamento a partir de uma única interface. Os administradores do console podem controlar o acesso ao armazenamento e aos serviços de todos os sistemas da empresa.</block>
   <block id="874065797510ef71853078d085cab4b0" category="paragraph">Você não precisa de uma licença ou assinatura para começar a usar o NetApp Console e só incorrerá em cobranças quando precisar implantar agentes do Console na sua nuvem para garantir a conectividade com seus sistemas de armazenamento ou serviços de dados do NetApp . No entanto, alguns serviços de dados da NetApp acessíveis pelo Console são licenciados ou baseados em assinatura.</block>
-  <block id="e955295a860e893d00951c8233972d56" category="paragraph">Saiba mais sobre o<block ref="2f3134b8970d60226f00e362a8c05c8c" category="inline-link-macro-rx"></block> .</block>
   <block id="cbd914c846d96d6001aec3ae8b50e684" category="section-title">Como funciona a resiliência do ransomware</block>
   <block id="16091f015c891dfa25a4cfd6d5a0d84b" category="paragraph">O Ransomware Resilience usa o NetApp Backup and Recovery para descobrir e definir políticas de backup e snapshot para cargas de trabalho de compartilhamento de arquivos, e o SnapCenter ou SnapCenter for VMware para descobrir e definir políticas de backup e snapshot para cargas de trabalho de aplicativos e VMs.  Além disso, o Ransomware Resilience usa o Backup and Recovery e o SnapCenter / SnapCenter for VMware para executar uma recuperação consistente de arquivos e cargas de trabalho.</block>
   <block id="22923429041036f2b1f3e35fddeb9626" category="inline-image-macro">Diagrama mostrando a arquitetura de resiliência do Ransomware</block>
@@ -203,14 +172,12 @@
   <block id="533c17bbfdfb297420db9af0908070d6" category="inline-link">Proteção Autônoma contra Ransomware</block>
   <block id="cc6088539286339733631d73fb51774b" category="inline-link">Backup e recuperação da NetApp</block>
   <block id="2dd00507ca85eec8a3465506e478e45f" category="inline-link">Política ONTAP</block>
-  <block id="ea810e8f72c32896fe57ade788c4184d" category="list-text">Descobre o nível de proteção atual de cada volume de cópias de snapshots e políticas de backup do NetApp , bem como quaisquer recursos de detecção on-box.  O Ransomware Resilience então associa essa postura de proteção às cargas de trabalho usando backup e recuperação, serviços ONTAP e tecnologias NetApp , como Autonomous Ransomware Protection (ARP ou ARP/AI, dependendo da sua versão do ONTAP ), FPolicy, políticas de backup e políticas de snapshot.  Saiba mais sobre<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="inline-link-rx"></block> ,<block ref="aaf2a3df38766015514b59ac43bcb586" category="inline-link-rx"></block> , e<block ref="591ebe16737e602cc342b68e859c040e" category="inline-link-rx"></block> .</block>
   <block id="d8b67a8dae92158ddb9e71a66b9532b5" category="list-text">Atribui uma prioridade empresarial a cada carga de trabalho com base em níveis de proteção descobertos automaticamente e recomenda políticas de proteção para cargas de trabalho com base em sua prioridade empresarial.  A prioridade da carga de trabalho é baseada nas frequências de snapshot já aplicadas a cada volume associado à carga de trabalho.</block>
   <block id="f23d5c00c473a2e87ffcd7a0eedb89b5" category="cell">*PROTEGER*</block>
   <block id="63b3247f9021fefc99163e7f1ccaa624" category="list-text">Monitora ativamente as cargas de trabalho e orquestra o uso de APIs de backup e recuperação, SnapCenter e ONTAP aplicando políticas a cada uma das cargas de trabalho identificadas.</block>
   <block id="bd86dbcbafa7a7406429c16dcbb97e30" category="cell">*DETECTAR*</block>
   <block id="f90af1ae1e0fb166621b4480576b55ac" category="list-text">Detecta ataques potenciais com um modelo integrado de aprendizado de máquina (ML) que detecta criptografia e atividades potencialmente anômalas.</block>
   <block id="643c690d78252033cbf74c266292ae07" category="list-text">Fornece detecção de camada dupla que começa com a detecção de potenciais ataques de ransomware no armazenamento primário e responde a atividades anormais fazendo cópias instantâneas automatizadas adicionais para criar os pontos de restauração de dados mais próximos.  A resiliência ao ransomware oferece a capacidade de investigar mais profundamente para identificar ataques potenciais com maior precisão, sem afetar o desempenho das cargas de trabalho primárias.</block>
-  <block id="ac64db364514f2a7d2e2512b16ef8c10" category="list-text">Determina os arquivos suspeitos específicos e mapeia os ataques às cargas de trabalho associadas, usando as tecnologias ONTAP, Autonomous Ransomware Protection (ARP ou ARP/AI, dependendo da sua versão do ONTAP ), Data Infrastructure Insights (antigo Cloud Insights), Workload Security e FPolicy.</block>
   <block id="14b17e6824f78ccf342b387a603935dc" category="cell">*RESPONDER*</block>
   <block id="4dd88eaac510fe3eb4a3ed59e5f8d753" category="list-text">Exibe dados relevantes, como atividade de arquivo, atividade do usuário e entropia, para ajudar você a concluir análises forenses sobre o ataque.</block>
   <block id="b1d747ad7060df692913a3b8e839735e" category="list-text">Inicia cópias rápidas de snapshot usando tecnologias e produtos da NetApp , como ONTAP, Autonomous Ransomware Protection (ARP ou ARP/AI, dependendo da versão do ONTAP ) e FPolicy.</block>
@@ -250,7 +217,6 @@
   <block id="826a4e8d8facce6f785b2a404538e6cd" category="list-text">*Proteção*: Proteção na resiliência de ransomware significa garantir que instantâneos e backups imutáveis ocorram regularmente em um domínio de segurança diferente usando políticas de proteção.</block>
   <block id="42ef644e3571d83d6c2b5b7c17abfea0" category="list-text">*Carga de trabalho*: Uma carga de trabalho no Ransomware Resilience pode incluir bancos de dados MySQL ou Oracle, armazenamentos de dados VMware ou compartilhamentos de arquivos.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Avisos legais</block>
-  <block id="0080a1b91c571236176a9d16859b4093" category="paragraph">&lt;&lt;&lt;&lt;&lt;&lt;&lt; CABEÇALHO --- permalink: legal-notices.html barra lateral: barra lateral palavras-chave: resumo: ---</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">Avisos legais fornecem acesso a declarações de direitos autorais, marcas registradas, patentes e muito mais.</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">Direitos autorais</block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
@@ -269,14 +235,6 @@
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">Código aberto</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">Os arquivos de aviso fornecem informações sobre direitos autorais e licenças de terceiros usados no software NetApp .</block>
   <block id="4fd101b562f1e5e8d87ff8710122a42f" category="inline-link">Aviso para o NetApp Console</block>
-  <block id="389273cce6176eeeeb0c3c61db63595e" category="list-text"><block ref="389273cce6176eeeeb0c3c61db63595e" category="inline-link-rx"></block></block>
-  <block id="0503f648f264e03973d858519c5645e3" category="paragraph">permalink: legal-notices.html sidebar: sidebar keywords: # sem palavras-chave summary: # sem resumo --- = Avisos legais :icons: font :imagesdir: ./media/</block>
-  <block id="26335ef71abb633fb4351c34bd3d5c68" category="paragraph">== Direitos autorais</block>
-  <block id="3a16909193ae41178e97e7890fbc8ed8" category="paragraph">== Marcas Registradas</block>
-  <block id="5eadb3942d60401e61b17afe2945c8ec" category="paragraph">== Patentes</block>
-  <block id="21ebf89fd5efbb8ea8cc990ae1e664a8" category="paragraph">== Política de privacidade</block>
-  <block id="398f6c2ec25405896bb6e5eb3cc6a40c" category="paragraph">== Código aberto</block>
-  <block id="655c5b0cb0d419f3b94869410fe9b65d" category="paragraph">&gt;&gt;&gt;&gt;&gt;&gt;&gt; db096cfa4bc2bcbc1a7a0fefc9249c9cbef4831b</block>
   <block id="6890b4587dca6f7e9bc67d8336265387" category="summary">Limitações conhecidas identificam plataformas, dispositivos ou funções que não são suportados por esta versão do produto.</block>
   <block id="8be06d01ec24eec813979494ed1cda13" category="doc">Limitações conhecidas do NetApp Ransomware Resilience</block>
   <block id="1eba71d64e6c5e410e558530711e835b" category="paragraph">Limitações conhecidas identificam plataformas, dispositivos ou funções que não são suportados por esta versão do produto ou que não interoperam corretamente com ele. Revise essas limitações cuidadosamente.</block>
@@ -292,7 +250,6 @@
   <block id="db7664bf605b3c359f584db725113965" category="list-text">*Administrador de resiliência contra ransomware*: gerencie ações nas guias Proteger, Alertas, Recuperar, Configurações e Relatórios.</block>
   <block id="0f8a9a76c246899cc20804694dde0c5d" category="list-text">*Visualizador de resiliência contra ransomware*: visualize dados de carga de trabalho do NetApp , visualize dados de alerta, baixe dados de recuperação e baixe relatórios.</block>
   <block id="6451a60ec696fdaf149fd3ab5d73d11b" category="inline-link">a documentação de configuração e administração</block>
-  <block id="45ab6b9c166a4207093a2eb48282b565" category="paragraph">Essas funções são adicionais às funções da plataforma do Console que controlam o acesso ao serviço do Console e outros serviços, como proteção de dados, gerenciamento de carga de trabalho e assim por diante.  Para obter detalhes sobre todas as funções da plataforma Console, consulte<block ref="a819bfa65579b8a535b1cc1d51294b9a" category="inline-link-rx"></block> .</block>
   <block id="dac305684bf34329491ffc1845204f2f" category="paragraph">A tabela a seguir indica as ações que cada função de resiliência ao ransomware pode executar.</block>
   <block id="4420e7353184ac575b539cdce1b991db" category="cell">Recurso e ação</block>
   <block id="913c14919cea84283a7e5c825e227099" category="cell">Administrador de resiliência de ransomware</block>
@@ -375,7 +332,6 @@
   <block id="27a22ff8cea8c84583985661c68afc5b" category="list-text">Na página inicial, selecione *Começar descobrindo cargas de trabalho*.</block>
   <block id="5a73bf8837c9a23f81b6df3efef9dee3" category="paragraph">O Ransomware Resilience encontra sistemas suportados e não suportados. Este processo pode levar alguns minutos.</block>
   <block id="18eb5242d6e5ac768698e677b047a0eb" category="inline-image-macro">Captura de tela das cargas de trabalho de descoberta</block>
-  <block id="4c7b7f129d904ef9645325e6106a26cc" category="paragraph"><block ref="4c7b7f129d904ef9645325e6106a26cc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="aa38c459f1855c79933ef88c2500bd20" category="list-text">Para descobrir cargas de trabalho para um agente de Console específico, selecione *Selecionar sistemas* ao lado do agente de Console onde você deseja descobrir cargas de trabalho.</block>
   <block id="b5df43021af6103a6e0b208280b7bd9c" category="list-text">Selecione os sistemas nos quais você deseja descobrir cargas de trabalho.</block>
   <block id="6717014f0e48b7ab08c9846925b42c93" category="list-text">Selecione *Descobrir*.</block>
@@ -412,11 +368,9 @@
   <block id="6005f026524d06181f334b21b2065ed2" category="paragraph">Para começar a usar o Ransomware Resilience, selecione "Começar a descobrir cargas de trabalho" na página inicial.</block>
   <block id="1e7767a5a92c1fe8661fb5ca93eb9f1d" category="paragraph">*O Ransomware Resilience está disponível nos modos padrão, restrito e privado?*  No momento, o Ransomware Resilience está disponível apenas no modo padrão. Fique ligado para mais informações.</block>
   <block id="2a9ab4f690bade887dade42f4a0f412b" category="inline-link">Modos de implantação do NetApp Console</block>
-  <block id="7c2ba948d08393c5e74226cfa98efaac" category="paragraph">Para obter uma explicação sobre esses modos em todos os serviços de dados da NetApp , consulte<block ref="63e8b0eaab89868588f59e14953b3639" category="inline-link-rx"></block> .</block>
   <block id="bf733d8a933c1601697f364223fc7ecb" category="section-title">Acesso</block>
   <block id="0389f2f5f1721e770a9d2ab683ca7977" category="inline-link"><block ref="0389f2f5f1721e770a9d2ab683ca7977" category="inline-link-rx"></block></block>
   <block id="80823d272731427177a1b6fda024e288" category="paragraph">*Qual é o URL de resiliência do Ransomware?*  Em um navegador, digite<block ref="cff0023c0123fb15c39d2328d8b2d3fc" category="inline-link-rx"></block> para acessar o Console.</block>
-  <block id="c1a3f50352e065d54ee7d8cdfb850882" category="paragraph">*Como as permissões de acesso são gerenciadas?* <block ref="023c149345237db657f3369e134bb648" category="inline-link-rx"></block> .</block>
   <block id="b42592f8261e9ff60424591d38d3eb26" category="paragraph">*Qual é a melhor resolução do dispositivo?* A resolução de dispositivo recomendada para o Ransomware Resilience é 1920x1080 ou melhor.</block>
   <block id="dd1300bf782048f9b65c3f6db4f6c668" category="paragraph">*Qual navegador devo usar?* Qualquer navegador moderno.</block>
   <block id="cf49c80b52a1cb095928d387f3ae47ed" category="section-title">Interação com outros serviços</block>
@@ -470,7 +424,6 @@
   <block id="8c4e51cf0af97fc084c32c7697ac400c" category="doc">Configurar licenciamento para NetApp Ransomware Resilience</block>
   <block id="9472cf1130b90417862c1aa4710f22a7" category="paragraph">Com o NetApp Ransomware Resilience, você pode usar diferentes planos de licenciamento.</block>
   <block id="bf82f97d170b8b28711b0f6354af9b31" category="inline-link">Saiba mais sobre as funções de acesso do Console</block>
-  <block id="05b1d47701e8b4d56880b293549ce52d" category="paragraph">Para executar esta tarefa, você precisa da função de administrador da organização, pasta ou projeto.<block ref="6e57fbfd388833860b3da5e6249fe4b7" category="inline-link-rx"></block> .</block>
   <block id="f53f2f881ada2816fc6ddea06cdcfc60" category="paragraph">*Tipos de licença* Você pode usar os seguintes tipos de licença:</block>
   <block id="b5bf014c6bc530be1a7b68b5bcfb8ce0" category="list-text">Compre uma assinatura pré-paga (PAYGO) com o Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace ou Azure Marketplace.</block>
   <block id="13bd4b8763a0912ae1342d2303d91929" category="list-text">Traga sua própria licença (BYOL), que é um arquivo de licença NetApp (NLF) que você obtém do seu representante de vendas NetApp . Você pode usar o número de série da licença para ativar o BYOL no Console.</block>
@@ -482,9 +435,6 @@
   <block id="231fd9de718f42c1c9e89368821092dd" category="section-title">Outras licenças</block>
   <block id="f5b76d2b545a3d3806e510148858010e" category="paragraph">A licença do Ransomware Resilience não inclui produtos NetApp adicionais.  O Ransomware Resilience pode usar o NetApp Backup and Recovery mesmo que você não tenha uma licença para ele.</block>
   <block id="1f39796076513bca42919b255963cd5a" category="admonition">Se você tiver o Backup and Recovery e o Ransomware Resilience, quaisquer dados comuns protegidos por ambos os produtos serão cobrados somente pelo Ransomware Resilience.</block>
-  <block id="9655cd831b69781db448703e74b15bf4" category="inline-link">Sobre a segurança da carga de trabalho</block>
-  <block id="fa125da5741dc5a19e264aef35401bcb" category="paragraph">Você pode visualizar o comportamento anômalo do usuário com o Data Infrastructure Insights Workload Security.  Isso requer uma licença para o Data Infrastructure Insights Workload Security e que você a habilite no Ransomware Resilience.  Para uma visão geral da segurança da carga de trabalho do Data Infrastructure Insights, revise<block ref="4d48aa780e6eb7eaea8fb83a518d416e" category="inline-link-rx"></block></block>
-  <block id="7a6a81dec600ff4c95b14341ae3dbe72" category="admonition">Se você não tiver uma licença para o Data Infrastructure Insights Workload Security e não a habilitar no Ransomware Resilience, não verá as informações de comportamento anômalo do usuário.</block>
   <block id="b22e0a0c145eff4bd34bc6c46894b2a1" category="section-title">Experimente usando um teste gratuito de 30 dias</block>
   <block id="50de852d5302d938fcee7f3cfc39b286" category="paragraph">Você pode testar o Ransomware Resilience usando um teste gratuito de 30 dias.  Você deve ser um administrador da Organização do Console para iniciar o teste gratuito.</block>
   <block id="6d82276368a10a436380f0cd7fa6094d" category="admonition">Com o lançamento de outubro de 2024, novas implantações do Ransomware Resilience agora têm 30 dias para um teste gratuito.  Anteriormente, o Ransomware Resilience oferecia 90 dias de teste gratuito.  Se você já estiver no teste gratuito de 90 dias, a oferta continuará por 90 dias.</block>
@@ -498,7 +448,6 @@
   <block id="04f45bf7defd11ead0b4c56cf8c3f371" category="paragraph">Se esta for a primeira vez que você faz login neste serviço, a página de destino será exibida.</block>
   <block id="771e1ea643a8723d0d0dfad6c2b70ace" category="list-text">Se você ainda não adicionou um Conector para outros serviços, adicione um.</block>
   <block id="91e534d044a3d9c6a1c8575f89e73c9b" category="inline-link">Saiba mais sobre os agentes do Console</block>
-  <block id="9b7bf35ae667c8a62a18b2a57d0f5ad5" category="paragraph">Para adicionar um agente de console, consulte<block ref="be47360914e9c5a32b9a06216cb3cec0" category="inline-link-rx"></block> .</block>
   <block id="ce56f7856e3d6cb0eb9ff3ddabe5ec4e" category="list-text">Depois de configurar um agente do Console, na página inicial do Ransomware Resilience, o botão para adicionar um agente do Console muda para um botão para descobrir cargas de trabalho.  Selecione *Começar descobrindo cargas de trabalho*.</block>
   <block id="7fd2f910bce182f3bed45cb0ffe3f2b7" category="list-text">Para revisar as informações do teste gratuito, selecione a opção suspensa no canto superior direito.</block>
   <block id="07b00cce8ecdc9955eb27940a652e625" category="paragraph">*Após o término do teste, obtenha uma assinatura ou licença*</block>
@@ -525,8 +474,6 @@
   <block id="44c74befbf9a8104854254c21263bbd0" category="list-text">Para visualizar os detalhes da licença, na navegação à esquerda do Console, selecione *Administração* &gt; *Licenças e assinaturas*.</block>
   <block id="6ba03f72ccb23acc2e71d13b30e6a6f3" category="list-text">Para ver informações sobre a assinatura, selecione *Assinaturas*.</block>
   <block id="3a868051eb374227c279870a3cc58719" category="list-text">Para ver as licenças BYOL, selecione *Licenças de serviços de dados*.</block>
-  <block id="9a65fe28aee5e79da80cf7b670bbf845" category="inline-image-macro">Captura de tela de licenças e assinaturas.</block>
-  <block id="c9a1b36a3d7295bb774d394a91331a8d" category="paragraph"><block ref="c9a1b36a3d7295bb774d394a91331a8d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8adff2f26375eb179957be3c61e39745" category="list-text">Retornar para Resiliência ao Ransomware.  Na navegação à esquerda do Console, selecione *Proteção* &gt; *Resiliência a Ransomware*.</block>
   <block id="7da94fa3a3cc4b3fe6962013cab0ecaf" category="paragraph">Aparece uma mensagem indicando que uma licença foi adicionada.</block>
   <block id="a3f3caf1f21e89003b986e3ef2b149b5" category="section-title">Assine pelo Microsoft Azure Marketplace</block>
@@ -539,8 +486,6 @@
   <block id="f9ca59d62f864762707ec7396c7bec8f" category="list-text">Para adicionar a licença, selecione *Adicionar uma licença*.</block>
   <block id="31f0ec06befce2fa59918555f827acdc" category="list-text">Na página Adicionar licença, selecione *Inserir número de série* e insira o número de série do e-mail enviado a você.  Selecione *Adicionar licença*.</block>
   <block id="1058553f8171df049b8935cab0519ace" category="list-text">Para visualizar detalhes da licença em Licenças e assinaturas, na navegação à esquerda do Console, selecione *Governança* &gt; *Licenças e assinaturas*.</block>
-  <block id="fb59b51c4b0830f49e7df2339986a8e9" category="inline-image-macro">Página de licenças de serviços de dados</block>
-  <block id="047a48f2469ef9dbfb603eb5c047580e" category="paragraph"><block ref="047a48f2469ef9dbfb603eb5c047580e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b54fef669a3dd891bbb1292944320668" category="section-title">Assine pelo Google Cloud Platform Marketplace</block>
   <block id="bbb5bca13abd7924e4f249e451c252fa" category="paragraph">Este procedimento fornece uma visão geral de alto nível de como assinar diretamente no Google Cloud Platform Marketplace.</block>
   <block id="6092dfc2ab59fe88a7052d23882f3e4e" category="list-text">Em Resiliência contra Ransomware, faça um dos seguintes:</block>
@@ -548,14 +493,10 @@
   <block id="5c3698ea65552f4add16b79dbc6e3563" category="paragraph"><block ref="5c3698ea65552f4add16b79dbc6e3563" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d29d0373cd79b8e898203557819f515e" category="list-text">Na página Métodos de pagamento, selecione *Assinar* no Google Cloud Platform Marketplace*.</block>
   <block id="4513e0585e6fa1797f2c21b150a14a89" category="list-text">No Google Cloud Platform Marketplace, selecione *Inscrever-se*.</block>
-  <block id="1ca038f0798cb452c995e7b9a6957e9d" category="inline-image-macro">Captura de tela da página de assinatura do Google Cloud Marketplace.</block>
-  <block id="38b55ff6112da2fc8b321312fe4eb623" category="list-text">Use o Google Cloud Platform Marketplace para assinar o * NetApp Intelligent Services* e o *Ransomware Resilience*.<block ref="611449b1c956c30c39b3ffa39734a4fd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7eb46820d8d57e1dbbb0322d388620fa" category="admonition">Um e-mail será enviado a você, incluindo o número de série do Ransomware Resilience e indicando que o Ransomware Resilience está inscrito no Google Cloud Platform Marketplace.</block>
   <block id="f6a18df1400e3f59a5ba133e5e88e983" category="list-text">Para adicionar a licença ao Console, selecione *Adicionar licença*.</block>
   <block id="7ad0f4d023f7d12f7cbc1107ffb5c974" category="list-text">Na página Adicionar licença, selecione *Inserir número de série*.  Digite o número de série no e-mail enviado a você.  Selecione *Adicionar licença*.</block>
   <block id="70b492d526ebd38b6067d6b13f47e05d" category="list-text">Para visualizar os detalhes da licença, na navegação à esquerda do Console, selecione *Governança* &gt; *Licenças e assinaturas*.</block>
-  <block id="e399aad2dcb884a0beed4b591b3b3113" category="inline-image-macro">Captura de tela da página de licenças e assinaturas.</block>
-  <block id="e6c87f64fae229a765e72a537c2263ac" category="paragraph"><block ref="e6c87f64fae229a765e72a537c2263ac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c584f4f2a6193ac47ece196c84d506a1" category="section-title">Traga sua própria licença (BYOL)</block>
   <block id="aa9286231698026ae96b307527fd356a" category="paragraph">Se você quiser trazer sua própria licença (BYOL), precisará comprá-la, obter o arquivo de licença NetApp (NLF) e adicionar a licença ao Console.</block>
   <block id="0e8893a2f7be43632f2754bbf039be22" category="paragraph">*Adicione seu arquivo de licença ao Console*</block>
@@ -568,7 +509,6 @@
   <block id="7578ebad24c71aee2f2992e5efe1118d" category="list-text">Na página Adicionar licença, insira o número de série e as informações da conta do site de suporte da NetApp .</block>
   <block id="8e74888372203fd2a7ad3d3f9a2ce99f" category="list-text">Se você tiver o número de série da licença do Console e souber sua conta NSS, selecione a opção *Inserir número de série* e insira essas informações.</block>
   <block id="bd9c93cee386ed91aa5dc8049039c809" category="inline-link">adicione a conta NSS ao Console</block>
-  <block id="ea18041abd1beb4ff7a6df5a5c3ccbde" category="paragraph">Se sua conta do site de suporte da NetApp não estiver disponível na lista suspensa,<block ref="3a20367982569f79544d495d907bb688" category="inline-link-rx"></block> .</block>
   <block id="6c97916a5fa1223aabab3311cd2248cb" category="list-text">Se você tiver o arquivo de licença zvondolr (necessário quando instalado em um site escuro), selecione a opção *Carregar arquivo de licença* e siga as instruções para anexar o arquivo.</block>
   <block id="c8508c0ce4da6dc634b7c66b1df15681" category="list-text">Selecione *Adicionar licença*.</block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">Resultado</block>
@@ -576,7 +516,6 @@
   <block id="21bf9743a52bd2db1233b7ee25a2d642" category="section-title">Atualize sua licença do Console quando ela expirar</block>
   <block id="8e6a66f8a152c3f757cf862881b72782" category="paragraph">Se o prazo da sua licença estiver próximo da data de expiração ou se a capacidade da sua licença estiver atingindo o limite, você será notificado na interface do usuário do Ransomware Resilience.  Você pode atualizar sua licença do Ransomware Resilience antes que ela expire para que não haja interrupção na sua capacidade de acessar seus dados digitalizados.</block>
   <block id="018d963f1c49025140a70dac3b430a19" category="inline-link">Configurações de notificação</block>
-  <block id="dbd64e0569772a28a8c4f1007ecca466" category="admonition">Esta mensagem também aparece em Licenças e assinaturas e em<block ref="2b5663584cddb87d65a5b5b52cc7627a" category="inline-link-rx"></block> .</block>
   <block id="bf817abc839636c237e9679a5b237f47" category="list-text">Você pode enviar um e-mail ao suporte para solicitar uma atualização da sua licença.</block>
   <block id="153d23d2fc1cd1fafa2626b2ebad671d" category="paragraph">Depois que você paga pela licença e ela é registrada no site de suporte da NetApp , o Console atualiza a licença automaticamente.  A página Licenças de Serviços de Dados refletirá a alteração em 5 a 10 minutos.</block>
   <block id="6c1f5db8cc1f713f620fa21a318cf1bc" category="list-text">Se o Console não puder atualizar a licença automaticamente, você precisará carregar manualmente o arquivo de licença.</block>
@@ -611,7 +550,6 @@
   <block id="d0e83b4dfc8809d4d0f31e184c6f9ebb" category="summary">Comece a usar o NetApp Ransomware Resilience verificando o suporte ao seu ambiente, acesso à rede, login e navegador da web.</block>
   <block id="fd2baaaf591d18081f2e012015874835" category="doc">Pré-requisitos de resiliência do NetApp Ransomware</block>
   <block id="24c096a4eee14bf4c04d2cbdd4effd54" category="paragraph">Comece a usar o NetApp Ransomware Resilience verificando a prontidão do seu ambiente operacional, login, acesso à rede e navegador da web.</block>
-  <block id="c756218170e3cc38ab2c166a85079fb3" category="paragraph">Para usar o Ransomware Resilience, você precisará dos pré-requisitos.</block>
   <block id="5bf25f6ec08ec736c7b9b49cc19c6dd7" category="section-title">No console NetApp</block>
   <block id="e315520b8d0944e7422c773e49fc17a7" category="list-text">Uma conta de usuário do NetApp Console com privilégios de administrador da organização para descobrir recursos.</block>
   <block id="60e39582e4cf8359d140fc0851baccb4" category="list-text">Uma organização do Console com pelo menos um agente do Console ativo conectando-se a clusters ONTAP locais ou ao Cloud Volumes ONTAP na AWS ou no Azure.</block>
@@ -622,7 +560,6 @@
   <block id="097ff3efa4909e783a040ec7edc317d6" category="list-text">Se seus clusters ONTAP locais ou Cloud Volumes ONTAP na AWS ou na nuvem do Azure ainda não estiverem integrados no Console, você precisará de um agente do Console.</block>
   <block id="04f679e072129c7e87e077dc95e5e73e" category="inline-link">Aprenda a configurar um agente de console</block>
   <block id="b1fb1d531493b1af3ab2980b2c579a5f" category="inline-link">requisitos padrão do console</block>
-  <block id="523bb6d387ec2575337e99a2f8900c66" category="paragraph">Consulte<block ref="84b9869a31cbdd37d8ef87601a4cf34d" category="inline-link-rx"></block> e<block ref="e6a35e3eadbd084db13ee929315e54c1" category="inline-link-rx"></block> .</block>
   <block id="f9a3157f34101a0d560e518291db02ba" category="admonition">Se você tiver vários agentes do Console em uma única organização do Console, o Ransomware Resilience verificará os recursos do ONTAP em todos os agentes do Console além daquele que está selecionado no momento na IU do Console.</block>
   <block id="2501cbb4187a9a6c7f42f035596578a4" category="section-title">No ONTAP 9.11.1 e posterior</block>
   <block id="f89c934c898fc55d4773d10ee90d485e" category="list-text">Uma licença ONTAP One é habilitada na instância ONTAP local.</block>
@@ -630,13 +567,11 @@
   <block id="852e40f75680d314fce781dad2f346b6" category="list-text">Uma licença para o NetApp Autonomous Ransomware Protection, usada pelo Ransomware Resilience, habilitada na instância ONTAP local, dependendo da versão do ONTAP que você está usando. Consulte<block ref="9a25fd5e356132f930267232d70ad02b" category="inline-link-rx"></block> .</block>
   <block id="fff65a3ba54f3c29c9a0b5b04f6bb1c6" category="admonition">A versão geral do Ransomware Resilience, diferentemente da versão de visualização, inclui uma licença para a tecnologia NetApp Autonomous Ransomware Protection. Consulte<block ref="9a25fd5e356132f930267232d70ad02b" category="inline-link-rx"></block> para mais detalhes.</block>
   <block id="d5d09e7741370854c28c983cfbae51eb" category="inline-link-macro">Saiba mais sobre resiliência ao ransomware</block>
-  <block id="fa8d9f62bf5347b6ec5ee61c2fa52d9d" category="paragraph">Para mais detalhes sobre licenciamento, consulte<block ref="4fc06c7fff4c531b33f29909e65f04e8" category="inline-link-macro-rx"></block> .</block>
   <block id="47c8d077dd25d3b0a8650ef6f84f0820" category="list-text">Para aplicar configurações de proteção (como habilitar a Proteção Autônoma contra Ransomware e outras), o Ransomware Resilience precisa de permissões de administrador no cluster ONTAP .  O cluster ONTAP deveria ter sido integrado usando apenas credenciais de usuário administrador do cluster ONTAP .</block>
   <block id="d6b16e754b93934f7687ad4f252b7073" category="list-text">Se o cluster ONTAP já estiver integrado no Console usando credenciais de usuário não administrador, as permissões do usuário não administrador deverão ser atualizadas com as permissões necessárias por meio de login no cluster ONTAP , conforme descrito nesta página.</block>
   <block id="ed5ce0cb12bbc7e366d04460145d59f3" category="section-title">Para backups de dados</block>
   <block id="0885a21123eeb2ad2e03289064c229ea" category="list-text">Uma conta no NetApp StorageGRID, AWS S3, Azure Blob ou Google Cloud Platform para destinos de backup e as permissões de acesso definidas.</block>
   <block id="d2e3e802d3f25894bd170688859d6cef" category="inline-link">Lista de permissões AWS, Azure ou S3</block>
-  <block id="ac4fdc4198bc2cc800bf5c56ef9956c6" category="paragraph">Consulte o<block ref="bd599500598cefd5a0de11f99f2bd899" category="inline-link-rx"></block> para mais detalhes.</block>
   <block id="583833d6f0468c713c410ea158e1b6f6" category="list-text">O NetApp Backup and Recovery não precisa ser habilitado no sistema.</block>
   <block id="fb197ee87a0f850dc3b7bb98fe408518" category="inline-link-macro">Configurar definições</block>
   <block id="35743d3ea81079f21301876eeaf2d70d" category="paragraph">O Ransomware Resilience ajuda a configurar um destino de backup por meio da opção Configurações. Ver <block ref="522f9942d2238ef69c22ece6b9af5205" category="inline-link-macro-rx"></block> .</block>
@@ -696,19 +631,14 @@
   <block id="d02855464632ec3aa398adb76c19c69b" category="section-title">Prepare a AWS para se tornar um destino de backup</block>
   <block id="73f857511565e44fc318a38ffaa390e5" category="list-text">Crie uma conta na AWS.</block>
   <block id="d2c0c7feb18d0e89bab9d23b6ec4c042" category="inline-link">Permissões da AWS</block>
-  <block id="0814739606d03bc7e10284dbb6f3fdc4" category="list-text">Configurar<block ref="2b636c3b1feeda1c45ce7fca9c5b9c8a" category="inline-link-rx"></block> na AWS.</block>
   <block id="a4f513306c1a0ead14679ffb7c282460" category="inline-link">Gerencie seus buckets do Amazon S3</block>
-  <block id="3da540b8eb983a8f0d1bb22f76d7314d" category="paragraph">Para obter detalhes sobre como gerenciar seu armazenamento AWS no Console, consulte<block ref="5be5bab5f9ba1aab743272074a8ba20d" category="inline-link-rx"></block> .</block>
   <block id="1838c493149bcc86ae16284d5e7b6f0a" category="section-title">Prepare o Azure para se tornar um destino de backup</block>
   <block id="a3458aa9685290fbb32b9d46167373e3" category="list-text">Crie uma conta no Azure.</block>
   <block id="bf689424a4d3a62d9c0d40a07107c3d2" category="inline-link">Permissões do Azure</block>
-  <block id="9967bc7f2c0e9107fb116b4b7db3daf3" category="list-text">Configurar<block ref="a4ccfab03efb30bca23e6e14e7d04f69" category="inline-link-rx"></block> no Azure.</block>
   <block id="e54f696c13e53f1f1c0731dbdadf9344" category="inline-link">Gerencie suas contas de armazenamento do Azure</block>
-  <block id="81af474b9e582b079317550c59904a5c" category="paragraph">Para obter detalhes sobre como gerenciar seu armazenamento do Azure no Console, consulte<block ref="d5fb5f2072dcbae3b3a252726c6e52ee" category="inline-link-rx"></block> .</block>
   <block id="579bbbe19178943961516e908ae34547" category="section-title">Configurar o NetApp Console</block>
   <block id="21df6901481064f7fe748f8c9b54e5bf" category="paragraph">O próximo passo é configurar o Console e a Resiliência contra Ransomware.</block>
   <block id="730868e3ca25e786b50d451f3c01ff41" category="inline-link">Requisitos do console para o modo padrão</block>
-  <block id="0b4c29be287e0cdeca2f720c6a778e6a" category="paragraph">Análise<block ref="c6fdbe8da98bad9f343ecda46d5d2e35" category="inline-link-rx"></block> .</block>
   <block id="f3aee30a3a487c746572616e3f53dc9d" category="section-title">Criar um agente de console</block>
   <block id="f192ab1e136d39869db171a801d087d3" category="paragraph">Entre em contato com seu representante de vendas da NetApp para experimentar ou usar este serviço.  Então, quando você usar o agente do Console, ele incluirá os recursos apropriados para Resiliência de Ransomware.</block>
   <block id="039a0f51fabaf695c33b745ebbd147bf" category="inline-link">como criar um agente de console</block>
@@ -762,8 +692,6 @@
   <block id="bf6725ca3f9665491e02c1818a34d256" category="inline-image-macro">Página de incidente mostrando o alerta de treinamento de prontidão</block>
   <block id="b0e402efbf054d8b9cab93c3c4e53922" category="paragraph"><block ref="b0e402efbf054d8b9cab93c3c4e53922" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dba36383db70a071d84d9ad78273ce43" category="paragraph">Aqui estão algumas coisas que você deve procurar:</block>
-  <block id="7a01e31bb54fb84b5dbc9ee51947a45b" category="list-text">Observe o tipo de ataque potencial.</block>
-  <block id="7d8343c0bc6249f96b5c9e2c1d4f8d8f" category="paragraph">Se o Tipo indicar que um usuário é suspeito de atividade maliciosa, revise o nome do usuário.  Talvez você queira investigar mais o usuário em Segurança de carga de trabalho do Data Infrastructure Insights selecionando *Investigar em segurança de carga de trabalho*.</block>
   <block id="c7243cc109c65ad504b84c3e805c784c" category="list-text">Observe a atividade do arquivo e os processos suspeitos:</block>
   <block id="fdb29353d86a86580fc253dc319e3e0b" category="list-text">Observe os dados detectados recebidos em comparação com os dados esperados.</block>
   <block id="929c013ec98095ed1024dac131501e30" category="list-text">Observe a taxa de criação de arquivos detectada em comparação com a taxa esperada.</block>
@@ -791,7 +719,6 @@
   <block id="225c52e147dc652783f29cce5e5f1205" category="admonition">Para obter detalhes sobre o processo de restauração, consulte<block ref="2318031b9bf9fde86d3a7f04f24d9774" category="inline-link-macro-rx"></block> .</block>
   <block id="37eb9cec5c575b48f279378f147d9523" category="section-title">Alterar o status dos alertas após o exercício de prontidão</block>
   <block id="aa217641d7c21b459c5c614fba9e0b2c" category="paragraph">Após revisar o alerta do exercício de prontidão e restaurar a carga de trabalho, altere o status do alerta, se necessário.</block>
-  <block id="a31f470cdbee4ae009532a442df8d183" category="paragraph">*Função necessária no Console* Administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware.<block ref="7992c96a5f2c8fee073303952f21912e" category="inline-link-rx"></block> .</block>
   <block id="b707d985234424bd425b96580911950e" category="list-text">Selecione o alerta novamente.</block>
   <block id="2da9a9f4e6a92f5857d147337ae308f7" category="list-text">Indique o status selecionando *Editar status* e altere o status para um dos seguintes:</block>
   <block id="e0a30b860c06e610cadc21ebf64426da" category="list-text">Descartado: se você suspeitar que a atividade não é um ataque de ransomware, altere o status para Descartado.</block>
@@ -803,10 +730,8 @@
   <block id="50ca22b8d354f001a742f726d3cf2be9" category="inline-image-macro">Página de relatórios mostrando o relatório do exercício de prontidão</block>
   <block id="179e5ea4317177f519c688d15ef67987" category="paragraph"><block ref="179e5ea4317177f519c688d15ef67987" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e462715e9b155f4f9638da4f314c8aff" category="list-text">Selecione *Exercícios de prontidão* e *Baixar* para baixar o relatório do exercício de prontidão.</block>
-  <block id="7390b2d83dc624cc5e1b06a36664f354" category="summary">Se o Ransomware Resilience detectar um possível ataque, um alerta aparecerá no Ransomware Resilience Dashboard indicando um ataque em potencial.  Neste ponto, você deve analisar o risco potencial na aba Alertas de resiliência de ransomware.</block>
   <block id="1238309e873f300d76b90a5b0f3a20bc" category="doc">Lide com alertas de ransomware detectados com o NetApp Ransomware Resilience</block>
   <block id="5edf980bc8d23fb98c1f0d60dc6594f8" category="paragraph">Quando o NetApp Ransomware Resilience detecta um possível ataque, ele mostra um alerta no Painel e na área de Notificações.  O Ransomware Resilience tira um instantâneo imediatamente.  Revise o risco potencial na aba *Alertas* de resiliência contra ransomware.</block>
-  <block id="3f65c9b2f4efb46c9a3061aad0cfb789" category="paragraph">Se o Ransomware Resilience detectar um possível ataque, uma notificação será exibida nas configurações de Notificação do Console e um e-mail será enviado para o endereço configurado.  O e-mail inclui informações sobre a gravidade, a carga de trabalho impactada e um link para o alerta na guia *Alertas* de resiliência contra ransomware.</block>
   <block id="4c8cd66676ad1c434108e699d9777408" category="paragraph">Você pode descartar falsos positivos ou decidir recuperar seus dados imediatamente.</block>
   <block id="899157335f0c98105a8cbc92966ba06d" category="admonition">Se você ignorar o alerta, o Ransomware Resilience aprende esse comportamento, associa-o às operações normais e não inicia um alerta sobre ele novamente.</block>
   <block id="a8fd9e3988acb841854762788963d815" category="paragraph">Para começar a recuperar seus dados, marque o alerta como pronto para recuperação para que seu administrador de armazenamento possa iniciar o processo de recuperação.</block>
@@ -852,7 +777,6 @@
   <block id="14e7851a172a122d7528efff8567f8ba" category="paragraph">Quando o Ransomware Resilience detecta um ataque potencial, ele envia uma notificação por e-mail aos usuários inscritos com base em suas preferências de notificação de assinatura.  O e-mail contém informações sobre o alerta, incluindo a gravidade e os recursos afetados.</block>
   <block id="bf1a62bcb3143d1124cae262157745d7" category="paragraph">Você pode receber notificações por e-mail sobre alertas de resiliência de ransomware.  Esse recurso ajuda você a se manter informado sobre alertas, sua gravidade e recursos afetados.</block>
   <block id="def7f3eac7eed1dada5cdcd2951ede36" category="inline-link">Definir configurações de notificação por e-mail</block>
-  <block id="afe1e86b0fa28a987f6f134c9a552280" category="admonition">Para assinar notificações por e-mail, consulte<block ref="cc336e2e43ff14a29a8dbeb64864077d" category="inline-link-rx"></block> .</block>
   <block id="f2e19c6011cc550fb6503dafd26a8973" category="list-text">Em Ransomware Resilience, vá para a página *Configurações*.</block>
   <block id="ed6e52d47993626528f7c48bb20927cd" category="list-text">Em *Notificações*, localize as configurações de notificação por e-mail.</block>
   <block id="581a71037b750a62c75558dfea9bae72" category="list-text">Digite o endereço de e-mail onde você deseja receber alertas.</block>
@@ -864,16 +788,6 @@
   <block id="ebce9876dfa9cc6dfd0e7d91d6a4ff2e" category="list-text">Revise todos os incidentes em cada volume para cada alerta.</block>
   <block id="2f2494e8d44ad82e6788144197a32c92" category="list-text">Para revisar alertas adicionais, clique em *Alerta* no menu de navegação no canto superior esquerdo.</block>
   <block id="be962bd392a7a1672125ea27465c8bd8" category="section-title">Detecte atividades maliciosas e comportamento anômalo do usuário</block>
-  <block id="7d42d38bcca7f4814b27e3609908ff58" category="paragraph">Observando a aba Alertas, você pode identificar se há atividade maliciosa.</block>
-  <block id="ddc6c453c965c414db89d40920292b62" category="paragraph">*Que detalhes aparecem?*  Os detalhes que aparecem dependem de como o alerta foi acionado:</block>
-  <block id="bb74e4460d1a07bd08ea60f0fbde3d0d" category="list-text">Acionado pelo recurso de proteção autônoma contra ransomware no ONTAP.  Isso detecta atividades maliciosas com base no comportamento dos arquivos no volume.</block>
-  <block id="1ed25909fc5e9f5b7c67efcc94f74a40" category="list-text">Acionado pela segurança da carga de trabalho do Data Infrastructure Insights .  Isso requer uma licença para a segurança da carga de trabalho do Data Infrastructure Insights e que você a habilite no Ransomware Resilience.  Este recurso detecta comportamento anômalo do usuário em suas cargas de trabalho de armazenamento e permite que você bloqueie o acesso desse usuário.</block>
-  <block id="d46354394cfd30785be2630bf0effed9" category="paragraph">Para habilitar a segurança da carga de trabalho no Ransomware Resilience, acesse a página *Configurações* e selecione a opção *Conexão de segurança da carga de trabalho*.</block>
-  <block id="425da964d78a62f785936af67e3c687f" category="inline-link">Sobre a segurança da carga de trabalho</block>
-  <block id="fc16f99f8f194db3c5491ab6fef98d3c" category="paragraph">Para uma visão geral da segurança da carga de trabalho do Data Infrastructure Insights , revise<block ref="61a89dd403e895daaa4d98a27b91c870" category="inline-link-rx"></block> .</block>
-  <block id="32aa7a320b78cd5a31a8eafe61f97cff" category="admonition">Se você não tiver uma licença para a segurança da carga de trabalho da infraestrutura de dados e não a habilitar no Ransomware Resilience, não verá as informações de comportamento anômalo do usuário.</block>
-  <block id="b55691d31ec7a26db4320492b2d4f0ef" category="paragraph">Quando ocorre atividade maliciosa, um alerta é gerado e um instantâneo automatizado é tirado.</block>
-  <block id="82a8f74341493482b3be86033ea05272" category="section-title">Exibir somente a atividade maliciosa da Proteção Autônoma contra Ransomware</block>
   <block id="c0339a08bfb0fb26aa3ecea9980349b3" category="paragraph">Quando o Autonomous Ransomware Protection aciona um alerta no Ransomware Resilience, você pode visualizar os seguintes detalhes:</block>
   <block id="da00dfcf2d3126754537ccdf32df23fa" category="list-text">Entropia de dados recebidos</block>
   <block id="acbf3e1d9f15facfe81c7ba30574b98f" category="list-text">Taxa de criação esperada de novos arquivos em comparação com a taxa detectada</block>
@@ -887,23 +801,6 @@
   <block id="44dd4f71dc5510ad8843ca6c09b8fa4f" category="inline-image-macro">Página de incidentes de alerta</block>
   <block id="2d8d33f13c7be8900f62bd32b802c107" category="paragraph"><block ref="2d8d33f13c7be8900f62bd32b802c107" category="inline-image-macro-rx" type="image"></block></block>
   <block id="24d8050f046c3ac972fd95f26e1a8670" category="list-text">Selecione um incidente para revisar seus detalhes.</block>
-  <block id="bf33e88f89f8370f960763fdaf5e0753" category="section-title">Visualizar comportamento anômalo do usuário na segurança da carga de trabalho do Data Infrastructure Insights</block>
-  <block id="c6d4ab0957185259e92075ac39c872b3" category="paragraph">Quando a segurança da carga de trabalho do Data Infrastructure Insights aciona um alerta no Ransomware Resilience, você pode visualizar o usuário suspeito, bloqueá-lo e investigar a atividade do usuário diretamente na segurança da carga de trabalho do Data Infrastructure Insights .</block>
-  <block id="a7334e39028053feb63bc34743ead99e" category="admonition">Esses recursos são adicionais aos detalhes disponíveis apenas no Autonomous Ransomware Protection.</block>
-  <block id="7ccf296e63c11fa531348e73b8d3356b" category="paragraph">Esta opção requer uma licença para a segurança da carga de trabalho do Data Infrastructure Insights e que você a habilite no Ransomware Resilience.</block>
-  <block id="dd390c468721776e8e2e3295da87fc54" category="paragraph">Para habilitar a segurança da carga de trabalho no Ransomware Resilience, faça o seguinte:</block>
-  <block id="030c1747b7d1f2c3e2b71dae79effc97" category="list-text">Vá para a página *Configurações*.</block>
-  <block id="c768488528d7d7bfe2f90e65be8e41be" category="list-text">Selecione a opção *Conexão de segurança de carga de trabalho*.</block>
-  <block id="2144d8d2d65559386fd4ff03d918fa84" category="inline-link-macro">Configurar as definições de resiliência contra ransomware</block>
-  <block id="adae38d869f0f58f19f3b907638b7fa7" category="paragraph">Para obter detalhes, consulte <block ref="d6f3d9128d9793bc7af335a95f70845c" category="inline-link-macro-rx"></block> .</block>
-  <block id="f2060aa4e29a724bbbeb901bed1bb0cb" category="inline-image-macro">Captura de tela da página Alertas.</block>
-  <block id="4a5381623036863ca99bdeabf56d8591" category="paragraph"><block ref="4a5381623036863ca99bdeabf56d8591" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="06d7d087c2215fd6a1e66cfc52b8f7cc" category="list-text">Para bloquear o acesso futuro de um usuário suspeito ao seu ambiente monitorado pelo Console, selecione o link *Bloquear usuário*.</block>
-  <block id="90ddc51d9579b414c4c1b75c96bbb78c" category="list-text">Pesquise o alerta ou um incidente no alerta:</block>
-  <block id="65be46ab7235d388f0d005087a518abe" category="list-text">Para pesquisar mais sobre o alerta no Data Infrastructure Insights Workload security, selecione o link *Investigate in Workload security*.</block>
-  <block id="1e2dad9c643b4658fbeca6157edc3b46" category="paragraph">A segurança da carga de trabalho do Data Infrastructure Insights abre em uma nova guia.</block>
-  <block id="4958f48e49283250f6c050fab5e83329" category="inline-image-macro">Investigar em Segurança de Carga de Trabalho</block>
-  <block id="60f13f41d2139332e0ac8a56170baf29" category="paragraph">+<block ref="bd417dbccecc16c9b0d4a140c663f0be" category="inline-image-macro-rx" type="image"></block></block>
   <block id="705db8b34cf00efb73abf6403278e299" category="section-title">Marcar incidentes de ransomware como prontos para recuperação (após os incidentes serem neutralizados)</block>
   <block id="3950c317c3c61c1f422abb2e301a90ca" category="paragraph">Após interromper o ataque, notifique o administrador de armazenamento de que os dados estão prontos para que ele possa iniciar a recuperação.</block>
   <block id="a31e44b45b823ec61483db05b99be2cb" category="paragraph"><block ref="a31e44b45b823ec61483db05b99be2cb" category="inline-image-macro-rx" type="image"></block></block>
@@ -914,7 +811,6 @@
   <block id="6faff9d182a89c619b1ad36913af4fa5" category="list-text">Para iniciar a recuperação da carga de trabalho, selecione *Recuperar* carga de trabalho na mensagem ou selecione a guia *Recuperação*.</block>
   <block id="dbb2ae89216b8dfda3662d01ab32469f" category="paragraph">Depois que o alerta é marcado para restauração, ele é movido da guia Alertas para a guia Recuperação.</block>
   <block id="d3870301348c9947a819b7a9ed0c25df" category="section-title">Descartar incidentes que não sejam ataques potenciais</block>
-  <block id="0d65ccc6a323f2dc093c64fd9ee55da4" category="paragraph">Depois de analisar os incidentes, você precisa determinar se eles são ataques em potencial.  Caso a condição anterior não seja atendida, eles podem ser dispensados.</block>
   <block id="74583f536ee54b8803ab561a596f2bb9" category="paragraph">Você pode descartar falsos positivos ou decidir recuperar seus dados imediatamente.  Se você ignorar o alerta, o Ransomware Resilience aprende esse comportamento, associa-o às operações normais e não inicia um alerta sobre esse comportamento novamente.</block>
   <block id="5a5533258cfacee641d19f7f201b727f" category="paragraph">Se você descartar uma carga de trabalho, todas as cópias de instantâneos feitas automaticamente em resposta a um possível ataque de ransomware serão excluídas permanentemente.</block>
   <block id="e092b1515493abdb05e77ec47a53f36f" category="admonition">Se você descartar um alerta, não poderá alterar esse status de volta para nenhum outro e não poderá desfazer essa alteração.</block>
@@ -1002,7 +898,6 @@
   <block id="71f89a5dcbec59e77a93dd3d78946bec" category="cell">Atribua uma política a cada uma das cargas de trabalho. Consulte <block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block> .</block>
   <block id="7d88942a24d59d8cc9c016aa59861d89" category="cell">Registre o plugin SnapCenter disponível para VMware vSphere (SCV) com o Console</block>
   <block id="8b335c02365a669f37c5c422d345fe5a" category="cell">Uma carga de trabalho de VM não é protegida.</block>
-  <block id="3d633ea629c6ab6d6eb434edb9bad015" category="cell">Atribua proteção consistente de VM à carga de trabalho da VM habilitando o plug-in SnapCenter para VMware vSphere. Consulte <block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block> .</block>
   <block id="39b7962492ec1bd941ef06d01eb99cb3" category="cell">Registre o SnapCenter Server disponível com o Console</block>
   <block id="2ece652cbde6f187c5192710497e20cc" category="cell">Um aplicativo não está protegido.</block>
   <block id="9fbd0a5b8d780df80cfc32e0668ad4b0" category="cell">Atribua proteção consistente com o aplicativo à carga de trabalho habilitando o SnapCenter Server. Consulte <block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block> .</block>
@@ -1060,24 +955,15 @@
   <block id="e00e52239c81eaad00507b4b0b815570" category="doc">Procure informações de identificação pessoal com a Classificação de Dados da NetApp no ​​Ransomware Resilience</block>
   <block id="62fa4bfbc95859e20cfaa7150ab75d62" category="paragraph">No NetApp Ransomware Resilience, você pode usar o NetApp Data Classification para verificar e classificar os dados em uma carga de trabalho de compartilhamento de arquivos.  Classificar dados ajuda a determinar se o conjunto de dados inclui informações de identificação pessoal (PII), o que pode aumentar os riscos de segurança.  A Classificação de Dados é um componente central do Console e está disponível sem custo adicional.</block>
   <block id="604880f6f585767eee17ec85b3c76533" category="inline-link-macro">Classificação de Dados</block>
-  <block id="b1ac13d636b295fa5253c8be4ea15579" category="paragraph"><block ref="f7e902a157940c53f1fa96f735466848" category="inline-link-macro-rx"></block>utiliza processamento de linguagem natural orientado por IA para análise e categorização de dados contextuais, fornecendo insights acionáveis sobre seus dados para atender aos requisitos de conformidade, detectar vulnerabilidades de segurança, otimizar custos e acelerar a migração.</block>
   <block id="d3b14d365ca3277402fce2839d562f60" category="admonition">Esse processo pode impactar a importância da carga de trabalho para ajudar a garantir que você tenha a proteção adequada.</block>
   <block id="aeb066b15e66f67bbfa9db1332465422" category="section-title">Identifique a exposição à privacidade com a Classificação de Dados</block>
   <block id="ba2c5a24730716f70a2b315220375de6" category="inline-link-macro">para permitir que a Classificação de Dados escaneie seus dados</block>
-  <block id="c4a2c9c37dfc55638c5862690a438c1b" category="paragraph">Antes de usar a Classificação de Dados na Resiliência do Ransomware, você precisa<block ref="6428fc353392960c74d457dc41d133c9" category="inline-link-macro-rx"></block> .</block>
   <block id="ee34749052b0d62bf351eb75d25107b1" category="paragraph">Você pode implantar a Classificação de Dados na página Proteção do Ransomware Resilience.  Siga o procedimento para identificar a exposição de privacidade.  Ao selecionar **Identificar exposição**, caso você ainda não tenha implantado a Classificação de Dados, uma caixa de diálogo permitirá que você habilite a Classificação de Dados.</block>
-  <block id="0451f7707c46dd33b749bd6b57b8d8af" category="inline-image-macro">Captura de tela da classificação de implantação</block>
-  <block id="2fd4a53a83327d94c29541ca7368df16" category="paragraph"><block ref="2fd4a53a83327d94c29541ca7368df16" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9ed086de7334074ba1b8a57d92fad8c8" category="paragraph">Para mais informações sobre Classificação de Dados, consulte:</block>
   <block id="06e283ee316863d38f0fea16ba5785cc" category="inline-link">Aprenda sobre Classificação de Dados</block>
-  <block id="8d0f16717bfcc56762a35deea51833e7" category="list-text"><block ref="8d0f16717bfcc56762a35deea51833e7" category="inline-link-rx"></block></block>
   <block id="93f515959ce6187b986c42fa6959168b" category="inline-link">Categorias de dados privados</block>
-  <block id="d66481d703fafde739dabfd3c44d96bc" category="list-text"><block ref="d66481d703fafde739dabfd3c44d96bc" category="inline-link-rx"></block></block>
   <block id="499dd7659f4fa7b600ca3796c449e41b" category="inline-link">Investigue os dados armazenados em sua organização</block>
-  <block id="08e880effe206106422b9043908d11e9" category="list-text"><block ref="08e880effe206106422b9043908d11e9" category="inline-link-rx"></block></block>
   <block id="b4b23bfb09d955d9adbd34e9b10730b7" category="inline-link-macro">Classificação de Dados implantada</block>
-  <block id="719c2142fad29f202c8cacbbb719bc1a" category="paragraph">A varredura de dados PII no Ransomware Resilience está disponível se você tiver<block ref="67eef6272e818890405ebda54ee542a4" category="inline-link-macro-rx"></block> .  A Classificação de Dados está disponível como parte do Console sem custo adicional e pode ser implantada no local ou na nuvem do cliente.</block>
-  <block id="663ac07d57edbdc8429ed3a69b1eabd7" category="list-text">No menu Resiliência contra Ransomware, selecione *Proteção*.</block>
   <block id="22da148f02a4f9df3c95fa55ebe1f0e4" category="list-text">Na página Proteção, localize uma carga de trabalho de compartilhamento de arquivos na coluna Carga de trabalho.</block>
   <block id="ae026bf5e2ca5066c55b7b1740de800e" category="inline-image-macro">Página de proteção mostrando a coluna Exposição de privacidade</block>
   <block id="9dedf1958376570fec810d3b47c2d3ec" category="paragraph"><block ref="9dedf1958376570fec810d3b47c2d3ec" category="inline-image-macro-rx" type="image"></block></block>
@@ -1121,13 +1007,11 @@
   <block id="7bf3a8af65d2a153b44dafcf248f1df7" category="paragraph">Você pode proteger cargas de trabalho contra ataques de ransomware habilitando a proteção consistente da carga de trabalho ou criando estratégias de proteção contra ransomware no NetApp Ransomware Resilience.</block>
   <block id="9d76fd8cddbcb128567856bd698d409e" category="section-title">Entenda as estratégias de proteção contra ransomware</block>
   <block id="88a4ad08ed31669f06a098dea0a14a38" category="paragraph">As estratégias de proteção contra ransomware abrangem políticas de _detecção_ e _proteção_.</block>
-  <block id="2488d8d558f933e2679b4f8a47bfe679" category="list-text">**Políticas de detecção** detectam ameaças de ransomware e, opcionalmente, bloqueiam extensões de arquivo suspeitas.</block>
   <block id="b5728c1f0d5859e4bf3e89712b5ddbdf" category="list-text">**Políticas de proteção** incluem políticas de snapshot e backup.  Políticas de detecção e snapshot são necessárias em uma estratégia de proteção.  As políticas de backup são opcionais.</block>
   <block id="7646c296ea1b221cbb826893afaa224e" category="paragraph">Se você estiver usando outros produtos da NetApp para proteger sua carga de trabalho, o Ransomware Resilience os descobre e oferece a opção de:</block>
   <block id="0e468f869572effeac4af4bbea21ed06" category="list-text">use uma política de detecção de ransomware e continue a usar as políticas de snapshot e backup criadas por outras ferramentas da NetApp ou</block>
   <block id="47751183709636889e320f1a849dd584" category="list-text">use o Ransomware Resilience para gerenciar detecção, snapshots e backups.</block>
   <block id="299dad2dd448d97ac3577bbf54e62bae" category="inline-link-macro">compartilhamentos de arquivos em grupo</block>
-  <block id="fa3c8bf55340369ad7a673c1a81366a7" category="admonition">Para melhor gerenciamento e proteção do seu patrimônio de dados, você pode criar<block ref="4a4ad3a4077a5a0070d8c24000f1c0b5" category="inline-link-macro-rx"></block> para proteger coletivamente volumes sob uma estratégia.</block>
   <block id="be96aa820e4d4c79150a1ea86f47ceb0" category="section-title">Políticas de proteção com outros serviços gerenciados pela NetApp</block>
   <block id="7d94fa5c52f4b044d2cd78e42e11247c" category="paragraph">Além da Resiliência contra Ransomware, os seguintes serviços podem ser usados para gerenciar a proteção:</block>
   <block id="58c4a0b8427aedffed15f507a82a122c" category="list-text">NetApp Backup and Recovery para compartilhamentos de arquivos, compartilhamentos de arquivos de VM</block>
@@ -1176,7 +1060,6 @@
   <block id="1adc4b459e7f50d96280424fb7e06709" category="list-text">*Importante*: Cópias instantâneas tiradas menos de 1 por hora, mas mais de 1 por dia</block>
   <block id="e12f58d91eed1a4a160b184cc1b10ebf" category="list-text">*Padrão*: Cópias instantâneas tiradas mais de 1 por dia</block>
   <block id="48102e7d0a568223836c2d653abd58e5" category="paragraph">*Políticas de detecção predefinidas* [[predefinidas]]</block>
-  <block id="a1653f5fa80d50eb6a294a38ac7954b3" category="paragraph">Você pode escolher uma das seguintes políticas predefinidas de Resiliência contra Ransomware, que estão alinhadas com a importância da carga de trabalho:</block>
   <block id="a2c5d5541ff19f8df63922963356ec16" category="cell">Nível de política</block>
   <block id="d4e2713d1b1725a1592f9268589f990d" category="cell">Instantâneo</block>
   <block id="7cf395303ce3665a9834721d4b748e4b" category="cell">Freqüência</block>
@@ -1214,16 +1097,13 @@
   <block id="6baa335c463f583028e58b3acfd45211" category="paragraph">Depois de habilitar a proteção consistente com a carga de trabalho, você pode gerenciar estratégias de proteção no Ransomware Resilience.  A estratégia de proteção inclui políticas de snapshot e backup gerenciadas em outro lugar, juntamente com uma política de detecção de ransomware gerenciada no Ransomware Resilience.</block>
   <block id="261346f7d903c80fe95c3eed4c9b6f97" category="paragraph">Para saber mais sobre como registrar o SnapCenter ou o SnapCenter Plug-in for VMware vSphere usando Backup e Recuperação, consulte as seguintes informações:</block>
   <block id="9b210cd0fa0a7fe3694561f1949c72e3" category="inline-link">Registrar o software SnapCenter Server</block>
-  <block id="68b1fa75b928bc442b23193dc7306ea7" category="list-text"><block ref="68b1fa75b928bc442b23193dc7306ea7" category="inline-link-rx"></block></block>
   <block id="8f2653c5938080ffdd57904f850bc430" category="inline-link">Registrar o SnapCenter Plug-in for VMware vSphere</block>
-  <block id="10199b17546f423c831ed4ec01ea41f8" category="list-text"><block ref="10199b17546f423c831ed4ec01ea41f8" category="inline-link-rx"></block></block>
   <block id="1ec4d515745aff456d744786e699ea82" category="list-text">No menu Resiliência contra Ransomware, selecione *Painel*.</block>
   <block id="37253b6a1f32230b01d647f42b9b6e8f" category="list-text">No painel Recomendações, localize uma das seguintes recomendações e selecione *Revisar e corrigir*:</block>
   <block id="0bde9546f6d4c2d3b942bb4c05094c32" category="list-text">Registre o SnapCenter Server disponível com o NetApp Console</block>
   <block id="854f384d16b1aa3f59795b8cd8a7ea92" category="list-text">Registre o SnapCenter Plug-in for VMware vSphere (SCV) com o NetApp Console</block>
   <block id="8256db449d783061334b6804f98bc901" category="list-text">Siga as informações para registrar o SnapCenter ou o SnapCenter Plug-in for VMware vSphere usando o Backup and Recovery.</block>
   <block id="5a43fd978fdfbe5150cdd067263fac36" category="list-text">Retornar para Resiliência ao Ransomware.</block>
-  <block id="f35a5ceb6fdd098fb4c184a9cb0dbad8" category="list-text">No Ransomware Resilience, navegue até o Painel e inicie o processo de descoberta novamente.</block>
   <block id="02d5d22b5f67beb8b5279408d426e93c" category="list-text">Em Ransomware Resilience, selecione *Proteção* para visualizar a página Proteção.</block>
   <block id="cebfa4409b0603554b2d559a348328f3" category="list-text">Revise os detalhes na coluna de políticas de snapshot e backup na página Proteção para ver se as políticas são gerenciadas em outro lugar.</block>
   <block id="5a0562438e5d5b94d2b1f72b243b05b6" category="paragraph">Existem três abordagens para adicionar uma estratégia de proteção contra ransomware:</block>
@@ -1234,15 +1114,12 @@
   <block id="a49a95f9a293b47d316bebea16d14e29" category="list-text">*Crie uma política de detecção para cargas de trabalho com políticas de snapshot e backup existentes gerenciadas em outros produtos ou serviços da NetApp .*</block>
   <block id="b7caa7f3615aea01fd626561bb13bda1" category="paragraph">A política de detecção não altera as políticas gerenciadas em outros produtos.</block>
   <block id="f05ea9e0c9ccffc58a546b5b7a0d8608" category="inline-link-macro">Backup e Recuperação</block>
-  <block id="be936599d419d4d591b706064be8cf37" category="paragraph">A política de detecção habilita a Proteção Autônoma contra Ransomware e a proteção FPolicy se elas já estiverem ativadas em outros serviços.  Saiba mais sobre<block ref="1b5ca5e6db0400e20efef2d18e2ed058" category="inline-link-macro-rx"></block> ,<block ref="53d98b1a557d813c796ac677354e7984" category="inline-link-macro-rx"></block> , e<block ref="e579faf0a14efb59aa4bfe357406413f" category="inline-link-macro-rx"></block> .</block>
   <block id="1b49dfb35b7ec360208537cc7e5a9d62" category="section-title">Crie uma estratégia de proteção contra ransomware (se você não tiver políticas de snapshot ou backup)</block>
   <block id="7161176fcf3200a6f1029cbb10969d7b" category="paragraph">Se não houver políticas de snapshot ou backup na carga de trabalho, você poderá criar uma estratégia de proteção contra ransomware, que pode incluir as seguintes políticas criadas no Ransomware Resilience:</block>
   <block id="f23b77237fe3a13c45d11aeb7e85a8cb" category="list-title">Etapas para criar uma estratégia de proteção contra ransomware [[etapas]]</block>
   <block id="5d6ce0940be901e67c0f14481e54ccc9" category="inline-image-macro">Gerenciar página de estratégia</block>
   <block id="a46946c5eab68e6301fa937c5e483bd2" category="paragraph"><block ref="a46946c5eab68e6301fa937c5e483bd2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2112d0c55db08c310d0929ecb4524b74" category="list-text">Na página Proteção, selecione uma carga de trabalho e depois *Proteger*.</block>
-  <block id="1c00777a5fc73931b43c8deab8cfa46e" category="inline-image-macro">Gerenciar estratégias</block>
-  <block id="b07425e7c170f9c6cb82e8d2de7d35a7" category="paragraph"><block ref="b07425e7c170f9c6cb82e8d2de7d35a7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="197c283a01f19c77a4081693cf2ef5bf" category="list-text">Na página Estratégias de proteção contra ransomware, selecione *Adicionar*.</block>
   <block id="a5be5d648ce22c25337cedcc760abd3c" category="inline-image-macro">Adicionar página de estratégia mostrando a seção de instantâneo</block>
   <block id="3c47a09fd51a5bf078b6b75c88195ad8" category="paragraph"><block ref="3c47a09fd51a5bf078b6b75c88195ad8" category="inline-image-macro-rx" type="image"></block></block>
@@ -1276,7 +1153,6 @@
   <block id="5bf833f3ee3985c83ff4a2c137c2cdb9" category="list-text">O Ransomware Resilience detecta se há políticas ativas do SnapCenter ou de Backup e Recuperação.</block>
   <block id="0d7426ba5ec4042ac3383e7c8f81d565" category="list-text">Para deixar suas políticas existentes de Backup e Recuperação ou SnapCenter em vigor e aplicar apenas uma política de _detecção_, deixe a caixa **Substituir políticas existentes** desmarcada.</block>
   <block id="346ced422939f5220048eed80e512829" category="list-text">Para ver detalhes das políticas do SnapCenter , selecione a *Seta para baixo*.</block>
-  <block id="b358576fc12085fd0ff12deea2f027d9" category="paragraph">Selecione uma política de detecção e selecione **Proteger**.</block>
   <block id="24fae1821c4530c41f4af2d4f1f70175" category="list-text">Na página Proteção, revise o **Status de detecção** para confirmar se a detecção está Ativa.</block>
   <block id="783a386314b7dc75416c1abf94fcf70f" category="section-title">Substitua as políticas de backup ou snapshot existentes por uma estratégia de proteção contra ransomware</block>
   <block id="cc8bf7105e0bf7256578c2b5c24f9ebf" category="paragraph">Você pode substituir suas políticas existentes de backup ou snapshot por uma estratégia de proteção contra ransomware.  Essa abordagem remove sua proteção gerenciada externamente e configura a detecção e a proteção no Ransomware Resilience.</block>
@@ -1292,9 +1168,7 @@
   <block id="66ec3353b28340ad300fda396a4ba1f1" category="list-text">Na página Políticas, selecione a seta para baixo da política que você deseja atribuir para revisar os detalhes.</block>
   <block id="bb5447070c795a6e8d29fa9cd98a5127" category="list-text">Selecione a política que você deseja atribuir.</block>
   <block id="29864b11a88d292065fabaefa9c7fd21" category="list-text">Selecione *Proteger* para concluir a alteração.</block>
-  <block id="9ecdceb343294a7a296ceead052c3db6" category="section-title">Agrupe compartilhamentos de arquivos para proteção mais fácil</block>
   <block id="57f424e2ea0a409d7e6664f904a599fd" category="paragraph">Agrupar compartilhamentos de arquivos em um grupo de proteção facilita a proteção do seu patrimônio de dados.  A resiliência ao ransomware pode proteger todos os volumes de um grupo ao mesmo tempo, em vez de proteger cada volume separadamente.</block>
-  <block id="d141654ebee063c768e96358b16f0fc1" category="paragraph">Você pode criar grupos independentemente do status de proteção deles (ou seja, grupos que não são protegidos e grupos que são protegidos).  Quando você adiciona uma política de proteção a um grupo de proteção, a nova política de proteção substitui qualquer política existente, incluindo políticas gerenciadas pelo SnapCenter e NetApp Backup and Recovery.</block>
   <block id="c0083e031f0cf112f85b91ba1e7e9ede" category="list-text">Na página Proteção, selecione a aba *Grupos de proteção*.</block>
   <block id="eff1f461a10b29d3af110ea7c19ed170" category="inline-image-macro">Página de grupos de proteção</block>
   <block id="eafdfecbaead6d931ea739364927dcc6" category="paragraph"><block ref="eafdfecbaead6d931ea739364927dcc6" category="inline-image-macro-rx" type="image"></block></block>
@@ -1306,7 +1180,6 @@
   <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">Selecione *Avançar*.</block>
   <block id="f7ba12bb96df2ae9d69ffbf1bc2af6bb" category="inline-image-macro">Adicionar grupo de proteção - página Política</block>
   <block id="a739b6145911af1f850b745cae737475" category="paragraph"><block ref="a739b6145911af1f850b745cae737475" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d5fc4bf8c0e9a03cea6fbde26d8608f2" category="list-text">Selecione a política para controlar a proteção deste grupo.</block>
   <block id="0fc76de5572d1186f1358665dff6076f" category="list-text">Revise as seleções para o grupo de proteção.</block>
   <block id="eda3b9c0a863dbdeae5ac8cceaa9106b" category="section-title">Editar proteção de grupo</block>
   <block id="109a3a62d5a108a8bab007233de0c046" category="paragraph">Você pode alterar a política de detecção em um grupo existente.</block>
@@ -1333,7 +1206,6 @@
   <block id="b7c78f5e474c6b8d64bb9440e0c2207c" category="section-title">Veja cargas de trabalho protegidas por uma estratégia de proteção contra ransomware</block>
   <block id="74c3d5e9f3c5f4a3eb1732ac96ae76d8" category="paragraph">Antes de excluir uma estratégia de proteção contra ransomware, talvez você queira ver quais cargas de trabalho são protegidas por essa estratégia.</block>
   <block id="ce1be6d505f661c5110f1445e0bf19ba" category="paragraph">Você pode visualizar as cargas de trabalho na lista de estratégias ou quando estiver editando uma estratégia específica.</block>
-  <block id="295dd599e58bed61c814cf2cc588d597" category="list-title">Etapas para visualizar a lista de estratégias</block>
   <block id="90f081941b9ec4d54a22065d524e3c77" category="list-text">Na página Proteção, selecione *Gerenciar estratégias de proteção*.</block>
   <block id="5c5c4c2893639638b243a5ebcf096a91" category="paragraph">A página de estratégias de proteção contra ransomware exibe uma lista de estratégias.</block>
   <block id="b4591df76e4afaf6201f5ab62904e7c9" category="inline-image-macro">Tela de estratégias de proteção contra ransomware mostrando uma lista de estratégias</block>
@@ -1458,13 +1330,10 @@
   <block id="9e0c2bff29b02cc0054b8ebf63b422d9" category="list-text">No Painel ou em outra página, selecione *Atualizar*<block ref="94d384894f036157c348eadc55c40952" category="inline-image-macro-rx" type="image"></block> opção no canto superior direito para atualizar os dados que aparecerão nos relatórios.</block>
   <block id="4263eebb7cfbc2a50797df9b351df75d" category="list-text">No menu NetApp Ransomware Resilience, selecione *Relatórios*.</block>
   <block id="09121bb3cb936ab87dd837c1fd8da18a" category="list-text">Se você selecionou a opção *Relatórios*, selecione um dos nomes de arquivo pré-configurados e selecione *Baixar*.</block>
-  <block id="46107bedbdb80381c54e30f3e457799c" category="summary">Você pode configurar várias opções, incluindo um destino de backup, detecção de ameaças e conexão com o Data Infrastructure Insights Workload Security no Ransomware Resilience.</block>
   <block id="9aa6ed30a3e0d803a1b8b079e0b8d650" category="doc">Configurar as definições de proteção no NetApp Ransomware Resilience</block>
-  <block id="bf5b382ecbd03d433a3417b0380fe861" category="paragraph">Você pode configurar destinos de backup, enviar dados para um sistema externo de gerenciamento de segurança e eventos (SIEM), conduzir um exercício de prontidão para ataque, configurar a descoberta de carga de trabalho ou configurar a conexão com a segurança de carga de trabalho do Data Infrastructure Insights acessando a opção *Configurações*.</block>
   <block id="105c4d7cf6704d10a27fac5acd7333a3" category="paragraph">*O que você pode fazer na página Configurações?*  Na página Configurações, você pode fazer o seguinte:</block>
   <block id="2fdebc69dc6e7b0ee210d7c727cf37e2" category="list-text">Simule um ataque de ransomware realizando um exercício de prontidão e respondendo a um alerta simulado de ransomware. Para obter detalhes, consulte <block ref="764586bbfc596fce1f2309fe8b2a42c0" category="inline-link-macro-rx"></block> .</block>
   <block id="3fdd6341b0ef86488ae1a773932c96c7" category="list-text">Configurar descoberta de carga de trabalho.</block>
-  <block id="718603566d80257fc4d2cf4a1edeb8f6" category="list-text">Configure a conexão com a segurança da carga de trabalho do Data Infrastructure Insights para ver informações de usuários suspeitos em alertas de ransomware.</block>
   <block id="d9e0cef30d1fd79b64dd0675b6e2eb12" category="list-text">Adicione um destino de backup.</block>
   <block id="43360d747c31106b5dbf428088f9fabc" category="list-text">Conecte seu sistema de gerenciamento de segurança e eventos (SIEM) para análise e detecção de ameaças.  Habilitar a detecção de ameaças envia automaticamente dados ao seu SIEM para análise de ameaças.</block>
   <block id="f6de47008760d29836d5758a5a06bf0f" category="section-title">Acesse a página Configurações diretamente</block>
@@ -1484,21 +1353,6 @@
   <block id="4c624f22bdf5c52da245d3b038c2b92e" category="list-text">Marque os sistemas nos quais você deseja descobrir cargas de trabalho ou selecione a caixa na parte superior da tabela para descobrir cargas de trabalho em todos os ambientes de carga de trabalho descobertos.</block>
   <block id="9f9e31c32e5b1d13d9371a818f0a6ee0" category="list-text">Faça isso para outros sistemas, conforme necessário.</block>
   <block id="04abb68cc3e6cbd75c6183768d3cdb47" category="list-text">Selecione *Descobrir* para que o Ransomware Resilience descubra automaticamente novas cargas de trabalho no agente do Console selecionado.</block>
-  <block id="66dc88ca1b2441158c6c8bec79aa9ac4" category="section-title">Veja comportamento anômalo suspeito do usuário conectando-se à segurança da carga de trabalho do Data Infrastructure Insights</block>
-  <block id="77064f9b84747c04bb6a542e17d163a0" category="paragraph">Antes de poder visualizar detalhes de comportamento anômalo suspeito do usuário no Ransomware Resilience, você precisa configurar a conexão com o sistema de segurança do Data Infrastructure Insights Workload.</block>
-  <block id="60b02588d12ca7057fb1416dc0023ff3" category="section-title">Obtenha um token de acesso à API do sistema de segurança de carga de trabalho do Data Infrastructure Insights</block>
-  <block id="58816bcdfdf650ed5aa615e9d74f586b" category="paragraph">Obtenha um token de acesso à API do sistema de segurança de carga de trabalho do Data Infrastructure Insights .</block>
-  <block id="03ab4b9815985b09fd8c96f61bb7675d" category="list-text">Efetue login no sistema de segurança de carga de trabalho do Data Infrastructure Insights .</block>
-  <block id="5f46514efd9c0d916be8dfa15dc58a4e" category="list-text">Na navegação à esquerda, selecione *Admin* &gt; *Acesso à API*.</block>
-  <block id="099e2aab53eb91e59987566a9a47e5e4" category="inline-image-macro">Página de acesso à API no Data Infrastructure Insights Segurança da carga de trabalho</block>
-  <block id="f379db48be80c68939eeee91968afdc7" category="paragraph"><block ref="f379db48be80c68939eeee91968afdc7" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8543744750bddb60b868a587a9b14d45" category="list-text">Crie um token de acesso à API ou use um existente.</block>
-  <block id="d27c99a2328dca0de41632c1147c3a42" category="list-text">Copie o token de acesso da API.</block>
-  <block id="edc8e8eaf404c997fb116a7c6e37197c" category="section-title">Conecte-se ao Data Infrastructure Insights Segurança da carga de trabalho</block>
-  <block id="8006ffbef82948e2567dbd809f91e513" category="list-text">No menu Configurações de resiliência contra ransomware, localize o bloco *Conexão de segurança da carga de trabalho*.</block>
-  <block id="0f265823a78c858e83b858d5e6089fce" category="list-text">Selecione *Conectar*.</block>
-  <block id="94be154b89b2e226e39d03cfb0ee7428" category="list-text">Insira a URL para a interface de segurança da carga de trabalho da infraestrutura de dados.</block>
-  <block id="7b8dea3ad80826211495f59e062f08d1" category="list-text">Insira o token de acesso da API que fornece acesso à segurança da carga de trabalho.</block>
   <block id="55483e3219b15f38112442f737a1bf92" category="section-title">Adicionar um destino de backup</block>
   <block id="ca0d9b702b5686b0dbe483b8b038b9d5" category="paragraph">O Ransomware Resilience pode identificar cargas de trabalho que ainda não têm backups e também cargas de trabalho que ainda não têm destinos de backup atribuídos.</block>
   <block id="dc0a4770af38e660c7408d8ac2fac395" category="paragraph">Para proteger essas cargas de trabalho, você deve adicionar um destino de backup.  Você pode escolher um dos seguintes destinos de backup:</block>
@@ -1532,7 +1386,6 @@
   <block id="b1e91f0a84f0f9305e8851a4b8f01997" category="list-text">Crie um novo bucket, selecione um bucket existente se já houver um no Console ou traga seu próprio bucket que armazenará os backups.</block>
   <block id="56a855406cbfda42b85a81324646467d" category="list-text">Conta AWS, região, chave de acesso e chave secreta para credenciais AWS</block>
   <block id="f89b96a4c56c3389696f1fe4baa3dcc4" category="inline-link">Se você quiser trazer seu próprio bucket, consulte Adicionar buckets S3</block>
-  <block id="bd5e02837b50534c6b4588c9b3eceae1" category="paragraph"><block ref="a12b2a18b29feb1a563c549f66066e91" category="inline-link-rx"></block> .</block>
   <block id="521a76639f63d09ed430c908a9a25e9c" category="list-text">*Criptografia*: Se você estiver criando um novo bucket S3, insira as informações da chave de criptografia fornecidas pelo provedor.  Se você escolher um bucket existente, as informações de criptografia já estarão disponíveis.</block>
   <block id="ce198ab47cdd40d8a6eec0815f6f77f0" category="paragraph">Os dados no bucket são criptografados com chaves gerenciadas pela AWS por padrão.  Você pode continuar usando chaves gerenciadas pela AWS ou pode gerenciar a criptografia dos seus dados usando suas próprias chaves.</block>
   <block id="f1a5ee5e2368f67503ffeb924c80006a" category="list-text">*Rede*: Escolha o espaço IP e se você usará um ponto de extremidade privado.</block>
@@ -1546,7 +1399,6 @@
   <block id="dc124b8a418fd7c870b3a36e771113d7" category="section-title">Adicionar o Google Cloud Platform como destino de backup</block>
   <block id="1fc66948429912c7b9127474aca26244" category="paragraph">Para configurar o Google Cloud Platform (GCP) como destino de backup, insira as seguintes informações.</block>
   <block id="89facd2099770d471c8de70fdb5d0651" category="inline-link">Opções de instalação do agente de console no Google Cloud</block>
-  <block id="f0c6905f1cc26d53c8d67cb60abe4027" category="paragraph">Para obter detalhes sobre como gerenciar seu armazenamento GCP no Console, consulte<block ref="58e8d8993b92de50787ab8b6311551f2" category="inline-link-rx"></block> .</block>
   <block id="67b81d6ff44f9fec33d0f8b0b6dd630d" category="paragraph"><block ref="67b81d6ff44f9fec33d0f8b0b6dd630d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9581f4ad188e6563d0593b866d14de7d" category="list-text">Selecione *Google Cloud Platform*.</block>
   <block id="bd1c2ba9cb21ab92548a9a2f4c58a9ca" category="list-text">Crie um novo bucket.  Digite a chave de acesso e a chave secreta.</block>
@@ -1557,12 +1409,10 @@
   <block id="d12d2643aef9b1e9c87feb8221ada2b4" category="section-title">Adicionar o Microsoft Azure como destino de backup</block>
   <block id="6aca8bb3d0f4710440538d2eeece0805" category="paragraph">Para configurar o Azure como um destino de backup, insira as seguintes informações.</block>
   <block id="e15fd4da82957060ab94e2cd7aeac3cc" category="inline-link">Gerencie suas credenciais do Azure e assinaturas do marketplace</block>
-  <block id="838b374c5bedecf07ca37bbc7ec946bb" category="paragraph">Para obter detalhes sobre como gerenciar suas credenciais do Azure e assinaturas do marketplace no Console, consulte<block ref="c3ab842969b8ae8c4524e5a064b95cd1" category="inline-link-rx"></block> .</block>
   <block id="2164db8f01d0c0a0dc250abc3b9556f5" category="list-text">Selecione *Azure*.</block>
   <block id="36e7cbe990b9e2387fc7c9ae5968cc95" category="list-text">Crie uma nova conta de armazenamento, selecione uma existente se já houver uma no Console ou traga sua própria conta de armazenamento que armazenará os backups.</block>
   <block id="105c6a0e171f35a3fcfd2d5e644de4e3" category="list-text">Assinatura, região e grupo de recursos do Azure para credenciais do Azure</block>
   <block id="594f3c4c0e3723497fdf8afb28b199a6" category="inline-link">Se você quiser trazer sua própria conta de armazenamento, consulte Adicionar contas de armazenamento de Blobs do Azure</block>
-  <block id="ddca7f5d1622ccfeb5b448f08ebd87ea" category="paragraph"><block ref="aebd37608efe8dd3e591c35533533820" category="inline-link-rx"></block> .</block>
   <block id="73133a52f65d7c4fca9b1303968611d3" category="list-text">*Criptografia*: Se você estiver criando uma nova conta de armazenamento, insira as informações da chave de criptografia fornecidas pelo provedor.  Se você escolheu uma conta existente, as informações de criptografia já estarão disponíveis.</block>
   <block id="aa78926ffa846539dcb2cc00c9c16981" category="paragraph">Os dados na conta são criptografados com chaves gerenciadas pela Microsoft por padrão.  Você pode continuar usando chaves gerenciadas pela Microsoft ou pode gerenciar a criptografia dos seus dados usando suas próprias chaves.</block>
   <block id="6c2708162873644f82108cfcad8ae099" category="list-text">Opcionalmente, escolha se você usará um ponto de extremidade privado do Azure que você configurou anteriormente.</block>
@@ -1634,7 +1484,6 @@
   <block id="fa4157795fdbaed676b0486ebceb9f1a" category="admonition">Esta é a função personalizada que você criou anteriormente.</block>
   <block id="f4de5688569435ae5792856a75a3ed96" category="list-text">No campo *Atribuir acesso a*, selecione *Usuário, grupo ou entidade de serviço*.</block>
   <block id="ba79e586f6b5202f28597984ee8243b7" category="list-text">Selecione *Selecionar membros*.  Em seguida, selecione *Ransomware Resilience Sentinel Configurator*.</block>
-  <block id="eb882a818e0a3cc0adcb1bd7313e9832" category="list-text">No campo *O que o usuário pode fazer*, selecione *Permitir que o usuário atribua todas as funções, exceto as funções de administrador privilegiado Proprietário, UAA, RBAC (recomendado)*.</block>
   <block id="0427238efbd6d8ab4d12c132cb4cae7d" category="list-text">Selecione *Revisar e atribuir* para atribuir as permissões.</block>
   <block id="b37c7df6ed28d0c6b82990a40be5956c" category="list-title">Etapas para inserir credenciais de autenticação para o aplicativo</block>
   <block id="9d4673f4ba59f2e834f5cc5a15b8a533" category="list-text">Insira as credenciais:</block>
@@ -1852,33 +1701,26 @@
   <block id="16ec862fdbc31bf15f7d944ad60dd33f" category="section-title">1 de julho de 2024</block>
   <block id="3ad6a80bb44b13a7ad34ad835b0166d5" category="paragraph">Com esta versão, você pode usar uma licença BYOL, que é um arquivo de licença NetApp (NLF) que você obtém do seu representante de vendas da NetApp .</block>
   <block id="a0f248fceae83613cf99c651e3c24be5" category="inline-link">Saiba mais sobre a configuração do licenciamento</block>
-  <block id="17f6ba003825118fb67d19c8c26be794" category="paragraph"><block ref="36f38233d2460bc4dacb6b4bd4fd46ab" category="inline-link-rx"></block> .</block>
   <block id="731d998f19bf5dc5e302b024a5e269ae" category="section-title">Restaurar a carga de trabalho do aplicativo no nível do arquivo</block>
   <block id="3ca66b2ea6d0090926c6ed42102cd321" category="paragraph">Antes de restaurar uma carga de trabalho de aplicativo no nível de arquivo, agora você pode visualizar uma lista de arquivos que podem ter sido afetados por um ataque e identificar aqueles que deseja restaurar.  Você pode deixar que a BlueXP ransomware protection escolha os arquivos a serem restaurados, pode enviar um arquivo CSV que lista todos os arquivos afetados por um alerta ou pode identificar manualmente quais arquivos deseja restaurar.</block>
   <block id="f117dfa6c0387d743ec4a20f0d5de0bc" category="admonition">Com esta versão, se todos os conectores BlueXP em uma conta não estiverem usando o Podman, o recurso de restauração de arquivo único será habilitado.  Caso contrário, ele será desabilitado para essa conta.</block>
   <block id="a73c37f93df66de7bad711d109e97dec" category="section-title">Baixe uma lista de arquivos afetados</block>
   <block id="2054cf1c5fa9dc941ee8bea29d93f66c" category="paragraph">Antes de restaurar uma carga de trabalho de aplicativo no nível de arquivo, agora você pode acessar a página Alertas para baixar uma lista de arquivos afetados em um arquivo CSV e, em seguida, usar a página Recuperação para carregar o arquivo CSV.</block>
   <block id="eb7455ff51d7f3745fb801aa3ad0fb2a" category="inline-link">Saiba mais sobre como baixar arquivos afetados antes de restaurar um aplicativo</block>
-  <block id="2b133b12308ff6cab26bdc5342a3372d" category="paragraph"><block ref="008791716c908b75ddd12a1a3f620fa8" category="inline-link-rx"></block> .</block>
   <block id="16a3ef0c0012d6ecafe00aeaff08d20c" category="section-title">Excluir plano de proteção</block>
   <block id="0e7f928ba1ebfe3d5652a71f58c576d8" category="paragraph">Com esta versão, agora você pode excluir uma estratégia de proteção contra ransomware.</block>
   <block id="5bc0cd3e3204e2ab72bd03661373648f" category="inline-link">Saiba mais sobre como proteger cargas de trabalho e gerenciar estratégias de proteção contra ransomware</block>
-  <block id="20eb1918e9de308789133c5a0b0cc2c4" category="paragraph"><block ref="88ddee768f79e382777baf84277fe57c" category="inline-link-rx"></block> .</block>
   <block id="8009eebf05fd33b87750f8b4048986f7" category="section-title">10 de junho de 2024</block>
   <block id="c9b85bdf743e168e0a60d3d8ceade783" category="section-title">Bloqueio de cópia de instantâneo no armazenamento primário</block>
   <block id="93ccf285c6fa8656f11faf8af7e16799" category="paragraph">Habilite isso para bloquear as cópias de instantâneo no armazenamento primário para que elas não possam ser modificadas ou excluídas por um determinado período de tempo, mesmo que um ataque de ransomware chegue ao destino do armazenamento de backup.</block>
   <block id="693cf7ee0375c87d1ecc02615f651ebe" category="inline-link">Saiba mais sobre como proteger cargas de trabalho e habilitar o bloqueio de backup em uma estratégia de proteção contra ransomware</block>
-  <block id="d9e97b4dacf8789a452df06f4739d3b7" category="paragraph"><block ref="691f168695c0ebf6c9e1bf6093933aac" category="inline-link-rx"></block> .</block>
   <block id="4b5a2b3b60f0e79d9138e24b2d5f4f01" category="section-title">Suporte para Cloud Volumes ONTAP para Microsoft Azure</block>
   <block id="a203cdf1cc6cc00fa137d9ce75f23d27" category="paragraph">Esta versão oferece suporte ao Cloud Volumes ONTAP para Microsoft Azure como um sistema, além do Cloud Volumes ONTAP para AWS e do ONTAP NAS local.</block>
   <block id="6b9ec885733dcee16db8c4d8dde6312a" category="inline-link">Início rápido para Cloud Volumes ONTAP no Azure</block>
-  <block id="17223b00f9d3a714622f5df95956564b" category="paragraph"><block ref="17223b00f9d3a714622f5df95956564b" category="inline-link-rx"></block></block>
   <block id="8aea370efa0da7f8c985a03488d3b9a7" category="inline-link">Saiba mais sobre a BlueXP ransomware protection</block>
-  <block id="41e5a42a8cc2023ceb0f8dd06cce7a27" category="paragraph"><block ref="5a80707c96309e25f4c73aee7d2327b1" category="inline-link-rx"></block> .</block>
   <block id="24fe52a2365d38c875f0bcf11a7463c6" category="section-title">Microsoft Azure adicionado como destino de backup</block>
   <block id="cd9970a99d092fa49bfe0f1cf5ee4b7c" category="paragraph">Agora você pode adicionar o Microsoft Azure como destino de backup junto com o AWS e o NetApp StorageGRID.</block>
   <block id="8e84b1daf78912b246a0f51f49a81be6" category="inline-link">Saiba mais sobre como configurar as definições de proteção</block>
-  <block id="a5074ce00bd12388aded816f7d17bc0b" category="paragraph"><block ref="8490e5084c846c3f615579ffada71b2e" category="inline-link-rx"></block> .</block>
   <block id="5e76a23879d0e6f7325f31678e623972" category="section-title">14 de maio de 2024</block>
   <block id="c03b667390566320b1f84fd433ac2cb0" category="section-title">Atualizações de licenciamento</block>
   <block id="fd480049706571e64359cf4351f9fcbc" category="paragraph">Você pode se inscrever para um teste gratuito de 90 dias.  Em breve, você poderá comprar uma assinatura paga conforme o uso no Amazon Web Services Marketplace ou trazer sua própria licença do NetApp .</block>
@@ -1887,30 +1729,24 @@
   <block id="0b1d09e292577ba6653f7e9933b4bc18" category="section-title">Detalhes da carga de trabalho</block>
   <block id="ea68074e88ed0ee034f46a22da4207e3" category="paragraph">Esta versão agora fornece mais detalhes nas informações de carga de trabalho da Proteção e outras páginas para melhor avaliação da proteção da carga de trabalho.  Nos detalhes da carga de trabalho, você pode revisar a política atribuída atualmente e revisar os destinos de backup configurados.</block>
   <block id="e959f6b23824b1ea02ac36779938412d" category="inline-link">Saiba mais sobre como visualizar detalhes da carga de trabalho nas páginas de proteção</block>
-  <block id="f51a97d186491b354b8046c13692a070" category="paragraph"><block ref="59ecb8b9925d0039512c75c461b0b86c" category="inline-link-rx"></block> .</block>
   <block id="8d99eb044387ccaf47ae81f4bc0e655c" category="section-title">Proteção e recuperação consistentes com aplicativos e VMs</block>
   <block id="2d27a1cb1cddcea603af3821a038c473" category="paragraph">Agora você pode executar proteção consistente com aplicativos com o NetApp SnapCenter Software e proteção consistente com VMs com o SnapCenter Plug-in for VMware vSphere, obtendo um estado quiescente e consistente para evitar possível perda de dados posteriormente, caso seja necessária recuperação.  Se a recuperação for necessária, você pode restaurar o aplicativo ou a VM para qualquer um dos estados disponíveis anteriormente.</block>
   <block id="ee689c35077ba98079c7b0a4f05a6dc5" category="inline-link">Saiba mais sobre como proteger cargas de trabalho</block>
-  <block id="928fea0953d8c6c88422d673f9e9c5e3" category="paragraph"><block ref="140488255a280124a6e845e64767d54f" category="inline-link-rx"></block> .</block>
   <block id="2ffdf2b6c5684e4c6c9a1519e96a8cdd" category="section-title">Estratégias de proteção contra ransomware</block>
   <block id="3dcd2442b05cfc8943340d27e543c8b8" category="paragraph">Se não houver políticas de snapshot ou backup na carga de trabalho, você poderá criar uma estratégia de proteção contra ransomware, que pode incluir as seguintes políticas criadas neste serviço:</block>
   <block id="bdadcbba411cf56b92967e5b0248cc77" category="list-text">Política de detecção</block>
   <block id="a25458513b834667ae92c65418ac8918" category="section-title">Detecção de ameaças</block>
   <block id="6f39a651bab312935acf07a9f7b3905c" category="paragraph">Agora é possível habilitar a detecção de ameaças usando um sistema de gerenciamento de eventos e segurança (SIEM) de terceiros.  O Painel agora mostra uma nova recomendação para "Ativar detecção de ameaças", que pode ser configurada na página Configurações.</block>
   <block id="10bc4591a9635a8100fbcf18a580cc29" category="inline-link">Saiba mais sobre como configurar opções de configurações</block>
-  <block id="119863034bfc7ae6b0e2d324ec3da549" category="paragraph"><block ref="fa172403ab7c635a07324b1168d8ce19" category="inline-link-rx"></block> .</block>
   <block id="f5e987cac9511e003e20769dfebfed7c" category="section-title">Descartar alertas falsos positivos</block>
   <block id="6131af6894f63b64bad9d4dabbbfd577" category="paragraph">Na aba Alertas, agora você pode descartar falsos positivos ou decidir recuperar seus dados imediatamente.</block>
   <block id="b439d3ca10048f7d11cd05477ca961a7" category="inline-link">Saiba mais sobre como responder a um alerta de ransomware</block>
-  <block id="e7e38bb442294e991be246059534377b" category="paragraph"><block ref="b68da660865dc415a1fefb8516e82d73" category="inline-link-rx"></block> .</block>
   <block id="91d938cdf573e3f658140e8b3c5ee2c3" category="section-title">Status de detecção</block>
   <block id="a45430437759fefd9c1fc57f741d6de7" category="paragraph">Novos status de detecção aparecem na página Proteção, mostrando o status da detecção de ransomware aplicada à carga de trabalho.</block>
   <block id="af255af71067c5961f87ea2321b69295" category="inline-link">Saiba mais sobre como proteger cargas de trabalho e visualizar status de proteção</block>
-  <block id="df142910ec0f256cf3fe94834edd616c" category="paragraph"><block ref="2db9e604787e93c0ca53ebeb4c1a3e79" category="inline-link-rx"></block> .</block>
   <block id="fce32b147d3fc1e111905c3a3bf6fd69" category="section-title">Baixar arquivos CSV</block>
   <block id="d614bc77098be49e16d933a345b13c92" category="paragraph">Você pode baixar arquivos CSV* nas páginas Proteção, Alertas e Recuperação.</block>
   <block id="ca8c09727e8b36d15981c9455d697516" category="inline-link">Saiba mais sobre como baixar arquivos CSV do Painel e de outras páginas</block>
-  <block id="db81907bf6476a20c8b94b94556f627f" category="paragraph"><block ref="29cf990dea934b0f767d4567074aaff5" category="inline-link-rx"></block> .</block>
   <block id="6758a0bf77df1c4e4729d20133a2e170" category="section-title">Link da documentação</block>
   <block id="ca0357e519e49764e6ebe9d52a39e2cd" category="paragraph">O link para visualizar a documentação agora está incluído na interface do usuário.  Você pode acessar esta documentação na vertical do Painel *Ações*<block ref="03b376f37073f981f38dc4d6f450c046" category="inline-image-macro-rx" type="image"></block> opção.  Selecione *Novidades* para ver detalhes nas Notas de versão ou *Documentação* para ver a página inicial da documentação de BlueXP ransomware protection .</block>
   <block id="ede1cce9f240fed5ecc4264bd699cee1" category="section-title">BlueXP backup and recovery</block>
@@ -1920,19 +1756,14 @@
   <block id="592997dde366d5775e7e052816854f74" category="section-title">5 de março de 2024</block>
   <block id="43ce8197249a120a136331aaa3e00c1d" category="section-title">Gestão de políticas de proteção</block>
   <block id="cf69a03aa5287886f0e8d3de1a6334cc" category="inline-link">Saiba mais sobre o gerenciamento de políticas</block>
-  <block id="8e8468693b168546acf5c9462495f83d" category="paragraph">Além de usar políticas predefinidas, agora você pode criar políticas.<block ref="b9442a8e5462552f8e91e8150e2b9935" category="inline-link-rx"></block> .</block>
   <block id="e10d5c21c44525f1b19a48dfb4a89445" category="section-title">Imutabilidade no armazenamento secundário (DataLock)</block>
   <block id="ac623dda99022aa586562b6804c2f1b8" category="inline-link">Saiba mais sobre como criar políticas de proteção</block>
-  <block id="54621bce5c5edbad82ad98711766da7e" category="paragraph">Agora você pode tornar o backup imutável no armazenamento secundário usando a tecnologia NetApp DataLock no armazenamento de objetos.<block ref="a216e61ae0b0740b7be8287c615fa066" category="inline-link-rx"></block> .</block>
   <block id="643b17dc026d0c0147a8a815056a5f49" category="section-title">Backup automático para NetApp StorageGRID</block>
   <block id="732b7b17a4dd9ae4a4359cee4b9b391d" category="inline-link">Saiba mais sobre como configurar destinos de backup</block>
-  <block id="523d7f963aa74548c8ce926b15835e7d" category="paragraph">Além de usar a AWS, agora você pode escolher o StorageGRID como seu destino de backup.<block ref="563323d59981c5d050897f7686a7f9d8" category="inline-link-rx"></block> .</block>
   <block id="62214a27f426a0d88db3ab38949106b2" category="section-title">Recursos adicionais para investigar ataques potenciais</block>
   <block id="9e599e81fbf58f35a4e8ea8d4d14b0f6" category="inline-link">Saiba mais sobre como responder a um alerta de ransomware detectado</block>
-  <block id="f6d0e776adfe1ac52ce17e76a4f5e7a4" category="paragraph">Agora você pode visualizar mais detalhes forenses para investigar o possível ataque detectado.<block ref="707fb9c7332f6aa933e8445c28830d7a" category="inline-link-rx"></block> .</block>
   <block id="1308d0f084fdb39839541aaf971b23ff" category="section-title">Processo de recuperação</block>
   <block id="bda01efb679b0ca92bc4e76a23294328" category="inline-link">Saiba mais sobre como se recuperar de um ataque de ransomware (após os incidentes terem sido neutralizados)</block>
-  <block id="44d292cf2891eaa1e67cfa3d9504b58b" category="paragraph">O processo de recuperação foi aprimorado.  Agora, você pode recuperar volume por volume ou todos os volumes de uma carga de trabalho.<block ref="a36a14eacaa464cdf2747d859c29de55" category="inline-link-rx"></block> .</block>
   <block id="69483d973a063c873a5a66f6edcc241c" category="section-title">6 de outubro de 2023</block>
   <block id="ae98c30c78f5642e201d040b9e0b468c" category="paragraph">O serviço de BlueXP ransomware protection é uma solução SaaS para proteger dados, detectar ataques potenciais e recuperar dados de um ataque de ransomware.</block>
   <block id="978aa39e867fbe7badda46cb2834d11f" category="paragraph">Na versão de pré-visualização, o serviço protege cargas de trabalho baseadas em aplicativos de Oracle, MySQL, datastores de VM e compartilhamentos de arquivos em armazenamento NAS local, bem como Cloud Volumes ONTAP na AWS (usando o protocolo NFS) em organizações BlueXP individualmente e faz backup de dados no armazenamento em nuvem da Amazon Web Services.</block>
@@ -1944,9 +1775,7 @@
   <block id="0f1fe9be7b1943507afe2ef939f76423" category="list-text">Monitore a saúde de suas cargas de trabalho contra ataques de ransomware em busca de anomalias nos dados.</block>
   <block id="12bcfe65b7fb19c1dbe60c374599be1e" category="list-text">Avalie rapidamente o impacto de incidentes de ransomware em sua carga de trabalho.</block>
   <block id="f4d7f013aee4ff8dd19b36611ba3f3c6" category="list-text">Recupere-se de incidentes de ransomware de forma inteligente restaurando dados e garantindo que não ocorram reinfecções a partir de dados armazenados.</block>
-  <block id="43bb1b63202e87a189cec4dfa6227457" category="sidebar">O NetApp Ransomware Resilience é um serviço de orquestração para proteção, detecção e recuperação de ransomware.  O Ransomware Resilience protege cargas de trabalho baseadas em aplicativos de Oracle, MySQL, datastores de VM e compartilhamentos de arquivos em armazenamento NAS local, bem como Cloud Volumes ONTAP no Amazon Web Services (usando os protocolos NFS e CIFS) em organizações de console e faz backup de dados no armazenamento em nuvem do Amazon Web Services (AWS) ou no NetApp StorageGRID.</block>
   <block id="89be776e54ba13993f6011aaa17a0ac9" category="sidebar">Documentação do NetApp Ransomware Resilience</block>
-  <block id="9c63bda8b06fcd8df4c782363b522552" category="sidebar">O NetApp Ransomware Resilience é um serviço de orquestração para proteção, detecção e recuperação de ransomware.  O Ransomware Resilience protege cargas de trabalho baseadas em aplicativos de Oracle, MySQL, datastores de VM e compartilhamentos de arquivos em armazenamento NAS local, bem como Cloud Volumes ONTAP na Amazon Web Services (usando os protocolos NFS e CIFS) em organizações do NetApp Console e faz backup de dados no armazenamento em nuvem da Amazon Web Services (AWS) ou no NetApp StorageGRID.</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Começar</block>
   <block id="7b72a3240bb708a49cf4a635f75c8ca9" category="sidebar">Novidades em Resiliência contra Ransomware</block>
   <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="sidebar">Pré-requisitos</block>
@@ -1971,4 +1800,235 @@
   <block id="f8a7dc43864435cb9b522a28b586e556" category="sidebar">Recuperar-se de um ataque de ransomware</block>
   <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">Perguntas frequentes</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conhecimento e suporte</block>
+  <block id="d1b55f5f1fa56ec4203bc496f8d5ae0a" category="paragraph">*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto, administrador do Ransomware Resilience ou visualizador do Ransomware Resilience.<block ref="51ffd1668f46b7e360e102a30faa6c5f" category="inline-link-rx"></block> .</block>
+  <block id="f4deedd842ba0d6030bcfc6f8297d06a" category="paragraph">*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. <block ref="b8bf795c21c8bcdf6af09fd1f4de58b8" category="inline-link-macro-rx"></block> .</block>
+  <block id="8b37e5b51ed96f5c46949a0dbdc5d195" category="paragraph">*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador de comportamento do usuário Ransomware Resilience. <block ref="c63b2c8d20974c1834bc75207be469f3" category="inline-link-macro-rx"></block> .</block>
+  <block id="a54b344e834fd0b16ead656bdeef0a91" category="paragraph"><block ref="e97e75c9449e5f1b8a8a75ebff67b7c3" category="inline-link-rx"></block> .</block>
+  <block id="b6e5a2afe0652e635d34c755069996c1" category="paragraph"><block ref="df4243c8490e7ac0935cb3c37b5c0dd3" category="inline-link-rx"></block> .</block>
+  <block id="77828430fb1afe32722790a173c51e53" category="paragraph">Para obter detalhes sobre as ações que cada função pode executar, consulte<block ref="5ed990007d3942ee85d552217fd4b2da" category="inline-link-rx"></block> .</block>
+  <block id="23b0ae69fc6a872db07495bf542d4d13" category="paragraph"><block ref="d93121439cb3123f037805bd668a77b7" category="inline-link-rx"></block> .</block>
+  <block id="365282835fe2185be49e22eccc151d34" category="paragraph">Consulte<block ref="85c64411e31b00f7bee1a78a00529706" category="inline-link-rx"></block> .</block>
+  <block id="e25cb74a977c264db490ebb07eba7a44" category="paragraph"><block ref="8bcdeaa38a69cce5cfa3ac7429e480b6" category="inline-link-rx"></block> .</block>
+  <block id="5b647f592bce019e9ea00dd644f72e0d" category="paragraph"><block ref="3233a18d80c5120d82dff0bcc15fb4c4" category="inline-link-rx"></block> .</block>
+  <block id="677b7972061ed8bb90c977ad9ad49d92" category="paragraph">Para mais detalhes, consulte<block ref="ebd42c70ce1701ba9ce66b6ca16ee347" category="inline-link-rx"></block> .</block>
+  <block id="08b63f95be817ba2f61ef2fc37b9548a" category="paragraph">Consulte<block ref="e6869105755f99c5ecb515542ad18d68" category="inline-link-rx"></block> .</block>
+  <block id="ffbd6ced4cfd19806457928826e77f9d" category="paragraph">Para mais detalhes, consulte<block ref="680a07f1320ce65c31e5161379886639" category="inline-link-rx"></block> .</block>
+  <block id="857887f06f72ff52d43b1b45b93b095b" category="paragraph">Para mais detalhes, consulte<block ref="2b6f1d047671d8a5fd811accbf6225b2" category="inline-link-rx"></block> e<block ref="c0c89bd8f61f1facac3ae48e69a0ac33" category="inline-link-rx"></block> .</block>
+  <block id="fa5fdf6437c8f041e577f03d2886feb7" category="paragraph">Para obter detalhes sobre permissões, consulte<block ref="bae933e2ecf3f9d4c80618fdd19f0a12" category="inline-link-rx"></block> .</block>
+  <block id="90f9ae6ca21dd13979085a7ce12c30fb" category="paragraph">Para mais detalhes, consulte<block ref="0e61d2375267610913b69353158784eb" category="inline-link-rx"></block> .</block>
+  <block id="8c15a7a1b990daf1c67965c3409291a0" category="paragraph">Para mais detalhes, consulte<block ref="850bf291deb03a29bea4824c43e8b433" category="inline-link-rx"></block> .</block>
+  <block id="74969aaacd3e898ffb289ab18b5802e2" category="paragraph">Para obter informações sobre as opções suportadas, consulte o<block ref="c05ac23ab96ba518082f01b1b08e8e95" category="inline-link-rx"></block> .</block>
+  <block id="e730cca4cd272ec01ca9b83307bce0ea" category="paragraph"><block ref="56ddaed99a22a4135c2249926212e08e" category="inline-link-rx"></block> .</block>
+  <block id="ce9a399316c0383caf8dae43d9de270f" category="paragraph">Para mais detalhes, consulte<block ref="c6fe8309407496782517b1f78c419c07" category="inline-link-rx"></block> .</block>
+  <block id="7e42707703b4d067b548f10acbf4df99" category="paragraph">Para mais detalhes, consulte<block ref="c12ecfc72dc196e054946f32c2360b19" category="inline-link-rx"></block> e para usar o serviço dentro da BlueXP ransomware protection, consulte<block ref="546f381a7c557bb1741d0a7b3184b38d" category="inline-link-rx"></block> .</block>
+  <block id="8b61f628ff6c584959e081dfc4edebb6" category="paragraph">Para mais informações, consulte <block ref="c4baa86796975d4c7e6a1153b246f3d1" category="inline-link-macro-rx"></block> .</block>
+  <block id="cf51b26fb14f613d642588e747a6409b" category="paragraph">Para mais detalhes, consulte<block ref="fe8b859db0e9e0c241fb61d50beda51d" category="inline-link-macro-rx"></block> .</block>
+  <block id="a47ac27491bd173f33b1da537aafa64f" category="paragraph">Para mais detalhes, consulte<block ref="5f880b35b82b0cf35578f40dde855e69" category="inline-link-macro-rx"></block> .</block>
+  <block id="8c033e68f21af84a645a65cdb34e6632" category="paragraph">O serviço de BlueXP ransomware protection foi renomeado para NetApp Ransomware Resilience.</block>
+  <block id="7c2f2b72d5ae6fd05d7d6047507f2af7" category="paragraph">Para obter detalhes sobre o que mudou, consulte o<block ref="55233a601a39d3cf31ec58df3f760d9b" category="inline-link-rx"></block> .</block>
+  <block id="6b815504dd4844974d9ebfb52e0fe4d6" category="section-title">Detecção de violação de dados</block>
+  <block id="50558bac19c965c1d55609370fca3199" category="paragraph">O Ransomware Resilience inclui um novo mecanismo de detecção que pode ser ativado em algumas etapas para detectar leituras anômalas do usuário como um indicador precoce de violação de dados.  A resiliência do ransomware coleta e analisa eventos de leitura do usuário criando uma linha de base histórica, que é um perfil de comportamento normal esperado a partir de dados anteriores.  Quando uma nova atividade do usuário se desvia significativamente dessa norma estabelecida (como um aumento inesperado de leituras combinado com padrões de leitura suspeitos), um alerta é gerado.  O Ransomware Resilience inclui um modelo de IA para detectar padrões de leitura suspeitos.</block>
+  <block id="287f419ab9030dae6e341b7917dea7b9" category="paragraph">Diferentemente da detecção de criptografia pelo ARP na camada de armazenamento, a detecção da anomalia de comportamento do usuário é feita no serviço Ransomware Resilience SaaS por meio da coleta de eventos FPolicy.</block>
+  <block id="666c1c8dca9ff6ef210c57f04d6e84e8" category="inline-link-macro">Habilitar detecção de atividades suspeitas de usuários</block>
+  <block id="8d2203d70c1b051af0b7ad506cc40474" category="inline-link-macro">Visualizar comportamento anômalo do usuário</block>
+  <block id="b270269f4d3564626c9860f0f29f2992" category="paragraph">Para mais informações, consulte<block ref="58d7e66449e28231f244d38ab02cc3e1" category="inline-link-macro-rx"></block> e<block ref="f451eade5eddedc7b8e2af13d9e54fd3" category="inline-link-macro-rx"></block> .</block>
+  <block id="289ddf7ba01fbf8f514dbc2d06a7bf67" category="section-title">Detecções adicionais de atividades suspeitas de usuários</block>
+  <block id="c59946b2a21d389710dcd9b9ad5f618d" category="paragraph">Além da detecção de violações de dados, o Ransomware Resilience também detecta os seguintes tipos de alerta com base na atividade suspeita observada do usuário:</block>
+  <block id="9f149be55d2ace2f4ef86d2125660c4c" category="list-text">**Destruição de dados - ataque potencial** - Um alerta com a gravidade do ataque potencial é criado quando o número de exclusões de arquivos excede a norma histórica.</block>
+  <block id="b3917e47f33bfc92b2d66abb2a71397c" category="list-text">**Comportamento suspeito do usuário - ataque potencial** - Um alerta com a gravidade do ataque potencial é criado quando são observadas operações de leitura, renomeação e exclusão em uma sequência semelhante a um ataque de ransomware</block>
+  <block id="a3e76fe95cb3298fc3fb711993e170f1" category="list-text">**Comportamento suspeito do usuário - Aviso** - Um alerta com a gravidade do aviso é criado quando o número total de atividades de arquivo (leitura, exclusão, renomeação etc.) excede a norma histórica</block>
+  <block id="b0ba200b30bf16fc357a806132791b75" category="section-title">Nova função de usuário para detecção de violação de dados</block>
+  <block id="badd5c45c49e20368873307ff9e6ffc0" category="paragraph">Para gerenciar alertas de atividades suspeitas do usuário, o Ransomware Resilience introduziu duas novas funções para fornecer acesso granular a dados confidenciais, como atividades de arquivos do usuário. Para obter mais informações, consulte <block ref="acee2fdb33125bc970e8c80226d5f58c" category="inline-link-macro-rx"></block> .</block>
+  <block id="d0f71eee61b39f3ffe00d85759351067" category="paragraph">Para detectar comportamento anômalo do usuário, o Ransomware Resilience usa o NetApp Autonomous Ransomware Protection, um modelo de aprendizado de máquina (ML) dentro do ONTAP que detecta atividades de arquivos maliciosos.  Este modelo está incluído na licença Ransomware Resilience.</block>
+  <block id="a139b69cf2c6a37377eea224685da3f6" category="paragraph">Saiba mais sobre o<block ref="6d844886de4fe963e1e4b97f495f829d" category="inline-link-macro-rx"></block> .</block>
+  <block id="f2abd20c3ee58c54298223da2df91335" category="list-text">Descobre o nível de proteção atual de cada volume de cópias de snapshots e políticas de backup do NetApp , bem como quaisquer recursos de detecção on-box.  O Ransomware Resilience então associa essa postura de proteção às cargas de trabalho usando backup e recuperação, serviços ONTAP e tecnologias NetApp , como Autonomous Ransomware Protection (ARP ou ARP/AI, dependendo da sua versão do ONTAP ), FPolicy, políticas de backup e políticas de snapshot.  Saiba mais sobre<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="inline-link-rx"></block> ,<block ref="2b1b7f994c6938347657a18d8edc7db7" category="inline-link-rx"></block> , e<block ref="591ebe16737e602cc342b68e859c040e" category="inline-link-rx"></block> .</block>
+  <block id="deda3c2d38a6ddd631aac3a5864e3f60" category="list-text">Determina os arquivos suspeitos específicos e mapeia os ataques às cargas de trabalho associadas, usando as tecnologias ONTAP, Autonomous Ransomware Protection (ARP ou ARP/AI, dependendo da sua versão do ONTAP ) e FPolicy.</block>
+  <block id="665acc6d2ee48d5efd698763b6fbf735" category="list-text"><block ref="665acc6d2ee48d5efd698763b6fbf735" category="inline-link-rx"></block></block>
+  <block id="d8a8c665f6da963545862e3f1cd5ee11" category="paragraph">Essas funções são adicionais às funções da plataforma do Console que controlam o acesso ao serviço do Console e outros serviços, como proteção de dados, gerenciamento de carga de trabalho e assim por diante.  Para obter detalhes sobre todas as funções da plataforma Console, consulte<block ref="70be838599755f5947865c6eb0bd7ba4" category="inline-link-rx"></block> .</block>
+  <block id="d79f191c2ec9abafe65a74f3afd2fd3e" category="paragraph"><block ref="d79f191c2ec9abafe65a74f3afd2fd3e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4cebc30733ea9d8edb38766c837308c0" category="paragraph">Para obter uma explicação sobre esses modos em todos os serviços de dados da NetApp , consulte<block ref="9b1c9f23ced4bc12396bbe50ae116f54" category="inline-link-rx"></block> .</block>
+  <block id="43b88b2af5b013930329bb44fd8975ac" category="paragraph">*Como as permissões de acesso são gerenciadas?* <block ref="22d772bd7efbc9b05290308cad908f86" category="inline-link-rx"></block> .</block>
+  <block id="28cfeb7fff7b4f9ab9bf205d7135f788" category="paragraph">Para executar esta tarefa, você precisa da função de administrador da organização, pasta ou projeto.<block ref="43e60870b1a681df3de2812caf2de958" category="inline-link-rx"></block> .</block>
+  <block id="395a0c83d18cd49c5468e19cda311fa7" category="paragraph">Para adicionar um agente de console, consulte<block ref="552a7d66ccd9c93a9dbc55fd8ef74d52" category="inline-link-rx"></block> .</block>
+  <block id="cf24df78d1accdf72ef41c7c167ba75f" category="list-text">Use o Google Cloud Platform Marketplace para assinar o * NetApp Intelligent Services* e o *Ransomware Resilience*.</block>
+  <block id="03526a38c80b7c8227cfc738477ed902" category="paragraph">Se sua conta do site de suporte da NetApp não estiver disponível na lista suspensa,<block ref="d3fb432f1a71fdd6fc4568fb070a943a" category="inline-link-rx"></block> .</block>
+  <block id="3973bc267f97fbc53e553dbba08e2ea9" category="admonition">Esta mensagem também aparece em Licenses and subscriptions e em<block ref="a12300a172aa5e6e63382bcb48a8348c" category="inline-link-rx"></block> .</block>
+  <block id="cfdba60f0ede042388dac5205623741d" category="paragraph">Para usar o Ransomware Resilience, você precisará atender aos seguintes pré-requisitos.</block>
+  <block id="cb12a493b17ae7fff08a2132dcea0a98" category="paragraph">Consulte<block ref="f26f3bdec25207bfa60c6d1f2da2fd25" category="inline-link-rx"></block> e<block ref="e6a35e3eadbd084db13ee929315e54c1" category="inline-link-rx"></block> .</block>
+  <block id="5cc74ffa295c128286831c0e8de84cd1" category="paragraph">Para mais detalhes sobre licenciamento, consulte<block ref="11f96aed2a11a318ecdf8f5381ec25fa" category="inline-link-macro-rx"></block> .</block>
+  <block id="90061bb176f3e723f6f2161eafc1901c" category="paragraph">Consulte o<block ref="31e1fb669a04af441205b80b4846232f" category="inline-link-rx"></block> para mais detalhes.</block>
+  <block id="5cef56697a6d71e6aff2b22a00c4c7af" category="list-text">Configurar<block ref="d9bbd227e022f0885cffd43ad2451352" category="inline-link-rx"></block> na AWS.</block>
+  <block id="68ecc20acae6ea4ef4f46f3f121ac3b4" category="paragraph">Para obter detalhes sobre como gerenciar seu armazenamento AWS no Console, consulte<block ref="70667285791ed4c19752f43bea5ffdc1" category="inline-link-rx"></block> .</block>
+  <block id="0f38484f2d620879e026d9da3bae2270" category="list-text">Configurar<block ref="27747a512f6f56cbb4ced3e7956a6363" category="inline-link-rx"></block> no Azure.</block>
+  <block id="7363f51674c7094e711e12610dda6d75" category="paragraph">Para obter detalhes sobre como gerenciar seu armazenamento do Azure no Console, consulte<block ref="601b92607a7845ad1ccd074ead6ffe48" category="inline-link-rx"></block> .</block>
+  <block id="12dc046a8864682525a9fdbd927c8ed8" category="paragraph">Análise<block ref="ed879a10f79cec24f1cff31cb9deb39b" category="inline-link-rx"></block> .</block>
+  <block id="e26826f2ec39df72ffed839fea5c19e9" category="list-text">Observe a gravidade potencial do ataque.</block>
+  <block id="a82587f768afa380a3cf985310780335" category="inline-link-macro">bloquear o usuário.</block>
+  <block id="eab63628812531c73d2f750d4a6dad20" category="paragraph">Se a gravidade indicar que um usuário é suspeito de atividade maliciosa, revise o nome do usuário.  Você também pode<block ref="94387481cf2aeadb5711130400ff1590" category="inline-link-macro-rx"></block></block>
+  <block id="965e3caf98e8e0df69529bdc2c5838cc" category="paragraph">*Função necessária no Console* Administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware.<block ref="5b95efebf772ec16abdf1053e3a4558b" category="inline-link-rx"></block> .</block>
+  <block id="bb44ab86396f7335c45f2c99c022776c" category="summary">Se o Ransomware Resilience detectar um possível ataque, um alerta aparecerá no Ransomware Resilience Dashboard indicando um ataque em potencial.  Neste ponto, você deve analisar o risco potencial na aba Alertas de resiliência de ransomware.</block>
+  <block id="0cf61fe483b7c3216a42a15a22e0ef97" category="paragraph">Se o Ransomware Resilience detectar um possível ataque, uma notificação será exibida nas configurações de Notificação do Console e um e-mail será enviado para o endereço configurado.  O e-mail inclui informações sobre a gravidade, a carga de trabalho impactada e um link para o alerta na guia *Alertas* de resiliência contra ransomware.</block>
+  <block id="b170729861af663a30599b6746973b7b" category="admonition">Para assinar notificações por e-mail, consulte<block ref="99cf5d485b43f483ee8ecf47c33bdf82" category="inline-link-rx"></block> .</block>
+  <block id="9d06719f2534c2ebd6c7bed1fd263123" category="paragraph">Observando a aba Alertas, você pode identificar se há atividade maliciosa ou comportamento anômalo do usuário.</block>
+  <block id="30cd6d23e33e657384daad5db666d56c" category="inline-link-macro">Atividade suspeita do usuário</block>
+  <block id="92733af7522951b34c707ece97b76dbb" category="paragraph">Você deve ter configurado um agente de atividade do usuário e habilitado uma política de proteção com detecção de comportamento do usuário para visualizar a detecção no nível do usuário.  Com a detecção de comportamento do usuário ativada, a coluna *Usuário suspeito* aparece no painel Alertas; ela não é exibida quando a detecção de comportamento do usuário não está ativada.  Para habilitar a detecção de usuários suspeitos, consulte<block ref="da26800578b610b8b3390e49bb643377" category="inline-link-macro-rx"></block> .</block>
+  <block id="df6951a826abfdd03d428573cabc8a91" category="admonition">Se você estiver usando o NetApp Data Infrastructure Insights (DII) Workload Security, é recomendável usar os mesmos agentes de Workload Security para o Ransomware Resilience.  Não é necessário implantar agentes de segurança de carga de trabalho separados para o Ransomware Resilience. No entanto, usar os mesmos agentes de segurança de carga de trabalho requer um relacionamento de pareamento entre a organização do Ransomware Resilience Console e o locatário do DII Storage Workload Security.  Entre em contato com seu representante de conta para habilitar esse pareamento.</block>
+  <block id="2654c9fc1ffd83d2d016920464872d91" category="section-title">Ver atividade maliciosa</block>
+  <block id="ff74e9f48366f1b4465d1920693ddea8" category="inline-link-macro">Configurar as definições de resiliência contra ransomware</block>
+  <block id="f784461c39e5b287f6733d0ee28efad4" category="paragraph">Se você configurou a detecção de usuários suspeitos para visualizar comportamentos anômalos do usuário, poderá visualizar dados em nível de usuário e bloquear usuários específicos.  Para habilitar configurações de usuários suspeitos, consulte<block ref="788275b5d10fa192a2bbf25cebb6c38f" category="inline-link-macro-rx"></block> .</block>
+  <block id="ec2349017ee84d143f6965ba0b643c86" category="list-text">Para bloquear o acesso futuro de um usuário suspeito ao seu ambiente monitorado pelo Console, selecione *Bloquear* abaixo do nome do usuário.</block>
+  <block id="b0b578b8be1448972010b482195bbda8" category="paragraph">Depois de analisar os incidentes, você precisa determinar se eles são ataques em potencial.  Se não forem ameaças reais, elas podem ser descartadas.</block>
+  <block id="9dfe1b9e848ef36ab7e53e7c31b9859a" category="cell">Atribua proteção consistente de VM à carga de trabalho da VM habilitando o SnapCenter Plugin para VMware vSphere. Consulte <block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block> .</block>
+  <block id="00735a048dd8a101a0cf04ff8cf7c168" category="paragraph"><block ref="2324d2fecbef2eccb7e03b987d67689b" category="inline-link-macro-rx"></block>utiliza processamento de linguagem natural orientado por IA para análise e categorização de dados contextuais, fornecendo insights acionáveis sobre seus dados para atender aos requisitos de conformidade, detectar vulnerabilidades de segurança, otimizar custos e acelerar a migração.</block>
+  <block id="c4f1661d1e0ca939d13156f9f3d34d48" category="paragraph">Antes de usar a Classificação de Dados na Resiliência do Ransomware, você precisa<block ref="c872c876324415ce189a729b6026b061" category="inline-link-macro-rx"></block> .</block>
+  <block id="8b3703ff6ebaa8b98d723211fb1dfc77" category="list-text"><block ref="8b3703ff6ebaa8b98d723211fb1dfc77" category="inline-link-rx"></block></block>
+  <block id="635fecd65bf640e1cce8f31c27a1fbc2" category="list-text"><block ref="635fecd65bf640e1cce8f31c27a1fbc2" category="inline-link-rx"></block></block>
+  <block id="23ca466c11f4192b1b942a142ef1083f" category="list-text"><block ref="23ca466c11f4192b1b942a142ef1083f" category="inline-link-rx"></block></block>
+  <block id="6f70238b9dd1b1b13dcaa8388f9eb830" category="paragraph">A varredura de dados PII no Ransomware Resilience está disponível se você tiver<block ref="76ec7a4f27737b4abf63f3c2ea7bce9c" category="inline-link-macro-rx"></block> .  A Classificação de Dados está disponível como parte do Console sem custo adicional e pode ser implantada no local ou na nuvem do cliente.</block>
+  <block id="dd90d4cdb71a18320f3becc35cd530d5" category="list-text">**Políticas de detecção** detectam ameaças de ransomware</block>
+  <block id="aa6ed3da76207281afb017fa59e3a234" category="admonition">Para melhor gerenciamento e proteção do seu patrimônio de dados, você pode criar<block ref="42586d1dae6cc24e336332e3dadf2f9b" category="inline-link-macro-rx"></block> para proteger coletivamente volumes sob uma estratégia.</block>
+  <block id="58adba48bf0678c3abb71d1fdf829602" category="paragraph">Você pode escolher uma das seguintes políticas predefinidas de Resiliência contra Ransomware, que estão alinhadas com a importância da carga de trabalho.</block>
+  <block id="4d293abd3f96b37c9afdf90f01855f8b" category="admonition">A política **Extensão de usuário de criptografia** é a única política predefinida que oferece suporte à detecção de comportamento suspeito do usuário.</block>
+  <block id="0396743cd11b926055aa9c4e3fc5eb14" category="cell">*Extensão de usuário de criptografia*</block>
+  <block id="ddf89136f09ce1edd773dde2cdce8ec9" category="list-text"><block ref="ddf89136f09ce1edd773dde2cdce8ec9" category="inline-link-rx"></block></block>
+  <block id="9aa90d1045ef51cc1be88f6f561fd811" category="list-text"><block ref="9aa90d1045ef51cc1be88f6f561fd811" category="inline-link-rx"></block></block>
+  <block id="3a1b7ef92b9f821158d7a6a8276d337c" category="list-text">No Ransomware Resilience, navegue até o Painel e inicie o processo de descoberta novamente.</block>
+  <block id="0d8d979e8f1f220e1b4ca41afbe9262e" category="paragraph">A política de detecção habilita a Proteção Autônoma contra Ransomware e a proteção FPolicy se elas já estiverem ativadas em outros serviços.  Saiba mais sobre<block ref="1b5ca5e6db0400e20efef2d18e2ed058" category="inline-link-macro-rx"></block> ,<block ref="746471c5fd2aae723f0f1e69c0304862" category="inline-link-macro-rx"></block> , e<block ref="e579faf0a14efb59aa4bfe357406413f" category="inline-link-macro-rx"></block> .</block>
+  <block id="0004fcb1621d03d3051ca5a93121a0c9" category="list-text">Selecione as configurações de detecção desejadas: *Detecção de criptografia* *Detecção de comportamento suspeito do usuário* *Bloquear extensões de arquivo suspeitas*</block>
+  <block id="c716b644cde6bcf010e93cdafcb078a0" category="list-text">Selecione **Avançar**.</block>
+  <block id="a3de809b15b92430b0a649973defb161" category="inline-link-macro">ou criar um</block>
+  <block id="4ba6fce8781481d7a10ccdf42ed8690d" category="list-text">Se você selecionou *Detecção de comportamento suspeito do usuário* como uma configuração de detecção, selecione o agente de atividade do usuário ou<block ref="739a3400f03009256dff1eb7cc8f7f4a" category="inline-link-macro-rx"></block> .</block>
+  <block id="8e7f1a46323a19741e1abd05eac8cbb8" category="paragraph">O agente de atividade do usuário hospeda os novos coletores de dados.  O Ransomware Resilience cria o coletor de dados automaticamente para transmitir eventos de atividade do usuário ao Ransomware Resilience para detectar comportamento anômalo do usuário.</block>
+  <block id="7976453f8009e02e337c120a10100393" category="list-text">Reveja suas escolhas.  Selecione **Criar** para ativar a detecção.</block>
+  <block id="1f47983fe74a4f8bc9fa8a9706708fe6" category="list-text">Se sua estratégia de proteção incluir detecção de comportamento do usuário, selecione um agente de atividade do usuário em seu ambiente para hospedar os novos coletores de dados.  O Ransomware Resilience cria o coletor de dados automaticamente para transmitir eventos de atividade do usuário ao Ransomware Resilience para detectar comportamento anômalo do usuário.</block>
+  <block id="d3bc7420d7e89fa51ba74ffa21c65564" category="section-title">Crie um grupo de proteção</block>
+  <block id="ceb5e85b23125d83e7e34d6d2cd53a46" category="paragraph">Você pode criar grupos independentemente do status de proteção (ou seja, grupos não protegidos e grupos protegidos).  Quando você adiciona uma política de proteção a um grupo de proteção, a nova política de proteção substitui qualquer política existente, incluindo políticas gerenciadas pelo SnapCenter e NetApp Backup and Recovery.</block>
+  <block id="1ae08906aa42275aa58a2b7641019104" category="list-text">Selecione a política para controlar a proteção deste grupo.  Para confirmar, selecione *Avançar*.</block>
+  <block id="810716a15e8cb79df6f2dd60bfee1161" category="list-text">Se precisar configurar uma política de backup, escolha uma e selecione **Avançar**.</block>
+  <block id="f724f66c90177c8dac8336038a0778c0" category="list-text">Se sua política de detecção incluir detecção de comportamento do usuário, selecione o coletor de dados que deseja usar e depois **Avançar**.</block>
+  <block id="d7a75d0f58bb349985e6d2104ca65596" category="list-text">Para finalizar a criação do grupo de proteção, selecione *Adicionar*.</block>
+  <block id="8e872201a9f1d2d9ce53cb5399ef0085" category="list-title">Etapas para visualizar estratégias</block>
+  <block id="edb56701c02931a83b80f61481367ade" category="summary">Você pode configurar várias opções, incluindo um destino de backup e detecção de ameaças na página de configurações.</block>
+  <block id="efc5b90b499969efcedcd2b7276a218d" category="paragraph">Você pode configurar destinos de backup, enviar dados para um sistema externo de gerenciamento de segurança e eventos (SIEM), conduzir um exercício de prontidão para ataques, configurar a descoberta de carga de trabalho ou configurar a detecção de atividades suspeitas do usuário acessando a opção *Configurações*.</block>
+  <block id="ad5a89c970ba403587fba991f4218c99" category="list-text">Configure relatórios de atividades suspeitas de usuários.</block>
+  <block id="6a8da91afd3259d0e94261d0d1d4cdaa" category="paragraph">No cartão de atividade do usuário, você pode criar e gerenciar o agente de atividade do usuário necessário para detectar atividades suspeitas do usuário.</block>
+  <block id="1e9de376e860f46db74a2fe6749a824e" category="paragraph">Para obter mais informações, consulte <block ref="da26800578b610b8b3390e49bb643377" category="inline-link-macro-rx"></block> .</block>
+  <block id="13b10c380acfb5b85c2c941d866e207d" category="list-text">Selecione a seta para baixo ao lado de cada configuração e insira ou selecione valores:</block>
+  <block id="ed1f4d24960d6e32109b65672635e3e5" category="paragraph"><block ref="94866cdef211f2cb2b4376d23f6d3a7f" category="inline-link-rx"></block> .</block>
+  <block id="31ad81ad3dcccf234342095687bb3013" category="paragraph">Para obter detalhes sobre como gerenciar seu armazenamento do GCP no Console, consulte<block ref="5220899fd50cac31f9736d7329deb809" category="inline-link-rx"></block> .</block>
+  <block id="c948d04b2fd5b89337ff1906928f4200" category="paragraph">Para obter detalhes sobre como gerenciar suas credenciais do Azure e assinaturas do marketplace no Console, consulte<block ref="2d3716385813a465257e9795100c084d" category="inline-link-rx"></block> .</block>
+  <block id="e404fcdcd861fa6d86c24c298166ce4f" category="paragraph"><block ref="eb703d1a6f36b03e4ae0b2718274bd1f" category="inline-link-rx"></block> .</block>
+  <block id="0b08d4bbcc90f50506c6e3c62fa007c9" category="list-text">No campo *O que o usuário pode fazer*, selecione *Permitir que o usuário atribua todas as funções, exceto as funções de administrador privilegiado Proprietário, UAA, RBAC (recomendado)*.</block>
+  <block id="2a4edc5ec6e55f07dba0609dc2cd6d87" category="summary">A detecção de atividades suspeitas de usuários no Ransomware Resilience permite que você detecte atividades de usuários que podem representar uma ameaça potencial.</block>
+  <block id="906ec8bab01967c36f2f073eff9f54df" category="doc">Configurar a detecção de atividades suspeitas de usuários no NetApp Ransomware Resilience</block>
+  <block id="9ba1db4a2c84400f14de2d58496b9f52" category="paragraph">O Ransomware Resilience oferece suporte à detecção de comportamento suspeito do usuário em políticas de detecção, permitindo que você resolva incidentes de ransomware no nível do usuário.</block>
+  <block id="97f8807a01c3206f369065a241cf5ac7" category="paragraph">O Ransomware Resilience detecta atividades suspeitas do usuário analisando eventos de atividade do usuário gerados pelo FPolicy no ONTAP.  Para coletar dados de atividade do usuário, você precisa implantar um ou mais agentes de atividade do usuário.  O agente é um servidor Linux ou VM com conectividade com dispositivos no seu locatário.</block>
+  <block id="90c4c763135bd7a7443ed22e4149185b" category="section-title">Agentes e colecionadores</block>
+  <block id="03f21183a058745685d1d78fcc7eab3a" category="paragraph">Pelo menos um agente de atividade do usuário deve ser instalado para ativar a detecção de atividades suspeitas do usuário no Ransomware Resilience.  Ao ativar o recurso de atividade suspeita do usuário no painel do Ransomware Resilience, você precisa fornecer as informações do host do agente para ativar o recurso.</block>
+  <block id="2b294b61543173e7462d37def0724cef" category="paragraph">Um agente pode hospedar vários coletores de dados.  Os coletores de dados enviam dados para um local SaaS para análise.  Existem dois tipos de colecionadores:</block>
+  <block id="4fb02306f3b85b6cfd31c67b79007829" category="list-text">o **coletor de dados** coleta dados de atividade do usuário do ONTAP.</block>
+  <block id="4449b11da47ae4743bfe16fdd7a33631" category="list-text">o **conector de diretório de usuário** conecta-se ao seu diretório para mapear IDs de usuário para nomes de usuários.</block>
+  <block id="fa83d0f077ae64e1df0b8a9ed9982815" category="paragraph">Os coletores são configurados nas configurações de Resiliência de Ransomware.</block>
+  <block id="4f047e83e52e21d5382adc1b5dbf3119" category="section-title">Adicionar um agente de atividade do usuário</block>
+  <block id="4d4379036f7207029fbe126649ccc0a6" category="paragraph">Os agentes de atividade do usuário são ambientes executáveis para coletores de dados; os coletores de dados compartilham eventos de atividade do usuário com o Ransomware Resilience.  Você deve criar pelo menos um agente de atividade do usuário para habilitar a detecção de atividades suspeitas do usuário.</block>
+  <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="section-title">Requisitos</block>
+  <block id="69cba9646d8849744460eb9ba06c7bd6" category="paragraph">Para instalar um agente de atividade do usuário, você precisa de um host ou uma VM com qualquer um dos seguintes requisitos de sistema operacional e servidor suportados.</block>
+  <block id="176c18a49aa227401be466a34a903666" category="paragraph">**Requisitos do sistema operacional**</block>
+  <block id="696c660ff8d9323e55146a6dbd4e4088" category="cell">Sistema operacional</block>
+  <block id="2e5d14f7919ff3c6138e7845aec4f915" category="cell">Versões suportadas</block>
+  <block id="c158e3ead98c5929e4228914a1e6e615" category="cell">Alma Linux</block>
+  <block id="4e7685b9d28c25763ec745864c2dc4ab" category="cell">9.4 (64 bits) a 9.5 (64 bits) e 10 (64 bits), incluindo SELinux</block>
+  <block id="aa1fc3398e84bda331b47203c1e53ad5" category="cell">CentOS</block>
+  <block id="1713000dfbf9ac0737dced40924963e5" category="cell">CentOS Stream 9 (64 bits)</block>
+  <block id="6fe8b98c53e8d099686936732785d471" category="cell">Debian</block>
+  <block id="96076f12b1cb63e4304e6e93bf2bdf1c" category="cell">11 (64 bits), 12 (64 bits), incluindo SELinux</block>
+  <block id="47aa329f6ec0cd1009231b4b7fca0a6b" category="cell">OpenSUSE Leap</block>
+  <block id="19b160ebc6598b7f22f292d227c45c9d" category="cell">15.3 (64 bits) a 15.6 (64 bits)</block>
+  <block id="fdcd362ac5f5f9817e70642dd2a48bfd" category="cell">Oracle Linux</block>
+  <block id="95ccc8f8721ed98f86b3373d9ede2a15" category="cell">8.10 (64 bits) e 9.1 (64 bits) até 9.6 (64 bits), incluindo SELinux</block>
+  <block id="a82007c47b25723539a00ff94e8b3d27" category="cell">Chapéu vermelho</block>
+  <block id="d33305ae6335b0a9106e226ed71ca60f" category="cell">8.10 (64 bits), 9.1 (64 bits) até 9.6 (64 bits) e 10 (64 bits), incluindo SELinux</block>
+  <block id="d405e3063aac76a254e44386c961b24c" category="cell">Rochoso</block>
+  <block id="562cb7e6b7d585b5ffbe8d9aec64cf10" category="cell">Rocky 9.4 (64 bits) até 9.6 (64 bits), incluindo SELinux</block>
+  <block id="92ceb02e8fd413288d949e40d8ca4832" category="cell">SUSE Enterprise Linux</block>
+  <block id="ce370a856bc8592a8206af596cace9ea" category="cell">15 SP4 (64 bits) a 15 SP6 (64 bits), incluindo SELinux</block>
+  <block id="3d945423f8e9496c429a5d8c65b4604f" category="cell">Ubuntu</block>
+  <block id="6072b01d67af0366830f2fef13cdf0da" category="cell">20,04 LTS (64 bits), 22,04 LTS (64 bits) e 24,04 LTS (64 bits)</block>
+  <block id="e5fc81082964adedb5790746c18c9fb7" category="paragraph">**Requisitos do servidor**</block>
+  <block id="fd9b966c1c6f66e7c4f38e133767c880" category="paragraph">O servidor deve atender aos seguintes requisitos mínimos:</block>
+  <block id="f0499c7832db4d35decdf83de714841c" category="list-text">**CPU**: 4 NÚCLEOS</block>
+  <block id="4a8a49e18f8860c4232837503bcc2edd" category="list-text">**RAM**: 16 GB de RAM</block>
+  <block id="465860b9bc6b405baa8ced9914b08ab3" category="list-text">**Espaço em disco**: 35 GB de espaço livre em disco</block>
+  <block id="a2ad8789f963859e0c26a6daaec4a76b" category="list-text">Se esta for a primeira vez que você cria um agente de atividade do usuário, acesse o **Painel**.  No bloco **Atividade do usuário**, selecione **Ativar**.</block>
+  <block id="44e08a5b01e752ac11f59bba4e07dea7" category="paragraph">Se você estiver adicionando um agente de atividade de usuário adicional, vá para *Configurações*, localize o bloco **Atividade do usuário** e selecione **Gerenciar**.  Na tela Atividade do usuário, selecione a aba **Agentes de atividade do usuário** e depois **Adicionar**.</block>
+  <block id="75d41b8fe2ef8de56d2fd2046bb0dad3" category="list-text">Selecione um **Provedor de nuvem** e depois uma **Região**.  Selecione **Avançar**.</block>
+  <block id="604a864dab990debb57e02cc6550cb0b" category="list-text">Forneça os detalhes do agente de atividade do usuário:</block>
+  <block id="8b67ab5f6d4b7a7c9b54a220ab393e0f" category="list-text">**Nome do agente de atividade do usuário**</block>
+  <block id="40c10b55b38de651cc304b987f3b8552" category="list-text">*Agente de console* - o agente de console deve estar na mesma rede que o agente de atividade do usuário e ter conectividade SSH com o endereço IP do agente de atividade do usuário.</block>
+  <block id="b023c42f6578a2febd3d77169ecb00ef" category="list-text">*Nome DNS ou endereço IP da VM*</block>
+  <block id="95a1594aeff80ead5b4f2710e4acb1c5" category="list-text">*Chave SSH da VM*</block>
+  <block id="1dc03f52e7a38f5b6ec91f4303e010ad" category="inline-image-macro">Captura de tela da interface do agente de adição de atividade.</block>
+  <block id="7298950e09abf5a29938d42a442acced" category="paragraph"><block ref="7298950e09abf5a29938d42a442acced" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f2d7e7792f60fc56fc833ac06d43ff03" category="list-text">Revise suas configurações.  Selecione *Ativar* para concluir a adição do agente de atividade do usuário.</block>
+  <block id="a5990ac92f36dcb99f016321efbfa2cd" category="list-text">Confirme se o agente de atividade do usuário foi criado com sucesso.  No bloco Atividade do usuário, uma implantação bem-sucedida é exibida como Em execução.</block>
+  <block id="58dc71d80ac36fa12a160eef553b4dac" category="paragraph">Após a criação bem-sucedida do agente de atividade do usuário, retorne ao menu **Configurações** e selecione **Gerenciar** no bloco Atividade do usuário.  Selecione a aba **Agente de atividade do usuário** e selecione o agente de atividade do usuário para visualizar detalhes sobre ele, incluindo coletores de dados e conectores de diretório do usuário.</block>
+  <block id="87890c9758b28588c6845cfcf6d19b17" category="section-title">Adicionar um coletor de dados</block>
+  <block id="cebc35dcf9d04a393d86d35a4e3cf6be" category="inline-xref-macro">adicionar uma política de detecção</block>
+  <block id="24590b7519b5649099545f7ef699e504" category="paragraph">Os coletores de dados são criados automaticamente quando você ativa uma estratégia de proteção contra ransomware com detecção de atividades suspeitas de usuários. Para obter mais informações, consulte <block ref="c43e895be468efa96867f0ef21f97de4" category="inline-xref-macro-rx"></block> .</block>
+  <block id="723cff7a2b53371ffdffcdc65a370014" category="paragraph">Você pode visualizar os detalhes do coletor de dados.  Em Configurações, selecione **Gerenciar** no bloco Atividade do usuário.  Selecione a aba **Coletor de dados** e selecione o coletor de dados para visualizar seus detalhes ou pausá-lo.</block>
+  <block id="79994c0d6b62d6854ba2d69416af2030" category="inline-image-macro">Captura de tela das configurações de atividade do usuário</block>
+  <block id="eb9abd0b9e77424befbbd0596585482d" category="paragraph"><block ref="eb9abd0b9e77424befbbd0596585482d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ae5063128f989ec31ec308b7dd0cb2ed" category="section-title">Adicionar um conector de diretório de usuário</block>
+  <block id="0e27165c28d4f54b78e7e5ec47c83fc4" category="paragraph">Para mapear IDs de usuário para nomes de usuário, você deve criar um conector de diretório de usuário.</block>
+  <block id="8348d8dcee9ea32e049e21c42a431b91" category="list-text">Em Ransomware Resilience, vá para *Configurações*.</block>
+  <block id="9fcb0a7634f29d96ae98e37bbc76e1cd" category="list-text">No bloco Atividade do usuário, selecione **Gerenciar**.</block>
+  <block id="e70202c14c96f451fdcf2617844ea351" category="list-text">Selecione a aba **Conectores de diretório do usuário** e depois **Adicionar**.</block>
+  <block id="6b0d749af4fb3ac0e4e4a1eefc36c454" category="list-text">Forneça os detalhes da conexão:</block>
+  <block id="496ee322ba138fdbc777e5ab2e30145e" category="list-text">*Nome*</block>
+  <block id="e018ce61f2faa0782aac0cf5ceb4e39f" category="list-text">*Tipo de diretório de usuário*</block>
+  <block id="817d09446fbab0a167f137ba029b3b2c" category="list-text">*Endereço IP do servidor ou nome de domínio*</block>
+  <block id="942f115bf2a4bb90285e9cc5de7fd48b" category="list-text">*Nome da floresta ou nome da pesquisa*</block>
+  <block id="28781714c6ccf5cfa635f547328898a5" category="list-text">*Nome de domínio BIND*</block>
+  <block id="f379b6d26456916980ea32f662e2088a" category="list-text">*Senha BIND*</block>
+  <block id="2bfa02843b15eae74dde462c970a2a00" category="list-text">*Protocolo* (opcional)</block>
+  <block id="5ddcf17f54788a5bb9148e8671562c06" category="list-text">*Porta*</block>
+  <block id="4648df055f6134caf491290d363fdd55" category="inline-image-macro">Captura de tela da conexão do diretório do usuário</block>
+  <block id="e41447b39a2a8caf5092a92f230bd291" category="paragraph"><block ref="e41447b39a2a8caf5092a92f230bd291" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="86c3d5aee71dba0d2e67a122a900b46d" category="paragraph">Forneça os detalhes do mapeamento de atributos:</block>
+  <block id="67abd0bd8cf8f6b948416d41be7c6f6a" category="list-text">*Nome de exibição*</block>
+  <block id="aff175f709dc693d1f9ca4c44728163a" category="list-text">*SID* (se você estiver usando LDAP)</block>
+  <block id="3b57547caa3754998fa617bd92514f25" category="list-text">*Nome de usuário*</block>
+  <block id="c8a0546946d4ed57fd88fc4918d3825f" category="list-text">*ID Unix* (se você estiver usando NFS)</block>
+  <block id="44c65853ed8da5c496344c1e746b1669" category="list-text">Selecione *Incluir atributos opcionais*.  Você também pode incluir endereço de e-mail, número de telefone, função, estado, país, departamento, foto, DN do gerente ou grupos.</block>
+  <block id="7703674a5321c1f23549682250a732e9" category="paragraph">Selecione *Avançado* para adicionar uma consulta de pesquisa opcional.</block>
+  <block id="7174ea6988f438d85266f06a4d178a79" category="list-text">Selecione **Adicionar**.</block>
+  <block id="c46a6dfd4cabd150fef75d97e543d6e6" category="list-text">Retorne à guia de conectores do diretório do usuário para verificar o status do seu conector do diretório do usuário.  Se criado com sucesso, o status do conector do diretório do usuário será exibido como *Em execução*.</block>
+  <block id="ecdd284164c9ec55e281a5e22e24af67" category="section-title">Excluir um conector de diretório de usuário</block>
+  <block id="064c929bca3d74ce57c593b98179d9b6" category="list-text">Localize o bloco Atividade do usuário e selecione **Gerenciar**.</block>
+  <block id="7a4d95b4bd97e134c18ec0bc73dfdc26" category="list-text">Selecione a aba **Conector de diretório do usuário**.</block>
+  <block id="78b1b242bace6a18a2fc89d34f35271a" category="list-text">Identifique o conector de diretório do usuário que você deseja excluir.  No menu de ação no final da linha, selecione os três pontos<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block> então **Excluir**.</block>
+  <block id="d612f3439b60caf42aae1b535bd86696" category="list-text">Na caixa de diálogo pop-up, selecione **Excluir** para confirmar suas ações.</block>
+  <block id="2dbd6a4739d1db42b8aac2205ef06e6e" category="section-title">Responder a alertas de atividades suspeitas de usuários</block>
+  <block id="2d8b6636ea3b13ca52dd572d55fc4d15" category="paragraph">Depois de configurar a detecção de atividades suspeitas de usuários, você pode monitorar eventos na página de alertas. Para obter mais informações, consulte <block ref="23491e50ff66c3ad8e47bd3a8caca02f" category="inline-link-macro-rx"></block> .</block>
+  <block id="d341f0c47f4b7ad5cc1b4c9bb210cfda" category="section-title">12 de agosto de 2025</block>
+  <block id="9d5aaa8966c5e35be75ef082fe317272" category="paragraph"><block ref="52acad0b8ccf8676f5a7124bd999ec73" category="inline-link-rx"></block> .</block>
+  <block id="29dfc4e316452c829eef22178afa1c8f" category="paragraph"><block ref="280bb568aae28b55ea90793d53388aa1" category="inline-link-rx"></block> .</block>
+  <block id="3bdcaa67ee630d082a331575d6ad70e5" category="paragraph"><block ref="a34be145b0dd9ba4287e1030f5129744" category="inline-link-rx"></block> .</block>
+  <block id="ab32f8de0474049c3f4354f05ec6dfd5" category="paragraph"><block ref="ca49e370d9987ff017d502716c88ef81" category="inline-link-rx"></block> .</block>
+  <block id="f0af7695828e31059ed5092f50304a34" category="paragraph"><block ref="f0af7695828e31059ed5092f50304a34" category="inline-link-rx"></block></block>
+  <block id="d6b21f9a427919baeb5254ed7e7420c7" category="paragraph"><block ref="37f5a5eca4b0b0ddec4a2d02e8b40e5a" category="inline-link-rx"></block> .</block>
+  <block id="3aa48700f676555617a370b571aa145e" category="paragraph"><block ref="b28e1e8da94cfec3c6c3735d25c2147b" category="inline-link-rx"></block> .</block>
+  <block id="282209fca8545cb316f2eba7f3a62db7" category="paragraph"><block ref="30b7f8b521639e51a1e6fc42e56a3552" category="inline-link-rx"></block> .</block>
+  <block id="6e679110b5603dd298546f6066c877b0" category="paragraph"><block ref="e6accfa7d08294e7415997a8922d3847" category="inline-link-rx"></block> .</block>
+  <block id="900a7e5872fb6c898655178f2fa35ed5" category="paragraph"><block ref="e92eb392bc60f64cbc3210e33ab1f4df" category="inline-link-rx"></block> .</block>
+  <block id="7c75764d48045cde5c8ebcef2c6e5252" category="paragraph"><block ref="10393bb2758596cdd15d00867527fdbe" category="inline-link-rx"></block> .</block>
+  <block id="527e566d1a5906e736aefbf176bcf742" category="paragraph"><block ref="43654d444a1c24758633d5b7f36db71a" category="inline-link-rx"></block> .</block>
+  <block id="868a5c1a1f87e085528466231f05e396" category="paragraph"><block ref="56d6234f54e33e04adbdd55ddd9f2541" category="inline-link-rx"></block> .</block>
+  <block id="d609cfbd89a3fada16238b8a39148f46" category="paragraph">Além de usar políticas predefinidas, agora você pode criar políticas.<block ref="c308b2d22c33a15b90252d49c2873920" category="inline-link-rx"></block> .</block>
+  <block id="2a6274cd80906a41f767d82d87b9879b" category="paragraph">Agora você pode tornar o backup imutável no armazenamento secundário usando a tecnologia NetApp DataLock no armazenamento de objetos.<block ref="30d822bb5bc7d8307e119ffe13f01233" category="inline-link-rx"></block> .</block>
+  <block id="ad6b8f5314fbdf658a421086c8463a3b" category="paragraph">Além de usar a AWS, agora você pode escolher o StorageGRID como seu destino de backup.<block ref="5c098460bee807344a1e691430f00deb" category="inline-link-rx"></block> .</block>
+  <block id="e4e11b8b26d220d6a7d910ac9d9b8b76" category="paragraph">Agora você pode visualizar mais detalhes forenses para investigar o possível ataque detectado.<block ref="a80436187b82ac9f8b34d74ed89f86ca" category="inline-link-rx"></block> .</block>
+  <block id="77d6960ddc4ee40e26fd963e6e1f6e68" category="paragraph">O processo de recuperação foi aprimorado.  Agora, você pode recuperar volume por volume ou todos os volumes de uma carga de trabalho.<block ref="2db5667b5f183f51656a41f32740d8f2" category="inline-link-rx"></block> .</block>
+  <block id="0c59fa3b4bea70fe5377775600bed707" category="sidebar">O NetApp Ransomware Resilience protege, detecta e oferece suporte à recuperação de cargas de trabalho de aplicativos e compartilhamentos de arquivos contra ameaças de ransomware em armazenamento local e na nuvem.  Com suporte a plataformas como Oracle, MySQL, datastores de VM e armazenamento NAS, o Ransomware Resilience permite backup e recuperação seguros, ajudando organizações a proteger dados críticos e manter a continuidade dos negócios.</block>
+  <block id="e65f6e4b1867bfedf08120cb1ab99c24" category="sidebar">Configurar detecção de atividades suspeitas de usuários</block>
 </blocks>

@@ -18,7 +18,7 @@ Com esta versão, você pode usar um novo botão no Painel de BlueXP ransomware 
 
 Agora você pode executar exercícios de prontidão em cargas de trabalho CIFS (SMB), além de cargas de trabalho NFS.
 
-Para mais detalhes, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["Realizar um exercício de preparação para ataques de ransomware"] .
+Para mais detalhes, consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-simulate.html["Realizar um exercício de preparação para ataques de ransomware"] .
 
 
 
@@ -28,4 +28,4 @@ Antes de usar a BlueXP classification no serviço de BlueXP ransomware protectio
 
 Você pode implantar a BlueXP classification em uma carga de trabalho de compartilhamento de arquivos a partir da BlueXP ransomware protection.  Na coluna *Exposição de privacidade*, selecione a opção *Identificar exposição*.  Se você ativou o serviço de classificação, esta ação identifica a exposição.  Caso contrário, com esta versão, uma caixa de diálogo apresenta a opção de implantar a BlueXP classification.  Selecione *Implantar* para ir para a página inicial do serviço de BlueXP classification , onde você pode implantar esse serviço.  C
 
-Para mais detalhes, consulte https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html["Implantar a BlueXP classification na nuvem"^] e para usar o serviço dentro da BlueXP ransomware protection, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html["Escaneie informações de identificação pessoal com a BlueXP classification"] .
+Para mais detalhes, consulte https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-cloud-compliance.html["Implantar a BlueXP classification na nuvem"^] e para usar o serviço dentro da BlueXP ransomware protection, consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect-classify.html["Escaneie informações de identificação pessoal com a BlueXP classification"] .

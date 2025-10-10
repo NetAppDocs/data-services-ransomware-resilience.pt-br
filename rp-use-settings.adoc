@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-use-settings.html 
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware settings, backup destination 
-summary: Você pode configurar várias opções, incluindo um destino de backup, detecção de ameaças e conexão com o Data Infrastructure Insights Workload Security no Ransomware Resilience. 
+summary: Você pode configurar várias opções, incluindo um destino de backup e detecção de ameaças na página de configurações. 
 ---
 = Configurar as definições de proteção no NetApp Ransomware Resilience
 :hardbreaks:
@@ -12,15 +12,15 @@ summary: Você pode configurar várias opções, incluindo um destino de backup,
 
 
 [role="lead"]
-Você pode configurar destinos de backup, enviar dados para um sistema externo de gerenciamento de segurança e eventos (SIEM), conduzir um exercício de prontidão para ataque, configurar a descoberta de carga de trabalho ou configurar a conexão com a segurança de carga de trabalho do Data Infrastructure Insights acessando a opção *Configurações*.
+Você pode configurar destinos de backup, enviar dados para um sistema externo de gerenciamento de segurança e eventos (SIEM), conduzir um exercício de prontidão para ataques, configurar a descoberta de carga de trabalho ou configurar a detecção de atividades suspeitas do usuário acessando a opção *Configurações*.
 
-*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console para todos os serviços"^] .
+*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console para todos os serviços"^] .
 
 *O que você pode fazer na página Configurações?*  Na página Configurações, você pode fazer o seguinte:
 
 * Simule um ataque de ransomware realizando um exercício de prontidão e respondendo a um alerta simulado de ransomware. Para obter detalhes, consulte link:rp-start-simulate.html["Realizar um exercício de preparação para ataques de ransomware"] .
 * Configurar descoberta de carga de trabalho.
-* Configure a conexão com a segurança da carga de trabalho do Data Infrastructure Insights para ver informações de usuários suspeitos em alertas de ransomware.
+* Configure relatórios de atividades suspeitas de usuários.
 * Adicione um destino de backup.
 * Conecte seu sistema de gerenciamento de segurança e eventos (SIEM) para análise e detecção de ameaças.  Habilitar a detecção de ameaças envia automaticamente dados ao seu SIEM para análise de ameaças.
 
@@ -63,35 +63,11 @@ Esta página mostra agentes do Console com sistemas que não foram selecionados 
 
 
 
-== Veja comportamento anômalo suspeito do usuário conectando-se à segurança da carga de trabalho do Data Infrastructure Insights
+== Atividade suspeita do usuário
 
-Antes de poder visualizar detalhes de comportamento anômalo suspeito do usuário no Ransomware Resilience, você precisa configurar a conexão com o sistema de segurança do Data Infrastructure Insights Workload.
+No cartão de atividade do usuário, você pode criar e gerenciar o agente de atividade do usuário necessário para detectar atividades suspeitas do usuário.
 
-
-
-=== Obtenha um token de acesso à API do sistema de segurança de carga de trabalho do Data Infrastructure Insights
-
-Obtenha um token de acesso à API do sistema de segurança de carga de trabalho do Data Infrastructure Insights .
-
-. Efetue login no sistema de segurança de carga de trabalho do Data Infrastructure Insights .
-. Na navegação à esquerda, selecione *Admin* > *Acesso à API*.
-+
-image:../media/screen-alerts-ci-api-access-token.png["Página de acesso à API no Data Infrastructure Insights Segurança da carga de trabalho"]
-
-. Crie um token de acesso à API ou use um existente.
-. Copie o token de acesso da API.
-
-
-
-
-=== Conecte-se ao Data Infrastructure Insights Segurança da carga de trabalho
-
-. No menu Configurações de resiliência contra ransomware, localize o bloco *Conexão de segurança da carga de trabalho*.
-. Selecione *Conectar*.
-. Insira a URL para a interface de segurança da carga de trabalho da infraestrutura de dados.
-. Insira o token de acesso da API que fornece acesso à segurança da carga de trabalho.
-. Selecione *Conectar*.
-
+Para obter mais informações, consulte link:suspicious-user-activity.html["Atividade suspeita do usuário"] .
 
 
 
@@ -169,7 +145,7 @@ image:screen-settings-backup-destinations-list2.png["Página de destinos de back
 
 Para configurar a AWS como destino de backup, insira as seguintes informações.
 
-Para obter detalhes sobre como gerenciar seu armazenamento AWS no Console, consulte https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html["Gerencie seus buckets do Amazon S3"^] .
+Para obter detalhes sobre como gerenciar seu armazenamento AWS no Console, consulte https://docs.netapp.com/us-en/console-setup-admin/task-viewing-amazon-s3.html["Gerencie seus buckets do Amazon S3"^] .
 
 .Passos
 . Na página *Configurações > Destinos de backup*, selecione *Adicionar*.
@@ -185,7 +161,7 @@ image:screen-settings-backup-destination.png["Página de destinos de backup"]
 *** Crie um novo bucket, selecione um bucket existente se já houver um no Console ou traga seu próprio bucket que armazenará os backups.
 *** Conta AWS, região, chave de acesso e chave secreta para credenciais AWS
 +
-https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["Se você quiser trazer seu próprio bucket, consulte Adicionar buckets S3"^] .
+https://docs.netapp.com/us-en/storage-management-s3-storage/task-add-s3-bucket.html["Se você quiser trazer seu próprio bucket, consulte Adicionar buckets S3"^] .
 
 
 
@@ -228,7 +204,7 @@ image:screen-settings-backup-destinations-list2.png["Página de destinos de back
 
 Para configurar o Google Cloud Platform (GCP) como destino de backup, insira as seguintes informações.
 
-Para obter detalhes sobre como gerenciar seu armazenamento GCP no Console, consulte https://docs.netapp.com/us-en/bluexp-setup-admin/concept-install-options-google.html["Opções de instalação do agente de console no Google Cloud"^] .
+Para obter detalhes sobre como gerenciar seu armazenamento do GCP no Console, consulte https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-google.html["Opções de instalação do agente de console no Google Cloud"^] .
 
 .Passos
 . Na página *Configurações > Destinos de backup*, selecione *Adicionar*.
@@ -269,7 +245,7 @@ O novo destino de backup é adicionado à lista de destinos de backup.
 
 Para configurar o Azure como um destino de backup, insira as seguintes informações.
 
-Para obter detalhes sobre como gerenciar suas credenciais do Azure e assinaturas do marketplace no Console, consulte https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["Gerencie suas credenciais do Azure e assinaturas do marketplace"^] .
+Para obter detalhes sobre como gerenciar suas credenciais do Azure e assinaturas do marketplace no Console, consulte https://docs.netapp.com/us-en/console-setup-admin/task-adding-azure-accounts.html["Gerencie suas credenciais do Azure e assinaturas do marketplace"^] .
 
 .Passos
 . Na página *Configurações > Destinos de backup*, selecione *Adicionar*.
@@ -285,7 +261,7 @@ image:screen-settings-backup-destination.png["Página de destinos de backup"]
 *** Crie uma nova conta de armazenamento, selecione uma existente se já houver uma no Console ou traga sua própria conta de armazenamento que armazenará os backups.
 *** Assinatura, região e grupo de recursos do Azure para credenciais do Azure
 +
-https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["Se você quiser trazer sua própria conta de armazenamento, consulte Adicionar contas de armazenamento de Blobs do Azure"^] .
+https://docs.netapp.com/us-en/storage-management-blob-storage/task-add-blob-storage.html["Se você quiser trazer sua própria conta de armazenamento, consulte Adicionar contas de armazenamento de Blobs do Azure"^] .
 
 
 

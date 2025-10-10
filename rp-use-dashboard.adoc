@@ -16,7 +16,7 @@ O NetApp Ransomware Resilience Dashboard fornece informações rápidas sobre a 
 
 Use o Painel para revisar sugestões de proteção, alterar configurações, baixar relatórios e visualizar documentação.
 
-*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto, administrador do Ransomware Resilience ou visualizador do Ransomware Resilience. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do BlueXP para todos os serviços"^] .
+*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto, administrador do Ransomware Resilience ou visualizador do Ransomware Resilience. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do BlueXP para todos os serviços"^] .
 
 
 
@@ -115,7 +115,7 @@ Aqui está uma amostra das recomendações que o Ransomware Resilience oferece.
 | Proteja cargas de trabalho de compartilhamento de arquivos críticos ou altamente importantes contra ransomware. | A página Proteção exibe cargas de trabalho críticas ou altamente importantes do tipo Compartilhamento de Arquivos ou Armazenamento de Dados que não estão protegidas. | Atribua uma política a cada uma das cargas de trabalho. Consulte link:rp-use-protect.html["Proteja cargas de trabalho contra ataques de ransomware"] . 
 
 
-| Registre o plugin SnapCenter disponível para VMware vSphere (SCV) com o Console | Uma carga de trabalho de VM não é protegida. | Atribua proteção consistente de VM à carga de trabalho da VM habilitando o plug-in SnapCenter para VMware vSphere. Consulte link:rp-use-protect.html["Proteja cargas de trabalho contra ataques de ransomware"] . 
+| Registre o plugin SnapCenter disponível para VMware vSphere (SCV) com o Console | Uma carga de trabalho de VM não é protegida. | Atribua proteção consistente de VM à carga de trabalho da VM habilitando o SnapCenter Plugin para VMware vSphere. Consulte link:rp-use-protect.html["Proteja cargas de trabalho contra ataques de ransomware"] . 
 
 
 | Registre o SnapCenter Server disponível com o Console | Um aplicativo não está protegido. | Atribua proteção consistente com o aplicativo à carga de trabalho habilitando o SnapCenter Server. Consulte link:rp-use-protect.html["Proteja cargas de trabalho contra ataques de ransomware"] . 

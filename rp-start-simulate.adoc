@@ -32,7 +32,7 @@ Você precisa inserir um nome de usuário e uma senha para as seguintes situaç�
 * Se você inserir um nome de carga de trabalho de teste diferente
 
 
-*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console para todos os serviços"^] .
+*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console para todos os serviços"^] .
 
 .Passos
 . No menu NetApp Ransomware Resilience, selecione o botão *Executar teste de prontidão* no canto superior direito.
@@ -67,7 +67,7 @@ TIP: Você pode editar a configuração do exercício de prontidão mais tarde u
 
 Depois de configurar o exercício de prontidão, você pode iniciá-lo.
 
-*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console para todos os serviços"^] .
+*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console para todos os serviços"^] .
 
 Quando você inicia o exercício de prontidão, o Ransomware Resilience ignora o modo de aprendizado e inicia o exercício no modo ativo.  O status de detecção da carga de trabalho é Ativo.
 
@@ -96,7 +96,7 @@ NOTE: Após o início do exercício, não é possível editar a configuração d
 
 Teste sua prontidão respondendo a um alerta de treinamento de prontidão.
 
-*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console para todos os serviços"^] .
+*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console para todos os serviços"^] .
 
 .Passos
 . No menu Resiliência contra Ransomware, selecione *Alertas*.
@@ -119,11 +119,9 @@ image:screen-alerts-readiness-incidents2.png["Página de incidente mostrando o a
 
 Aqui estão algumas coisas que você deve procurar:
 
-* Observe o tipo de ataque potencial.
+* Observe a gravidade potencial do ataque.
 +
-Se o Tipo indicar que um usuário é suspeito de atividade maliciosa, revise o nome do usuário.  Talvez você queira investigar mais o usuário em Segurança de carga de trabalho do Data Infrastructure Insights selecionando *Investigar em segurança de carga de trabalho*.
-
-
+Se a gravidade indicar que um usuário é suspeito de atividade maliciosa, revise o nome do usuário.  Você também podelink:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["bloquear o usuário."]
 
 * Observe a atividade do arquivo e os processos suspeitos:
 +
@@ -143,7 +141,7 @@ Se o Tipo indicar que um usuário é suspeito de atividade maliciosa, revise o n
 
 Após revisar o alerta do exercício de prontidão, restaure a carga de trabalho do teste, se necessário.
 
-*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console para todos os serviços"^] .
+*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console para todos os serviços"^] .
 
 .Passos
 . Retorne à página de detalhes do alerta.
@@ -181,7 +179,7 @@ TIP: Para obter detalhes sobre o processo de restauração, consultelink:rp-use-
 
 Após revisar o alerta do exercício de prontidão e restaurar a carga de trabalho, altere o status do alerta, se necessário.
 
-*Função necessária no Console* Administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console para todos os serviços"^] .
+*Função necessária no Console* Administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console para todos os serviços"^] .
 
 .Passos
 . Retorne à página de detalhes do alerta.
@@ -204,7 +202,7 @@ IMPORTANT: Depois de rejeitar um ataque, você não pode alterá-lo de volta.  S
 
 Após a conclusão do exercício de prontidão, talvez você queira revisar e salvar um relatório sobre o exercício.
 
-*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto, administrador do Ransomware Resilience ou visualizador do Ransomware Resilience. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do BlueXP para todos os serviços"^] .
+*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto, administrador do Ransomware Resilience ou visualizador do Ransomware Resilience. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do BlueXP para todos os serviços"^] .
 
 .Passos
 . No menu Resiliência contra Ransomware, selecione *Relatórios*.

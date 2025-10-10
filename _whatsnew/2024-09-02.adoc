@@ -16,7 +16,7 @@ Consulte https://docs.netapp.com/us-en/active-iq/index.html["Documentação do D
 
 Com esta versão, você pode definir um destino de backup para um bucket do Google Cloud Platform.  Anteriormente, você só podia adicionar destinos de backup ao NetApp StorageGRID, Amazon Web Services e Microsoft Azure.
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Saiba mais sobre como configurar as configurações de BlueXP ransomware protection"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["Saiba mais sobre como configurar as configurações de BlueXP ransomware protection"] .
 
 
 
@@ -24,7 +24,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[
 
 O serviço agora oferece suporte ao Cloud Volumes ONTAP para Google Cloud Platform para proteção de armazenamento.  Anteriormente, o serviço suportava apenas o Cloud Volumes ONTAP para Amazon Web Services e Microsoft Azure, além de NAS local.
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["Saiba mais sobre a BlueXP ransomware protection e fontes de dados suportadas, destinos de backup e ambientes de trabalho"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["Saiba mais sobre a BlueXP ransomware protection e fontes de dados suportadas, destinos de backup e ambientes de trabalho"] .
 
 
 
@@ -32,4 +32,4 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-pr
 
 Agora você pode limitar o acesso a atividades específicas com o controle de acesso baseado em função (RBAC).  A BlueXP ransomware protection usa duas funções do BlueXP: Administrador de conta do BlueXP e Administrador sem conta (Visualizador).
 
-Para obter detalhes sobre as ações que cada função pode executar, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["Privilégios de controle de acesso baseados em funções"] .
+Para obter detalhes sobre as ações que cada função pode executar, consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["Privilégios de controle de acesso baseados em funções"] .

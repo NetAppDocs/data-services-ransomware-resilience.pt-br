@@ -39,20 +39,20 @@ Se você quiser usar o StorageGRID como seu destino de backup, consulte https://
 === Prepare a AWS para se tornar um destino de backup
 
 * Crie uma conta na AWS.
-* Configurar https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["Permissões da AWS"^] na AWS.
+* Configurar https://docs.netapp.com/us-en/console-setup-admin/reference-permissions.html["Permissões da AWS"^] na AWS.
 
 
-Para obter detalhes sobre como gerenciar seu armazenamento AWS no Console, consulte https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html["Gerencie seus buckets do Amazon S3"^] .
+Para obter detalhes sobre como gerenciar seu armazenamento AWS no Console, consulte https://docs.netapp.com/us-en/console-setup-admin/task-viewing-amazon-s3.html["Gerencie seus buckets do Amazon S3"^] .
 
 
 
 === Prepare o Azure para se tornar um destino de backup
 
 * Crie uma conta no Azure.
-* Configurar https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["Permissões do Azure"^] no Azure.
+* Configurar https://docs.netapp.com/us-en/console-setup-admin/reference-permissions.html["Permissões do Azure"^] no Azure.
 
 
-Para obter detalhes sobre como gerenciar seu armazenamento do Azure no Console, consulte https://docs.netapp.com/us-en/bluexp-blob-storage/task-view-azure-blob-storage.html["Gerencie suas contas de armazenamento do Azure"^] .
+Para obter detalhes sobre como gerenciar seu armazenamento do Azure no Console, consulte https://docs.netapp.com/us-en/storage-management-blob-storage/task-view-azure-blob-storage.html["Gerencie suas contas de armazenamento do Azure"^] .
 
 
 
@@ -60,7 +60,7 @@ Para obter detalhes sobre como gerenciar seu armazenamento do Azure no Console, 
 
 O próximo passo é configurar o Console e a Resiliência contra Ransomware.
 
-Análise https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-standard-mode.html["Requisitos do console para o modo padrão"^] .
+Análise https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-standard-mode.html["Requisitos do console para o modo padrão"^] .
 
 
 

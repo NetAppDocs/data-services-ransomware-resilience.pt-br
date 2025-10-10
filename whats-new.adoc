@@ -24,17 +24,48 @@ Saiba o que há de novo no NetApp Ransomware Resilience.
 
 === A BlueXP ransomware protection agora é NetApp Ransomware Resilience
 
-A replicação do ransomware BlueXP foi renomeada para NetApp Ransomware Resilience.
+O serviço de BlueXP ransomware protection foi renomeado para NetApp Ransomware Resilience.
 
 
 
 === BlueXP agora é NetApp Console
 
-O BlueXP foi renomeado e redesenhado para refletir melhor seu papel no gerenciamento de sua infraestrutura de dados.
-
 O NetApp Console fornece gerenciamento centralizado de serviços de armazenamento e dados em ambientes locais e na nuvem em nível empresarial, fornecendo insights em tempo real, fluxos de trabalho mais rápidos e administração simplificada.
 
-Para obter detalhes sobre o que mudou, consulte o https://docs.netapp.com/us-en/bluexp-relnotes/index.html["Notas de versão do NetApp Console"] .
+Para obter detalhes sobre o que mudou, consulte o https://docs.netapp.com/us-en/console-relnotes/index.html["Notas de versão do NetApp Console"] .
+
+
+
+=== Detecção de violação de dados
+
+O Ransomware Resilience inclui um novo mecanismo de detecção que pode ser ativado em algumas etapas para detectar leituras anômalas do usuário como um indicador precoce de violação de dados.  A resiliência do ransomware coleta e analisa eventos de leitura do usuário criando uma linha de base histórica, que é um perfil de comportamento normal esperado a partir de dados anteriores.  Quando uma nova atividade do usuário se desvia significativamente dessa norma estabelecida (como um aumento inesperado de leituras combinado com padrões de leitura suspeitos), um alerta é gerado.  O Ransomware Resilience inclui um modelo de IA para detectar padrões de leitura suspeitos.
+
+Diferentemente da detecção de criptografia pelo ARP na camada de armazenamento, a detecção da anomalia de comportamento do usuário é feita no serviço Ransomware Resilience SaaS por meio da coleta de eventos FPolicy.
+
+Para mais informações, consultelink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.htm["Habilitar detecção de atividades suspeitas de usuários"] elink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html#view-anomalous-user-behavior["Visualizar comportamento anômalo do usuário"] .
+
+
+
+==== Detecções adicionais de atividades suspeitas de usuários
+
+Além da detecção de violações de dados, o Ransomware Resilience também detecta os seguintes tipos de alerta com base na atividade suspeita observada do usuário:
+
+* **Destruição de dados - ataque potencial** - Um alerta com a gravidade do ataque potencial é criado quando o número de exclusões de arquivos excede a norma histórica.
+* **Comportamento suspeito do usuário - ataque potencial** - Um alerta com a gravidade do ataque potencial é criado quando são observadas operações de leitura, renomeação e exclusão em uma sequência semelhante a um ataque de ransomware
+* **Comportamento suspeito do usuário - Aviso** - Um alerta com a gravidade do aviso é criado quando o número total de atividades de arquivo (leitura, exclusão, renomeação etc.) excede a norma histórica
+
+
+
+
+==== Nova função de usuário para detecção de violação de dados
+
+Para gerenciar alertas de atividades suspeitas do usuário, o Ransomware Resilience introduziu duas novas funções para fornecer acesso granular a dados confidenciais, como atividades de arquivos do usuário. Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["Acesso baseado em função de resiliência do NetApp Ransomware"] .
+
+
+
+== 12 de agosto de 2025
+
+Esta versão inclui aprimoramentos e melhorias gerais.
 
 
 
@@ -46,7 +77,7 @@ Para obter detalhes sobre o que mudou, consulte o https://docs.netapp.com/us-en/
 
 Esta versão inclui suporte para cargas de trabalho SAN na BlueXP ransomware protection.  Agora você pode proteger cargas de trabalho SAN, além de cargas de trabalho NFS e CIFS.
 
-Para mais informações, consulte link:https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-prerequisites.html["Pré-requisitos de BlueXP ransomware protection"] .
+Para mais informações, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-prerequisites.html["Pré-requisitos de BlueXP ransomware protection"] .
 
 
 
@@ -54,7 +85,7 @@ Para mais informações, consulte link:https://docs.netapp.com/us-en/bluexp-rans
 
 Esta versão melhora o processo de configuração para cargas de trabalho com políticas de snapshot e backup de outras ferramentas da NetApp , como SnapCenter ou BlueXP backup and recovery.  Em versões anteriores, a BlueXP ransomware protection descobria as políticas de outras ferramentas, permitindo apenas que você alterasse a política de detecção.  Com esta versão, agora você pode substituir políticas de snapshot e backup por políticas de BlueXP ransomware protection ou continuar a usar as políticas de outras ferramentas.
 
-Para mais detalhes, consultelink:https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Proteja as cargas de trabalho"] .
+Para mais detalhes, consultelink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Proteja as cargas de trabalho"] .
 
 
 
@@ -66,7 +97,7 @@ O e-mail inclui informações sobre a gravidade, a carga de trabalho impactada e
 
 Se você configurou um sistema de gerenciamento de segurança e eventos (SIEM) na BlueXP ransomware protection, o serviço envia detalhes de alerta para seu sistema SIEM.
 
-Para mais detalhes, consultelink:https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Lidar com alertas de ransomware detectados"] .
+Para mais detalhes, consultelink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html["Lidar com alertas de ransomware detectados"] .
 
 
 
@@ -88,7 +119,7 @@ Com esta versão, você pode usar um novo botão no Painel de BlueXP ransomware 
 
 Agora você pode executar exercícios de prontidão em cargas de trabalho CIFS (SMB), além de cargas de trabalho NFS.
 
-Para mais detalhes, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["Realizar um exercício de preparação para ataques de ransomware"] .
+Para mais detalhes, consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-simulate.html["Realizar um exercício de preparação para ataques de ransomware"] .
 
 
 
@@ -98,7 +129,7 @@ Antes de usar a BlueXP classification no serviço de BlueXP ransomware protectio
 
 Você pode implantar a BlueXP classification em uma carga de trabalho de compartilhamento de arquivos a partir da BlueXP ransomware protection.  Na coluna *Exposição de privacidade*, selecione a opção *Identificar exposição*.  Se você ativou o serviço de classificação, esta ação identifica a exposição.  Caso contrário, com esta versão, uma caixa de diálogo apresenta a opção de implantar a BlueXP classification.  Selecione *Implantar* para ir para a página inicial do serviço de BlueXP classification , onde você pode implantar esse serviço.  C
 
-Para mais detalhes, consulte https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html["Implantar a BlueXP classification na nuvem"^] e para usar o serviço dentro da BlueXP ransomware protection, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html["Escaneie informações de identificação pessoal com a BlueXP classification"] .
+Para mais detalhes, consulte https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-cloud-compliance.html["Implantar a BlueXP classification na nuvem"^] e para usar o serviço dentro da BlueXP ransomware protection, consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect-classify.html["Escaneie informações de identificação pessoal com a BlueXP classification"] .
 
 
 
@@ -114,7 +145,7 @@ Há muitos motivos pelos quais o serviço não oferece suporte a um ambiente de 
 
 Você pode visualizar os ambientes de trabalho sem suporte durante a descoberta inicial, onde também pode baixar os resultados.  Você também pode visualizar os resultados da descoberta na opção *Descoberta de carga de trabalho* na página Configurações.
 
-Para mais detalhes, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Descubra cargas de trabalho na BlueXP ransomware protection"] .
+Para mais detalhes, consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-discover.html["Descubra cargas de trabalho na BlueXP ransomware protection"] .
 
 
 
@@ -139,9 +170,9 @@ TIP: Políticas de backup para uma carga de trabalho em execução no FSx para O
 * Incidentes de alerta mostram o novo ambiente de trabalho do FSx para ONTAP .
 
 
-Para mais detalhes, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["Saiba mais sobre a BlueXP ransomware protection e ambientes de trabalho"] .
+Para mais detalhes, consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["Saiba mais sobre a BlueXP ransomware protection e ambientes de trabalho"] .
 
-Para obter informações sobre as opções suportadas, consulte o https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-limitations.html["Limitações da BlueXP ransomware protection"] .
+Para obter informações sobre as opções suportadas, consulte o https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-limitations.html["Limitações da BlueXP ransomware protection"] .
 
 
 
@@ -149,7 +180,7 @@ Para obter informações sobre as opções suportadas, consulte o https://docs.n
 
 Agora você precisa de uma das seguintes funções de acesso para visualizar, descobrir ou gerenciar a BlueXP ransomware protection: administrador da organização, administrador de pasta ou projeto, administrador de proteção contra ransomware ou visualizador de proteção contra ransomware.
 
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do BlueXP para todos os serviços"^] .
+https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do BlueXP para todos os serviços"^] .
 
 
 
@@ -161,7 +192,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.
 
 Com esta versão, você pode revisar relatórios de exercícios de prontidão para ataques de ransomware.  Um exercício de prontidão permite simular um ataque de ransomware em uma carga de trabalho de amostra recém-criada.  Em seguida, investigue o ataque simulado e recupere a carga de trabalho de amostra.  Esse recurso ajuda você a saber se está preparado no caso de um ataque real de ransomware, testando processos de notificação de alerta, resposta e recuperação.
 
-Para mais detalhes, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["Realizar um exercício de preparação para ataques de ransomware"] .
+Para mais detalhes, consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-simulate.html["Realizar um exercício de preparação para ataques de ransomware"] .
 
 
 
@@ -173,7 +204,7 @@ Anteriormente, você podia atribuir funções e permissões aos usuários com ba
 * Visualizador de proteção contra ransomware
 
 
-Para obter detalhes sobre permissões, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["Acesso baseado em função de BlueXP ransomware protection aos recursos"] .
+Para obter detalhes sobre permissões, consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["Acesso baseado em função de BlueXP ransomware protection aos recursos"] .
 
 
 
@@ -181,7 +212,7 @@ Para obter detalhes sobre permissões, consulte https://docs.netapp.com/us-en/bl
 
 Esta versão inclui diversas melhorias no processo de pagamento.
 
-Para mais detalhes, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["Configurar opções de licenciamento e pagamento"] .
+Para mais detalhes, consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-licenses.html["Configurar opções de licenciamento e pagamento"] .
 
 
 
@@ -193,7 +224,7 @@ Para mais detalhes, consulte https://docs.netapp.com/us-en/bluexp-ransomware-pro
 
 Com esta versão, simule um ataque de ransomware para testar sua resposta a um alerta de ransomware.  Esse recurso ajuda você a saber se está preparado no caso de um ataque real de ransomware, testando processos de notificação de alerta, resposta e recuperação.
 
-Para mais detalhes, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["Realizar um exercício de preparação para ataques de ransomware"] .
+Para mais detalhes, consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-simulate.html["Realizar um exercício de preparação para ataques de ransomware"] .
 
 
 
@@ -206,7 +237,7 @@ Esta versão inclui melhorias nos processos seletivos de descoberta e redescober
 * Você pode executar esses processos de descoberta durante o processo de descoberta inicialmente ou na opção Configurações.
 
 
-Para mais detalhes, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Descubra cargas de trabalho recém-criadas para ambientes de trabalho selecionados anteriormente"] e https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Configurar recursos com a opção Configurações"] .
+Para mais detalhes, consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-discover.html["Descubra cargas de trabalho recém-criadas para ambientes de trabalho selecionados anteriormente"] e https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["Configurar recursos com a opção Configurações"] .
 
 
 
@@ -214,7 +245,7 @@ Para mais detalhes, consulte https://docs.netapp.com/us-en/bluexp-ransomware-pro
 
 Com esta versão, você pode visualizar alertas quando alta criptografia for detectada em suas cargas de trabalho, mesmo sem grandes alterações na extensão do arquivo.  Este recurso, que usa a IA de proteção autônoma contra ransomware (ARP) do ONTAP , ajuda você a identificar cargas de trabalho que correm risco de ataques de ransomware.  Use este recurso e baixe a lista completa de arquivos afetados com ou sem alterações de extensão.
 
-Para mais detalhes, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Responder a um alerta de ransomware detectado"] .
+Para mais detalhes, consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html["Responder a um alerta de ransomware detectado"] .
 
 
 
@@ -226,11 +257,11 @@ Para mais detalhes, consulte https://docs.netapp.com/us-en/bluexp-ransomware-pro
 
 Com esta versão, você pode usar o Data Infrastructure Insights Storage Workload Security para detectar comportamento anômalo do usuário em suas cargas de trabalho de armazenamento.  Este recurso ajuda você a identificar potenciais ameaças à segurança e bloquear usuários potencialmente mal-intencionados para proteger seus dados.
 
-Para mais detalhes, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Responder a um alerta de ransomware detectado"] .
+Para mais detalhes, consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html["Responder a um alerta de ransomware detectado"] .
 
 Antes de usar o Data Infrastructure Insights Storage Workload Security para detectar comportamento anômalo do usuário, você precisa configurar a opção usando a opção *Configurações* de BlueXP ransomware protection .
 
-Consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Configurar as definições de BlueXP ransomware protection"] .
+Consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["Configurar as definições de BlueXP ransomware protection"] .
 
 
 
@@ -243,7 +274,7 @@ Com esta versão, agora você pode fazer o seguinte:
 * Descubra cargas de trabalho recém-criadas para ambientes de trabalho selecionados anteriormente.
 
 
-Consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Descubra cargas de trabalho"] .
+Consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-discover.html["Descubra cargas de trabalho"] .
 
 
 
@@ -257,11 +288,11 @@ Com esta versão, você pode habilitar a BlueXP classification, um componente pr
 
 A verificação de dados PII na BlueXP ransomware protection geralmente está disponível para clientes que implantaram a BlueXP classification.  A BlueXP classification está disponível como parte da plataforma BlueXP sem custo adicional e pode ser implantada no local ou na nuvem do cliente.
 
-Consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Configurar as definições de BlueXP ransomware protection"] .
+Consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["Configurar as definições de BlueXP ransomware protection"] .
 
 Para iniciar a verificação, na página Proteção, clique em *Identificar exposição* na coluna Exposição de privacidade.
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html["Escaneie dados pessoais confidenciais com a BlueXP classification"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect-classify.html["Escaneie dados pessoais confidenciais com a BlueXP classification"] .
 
 
 
@@ -269,7 +300,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classi
 
 Agora você pode enviar dados ao seu sistema de gerenciamento de segurança e eventos (SIEM) para análise e detecção de ameaças usando o Microsoft Sentinel.  Anteriormente, você podia selecionar o AWS Security Hub ou o Splunk Cloud como seu SIEM.
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Saiba mais sobre como configurar as configurações de BlueXP ransomware protection"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["Saiba mais sobre como configurar as configurações de BlueXP ransomware protection"] .
 
 
 
@@ -283,7 +314,7 @@ Com este lançamento, novas implantações da BlueXP ransomware protection agora
 
 Antes de restaurar uma carga de trabalho de aplicativo no nível de arquivo, agora você pode visualizar uma lista de arquivos que podem ter sido afetados por um ataque e identificar aqueles que deseja restaurar.  Anteriormente, se os Conectores BlueXP em uma organização (anteriormente uma conta) estivessem usando o Podman, esse recurso era desabilitado.  Agora está habilitado para o Podman.  Você pode deixar que a BlueXP ransomware protection escolha os arquivos a serem restaurados, pode enviar um arquivo CSV que lista todos os arquivos afetados por um alerta ou pode identificar manualmente quais arquivos deseja restaurar.
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["Saiba mais sobre como se recuperar de um ataque de ransomware"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["Saiba mais sobre como se recuperar de um ataque de ransomware"] .
 
 
 
@@ -295,7 +326,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["
 
 Com esta versão, agora você pode agrupar compartilhamentos de arquivos para facilitar a proteção do seu patrimônio de dados.  O serviço pode proteger todos os volumes de um grupo ao mesmo tempo.  Anteriormente, você precisava proteger cada volume separadamente.
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Saiba mais sobre o agrupamento de cargas de trabalho de compartilhamento de arquivos em estratégias de proteção contra ransomware"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Saiba mais sobre o agrupamento de cargas de trabalho de compartilhamento de arquivos em estratégias de proteção contra ransomware"] .
 
 
 
@@ -315,7 +346,7 @@ Consulte https://docs.netapp.com/us-en/active-iq/index.html["Documentação do D
 
 Com esta versão, você pode definir um destino de backup para um bucket do Google Cloud Platform.  Anteriormente, você só podia adicionar destinos de backup ao NetApp StorageGRID, Amazon Web Services e Microsoft Azure.
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Saiba mais sobre como configurar as configurações de BlueXP ransomware protection"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["Saiba mais sobre como configurar as configurações de BlueXP ransomware protection"] .
 
 
 
@@ -323,7 +354,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[
 
 O serviço agora oferece suporte ao Cloud Volumes ONTAP para Google Cloud Platform para proteção de armazenamento.  Anteriormente, o serviço suportava apenas o Cloud Volumes ONTAP para Amazon Web Services e Microsoft Azure, além de NAS local.
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["Saiba mais sobre a BlueXP ransomware protection e fontes de dados suportadas, destinos de backup e ambientes de trabalho"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["Saiba mais sobre a BlueXP ransomware protection e fontes de dados suportadas, destinos de backup e ambientes de trabalho"] .
 
 
 
@@ -331,7 +362,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-pr
 
 Agora você pode limitar o acesso a atividades específicas com o controle de acesso baseado em função (RBAC).  A BlueXP ransomware protection usa duas funções do BlueXP: Administrador de conta do BlueXP e Administrador sem conta (Visualizador).
 
-Para obter detalhes sobre as ações que cada função pode executar, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["Privilégios de controle de acesso baseados em funções"] .
+Para obter detalhes sobre as ações que cada função pode executar, consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["Privilégios de controle de acesso baseados em funções"] .
 
 
 
@@ -343,7 +374,7 @@ Para obter detalhes sobre as ações que cada função pode executar, consulte h
 
 Você pode enviar dados automaticamente para seu sistema de gerenciamento de segurança e eventos (SIEM) para análise e detecção de ameaças.  Com versões anteriores, você podia selecionar apenas o AWS Security Hub como seu SIEM.  Com esta versão, você pode selecionar o AWS Security Hub ou o Splunk Cloud como seu SIEM.
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Saiba mais sobre como configurar as configurações de BlueXP ransomware protection"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["Saiba mais sobre como configurar as configurações de BlueXP ransomware protection"] .
 
 
 
@@ -355,7 +386,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[
 
 Com esta versão, você pode usar uma licença BYOL, que é um arquivo de licença NetApp (NLF) que você obtém do seu representante de vendas da NetApp .
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["Saiba mais sobre a configuração do licenciamento"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-licenses.html["Saiba mais sobre a configuração do licenciamento"] .
 
 
 
@@ -366,7 +397,7 @@ Antes de restaurar uma carga de trabalho de aplicativo no nível de arquivo, ago
 
 NOTE: Com esta versão, se todos os conectores BlueXP em uma conta não estiverem usando o Podman, o recurso de restauração de arquivo único será habilitado.  Caso contrário, ele será desabilitado para essa conta.
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["Saiba mais sobre como se recuperar de um ataque de ransomware"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["Saiba mais sobre como se recuperar de um ataque de ransomware"] .
 
 
 
@@ -374,7 +405,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["
 
 Antes de restaurar uma carga de trabalho de aplicativo no nível de arquivo, agora você pode acessar a página Alertas para baixar uma lista de arquivos afetados em um arquivo CSV e, em seguida, usar a página Recuperação para carregar o arquivo CSV.
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["Saiba mais sobre como baixar arquivos afetados antes de restaurar um aplicativo"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["Saiba mais sobre como baixar arquivos afetados antes de restaurar um aplicativo"] .
 
 
 
@@ -382,7 +413,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["
 
 Com esta versão, agora você pode excluir uma estratégia de proteção contra ransomware.
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Saiba mais sobre como proteger cargas de trabalho e gerenciar estratégias de proteção contra ransomware"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Saiba mais sobre como proteger cargas de trabalho e gerenciar estratégias de proteção contra ransomware"] .
 
 
 
@@ -394,7 +425,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["
 
 Habilite isso para bloquear as cópias de instantâneo no armazenamento primário para que elas não possam ser modificadas ou excluídas por um determinado período de tempo, mesmo que um ataque de ransomware chegue ao destino do armazenamento de backup.
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Saiba mais sobre como proteger cargas de trabalho e habilitar o bloqueio de backup em uma estratégia de proteção contra ransomware"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Saiba mais sobre como proteger cargas de trabalho e habilitar o bloqueio de backup em uma estratégia de proteção contra ransomware"] .
 
 
 
@@ -402,9 +433,9 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["
 
 Esta versão oferece suporte ao Cloud Volumes ONTAP para Microsoft Azure como um sistema, além do Cloud Volumes ONTAP para AWS e do ONTAP NAS local.
 
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-azure.html["Início rápido para Cloud Volumes ONTAP no Azure"^]
+https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-getting-started-azure.html["Início rápido para Cloud Volumes ONTAP no Azure"^]
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["Saiba mais sobre a BlueXP ransomware protection"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["Saiba mais sobre a BlueXP ransomware protection"] .
 
 
 
@@ -412,7 +443,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-pr
 
 Agora você pode adicionar o Microsoft Azure como destino de backup junto com o AWS e o NetApp StorageGRID.
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Saiba mais sobre como configurar as definições de proteção"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["Saiba mais sobre como configurar as definições de proteção"] .
 
 
 
@@ -424,7 +455,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[
 
 Você pode se inscrever para um teste gratuito de 90 dias.  Em breve, você poderá comprar uma assinatura paga conforme o uso no Amazon Web Services Marketplace ou trazer sua própria licença do NetApp .
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["Saiba mais sobre a configuração do licenciamento"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-licenses.html["Saiba mais sobre a configuração do licenciamento"] .
 
 
 
@@ -438,7 +469,7 @@ O serviço agora oferece suporte a ONTAP local e Cloud Volumes ONTAP em sistemas
 
 Esta versão agora fornece mais detalhes nas informações de carga de trabalho da Proteção e outras páginas para melhor avaliação da proteção da carga de trabalho.  Nos detalhes da carga de trabalho, você pode revisar a política atribuída atualmente e revisar os destinos de backup configurados.
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Saiba mais sobre como visualizar detalhes da carga de trabalho nas páginas de proteção"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Saiba mais sobre como visualizar detalhes da carga de trabalho nas páginas de proteção"] .
 
 
 
@@ -446,7 +477,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["
 
 Agora você pode executar proteção consistente com aplicativos com o NetApp SnapCenter Software e proteção consistente com VMs com o SnapCenter Plug-in for VMware vSphere, obtendo um estado quiescente e consistente para evitar possível perda de dados posteriormente, caso seja necessária recuperação.  Se a recuperação for necessária, você pode restaurar o aplicativo ou a VM para qualquer um dos estados disponíveis anteriormente.
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Saiba mais sobre como proteger cargas de trabalho"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Saiba mais sobre como proteger cargas de trabalho"] .
 
 
 
@@ -459,7 +490,7 @@ Se não houver políticas de snapshot ou backup na carga de trabalho, você pode
 * Política de detecção
 
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Saiba mais sobre como proteger cargas de trabalho"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Saiba mais sobre como proteger cargas de trabalho"] .
 
 
 
@@ -467,7 +498,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["
 
 Agora é possível habilitar a detecção de ameaças usando um sistema de gerenciamento de eventos e segurança (SIEM) de terceiros.  O Painel agora mostra uma nova recomendação para "Ativar detecção de ameaças", que pode ser configurada na página Configurações.
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Saiba mais sobre como configurar opções de configurações"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["Saiba mais sobre como configurar opções de configurações"] .
 
 
 
@@ -475,7 +506,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[
 
 Na aba Alertas, agora você pode descartar falsos positivos ou decidir recuperar seus dados imediatamente.
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Saiba mais sobre como responder a um alerta de ransomware"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html["Saiba mais sobre como responder a um alerta de ransomware"] .
 
 
 
@@ -483,7 +514,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Sa
 
 Novos status de detecção aparecem na página Proteção, mostrando o status da detecção de ransomware aplicada à carga de trabalho.
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Saiba mais sobre como proteger cargas de trabalho e visualizar status de proteção"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Saiba mais sobre como proteger cargas de trabalho e visualizar status de proteção"] .
 
 
 
@@ -491,7 +522,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["
 
 Você pode baixar arquivos CSV* nas páginas Proteção, Alertas e Recuperação.
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-reports.html["Saiba mais sobre como baixar arquivos CSV do Painel e de outras páginas"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-reports.html["Saiba mais sobre como baixar arquivos CSV do Painel e de outras páginas"] .
 
 
 
@@ -511,7 +542,7 @@ O serviço de BlueXP backup and recovery não precisa mais estar habilitado no s
 
 Agora você pode configurar destinos de backup nas configurações de BlueXP ransomware protection .
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Saiba mais sobre como configurar opções de configurações"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["Saiba mais sobre como configurar opções de configurações"] .
 
 
 
@@ -521,33 +552,33 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[
 
 === Gestão de políticas de proteção
 
-Além de usar políticas predefinidas, agora você pode criar políticas. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Saiba mais sobre o gerenciamento de políticas"] .
+Além de usar políticas predefinidas, agora você pode criar políticas. https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Saiba mais sobre o gerenciamento de políticas"] .
 
 
 
 === Imutabilidade no armazenamento secundário (DataLock)
 
-Agora você pode tornar o backup imutável no armazenamento secundário usando a tecnologia NetApp DataLock no armazenamento de objetos. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Saiba mais sobre como criar políticas de proteção"] .
+Agora você pode tornar o backup imutável no armazenamento secundário usando a tecnologia NetApp DataLock no armazenamento de objetos. https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Saiba mais sobre como criar políticas de proteção"] .
 
 
 
 === Backup automático para NetApp StorageGRID
 
-Além de usar a AWS, agora você pode escolher o StorageGRID como seu destino de backup. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Saiba mais sobre como configurar destinos de backup"] .
+Além de usar a AWS, agora você pode escolher o StorageGRID como seu destino de backup. https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["Saiba mais sobre como configurar destinos de backup"] .
 
 
 
 === Recursos adicionais para investigar ataques potenciais
 
-Agora você pode visualizar mais detalhes forenses para investigar o possível ataque detectado. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Saiba mais sobre como responder a um alerta de ransomware detectado"] .
+Agora você pode visualizar mais detalhes forenses para investigar o possível ataque detectado. https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html["Saiba mais sobre como responder a um alerta de ransomware detectado"] .
 
 
 
 === Processo de recuperação
 
-O processo de recuperação foi aprimorado.  Agora, você pode recuperar volume por volume ou todos os volumes de uma carga de trabalho. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["Saiba mais sobre como se recuperar de um ataque de ransomware (após os incidentes terem sido neutralizados)"] .
+O processo de recuperação foi aprimorado.  Agora, você pode recuperar volume por volume ou todos os volumes de uma carga de trabalho. https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["Saiba mais sobre como se recuperar de um ataque de ransomware (após os incidentes terem sido neutralizados)"] .
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["Saiba mais sobre a BlueXP ransomware protection"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["Saiba mais sobre a BlueXP ransomware protection"] .
 
 
 
@@ -568,4 +599,4 @@ O serviço de BlueXP ransomware protection oferece uso completo de diversas tecn
 * Recupere-se de incidentes de ransomware de forma inteligente restaurando dados e garantindo que não ocorram reinfecções a partir de dados armazenados.
 
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["Saiba mais sobre a BlueXP ransomware protection"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["Saiba mais sobre a BlueXP ransomware protection"] .

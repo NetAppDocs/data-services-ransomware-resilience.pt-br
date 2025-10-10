@@ -14,7 +14,7 @@ summary: Comece a usar o NetApp Ransomware Resilience verificando o suporte ao s
 [role="lead"]
 Comece a usar o NetApp Ransomware Resilience verificando a prontidão do seu ambiente operacional, login, acesso à rede e navegador da web.
 
-Para usar o Ransomware Resilience, você precisará dos pré-requisitos.
+Para usar o Ransomware Resilience, você precisará atender aos seguintes pré-requisitos.
 
 
 
@@ -32,7 +32,7 @@ NOTE: As cargas de trabalho SAN são suportadas apenas no ONTAP 9.17.1 e posteri
 
 ** Se seus clusters ONTAP locais ou Cloud Volumes ONTAP na AWS ou na nuvem do Azure ainda não estiverem integrados no Console, você precisará de um agente do Console.
 +
-Consulte https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Aprenda a configurar um agente de console"] e https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["requisitos padrão do console"^] .
+Consulte https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["Aprenda a configurar um agente de console"] e https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["requisitos padrão do console"^] .
 
 +
 
@@ -53,7 +53,7 @@ NOTE: Se você tiver vários agentes do Console em uma única organização do C
 NOTE: A versão geral do Ransomware Resilience, diferentemente da versão de visualização, inclui uma licença para a tecnologia NetApp Autonomous Ransomware Protection. Consulte https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Visão geral da proteção autônoma contra ransomware"^] para mais detalhes.
 
 +
-Para mais detalhes sobre licenciamento, consultelink:concept-ransomware-protection.html["Saiba mais sobre resiliência ao ransomware"] .
+Para mais detalhes sobre licenciamento, consultelink:concept-ransomware-resilience.html["Saiba mais sobre resiliência ao ransomware"] .
 
 * Para aplicar configurações de proteção (como habilitar a Proteção Autônoma contra Ransomware e outras), o Ransomware Resilience precisa de permissões de administrador no cluster ONTAP .  O cluster ONTAP deveria ter sido integrado usando apenas credenciais de usuário administrador do cluster ONTAP .
 * Se o cluster ONTAP já estiver integrado no Console usando credenciais de usuário não administrador, as permissões do usuário não administrador deverão ser atualizadas com as permissões necessárias por meio de login no cluster ONTAP , conforme descrito nesta página.
@@ -65,7 +65,7 @@ Para mais detalhes sobre licenciamento, consultelink:concept-ransomware-protecti
 
 * Uma conta no NetApp StorageGRID, AWS S3, Azure Blob ou Google Cloud Platform para destinos de backup e as permissões de acesso definidas.
 +
-Consulte o https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["Lista de permissões AWS, Azure ou S3"^] para mais detalhes.
+Consulte o https://docs.netapp.com/us-en/console-setup-admin/reference-permissions.html["Lista de permissões AWS, Azure ou S3"^] para mais detalhes.
 
 * O NetApp Backup and Recovery não precisa ser habilitado no sistema.
 +

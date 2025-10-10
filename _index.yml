@@ -1,22 +1,20 @@
 ---
 indexpage:
   title: Documentação do NetApp Ransomware Resilience
-  summary: O NetApp Ransomware Resilience é um serviço de orquestração para proteção,
-    detecção e recuperação de ransomware.  O Ransomware Resilience protege cargas
-    de trabalho baseadas em aplicativos de Oracle, MySQL, datastores de VM e compartilhamentos
-    de arquivos em armazenamento NAS local, bem como Cloud Volumes ONTAP na Amazon
-    Web Services (usando os protocolos NFS e CIFS) em organizações do NetApp Console
-    e faz backup de dados no armazenamento em nuvem da Amazon Web Services (AWS) ou
-    no NetApp StorageGRID.
+  summary: O NetApp Ransomware Resilience protege, detecta e oferece suporte à recuperação
+    de cargas de trabalho de aplicativos e compartilhamentos de arquivos contra ameaças
+    de ransomware em armazenamento local e na nuvem.  Com suporte a plataformas como
+    Oracle, MySQL, datastores de VM e armazenamento NAS, o Ransomware Resilience permite
+    backup e recuperação seguros, ajudando organizações a proteger dados críticos
+    e manter a continuidade dos negócios.
   keywords: bluexp, ransomware, anti-ransomware, cyber attack, netapp, ontap, amazon
     web services, aws, storagegrid, protection, resilience
-  lead: O NetApp Ransomware Resilience é um serviço de orquestração para proteção,
-    detecção e recuperação de ransomware.  O Ransomware Resilience protege cargas
-    de trabalho baseadas em aplicativos de Oracle, MySQL, datastores de VM e compartilhamentos
-    de arquivos em armazenamento NAS local, bem como Cloud Volumes ONTAP no Amazon
-    Web Services (usando os protocolos NFS e CIFS) em organizações de console e faz
-    backup de dados no armazenamento em nuvem do Amazon Web Services (AWS) ou no NetApp
-    StorageGRID.
+  lead: O NetApp Ransomware Resilience protege, detecta e oferece suporte à recuperação
+    de cargas de trabalho de aplicativos e compartilhamentos de arquivos contra ameaças
+    de ransomware em armazenamento local e na nuvem.  Com suporte a plataformas como
+    Oracle, MySQL, datastores de VM e armazenamento NAS, o Ransomware Resilience permite
+    backup e recuperação seguros, ajudando organizações a proteger dados críticos
+    e manter a continuidade dos negócios.
   tiles:
   - title: Começar
     links:

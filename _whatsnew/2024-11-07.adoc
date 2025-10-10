@@ -10,11 +10,11 @@ Com esta versão, você pode habilitar a BlueXP classification, um componente pr
 
 A verificação de dados PII na BlueXP ransomware protection geralmente está disponível para clientes que implantaram a BlueXP classification.  A BlueXP classification está disponível como parte da plataforma BlueXP sem custo adicional e pode ser implantada no local ou na nuvem do cliente.
 
-Consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Configurar as definições de BlueXP ransomware protection"] .
+Consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["Configurar as definições de BlueXP ransomware protection"] .
 
 Para iniciar a verificação, na página Proteção, clique em *Identificar exposição* na coluna Exposição de privacidade.
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html["Escaneie dados pessoais confidenciais com a BlueXP classification"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect-classify.html["Escaneie dados pessoais confidenciais com a BlueXP classification"] .
 
 
 
@@ -22,7 +22,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classi
 
 Agora você pode enviar dados ao seu sistema de gerenciamento de segurança e eventos (SIEM) para análise e detecção de ameaças usando o Microsoft Sentinel.  Anteriormente, você podia selecionar o AWS Security Hub ou o Splunk Cloud como seu SIEM.
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Saiba mais sobre como configurar as configurações de BlueXP ransomware protection"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["Saiba mais sobre como configurar as configurações de BlueXP ransomware protection"] .
 
 
 
@@ -36,4 +36,4 @@ Com este lançamento, novas implantações da BlueXP ransomware protection agora
 
 Antes de restaurar uma carga de trabalho de aplicativo no nível de arquivo, agora você pode visualizar uma lista de arquivos que podem ter sido afetados por um ataque e identificar aqueles que deseja restaurar.  Anteriormente, se os Conectores BlueXP em uma organização (anteriormente uma conta) estivessem usando o Podman, esse recurso era desabilitado.  Agora está habilitado para o Podman.  Você pode deixar que a BlueXP ransomware protection escolha os arquivos a serem restaurados, pode enviar um arquivo CSV que lista todos os arquivos afetados por um alerta ou pode identificar manualmente quais arquivos deseja restaurar.
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["Saiba mais sobre como se recuperar de um ataque de ransomware"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["Saiba mais sobre como se recuperar de um ataque de ransomware"] .

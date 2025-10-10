@@ -12,4 +12,4 @@ Há muitos motivos pelos quais o serviço não oferece suporte a um ambiente de 
 
 Você pode visualizar os ambientes de trabalho sem suporte durante a descoberta inicial, onde também pode baixar os resultados.  Você também pode visualizar os resultados da descoberta na opção *Descoberta de carga de trabalho* na página Configurações.
 
-Para mais detalhes, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Descubra cargas de trabalho na BlueXP ransomware protection"] .
+Para mais detalhes, consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-discover.html["Descubra cargas de trabalho na BlueXP ransomware protection"] .

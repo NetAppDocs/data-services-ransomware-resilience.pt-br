@@ -8,7 +8,7 @@
 
 Com esta versão, você pode revisar relatórios de exercícios de prontidão para ataques de ransomware.  Um exercício de prontidão permite simular um ataque de ransomware em uma carga de trabalho de amostra recém-criada.  Em seguida, investigue o ataque simulado e recupere a carga de trabalho de amostra.  Esse recurso ajuda você a saber se está preparado no caso de um ataque real de ransomware, testando processos de notificação de alerta, resposta e recuperação.
 
-Para mais detalhes, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["Realizar um exercício de preparação para ataques de ransomware"] .
+Para mais detalhes, consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-simulate.html["Realizar um exercício de preparação para ataques de ransomware"] .
 
 
 
@@ -20,7 +20,7 @@ Anteriormente, você podia atribuir funções e permissões aos usuários com ba
 * Visualizador de proteção contra ransomware
 
 
-Para obter detalhes sobre permissões, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["Acesso baseado em função de BlueXP ransomware protection aos recursos"] .
+Para obter detalhes sobre permissões, consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["Acesso baseado em função de BlueXP ransomware protection aos recursos"] .
 
 
 
@@ -28,4 +28,4 @@ Para obter detalhes sobre permissões, consulte https://docs.netapp.com/us-en/bl
 
 Esta versão inclui diversas melhorias no processo de pagamento.
 
-Para mais detalhes, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["Configurar opções de licenciamento e pagamento"] .
+Para mais detalhes, consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-licenses.html["Configurar opções de licenciamento e pagamento"] .
