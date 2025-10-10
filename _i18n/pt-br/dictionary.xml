@@ -1831,7 +1831,6 @@
   <block id="287f419ab9030dae6e341b7917dea7b9" category="paragraph">Diferentemente da detecção de criptografia pelo ARP na camada de armazenamento, a detecção da anomalia de comportamento do usuário é feita no serviço Ransomware Resilience SaaS por meio da coleta de eventos FPolicy.</block>
   <block id="666c1c8dca9ff6ef210c57f04d6e84e8" category="inline-link-macro">Habilitar detecção de atividades suspeitas de usuários</block>
   <block id="8d2203d70c1b051af0b7ad506cc40474" category="inline-link-macro">Visualizar comportamento anômalo do usuário</block>
-  <block id="b270269f4d3564626c9860f0f29f2992" category="paragraph">Para mais informações, consulte<block ref="58d7e66449e28231f244d38ab02cc3e1" category="inline-link-macro-rx"></block> e<block ref="f451eade5eddedc7b8e2af13d9e54fd3" category="inline-link-macro-rx"></block> .</block>
   <block id="289ddf7ba01fbf8f514dbc2d06a7bf67" category="section-title">Detecções adicionais de atividades suspeitas de usuários</block>
   <block id="c59946b2a21d389710dcd9b9ad5f618d" category="paragraph">Além da detecção de violações de dados, o Ransomware Resilience também detecta os seguintes tipos de alerta com base na atividade suspeita observada do usuário:</block>
   <block id="9f149be55d2ace2f4ef86d2125660c4c" category="list-text">**Destruição de dados - ataque potencial** - Um alerta com a gravidade do ataque potencial é criado quando o número de exclusões de arquivos excede a norma histórica.</block>
@@ -2031,4 +2030,5 @@
   <block id="77d6960ddc4ee40e26fd963e6e1f6e68" category="paragraph">O processo de recuperação foi aprimorado.  Agora, você pode recuperar volume por volume ou todos os volumes de uma carga de trabalho.<block ref="2db5667b5f183f51656a41f32740d8f2" category="inline-link-rx"></block> .</block>
   <block id="0c59fa3b4bea70fe5377775600bed707" category="sidebar">O NetApp Ransomware Resilience protege, detecta e oferece suporte à recuperação de cargas de trabalho de aplicativos e compartilhamentos de arquivos contra ameaças de ransomware em armazenamento local e na nuvem.  Com suporte a plataformas como Oracle, MySQL, datastores de VM e armazenamento NAS, o Ransomware Resilience permite backup e recuperação seguros, ajudando organizações a proteger dados críticos e manter a continuidade dos negócios.</block>
   <block id="e65f6e4b1867bfedf08120cb1ab99c24" category="sidebar">Configurar detecção de atividades suspeitas de usuários</block>
+  <block id="75ae81fb1b2b27cbdbd5ba2b48014fe5" category="paragraph">Para mais informações, consulte<block ref="4fc0d3ac39798f24cded583e594e4abe" category="inline-link-macro-rx"></block> e<block ref="f451eade5eddedc7b8e2af13d9e54fd3" category="inline-link-macro-rx"></block> .</block>
 </blocks>
