@@ -16,7 +16,7 @@ link:https://docs.netapp.com/us-en/data-services-data-classification/["Classific
 
 TIP: Esse processo pode impactar a importância da carga de trabalho para ajudar a garantir que você tenha a proteção adequada.
 
-*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console para todos os serviços"^] .
+*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^] .
 
 
 
