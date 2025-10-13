@@ -3,7 +3,7 @@ indexpage:
   title: Documentação do NetApp Ransomware Resilience
   summary: O NetApp Ransomware Resilience protege, detecta e oferece suporte à recuperação
     de cargas de trabalho de aplicativos e compartilhamentos de arquivos contra ameaças
-    de ransomware em armazenamento local e na nuvem.  Com suporte a plataformas como
+    de ransomware em armazenamento local e na nuvem. Com suporte a plataformas como
     Oracle, MySQL, datastores de VM e armazenamento NAS, o Ransomware Resilience permite
     backup e recuperação seguros, ajudando organizações a proteger dados críticos
     e manter a continuidade dos negócios.
@@ -11,7 +11,7 @@ indexpage:
     web services, aws, storagegrid, protection, resilience
   lead: O NetApp Ransomware Resilience protege, detecta e oferece suporte à recuperação
     de cargas de trabalho de aplicativos e compartilhamentos de arquivos contra ameaças
-    de ransomware em armazenamento local e na nuvem.  Com suporte a plataformas como
+    de ransomware em armazenamento local e na nuvem. Com suporte a plataformas como
     Oracle, MySQL, datastores de VM e armazenamento NAS, o Ransomware Resilience permite
     backup e recuperação seguros, ajudando organizações a proteger dados críticos
     e manter a continuidade dos negócios.
@@ -40,8 +40,7 @@ indexpage:
       url: "/rp-use-dashboard.html"
     - title: Proteja as cargas de trabalho
       url: "/rp-use-protect.html"
-    - title: Procure informações de identificação pessoal com a Classificação de Dados
-        NetApp
+    - title: Procure informações de identificação pessoal com a NetApp Data Classification
       url: "/rp-use-protect-classify.html"
     - title: Responder a um alerta detectado
       url: "/rp-use-alert.html"
@@ -49,9 +48,9 @@ indexpage:
       url: "/rp-use-recover.html"
   - title: Blogs e comunidade
     links:
-    - title: Console NetApp
+    - title: NetApp Console
       url: https://www.netapp.com/console
-    - title: Serviços de dados NetApp
+    - title: NetApp Data Services
       url: https://www.netapp.com/data-services/
     - title: Comunidade NetApp
       url: https://community.netapp.com/

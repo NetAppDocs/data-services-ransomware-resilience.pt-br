@@ -20,7 +20,7 @@ Para obter detalhes sobre o que mudou, consulte o https://docs.netapp.com/us-en/
 
 === Detecção de violação de dados
 
-O Ransomware Resilience inclui um novo mecanismo de detecção que pode ser ativado em algumas etapas para detectar leituras anômalas do usuário como um indicador precoce de violação de dados.  A resiliência do ransomware coleta e analisa eventos de leitura do usuário criando uma linha de base histórica, que é um perfil de comportamento normal esperado a partir de dados anteriores.  Quando uma nova atividade do usuário se desvia significativamente dessa norma estabelecida (como um aumento inesperado de leituras combinado com padrões de leitura suspeitos), um alerta é gerado.  O Ransomware Resilience inclui um modelo de IA para detectar padrões de leitura suspeitos.
+O Ransomware Resilience inclui um novo mecanismo de detecção que pode ser ativado em algumas etapas para detectar leituras anômalas do usuário como um indicador precoce de violação de dados. A resiliência do ransomware coleta e analisa eventos de leitura do usuário criando uma linha de base histórica, que é um perfil de comportamento normal esperado a partir de dados anteriores. Quando uma nova atividade do usuário se desvia significativamente dessa norma estabelecida (como um aumento inesperado de leituras combinado com padrões de leitura suspeitos), um alerta é gerado. O Ransomware Resilience inclui um modelo de IA para detectar padrões de leitura suspeitos.
 
 Diferentemente da detecção de criptografia pelo ARP na camada de armazenamento, a detecção da anomalia de comportamento do usuário é feita no serviço Ransomware Resilience SaaS por meio da coleta de eventos FPolicy.
 
@@ -46,6 +46,6 @@ Além da detecção de violações de dados, o Ransomware Resilience também det
 
 Para gerenciar alertas de atividades suspeitas do usuário, o Ransomware Resilience introduziu duas novas funções para administradores da organização do Console concederem acesso à detecção de atividades suspeitas do usuário: administrador de comportamento do usuário do Ransomware Resilience e visualizador de comportamento do usuário do Ransomware Resilience.
 
-Você deve ser um administrador de comportamento do usuário para configurar configurações de comportamento suspeito do usuário.  A função de administrador do Ransomware Resilience não tem suporte para configurar comportamentos suspeitos do usuário.
+Você deve ser um administrador de comportamento do usuário para configurar configurações de comportamento suspeito do usuário. A função de administrador do Ransomware Resilience não tem suporte para configurar comportamentos suspeitos do usuário.
 
-Para obter mais informações, consulte link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Acesso baseado em função de resiliência do NetApp Ransomware"^] .
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Acesso baseado em função de NetApp Ransomware Resilience"^] .

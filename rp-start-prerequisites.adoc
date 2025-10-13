@@ -4,7 +4,7 @@ permalink: rp-start-prerequisites.html
 keywords: bluexp ransomware protection, ransomware protection prerequisites, resilience 
 summary: Comece a usar o NetApp Ransomware Resilience verificando o suporte ao seu ambiente, acesso à rede, login e navegador da web. 
 ---
-= Pré-requisitos de resiliência do NetApp Ransomware
+= Pré-requisitos de NetApp Ransomware Resilience
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -18,7 +18,7 @@ Para usar o Ransomware Resilience, você precisará atender aos seguintes pré-r
 
 
 
-== No console NetApp
+== No NetApp Console
 
 * Uma conta de usuário do NetApp Console com privilégios de administrador da organização para descobrir recursos.
 * Uma organização do Console com pelo menos um agente do Console ativo conectando-se a clusters ONTAP locais ou ao Cloud Volumes ONTAP na AWS ou no Azure.

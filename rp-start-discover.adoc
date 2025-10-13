@@ -27,7 +27,7 @@ O Ransomware Resilience verifica sua proteção de backup atual, cópias de snap
 
 *Como você pode descobrir cargas de trabalho?*  Você pode fazer o seguinte:
 
-* Em cada agente do Console, selecione os sistemas onde você deseja descobrir cargas de trabalho. Você pode se beneficiar desse recurso se quiser proteger cargas de trabalho específicas em seu ambiente e não outras.
+* Em cada agente do Console, selecione os sistemas onde você deseja descobrir cargas de trabalho.  Você pode se beneficiar desse recurso se quiser proteger cargas de trabalho específicas em seu ambiente e não outras.
 * Descubra cargas de trabalho recém-criadas para sistemas selecionados anteriormente.
 * Descubra novos sistemas.
 
@@ -52,16 +52,16 @@ NOTE: Se você iniciou o teste gratuito, o rótulo do botão *Iniciar teste grat
 
 . Na página inicial, selecione *Começar descobrindo cargas de trabalho*.
 +
-O Ransomware Resilience encontra sistemas suportados e não suportados. Este processo pode levar alguns minutos.
+O Ransomware Resilience encontra sistemas suportados e não suportados.  Este processo pode levar alguns minutos.
 
 +
-image:screen-discover-workloads.png["Captura de tela das cargas de trabalho de descoberta"]
+image:screen-discover-workloads.png["Captura de tela das cargas de trabalho do Discover"]
 
 . Para descobrir cargas de trabalho para um agente de Console específico, selecione *Selecionar sistemas* ao lado do agente de Console onde você deseja descobrir cargas de trabalho.
 . Selecione os sistemas nos quais você deseja descobrir cargas de trabalho.
 . Selecione *Descobrir*.
 +
-O Ransomware Resilience descobre dados de carga de trabalho apenas para os agentes do Console com sistemas selecionados. Este processo pode levar alguns minutos.
+O Ransomware Resilience descobre dados de carga de trabalho apenas para os agentes do Console com sistemas selecionados.  Este processo pode levar alguns minutos.
 
 . Para baixar a lista de cargas de trabalho descobertas, selecione *Baixar resultados*.
 . Para exibir o painel de resiliência ao ransomware, selecione *Ir para o painel*.

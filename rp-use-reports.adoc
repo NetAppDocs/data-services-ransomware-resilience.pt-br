@@ -44,7 +44,7 @@ image:screen-dashboard.png["Página do painel"]
 . Faça um dos seguintes:
 +
 ** Na página, selecione *Download*image:button-download.png["Opção de download"] opção.
-** No menu NetApp Ransomware Resilience, selecione *Relatórios*.
+** No menu NetApp Ransomware Resilience , selecione *Relatórios*.
 
 
 . Se você selecionou a opção *Relatórios*, selecione um dos nomes de arquivo pré-configurados e selecione *Baixar*.

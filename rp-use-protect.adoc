@@ -4,7 +4,7 @@ permalink: rp-use-protect.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, detection, protection, policy, malware 
 summary: Você pode proteger cargas de trabalho contra ataques de ransomware atribuindo políticas a uma carga de trabalho no NetApp Ransomware Resilience. 
 ---
-= Proteja cargas de trabalho com estratégias de proteção de resiliência contra ransomware da NetApp
+= Proteja cargas de trabalho com estratégias de proteção de NetApp Ransomware Resilience
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -289,7 +289,7 @@ A estratégia de proteção contra ransomware inclui:
 A política de detecção não altera as políticas gerenciadas em outros produtos.
 
 +
-A política de detecção habilita a Proteção Autônoma contra Ransomware e a proteção FPolicy se elas já estiverem ativadas em outros serviços.  Saiba mais sobrelink:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Proteção Autônoma contra Ransomware"^] ,link:https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["Backup e Recuperação"^] , elink:https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["Política ONTAP"^] .
+A política de detecção habilita a Proteção Autônoma contra Ransomware e a proteção FPolicy se elas já estiverem ativadas em outros serviços. Saiba mais sobrelink:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Proteção Autônoma contra Ransomware"^] ,link:https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["Backup e Recuperação"^] , elink:https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["Política ONTAP"^] .
 
 
 
@@ -385,10 +385,10 @@ image:screen-protection.png["Gerenciar página de estratégia"]
 . Selecione **Avançar**.
 . Se você selecionou *Detecção de comportamento suspeito do usuário* como uma configuração de detecção, selecione o agente de atividade do usuário oulink:suspicious-user-activity.html#add-a-user-activity-agent["ou criar um"] .
 +
-O agente de atividade do usuário hospeda os novos coletores de dados.  O Ransomware Resilience cria o coletor de dados automaticamente para transmitir eventos de atividade do usuário ao Ransomware Resilience para detectar comportamento anômalo do usuário.
+O agente de atividade do usuário hospeda os novos coletores de dados. O Ransomware Resilience cria o coletor de dados automaticamente para transmitir eventos de atividade do usuário ao Ransomware Resilience para detectar comportamento anômalo do usuário.
 
 . Selecione **Avançar**.
-. Reveja suas escolhas.  Selecione **Criar** para ativar a detecção.
+. Reveja suas escolhas. Selecione **Criar** para ativar a detecção.
 . Na página Proteção, revise o **Status de detecção** para confirmar se a detecção está Ativa.
 
 
@@ -405,10 +405,10 @@ image:screen-protection.png["Gerenciar página de estratégia"]
 
 . Na página Proteção, selecione uma carga de trabalho e selecione *Proteger*.
 . O Ransomware Resilience detecta se há políticas ativas de Backup e Recuperação ou SnapCenter .  Para substituir as políticas existentes do Backup and Recovery ou do SnapCenter , selecione a caixa **Substituir políticas existentes**.  Quando você seleciona a caixa, o Ransomware Resilience substitui a lista de políticas de detecção por políticas de detecção.
-. Escolha uma política de proteção.  Se não houver nenhuma política de proteção, selecione **Adicionar** para criar uma nova política.  Para obter informações sobre como criar uma política, consulte<<steps,Crie uma política de proteção>> .  Selecione **Avançar**.
-. Selecione um destino de backup ou crie um novo.  Selecione **Avançar**.
+. Escolha uma política de proteção.  Se não houver nenhuma política de proteção, selecione **Adicionar** para criar uma nova política.  Para obter informações sobre como criar uma política, consulte<<steps,Crie uma política de proteção>> . Selecione **Avançar**.
+. Selecione um destino de backup ou crie um novo. Selecione **Avançar**.
 +
-.. Se sua estratégia de proteção incluir detecção de comportamento do usuário, selecione um agente de atividade do usuário em seu ambiente para hospedar os novos coletores de dados.  O Ransomware Resilience cria o coletor de dados automaticamente para transmitir eventos de atividade do usuário ao Ransomware Resilience para detectar comportamento anômalo do usuário.
+.. Se sua estratégia de proteção incluir detecção de comportamento do usuário, selecione um agente de atividade do usuário em seu ambiente para hospedar os novos coletores de dados. O Ransomware Resilience cria o coletor de dados automaticamente para transmitir eventos de atividade do usuário ao Ransomware Resilience para detectar comportamento anômalo do usuário.
 
 
 . Revise a nova estratégia de proteção e selecione **Proteger** para aplicá-la.
@@ -436,7 +436,7 @@ Você pode substituir a política existente por uma diferente.
 
 Agrupar compartilhamentos de arquivos em um grupo de proteção facilita a proteção do seu patrimônio de dados.  A resiliência ao ransomware pode proteger todos os volumes de um grupo ao mesmo tempo, em vez de proteger cada volume separadamente.
 
-Você pode criar grupos independentemente do status de proteção (ou seja, grupos não protegidos e grupos protegidos).  Quando você adiciona uma política de proteção a um grupo de proteção, a nova política de proteção substitui qualquer política existente, incluindo políticas gerenciadas pelo SnapCenter e NetApp Backup and Recovery.
+Você pode criar grupos independentemente do status de proteção (ou seja, grupos não protegidos e grupos protegidos). Quando você adiciona uma política de proteção a um grupo de proteção, a nova política de proteção substitui qualquer política existente, incluindo políticas gerenciadas pelo SnapCenter e NetApp Backup and Recovery.
 
 .Passos
 . No menu Resiliência contra Ransomware, selecione *Proteção*.
@@ -461,7 +461,7 @@ TIP: Para ver mais detalhes sobre as cargas de trabalho, role para a direita.
 +
 image:screen-protection-groups-policy.png["Adicionar grupo de proteção - página Política"]
 
-. Selecione a política para controlar a proteção deste grupo.  Para confirmar, selecione *Avançar*.
+. Selecione a política para controlar a proteção deste grupo. Para confirmar, selecione *Avançar*.
 +
 .. Se precisar configurar uma política de backup, escolha uma e selecione **Avançar**.
 .. Se sua política de detecção incluir detecção de comportamento do usuário, selecione o coletor de dados que deseja usar e depois **Avançar**.

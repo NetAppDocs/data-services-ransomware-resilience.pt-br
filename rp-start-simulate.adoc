@@ -35,7 +35,7 @@ Você precisa inserir um nome de usuário e uma senha para as seguintes situaç�
 *Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^] .
 
 .Passos
-. No menu NetApp Ransomware Resilience, selecione o botão *Executar teste de prontidão* no canto superior direito.
+. No menu NetApp Ransomware Resilience , selecione o botão *Executar teste de prontidão* no canto superior direito.
 +
 image:screen-dashboard.png["Página do painel mostrando o botão Executar exercício de prontidão"]
 
@@ -121,7 +121,7 @@ Aqui estão algumas coisas que você deve procurar:
 
 * Observe a gravidade potencial do ataque.
 +
-Se a gravidade indicar que um usuário é suspeito de atividade maliciosa, revise o nome do usuário.  Você também podelink:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["bloquear o usuário."]
+Se a gravidade indicar que um usuário é suspeito de atividade maliciosa, revise o nome do usuário. Você também podelink:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["bloquear o usuário."]
 
 * Observe a atividade do arquivo e os processos suspeitos:
 +

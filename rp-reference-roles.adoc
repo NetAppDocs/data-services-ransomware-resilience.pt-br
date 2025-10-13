@@ -4,7 +4,7 @@ permalink: rp-reference-roles.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware, role-based access control, rbac, role, permission, access rights, organization,project,account 
 summary: O NetApp Ransomware Resilience emprega funções para controlar o acesso que cada usuário tem a recursos e ações específicos. 
 ---
-= Acesso baseado em função de resiliência do NetApp Ransomware
+= Acesso baseado em função de NetApp Ransomware Resilience
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -20,7 +20,7 @@ O Ransomware Resilience usa as seguintes funções específicas do Ransomware Re
 * *Visualizador de resiliência contra ransomware*: visualize dados de carga de trabalho do NetApp , visualize dados de alerta, baixe dados de recuperação e baixe relatórios.
 
 
-Essas funções são adicionais às funções da plataforma do Console que controlam o acesso ao serviço do Console e outros serviços, como proteção de dados, gerenciamento de carga de trabalho e assim por diante.  Para obter detalhes sobre todas as funções da plataforma Console, consulte https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["a documentação de configuração e administração"^] .
+Essas funções são adicionais às funções da plataforma do Console que controlam o acesso ao serviço do Console e outros serviços, como proteção de dados, gerenciamento de carga de trabalho e assim por diante. Para obter detalhes sobre todas as funções da plataforma Console, consulte https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["a documentação de configuração e administração"^] .
 
 A tabela a seguir indica as ações que cada função de resiliência ao ransomware pode executar.
 

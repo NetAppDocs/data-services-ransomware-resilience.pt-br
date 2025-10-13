@@ -126,7 +126,7 @@ image:screen-settings-backup-destination.png["Página de destinos de backup"]
 
 ** *Rede*: Escolha o IPspace.
 +
-*** O IPspace é o cluster onde residem os volumes que você deseja fazer backup. Os LIFs intercluster para este IPspace devem ter acesso de saída à Internet.
+*** O IPspace é o cluster onde residem os volumes que você deseja fazer backup.  Os LIFs intercluster para este IPspace devem ter acesso de saída à Internet.
 
 
 
@@ -145,7 +145,7 @@ image:screen-settings-backup-destinations-list2.png["Página de destinos de back
 
 Para configurar a AWS como destino de backup, insira as seguintes informações.
 
-Para obter detalhes sobre como gerenciar seu armazenamento AWS no Console, consulte https://docs.netapp.com/us-en/console-setup-admin/task-viewing-amazon-s3.html["Gerencie seus buckets do Amazon S3"^] .
+Para obter detalhes sobre como gerenciar seu armazenamento do AWS no Console, consulte https://docs.netapp.com/us-en/console-setup-admin/task-viewing-amazon-s3.html["Gerencie seus buckets do Amazon S3"^] .
 
 .Passos
 . Na página *Configurações > Destinos de backup*, selecione *Adicionar*.
@@ -171,7 +171,7 @@ Os dados no bucket são criptografados com chaves gerenciadas pela AWS por padr�
 
 ** *Rede*: Escolha o espaço IP e se você usará um ponto de extremidade privado.
 +
-*** O IPspace é o cluster onde residem os volumes que você deseja fazer backup. Os LIFs intercluster para este IPspace devem ter acesso de saída à Internet.
+*** O IPspace é o cluster onde residem os volumes que você deseja fazer backup.  Os LIFs intercluster para este IPspace devem ter acesso de saída à Internet.
 *** Opcionalmente, escolha se você usará um endpoint privado da AWS (PrivateLink) que você configurou anteriormente.
 +
 Se você quiser usar o AWS PrivateLink, consulte https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html["AWS PrivateLink para Amazon S3"^] .
@@ -227,7 +227,7 @@ Os dados no bucket são criptografados com chaves gerenciadas pelo Google por pa
 
 ** *Rede*: Escolha o espaço IP e se você usará um ponto de extremidade privado.
 +
-*** O IPspace é o cluster onde residem os volumes que você deseja fazer backup. Os LIFs intercluster para este IPspace devem ter acesso de saída à Internet.
+*** O IPspace é o cluster onde residem os volumes que você deseja fazer backup.  Os LIFs intercluster para este IPspace devem ter acesso de saída à Internet.
 *** Opcionalmente, escolha se você usará um ponto de extremidade privado do GCP (PrivateLink) que você configurou anteriormente.
 
 
@@ -271,7 +271,7 @@ Os dados na conta são criptografados com chaves gerenciadas pela Microsoft por 
 
 ** *Rede*: Escolha o espaço IP e se você usará um ponto de extremidade privado.
 +
-*** O IPspace é o cluster onde residem os volumes que você deseja fazer backup. Os LIFs intercluster para este IPspace devem ter acesso de saída à Internet.
+*** O IPspace é o cluster onde residem os volumes que você deseja fazer backup.  Os LIFs intercluster para este IPspace devem ter acesso de saída à Internet.
 *** Opcionalmente, escolha se você usará um ponto de extremidade privado do Azure que você configurou anteriormente.
 +
 Se você quiser usar o Azure PrivateLink, consulte https://azure.microsoft.com/en-us/products/private-link/["Link Privado do Azure"^] .

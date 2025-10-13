@@ -14,15 +14,15 @@ summary: A detecção de atividades suspeitas de usuários no Ransomware Resilie
 [role="lead"]
 O Ransomware Resilience oferece suporte à detecção de comportamento suspeito do usuário em políticas de detecção, permitindo que você resolva incidentes de ransomware no nível do usuário.
 
-O Ransomware Resilience detecta atividades suspeitas do usuário analisando eventos de atividade do usuário gerados pelo FPolicy no ONTAP.  Para coletar dados de atividade do usuário, você precisa implantar um ou mais agentes de atividade do usuário.  O agente é um servidor Linux ou VM com conectividade com dispositivos no seu locatário.
+O Ransomware Resilience detecta atividades suspeitas do usuário analisando eventos de atividade do usuário gerados pelo FPolicy no ONTAP. Para coletar dados de atividade do usuário, você precisa implantar um ou mais agentes de atividade do usuário. O agente é um servidor Linux ou VM com conectividade com dispositivos no seu locatário.
 
 
 
 == Agentes e colecionadores
 
-Pelo menos um agente de atividade do usuário deve ser instalado para ativar a detecção de atividades suspeitas do usuário no Ransomware Resilience.  Ao ativar o recurso de atividade suspeita do usuário no painel do Ransomware Resilience, você precisa fornecer as informações do host do agente para ativar o recurso.
+Pelo menos um agente de atividade do usuário deve ser instalado para ativar a detecção de atividades suspeitas do usuário no Ransomware Resilience. Ao ativar o recurso de atividade suspeita do usuário no painel do Ransomware Resilience, você precisa fornecer as informações do host do agente para ativar o recurso.
 
-Um agente pode hospedar vários coletores de dados.  Os coletores de dados enviam dados para um local SaaS para análise.  Existem dois tipos de colecionadores:
+Um agente pode hospedar vários coletores de dados. Os coletores de dados enviam dados para um local SaaS para análise. Existem dois tipos de colecionadores:
 
 * o **coletor de dados** coleta dados de atividade do usuário do ONTAP.
 * o **conector de diretório de usuário** conecta-se ao seu diretório para mapear IDs de usuário para nomes de usuários.
@@ -40,7 +40,7 @@ Os coletores são configurados nas configurações de Resiliência de Ransomware
 
 === Adicionar um agente de atividade do usuário
 
-Os agentes de atividade do usuário são ambientes executáveis para coletores de dados; os coletores de dados compartilham eventos de atividade do usuário com o Ransomware Resilience.  Você deve criar pelo menos um agente de atividade do usuário para habilitar a detecção de atividades suspeitas do usuário.
+Os agentes de atividade do usuário são ambientes executáveis para coletores de dados; os coletores de dados compartilham eventos de atividade do usuário com o Ransomware Resilience. Você deve criar pelo menos um agente de atividade do usuário para habilitar a detecção de atividades suspeitas do usuário.
 
 
 
@@ -93,11 +93,11 @@ O servidor deve atender aos seguintes requisitos mínimos:
 
 
 .Passos
-. Se esta for a primeira vez que você cria um agente de atividade do usuário, acesse o **Painel**.  No bloco **Atividade do usuário**, selecione **Ativar**.
+. Se esta for a primeira vez que você cria um agente de atividade do usuário, acesse o **Painel**. No bloco **Atividade do usuário**, selecione **Ativar**.
 +
-Se você estiver adicionando um agente de atividade de usuário adicional, vá para *Configurações*, localize o bloco **Atividade do usuário** e selecione **Gerenciar**.  Na tela Atividade do usuário, selecione a aba **Agentes de atividade do usuário** e depois **Adicionar**.
+Se você estiver adicionando um agente de atividade de usuário adicional, vá para *Configurações*, localize o bloco **Atividade do usuário** e selecione **Gerenciar**. Na tela Atividade do usuário, selecione a aba **Agentes de atividade do usuário** e depois **Adicionar**.
 
-. Selecione um **Provedor de nuvem** e depois uma **Região**.  Selecione **Avançar**.
+. Selecione um **Provedor de nuvem** e depois uma **Região**. Selecione **Avançar**.
 . Forneça os detalhes do agente de atividade do usuário:
 +
 ** **Nome do agente de atividade do usuário**
@@ -110,12 +110,12 @@ image:user-activity-agent.png["Captura de tela da interface do agente de adiçã
 
 
 . Selecione **Avançar**.
-. Revise suas configurações.  Selecione *Ativar* para concluir a adição do agente de atividade do usuário.
-. Confirme se o agente de atividade do usuário foi criado com sucesso.  No bloco Atividade do usuário, uma implantação bem-sucedida é exibida como Em execução.
+. Revise suas configurações. Selecione *Ativar* para concluir a adição do agente de atividade do usuário.
+. Confirme se o agente de atividade do usuário foi criado com sucesso. No bloco Atividade do usuário, uma implantação bem-sucedida é exibida como Em execução.
 
 
 .Resultado
-Após a criação bem-sucedida do agente de atividade do usuário, retorne ao menu **Configurações** e selecione **Gerenciar** no bloco Atividade do usuário.  Selecione a aba **Agente de atividade do usuário** e selecione o agente de atividade do usuário para visualizar detalhes sobre ele, incluindo coletores de dados e conectores de diretório do usuário.
+Após a criação bem-sucedida do agente de atividade do usuário, retorne ao menu **Configurações** e selecione **Gerenciar** no bloco Atividade do usuário. Selecione a aba **Agente de atividade do usuário** e selecione o agente de atividade do usuário para visualizar detalhes sobre ele, incluindo coletores de dados e conectores de diretório do usuário.
 
 
 
@@ -123,7 +123,7 @@ Após a criação bem-sucedida do agente de atividade do usuário, retorne ao me
 
 Os coletores de dados são criados automaticamente quando você ativa uma estratégia de proteção contra ransomware com detecção de atividades suspeitas de usuários. Para obter mais informações, consulte xref:rp-use-protect.adoc#add-a-detection-policy-to workloads-with-existing-backup-or-snapshot-policies [adicionar uma política de detecção] .
 
-Você pode visualizar os detalhes do coletor de dados.  Em Configurações, selecione **Gerenciar** no bloco Atividade do usuário.  Selecione a aba **Coletor de dados** e selecione o coletor de dados para visualizar seus detalhes ou pausá-lo.
+Você pode visualizar os detalhes do coletor de dados. Em Configurações, selecione **Gerenciar** no bloco Atividade do usuário. Selecione a aba **Coletor de dados** e selecione o coletor de dados para visualizar seus detalhes ou pausá-lo.
 
 image:user-activity-settings.png["Captura de tela das configurações de atividade do usuário"]
 
@@ -157,14 +157,14 @@ Forneça os detalhes do mapeamento de atributos:
 ** *SID* (se você estiver usando LDAP)
 ** *Nome de usuário*
 ** *ID Unix* (se você estiver usando NFS)
-** Selecione *Incluir atributos opcionais*.  Você também pode incluir endereço de e-mail, número de telefone, função, estado, país, departamento, foto, DN do gerente ou grupos.
+** Selecione *Incluir atributos opcionais*. Você também pode incluir endereço de e-mail, número de telefone, função, estado, país, departamento, foto, DN do gerente ou grupos.
 +
 Selecione *Avançado* para adicionar uma consulta de pesquisa opcional.
 
 
 
 . Selecione **Adicionar**.
-. Retorne à guia de conectores do diretório do usuário para verificar o status do seu conector do diretório do usuário.  Se criado com sucesso, o status do conector do diretório do usuário será exibido como *Em execução*.
+. Retorne à guia de conectores do diretório do usuário para verificar o status do seu conector do diretório do usuário. Se criado com sucesso, o status do conector do diretório do usuário será exibido como *Em execução*.
 
 
 
@@ -174,7 +174,7 @@ Selecione *Avançado* para adicionar uma consulta de pesquisa opcional.
 . Em Ransomware Resilience, vá para *Configurações*.
 . Localize o bloco Atividade do usuário e selecione **Gerenciar**.
 . Selecione a aba **Conector de diretório do usuário**.
-. Identifique o conector de diretório do usuário que você deseja excluir.  No menu de ação no final da linha, selecione os três pontos `...` então **Excluir**.
+. Identifique o conector de diretório do usuário que você deseja excluir. No menu de ação no final da linha, selecione os três pontos `...` então **Excluir**.
 . Na caixa de diálogo pop-up, selecione **Excluir** para confirmar suas ações.
 
 

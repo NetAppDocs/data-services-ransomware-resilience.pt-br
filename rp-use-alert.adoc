@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-use-alert.html 
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert 
-summary: Se o Ransomware Resilience detectar um possível ataque, um alerta aparecerá no Ransomware Resilience Dashboard indicando um ataque em potencial.  Neste ponto, você deve analisar o risco potencial na aba Alertas de resiliência de ransomware. 
+summary: Se o Ransomware Resilience detectar um possível ataque, um alerta aparecerá no Ransomware Resilience Dashboard indicando um ataque em potencial. Neste ponto, você deve analisar o risco potencial na aba Alertas de resiliência de ransomware. 
 ---
 = Lide com alertas de ransomware detectados com o NetApp Ransomware Resilience
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Se o Ransomware Resilience detectar um possível ataque, um alerta apar
 [role="lead"]
 Quando o NetApp Ransomware Resilience detecta um possível ataque, ele mostra um alerta no Painel e na área de Notificações.  O Ransomware Resilience tira um instantâneo imediatamente.  Revise o risco potencial na aba *Alertas* de resiliência contra ransomware.
 
-Se o Ransomware Resilience detectar um possível ataque, uma notificação será exibida nas configurações de Notificação do Console e um e-mail será enviado para o endereço configurado.  O e-mail inclui informações sobre a gravidade, a carga de trabalho impactada e um link para o alerta na guia *Alertas* de resiliência contra ransomware.
+Se o Ransomware Resilience detectar um possível ataque, uma notificação será exibida nas configurações de Notificação do Console e um e-mail será enviado para o endereço configurado. O e-mail inclui informações sobre a gravidade, a carga de trabalho impactada e um link para o alerta na guia *Alertas* de resiliência contra ransomware.
 
 Você pode descartar falsos positivos ou decidir recuperar seus dados imediatamente.
 
@@ -142,10 +142,10 @@ A página Alertas é exibida.
 
 Observando a aba Alertas, você pode identificar se há atividade maliciosa ou comportamento anômalo do usuário.
 
-Você deve ter configurado um agente de atividade do usuário e habilitado uma política de proteção com detecção de comportamento do usuário para visualizar a detecção no nível do usuário.  Com a detecção de comportamento do usuário ativada, a coluna *Usuário suspeito* aparece no painel Alertas; ela não é exibida quando a detecção de comportamento do usuário não está ativada.  Para habilitar a detecção de usuários suspeitos, consultelink:suspicious-user-activity.html["Atividade suspeita do usuário"] .
+Você deve ter configurado um agente de atividade do usuário e habilitado uma política de proteção com detecção de comportamento do usuário para visualizar a detecção no nível do usuário. Com a detecção de comportamento do usuário ativada, a coluna *Usuário suspeito* aparece no painel Alertas; ela não é exibida quando a detecção de comportamento do usuário não está ativada. Para habilitar a detecção de usuários suspeitos, consultelink:suspicious-user-activity.html["Atividade suspeita do usuário"] .
 
 
-NOTE: Se você estiver usando o NetApp Data Infrastructure Insights (DII) Workload Security, é recomendável usar os mesmos agentes de Workload Security para o Ransomware Resilience.  Não é necessário implantar agentes de segurança de carga de trabalho separados para o Ransomware Resilience. No entanto, usar os mesmos agentes de segurança de carga de trabalho requer um relacionamento de pareamento entre a organização do Ransomware Resilience Console e o locatário do DII Storage Workload Security.  Entre em contato com seu representante de conta para habilitar esse pareamento.
+NOTE: Se você estiver usando o NetApp Data Infrastructure Insights (DII) Workload Security, é recomendável usar os mesmos agentes de Workload Security para o Ransomware Resilience. Não é necessário implantar agentes de segurança de carga de trabalho separados para o Ransomware Resilience. No entanto, usar os mesmos agentes de segurança de carga de trabalho requer um relacionamento de pareamento entre a organização do Ransomware Resilience Console e o locatário do DII Storage Workload Security. Entre em contato com seu representante de conta para habilitar esse pareamento.
 
 
 
@@ -177,7 +177,7 @@ image:screen-alerts-incidents3.png["Página de incidentes de alerta"]
 
 === Visualizar comportamento anômalo do usuário
 
-Se você configurou a detecção de usuários suspeitos para visualizar comportamentos anômalos do usuário, poderá visualizar dados em nível de usuário e bloquear usuários específicos.  Para habilitar configurações de usuários suspeitos, consultelink:rp-use-settings.html["Configurar as definições de resiliência contra ransomware"] .
+Se você configurou a detecção de usuários suspeitos para visualizar comportamentos anômalos do usuário, poderá visualizar dados em nível de usuário e bloquear usuários específicos. Para habilitar configurações de usuários suspeitos, consultelink:rp-use-settings.html["Configurar as definições de resiliência contra ransomware"] .
 
 .Passos
 . No menu Resiliência contra Ransomware, selecione *Alertas*.
@@ -216,7 +216,7 @@ Depois que o alerta é marcado para restauração, ele é movido da guia Alertas
 
 == Descartar incidentes que não sejam ataques potenciais
 
-Depois de analisar os incidentes, você precisa determinar se eles são ataques em potencial.  Se não forem ameaças reais, elas podem ser descartadas.
+Depois de analisar os incidentes, você precisa determinar se eles são ataques em potencial. Se não forem ameaças reais, elas podem ser descartadas.
 
 Você pode descartar falsos positivos ou decidir recuperar seus dados imediatamente.  Se você ignorar o alerta, o Ransomware Resilience aprende esse comportamento, associa-o às operações normais e não inicia um alerta sobre esse comportamento novamente.
 

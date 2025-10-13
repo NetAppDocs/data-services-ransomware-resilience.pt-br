@@ -20,10 +20,10 @@ Para executar esta tarefa, você precisa da função de administrador da organiz
 
 * Inscreva-se para um teste gratuito de 30 dias.
 * Compre uma assinatura pré-paga (PAYGO) com o Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace ou Azure Marketplace.
-* Traga sua própria licença (BYOL), que é um arquivo de licença NetApp (NLF) que você obtém do seu representante de vendas NetApp . Você pode usar o número de série da licença para ativar o BYOL no Console.
+* Traga sua própria licença (BYOL), que é um arquivo de licença NetApp (NLF) que você obtém do seu representante de vendas NetApp .  Você pode usar o número de série da licença para ativar o BYOL no Console.
 
 
-Depois de configurar seu BYOL ou comprar uma assinatura PAYGO, você poderá ver a licença na seção Licenças e assinaturas do Console.
+Depois de configurar seu BYOL ou comprar uma assinatura PAYGO, você poderá ver a licença na seção Licenses and subscriptions do Console.
 
 Após o término do teste gratuito ou a licença ou assinatura expirar, você ainda poderá fazer o seguinte no Ransomware Resilience:
 
@@ -59,7 +59,7 @@ Durante o teste, você terá funcionalidade total.
 .Passos
 . Acesse o https://console.netapp.com/["Console"^] .
 . Efetue login no Console.
-. No NetApp Console, selecione *Proteção* > *Resiliência ao Ransomware*.
+. No NetApp Console, selecione *Proteção* > *Resiliência contra ransomware*.
 +
 Se esta for a primeira vez que você faz login neste serviço, a página de destino será exibida.
 
@@ -112,7 +112,7 @@ NOTE: Um e-mail será enviado a você, incluindo o número de série do Ransomwa
 image:screen-license-dw-add-license.png["Captura de tela da página Adicionar licença."]
 
 . Na página Adicionar licença, selecione *Inserir número de série*, insira o número de série que foi incluído no e-mail enviado a você e selecione *Adicionar licença*.
-. Para visualizar os detalhes da licença, na navegação à esquerda do Console, selecione *Administração* > *Licenças e assinaturas*.
+. Para visualizar os detalhes da licença, na navegação à esquerda do Console, selecione *Administração* > * Licenses and subscriptions*.
 +
 ** Para ver informações sobre a assinatura, selecione *Assinaturas*.
 ** Para ver as licenças BYOL, selecione *Licenças de serviços de dados*.
@@ -154,7 +154,7 @@ NOTE: Um e-mail será enviado a você, incluindo o número de série do Ransomwa
 image:screen-license-dw-add-license.png["Captura de tela da página Adicionar licença."]
 
 . Na página Adicionar licença, selecione *Inserir número de série* e insira o número de série do e-mail enviado a você.  Selecione *Adicionar licença*.
-. Para visualizar detalhes da licença em Licenças e assinaturas, na navegação à esquerda do Console, selecione *Governança* > *Licenças e assinaturas*.
+. Para visualizar detalhes da licença em Licenses and subscriptions, na navegação à esquerda do Console, selecione *Governança* > * Licenses and subscriptions*.
 +
 ** Para ver informações sobre a assinatura, selecione *Assinaturas*.
 ** Para ver as licenças BYOL, selecione *Licenças de serviços de dados*.
@@ -196,7 +196,7 @@ NOTE: Um e-mail será enviado a você, incluindo o número de série do Ransomwa
 image:screen-license-dw-add-license.png["Captura de tela da página Adicionar licença."]
 
 . Na página Adicionar licença, selecione *Inserir número de série*.  Digite o número de série no e-mail enviado a você.  Selecione *Adicionar licença*.
-. Para visualizar os detalhes da licença, na navegação à esquerda do Console, selecione *Governança* > *Licenças e assinaturas*.
+. Para visualizar os detalhes da licença, na navegação à esquerda do Console, selecione *Governança* > * Licenses and subscriptions*.
 +
 ** Para ver informações sobre a assinatura, selecione *Assinaturas*.
 ** Para ver as licenças BYOL, selecione *Licenças de serviços de dados*.
@@ -241,7 +241,7 @@ Se sua conta do site de suporte da NetApp não estiver disponível na lista susp
 
 
 .Resultado
-A página Licenças e assinaturas mostra que o Ransomware Resilience tem uma licença.
+A página Licenses and subscriptions mostra que o Ransomware Resilience tem uma licença.
 
 
 
@@ -260,7 +260,7 @@ Depois que você paga pela licença e ela é registrada no site de suporte da Ne
 . Se o Console não puder atualizar a licença automaticamente, você precisará carregar manualmente o arquivo de licença.
 +
 .. Você pode obter o arquivo de licença no site de suporte da NetApp .
-.. No Console, selecione **Administração** > **Licenças e assinaturas**.
+.. No Console, selecione **Administração** > ** Licenses and subscriptions**.
 .. Selecione a aba *Licenças de Serviços de Dados*, selecione o ícone *Ações...* para o número de série que você está atualizando e então selecione *Atualizar Licença*.
 
 

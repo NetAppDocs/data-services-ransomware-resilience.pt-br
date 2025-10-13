@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection, bluexp, anti-ransomware, cyber attack, ransomware, protection, detection, ARP, netapp' 
 summary: Saiba o que há de novo no NetApp Ransomware Resilience. 
 ---
-= Novidades na resiliência do NetApp Ransomware
+= Novidades na NetApp Ransomware Resilience
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -38,7 +38,7 @@ Para obter detalhes sobre o que mudou, consulte o https://docs.netapp.com/us-en/
 
 === Detecção de violação de dados
 
-O Ransomware Resilience inclui um novo mecanismo de detecção que pode ser ativado em algumas etapas para detectar leituras anômalas do usuário como um indicador precoce de violação de dados.  A resiliência do ransomware coleta e analisa eventos de leitura do usuário criando uma linha de base histórica, que é um perfil de comportamento normal esperado a partir de dados anteriores.  Quando uma nova atividade do usuário se desvia significativamente dessa norma estabelecida (como um aumento inesperado de leituras combinado com padrões de leitura suspeitos), um alerta é gerado.  O Ransomware Resilience inclui um modelo de IA para detectar padrões de leitura suspeitos.
+O Ransomware Resilience inclui um novo mecanismo de detecção que pode ser ativado em algumas etapas para detectar leituras anômalas do usuário como um indicador precoce de violação de dados. A resiliência do ransomware coleta e analisa eventos de leitura do usuário criando uma linha de base histórica, que é um perfil de comportamento normal esperado a partir de dados anteriores. Quando uma nova atividade do usuário se desvia significativamente dessa norma estabelecida (como um aumento inesperado de leituras combinado com padrões de leitura suspeitos), um alerta é gerado. O Ransomware Resilience inclui um modelo de IA para detectar padrões de leitura suspeitos.
 
 Diferentemente da detecção de criptografia pelo ARP na camada de armazenamento, a detecção da anomalia de comportamento do usuário é feita no serviço Ransomware Resilience SaaS por meio da coleta de eventos FPolicy.
 
@@ -64,9 +64,9 @@ Além da detecção de violações de dados, o Ransomware Resilience também det
 
 Para gerenciar alertas de atividades suspeitas do usuário, o Ransomware Resilience introduziu duas novas funções para administradores da organização do Console concederem acesso à detecção de atividades suspeitas do usuário: administrador de comportamento do usuário do Ransomware Resilience e visualizador de comportamento do usuário do Ransomware Resilience.
 
-Você deve ser um administrador de comportamento do usuário para configurar configurações de comportamento suspeito do usuário.  A função de administrador do Ransomware Resilience não tem suporte para configurar comportamentos suspeitos do usuário.
+Você deve ser um administrador de comportamento do usuário para configurar configurações de comportamento suspeito do usuário. A função de administrador do Ransomware Resilience não tem suporte para configurar comportamentos suspeitos do usuário.
 
-Para obter mais informações, consulte link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Acesso baseado em função de resiliência do NetApp Ransomware"^] .
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Acesso baseado em função de NetApp Ransomware Resilience"^] .
 
 
 
@@ -82,7 +82,7 @@ Esta versão inclui aprimoramentos e melhorias gerais.
 
 === Suporte de carga de trabalho SAN
 
-Esta versão inclui suporte para cargas de trabalho SAN na BlueXP ransomware protection.  Agora você pode proteger cargas de trabalho SAN, além de cargas de trabalho NFS e CIFS.
+Esta versão inclui suporte para cargas de trabalho SAN na BlueXP ransomware protection. Agora você pode proteger cargas de trabalho SAN, além de cargas de trabalho NFS e CIFS.
 
 Para mais informações, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-prerequisites.html["Pré-requisitos de BlueXP ransomware protection"] .
 
@@ -90,7 +90,7 @@ Para mais informações, consulte link:https://docs.netapp.com/us-en/data-servic
 
 === Proteção aprimorada da carga de trabalho
 
-Esta versão melhora o processo de configuração para cargas de trabalho com políticas de snapshot e backup de outras ferramentas da NetApp , como SnapCenter ou BlueXP backup and recovery.  Em versões anteriores, a BlueXP ransomware protection descobria as políticas de outras ferramentas, permitindo apenas que você alterasse a política de detecção.  Com esta versão, agora você pode substituir políticas de snapshot e backup por políticas de BlueXP ransomware protection ou continuar a usar as políticas de outras ferramentas.
+Esta versão melhora o processo de configuração para cargas de trabalho com políticas de snapshot e backup de outras ferramentas da NetApp , como SnapCenter ou BlueXP backup and recovery. Em versões anteriores, a BlueXP ransomware protection descobria as políticas de outras ferramentas, permitindo apenas que você alterasse a política de detecção. Com esta versão, agora você pode substituir políticas de snapshot e backup por políticas de BlueXP ransomware protection ou continuar a usar as políticas de outras ferramentas.
 
 Para mais detalhes, consultelink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Proteja as cargas de trabalho"] .
 
@@ -583,7 +583,7 @@ Agora você pode visualizar mais detalhes forenses para investigar o possível a
 
 === Processo de recuperação
 
-O processo de recuperação foi aprimorado.  Agora, você pode recuperar volume por volume ou todos os volumes de uma carga de trabalho. https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["Saiba mais sobre como se recuperar de um ataque de ransomware (após os incidentes terem sido neutralizados)"] .
+O processo de recuperação foi aprimorado. Agora, você pode recuperar volume por volume ou todos os volumes de uma carga de trabalho. https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["Saiba mais sobre como se recuperar de um ataque de ransomware (após os incidentes terem sido neutralizados)"] .
 
 https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["Saiba mais sobre a BlueXP ransomware protection"] .
 

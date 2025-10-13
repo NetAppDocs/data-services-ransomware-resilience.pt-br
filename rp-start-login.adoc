@@ -4,7 +4,7 @@ permalink: rp-start-login.html
 keywords: bluexp login, ransomware protection, cyber attack, log in, access 
 summary: Comece a usar o NetApp Ransomware Resilience por meio do NetApp Console. 
 ---
-= Acesse a resiliência do NetApp Ransomware
+= Acesse a NetApp Ransomware Resilience
 :hardbreaks:
 :allow-uri-read: 
 :icons: font

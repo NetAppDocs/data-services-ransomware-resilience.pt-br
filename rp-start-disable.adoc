@@ -4,7 +4,7 @@ permalink: rp-start-disable.html
 keywords: bluexp, ransomware protection, netapp, disable protection 
 summary: Se você não quiser mais usar o NetApp Ransomware Resilience, pode deixar a licença expirar. 
 ---
-= Desabilitar a resiliência do NetApp Ransomware
+= Desabilitar a NetApp Ransomware Resilience
 :hardbreaks:
 :allow-uri-read: 
 :icons: font

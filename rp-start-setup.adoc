@@ -4,7 +4,7 @@ permalink: rp-start-setup.html
 keywords: bluexp, ransomware protection, aws, azure 
 summary: Para usar o Ransomware Resilience, siga algumas etapas para configurá-lo. 
 ---
-= Configurar a resiliência do NetApp Ransomware
+= Configurar a NetApp Ransomware Resilience
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -42,7 +42,7 @@ Se você quiser usar o StorageGRID como seu destino de backup, consulte https://
 * Configurar https://docs.netapp.com/us-en/console-setup-admin/reference-permissions.html["Permissões da AWS"^] na AWS.
 
 
-Para obter detalhes sobre como gerenciar seu armazenamento AWS no Console, consulte https://docs.netapp.com/us-en/console-setup-admin/task-viewing-amazon-s3.html["Gerencie seus buckets do Amazon S3"^] .
+Para obter detalhes sobre como gerenciar seu armazenamento do AWS no Console, consulte https://docs.netapp.com/us-en/console-setup-admin/task-viewing-amazon-s3.html["Gerencie seus buckets do Amazon S3"^] .
 
 
 
