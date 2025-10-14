@@ -614,8 +614,6 @@
   <block id="60e39582e4cf8359d140fc0851baccb4" category="list-text">Uma organização do Console com pelo menos um agente do Console ativo conectando-se a clusters ONTAP locais ou ao Cloud Volumes ONTAP na AWS ou no Azure.</block>
   <block id="ffc25a5f8d1276ee801a950e7f83a233" category="list-text">O agente do Console deve ter o<block ref="d5aabb6133fba5c7ef5a4e8db21d18ae" prefix=" " category="inline-code"></block> contêiner em estado ativo.</block>
   <block id="7bff903bef6a1c5af1e562c29d1de15e" category="list-text">Pelo menos um sistema de console com um cluster ONTAP local da NetApp ou Cloud Volumes ONTAP na AWS ou Azure.  O Ransomware Resilience oferece suporte aos protocolos NAS (NFS e SMB) e SAN (iSCSI, FC e NVMe).</block>
-  <block id="fd90f947530ad3e6b6dfdb82ceff50cb" category="list-text">Clusters ONTAP ou Cloud Volumes ONTAP com ONTAP OS versão 9.11.1 ou superior são suportados.</block>
-  <block id="7ea40a0c9f950a0c8c2ee16edd7f77f2" category="admonition">As cargas de trabalho SAN são suportadas apenas no ONTAP 9.17.1 e posteriores.</block>
   <block id="097ff3efa4909e783a040ec7edc317d6" category="list-text">Se seus clusters ONTAP locais ou Cloud Volumes ONTAP na AWS ou na nuvem do Azure ainda não estiverem integrados no Console, você precisará de um agente do Console.</block>
   <block id="04f679e072129c7e87e077dc95e5e73e" category="inline-link">Aprenda a configurar um agente de console</block>
   <block id="b1fb1d531493b1af3ab2980b2c579a5f" category="inline-link">requisitos padrão do console</block>
@@ -630,7 +628,6 @@
   <block id="5cc74ffa295c128286831c0e8de84cd1" category="paragraph">Para mais detalhes sobre licenciamento, consulte<block ref="11f96aed2a11a318ecdf8f5381ec25fa" category="inline-link-macro-rx"></block> .</block>
   <block id="47c8d077dd25d3b0a8650ef6f84f0820" category="list-text">Para aplicar configurações de proteção (como habilitar a Proteção Autônoma contra Ransomware e outras), o Ransomware Resilience precisa de permissões de administrador no cluster ONTAP .  O cluster ONTAP deveria ter sido integrado usando apenas credenciais de usuário administrador do cluster ONTAP .</block>
   <block id="d6b16e754b93934f7687ad4f252b7073" category="list-text">Se o cluster ONTAP já estiver integrado no Console usando credenciais de usuário não administrador, as permissões do usuário não administrador deverão ser atualizadas com as permissões necessárias por meio de login no cluster ONTAP , conforme descrito nesta página.</block>
-  <block id="ed5ce0cb12bbc7e366d04460145d59f3" category="section-title">Para backups de dados</block>
   <block id="0885a21123eeb2ad2e03289064c229ea" category="list-text">Uma conta no NetApp StorageGRID, AWS S3, Azure Blob ou Google Cloud Platform para destinos de backup e as permissões de acesso definidas.</block>
   <block id="d2e3e802d3f25894bd170688859d6cef" category="inline-link">Lista de permissões AWS, Azure ou S3</block>
   <block id="90061bb176f3e723f6f2161eafc1901c" category="paragraph">Consulte o<block ref="31e1fb669a04af441205b80b4846232f" category="inline-link-rx"></block> para mais detalhes.</block>
@@ -743,8 +740,6 @@
   <block id="365d382b2d9ecca9b0d40171c69b38ff" category="list-text">Faça um dos seguintes:</block>
   <block id="298c644723428b96dd61c8e59f47eee9" category="list-text">No menu Resiliência contra Ransomware, selecione o botão *Executar teste de prontidão* no canto superior direito.</block>
   <block id="8d2bd4422410271303c0633a19aefea9" category="list-text">OU, na página Configurações, no cartão de exercício de prontidão, selecione *Iniciar*.</block>
-  <block id="f54a2552361ef76d1d69e95fc2f63e90" category="list-text">Se você já configurou o exercício de prontidão, após selecionar *Iniciar*, o exercício de prontidão será iniciado.</block>
-  <block id="241197791593ba6fe12006bc7c44e045" category="admonition">Após o início do exercício, não é possível editar a configuração do exercício de prontidão.  Você pode reiniciá-lo para começar de novo.</block>
   <block id="1e4a43fb392ed69a6d5a047ba0d88826" category="section-title">Responder a um alerta de exercício de prontidão</block>
   <block id="6128067a6b325891717a7cfc23e60bae" category="paragraph">Teste sua prontidão respondendo a um alerta de treinamento de prontidão.</block>
   <block id="e9ebf76599d54488581ec7e47b518db1" category="list-text">No menu Resiliência contra Ransomware, selecione *Alertas*.</block>
@@ -2036,4 +2031,11 @@
   <block id="f8a7dc43864435cb9b522a28b586e556" category="sidebar">Recuperar-se de um ataque de ransomware</block>
   <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">Perguntas frequentes</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conhecimento e suporte</block>
+  <block id="69d1e7a74a8d35e4122500df6d2f5042" category="list-text">O Ransomware Resilience é compatível com clusters ONTAP ou Cloud Volumes ONTAP com ONTAP versão 9.11.1 ou superior.</block>
+  <block id="d36369f24098b858527294c5a234c72d" category="admonition">Se você planeja usar o Ransomware Resilience em cargas de trabalho SAN, deverá executar o ONTAP 9.17.1 ou posterior.</block>
+  <block id="51fecb5d19a6637dea83445678fd4ffa" category="section-title">Backups de dados</block>
+  <block id="9755e4a474d0024a8dcd40393e571716" category="section-title">Comportamento suspeito do usuário</block>
+  <block id="34691f87b892c333fe1b7a23452dcda6" category="paragraph">Para que o Ransomware Resilience forneça alertas sobre comportamento suspeito do usuário, você deve configurar um agente de atividade do usuário. Para mais informações, consulte <block ref="f3d3e5726f7feb4b59ca728c906df758" category="inline-link-macro-rx"></block>.</block>
+  <block id="793485138a653779a0c8cb91bf9fc979" category="list-text">Selecione o tipo de exercício de prontidão. Para uma recuperação manual de uma violação de dados de criptografia, escolha **Recuperação personalizada**. Para recuperação de atividades suspeitas de usuários, escolha **Violação de dados**.</block>
+  <block id="8e0b9d66ccd774ed98d0b31d0e6ed305" category="admonition">Não é possível editar a configuração do exercício de prontidão enquanto o exercício estiver em execução. Você pode reiniciar a broca para pará-la e modificar a configuração.</block>
 </blocks>

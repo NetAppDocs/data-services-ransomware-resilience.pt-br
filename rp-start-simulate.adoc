@@ -52,6 +52,7 @@ image:screen-settings-alert-drill-configure.png["Configurar página de treinamen
 .. Selecione um sistema de teste.
 .. Selecione um SVM de armazenamento de teste.
 .. Se você selecionou uma VM de armazenamento CIFS (SMB), os campos **Nome de usuário** e **Senha** serão exibidos.  Digite o nome de usuário e a senha para a VM de armazenamento.
+.. Selecione o tipo de exercício de prontidão. Para uma recuperação manual de uma violação de dados de criptografia, escolha **Recuperação personalizada**. Para recuperação de atividades suspeitas de usuários, escolha **Violação de dados**.
 .. Insira o nome de uma nova carga de trabalho de teste a ser criada.  Não inclua hífens no nome.
 
 
@@ -84,11 +85,10 @@ image:screen-dashboard.png["Página do painel mostrando o botão Executar exerc�
 ** OU, na página Configurações, no cartão de exercício de prontidão, selecione *Iniciar*.
 
 
-. Se você já configurou o exercício de prontidão, após selecionar *Iniciar*, o exercício de prontidão será iniciado.
 
 
 
-NOTE: Após o início do exercício, não é possível editar a configuração do exercício de prontidão.  Você pode reiniciá-lo para começar de novo.
+NOTE: Não é possível editar a configuração do exercício de prontidão enquanto o exercício estiver em execução. Você pode reiniciar a broca para pará-la e modificar a configuração.
 
 
 

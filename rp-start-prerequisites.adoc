@@ -25,10 +25,10 @@ Para usar o Ransomware Resilience, você precisará atender aos seguintes pré-r
 * O agente do Console deve ter o `cloudmanager-ransomware-protection` contêiner em estado ativo.
 * Pelo menos um sistema de console com um cluster ONTAP local da NetApp ou Cloud Volumes ONTAP na AWS ou Azure.  O Ransomware Resilience oferece suporte aos protocolos NAS (NFS e SMB) e SAN (iSCSI, FC e NVMe).
 +
-** Clusters ONTAP ou Cloud Volumes ONTAP com ONTAP OS versão 9.11.1 ou superior são suportados.
+** O Ransomware Resilience é compatível com clusters ONTAP ou Cloud Volumes ONTAP com ONTAP versão 9.11.1 ou superior.
 +
 
-NOTE: As cargas de trabalho SAN são suportadas apenas no ONTAP 9.17.1 e posteriores.
+NOTE: Se você planeja usar o Ransomware Resilience em cargas de trabalho SAN, deverá executar o ONTAP 9.17.1 ou posterior.
 
 ** Se seus clusters ONTAP locais ou Cloud Volumes ONTAP na AWS ou na nuvem do Azure ainda não estiverem integrados no Console, você precisará de um agente do Console.
 +
@@ -61,7 +61,7 @@ Para mais detalhes sobre licenciamento, consultelink:concept-ransomware-resilien
 
 
 
-== Para backups de dados
+== Backups de dados
 
 * Uma conta no NetApp StorageGRID, AWS S3, Azure Blob ou Google Cloud Platform para destinos de backup e as permissões de acesso definidas.
 +
@@ -72,6 +72,12 @@ Consulte o https://docs.netapp.com/us-en/console-setup-admin/reference-permissio
 O Ransomware Resilience ajuda a configurar um destino de backup por meio da opção Configurações. Ver link:rp-use-settings.html["Configurar definições"] .
 
 
+
+
+
+== Comportamento suspeito do usuário
+
+Para que o Ransomware Resilience forneça alertas sobre comportamento suspeito do usuário, você deve configurar um agente de atividade do usuário. Para mais informações, consulte link:suspicious-user-activity.html["Configurar a detecção de atividades suspeitas de usuários no NetApp Ransomware Resilience"].
 
 
 
