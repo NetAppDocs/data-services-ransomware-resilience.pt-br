@@ -209,9 +209,6 @@ Para obter detalhes sobre como gerenciar seu armazenamento do GCP no Console, co
 .Passos
 . Na página *Configurações > Destinos de backup*, selecione *Adicionar*.
 . Digite um nome para o destino do backup.
-+
-image:screen-settings-backup-destination-gcp.png["Página de destinos de backup"]
-
 . Selecione *Google Cloud Platform*.
 . Selecione a seta para baixo ao lado de cada configuração e insira ou selecione valores:
 +
@@ -219,6 +216,9 @@ image:screen-settings-backup-destination-gcp.png["Página de destinos de backup"
 +
 *** Crie um novo bucket.  Digite a chave de acesso e a chave secreta.
 *** Insira ou selecione seu projeto e região do Google Cloud Platform.
++
+image:screen-settings-backup-destination-gcp.png["Página de destinos de backup"]
+
 
 
 ** *Criptografia*: Se você estiver criando um novo bucket, insira as informações da chave de criptografia fornecidas pelo provedor.  Se você escolher um bucket existente, as informações de criptografia já estarão disponíveis.
