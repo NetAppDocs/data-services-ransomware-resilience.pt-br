@@ -9,7 +9,7 @@ summary: Melhore a segurança e a conformidade de privacidade dos seus dados com
 
 
 [role="lead"]
-No NetApp Ransomware Resilience, você pode usar o NetApp Data Classification para verificar e classificar os dados em uma carga de trabalho de compartilhamento de arquivos.  Classificar dados ajuda a determinar se o conjunto de dados inclui informações de identificação pessoal (PII), o que pode aumentar os riscos de segurança.  A Classificação de Dados é um componente central do Console e está disponível sem custo adicional.
+No NetApp Ransomware Resilience, você pode usar o NetApp Data Classification para verificar e classificar os dados em uma carga de trabalho de compartilhamento de arquivos. Classificar dados ajuda a determinar se o conjunto de dados inclui informações de identificação pessoal (PII), o que pode aumentar os riscos de segurança. A classificação de dados é um componente central do NetApp Console e está disponível sem custo adicional.
 
 link:https://docs.netapp.com/us-en/data-services-data-classification/["Classificação de Dados"^]utiliza processamento de linguagem natural orientado por IA para análise e categorização de dados contextuais, fornecendo insights acionáveis sobre seus dados para atender aos requisitos de conformidade, detectar vulnerabilidades de segurança, otimizar custos e acelerar a migração.
 

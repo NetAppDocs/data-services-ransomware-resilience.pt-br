@@ -20,8 +20,11 @@ Para executar esta tarefa, você precisa da função de administrador da organiz
 
 * Inscreva-se para um teste gratuito de 30 dias.
 * Compre uma assinatura pré-paga (PAYGO) com o Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace ou Azure Marketplace.
-* Traga sua própria licença (BYOL), que é um arquivo de licença NetApp (NLF) que você obtém do seu representante de vendas NetApp .  Você pode usar o número de série da licença para ativar o BYOL no Console.
+* Traga sua própria licença (BYOL), que é um arquivo de licença NetApp (NLF) que você obtém do seu representante de vendas da NetApp . Você pode usar o número de série da licença para ativar o BYOL no Console.
 
+
+
+NOTE: Se você se inscrever para um teste de seis meses, deverá ter uma licença NLF.
 
 Depois de configurar seu BYOL ou comprar uma assinatura PAYGO, você poderá ver a licença na seção Licenses and subscriptions do Console.
 
@@ -36,7 +39,7 @@ Após o término do teste gratuito ou a licença ou assinatura expirar, você ai
 
 == Outras licenças
 
-A licença do Ransomware Resilience não inclui produtos NetApp adicionais.  O Ransomware Resilience pode usar o NetApp Backup and Recovery mesmo que você não tenha uma licença para ele.
+A licença do Ransomware Resilience não inclui produtos NetApp adicionais. No entanto, o Ransomware Resilience pode ser integrado ao NetApp Backup and Recovery, mesmo que você não tenha uma licença separada para Backup and Recovery.
 
 
 NOTE: Se você tiver o Backup and Recovery e o Ransomware Resilience, quaisquer dados comuns protegidos por ambos os produtos serão cobrados somente pelo Ransomware Resilience.
