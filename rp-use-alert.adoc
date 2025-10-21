@@ -142,10 +142,10 @@ A página Alertas é exibida.
 
 Observando a aba Alertas, você pode identificar se há atividade maliciosa ou comportamento anômalo do usuário.
 
-Você deve ter configurado um agente de atividade do usuário e habilitado uma política de proteção com detecção de comportamento do usuário para visualizar a detecção no nível do usuário. Com a detecção de comportamento do usuário ativada, a coluna *Usuário suspeito* aparece no painel Alertas; ela não é exibida quando a detecção de comportamento do usuário não está ativada. Para habilitar a detecção de usuários suspeitos, consultelink:suspicious-user-activity.html["Atividade suspeita do usuário"] .
+Você deve ter configurado um agente de atividade do usuário e habilitado uma política de proteção com detecção de comportamento do usuário para visualizar alertas em nível de usuário. Com a detecção de comportamento do usuário ativada, a coluna *Usuário suspeito* aparece no painel Alertas; ela não é exibida quando a detecção de comportamento do usuário não está ativada.  Para habilitar a detecção de usuários suspeitos, consultelink:suspicious-user-activity.html["Atividade suspeita do usuário"] .
 
 
-NOTE: Se você estiver usando o NetApp Data Infrastructure Insights (DII) Workload Security, é recomendável usar os mesmos agentes de Workload Security para o Ransomware Resilience. Não é necessário implantar agentes de segurança de carga de trabalho separados para o Ransomware Resilience. No entanto, usar os mesmos agentes de segurança de carga de trabalho requer um relacionamento de pareamento entre a organização do Ransomware Resilience Console e o locatário do DII Storage Workload Security. Entre em contato com seu representante de conta para habilitar esse pareamento.
+NOTE: Se você estiver usando o NetApp Data Infrastructure Insights (DII) Workload Security, é recomendável usar os mesmos agentes de Workload Security para o Ransomware Resilience. Não é necessário implantar agentes de segurança de carga de trabalho separados para o Ransomware Resilience. No entanto, usar os mesmos agentes de segurança de carga de trabalho requer um relacionamento de emparelhamento entre a organização do Ransomware Resilience Console e o locatário do DII Storage Workload Security. Entre em contato com seu representante de conta para habilitar esse pareamento.
 
 
 
@@ -183,7 +183,7 @@ Se você configurou a detecção de usuários suspeitos para visualizar comporta
 . No menu Resiliência contra Ransomware, selecione *Alertas*.
 . Selecione um alerta.
 . Revise os incidentes no alerta.
-. Para bloquear o acesso futuro de um usuário suspeito ao seu ambiente monitorado pelo Console, selecione *Bloquear* abaixo do nome do usuário.
+. Para bloquear um usuário suspeito em seu ambiente, selecione *Bloquear* abaixo do nome do usuário.
 
 
 
@@ -223,7 +223,7 @@ Você pode descartar falsos positivos ou decidir recuperar seus dados imediatame
 Se você descartar uma carga de trabalho, todas as cópias de instantâneos feitas automaticamente em resposta a um possível ataque de ransomware serão excluídas permanentemente.
 
 
-CAUTION: Se você descartar um alerta, não poderá alterar esse status de volta para nenhum outro e não poderá desfazer essa alteração.
+CAUTION: Se você descartar um alerta, não poderá alterar seu status nem desfazer essa alteração.
 
 *Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^] .
 
@@ -277,5 +277,5 @@ TIP: Se um volume tiver vários alertas, talvez seja necessário baixar a lista 
 +
 image:screen-alerts-incidents-impacted-files.png["lista de arquivos impactados para um alerta específico"]
 
-. Para esse incidente, selecione o ícone de download e baixe a lista de arquivos afetados no formato CSV.
+. Para esse incidente, selecione o ícone de download para baixar a lista de arquivos afetados no formato CSV.
 

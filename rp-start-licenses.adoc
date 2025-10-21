@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-start-licenses.html 
 keywords: bluexp license, ransomware protection license, netapp console 
-summary: Comece a usar o NeApp Ransomware Resilience configurando o licenciamento. 
+summary: Certifique-se de atender aos requisitos de licenciamento do Ransomware Resilience para proteger seus sistemas e cargas de trabalho. 
 ---
 = Configurar licenciamento para NetApp Ransomware Resilience
 :hardbreaks:
@@ -16,23 +16,20 @@ Com o NetApp Ransomware Resilience, você pode usar diferentes planos de licenci
 
 Para executar esta tarefa, você precisa da função de administrador da organização, pasta ou projeto. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console"^] .
 
-*Tipos de licença* Você pode usar os seguintes tipos de licença:
+*Tipos de licença* O Ransomware Resilience está disponível com os seguintes tipos de licença:
 
-* Inscreva-se para um teste gratuito de 30 dias.
-* Compre uma assinatura pré-paga (PAYGO) com o Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace ou Azure Marketplace.
-* Traga sua própria licença (BYOL), que é um arquivo de licença NetApp (NLF) que você obtém do seu representante de vendas da NetApp . Você pode usar o número de série da licença para ativar o BYOL no Console.
+* Teste gratuito de 30 dias
+* Adquira uma assinatura pré-paga (PAYGO) com o Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace ou Azure Marketplace
+* Traga sua própria licença (BYOL): um arquivo de licença NetApp (NLF) que você obtém do seu representante de vendas da NetApp . Você pode usar o número de série da licença para ativar o BYOL no Console.
 
-
-
-NOTE: Se você se inscrever para um teste de seis meses, deverá ter uma licença NLF.
 
 Depois de configurar seu BYOL ou comprar uma assinatura PAYGO, você poderá ver a licença na seção Licenses and subscriptions do Console.
 
-Após o término do teste gratuito ou a licença ou assinatura expirar, você ainda poderá fazer o seguinte no Ransomware Resilience:
+Após o término do teste gratuito ou a licença ou assinatura expirar, você ainda poderá:
 
-* Visualize cargas de trabalho e integridade das cargas de trabalho.
-* Exclua qualquer recurso, como uma política.
-* Execute todas as operações agendadas que foram criadas durante o período de teste ou sob a licença.
+* Exibir cargas de trabalho e integridade da carga de trabalho
+* Excluir recursos como políticas
+* Execute todas as operações agendadas criadas durante o período de teste ou sob a licença
 
 
 
@@ -46,14 +43,11 @@ NOTE: Se você tiver o Backup and Recovery e o Ransomware Resilience, quaisquer 
 
 
 
-== Experimente usando um teste gratuito de 30 dias
+== Experimente o Ransomware Resilience com um teste gratuito de 30 dias
 
-Você pode testar o Ransomware Resilience usando um teste gratuito de 30 dias.  Você deve ser um administrador da Organização do Console para iniciar o teste gratuito.
+Você pode experimentar o Ransomware Resilience com um teste gratuito de 30 dias.  Você deve ser um administrador da Organização do Console para iniciar o teste gratuito.
 
-
-NOTE: Com o lançamento de outubro de 2024, novas implantações do Ransomware Resilience agora têm 30 dias para um teste gratuito.  Anteriormente, o Ransomware Resilience oferecia 90 dias de teste gratuito.  Se você já estiver no teste gratuito de 90 dias, a oferta continuará por 90 dias.
-
-Não há limites de capacidade impostos durante o julgamento.
+Os limites de capacidade de armazenamento não são aplicados durante o teste.
 
 Você pode obter uma licença ou assinar a qualquer momento e não será cobrado até o término do teste de 30 dias.  Para continuar após o teste de 30 dias, você precisará comprar uma licença BYOL ou uma assinatura PAYGO.
 
@@ -69,11 +63,12 @@ Se esta for a primeira vez que você faz login neste serviço, a página de dest
 +
 image:screen-landing.png["Captura de tela da página de destino para Ransomware Resilience"]
 
-. Se você ainda não adicionou um Conector para outros serviços, adicione um.
+. Se você ainda não adicionou um agente do Console para outros serviços,link:ps://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["adicione um"^] .
+. Na página inicial do Ransomware Resilience, selecione *Começar descobrindo cargas de trabalho* para descobrir suas cargas de trabalho.
 +
-Para adicionar um agente de console, consulte https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["Saiba mais sobre os agentes do Console"^] .
 
-. Depois de configurar um agente do Console, na página inicial do Ransomware Resilience, o botão para adicionar um agente do Console muda para um botão para descobrir cargas de trabalho.  Selecione *Começar descobrindo cargas de trabalho*.
+NOTE: Esta opção só estará disponível se você tiver instalado com sucesso um agente do Console.
+
 . Para revisar as informações do teste gratuito, selecione a opção suspensa no canto superior direito.
 
 
@@ -123,7 +118,7 @@ image:screen-license-dw-add-license.png["Captura de tela da página Adicionar li
 
 . Retornar para Resiliência ao Ransomware.  Na navegação à esquerda do Console, selecione *Proteção* > *Resiliência a Ransomware*.
 +
-Aparece uma mensagem indicando que uma licença foi adicionada.
+Uma mensagem confirma que uma licença foi adicionada.
 
 
 

@@ -24,8 +24,8 @@ Pelo menos um agente de atividade do usuário deve ser instalado para ativar a d
 
 Um agente pode hospedar vários coletores de dados. Os coletores de dados enviam dados para um local SaaS para análise. Existem dois tipos de colecionadores:
 
-* o **coletor de dados** coleta dados de atividade do usuário do ONTAP.
-* o **conector de diretório de usuário** conecta-se ao seu diretório para mapear IDs de usuário para nomes de usuários.
+* O **coletor de dados** coleta dados de atividade do usuário do ONTAP.
+* O **conector de diretório de usuários** conecta-se ao seu diretório para mapear IDs de usuários a nomes de usuários.
 
 
 Os coletores são configurados nas configurações de Resiliência de Ransomware.
@@ -34,7 +34,7 @@ Os coletores são configurados nas configurações de Resiliência de Ransomware
 
 == Habilitar detecção de atividades suspeitas de usuários
 
-*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador de comportamento do usuário Ransomware Resilience. Você não pode executar esta tarefa com a função de administrador do Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^] .
+*Função de console necessária* Para ativar a detecção de atividades suspeitas do usuário, você precisa da função de administrador da organização.  Para configurações subsequentes de atividades suspeitas do usuário, você precisa da função de administrador de comportamento do usuário de Resiliência contra Ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^].
 
 
 
@@ -46,7 +46,7 @@ Os agentes de atividade do usuário são ambientes executáveis para coletores d
 
 ==== Requisitos
 
-Para instalar um agente de atividade do usuário, você precisa de um host ou uma VM com qualquer um dos seguintes requisitos de sistema operacional e servidor suportados.
+Para instalar um agente de atividade do usuário, você precisa de um host ou VM que atenda aos seguintes requisitos de sistema operacional e servidor suportados.
 
 **Requisitos do sistema operacional**
 
