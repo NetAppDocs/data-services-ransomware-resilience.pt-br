@@ -121,7 +121,7 @@ Após a criação bem-sucedida do agente de atividade do usuário, retorne ao me
 
 === Adicionar um coletor de dados
 
-Os coletores de dados são criados automaticamente quando você ativa uma estratégia de proteção contra ransomware com detecção de atividades suspeitas de usuários. Para obter mais informações, consulte xref:rp-use-protect.adoc#add-a-detection-policy-to workloads-with-existing-backup-or-snapshot-policies [adicionar uma política de detecção] .
+Os coletores de dados são criados automaticamente quando você ativa uma estratégia de proteção contra ransomware com detecção de atividades suspeitas de usuários. Para mais informações, consulte xref:rp-use-protect.adoc#add-a-detection-policy-to-workloads-with-existing-snapshot-and-backup-policies-managed-by-snapcenter-or-backup-and-recovery[adicionar uma política de detecção].
 
 Você pode visualizar os detalhes do coletor de dados. Em Configurações, selecione **Gerenciar** no bloco Atividade do usuário. Selecione a aba **Coletor de dados** e selecione o coletor de dados para visualizar seus detalhes ou pausá-lo.
 
