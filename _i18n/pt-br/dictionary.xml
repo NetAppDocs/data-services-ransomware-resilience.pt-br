@@ -237,12 +237,10 @@
   <block id="90d096ff0013c9c2874a247b26e69950" category="list-text">Ajuda você a monitorar os resultados.</block>
   <block id="4f743c093ec077920561596aa32a74f6" category="section-title">Destinos de backup, sistemas e fontes de dados de carga de trabalho suportados</block>
   <block id="b45c27598e81de132cbcf41c4f6124d9" category="paragraph">O Ransomware Resilience oferece suporte aos seguintes destinos de backup, sistemas e fontes de dados:</block>
-  <block id="5a2f764441f9d3e054b68c956f11e77a" category="paragraph">*Alvos de backup suportados*</block>
   <block id="736ca911d7d143d01bd8cbfe0d4afbca" category="list-text">Amazon Web Services (AWS) S3</block>
   <block id="5c9ef0d871938dccceb29ee63fad8ddb" category="list-text">Plataforma Google Cloud</block>
   <block id="6a51ed7bcacdfb13f78abc1e0f69c201" category="list-text">Blob do Microsoft Azure</block>
   <block id="55cf1a0f0fce69fd543500e5761dd26d" category="list-text">NetApp StorageGRID</block>
-  <block id="02d9d4ccf573660435e940eabcc8f12c" category="paragraph">*Sistemas suportados*</block>
   <block id="5f35d0b4a7930f14f1022ee1f942ee64" category="list-text">NAS ONTAP local (usando protocolos NFS e CIFS) com ONTAP versão 9.11.1 e superior</block>
   <block id="36471da59b7d9b72aa431fd1f5059d05" category="list-text">SAN ONTAP local (usando protocolos FC, iSCSI e NVMe) com ONTAP versão 9.17.1 e superior</block>
   <block id="0479370d1a7f4250832bb43f782a1456" category="list-text">Cloud Volumes ONTAP 9.11.1 ou superior para AWS (usando protocolos NFS e CIFS)</block>
@@ -250,15 +248,11 @@
   <block id="4d32d1cc8c36c71c8d57d570d802694f" category="list-text">Cloud Volumes ONTAP 9.12.1 ou superior para Microsoft Azure (usando protocolos NFS e CIFS)</block>
   <block id="35042137939d246a1fd01199cb942d15" category="list-text">Cloud Volumes ONTAP 9.17.1 ou superior para AWS, Google Cloud Platform e Microsoft Azure (usando protocolos FC, iSCSI e NVMe)</block>
   <block id="54d1e9634870c74de38de33364a86d27" category="list-text">Amazon FSx for NetApp ONTAP, que usa proteção autônoma contra ransomware (ARP e não ARP/AI)</block>
-  <block id="1d6131f7ad87ad503cde9efa2561d2d8" category="admonition">ARP/AI requer ONTAP 9.16 ou superior.</block>
-  <block id="c231c2b9f4d999149380b14f4bd21a7e" category="admonition">Os seguintes itens não são suportados: volumes FlexGroup , versões ONTAP anteriores à 9.11.1, volumes de ponto de montagem, volumes de caminho de montagem, volumes offline e volumes de proteção de dados (DP).</block>
-  <block id="6b1713530668cac3f2a5c5835ae37a1f" category="paragraph">*Fontes de dados de carga de trabalho suportadas*</block>
   <block id="2fd51284279972a6a1390536b053f3c3" category="paragraph">O Ransomware Resilience protege as seguintes cargas de trabalho baseadas em aplicativos em volumes de dados primários:</block>
   <block id="ffc184891768c331383cd53bcd1bc968" category="list-text">Compartilhamentos de arquivos NetApp</block>
   <block id="4f0550f066ae72bb8c24fc3f59c323bf" category="list-text">Armazenamento em bloco</block>
   <block id="ed11408803c4c1aca5fbebbc43d88458" category="list-text">Armazenamentos de dados VMware</block>
   <block id="3560990ee46f2f17d59094ab9e308c5e" category="list-text">Bancos de dados (MySQL e Oracle)</block>
-  <block id="713cbd93b2ba47b4561b53a841624b51" category="list-text">Mais novidades em breve</block>
   <block id="ac52d0195d6b8f8c9196f4a11d911326" category="paragraph">Além disso, se você estiver usando o SnapCenter ou o SnapCenter para VMware, todas as cargas de trabalho suportadas por esses produtos também serão identificadas no Ransomware Resilience.  O Ransomware Resilience pode proteger e recuperar esses dados de maneira consistente com a carga de trabalho.</block>
   <block id="02f360fe822afa82c0f600943169df7e" category="section-title">Termos que podem ajudar você com a proteção contra ransomware</block>
   <block id="77460e2b891748333455193aadd137d8" category="paragraph">Você pode se beneficiar ao entender alguma terminologia relacionada à proteção contra ransomware.</block>
@@ -545,28 +539,14 @@
   <block id="ac6282fe86530df822c059310d9c8cc3" category="paragraph">Consulte <block ref="40333c3f84ed5cb5976f4d99c62be349" category="inline-link-macro-rx"></block> .</block>
   <block id="d0e83b4dfc8809d4d0f31e184c6f9ebb" category="summary">Comece a usar o NetApp Ransomware Resilience verificando o suporte ao seu ambiente, acesso à rede, login e navegador da web.</block>
   <block id="fd2baaaf591d18081f2e012015874835" category="doc">Pré-requisitos de NetApp Ransomware Resilience</block>
-  <block id="24c096a4eee14bf4c04d2cbdd4effd54" category="paragraph">Comece a usar o NetApp Ransomware Resilience verificando a prontidão do seu ambiente operacional, login, acesso à rede e navegador da web.</block>
-  <block id="cfdba60f0ede042388dac5205623741d" category="paragraph">Para usar o Ransomware Resilience, você precisará atender aos seguintes pré-requisitos.</block>
-  <block id="5bf25f6ec08ec736c7b9b49cc19c6dd7" category="section-title">No NetApp Console</block>
   <block id="e315520b8d0944e7422c773e49fc17a7" category="list-text">Uma conta de usuário do NetApp Console com privilégios de administrador da organização para descobrir recursos.</block>
-  <block id="60e39582e4cf8359d140fc0851baccb4" category="list-text">Uma organização do Console com pelo menos um agente do Console ativo conectando-se a clusters ONTAP locais ou ao Cloud Volumes ONTAP na AWS ou no Azure.</block>
   <block id="ffc25a5f8d1276ee801a950e7f83a233" category="list-text">O agente do Console deve ter o<block ref="d5aabb6133fba5c7ef5a4e8db21d18ae" prefix=" " category="inline-code"></block> contêiner em estado ativo.</block>
   <block id="7bff903bef6a1c5af1e562c29d1de15e" category="list-text">Pelo menos um sistema de console com um cluster ONTAP local da NetApp ou Cloud Volumes ONTAP na AWS ou Azure.  O Ransomware Resilience oferece suporte aos protocolos NAS (NFS e SMB) e SAN (iSCSI, FC e NVMe).</block>
-  <block id="097ff3efa4909e783a040ec7edc317d6" category="list-text">Se seus clusters ONTAP locais ou Cloud Volumes ONTAP na AWS ou na nuvem do Azure ainda não estiverem integrados no Console, você precisará de um agente do Console.</block>
   <block id="04f679e072129c7e87e077dc95e5e73e" category="inline-link">Aprenda a configurar um agente de console</block>
   <block id="b1fb1d531493b1af3ab2980b2c579a5f" category="inline-link">requisitos padrão do console</block>
-  <block id="cb12a493b17ae7fff08a2132dcea0a98" category="paragraph">Consulte<block ref="f26f3bdec25207bfa60c6d1f2da2fd25" category="inline-link-rx"></block> e<block ref="e6a35e3eadbd084db13ee929315e54c1" category="inline-link-rx"></block> .</block>
   <block id="f9a3157f34101a0d560e518291db02ba" category="admonition">Se você tiver vários agentes do Console em uma única organização do Console, o Ransomware Resilience verificará os recursos do ONTAP em todos os agentes do Console além daquele que está selecionado no momento na IU do Console.</block>
-  <block id="2501cbb4187a9a6c7f42f035596578a4" category="section-title">No ONTAP 9.11.1 e posterior</block>
-  <block id="f89c934c898fc55d4773d10ee90d485e" category="list-text">Uma licença ONTAP One é habilitada na instância ONTAP local.</block>
   <block id="13572bbe68fe6ecbb17fb5a38d1313bb" category="inline-link">Visão geral da proteção autônoma contra ransomware</block>
-  <block id="852e40f75680d314fce781dad2f346b6" category="list-text">Uma licença para o NetApp Autonomous Ransomware Protection, usada pelo Ransomware Resilience, habilitada na instância ONTAP local, dependendo da versão do ONTAP que você está usando. Consulte<block ref="9a25fd5e356132f930267232d70ad02b" category="inline-link-rx"></block> .</block>
-  <block id="fff65a3ba54f3c29c9a0b5b04f6bb1c6" category="admonition">A versão geral do Ransomware Resilience, diferentemente da versão de visualização, inclui uma licença para a tecnologia NetApp Autonomous Ransomware Protection. Consulte<block ref="9a25fd5e356132f930267232d70ad02b" category="inline-link-rx"></block> para mais detalhes.</block>
   <block id="d5d09e7741370854c28c983cfbae51eb" category="inline-link-macro">Saiba mais sobre resiliência ao ransomware</block>
-  <block id="5cc74ffa295c128286831c0e8de84cd1" category="paragraph">Para mais detalhes sobre licenciamento, consulte<block ref="11f96aed2a11a318ecdf8f5381ec25fa" category="inline-link-macro-rx"></block> .</block>
-  <block id="47c8d077dd25d3b0a8650ef6f84f0820" category="list-text">Para aplicar configurações de proteção (como habilitar a Proteção Autônoma contra Ransomware e outras), o Ransomware Resilience precisa de permissões de administrador no cluster ONTAP .  O cluster ONTAP deveria ter sido integrado usando apenas credenciais de usuário administrador do cluster ONTAP .</block>
-  <block id="d6b16e754b93934f7687ad4f252b7073" category="list-text">Se o cluster ONTAP já estiver integrado no Console usando credenciais de usuário não administrador, as permissões do usuário não administrador deverão ser atualizadas com as permissões necessárias por meio de login no cluster ONTAP , conforme descrito nesta página.</block>
-  <block id="0885a21123eeb2ad2e03289064c229ea" category="list-text">Uma conta no NetApp StorageGRID, AWS S3, Azure Blob ou Google Cloud Platform para destinos de backup e as permissões de acesso definidas.</block>
   <block id="d2e3e802d3f25894bd170688859d6cef" category="inline-link">Lista de permissões AWS, Azure ou S3</block>
   <block id="90061bb176f3e723f6f2161eafc1901c" category="paragraph">Consulte o<block ref="31e1fb669a04af441205b80b4846232f" category="inline-link-rx"></block> para mais detalhes.</block>
   <block id="583833d6f0468c713c410ea158e1b6f6" category="list-text">O NetApp Backup and Recovery não precisa ser habilitado no sistema.</block>
@@ -577,10 +557,8 @@
   <block id="df4a4e3e8d87a650fd5d152bd4fab199" category="list-text">Efetue login no Console e procure o sistema que precisa ter suas permissões de usuário ONTAP atualizadas.</block>
   <block id="0a8a7f0fafc4b245a6e039b7da0e38c7" category="list-text">Selecione o sistema para ver detalhes.</block>
   <block id="ddf0d8cb7fa932ccfbf9231d4f27f992" category="list-text">Selecione *Exibir informações adicionais* para exibir o nome de usuário.</block>
-  <block id="9fe71dce626bd006ff641fd38ed29790" category="list-text">Efetue login na CLI do cluster ONTAP usando o usuário administrador.</block>
   <block id="af2fd7f57e628b460dd2978fa6cf0a79" category="list-text">Exibe as funções existentes para esse usuário. Digitar:</block>
   <block id="ec2732dacf33a5e90fbcf1cf42cb9ef7" category="list-text">Alterar a função do usuário. Digitar:</block>
-  <block id="1f7fec232265cdaaed5c3995ce516af2" category="list-text">Retorne à interface do usuário do Ransomware Resilience para usá-lo.</block>
   <block id="01ad1e9b6ee32140ab032c379c4fd753" category="summary">Comece a usar o NetApp Ransomware Resilience em poucas etapas.</block>
   <block id="87269d545e3fccdff13a867df7261ace" category="doc">Início rápido para NetApp Ransomware Resilience</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">Um</block>
@@ -1939,7 +1917,6 @@
   <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">Perguntas frequentes</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conhecimento e suporte</block>
   <block id="69d1e7a74a8d35e4122500df6d2f5042" category="list-text">O Ransomware Resilience é compatível com clusters ONTAP ou Cloud Volumes ONTAP com ONTAP versão 9.11.1 ou superior.</block>
-  <block id="d36369f24098b858527294c5a234c72d" category="admonition">Se você planeja usar o Ransomware Resilience em cargas de trabalho SAN, deverá executar o ONTAP 9.17.1 ou posterior.</block>
   <block id="51fecb5d19a6637dea83445678fd4ffa" category="section-title">Backups de dados</block>
   <block id="9755e4a474d0024a8dcd40393e571716" category="section-title">Comportamento suspeito do usuário</block>
   <block id="34691f87b892c333fe1b7a23452dcda6" category="paragraph">Para que o Ransomware Resilience forneça alertas sobre comportamento suspeito do usuário, você deve configurar um agente de atividade do usuário. Para mais informações, consulte <block ref="f3d3e5726f7feb4b59ca728c906df758" category="inline-link-macro-rx"></block>.</block>
@@ -1980,7 +1957,6 @@
   <block id="52210acbff73a572a2ca89fb77371615" category="paragraph">No NetApp Ransomware Resilience, você pode usar o NetApp Data Classification para verificar e classificar os dados em uma carga de trabalho de compartilhamento de arquivos. Classificar dados ajuda a determinar se o conjunto de dados inclui informações de identificação pessoal (PII), o que pode aumentar os riscos de segurança. A classificação de dados é um componente central do NetApp Console e está disponível sem custo adicional.</block>
   <block id="4342c3c480135ea7c9398a3ba08357ec" category="sidebar">O NetApp Ransomware Resilience protege, detecta e oferece suporte à recuperação de cargas de trabalho de aplicativos e compartilhamentos de arquivos contra ameaças de ransomware em armazenamento local e na nuvem. O Ransomware Resilience permite backup e recuperação seguros, ajudando organizações a proteger dados críticos e manter a continuidade dos negócios para Oracle, MySQL, datastores de VM, armazenamento NAS e muito mais.</block>
   <block id="7b36da612c0e3a400f4daecc8016f21e" category="summary">Certifique-se de atender aos requisitos de licenciamento do Ransomware Resilience para proteger seus sistemas e cargas de trabalho.</block>
-  <block id="785a67fbf7c46bd5774af376154df40a" category="paragraph">*Tipos de licença* O Ransomware Resilience está disponível com os seguintes tipos de licença:</block>
   <block id="5ef05167488611c5bd4ff0f410595ce4" category="list-text">Teste gratuito de 30 dias</block>
   <block id="e71ba6c3178fa6f6844891e615ad0570" category="list-text">Adquira uma assinatura pré-paga (PAYGO) com o Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace ou Azure Marketplace</block>
   <block id="2f0583f3da64d216aa72116dc3460499" category="list-text">Traga sua própria licença (BYOL): um arquivo de licença NetApp (NLF) que você obtém do seu representante de vendas da NetApp . Você pode usar o número de série da licença para ativar o BYOL no Console.</block>
@@ -2075,4 +2051,27 @@
   <block id="7986143a8e8e26aa1cd4fe5e42208a2b" category="paragraph">É possível desativar o ARP nas políticas de detecção usando a interface do usuário do System Manager, as APIs ou a CLI no ONTAP.</block>
   <block id="6d1a51f08d9ca2d81528c19a5e4f2463" category="list-text"><block ref="6d1a51f08d9ca2d81528c19a5e4f2463" category="inline-link-macro-rx"></block></block>
   <block id="4db76a2031d1695a2f0a985a14a43ffa" category="paragraph">Os coletores de dados são criados automaticamente quando você ativa uma estratégia de proteção contra ransomware com detecção de atividades suspeitas de usuários. Para mais informações, consulte <block ref="eadf066433fbca34180c794e1f4838ae" category="inline-xref-macro-rx"></block>.</block>
+  <block id="649b83fee66314cb36bc122912f59725" category="inline-link-macro">Configurações suportadas e não suportadas no ONTAP</block>
+  <block id="49f82a509cd0abff5327e4c71868f448" category="admonition">Para usar ARP/AI no ONTAP, é necessário ter o ONTAP 9.16 ou superior.  + O ONTAP não oferece suporte à proteção contra ransomware para volumes FlexGroup , volumes de ponto de montagem, volumes de caminho de montagem, volumes offline e volumes de proteção de dados (DP).  Certifique-se de revisar<block ref="49252e6bcf11c366c792cea95977195b" category="inline-link-macro-rx"></block> .</block>
+  <block id="0b115ac5b217f989a1fc7dd422161b82" category="section-title">Destinos de backup suportados</block>
+  <block id="933247e0be7796a309cfa4c95bd34938" category="section-title">Sistemas suportados</block>
+  <block id="d7962ffe79df3d1aba19878fd6d019e4" category="section-title">Fontes de dados de carga de trabalho suportadas</block>
+  <block id="2b2fba693aacdb90002ef3efdb1f458b" category="section-title">Tipos de licença</block>
+  <block id="f16034022338b3a005a0680a88d47bf5" category="paragraph">A Resiliência contra Ransomware está disponível com os seguintes tipos de licença:</block>
+  <block id="06dafb1ce76f077b43468ebf52fe4f71" category="paragraph">Comece a usar o NetApp Ransomware Resilience verificando se seu ambiente operacional, acesso à rede e navegador da web estão prontos.</block>
+  <block id="ae76d3bf4a09c080710fa0d7937275b1" category="paragraph">Para usar o Ransomware Resilience, certifique-se de atender aos pré-requisitos.</block>
+  <block id="ff79a6341986aef28eb40de7bb83e3a9" category="paragraph">Certifique-se de estar usando um sistema compatível:</block>
+  <block id="70409a142107b4016b7ef004178c29d8" category="section-title">Requisitos do NetApp Console</block>
+  <block id="4c2c00472698b27eb7facf4ba3c6971f" category="paragraph">A configuração do seu NetApp Console requer:</block>
+  <block id="fda98bab7cfe51ed764422ff7c4cc4dc" category="inline-link-macro">sistema suportado</block>
+  <block id="24a33b7b8d81b241dc8d72ce84d02061" category="list-text">Uma organização e sistema de console com pelo menos um agente de console ativo conectado a um<block ref="33fcda4d13136e9638e8e0eecc30f508" category="inline-link-macro-rx"></block> .</block>
+  <block id="0d2165e32151ff379bcc5699011bbdbe" category="list-text">Se seus clusters ONTAP locais ou Cloud Volumes ONTAP na AWS ou na nuvem Azure não estiverem configurados no Console, consulte<block ref="8a718d7913e8764fcbd48fb78a901ed8" category="inline-link-macro-rx"></block> e<block ref="b04507b2bbabc17c071b912167d3ff4f" category="inline-link-macro-rx"></block> .</block>
+  <block id="def72830b58fb69b381492858d3b3665" category="admonition">Para usar a Resiliência a Ransomware em cargas de trabalho SAN, você precisa estar executando o ONTAP 9.17.1 ou posterior.</block>
+  <block id="1b6bc3125f482fcbcf029c833aea1290" category="section-title">Requisitos do ONTAP</block>
+  <block id="69e575df737b34413e9ac5e132f6db01" category="list-text">Você precisa estar executando o ONTAP 9.11.1 ou posterior com uma licença ONTAP One habilitada na instância ONTAP local.  Para obter mais informações sobre o suporte do ONTAP , consulte<block ref="a17b9b304c2ac7f4ba576e11b099c691" category="inline-link-macro-rx"></block> .</block>
+  <block id="287d5057af26ee58d3ebb3f5ab1c418c" category="list-text">Para aplicar configurações de proteção (como ativar a Proteção Autônoma contra Ransomware), o Ransomware Resilience precisa de permissões de administrador no cluster ONTAP . O cluster ONTAP deveria ter sido integrado usando apenas credenciais de usuário administrador do cluster ONTAP .</block>
+  <block id="afabe9e17313d371201713a96a9674ac" category="admonition">Se você conectou um cluster ONTAP ao Console com credenciais não administrativas, [você deve atualizar as credenciais no cluster ONTAP ](#update-non-admin-user-permissions-in-an-ontap-system).</block>
+  <block id="2256fdd13b41cd806db98cd42c5b498c" category="list-text">Uma conta no NetApp StorageGRID, AWS S3, Azure Blob ou Google Cloud Platform para destinos de backup com as permissões de acesso apropriadas configuradas.</block>
+  <block id="27bfb5502a8db50d09f593ce1b77b181" category="list-text">Faça login na CLI do cluster ONTAP como usuário administrador.</block>
+  <block id="14e79e90c6d487ebb867aa7b0f88bf25" category="list-text">Retorne ao NetApp Console para usar a Resiliência a Ransomware.</block>
 </blocks>
