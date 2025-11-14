@@ -44,8 +44,6 @@ sidebar:
       url: "/suspicious-user-activity.html"
   - title: Use a resiliência do ransomware
     entries:
-    - title: Visão geral do uso da resiliência contra ransomware
-      url: "/rp-use-overview.html"
     - title: Visualize a integridade da carga de trabalho usando o Painel
       url: "/rp-use-dashboard.html"
     - title: Proteja as cargas de trabalho

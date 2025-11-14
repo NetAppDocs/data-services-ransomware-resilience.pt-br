@@ -207,7 +207,7 @@ O Ransomware Resilience protege as seguintes cargas de trabalho baseadas em apli
 * Bancos de dados (MySQL e Oracle)
 
 
-Além disso, se você estiver usando o SnapCenter ou o SnapCenter para VMware, todas as cargas de trabalho suportadas por esses produtos também serão identificadas no Ransomware Resilience.  O Ransomware Resilience pode proteger e recuperar esses dados de maneira consistente com a carga de trabalho.
+Se você estiver usando o SnapCenter ou o SnapCenter para VMware, todas as cargas de trabalho compatíveis com esses produtos também serão identificadas no Ransomware Resilience. O Ransomware Resilience pode proteger e recuperar esses dados de maneira consistente com a carga de trabalho.
 
 
 
