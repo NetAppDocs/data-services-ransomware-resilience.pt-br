@@ -92,7 +92,7 @@ O servidor deve atender aos seguintes requisitos mínimos:
 
 **Suporte a provedores de nuvem**
 
-A detecção de atividades suspeitas do usuário está disponível na AWS e no Azure nas seguintes regiões:
+Dados suspeitos de atividades do usuário podem ser armazenados na AWS e no Azure nas seguintes regiões:
 
 |===
 | Provedor de nuvem | Região 

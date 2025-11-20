@@ -241,18 +241,10 @@
   <block id="5c9ef0d871938dccceb29ee63fad8ddb" category="list-text">Plataforma Google Cloud</block>
   <block id="6a51ed7bcacdfb13f78abc1e0f69c201" category="list-text">Blob do Microsoft Azure</block>
   <block id="55cf1a0f0fce69fd543500e5761dd26d" category="list-text">NetApp StorageGRID</block>
-  <block id="5f35d0b4a7930f14f1022ee1f942ee64" category="list-text">NAS ONTAP local (usando protocolos NFS e CIFS) com ONTAP versão 9.11.1 e superior</block>
-  <block id="36471da59b7d9b72aa431fd1f5059d05" category="list-text">SAN ONTAP local (usando protocolos FC, iSCSI e NVMe) com ONTAP versão 9.17.1 e superior</block>
-  <block id="0479370d1a7f4250832bb43f782a1456" category="list-text">Cloud Volumes ONTAP 9.11.1 ou superior para AWS (usando protocolos NFS e CIFS)</block>
-  <block id="692821f8e48f34e528c887a1bd9a5a50" category="list-text">Cloud Volumes ONTAP 9.11.1 ou superior para Google Cloud Platform (usando protocolos NFS e CIFS)</block>
-  <block id="4d32d1cc8c36c71c8d57d570d802694f" category="list-text">Cloud Volumes ONTAP 9.12.1 ou superior para Microsoft Azure (usando protocolos NFS e CIFS)</block>
-  <block id="35042137939d246a1fd01199cb942d15" category="list-text">Cloud Volumes ONTAP 9.17.1 ou superior para AWS, Google Cloud Platform e Microsoft Azure (usando protocolos FC, iSCSI e NVMe)</block>
-  <block id="54d1e9634870c74de38de33364a86d27" category="list-text">Amazon FSx for NetApp ONTAP, que usa proteção autônoma contra ransomware (ARP e não ARP/AI)</block>
   <block id="2fd51284279972a6a1390536b053f3c3" category="paragraph">O Ransomware Resilience protege as seguintes cargas de trabalho baseadas em aplicativos em volumes de dados primários:</block>
   <block id="ffc184891768c331383cd53bcd1bc968" category="list-text">Compartilhamentos de arquivos NetApp</block>
   <block id="4f0550f066ae72bb8c24fc3f59c323bf" category="list-text">Armazenamento em bloco</block>
   <block id="ed11408803c4c1aca5fbebbc43d88458" category="list-text">Armazenamentos de dados VMware</block>
-  <block id="3560990ee46f2f17d59094ab9e308c5e" category="list-text">Bancos de dados (MySQL e Oracle)</block>
   <block id="02f360fe822afa82c0f600943169df7e" category="section-title">Termos que podem ajudar você com a proteção contra ransomware</block>
   <block id="77460e2b891748333455193aadd137d8" category="paragraph">Você pode se beneficiar ao entender alguma terminologia relacionada à proteção contra ransomware.</block>
   <block id="826a4e8d8facce6f785b2a404538e6cd" category="list-text">*Proteção*: Proteção na resiliência de ransomware significa garantir que instantâneos e backups imutáveis ocorram regularmente em um domínio de segurança diferente usando políticas de proteção.</block>
@@ -2035,7 +2027,6 @@
   <block id="6d1a51f08d9ca2d81528c19a5e4f2463" category="list-text"><block ref="6d1a51f08d9ca2d81528c19a5e4f2463" category="inline-link-macro-rx"></block></block>
   <block id="4db76a2031d1695a2f0a985a14a43ffa" category="paragraph">Os coletores de dados são criados automaticamente quando você ativa uma estratégia de proteção contra ransomware com detecção de atividades suspeitas de usuários. Para mais informações, consulte <block ref="eadf066433fbca34180c794e1f4838ae" category="inline-xref-macro-rx"></block>.</block>
   <block id="649b83fee66314cb36bc122912f59725" category="inline-link-macro">Configurações suportadas e não suportadas no ONTAP</block>
-  <block id="49f82a509cd0abff5327e4c71868f448" category="admonition">Para usar ARP/AI no ONTAP, é necessário ter o ONTAP 9.16 ou superior.  + O ONTAP não oferece suporte à proteção contra ransomware para volumes FlexGroup , volumes de ponto de montagem, volumes de caminho de montagem, volumes offline e volumes de proteção de dados (DP).  Certifique-se de revisar<block ref="49252e6bcf11c366c792cea95977195b" category="inline-link-macro-rx"></block> .</block>
   <block id="0b115ac5b217f989a1fc7dd422161b82" category="section-title">Destinos de backup suportados</block>
   <block id="933247e0be7796a309cfa4c95bd34938" category="section-title">Sistemas suportados</block>
   <block id="d7962ffe79df3d1aba19878fd6d019e4" category="section-title">Fontes de dados de carga de trabalho suportadas</block>
@@ -2048,7 +2039,6 @@
   <block id="4c2c00472698b27eb7facf4ba3c6971f" category="paragraph">A configuração do seu NetApp Console requer:</block>
   <block id="fda98bab7cfe51ed764422ff7c4cc4dc" category="inline-link-macro">sistema suportado</block>
   <block id="24a33b7b8d81b241dc8d72ce84d02061" category="list-text">Uma organização e sistema de console com pelo menos um agente de console ativo conectado a um<block ref="33fcda4d13136e9638e8e0eecc30f508" category="inline-link-macro-rx"></block> .</block>
-  <block id="0d2165e32151ff379bcc5699011bbdbe" category="list-text">Se seus clusters ONTAP locais ou Cloud Volumes ONTAP na AWS ou na nuvem Azure não estiverem configurados no Console, consulte<block ref="8a718d7913e8764fcbd48fb78a901ed8" category="inline-link-macro-rx"></block> e<block ref="b04507b2bbabc17c071b912167d3ff4f" category="inline-link-macro-rx"></block> .</block>
   <block id="def72830b58fb69b381492858d3b3665" category="admonition">Para usar a Resiliência a Ransomware em cargas de trabalho SAN, você precisa estar executando o ONTAP 9.17.1 ou posterior.</block>
   <block id="1b6bc3125f482fcbcf029c833aea1290" category="section-title">Requisitos do ONTAP</block>
   <block id="69e575df737b34413e9ac5e132f6db01" category="list-text">Você precisa estar executando o ONTAP 9.11.1 ou posterior com uma licença ONTAP One habilitada na instância ONTAP local.  Para obter mais informações sobre o suporte do ONTAP , consulte<block ref="a17b9b304c2ac7f4ba576e11b099c691" category="inline-link-macro-rx"></block> .</block>
@@ -2060,11 +2050,34 @@
   <block id="0d2fa76effcb3dce9fea42e1ccddfc30" category="paragraph">Se você estiver usando o SnapCenter ou o SnapCenter para VMware, todas as cargas de trabalho compatíveis com esses produtos também serão identificadas no Ransomware Resilience. O Ransomware Resilience pode proteger e recuperar esses dados de maneira consistente com a carga de trabalho.</block>
   <block id="77750efa6f5ff153acdc42067058017f" category="section-title">10 de novembro de 2025</block>
   <block id="8fe9bae39f62679bc4b589ccb17384a9" category="paragraph">**Suporte a provedores de nuvem**</block>
-  <block id="4dbf3bdbb500347a8ca0ffe04b7e1f6c" category="paragraph">A detecção de atividades suspeitas do usuário está disponível na AWS e no Azure nas seguintes regiões:</block>
   <block id="e29d7c0b36af68edd13ebac84f15b44b" category="cell">Provedor de nuvem</block>
   <block id="f447ac856e7e72435904956e3b15f433" category="cell">Região</block>
   <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="cell">AWS</block>
   <block id="90f74c5c50c42b91275c19e2cccad976" category="cell">Leste dos EUA (us-east-1)</block>
   <block id="3a580f142203677f1f0bc30898f63f53" category="cell">Azul</block>
   <block id="3c110de67497eb3f8d4c100e43101c81" category="cell">Leste dos EUA</block>
+  <block id="0ba29c6a1afacf586b03a26162c72274" category="cell">Ambiente</block>
+  <block id="888a77f5ac0748b6c8001822417df8b6" category="cell">Protocolo</block>
+  <block id="b881921e058834170584afe9213c4c73" category="cell">Amazon FSx for NetApp ONTAP*</block>
+  <block id="c2b4bf8a420967336b99691646ef85e6" category="cell">NFS, CIFS e SAN</block>
+  <block id="382b0f5185773fa0f67a8ed8056c7759" category="cell">N / D</block>
+  <block id="096f3522cfa2f31de45d052b740adc65" category="cell">Cloud Volumes ONTAP para AWS</block>
+  <block id="05bcab512eefa1e7e2cc2d1e45970a7d" category="cell">CIFS e NFS</block>
+  <block id="1f03f70fe9097fcc16686889bafaf634" category="cell">9.11.1 e posterior</block>
+  <block id="d32574662083c44bd1c1e27441a5f5f6" category="cell">SAN (FC, iSCSI e NVMe)</block>
+  <block id="ce2276d280ca79bc5d0b33e7903a7d49" category="cell">9.17.1 e posterior</block>
+  <block id="a6810a0b37cbc417c34b4dffc16f07a1" category="cell">Cloud Volumes ONTAP para Google Cloud Platform</block>
+  <block id="9722c69e4736d9b151d70e30b917a4e1" category="cell">Cloud Volumes ONTAP para Microsoft Azure</block>
+  <block id="22f284bcf4504118b4d7e9ed2bce2c2e" category="cell">9.12.1 e posterior</block>
+  <block id="7cfe224d3c8892dba0ae59bcf6d0c053" category="cell">ONTAP (local)</block>
+  <block id="954e661212d7a62095e6b957259dc36f" category="inline-link-macro">ARP/IA</block>
+  <block id="7271886a703021fd0851304115b49ee2" category="paragraph">{asterisco} O Amazon FSx for NetApp ONTAP usa a Proteção Autônoma contra Ransomware (ARP) e não o ARP/AI.  Para obter mais informações sobre a diferença, consulte<block ref="ee25b596f35c0a0b982fc7b7e342f828" category="inline-link-macro-rx"></block> .</block>
+  <block id="c71c95f02c8e85a6e5cddd09ad2a5d8b" category="admonition">Para usar ARP/AI no ONTAP, é necessário ter o ONTAP 9.16 ou superior. + O ONTAP não oferece suporte à proteção contra ransomware para volumes FabricPool FlexCache, FlexGroup , grupos de consistência, pontos de montagem, caminhos de montagem, volumes offline e volumes de proteção de dados (DP). Certifique-se de revisar<block ref="49252e6bcf11c366c792cea95977195b" category="inline-link-macro-rx"></block> .</block>
+  <block id="fd3b4579ab972a1738986581275cfcfa" category="list-text">Bancos de dados:</block>
+  <block id="78898e52fcbdc5337204a384f2456d4f" category="list-text">Servidor Microsoft SQL</block>
+  <block id="62a004b95946bb97541afa471dcca73a" category="list-text">MySQL</block>
+  <block id="30162ed78b6c10f731411f2fc440c24f" category="list-text">Oráculo</block>
+  <block id="399bd1ee587245ecac6f39beaa99886f" category="list-text">PostgreSQL</block>
+  <block id="b8bf0879f259dbfb5601d4fdb086df91" category="list-text">Se seus clusters ONTAP locais ou Cloud Volumes ONTAP na AWS ou na nuvem Azure não estiverem configurados no Console, consulte<block ref="1c09904f3fbf9f22b68e96599d2dcddc" category="inline-link-macro-rx"></block> e<block ref="b04507b2bbabc17c071b912167d3ff4f" category="inline-link-macro-rx"></block> .</block>
+  <block id="acd257a01891523b6ff91a9020b733ba" category="paragraph">Dados suspeitos de atividades do usuário podem ser armazenados na AWS e no Azure nas seguintes regiões:</block>
 </blocks>
