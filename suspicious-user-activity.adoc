@@ -98,11 +98,17 @@ Dados suspeitos de atividades do usuário podem ser armazenados na AWS e no Azur
 | Provedor de nuvem | Região 
 
 
-| AWS | Leste dos EUA (us-east-1) 
+| AWS  a| 
+* Ásia-Pacífico (Sydney) (ap-sudeste-2)
+* Europa (Frankfurt) (eu-central-1)
+* Leste dos EUA (Norte da Virgínia) (us-east-1)
+
+
 
 
 | Azul | Leste dos EUA 
 |===
+ and
 .Passos
 . Se esta for a primeira vez que você cria um agente de atividade do usuário, acesse o **Painel**. No bloco **Atividade do usuário**, selecione **Ativar**.
 +

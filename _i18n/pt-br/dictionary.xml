@@ -1995,7 +1995,6 @@
   <block id="e29d7c0b36af68edd13ebac84f15b44b" category="cell">Provedor de nuvem</block>
   <block id="f447ac856e7e72435904956e3b15f433" category="cell">Região</block>
   <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="cell">AWS</block>
-  <block id="90f74c5c50c42b91275c19e2cccad976" category="cell">Leste dos EUA (us-east-1)</block>
   <block id="3a580f142203677f1f0bc30898f63f53" category="cell">Azul</block>
   <block id="3c110de67497eb3f8d4c100e43101c81" category="cell">Leste dos EUA</block>
   <block id="0ba29c6a1afacf586b03a26162c72274" category="cell">Ambiente</block>
@@ -2069,4 +2068,7 @@
   <block id="daf104544b5203a46e1580e1b8583f1f" category="paragraph">A associação de credenciais do NSS à sua conta do NetApp Console é diferente da associação da conta do NSS a um login de usuário do Console.</block>
   <block id="5bc1315a63455544e7a917a7cc968939" category="paragraph">Essas credenciais NSS estão associadas ao ID específico da sua conta do Console. Usuários que pertencem à organização Console podem acessar essas credenciais em *Suporte &gt; Gerenciamento NSS*.</block>
   <block id="7687b0a57d5cb728d9fb892dfc814715" category="paragraph">Essas ações permitem que o Console use sua conta NSS para coisas como downloads de licenças, verificação de atualização de software e registros de suporte futuros.</block>
+  <block id="24dd233beea6d20446b604bba13115c0" category="list-text">Ásia-Pacífico (Sydney) (ap-sudeste-2)</block>
+  <block id="5c024c0f8096e0fba857f661afe2dbd0" category="list-text">Europa (Frankfurt) (eu-central-1)</block>
+  <block id="d605e764d56b8615ebf6dd5f87998855" category="list-text">Leste dos EUA (Norte da Virgínia) (us-east-1)</block>
 </blocks>
