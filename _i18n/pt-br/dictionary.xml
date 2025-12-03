@@ -1925,7 +1925,6 @@
   <block id="654c205bcf87cc0cd36f606d947ec009" category="paragraph-title">Qual navegador devo usar?</block>
   <block id="109ebdb84b226b323abc2b47b353e5f4" category="paragraph">Você pode acessar o NetApp Console com qualquer navegador web moderno.</block>
   <block id="67a915151759ecc737f698391f7cfd08" category="section-title">Interoperabilidade</block>
-  <block id="93b28face605282843b25b8f2fa64a10" category="paragraph-title">O Ransomware Resilience reconhece as configurações de proteção feitas no NetApp ONTAP?</block>
   <block id="10c4fe0b6e00d5560df8e602d85a5bd1" category="paragraph">Sim, o Ransomware Resilience descobre agendamentos de snapshots definidos no ONTAP.</block>
   <block id="8ed72bdbbdc0df9146a0777651178cbf" category="paragraph-title">Como a Resiliência a Ransomware interage com o NetApp Backup and Recovery e o SnapCenter?</block>
   <block id="8f3fc6dee049aeb65422cea50c997060" category="paragraph">A Resiliência contra Ransomware funciona em conjunto com o Backup e Recuperação para descobrir e definir políticas de snapshot e backup para cargas de trabalho de compartilhamento de arquivos.</block>
@@ -2071,4 +2070,6 @@
   <block id="24dd233beea6d20446b604bba13115c0" category="list-text">Ásia-Pacífico (Sydney) (ap-sudeste-2)</block>
   <block id="5c024c0f8096e0fba857f661afe2dbd0" category="list-text">Europa (Frankfurt) (eu-central-1)</block>
   <block id="d605e764d56b8615ebf6dd5f87998855" category="list-text">Leste dos EUA (Norte da Virgínia) (us-east-1)</block>
+  <block id="a55a22032fc9fd630abe933324e9d4b9" category="paragraph-title">O Ransomware Resilience está ciente das configurações de proteção no ONTAP?</block>
+  <block id="1c8f51534c2fc10dfef26d32d61c7ed3" category="paragraph">Para licenciamento e faturamento, o Ransomware Resilience pode ser integrado ao Backup e Recuperação, mesmo que você não tenha uma licença separada para Backup e Recuperação. Se você tiver o Backup and Recovery e o Ransomware Resilience, quaisquer dados comuns protegidos por ambos os produtos serão cobrados somente pelo Ransomware Resilience.</block>
 </blocks>

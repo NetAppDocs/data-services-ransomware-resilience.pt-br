@@ -56,7 +56,7 @@ Você pode acessar o NetApp Console com qualquer navegador web moderno.
 
 == Interoperabilidade
 
-.O Ransomware Resilience reconhece as configurações de proteção feitas no NetApp ONTAP?
+.O Ransomware Resilience está ciente das configurações de proteção no ONTAP?
 Sim, o Ransomware Resilience descobre agendamentos de snapshots definidos no ONTAP.
 
 .Como a Resiliência a Ransomware interage com o NetApp Backup and Recovery e o SnapCenter?
@@ -65,6 +65,8 @@ A Resiliência contra Ransomware funciona em conjunto com o Backup e Recuperaç�
 O Ransomware Resilience funciona com o SnapCenter ou o SnapCenter para VMware para descobrir e definir políticas de snapshot e backup para cargas de trabalho de aplicativos e máquinas virtuais.
 
 O Ransomware Resilience também funciona com o Backup and Recovery e o SnapCenter (incluindo o SnapCenter para VMware) para realizar a recuperação de arquivos e cargas de trabalho de forma consistente.
+
+Para licenciamento e faturamento, o Ransomware Resilience pode ser integrado ao Backup e Recuperação, mesmo que você não tenha uma licença separada para Backup e Recuperação. Se você tiver o Backup and Recovery e o Ransomware Resilience, quaisquer dados comuns protegidos por ambos os produtos serão cobrados somente pelo Ransomware Resilience.
 
 
 
@@ -117,7 +119,7 @@ UM link:rp-use-protect.html#add-a-ransomware-protection-strategy["estratégia de
 
 Uma política de backup não é necessária na estratégia de resiliência ao ransomware.
 
-.O Ransomware Resilience reconhece as configurações de proteção feitas no NetApp ONTAP?
+.O Ransomware Resilience está ciente das configurações de proteção no ONTAP?
 Sim, o Ransomware Resilience descobre agendamentos de snapshots definidos no ONTAP. Ele também descobre se o ARP e o FPolicy estão habilitados em todos os volumes de uma carga de trabalho detectada. As informações exibidas no Painel de Resiliência a Ransomware são agregadas de outras soluções e produtos da NetApp .
 
 .A equipe de Resiliência a Ransomware está ciente das políticas já definidas no Backup e Recuperação e no SnapCenter?
