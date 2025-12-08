@@ -20,7 +20,7 @@ O Ransomware Resilience detecta atividades suspeitas do usuário analisando even
 
 == Agentes e colecionadores
 
-Pelo menos um agente de atividade do usuário deve ser instalado para ativar a detecção de atividades suspeitas do usuário no Ransomware Resilience. Ao ativar o recurso de atividade suspeita do usuário no painel do Ransomware Resilience, você precisa fornecer as informações do host do agente para ativar o recurso.
+Pelo menos um agente de atividade do usuário deve ser instalado para ativar a detecção de atividades suspeitas do usuário no Ransomware Resilience. Ao ativar o recurso de atividade suspeita do usuário no painel de controle do Ransomware Resilience, você precisa fornecer as informações do host do agente.
 
 Um agente pode hospedar vários coletores de dados. Os coletores de dados enviam dados para um local SaaS para análise. Existem dois tipos de colecionadores:
 
@@ -70,7 +70,7 @@ Para instalar um agente de atividade do usuário, você precisa de um host ou VM
 | Oracle Linux | 8.10 (64 bits) e 9.1 (64 bits) até 9.6 (64 bits), incluindo SELinux 
 
 
-| Chapéu vermelho | 8.10 (64 bits), 9.1 (64 bits) até 9.6 (64 bits) e 10 (64 bits), incluindo SELinux 
+| Chapéu Vermelho | 8.10 (64 bits), 9.1 (64 bits) até 9.6 (64 bits) e 10 (64 bits), incluindo SELinux 
 
 
 | Rochoso | Rocky 9.4 (64 bits) até 9.6 (64 bits), incluindo SELinux 
@@ -85,7 +85,7 @@ Para instalar um agente de atividade do usuário, você precisa de um host ou VM
 
 O servidor deve atender aos seguintes requisitos mínimos:
 
-* **CPU**: 4 NÚCLEOS
+* **CPU**: 4 núcleos
 * **RAM**: 16 GB de RAM
 * **Espaço em disco**: 35 GB de espaço livre em disco
 
@@ -153,31 +153,47 @@ Para mapear IDs de usuário para nomes de usuário, você deve criar um conector
 . Em Ransomware Resilience, vá para *Configurações*.
 . No bloco Atividade do usuário, selecione **Gerenciar**.
 . Selecione a aba **Conectores de diretório do usuário** e depois **Adicionar**.
-. Forneça os detalhes da conexão:
+. Configure a conexão. Insira as informações necessárias em cada campo.
 +
-** *Nome*
-** *Tipo de diretório de usuário*
-** *Endereço IP do servidor ou nome de domínio*
-** *Nome da floresta ou nome da pesquisa*
-** *Nome de domínio BIND*
-** *Senha BIND*
-** *Protocolo* (opcional)
-** *Porta*
+|===
+
+
+| Campo | Descrição 
+
+
+| *Nome* | Insira um nome exclusivo para o conector do diretório de usuários. 
+
+
+| *Tipo de diretório de usuário* | O tipo de diretório 
+
+
+| *Endereço IP do servidor ou nome de domínio* | O endereço IP ou o Nome de Domínio Totalmente Qualificado (FQDN) do servidor que hospeda a conexão. 
+
+
+| *Nome da floresta ou nome da pesquisa*  a| 
+Você pode especificar o nível da floresta na estrutura de diretórios como o nome de domínio direto (por exemplo, `unit.company.com`) ou um conjunto de nomes distintos relativos (por exemplo: `DC=unit,DC=company,DC=com`). Você também pode inserir um `OU` filtrar por uma unidade organizacional ou um `CN` limitar a um usuário específico (por exemplo: `CN=user,OU=engineering,DC=unit,DC=company,DC=com`).
+
+
+
+| *LIGAR DN* | O DN BIND é uma conta de usuário com permissão para pesquisar no diretório, como por exemplo, user@domain.com. O usuário precisa da permissão "Somente leitura" para o domínio. 
+
+
+| *Senha BIND* | A senha do usuário fornecida em BIND DN 
+
+
+| *Protocolo* | O campo de protocolo é opcional. Você pode usar LDAP, LDAPS ou LDAP sobre StartTLS. 
+
+
+| *Porta* | Insira o número da porta escolhida. 
+|===
 +
 image:screenshot-user-directory-connection.png["Captura de tela da conexão do diretório do usuário"]
 
 +
-Forneça os detalhes do mapeamento de atributos:
+Forneça os detalhes do mapeamento de atributos: * *Nome de exibição* * *SID* (se estiver usando LDAP) * *Nome de usuário* * *ID Unix* (se estiver usando NFS) * Se selecionar *Incluir atributos opcionais*, você também poderá adicionar um endereço de e-mail, número de telefone, função, estado, país, departamento, foto, DN do gerente ou grupos.
 
-** *Nome de exibição*
-** *SID* (se você estiver usando LDAP)
-** *Nome de usuário*
-** *ID Unix* (se você estiver usando NFS)
-** Selecione *Incluir atributos opcionais*. Você também pode incluir endereço de e-mail, número de telefone, função, estado, país, departamento, foto, DN do gerente ou grupos.
 +
 Selecione *Avançado* para adicionar uma consulta de pesquisa opcional.
-
-
 
 . Selecione **Adicionar**.
 . Retorne à guia de conectores do diretório do usuário para verificar o status do seu conector do diretório do usuário. Se criado com sucesso, o status do conector do diretório do usuário será exibido como *Em execução*.
