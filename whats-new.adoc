@@ -599,7 +599,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransom
 
 O serviço de BlueXP ransomware protection é uma solução SaaS para proteger dados, detectar ataques potenciais e recuperar dados de um ataque de ransomware.
 
-Na versão de pré-visualização, o serviço protege cargas de trabalho baseadas em aplicativos de Oracle, MySQL, datastores de VM e compartilhamentos de arquivos em armazenamento NAS local, bem como Cloud Volumes ONTAP na AWS (usando o protocolo NFS) em organizações BlueXP individualmente e faz backup de dados no armazenamento em nuvem da Amazon Web Services.
+Na versão de pré-visualização, o serviço protege cargas de trabalho baseadas em aplicativos do Oracle, datastores de máquinas virtuais e compartilhamentos de arquivos em armazenamento NAS local, bem como Cloud Volumes ONTAP na AWS (usando o protocolo NFS) em organizações BlueXP individualmente e faz backup dos dados para o armazenamento em nuvem da Amazon Web Services.
 
 O serviço de BlueXP ransomware protection oferece uso completo de diversas tecnologias da NetApp para que seu administrador de segurança de dados ou engenheiro de operações de segurança possa atingir os seguintes objetivos:
 

@@ -16,7 +16,7 @@ summary: O Ransomware Resilience permite que você visualize informações relev
 [role="lead"]
 Ataques de ransomware podem bloquear o acesso aos seus dados e os invasores podem pedir resgate em troca da liberação de dados ou descriptografia.  De acordo com o IDC, não é incomum que vítimas de ransomware sofram múltiplos ataques de ransomware.  O ataque pode interromper o acesso aos seus dados por um dia ou várias semanas.
 
-O NetApp Ransomware Resilience protege seus dados contra ataques de ransomware.  No Ransomware Resilience, a proteção está disponível para cargas de trabalho baseadas em aplicativos de Oracle, MySQL, datastores de VM e compartilhamentos de arquivos em armazenamento NAS local (usando os protocolos NFS e CIFS) e armazenamento SAN (FC, iSCSI e NVMe), bem como Cloud Volumes ONTAP para Amazon Web Services, Cloud Volumes ONTAP para Google Cloud, Cloud Volumes ONTAP para Microsoft Azure e Amazon FSx for NetApp ONTAP no NetApp Console.  Você pode fazer backup de dados no Amazon Web Services, Google Cloud, armazenamento em nuvem do Microsoft Azure e NetApp StorageGRID.
+O NetApp Ransomware Resilience protege seus dados contra ataques de ransomware. Na Resiliência contra Ransomware, a proteção está disponível para cargas de trabalho baseadas em aplicativos do Oracle, datastores de máquinas virtuais e compartilhamentos de arquivos em armazenamento NAS local (usando os protocolos NFS e CIFS) e armazenamento SAN (FC, iSCSI e NVMe), bem como Cloud Volumes ONTAP para Amazon Web Services, Cloud Volumes ONTAP para Google Cloud, Cloud Volumes ONTAP para Microsoft Azure e Amazon FSx for NetApp ONTAP, tudo através do NetApp Console. Você pode fazer backup de dados no Amazon Web Services, Google Cloud, armazenamento em nuvem do Microsoft Azure e NetApp StorageGRID.
 
 
 
@@ -39,7 +39,7 @@ image:concept-security-layer-diagram.png["Diagrama da camada de segurança"]
 
 O Ransomware Resilience oferece uso total de diversas tecnologias da NetApp para que seu administrador de armazenamento, administrador de segurança de dados ou engenheiro de operações de segurança possa atingir os seguintes objetivos:
 
-* *Identifique* todas as cargas de trabalho baseadas em aplicativos, compartilhamento de arquivos ou gerenciadas pela VMware em sistemas NAS (NFS ou CIFS) e SAN (FC, iSCSI e NVMe) locais da NetApp no ​​NetApp Console, projetos e agentes do Console.  O Ransomware Resilience categoriza a prioridade dos dados e fornece recomendações para melhorias na resiliência do ransomware.
+* *Identificar* todas as cargas de trabalho baseadas em aplicativos, compartilhamento de arquivos ou gerenciadas pelo VMware em sistemas NetApp NAS (NFS ou CIFS) e SAN (FC, iSCSI e NVMe) locais, no NetApp Console, projetos e agentes do Console. O Ransomware Resilience categoriza a prioridade dos dados e fornece recomendações para melhorias na resiliência do ransomware.
 * *Proteja* suas cargas de trabalho habilitando backups, cópias de snapshot e estratégias de proteção contra ransomware em seus dados.
 * *Detecte* anomalias que podem ser ataques de ransomware. Nota de rodapé: [Embora seja possível que um ataque passe despercebido, nossa pesquisa indica que a tecnologia NetApp resultou em um alto grau de detecção para certos ataques de ransomware baseados em criptografia de arquivos.]
 * *Responda* a potenciais ataques de ransomware iniciando automaticamente um snapshot do NetApp ONTAP à prova de violação, bloqueado para que a cópia não possa ser excluída acidentalmente ou maliciosamente.  Seus dados de backup permanecerão imutáveis ​​e protegidos de ponta a ponta contra ataques de ransomware na origem e no destino.
@@ -59,7 +59,7 @@ O Ransomware Resilience oferece os seguintes benefícios:
 * Avalia sua postura de proteção contra ransomware e a exibe em um painel fácil de entender.
 * Fornece recomendações sobre as próximas etapas com base na análise de postura de descoberta e proteção.
 * Aplica recomendações de proteção de dados orientadas por IA/ML com acesso em um clique.
-* Protege dados em cargas de trabalho baseadas em aplicativos de ponta, como MySQL, Oracle, datastores VMware e compartilhamentos de arquivos.
+* Protege dados em cargas de trabalho baseadas em aplicativos, como Oracle, datastores VMware e compartilhamentos de arquivos.
 * Detecta ataques de ransomware em dados em tempo real no armazenamento primário usando tecnologia de IA.
 * Inicia ações automatizadas em resposta a ataques potenciais detectados, criando cópias instantâneas e iniciando alertas sobre atividades anormais.
 * Aplica recuperação selecionada para atender às políticas de RPO.  O Ransomware Resilience orquestra a recuperação de incidentes de ransomware usando vários serviços de recuperação da NetApp , incluindo NetApp Backup and Recovery (antigo Cloud Backup) e SnapCenter.
@@ -228,7 +228,6 @@ O Ransomware Resilience protege as seguintes cargas de trabalho baseadas em apli
 * Bancos de dados:
 +
 ** Servidor Microsoft SQL
-** MySQL
 ** Oráculo
 ** PostgreSQL
 
@@ -246,5 +245,5 @@ Se você estiver usando o SnapCenter ou o SnapCenter para VMware, todas as carga
 Você pode se beneficiar ao entender alguma terminologia relacionada à proteção contra ransomware.
 
 * *Proteção*: Proteção na resiliência de ransomware significa garantir que instantâneos e backups imutáveis ocorram regularmente em um domínio de segurança diferente usando políticas de proteção.
-* *Carga de trabalho*: Uma carga de trabalho no Ransomware Resilience pode incluir bancos de dados MySQL ou Oracle, armazenamentos de dados VMware ou compartilhamentos de arquivos.
+* *Carga de trabalho*: Uma carga de trabalho no Ransomware Resilience pode incluir bancos de dados Oracle, datastores VMware ou compartilhamentos de arquivos.
 

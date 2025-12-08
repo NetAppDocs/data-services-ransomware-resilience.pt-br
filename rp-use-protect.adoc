@@ -45,7 +45,7 @@ Além da Resiliência contra Ransomware, os seguintes serviços podem ser usados
 
 * NetApp Backup and Recovery para compartilhamentos de arquivos, compartilhamentos de arquivos de VM
 * SnapCenter para VMware para datastores de VM
-* SnapCenter para Oracle e MySQL
+* SnapCenter para Oracle
 
 
 As informações de proteção desses serviços aparecem em Resiliência de Ransomware.  Você pode adicionar políticas de detecção a esses serviços com o Ransomware Resilience.  Adicionar uma política de proteção com o Ransomware Resilience substitui as políticas de proteção existentes.
