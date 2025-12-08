@@ -2073,6 +2073,11 @@
   <block id="dce365633ffb688b7532470dfaf4e118" category="cell">*Protocolo*</block>
   <block id="91fa08a58f816e98d83df1ce310eb825" category="cell">O campo de protocolo é opcional. Você pode usar LDAP, LDAPS ou LDAP sobre StartTLS.</block>
   <block id="f9115354bfb0b47a80e11c68936a7ec8" category="cell">Insira o número da porta escolhida.</block>
-  <block id="ffcb2d1f993f068c61d2776ab07c354f" category="paragraph">Forneça os detalhes do mapeamento de atributos: * *Nome de exibição* * *SID* (se estiver usando LDAP) * *Nome de usuário* * *ID Unix* (se estiver usando NFS) * Se selecionar *Incluir atributos opcionais*, você também poderá adicionar um endereço de e-mail, número de telefone, função, estado, país, departamento, foto, DN do gerente ou grupos.</block>
-  <block id="8cab6e56434342fb39a14e12391a5d3e" category="paragraph">Selecione *Avançado* para adicionar uma consulta de pesquisa opcional.</block>
+  <block id="86c3d5aee71dba0d2e67a122a900b46d" category="paragraph">Forneça os detalhes do mapeamento de atributos:</block>
+  <block id="67abd0bd8cf8f6b948416d41be7c6f6a" category="list-text">*Nome de exibição*</block>
+  <block id="aff175f709dc693d1f9ca4c44728163a" category="list-text">*SID* (se você estiver usando LDAP)</block>
+  <block id="3b57547caa3754998fa617bd92514f25" category="list-text">*Nome de usuário*</block>
+  <block id="c8a0546946d4ed57fd88fc4918d3825f" category="list-text">*ID Unix* (se você estiver usando NFS)</block>
+  <block id="1358e8e29329a97048f0688a1813071f" category="list-text">Se selecionar *Incluir atributos opcionais*, você também poderá adicionar um endereço de e-mail, número de telefone, função, estado, país, departamento, foto, nome do gerente ou grupos.</block>
+  <block id="7703674a5321c1f23549682250a732e9" category="paragraph">Selecione *Avançado* para adicionar uma consulta de pesquisa opcional.</block>
 </blocks>
