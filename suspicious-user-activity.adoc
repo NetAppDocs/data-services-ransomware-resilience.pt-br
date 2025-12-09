@@ -117,7 +117,7 @@ Se você estiver adicionando um agente de atividade de usuário adicional, vá p
 . Forneça os detalhes do agente de atividade do usuário:
 +
 ** **Nome do agente de atividade do usuário**
-** *Agente de console* - o agente de console deve estar na mesma rede que o agente de atividade do usuário e ter conectividade SSH com o endereço IP do agente de atividade do usuário.
+** *Agente de console* - O agente de console deve estar na mesma rede que o agente de atividade do usuário e ter conectividade SSH com o endereço IP do agente de atividade do usuário.
 ** *Nome DNS ou endereço IP da VM*
 ** *Chave SSH da VM*
 +
@@ -155,9 +155,8 @@ Para mapear IDs de usuário para nomes de usuário, você deve criar um conector
 . Selecione a aba **Conectores de diretório do usuário** e depois **Adicionar**.
 . Configure a conexão. Insira as informações necessárias em cada campo.
 +
+[cols="25,75"]
 |===
-
-
 | Campo | Descrição 
 
 
@@ -197,10 +196,7 @@ Forneça os detalhes do mapeamento de atributos:
 ** *SID* (se você estiver usando LDAP)
 ** *Nome de usuário*
 ** *ID Unix* (se você estiver usando NFS)
-** Se selecionar *Incluir atributos opcionais*, você também poderá adicionar um endereço de e-mail, número de telefone, função, estado, país, departamento, foto, nome do gerente ou grupos.
-+
-Selecione *Avançado* para adicionar uma consulta de pesquisa opcional.
-
+** Se selecionar *Incluir atributos opcionais*, você também poderá adicionar um endereço de e-mail, número de telefone, função, estado, país, departamento, foto, nome do gerente ou grupos. Selecione *Avançado* para adicionar uma consulta de pesquisa opcional.
 
 
 . Selecione **Adicionar**.

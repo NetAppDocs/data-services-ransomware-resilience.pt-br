@@ -4,7 +4,7 @@ permalink: rp-use-alert.html
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert 
 summary: Se o Ransomware Resilience detectar um possível ataque, um alerta aparecerá no Ransomware Resilience Dashboard indicando um ataque em potencial. Neste ponto, você deve analisar o risco potencial na aba Alertas de resiliência de ransomware. 
 ---
-= Lide com alertas de ransomware detectados com o NetApp Ransomware Resilience
+= Gerencie alertas no NetApp Ransomware Resilience.
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: Se o Ransomware Resilience detectar um possível ataque, um alerta apar
 
 
 [role="lead"]
-Quando o NetApp Ransomware Resilience detecta um possível ataque, ele mostra um alerta no Painel e na área de Notificações.  O Ransomware Resilience tira um instantâneo imediatamente.  Revise o risco potencial na aba *Alertas* de resiliência contra ransomware.
+Quando o NetApp Ransomware Resilience detecta um possível ataque, ele exibe um alerta no Painel de Controle e na área de Notificações. O Ransomware Resilience tira um instantâneo imediatamente. Revise o risco potencial na aba *Alertas* de resiliência contra ransomware.
 
 Se o Ransomware Resilience detectar um possível ataque, uma notificação será exibida nas configurações de Notificação do Console e um e-mail será enviado para o endereço configurado. O e-mail inclui informações sobre a gravidade, a carga de trabalho impactada e um link para o alerta na guia *Alertas* de resiliência contra ransomware.
 
@@ -56,13 +56,14 @@ Um alerta pode ter um dos seguintes status:
 * *Inativo*
 
 
-Um incidente de alerta pode ter um dos seguintes estados:
+Um incidente de alerta pode ter os seguintes estados:
 
 * *Novo*: Todos os incidentes são marcados como "novos" quando são identificados pela primeira vez.
+* *Em análise*: Você pode marcar um incidente como em análise enquanto o avalia.
 * *Rejeitado*: Se você suspeitar que a atividade não é um ataque de ransomware, você pode alterar o status para "Rejeitado".
 +
 
-CAUTION: Depois de dispensar um ataque, você não pode reverter isso.  Se você descartar uma carga de trabalho, todas as cópias de snapshot feitas automaticamente em resposta ao possível ataque de ransomware serão excluídas permanentemente.
+CAUTION: Depois de rejeitar um ataque, você não poderá reverter o seu estado. Se você descartar uma carga de trabalho, todas as cópias de snapshot feitas automaticamente em resposta ao possível ataque de ransomware serão excluídas permanentemente.
 
 * *Descartando*: O incidente está em processo de ser descartado.
 * *Resolvido*: O incidente foi corrigido.
@@ -216,9 +217,9 @@ Depois que o alerta é marcado para restauração, ele é movido da guia Alertas
 
 == Descartar incidentes que não sejam ataques potenciais
 
-Depois de analisar os incidentes, você precisa determinar se eles são ataques em potencial. Se não forem ameaças reais, elas podem ser descartadas.
+Depois de analisar os incidentes, você precisa determinar se eles são ataques em potencial. Se não forem ameaças reais, podem ser descartadas.
 
-Você pode descartar falsos positivos ou decidir recuperar seus dados imediatamente.  Se você ignorar o alerta, o Ransomware Resilience aprende esse comportamento, associa-o às operações normais e não inicia um alerta sobre esse comportamento novamente.
+Você pode descartar falsos positivos ou decidir recuperar seus dados imediatamente. Se você descartar o alerta, o Ransomware Resilience aprenderá esse comportamento e o associará às operações normais, não iniciando um alerta novamente para esse comportamento.
 
 Se você descartar uma carga de trabalho, todas as cópias de instantâneos feitas automaticamente em resposta a um possível ataque de ransomware serão excluídas permanentemente.
 
@@ -236,7 +237,7 @@ image:screen-alerts.png["Página de alertas"]
 +
 image:screen-alerts-incidents3.png["Página de incidentes de alerta"]
 
-. Selecione um ou mais incidentes.  Ou selecione todos os incidentes selecionando a caixa ID do incidente no canto superior esquerdo da tabela.
+. Selecione um ou mais incidentes. Alternativamente, selecione todos os incidentes marcando a caixa ID do incidente no canto superior esquerdo da tabela.
 . Se você determinar que o incidente não é uma ameaça, descarte-o como um falso positivo:
 +
 ** Selecione o incidente.
@@ -246,13 +247,13 @@ image:screen-alerts-status-edit.png["Página de status de edição de alerta"]
 
 
 
-. Na caixa Editar status, selecione o status *“Dispensado”*.
+. Na caixa Editar status, escolha o status *Dispensado*.
 +
-Aparecem informações adicionais sobre a carga de trabalho e que cópias de instantâneos foram excluídas.
+Aparecem informações adicionais sobre a carga de trabalho e as cópias de instantâneo excluídas.
 
 . Selecione *Salvar*.
 +
-O status do incidente ou incidentes muda para “Descartado”.
+O status do incidente ou incidentes muda para "Arquivado".
 
 
 
