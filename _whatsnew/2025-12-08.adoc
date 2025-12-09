@@ -14,7 +14,7 @@ Ao ativar o bloqueio de extensão, ele passa a ser ativado no nível da carga de
 
 O recurso Resiliência a Ransomware agora permite editar o status dos alertas de comportamento do usuário. Você pode descartar e resolver alertas manualmente.
 
-Para mais informações, consulte xref:rp-use-alert.html[Gerenciar alertas].
+Para mais informações, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html["Gerencie alertas em Resiliência a Ransomware"^].
 
 
 
