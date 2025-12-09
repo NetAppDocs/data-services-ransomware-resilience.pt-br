@@ -2069,7 +2069,6 @@
   <block id="8a9b2764802b622f9894a669a606f74f" category="doc">O bloqueio de extensões está habilitado no nível da carga de trabalho.</block>
   <block id="ab47595f128d75b47b3449fcd4dfb523" category="paragraph">Ao ativar o bloqueio de extensão, ele passa a ser ativado no nível da carga de trabalho, e não no nível da máquina virtual de armazenamento.</block>
   <block id="a6493502d5fc22c0b3ccee818dc4a5a5" category="section-title">Editar o status de alerta de comportamento do usuário</block>
-  <block id="f143f02b29819ec9e761d9f292dea42c" category="paragraph">O recurso Resiliência a Ransomware agora permite editar o status dos alertas de comportamento do usuário.  Você pode descartar e resolver alertas manualmente.  Agora você também pode marcar alertas como "Em análise".</block>
   <block id="685b0f2db45e4fc09a06ccb4695806de" category="inline-xref-macro">Gerenciar alertas</block>
   <block id="30acfc7aa0f5ff9593d73e769de766c0" category="paragraph">Para mais informações, consulte <block ref="32161c93f86d45672d8429d13ea78e6b" category="inline-xref-macro-rx"></block>.</block>
   <block id="d5214a8deea026de61af736ebf8697dd" category="section-title">Suporte para vários agentes de console</block>
@@ -2079,7 +2078,6 @@
   <block id="ee1bc5da2dde4f02ef7aa47df921506a" category="doc">Gerencie alertas no NetApp Ransomware Resilience.</block>
   <block id="9a51095678260d2a753174230dbe8a88" category="paragraph">Quando o NetApp Ransomware Resilience detecta um possível ataque, ele exibe um alerta no Painel de Controle e na área de Notificações. O Ransomware Resilience tira um instantâneo imediatamente. Revise o risco potencial na aba *Alertas* de resiliência contra ransomware.</block>
   <block id="6fe459ab097d6c4270e2ad317a017b93" category="paragraph">Um incidente de alerta pode ter os seguintes estados:</block>
-  <block id="afc3fd7b02af578176e65700acd6709b" category="list-text">*Em análise*: Você pode marcar um incidente como em análise enquanto o avalia.</block>
   <block id="93771318f0ad483bcb651c0ded2c6033" category="admonition">Depois de rejeitar um ataque, você não poderá reverter o seu estado. Se você descartar uma carga de trabalho, todas as cópias de snapshot feitas automaticamente em resposta ao possível ataque de ransomware serão excluídas permanentemente.</block>
   <block id="c95e7dd9856afddc701e5bf3b384f093" category="paragraph">Depois de analisar os incidentes, você precisa determinar se eles são ataques em potencial. Se não forem ameaças reais, podem ser descartadas.</block>
   <block id="c73a9fafaefc34f0b97adbaba4200dc9" category="paragraph">Você pode descartar falsos positivos ou decidir recuperar seus dados imediatamente. Se você descartar o alerta, o Ransomware Resilience aprenderá esse comportamento e o associará às operações normais, não iniciando um alerta novamente para esse comportamento.</block>
@@ -2090,4 +2088,5 @@
   <block id="6edf03555b64b68b413469994ca42164" category="list-text">*Agente de console* - O agente de console deve estar na mesma rede que o agente de atividade do usuário e ter conectividade SSH com o endereço IP do agente de atividade do usuário.</block>
   <block id="8e19d605b8be4e3be2157e822268633f" category="list-text">Se selecionar *Incluir atributos opcionais*, você também poderá adicionar um endereço de e-mail, número de telefone, função, estado, país, departamento, foto, nome do gerente ou grupos. Selecione *Avançado* para adicionar uma consulta de pesquisa opcional.</block>
   <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">08 de dezembro de 2025</block>
+  <block id="4256b08931f8c14d28bbf33199e1b022" category="paragraph">O recurso Resiliência a Ransomware agora permite editar o status dos alertas de comportamento do usuário. Você pode descartar e resolver alertas manualmente.</block>
 </blocks>

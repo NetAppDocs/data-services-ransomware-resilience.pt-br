@@ -12,7 +12,7 @@ Ao ativar o bloqueio de extensão, ele passa a ser ativado no nível da carga de
 
 === Editar o status de alerta de comportamento do usuário
 
-O recurso Resiliência a Ransomware agora permite editar o status dos alertas de comportamento do usuário.  Você pode descartar e resolver alertas manualmente.  Agora você também pode marcar alertas como "Em análise".
+O recurso Resiliência a Ransomware agora permite editar o status dos alertas de comportamento do usuário. Você pode descartar e resolver alertas manualmente.
 
 Para mais informações, consulte xref:rp-use-alert.html[Gerenciar alertas].
 

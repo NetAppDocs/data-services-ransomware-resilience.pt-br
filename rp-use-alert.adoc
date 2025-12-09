@@ -59,7 +59,6 @@ Um alerta pode ter um dos seguintes status:
 Um incidente de alerta pode ter os seguintes estados:
 
 * *Novo*: Todos os incidentes são marcados como "novos" quando são identificados pela primeira vez.
-* *Em análise*: Você pode marcar um incidente como em análise enquanto o avalia.
 * *Rejeitado*: Se você suspeitar que a atividade não é um ataque de ransomware, você pode alterar o status para "Rejeitado".
 +
 
