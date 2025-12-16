@@ -280,3 +280,10 @@ Se você quiser encerrar sua assinatura PAYGO, poderá fazê-lo a qualquer momen
 . Nos detalhes suspensos, desmarque a caixa *Usar após o vencimento do método de pagamento atual*.
 . Selecione *Salvar*.
 
+
+
+
+== Mais informações
+
+* link:https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html["Documentação sobre licenças e assinaturas do NetApp Console"^]
+
