@@ -4,7 +4,7 @@ permalink: rp-use-dashboard.html
 keywords: ransomware protection, ransomware protection dashboard, detect ransomware attacks, recover from ransomware attack 
 summary: O NetApp Ransomware Resilience Dashboard fornece informações sobre a integridade da proteção de suas cargas de trabalho.  Você pode determinar rapidamente as cargas de trabalho que estão em risco ou protegidas, as cargas de trabalho impactadas por um incidente ou em recuperação e avaliar a extensão da proteção observando quanto armazenamento está protegido ou em risco.  Você também pode usar o Painel para revisar e agir de acordo com as recomendações de proteção. 
 ---
-= Monitore a integridade da carga de trabalho usando o Painel de Resiliência do NetAPp Ransomware
+= Monitore a integridade da carga de trabalho usando o NetApp Ransomware Resilience Dashboard
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -14,7 +14,7 @@ summary: O NetApp Ransomware Resilience Dashboard fornece informações sobre a 
 [role="lead"]
 O NetApp Ransomware Resilience Dashboard fornece informações rápidas sobre a integridade da proteção de suas cargas de trabalho.  Você pode determinar rapidamente as cargas de trabalho que estão em risco ou protegidas, identificar as cargas de trabalho impactadas por um incidente ou em recuperação e avaliar a extensão da proteção observando quanto armazenamento está protegido ou em risco.
 
-Use o Painel para revisar sugestões de proteção, alterar configurações, baixar relatórios e visualizar documentação.
+Utilize o Painel de Controle para revisar sugestões de proteção, alterar configurações e baixar relatórios.
 
 *Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto, administrador do Ransomware Resilience ou visualizador do Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^] .
 
@@ -32,7 +32,7 @@ image:screen-dashboard.png["Página do painel"]
 ** *Proteção de dados da carga de trabalho*: selecione *Exibir tudo* para ver todas as cargas de trabalho que estão em risco ou protegidas na página Proteção.  As cargas de trabalho correm risco quando os níveis de proteção não correspondem a uma política de proteção. Consulte link:rp-use-protect.html["Proteja as cargas de trabalho"] .
 +
 
-TIP: Selecione a dica de ferramenta "i" para ver dicas sobre esses dados.  Para aumentar o limite de carga de trabalho, selecione *Aumentar limite de carga de trabalho* dentro desta nota.  Selecionar isso leva você para a página de Suporte do Console, onde você pode criar um tíquete de caso.
+TIP: Selecione a dica de ferramenta "i" para ver dicas sobre esses dados. Para aumentar o limite de carga de trabalho, selecione *Aumentar limite de carga de trabalho* dentro desta nota. Selecionar isso leva você para a página de Suporte do Console, onde você pode criar um tíquete de caso.
 
 ** *Alertas e recuperação de dados de carga de trabalho*: selecione *Exibir tudo* para ver incidentes ativos que impactaram sua carga de trabalho, estão prontos para recuperação após os incidentes serem neutralizados ou estão em recuperação. Consulte link:rp-use-alert.html["Responder a um alerta detectado"] .
 +
@@ -131,7 +131,7 @@ A recomendação sai da lista de Tarefas e aparece na lista de Descartados.
 
 +
 
-TIP: Mais tarde, você pode transformar um item descartado em um item de Tarefa.  Quando você marca um item como concluído ou transforma um item descartado em uma ação A Fazer, o Total de ações aumenta em 1.
+TIP: Mais tarde, você pode transformar um item descartado em um item de Tarefa. Quando você marca um item como concluído ou transforma um item descartado em uma ação A Fazer, o Total de ações aumenta em 1.
 
 . Para revisar informações sobre como agir de acordo com as recomendações, selecione o ícone *informações*.
 
@@ -149,15 +149,15 @@ Você pode baixar arquivos CSV de qualquer uma das opções do menu principal:
 * *Recuperação*: Inclui o status e os detalhes de todas as cargas de trabalho que precisam ser restauradas, incluindo o número total de cargas de trabalho que o Ransomware Resilience marca como "Restauração necessária", "Em andamento", "Falha na restauração" e "Restaurada com sucesso".
 
 
-Baixar um arquivo CSV de uma página inclui apenas os dados dessa página.
+O download de um arquivo CSV de uma página inclui apenas os dados dessa página.
 
 Os arquivos CSV incluem dados para todas as cargas de trabalho em todos os sistemas do Console.
 
 .Passos
-. No painel de Resiliência do Ransomware, selecione *Atualizar*image:button-refresh.png["Opção de atualização"] opção no canto superior direito para atualizar os dados que aparecerão nos arquivos.
+. No painel de controle de Resiliência a Ransomware, selecione *Atualizar*. image:button-refresh.png["Opção de atualização"] opção no canto superior direito para atualizar os dados que aparecerão nos arquivos.
 . Faça um dos seguintes:
 +
-** Na página, selecione *Download*image:button-download.png["Opção de download"] opção.
+** Na página, selecione *Download*. image:button-download.png["Imagem do ícone da opção de download"] opção.
 ** No menu Resiliência contra Ransomware, selecione *Relatórios*.
 
 
