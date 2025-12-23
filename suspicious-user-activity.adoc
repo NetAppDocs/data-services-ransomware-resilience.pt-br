@@ -113,15 +113,10 @@ Analise as regras de acesso à rede em nuvem para a sua região geográfica (Ás
 | Protocolo | Porta | Fonte | Destino | Descrição 
 
 
-| TCP | 443 | Agente de atividade do usuário  a| 
-* <site_name>.cs01-ap-1.cloudinsights.netapp.com
-* <site_name>.c01-ap-1.cloudinsights.netapp.com
-* <site_name>.c02-ap-1.cloudinsights.netapp.com
-
-| Acesso à resiliência contra ransomware 
+| TCP | 443 | Agente de atividade do usuário | Serviço de Resiliência a Ransomware | Acesso à resiliência contra ransomware 
 
 
-| TCP | 443 | Agente de atividade do usuário | agentlogin.cs01-ap-1.cloudinsights.netapp.com | Acesso a serviços de autenticação 
+| TCP | 443 | Agente de atividade do usuário | Serviço de Resiliência a Ransomware | Acesso a serviços de autenticação 
 |===
 
 
@@ -132,15 +127,10 @@ Analise as regras de acesso à rede em nuvem para a sua região geográfica (Ás
 | Protocolo | Porta | Fonte | Destino | Descrição 
 
 
-| TCP | 443 | Agente de atividade do usuário  a| 
-* <site_name>.cs01-eu-1.cloudinsights.netapp.com
-* <site_name>.c01-eu-1.cloudinsights.netapp.com
-* <site_name>.c02-eu-1.cloudinsights.netapp.com
-
-| Acesso à resiliência contra ransomware 
+| TCP | 443 | Agente de atividade do usuário | Serviço de Resiliência a Ransomware | Acesso à resiliência contra ransomware 
 
 
-| TCP | 443 | Agente de atividade do usuário | agentlogin.cs01-eu-1.cloudinsights.netapp.com | Acesso a serviços de autenticação 
+| TCP | 443 | Agente de atividade do usuário | Serviço de Resiliência a Ransomware | Acesso a serviços de autenticação 
 |===
 
 
@@ -151,15 +141,10 @@ Analise as regras de acesso à rede em nuvem para a sua região geográfica (Ás
 | Protocolo | Porta | Fonte | Destino | Descrição 
 
 
-| TCP | 443 | Agente de atividade do usuário  a| 
-* <site_name>.cs01.cloudinsights.netapp.com
-* <site_name>.c01.cloudinsights.netapp.com
-* <site_name>.c02.cloudinsights.netapp.com
-
-| Acesso à resiliência contra ransomware 
+| TCP | 443 | Agente de atividade do usuário | Serviço de Resiliência a Ransomware | Acesso à resiliência contra ransomware 
 
 
-| TCP | 443 | Agente de atividade do usuário | agentlogin.cs01.cloudinsights.netapp.com | Acesso a serviços de autenticação 
+| TCP | 443 | Agente de atividade do usuário | Serviço de Resiliência a Ransomware | Acesso a serviços de autenticação 
 |===
 
 
