@@ -59,10 +59,11 @@ Um alerta pode ter um dos seguintes status:
 Um incidente de alerta pode ter os seguintes estados:
 
 * *Novo*: Todos os incidentes são marcados como "novos" quando são identificados pela primeira vez.
+* *Em análise*: Você pode marcar um incidente como em análise enquanto o avalia.
 * *Rejeitado*: Se você suspeitar que a atividade não é um ataque de ransomware, você pode alterar o status para "Rejeitado".
 +
 
-CAUTION: Depois de rejeitar um ataque, você não poderá reverter o seu estado. Se você descartar uma carga de trabalho, todas as cópias de snapshot feitas automaticamente em resposta ao possível ataque de ransomware serão excluídas permanentemente.
+CAUTION: Depois de rejeitar um ataque, você não poderá reverter seu status. Se você descartar uma carga de trabalho, todas as cópias instantâneas feitas automaticamente em resposta ao possível ataque de ransomware serão excluídas permanentemente.
 
 * *Descartando*: O incidente está em processo de ser descartado.
 * *Resolvido*: O incidente foi corrigido.

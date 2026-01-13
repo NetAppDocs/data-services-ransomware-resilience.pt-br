@@ -1,0 +1,27 @@
+= Replicar snapshots para o ONTAP
+:allow-uri-read: 
+
+
+
+
+=== Replicar snapshots para o ONTAP
+
+A Resiliência contra Ransomware agora suporta a adição de replicação de snapshots para um site ONTAP secundário. Você pode criar uma estratégia de proteção contra ransomware que inclua replicação ou usar a estratégia predefinida. Com grupos de proteção que utilizam uma política de replicação, você pode replicar para o mesmo destino ou para destinos diferentes para cada carga de trabalho.
+
+Para mais informações, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Proteja as cargas de trabalho com resiliência contra ransomware."^].
+
+
+
+=== Excluir cargas de trabalho da resiliência a ransomware
+
+O Ransomware Resilience agora permite excluir cargas de trabalho específicas de um sistema da proteção, além de oferecer suporte ao painel de controle do Ransomware Resilience. Você pode excluir cargas de trabalho após a descoberta e incluí-las novamente se desejar adicionar proteção contra ransomware. Você não será cobrado por cargas de trabalho excluídas.
+
+Para mais informações, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-discover.html#exclude-workloads["Excluir cargas de trabalho"^].
+
+
+
+=== Alertas de marcação como em revisão
+
+A Resiliência contra Ransomware agora permite que você marque alertas como "Em análise". Use a etiqueta "Em análise" para melhorar a clareza em toda a sua equipe ao priorizar e gerenciar ameaças ativas de ransomware.
+
+Para mais informações, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html["Gerencie alertas em Resiliência a Ransomware"^].
