@@ -523,15 +523,7 @@ TIP: Para ver mais detalhes sobre as cargas de trabalho, role para a direita.
 image:screen-protection-groups-policy.png["Adicionar grupo de proteção - página Política"]
 
 . Selecione a política para controlar a proteção deste grupo. Para confirmar, selecione *Avançar*.
-. Se a estratégia de proteção incluir replicação, revise as configurações de replicação.
-+
-.. Para replicar todos os snapshots para o mesmo destino, marque a opção **Usar o mesmo destino para cada carga de trabalho**. Selecione um *Sistema de destino* e uma *VM de armazenamento de destino* para as cargas de trabalho na seção Agente do console.
-+
-Para usar destinos diferentes, desmarque essa caixa. Analise cada carga de trabalho em cada agente do Console e atribua um *Sistema de destino* e uma *VM de armazenamento de destino* para cada carga de trabalho. Selecione **Próximo**.
-
-
-
-. Se precisar configurar uma política de backup, escolha uma e selecione **Avançar**.
+. Para configurar uma política de backup, escolha uma e selecione **Avançar**.
 . Se sua política de detecção incluir detecção de comportamento do usuário, selecione o coletor de dados que deseja usar e depois **Avançar**.
 . Revise as seleções para o grupo de proteção.
 . Para finalizar a criação do grupo de proteção, selecione *Adicionar*.
