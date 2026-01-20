@@ -62,6 +62,9 @@ Esta página mostra agentes do Console com sistemas que não foram selecionados 
 
 
 
+TIP: No cartão de descoberta de cargas de trabalho em Configurações, selecione o menu de ações. `...` Em seguida, **Baixe o relatório (JSON)** para revisar uma lista de cargas de trabalho suportadas e não suportadas em seus sistemas.
+
+
 
 == Atividade suspeita do usuário
 

@@ -79,6 +79,9 @@ Se você adicionou cargas de trabalho a um sistema previamente descoberto, é ne
 
 
 
+TIP: Se você encontrar volumes que não estão sendo exibidos para o sistema que você descobriu, esses volumes podem não ser compatíveis. Para encontrar uma lista de volumes não suportados, acesse o menu **Configurações** e selecione a opção correspondente no cartão de descoberta de carga de trabalho para baixar um relatório JSON com os volumes suportados e não suportados.
+
+
 
 == Descubra novos sistemas
 
