@@ -14,7 +14,7 @@ summary: Se o Ransomware Resilience detectar um possível ataque, um alerta apar
 [role="lead"]
 Quando o NetApp Ransomware Resilience detecta um possível ataque, ele exibe um alerta no Painel de Controle e na área de Notificações. O Ransomware Resilience tira um instantâneo imediatamente. Revise o risco potencial na aba *Alertas* de resiliência contra ransomware.
 
-Se o Ransomware Resilience detectar um possível ataque, uma notificação será exibida nas configurações de Notificação do Console e um e-mail será enviado para o endereço configurado. O e-mail inclui informações sobre a gravidade, a carga de trabalho impactada e um link para o alerta na guia *Alertas* de resiliência contra ransomware.
+Se o Ransomware Resilience detectar um possível ataque, uma notificação será exibida nas configurações de Notificação do Console e um e-mail será enviado para os endereços configurados. O e-mail inclui informações sobre a gravidade, a carga de trabalho impactada e um link para o alerta na guia *Alerts* do Ransomware Resilience.
 
 Você pode descartar falsos positivos ou decidir recuperar seus dados imediatamente.
 
@@ -103,20 +103,10 @@ image:screen-alerts.png["Página de alertas"]
 
 == Responder a um e-mail de alerta
 
-Quando o Ransomware Resilience detecta um ataque potencial, ele envia uma notificação por e-mail aos usuários inscritos com base em suas preferências de notificação de assinatura.  O e-mail contém informações sobre o alerta, incluindo a gravidade e os recursos afetados.
-
-Você pode receber notificações por e-mail sobre alertas de resiliência de ransomware.  Esse recurso ajuda você a se manter informado sobre alertas, sua gravidade e recursos afetados.
+Quando o Ransomware Resilience detecta um possível ataque, ele envia uma notificação por e-mail aos usuários inscritos, de acordo com as preferências de notificação de inscrição configuradas nas definições do NetApp Console. O e-mail contém informações sobre o alerta, incluindo a gravidade e os recursos afetados.
 
 
-TIP: Para assinar notificações por e-mail, consulte https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings["Definir configurações de notificação por e-mail"^] .
-
-. Em Ransomware Resilience, vá para a página *Configurações*.
-. Em *Notificações*, localize as configurações de notificação por e-mail.
-. Digite o endereço de e-mail onde você deseja receber alertas.
-. Salve suas alterações.
-
-
-Agora você receberá notificações por e-mail quando novos alertas forem gerados.
+TIP: Para configurar notificações por e-mail no Console, consulte link:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings["Definir configurações de notificação por e-mail"^].
 
 *Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto, administrador do Ransomware Resilience ou visualizador do Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^] .
 
@@ -143,10 +133,10 @@ A página Alertas é exibida.
 
 Observando a aba Alertas, você pode identificar se há atividade maliciosa ou comportamento anômalo do usuário.
 
-Você deve ter configurado um agente de atividade do usuário e habilitado uma política de proteção com detecção de comportamento do usuário para visualizar alertas em nível de usuário. Com a detecção de comportamento do usuário ativada, a coluna *Usuário suspeito* aparece no painel Alertas; ela não é exibida quando a detecção de comportamento do usuário não está ativada.  Para habilitar a detecção de usuários suspeitos, consultelink:suspicious-user-activity.html["Atividade suspeita do usuário"] .
+Você deve ter configurado um agente de atividade do usuário e habilitado uma política de proteção com detecção de comportamento do usuário para visualizar alertas em nível de usuário. A coluna *Usuário suspeito* aparece no painel de alertas somente quando a detecção de comportamento do usuário está habilitada. Para habilitar a detecção de usuários suspeitos, consulte link:suspicious-user-activity.html["Atividade suspeita do usuário"].
 
 
-NOTE: Se você estiver usando o NetApp Data Infrastructure Insights (DII) Workload Security, é recomendável usar os mesmos agentes do Workload Security para a Resiliência a Ransomware. Não é necessário implantar agentes de segurança de carga de trabalho separados para a Resiliência a Ransomware. No entanto, o uso dos mesmos agentes de segurança de carga de trabalho exige uma relação de emparelhamento entre a organização do Console de Resiliência a Ransomware e o locatário de segurança de carga de trabalho do DII Storage. Contate seu representante de conta para ativar esse emparelhamento. + Se você não estiver usando o DII, poderá se beneficiar dos recursos de detecção de comportamento suspeito do usuário. Certifique-se de ter link:suspicious-user-activity.html["detecção de atividade suspeita do usuário ativada"] e configuraram os agentes apropriados.
+NOTE: Se você estiver usando NetApp Data Infrastructure Insights (DII) Workload Security, é recomendável usar os mesmos agentes do Workload Security para Ransomware Resilience. Você não precisa implantar agentes separados do Workload Security para Ransomware Resilience, no entanto, o uso dos mesmos agentes do Workload Security requer um relacionamento de pareamento entre a organização do Ransomware Resilience Console e o tenant do DII Storage Workload Security. Entre em contato com seu representante de conta para habilitar esse pareamento. + Para usar a detecção de usuários suspeitos _sem_ o DII, certifique-se de link:suspicious-user-activity.html["detecção de atividade suspeita do usuário ativada"] ter configurado os agentes apropriados.
 
 
 
@@ -191,7 +181,7 @@ Se você configurou a detecção de usuários suspeitos para visualizar comporta
 
 == Marcar incidentes de ransomware como prontos para recuperação (após os incidentes serem neutralizados)
 
-Após interromper o ataque, notifique o administrador de armazenamento de que os dados estão prontos para que ele possa iniciar a recuperação.
+Após interromper o ataque, notifique o administrador de storage que os dados estão prontos para que ele possa iniciar o processo de recuperação.
 
 *Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^] .
 
