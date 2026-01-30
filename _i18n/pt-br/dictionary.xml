@@ -2011,7 +2011,6 @@
   <block id="13f3cf8c531952d72e5847c4183e6910" category="cell">443</block>
   <block id="f2ca52b87225d79d40f899aebabeec45" category="cell">Agente de atividade do usuário</block>
   <block id="b7169d36c5259a3a051359ca51dbd682" category="cell">Acesso à resiliência contra ransomware</block>
-  <block id="d4fedc7f035f96436f1598f9626876e2" category="cell">Acesso a serviços de autenticação</block>
   <block id="0e07fec3da393adf659f6e786a442b5d" category="section-title">Implantações de agentes de atividade do usuário na Europa</block>
   <block id="e0a04d596459d34d5495089a5a992421" category="section-title">Implantações de agentes de atividade do usuário nos EUA</block>
   <block id="0cd58d8585970b5311e84ca2c34ba5ef" category="section-title">Regras na rede</block>
@@ -2032,7 +2031,6 @@
   <block id="269ab41459ba8b3de391eb30b649d222" category="cell">Necessário para bloqueio de usuários CIFS/SMB.</block>
   <block id="c3c0e3736c092f9f194505694468ca8b" category="inline-link-macro">requisitos do sistema</block>
   <block id="3711ac0a85bd797cffe6d1b55a460f16" category="paragraph">Certifique-se de ter cumprido os requisitos. <block ref="24745d2c3c6c1ff64bcdf410b4214e6b" category="inline-link-macro-rx"></block> para o agente de atividade do usuário. Certifique-se de que sua configuração esteja em conformidade com os provedores de nuvem e regiões suportados.</block>
-  <block id="bbeae0eeffca7072631fe62be382e481" category="cell">Serviço de Resiliência a Ransomware</block>
   <block id="28f949c139c27e6b09df3640a4d3aea0" category="doc">Replicar snapshots para o ONTAP</block>
   <block id="6ca5a36112bece1031ef1a3e82518ffb" category="inline-link-macro">Proteja as cargas de trabalho com resiliência contra ransomware.</block>
   <block id="0b603f5148dda4ce1b974e4b20493476" category="paragraph">Para mais informações, consulte <block ref="1b59dbcecddb451034333205ceb2d85d" category="inline-link-macro-rx"></block>.</block>
@@ -2121,4 +2119,17 @@
   <block id="02b8f736b0a683e2999fdad847ee8cd4" category="paragraph">Você deve ter configurado um agente de atividade do usuário e habilitado uma política de proteção com detecção de comportamento do usuário para visualizar alertas em nível de usuário. A coluna *Usuário suspeito* aparece no painel de alertas somente quando a detecção de comportamento do usuário está habilitada. Para habilitar a detecção de usuários suspeitos, consulte <block ref="da26800578b610b8b3390e49bb643377" category="inline-link-macro-rx"></block>.</block>
   <block id="b37f5f6a060700bfc5da32b05dba5978" category="admonition">Se você estiver usando NetApp Data Infrastructure Insights (DII) Workload Security, é recomendável usar os mesmos agentes do Workload Security para Ransomware Resilience. Você não precisa implantar agentes separados do Workload Security para Ransomware Resilience, no entanto, o uso dos mesmos agentes do Workload Security requer um relacionamento de pareamento entre a organização do Ransomware Resilience Console e o tenant do DII Storage Workload Security. Entre em contato com seu representante de conta para habilitar esse pareamento. + Para usar a detecção de usuários suspeitos _sem_ o DII, certifique-se de <block ref="f31f86ab68cf8ca6dc8a3009e6d9ea7a" category="inline-link-macro-rx"></block> ter configurado os agentes apropriados.</block>
   <block id="22b921337bb720d655059859772c0131" category="paragraph">Após interromper o ataque, notifique o administrador de storage que os dados estão prontos para que ele possa iniciar o processo de recuperação.</block>
+  <block id="beb3dd3f004aa88c321d7b13cd6d36c1" category="admonition">Durante a instalação inicial, substitua a <block ref="50cff7c5933e29331b88e32e4f2a101d" prefix=" " category="inline-code"></block> por uma permissão de caractere curinga <block ref="3389dae361af79b04c9c8e7057f60cc6" prefix="(" category="inline-code"></block>. Após o agente ser ativado e estar totalmente operacional, você pode substituir a permissão pelo nome do site. Entre em contato com seu representante da NetApp para o nome do site.</block>
+  <block id="e7d932b2a7bf9471a38ac8c68fbf83ad" category="list-text">&lt;site_name&gt;.cs01-ap-1.cloudinsights.netapp.com/br/</block>
+  <block id="8f31785e58dfdc396495a127fdd7d7dd" category="list-text">&lt;site_name&gt;.c01-ap-1.cloudinsights.netapp.com/br/</block>
+  <block id="edc2894193def90c2ccbb8f855d6f564" category="list-text">&lt;site_name&gt;.c02-ap-1.cloudinsights.netapp.com/br/</block>
+  <block id="b7293bd6a9f7cb8e5890a221fe74d3cb" category="list-text">gentlogin.cs01-ap-1.cloudinsights.netapp.com/br/</block>
+  <block id="00c7e633a09840b7e60ee5de5aec797b" category="list-text">&lt;site_name&gt;.cs01-eu-1.cloudinsights.netapp.com/br/</block>
+  <block id="54d1f56395e5ec9d39e9a416c61b311a" category="list-text">&lt;site_name&gt;.c01-eu-1.cloudinsights.netapp.com/br/</block>
+  <block id="0ba615943513b9683a0e9b145f96e5b2" category="list-text">&lt;site_name&gt;.c02-eu-1.cloudinsights.netapp.com/br/</block>
+  <block id="29acd3d3cfc5f8e3cb650abeb2622a68" category="list-text">agentlogin.cs01-eu-1.cloudinsights.netapp.com/br/</block>
+  <block id="686fe123d13d19cbe67fa0429375b0e1" category="list-text">&lt;site_name&gt;.cs01.cloudinsights.netapp.com/br/</block>
+  <block id="ce47b0513e6a5635f603be8cc52f392d" category="list-text">&lt;site_name&gt;.c01.cloudinsights.netapp.com/br/</block>
+  <block id="906a7644c76f341f29012680a39f7225" category="list-text">&lt;site_name&gt;.c02.cloudinsights.netapp.com/br/</block>
+  <block id="142b47c359d647af9faff9ef084152c7" category="list-text">agentlogin.cs01.cloudinsights.netapp.com</block>
 </blocks>
