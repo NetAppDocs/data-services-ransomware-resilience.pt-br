@@ -20,7 +20,7 @@ Você pode proteger cargas de trabalho contra ataques de ransomware habilitando 
 
 == Entenda as estratégias de proteção contra ransomware
 
-As estratégias de proteção contra ransomware abrangem políticas de _detecção_, _proteção_ e _replicação_.
+As estratégias de proteção contra ransomware abrangem _detecção_, _proteção_ e _replicação_ policies.
 
 * **Políticas de detecção** identificam ameaças de ransomware
 * **Políticas de proteção** incluem políticas de snapshot e backup.  Políticas de detecção e snapshot são necessárias em uma estratégia de proteção.  As políticas de backup são opcionais.
