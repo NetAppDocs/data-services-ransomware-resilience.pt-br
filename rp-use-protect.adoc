@@ -443,7 +443,7 @@ image:screen-protection.png["Gerenciar página de estratégia"]
 . Para ver detalhes das políticas do SnapCenter , selecione a *Seta para baixo*.
 . Selecione as configurações de detecção desejadas: *Detecção de criptografia* *Detecção de comportamento suspeito do usuário* *Bloqueio de extensões de arquivo suspeitas*
 . Selecione **Avançar**.
-. Se você selecionou *Detecção de comportamento suspeito do usuário* como uma configuração de detecção, selecione o agente de atividade do usuário oulink:suspicious-user-activity.html#add-a-user-activity-agent["ou criar um"] .
+. Se você selecionou *Detecção de comportamento suspeito do usuário* como uma configuração de detecção, selecione o agente de atividade do usuário ou link:suspicious-user-activity.html#create-a-user-activity-agent["ou criar um"].
 +
 O agente de atividade do usuário hospeda os novos coletores de dados. O Ransomware Resilience cria o coletor de dados automaticamente para transmitir eventos de atividade do usuário ao Ransomware Resilience para detectar comportamento anômalo do usuário.
 

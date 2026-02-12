@@ -136,9 +136,6 @@ Observando a aba Alertas, você pode identificar se há atividade maliciosa ou c
 Você deve ter configurado um agente de atividade do usuário e habilitado uma política de proteção com detecção de comportamento do usuário para visualizar alertas em nível de usuário. A coluna *Usuário suspeito* aparece no painel de alertas somente quando a detecção de comportamento do usuário está habilitada. Para habilitar a detecção de usuários suspeitos, consulte link:suspicious-user-activity.html["Atividade suspeita do usuário"].
 
 
-NOTE: Se você estiver usando NetApp Data Infrastructure Insights (DII) Workload Security, é recomendável usar os mesmos agentes do Workload Security para Ransomware Resilience. Você não precisa implantar agentes separados do Workload Security para Ransomware Resilience, no entanto, o uso dos mesmos agentes do Workload Security requer um relacionamento de pareamento entre a organização do Ransomware Resilience Console e o tenant do DII Storage Workload Security. Entre em contato com seu representante de conta para habilitar esse pareamento. + Para usar a detecção de usuários suspeitos _sem_ o DII, certifique-se de link:suspicious-user-activity.html["detecção de atividade suspeita do usuário ativada"] ter configurado os agentes apropriados.
-
-
 
 === Ver atividade maliciosa
 

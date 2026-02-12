@@ -40,8 +40,14 @@ sidebar:
       url: "/rp-start-simulate.html"
     - title: Configure backups, detecção de ameaças e simulações de ataque em Configurações
       url: "/rp-use-settings.html"
-    - title: Configurar detecção de atividades suspeitas de usuários
-      url: "/suspicious-user-activity.html"
+    - title: Configurar detecção de atividade do usuário
+      entries:
+      - title: Saiba mais sobre detecção de atividade do usuário
+        url: "/concept-user-behavior.html"
+      - title: Requisitos de atividade do usuário
+        url: "/reference-user-activity-requirements.html"
+      - title: Configurar agentes e coletores
+        url: "/suspicious-user-activity.html"
   - title: Use a resiliência do ransomware
     entries:
     - title: Visualize a integridade da carga de trabalho usando o Painel

@@ -100,7 +100,7 @@ O Ransomware Resilience pode ser acessado por meio do NetApp Console.
 
 O NetApp Console fornece gerenciamento centralizado de serviços de armazenamento e dados da NetApp em ambientes locais e na nuvem em nível empresarial. O Console é necessário para acessar e usar os serviços de dados do NetApp . Como uma interface de gerenciamento, ele permite que você gerencie muitos recursos de armazenamento a partir de uma única interface. Os administradores do console podem controlar o acesso ao armazenamento e aos serviços de todos os sistemas da empresa.
 
-Você não precisa de uma licença ou assinatura para começar a usar o NetApp Console e só incorrerá em cobranças quando precisar implantar agentes do Console na sua nuvem para garantir a conectividade com seus sistemas de armazenamento ou serviços de dados do NetApp . No entanto, alguns serviços de dados da NetApp acessíveis pelo Console são licenciados ou baseados em assinatura.
+Você não precisa de licença ou assinatura para começar a usar o NetApp Console e só incorre em cobranças quando implanta agentes do Console em sua nuvem para garantir a conectividade com seus sistemas de armazenamento ou NetApp data services. No entanto, alguns NetApp data services acessíveis pelo Console são licenciados ou baseados em assinatura.
 
 Saiba mais sobre olink:https://docs.netapp.com/us-en/console-setup-admin/concept-overview.html["NetApp Console"^] .
 
@@ -237,7 +237,7 @@ Se você estiver usando o SnapCenter ou o SnapCenter para VMware, todas as carga
 
 
 
-== Termos que podem ajudar você com a proteção contra ransomware
+== Termos-chave
 
 Você pode se beneficiar ao entender alguma terminologia relacionada à proteção contra ransomware.
 
