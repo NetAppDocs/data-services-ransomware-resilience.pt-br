@@ -55,7 +55,14 @@ Se você estiver adicionando um agente de atividade de usuário adicional, vá p
 ** **Nome do agente de atividade do usuário**
 ** *Agente de console* - O agente de console deve estar na mesma rede que o agente de atividade do usuário e ter conectividade SSH com o endereço IP do agente de atividade do usuário.
 ** *Nome DNS ou endereço IP da VM*
-** *Chave SSH da VM*
+** *Chave SSH da VM* - Insira a chave SSH usando este formato:
++
+[code]
+----
+-----BEGIN OPENSSH PRIVATE KEY-----
+private-key-contents
+-----END OPENSSH PRIVATE KEY-----
+----
 +
 image:user-activity-agent.png["Captura de tela da interface do agente de adição de atividade."]
 
