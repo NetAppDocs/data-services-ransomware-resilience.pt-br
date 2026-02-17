@@ -6,7 +6,10 @@
 | Ambiente | Protocolo | Versões suportadas 
 
 
-| Amazon FSx for NetApp ONTAP* | NFS, CIFS e SAN | N / D 
+| Amazon FSx for NetApp ONTAP* | CIFS, NFS e SAN | N / D 
+
+
+| Azure NetApp Files | CIFS e NFS | N / D 
 
 
 .2+| Cloud Volumes ONTAP para AWS | CIFS e NFS | 9.11.1 e posterior 

@@ -171,8 +171,15 @@ Se você configurou a detecção de usuários suspeitos para visualizar comporta
 . No menu Resiliência contra Ransomware, selecione *Alertas*.
 . Selecione um alerta.
 . Revise os incidentes no alerta.
-. Para bloquear um usuário suspeito em seu ambiente, selecione *Bloquear* abaixo do nome do usuário.
++
+.. Para bloquear um usuário suspeito em seu ambiente, selecione *Block* ao lado do nome do usuário.
+.. Para desativar os alertas de um determinado usuário que é alvo de um alerta que você sabe ser falso, selecione os três pontos (`...`) e, em seguida, **Excluir este usuário do monitoramento**. Revise a caixa de diálogo e selecione **Excluir** para confirmar.
 
+
+
+
+
+TIP: Para reativar os alertas para um usuário, retorne o alerta. Selecione os três pontos e então **Incluir este usuário no monitoramento**. Você também pode link:suspicious-user-activity.html#exclude-users-from-alerts["Excluir usuários"] do monitoramento.
 
 
 

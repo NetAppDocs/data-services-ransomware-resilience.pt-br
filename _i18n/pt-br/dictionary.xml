@@ -858,7 +858,6 @@
   <block id="e10a2e4ef1f3cc661e89aa47c1655787" category="list-text">SnapCenter para VMware para datastores de VM</block>
   <block id="9f467d31ef54c60530e9d07d18e7df6d" category="paragraph">As informações de proteção desses serviços aparecem em Resiliência de Ransomware.  Você pode adicionar políticas de detecção a esses serviços com o Ransomware Resilience.  Adicionar uma política de proteção com o Ransomware Resilience substitui as políticas de proteção existentes.</block>
   <block id="f37d79a56cb20cdcf206acc1cfa8be14" category="paragraph">Se uma política de detecção de ransomware estiver sendo gerenciada pelo Autonomous Ransomware Protection (ARP ou ARP/AI, dependendo da versão do ONTAP ) e FPolicy no ONTAP, essas cargas de trabalho serão protegidas e continuarão sendo gerenciadas pelo ARP e FPolicy.</block>
-  <block id="7c07f079f6b4547ea768c45b8e8c9c54" category="admonition">Os destinos de backup não estão disponíveis para cargas de trabalho no Amazon FSx for NetApp ONTAP.  Execute operações de backup usando o serviço de backup FSx for ONTAP .  Você define políticas de backup para cargas de trabalho no FSx para ONTAP na AWS, não no Ransomware Resilience.  As políticas de backup aparecem em Ransomware Resilience e permanecem inalteradas na AWS.</block>
   <block id="d62f06f1ca9fb020be7953fe3101f0a3" category="section-title">Políticas de proteção para cargas de trabalho não protegidas por aplicativos NetApp</block>
   <block id="ec45a6a3163f1e5c5139c2b24b9596f2" category="paragraph">Se sua carga de trabalho não for gerenciada pelo Backup and Recovery, Ransomware Resilience, SnapCenter ou SnapCenter Plug-in for VMware vSphere, ela poderá ter instantâneos tirados como parte do ONTAP ou de outros produtos.  Se a proteção FPolicy do ONTAP estiver em vigor, você poderá alterar a proteção FPolicy usando o ONTAP.</block>
   <block id="631014fb608aae26275f461a597abc09" category="section-title">Visualizar proteção contra ransomware em uma carga de trabalho</block>
@@ -1024,7 +1023,6 @@
   <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">Selecione *Avançar*.</block>
   <block id="f7ba12bb96df2ae9d69ffbf1bc2af6bb" category="inline-image-macro">Adicionar grupo de proteção - página Política</block>
   <block id="a739b6145911af1f850b745cae737475" category="paragraph"><block ref="a739b6145911af1f850b745cae737475" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1ae08906aa42275aa58a2b7641019104" category="list-text">Selecione a política para controlar a proteção deste grupo. Para confirmar, selecione *Avançar*.</block>
   <block id="f724f66c90177c8dac8336038a0778c0" category="list-text">Se sua política de detecção incluir detecção de comportamento do usuário, selecione o coletor de dados que deseja usar e depois **Avançar**.</block>
   <block id="0fc76de5572d1186f1358665dff6076f" category="list-text">Revise as seleções para o grupo de proteção.</block>
   <block id="d7a75d0f58bb349985e6d2104ca65596" category="list-text">Para finalizar a criação do grupo de proteção, selecione *Adicionar*.</block>
@@ -1178,13 +1176,10 @@
   <block id="09121bb3cb936ab87dd837c1fd8da18a" category="list-text">Se você selecionou a opção *Relatórios*, selecione um dos nomes de arquivo pré-configurados e selecione *Baixar*.</block>
   <block id="edb56701c02931a83b80f61481367ade" category="summary">Você pode configurar várias opções, incluindo um destino de backup e detecção de ameaças na página de configurações.</block>
   <block id="9aa6ed30a3e0d803a1b8b079e0b8d650" category="doc">Configurar as definições de proteção no NetApp Ransomware Resilience</block>
-  <block id="efc5b90b499969efcedcd2b7276a218d" category="paragraph">Você pode configurar destinos de backup, enviar dados para um sistema externo de gerenciamento de segurança e eventos (SIEM), conduzir um exercício de prontidão para ataques, configurar a descoberta de carga de trabalho ou configurar a detecção de atividades suspeitas do usuário acessando a opção *Configurações*.</block>
   <block id="105c4d7cf6704d10a27fac5acd7333a3" category="paragraph">*O que você pode fazer na página Configurações?*  Na página Configurações, você pode fazer o seguinte:</block>
   <block id="2fdebc69dc6e7b0ee210d7c727cf37e2" category="list-text">Simule um ataque de ransomware realizando um exercício de prontidão e respondendo a um alerta simulado de ransomware. Para obter detalhes, consulte <block ref="764586bbfc596fce1f2309fe8b2a42c0" category="inline-link-macro-rx"></block> .</block>
   <block id="3fdd6341b0ef86488ae1a773932c96c7" category="list-text">Configurar descoberta de carga de trabalho.</block>
-  <block id="ad5a89c970ba403587fba991f4218c99" category="list-text">Configure relatórios de atividades suspeitas de usuários.</block>
   <block id="d9e0cef30d1fd79b64dd0675b6e2eb12" category="list-text">Adicione um destino de backup.</block>
-  <block id="43360d747c31106b5dbf428088f9fabc" category="list-text">Conecte seu sistema de gerenciamento de segurança e eventos (SIEM) para análise e detecção de ameaças.  Habilitar a detecção de ameaças envia automaticamente dados ao seu SIEM para análise de ameaças.</block>
   <block id="f6de47008760d29836d5758a5a06bf0f" category="section-title">Acesse a página Configurações diretamente</block>
   <block id="47ee39f07973e19ecd9ed033f5faabb1" category="paragraph">Você pode acessar facilmente a página Configurações na opção Ações, próxima ao menu superior.</block>
   <block id="2ed94c26a1d2bdd8aa204fd20eb40937" category="list-text">Em Resiliência de Ransomware, selecione a vertical<block ref="ddacd9651566dbd67045ad6fbaf81a6c" category="inline-image-macro-rx" type="image"></block> ... opção no canto superior direito.</block>
@@ -1202,13 +1197,10 @@
   <block id="4c624f22bdf5c52da245d3b038c2b92e" category="list-text">Marque os sistemas nos quais você deseja descobrir cargas de trabalho ou selecione a caixa na parte superior da tabela para descobrir cargas de trabalho em todos os ambientes de carga de trabalho descobertos.</block>
   <block id="9f9e31c32e5b1d13d9371a818f0a6ee0" category="list-text">Faça isso para outros sistemas, conforme necessário.</block>
   <block id="04abb68cc3e6cbd75c6183768d3cdb47" category="list-text">Selecione *Descobrir* para que o Ransomware Resilience descubra automaticamente novas cargas de trabalho no agente do Console selecionado.</block>
-  <block id="6a8da91afd3259d0e94261d0d1d4cdaa" category="paragraph">No cartão de atividade do usuário, você pode criar e gerenciar o agente de atividade do usuário necessário para detectar atividades suspeitas do usuário.</block>
-  <block id="1e9de376e860f46db74a2fe6749a824e" category="paragraph">Para obter mais informações, consulte <block ref="da26800578b610b8b3390e49bb643377" category="inline-link-macro-rx"></block> .</block>
   <block id="55483e3219b15f38112442f737a1bf92" category="section-title">Adicionar um destino de backup</block>
   <block id="ca0d9b702b5686b0dbe483b8b038b9d5" category="paragraph">O Ransomware Resilience pode identificar cargas de trabalho que ainda não têm backups e também cargas de trabalho que ainda não têm destinos de backup atribuídos.</block>
   <block id="dc0a4770af38e660c7408d8ac2fac395" category="paragraph">Para proteger essas cargas de trabalho, você deve adicionar um destino de backup.  Você pode escolher um dos seguintes destinos de backup:</block>
   <block id="943ca3782b28d89aff2f86a50b332b3c" category="list-text">Serviços Web da Amazon (AWS)</block>
-  <block id="065ced4e95bc23c02a22f53b7d00da49" category="admonition">Os destinos de backup não estão disponíveis para cargas de trabalho no Amazon FSx for NetApp ONTAP.  Execute operações de backup usando o serviço de backup FSx for ONTAP .</block>
   <block id="4ec94f814f491d45c196584c149a7d3e" category="paragraph">Você pode adicionar um destino de backup com base em uma ação recomendada no Painel ou acessando a opção Configurações no menu.</block>
   <block id="423773f9edb45d8141b1c7b6278c8092" category="section-title">Acesse as opções de destino de backup nas ações recomendadas do painel</block>
   <block id="fd0da3fefc8a8a7ae1d9742f929d60d2" category="paragraph">O Painel fornece muitas recomendações.  Uma recomendação pode ser configurar um destino de backup.</block>
@@ -1274,10 +1266,7 @@
   <block id="6c2708162873644f82108cfcad8ae099" category="list-text">Opcionalmente, escolha se você usará um ponto de extremidade privado do Azure que você configurou anteriormente.</block>
   <block id="8044b0463892d9d29dbab8cfd03e8863" category="inline-link">Link Privado do Azure</block>
   <block id="13ed98575f9b615f49abab3355f19c34" category="paragraph">Se você quiser usar o Azure PrivateLink, consulte<block ref="dc49bf79d1a3da34447e7543d00fee44" category="inline-link-rx"></block> .</block>
-  <block id="e82028134cc149b687f7fdb64684dbf7" category="section-title">Conecte-se a um sistema de gerenciamento de segurança e eventos (SIEM) para análise e detecção de ameaças</block>
-  <block id="c442f897ba9f28d5d7d3b1643ea9284a" category="paragraph">Você pode enviar dados automaticamente para seu sistema de gerenciamento de segurança e eventos (SIEM) para análise e detecção de ameaças.  Você pode selecionar o AWS Security Hub, o Microsoft Sentinel ou o Splunk Cloud como seu SIEM.</block>
   <block id="cbf029478800b63da0670604895d0640" category="paragraph">Antes de habilitar o SIEM no Ransomware Resilience, você precisa configurar seu sistema SIEM.</block>
-  <block id="7e15fa4f52a2b2bbe9c0fde780818748" category="paragraph-title">Sobre os dados do evento enviados para um SIEM</block>
   <block id="44af434bf59e9ca7200d90f680bae3bc" category="paragraph">O Ransomware Resilience pode enviar os seguintes dados de eventos para o seu sistema SIEM:</block>
   <block id="5976a11ab4dca8b4245edb915c6dfbd7" category="list-text">*contexto*:</block>
   <block id="c01e6c1876fd41a917ea803c3ef48d66" category="list-text">*os*: Esta é uma constante com o valor de ONTAP.</block>
@@ -1293,7 +1282,6 @@
   <block id="09471f7939b8b27b32ee107cd9b1c44b" category="list-text">*gravidade*: Um dos seguintes níveis de alerta: "CRÍTICO", "ALTO", "MÉDIO", "BAIXO".</block>
   <block id="6f51b5c965cb508d8d37085592031c21" category="list-text">*description*: Detalhes sobre o alerta que foi detectado, por exemplo, "Um possível ataque de ransomware detectado na carga de trabalho arp_learning_mode_test_2630"</block>
   <block id="0df177143ce12a3516098cd3329e85c2" category="section-title">Configurar o AWS Security Hub para detecção de ameaças</block>
-  <block id="ffc1de84dbea7f504a06f3ac9f3aca23" category="paragraph">Antes de habilitar o AWS Security Hub no Ransomware Resilience, você precisará executar as seguintes etapas de alto nível no AWS Security Hub:</block>
   <block id="de9b4f41a945df92e6c5b62f443f03f1" category="list-text">Configure permissões no AWS Security Hub.</block>
   <block id="5fd0d2c5fd8b96b7b7b69f69b942c559" category="list-text">Configure a chave de acesso de autenticação e a chave secreta no AWS Security Hub.  (Essas etapas não são fornecidas aqui.)</block>
   <block id="12eef9b6a125a82d69978241dca88c07" category="list-title">Etapas para configurar permissões no AWS Security Hub</block>
@@ -1301,7 +1289,6 @@
   <block id="bf6953a41efa897b0862fca0fe547641" category="list-text">Selecione *Políticas*.</block>
   <block id="2228b7980f61d80481608141744ecee0" category="list-text">Crie uma política usando o seguinte código no formato JSON:</block>
   <block id="cd4d66bdd803d46b839b94afd734cbcd" category="section-title">Configurar o Microsoft Sentinel para detecção de ameaças</block>
-  <block id="0554c1e832e7fe2b51d5dcb9023f05f5" category="paragraph">Antes de habilitar o Microsoft Sentinel no Ransomware Resilience, você precisará executar as seguintes etapas de alto nível no Microsoft Sentinel:</block>
   <block id="fc01add8dc5e609f9be29c977daabdb7" category="list-text">*Pré-requisitos*</block>
   <block id="37f2e7903c233bd04580bbd9be3e01dd" category="list-text">Ativar o Microsoft Sentinel.</block>
   <block id="4b78ed88f7480fc055e7d156d68bc76f" category="list-text">Crie uma função personalizada no Microsoft Sentinel.</block>
@@ -1697,7 +1684,6 @@
   <block id="7257a2c29f00e84365c5a48447d9c803" category="inline-link-macro">Habilitar a classificação de dados para identificar riscos de governança e segurança</block>
   <block id="746bceb6a53af383ec0aa4495f694a94" category="list-text"><block ref="746bceb6a53af383ec0aa4495f694a94" category="inline-link-macro-rx"></block></block>
   <block id="1d1758803ee1f7559973be04f120a0f7" category="inline-link-macro">Enviar alertas para SIEM</block>
-  <block id="81eb2602258c7f155c33ae884e447609" category="list-text"><block ref="81eb2602258c7f155c33ae884e447609" category="inline-link-macro-rx"></block></block>
   <block id="660ecf2355e5ff3c5a22d2e4a48594e8" category="inline-link-macro">Baixe relatórios de alerta, proteção, treinamento de prontidão, recuperação ou resumo</block>
   <block id="52210acbff73a572a2ca89fb77371615" category="paragraph">No NetApp Ransomware Resilience, você pode usar o NetApp Data Classification para verificar e classificar os dados em uma carga de trabalho de compartilhamento de arquivos. Classificar dados ajuda a determinar se o conjunto de dados inclui informações de identificação pessoal (PII), o que pode aumentar os riscos de segurança. A classificação de dados é um componente central do NetApp Console e está disponível sem custo adicional.</block>
   <block id="7b36da612c0e3a400f4daecc8016f21e" category="summary">Certifique-se de atender aos requisitos de licenciamento do Ransomware Resilience para proteger seus sistemas e cargas de trabalho.</block>
@@ -1719,7 +1705,6 @@
   <block id="2515e2bcc68e80666fa8c369e88f71e5" category="paragraph">Uma mensagem confirma que uma licença foi adicionada.</block>
   <block id="fca5751a0529f9987d0699648a97be3a" category="list-text">Se o Console não puder atualizar a licença automaticamente, você precisará carregar manualmente o arquivo de licença.</block>
   <block id="f8541056d6bacae1a78fb5d2b68c67a8" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>Comece com a resiliência contra ransomware</block>
-  <block id="7a7f05bb105ddcf9c0d221e37f8a923c" category="list-text">Para bloquear um usuário suspeito em seu ambiente, selecione *Bloquear* abaixo do nome do usuário.</block>
   <block id="bc8ffb69fb560086f529e0097158caad" category="admonition">Se você descartar um alerta, não poderá alterar seu status nem desfazer essa alteração.</block>
   <block id="7149ff1e14f0a158752906babaa08dc3" category="list-text">Para esse incidente, selecione o ícone de download para baixar a lista de arquivos afetados no formato CSV.</block>
   <block id="fe1bb8cb54f03cf7a69c3e9568118b30" category="list-text">O **coletor de dados** coleta dados de atividade do usuário do ONTAP.</block>
@@ -1819,7 +1804,6 @@
   <block id="0ba29c6a1afacf586b03a26162c72274" category="cell">Ambiente</block>
   <block id="888a77f5ac0748b6c8001822417df8b6" category="cell">Protocolo</block>
   <block id="b881921e058834170584afe9213c4c73" category="cell">Amazon FSx for NetApp ONTAP*</block>
-  <block id="c2b4bf8a420967336b99691646ef85e6" category="cell">NFS, CIFS e SAN</block>
   <block id="382b0f5185773fa0f67a8ed8056c7759" category="cell">N / D</block>
   <block id="096f3522cfa2f31de45d052b740adc65" category="cell">Cloud Volumes ONTAP para AWS</block>
   <block id="05bcab512eefa1e7e2cc2d1e45970a7d" category="cell">CIFS e NFS</block>
@@ -1945,7 +1929,6 @@
   <block id="8fe404d4b8af36b9844eb288d2706bbe" category="inline-link-macro">Gerencie alertas em Resiliência a Ransomware</block>
   <block id="869c8807275d576171cb34b892652da6" category="paragraph">Para mais informações, consulte <block ref="ca80a6cafecee489657bc722219fb267" category="inline-link-macro-rx"></block>.</block>
   <block id="22a81a009e8d21bf17e2788fdbfa4a6d" category="paragraph">O sistema Amazon FSx for NetApp ONTAP é compatível com o Ransomware Resilience. As seguintes limitações se aplicam ao Amazon FSx para ONTAP:</block>
-  <block id="e414901fbfa8ee419bbb8a9bf7c11320" category="list-text">As políticas de backup não são suportadas para o Amazon FSx para ONTAP. Neste ambiente, você deve executar operações de backup usando o Amazon FSx para backups. Você pode restaurar essas cargas de trabalho usando o Ransomware Resilience.</block>
   <block id="ab066b3292d8ab61ef3b5c77169cdd19" category="section-title">Mais informações</block>
   <block id="48bf90c5e99016f124c48c02a77dc8fd" category="inline-link-macro">Documentação sobre licenças e assinaturas do NetApp Console</block>
   <block id="0fa9a3c869139d736cd7d6df862b94e3" category="list-text"><block ref="0fa9a3c869139d736cd7d6df862b94e3" category="inline-link-macro-rx"></block></block>
@@ -2058,7 +2041,6 @@
   <block id="50723c157cd9ea132a02f421411e273d" category="list-text">*Política de replicação*:</block>
   <block id="f84245dfb1fc8217e62c0934102ba606" category="list-text">*Nome base da política de replicação*: Insira um novo nome ou escolha um existente. O nome base é o prefixo adicionado a todos os instantâneos.</block>
   <block id="d230465858c85552b6c5a5b1ef3bb21f" category="list-text">*Agendamentos de replicação*: Alterne as frequências que deseja ativar (por hora, diariamente, semanalmente ou mensalmente) e defina o valor de retenção (o número de snapshots replicados a serem mantidos) para cada agendamento ativado.</block>
-  <block id="228ec8f5cf8241b99a71e0c11689b0e6" category="list-text">Selecione as configurações de detecção desejadas: *Detecção de criptografia* *Detecção de comportamento suspeito do usuário* *Bloqueio de extensões de arquivo suspeitas*</block>
   <block id="447fce6406d4a8e99de98a2d5d107536" category="list-text">Se sua estratégia incluir replicação, selecione o **Sistema de destino** e a **VM de armazenamento de destino**. Selecione **Próximo**.</block>
   <block id="6f540707e47351a26c8e3c79ccce18ea" category="list-text">*Proteção*: Inclui o status e os detalhes de todas as cargas de trabalho, incluindo o número total de cargas protegidas e em risco.</block>
   <block id="38fc1b337c0ea26463916fc2913205c1" category="paragraph"><block ref="38fc1b337c0ea26463916fc2913205c1" category="inline-image-macro-rx" type="image"></block></block>
@@ -2067,7 +2049,6 @@
   <block id="872eaae7deb6035c20f9bfe6deefd03d" category="list-text">Se você precisar atualizar seus tokens de credenciais de login, também há uma opção *Atualizar credenciais* no<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block> menu.</block>
   <block id="667dffcf5676fe0bd645082d2a512fef" category="section-title">12 de janeiro de 2026</block>
   <block id="49fa679e35a13dc09de6805c384904d1" category="list-text">Para configurar uma política de backup, escolha uma e selecione **Avançar**.</block>
-  <block id="748b96a793ccf0ab113112372db17649" category="paragraph">A Resiliência contra Ransomware agora suporta a adição de replicação de snapshots para um site ONTAP secundário. Com grupos de proteção que utilizam uma política de replicação, você pode replicar para o mesmo destino ou para destinos diferentes para cada carga de trabalho. Você pode criar uma estratégia de proteção contra ransomware que inclua replicação ou usar a estratégia predefinida.</block>
   <block id="389e0c39aeda061370262a9fa330d865" category="doc">Volumes não suportados</block>
   <block id="7aedbf1b65f2bcaf699a2f7f37ba458b" category="paragraph">Os relatórios de Resiliência a Ransomware agora capturam informações sobre volumes suportados e não suportados no relatório **Resumo**. Utilize essas informações para diagnosticar por que os volumes de um sistema podem não ser elegíveis para proteção contra ransomware.</block>
   <block id="6a43554be5f7f046255a806f0d7cbba9" category="inline-link-macro">Baixe relatórios em Resiliência a Ransomware</block>
@@ -2170,4 +2151,63 @@
   <block id="f77c342afbfaabafce4f6d6b3c0fc25a" category="sidebar">Requisitos de atividade do usuário</block>
   <block id="851ba516be036ed05e26d4e1aa17e994" category="sidebar">Configurar agentes e coletores</block>
   <block id="f00a921e7dbbed8405cd9ce5fce914d3" category="list-text">*Chave SSH da VM* - Insira a chave SSH usando este formato:</block>
+  <block id="6180003c782f1663eb2df1464acac0bd" category="cell">CIFS, NFS e SAN</block>
+  <block id="691a3e8e2059e924160a8104310f552d" category="paragraph">Ransomware Resilience agora oferece suporte à adição de replicação de snapshots para um site ONTAP secundário. Com grupos de proteção que utilizam uma política de replicação, você pode replicar para o mesmo destino ou para destinos diferentes para cada carga de trabalho. Você pode criar uma estratégia de proteção contra ransomware que inclua replicação ou usar a estratégia predefinida.</block>
+  <block id="17dfbc312023bdd4da992d8e751e72ac" category="doc">Suporte do Azure NetApp Files</block>
+  <block id="ea2f778dfb597a4b527dac7e944ad95b" category="paragraph">O Ransomware Resilience agora oferece suporte a sistemas Azure NetApp Files, permitindo que você detecte e responda a ameaças de ransomware no Azure NetApp Files com eficiência. Ao descobrir cargas de trabalho, o Ransomware Resilience agora apresenta Azure NetApp Files e as exibe no painel de proteção. O suporte do Ransomware Resilience para Azure NetApp Files inclui estratégias de detecção e proteção apenas com snapshots. O suporte para Azure NetApp Files está atualmente em versão prévia.</block>
+  <block id="5e0e68da0b873ce6ac5da97de07de426" category="paragraph">Para obter mais informações, consulte o link: para obter mais informações, consulte <block ref="d50b16a5274f0acc6be171c51d532ef9" category="inline-link-macro-rx"></block>.</block>
+  <block id="533173be617e8e70b39c22d6b639f1ef" category="section-title">Excluir usuários dos alertas de comportamento do usuário</block>
+  <block id="34db265ea1c563cd1e8fec4196fdd55a" category="paragraph">Ransomware Resilience agora permite que você exclua usuários específicos dos alertas de comportamento do usuário. Excluir usuários confiáveis pode evitar falsos positivos e alertas desnecessários.</block>
+  <block id="0801620ca1af462c0fd534ad95bfa3b0" category="inline-link-macro">Excluir usuários dos alertas</block>
+  <block id="628cc6a9c569438d880eccc1e4a778da" category="paragraph">Para obter mais informações, consulte o link: Para obter mais informações, consulte <block ref="dfd47d5e016db97d5fa8c5e4a7bd25f8" category="inline-link-macro-rx"></block>.</block>
+  <block id="366a951452a8cc6f0127d24e9230c837" category="section-title">Suporte de grupo de proteção para atividade de comportamento do usuário</block>
+  <block id="3393700830226a018a19341bd00d6fa7" category="paragraph">Os grupos de proteção Ransomware Resilience agora oferecem suporte a políticas de detecção para detecção de comportamento suspeito do usuário. Ao aplicar uma estratégia de proteção contra ransomware a um grupo de proteção, ela aplica uma política em todas as cargas de trabalho, simplificando o gerenciamento da sua postura de cibersegurança.</block>
+  <block id="e37ee5388292007ad9d3935327219122" category="paragraph">Para mais informações, consulte <block ref="5988324edfd7d92a7675cb7a08ac2a7e" category="inline-link-macro-rx"></block>.</block>
+  <block id="58c30bd4c949be43357ab1b7557703b5" category="list-text">As políticas de backup não são compatíveis com Amazon FSx for ONTAP. Nesse ambiente, você deve executar operações de backup usando o Amazon FSx for backups. Você pode restaurar essas cargas de trabalho usando Ransomware Resilience.</block>
+  <block id="2a0c2a157bd80927f000333567138b57" category="section-title">Limitações do Azure NetApp Files</block>
+  <block id="9ccc8d744240b4ff1c9fb964a84a7d3c" category="paragraph">Azure NetApp Files é compatível com Ransomware Resilience. As seguintes limitações se aplicam ao Azure NetApp Files:</block>
+  <block id="b285edab772b215df16e97f47e6cf852" category="list-text">Estratégias de proteção contra ransomware com políticas de backup não são compatíveis com o Azure NetApp Files. Em vez disso, você pode usar Azure NetApp Files backup.</block>
+  <block id="af5eb4e584c938e9f8b3531d944e3a59" category="list-text">Estratégias de proteção contra ransomware com replicação não são suportadas para Azure NetApp Files.</block>
+  <block id="1c312af1f49befaddd00883a617fa8ba" category="list-text">Ao selecionar uma estratégia de proteção, certifique-se de que sua programação de snapshots seja compatível com o Azure NetApp Files. A programação de snapshots mais frequente disponível no Azure NetApp Files é a cada hora.</block>
+  <block id="e02189957b252d42e679aa66d35030cd" category="list-text"><block ref="e02189957b252d42e679aa66d35030cd" category="inline-link-macro-rx"></block></block>
+  <block id="bf1ffe0e445fb2a07fc3757d6ae841ec" category="list-text">Para bloquear um usuário suspeito em seu ambiente, selecione *Block* ao lado do nome do usuário.</block>
+  <block id="0f20f1de24e002ee03e9a0d693faaf59" category="list-text">Para desativar os alertas de um determinado usuário que é alvo de um alerta que você sabe ser falso, selecione os três pontos <block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>) e, em seguida, **Excluir este usuário do monitoramento**. Revise a caixa de diálogo e selecione **Excluir** para confirmar.</block>
+  <block id="c65a69d50600a3f76ccdd1109d15b6e3" category="inline-link-macro">Excluir usuários</block>
+  <block id="d632bf28d8164d0436ca05f069b989e9" category="admonition">Para reativar os alertas para um usuário, retorne o alerta. Selecione os três pontos e então **Incluir este usuário no monitoramento**. Você também pode <block ref="e33a84d4132808c30f0e6b091e9f7e88" category="inline-link-macro-rx"></block> do monitoramento.</block>
+  <block id="fb7f1789c81ab5377f72e16f6b9384ad" category="inline-link-macro">as limitações para cada serviço</block>
+  <block id="771abd282157ca2dcc3c9f4d73d158c2" category="admonition">Se você estiver configurando estratégias de proteção para Amazon FSxN para ONTAP e Azure NetApp Files, consulte <block ref="f35eaad9edb95ec2be22c4403bf0d360" category="inline-link-macro-rx"></block>.</block>
+  <block id="3adbdb581af927d3972b2f1c8cfb96a6" category="admonition">Os destinos de backup não estão disponíveis para cargas de trabalho no Amazon FSx for NetApp ONTAP ou Azure NetApp Files. Realize operações de backup usando o serviço de backup do FSx for ONTAP. Você define políticas de backup para cargas de trabalho no FSx for ONTAP na AWS, não no Ransomware Resilience. As políticas de backup aparecem no Ransomware Resilience e permanecem inalteradas em relação à AWS.</block>
+  <block id="3bc2d94b3185bcb1259a8b3cf7da880b" category="list-text">Selecione as configurações de detecção que você deseja:</block>
+  <block id="d5fc4bf8c0e9a03cea6fbde26d8608f2" category="list-text">Selecione a política para reger a proteção deste grupo.</block>
+  <block id="e468b341048b440bba27f4904f7a59c4" category="paragraph">Na guia de configurações de NetApp Ransomware Resilience, você pode configurar destinos de backup, realizar um exercício de preparação para ataques, configurar a descoberta de cargas de trabalho ou configurar a detecção de atividades suspeitas do usuário.</block>
+  <block id="04ba211304888e157a1517c86860bd73" category="list-text">Configure o relatório de atividades suspeitas do usuário. Para mais informações, consulte <block ref="da26800578b610b8b3390e49bb643377" category="inline-link-macro-rx"></block>.</block>
+  <block id="5d8eeee45929294781013d6d152aae8a" category="inline-link-macro">Conecte NetApp Ransomware Resilience a um SIEM</block>
+  <block id="143fb46cdff0222e6e176aa99a0f923e" category="list-text">Conecte seu sistema de gerenciamento de eventos e segurança (SIEM) para análise e detecção de ameaças. Habilitar a detecção de ameaças envia automaticamente dados para o seu SIEM para análise de ameaças. Para mais informações, consulte <block ref="c7d7e4de61d3da74895aed14b126475d" category="inline-link-macro-rx"></block>.</block>
+  <block id="fb12d4a7a4843715dd8c19d7dd88935d" category="admonition">Os destinos de backup não estão disponíveis para cargas de trabalho no Amazon FSx for NetApp ONTAP nem no Azure NetApp Files. Realize operações de backup usando soluções de backup nativas: FSx for ONTAP backup service ou Azure NetApp Files backupss.</block>
+  <block id="eb7705f4441056c554dc7aea52de0b17" category="paragraph">Se houver determinados usuários confiáveis cujo comportamento possa acionar alertas de comportamento do usuário, você pode excluí-los dos alertas.</block>
+  <block id="0189c7f085ff5d22843080df2225281b" category="list-text">No painel de Configurações, localize o cartão Atividade do usuário e selecione **Manage**.</block>
+  <block id="82694a5fa079406313056daf01f9118b" category="list-text">Selecione a guia **Usuários excluídos**.</block>
+  <block id="de13c27fd58614b060a46c2092ed0545" category="list-text">Para visualizar usuários individuais na interface do usuário, escolha **Selecionar manualmente**. Para carregar uma lista de usuários excluídos, selecione **Carregar**.</block>
+  <block id="9dd5e919daf597022ca9ace5ebd739e9" category="list-text">Se você selecionou **Select manually**, marque a caixa de seleção ao lado dos nomes dos usuários específicos que deseja excluir.</block>
+  <block id="d2b1df006cba7f480a48064be15b71ec" category="list-text">Se você selecionar **Upload**, primeiro deverá baixar um arquivo CSV que inclui a lista de todos os usuários. Selecione **Download** para acessar a lista.</block>
+  <block id="f44e20ff3f0d285a050e5f4e9dc1267f" category="paragraph">Analise o arquivo CSV. Remova os nomes de todos os usuários para os quais você deseja manter a detecção. Quando a lista contiver apenas os nomes dos usuários que você deseja excluir da detecção, salve-a. Selecione **Carregar** para localizar o arquivo e, em seguida, escolha-o.</block>
+  <block id="8641c2055d546da7c2e15e6d18bc9016" category="list-text">Selecione **Adicionar** para concluir a inclusão dos usuários na lista de exclusão.</block>
+  <block id="98e062a77fcb05260f463a017f171f72" category="list-text">Na aba **Usuários excluídos**, os nomes dos usuários removidos dos alertas de detecção de comportamento do usuário agora são exibidos no dashboard.</block>
+  <block id="bf7da00a56585a6a89ff8f8184dfd6fd" category="inline-link-macro">Responder a alertas de ransomware</block>
+  <block id="face5a9388d96715a2df2a403febcfad" category="admonition">Você também pode excluir um usuário diretamente de um alerta. Para mais informações, consulte <block ref="56429daef20ebac0c2b98002f6d61934" category="inline-link-macro-rx"></block>.</block>
+  <block id="0b09185e7ecba92cf7f8f0712501db0b" category="section-title">Remova usuários da lista de usuários excluídos</block>
+  <block id="3ba04eb11eb815c62355b0a9cb7b05e5" category="paragraph">Você pode adicionar um usuário de volta à detecção depois.</block>
+  <block id="144c603fbbde0985023a4ea73e22e35b" category="list-text">Localize o nome do usuário que deseja remover da seleção de usuários excluídos. Selecione o menu de ações <block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>) na linha com o nome do usuário e então **Remover**.</block>
+  <block id="581c5c550f20f231f6c9e881e699829b" category="list-text">Na caixa de diálogo, selecione **Remove** para confirmar que deseja remover os usuários selecionados.</block>
+  <block id="90c78a95b0a3dffc0aa664d3139d1369" category="summary">Você pode enviar automaticamente dados do NetApp Ransomware Resilience para o seu sistema de gerenciamento de segurança e eventos (SIEM) para análise e detecção de ameaças.</block>
+  <block id="2e83d7690079c133e11ad37c5e4ff93e" category="doc">Conecte NetApp Ransomware Resilience ao sistema de gerenciamento de segurança e eventos (SIEM) para análise e detecção de ameaças</block>
+  <block id="7be8ef49fa437b6a669fb54a081312c4" category="paragraph">Ransomware Resilience é compatível com os seguintes SIEMs:</block>
+  <block id="03883d80013dc0b2b972eccd5b93b56f" category="list-text">AWS Security Hub</block>
+  <block id="11759e65f10609550e1a85679db960a9" category="list-text">Microsoft Sentinel</block>
+  <block id="a60efb4483a892cd919ec4e745900e2d" category="list-text">Splunk Cloud</block>
+  <block id="46fa98b3b308dc6f48d40cf8b1712bfe" category="section-title">Dados de eventos enviados para um SIEM</block>
+  <block id="cfa147fb3f8ac9012f43e41767ad8241" category="paragraph">Antes de habilitar o AWS Security Hub em NetApp Ransomware Resilience, você precisa executar as seguintes etapas gerais no AWS Security Hub:</block>
+  <block id="2787b10f438b5f28e340793feb9becb6" category="paragraph">Antes de habilitar o Microsoft Sentinel em NetApp Ransomware Resilience, você precisa executar as seguintes etapas gerais no Microsoft Sentinel:</block>
+  <block id="fb042b7b99959e391eeb7c417511098a" category="section-title">16 de fevereiro de 2026</block>
+  <block id="51f5590fac3af82049df229fcb91793c" category="sidebar">Configurar SIEM</block>
 </blocks>
