@@ -97,9 +97,6 @@ Aqui está uma amostra das recomendações que o Ransomware Resilience oferece.
 | Conecte-se ao SIEM para relatórios de ameaças. | Envie dados para um sistema de gerenciamento de segurança e eventos (SIEM) para análise e detecção de ameaças. | Insira os detalhes do servidor SIEM/XDR para habilitar a detecção de ameaças. Consulte link:rp-use-settings.html["Configurar definições de proteção"] . 
 
 
-| Habilite proteção consistente com a carga de trabalho para aplicativos ou VMware. | Essas cargas de trabalho não são gerenciadas pelo SnapCenter Software ou pelo SnapCenter Plug-in for VMware vSphere. | Para que eles sejam gerenciados pelo SnapCenter, ative a proteção consistente com a carga de trabalho. Consulte link:rp-use-protect.html["Proteja a carga de trabalho contra ataques de ransomware"] . 
-
-
 | Melhore a postura de segurança do sistema | O NetApp Digital Advisor identificou pelo menos um risco de segurança alto ou crítico. | Revise todos os riscos de segurança no NetApp Digital Advisor. Consulte https://docs.netapp.com/us-en/active-iq/index.html["Documentação do Digital Advisor"^] . 
 
 
@@ -112,13 +109,7 @@ Aqui está uma amostra das recomendações que o Ransomware Resilience oferece.
 | Proteja cargas de trabalho de aplicativos críticos ou altamente importantes contra ransomware. | A página Proteger exibe cargas de trabalho de aplicativos críticas ou altamente importantes (com base no nível de prioridade atribuído) que não estão protegidas. | Atribua uma política a essas cargas de trabalho. Consulte link:rp-use-protect.html["Proteja cargas de trabalho contra ataques de ransomware"] . 
 
 
-| Proteja cargas de trabalho de compartilhamento de arquivos críticos ou altamente importantes contra ransomware. | A página Proteção exibe cargas de trabalho críticas ou altamente importantes do tipo Compartilhamento de Arquivos ou Armazenamento de Dados que não estão protegidas. | Atribua uma política a cada uma das cargas de trabalho. Consulte link:rp-use-protect.html["Proteja cargas de trabalho contra ataques de ransomware"] . 
-
-
-| Registre o plugin SnapCenter disponível para VMware vSphere (SCV) com o Console | Uma carga de trabalho de VM não é protegida. | Atribua proteção consistente de VM à carga de trabalho da VM habilitando o SnapCenter Plugin para VMware vSphere. Consulte link:rp-use-protect.html["Proteja cargas de trabalho contra ataques de ransomware"] . 
-
-
-| Registre o SnapCenter Server disponível com o Console | Um aplicativo não está protegido. | Atribua proteção consistente com o aplicativo à carga de trabalho habilitando o SnapCenter Server. Consulte link:rp-use-protect.html["Proteja cargas de trabalho contra ataques de ransomware"] . 
+| Proteja cargas de trabalho de compartilhamento de arquivos críticos ou altamente importantes contra ransomware. | A página Proteção exibe cargas de trabalho críticas ou altamente importantes do tipo Compartilhamento de Arquivos ou Armazenamento de Dados que não estão protegidas. | Atribua uma política a cada uma das cargas de trabalho. Consulte link:rp-use-protect.html["Proteja cargas de trabalho contra ataques de ransomware"]. Consulte link:rp-use-protect.html["Proteja cargas de trabalho contra ataques de ransomware"]. Consulte link:rp-use-protect.html["Proteja cargas de trabalho contra ataques de ransomware"]. 
 
 
 | Revise novos alertas. | Existem novos alertas. | Revise os novos alertas. Consulte link:rp-use-alert.html["Responder a um alerta de ransomware detectado"] . 

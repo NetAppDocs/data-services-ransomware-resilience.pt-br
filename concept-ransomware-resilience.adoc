@@ -108,7 +108,7 @@ Saiba mais sobre olink:https://docs.netapp.com/us-en/console-setup-admin/concept
 
 == Como funciona a resiliência do ransomware
 
-O Ransomware Resilience usa o NetApp Backup and Recovery para descobrir e definir políticas de backup e snapshot para cargas de trabalho de compartilhamento de arquivos, e o SnapCenter ou SnapCenter for VMware para descobrir e definir políticas de backup e snapshot para cargas de trabalho de aplicativos e VMs.  Além disso, o Ransomware Resilience usa o Backup and Recovery e o SnapCenter / SnapCenter for VMware para executar uma recuperação consistente de arquivos e cargas de trabalho.
+Ransomware Resilience usa NetApp Backup and Recovery para descobrir e definir políticas de snapshot e backup para cargas de trabalho de compartilhamento de arquivos.
 
 image:diagram-rp-architecture-preview3.png["Diagrama mostrando a arquitetura de resiliência do Ransomware"]
 
@@ -119,7 +119,7 @@ image:diagram-rp-architecture-preview3.png["Diagrama mostrando a arquitetura de 
 
 | *IDENTIFICAR*  a| 
 * Encontra todos os dados NAS (protocolos NFS e CIFS) locais do cliente, SAN (FC, iSCSI e NVMe) e Cloud Volumes ONTAP conectados ao Console.
-* Identifica dados de clientes das APIs de serviço ONTAP e SnapCenter e os associa a cargas de trabalho.  Saiba mais sobre https://docs.netapp.com/us-en/ontap-family/["ONTAP"^] e https://docs.netapp.com/us-en/snapcenter/index.html["Software SnapCenter"^] .
+* Identifica dados de clientes do ONTAP e SnapCenter service APIs e os associa a cargas de trabalho. Saiba mais sobre  https://docs.netapp.com/us-en/ontap-family/["ONTAP"^].
 * Descobre o nível de proteção atual de cada volume de cópias de snapshots e políticas de backup do NetApp , bem como quaisquer recursos de detecção on-box. A Resiliência contra Ransomware associa essa postura de proteção às cargas de trabalho usando Backup e Recuperação, serviços ONTAP e tecnologias NetApp , como Proteção Autônoma contra Ransomware (ARP ou ARP/AI, dependendo da sua versão do ONTAP ), FPolicy, políticas de backup e políticas de snapshot.  Saiba mais sobre https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Proteção Autônoma contra Ransomware"^] , https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["NetApp Backup and Recovery"^] , e https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["Política ONTAP"^] .
 * Atribui uma prioridade empresarial a cada carga de trabalho com base em níveis de proteção descobertos automaticamente e recomenda políticas de proteção para cargas de trabalho com base em sua prioridade empresarial.  A prioridade da carga de trabalho é baseada nas frequências de snapshot já aplicadas a cada volume associado à carga de trabalho.
 
@@ -127,7 +127,7 @@ image:diagram-rp-architecture-preview3.png["Diagrama mostrando a arquitetura de 
 
 
 | *PROTEGER*  a| 
-* Monitora ativamente as cargas de trabalho e orquestra o uso de APIs de backup e recuperação, SnapCenter e ONTAP aplicando políticas a cada uma das cargas de trabalho identificadas.
+* Monitora ativamente as cargas de trabalho e orquestra o uso das APIs de Backup and Recovery e ONTAP, aplicando políticas a cada uma das cargas de trabalho identificadas.
 
 
 
@@ -235,8 +235,6 @@ O Ransomware Resilience protege as seguintes cargas de trabalho baseadas em apli
 * Compartilhamentos de arquivos NetApp
 * Armazenamentos de dados VMware
 
-
-Se você estiver usando o SnapCenter ou o SnapCenter para VMware, todas as cargas de trabalho compatíveis com esses produtos também serão identificadas no Ransomware Resilience. O Ransomware Resilience pode proteger e recuperar esses dados de maneira consistente com a carga de trabalho.
 
 
 

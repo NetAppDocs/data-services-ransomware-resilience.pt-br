@@ -1,0 +1,108 @@
+---
+sidebar: sidebar 
+permalink: task-protection-group 
+keywords: ransomware protection, protection group, modify, create, 
+summary: Você pode proteger cargas de trabalho contra ataques de ransomware atribuindo políticas a uma carga de trabalho no NetApp Ransomware Resilience. 
+---
+= Gerenciar grupos de proteção em NetApp Ransomware Resilience
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilience oferece grupos de proteção para facilitar o gerenciamento do seu conjunto de dados. Grupos de proteção são agrupamentos lógicos de cargas de trabalho. Ransomware Resilience pode proteger todos os volumes em um grupo de proteção ao mesmo tempo com uma única estratégia de proteção, poupando você de aplicar uma estratégia a cada carga de trabalho.
+
+*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^] .
+
+
+
+== Crie um grupo de proteção
+
+Você pode criar grupos independentemente do status de proteção (ou seja, grupos não protegidos e grupos protegidos). Ao adicionar uma política de proteção a um grupo de proteção, a nova política substitui qualquer política existente, incluindo políticas gerenciadas NetApp Backup and Recovery.
+
+.Passos
+. No menu Resiliência contra Ransomware, selecione *Proteção*.
++
+image:screen-protection.png["Gerenciar página de estratégia"]
+
+. No painel de proteção, selecione a guia *Protection groups*.
++
+image:screen-protection-groups.png["Página de grupos de proteção"]
+
+. Selecione *Adicionar*.
++
+image:screen-protection-groups-add.png["Adicionar página de grupo de proteção"]
+
+. Digite um nome para o grupo de proteção.
+. Selecione as cargas de trabalho a serem adicionadas ao grupo.
++
+
+TIP: Para ver mais detalhes sobre as cargas de trabalho, role para a direita.
+
+. Selecione *Avançar*.
++
+image:screen-protection-groups-policy.png["Adicionar grupo de proteção - página Política"]
+
+. Selecione uma estratégia de proteção para o grupo.
+. Se a estratégia de proteção incluir replicação, revise as configurações de replicação.
++
+.. Para replicar todos os snapshots para o mesmo destino, marque a opção **Usar o mesmo destino para cada carga de trabalho**. Selecione um *Sistema de destino* e uma *VM de armazenamento de destino* para as cargas de trabalho na seção Agente do console. Para usar destinos diferentes, desmarque essa caixa. Analise cada carga de trabalho em cada agente do Console e atribua um *Sistema de destino* e uma *VM de armazenamento de destino* para cada carga de trabalho. Selecione **Próximo**.
+
+
+. Para configurar uma política de backup, escolha uma e selecione **Avançar**.
+. Se sua política de detecção incluir detecção de comportamento do usuário, selecione o coletor de dados que deseja usar e depois **Avançar**.
+. Revise as seleções para o grupo de proteção.
+. Para finalizar o grupo de proteção, selecione *Add*.
+
+
+
+
+=== Editar proteção de grupo
+
+Você pode alterar a política de detecção em um grupo existente.
+
+.Passos
+. No menu Resiliência contra Ransomware, selecione *Proteção*.
+. Na página Proteção, selecione a aba *Grupos de proteção* e selecione o grupo cuja política você deseja modificar.
+. Na página de visão geral do grupo de proteção, selecione *Editar proteção*.
+. Selecione uma política de proteção existente para aplicar ou selecione **Adicionar** para criar uma nova política de proteção. Para obter mais informações sobre como adicionar uma política de proteção, consulte link:rp-use-protect.html#add-a-ransomware-protection-strategy["Crie uma política de proteção"]. Em seguida, selecione **Salvar**.
+. Na visão geral do destino de backup, selecione um destino de backup existente ou **Adicione um novo destino de backup**.
+. Selecione **Avançar** para revisar suas alterações.
+
+
+
+
+== Remover cargas de trabalho de um grupo de proteção
+
+Posteriormente, pode ser necessário remover cargas de trabalho de um grupo de proteção existente.
+
+.Passos
+. No menu Resiliência contra Ransomware, selecione *Proteção*.
+. Na página Proteção, selecione a aba *Grupos de proteção*.
+. Selecione o grupo do qual você deseja remover uma ou mais cargas de trabalho.
++
+image:screen-protection-groups-more-workloads.png["Página de detalhes do grupo de proteção"]
+
+. Na página do grupo de proteção, selecione a carga de trabalho que deseja remover do grupo e selecione a opção *Ações* image:screenshot_horizontal_more_button.gif["Botão de ações"].
+. No menu Ações, selecione *Remover carga de trabalho*.
+. Confirme que deseja remover a carga de trabalho e selecione *Remover*.
+
+
+
+
+== Excluir um grupo de proteção
+
+Ao excluir um grupo de proteção, o Ransomware Resilience remove o grupo e a estratégia de proteção das cargas de trabalho. Ele não exclui as cargas de trabalho individuais.
+
+.Passos
+. No menu Resiliência contra Ransomware, selecione *Proteção*.
+. Na página Proteção, selecione a aba *Grupos de proteção*.
+. Selecione o grupo do qual você deseja remover uma ou mais cargas de trabalho.
++
+image:screen-protection-groups-more-workloads.png["Página de detalhes do grupo de proteção"]
+
+. Na página do grupo de proteção selecionado, no canto superior direito, selecione *Excluir grupo de proteção*.
+. Confirme que deseja excluir o grupo e selecione *Excluir*.
+
