@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: task-protection-group 
+permalink: task-protection-group.html 
 keywords: ransomware protection, protection group, modify, create, 
 summary: Você pode proteger cargas de trabalho contra ataques de ransomware atribuindo políticas a uma carga de trabalho no NetApp Ransomware Resilience. 
 ---

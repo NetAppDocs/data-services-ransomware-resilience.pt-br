@@ -62,7 +62,7 @@ Essas tarefas exigem a função _Administrador de resiliência contra ransomware
 Depois de configurar a proteção no Ransomware Resilience, veja o que você pode fazer em seguida.
 
 [role="quick-margin-list"]
-* link:rp-use-protect-classify.html["Habilitar a classificação de dados para identificar riscos de governança e segurança"]
+* link:task-classify.html["Habilitar a classificação de dados para identificar riscos de governança e segurança"]
 * link:task-siem.html["Enviar alertas para SIEM"]
 * link:rp-use-reports.html["Baixe relatórios de alerta, proteção, treinamento de prontidão, recuperação ou resumo"]
 

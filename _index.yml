@@ -41,7 +41,7 @@ indexpage:
     - title: Proteja as cargas de trabalho
       url: "/rp-use-protect.html"
     - title: Procure informações de identificação pessoal com a NetApp Data Classification
-      url: "/rp-use-protect-classify.html"
+      url: "/task-classify.html"
     - title: Responder a um alerta detectado
       url: "/rp-use-alert.html"
     - title: Recuperar-se de um ataque

@@ -244,26 +244,6 @@ A cada 30 dias
 | 60 | 2 | 93 
 
 
-.4+| *Extensão de usuário de criptografia*  a| 
-A cada quarto de hora
-| A cada 30 minutos | 3 | 72 | 93 
-
-
-| Diário  a| 
-A cada 1 dia
-| 14 | 14 | 93 
-
-
-| Semanalmente  a| 
-A cada 1 semana
-| 35 | 5 | 93 
-
-
-| Mensal  a| 
-A cada 30 dias
-| 60 | 2 | 93 
-
-
 .4+| *Política de replicação crítica*  a| 
 A cada quarto de hora
 | A cada 15 minutos | 3 | 288 | 309 

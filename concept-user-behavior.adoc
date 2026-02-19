@@ -39,7 +39,7 @@ image:all-file-activity.png["Captura de tela da visualização de todas as ativi
 Existem três componentes principais na detecção de atividades suspeitas de comportamento do usuário em Ransomware Resilience.
 
 * O **agente de atividade do usuário** é um ambiente executável para coletores de dados. Você deve configurar o agente de atividade do usuário.
-* O **coletor de dados** compartilha eventos de atividade do usuário com o Ransomware Resilience. O coletor de dados é criado automaticamente quando você xref:rp-use-protect.adoc#add-a-detection-policy-to-workloads-with-existing-snapshot-and-backup-policies-managed-by-snapcenter-or-backup-and-recovery[Habilite uma estratégia de proteção contra ransomware com detecção de atividade suspeita do usuário].
+* O **coletor de dados** compartilha eventos de atividade do usuário com o Ransomware Resilience. O coletor de dados é criado automaticamente quando você link:rp-use-protect.html#add-a-detection-policy-to-workloads-with-existing-backup-or-snapshot-policies["Habilite uma estratégia de proteção contra ransomware com detecção de atividade suspeita do usuário"].
 * O **conector de diretório de usuários** permite o mapeamento entre nomes de usuário e IDs de usuário, proporcionando maior clareza ao responder a comportamentos suspeitos de usuários. Você deve configurar o conector de diretório de usuários.
 
 
