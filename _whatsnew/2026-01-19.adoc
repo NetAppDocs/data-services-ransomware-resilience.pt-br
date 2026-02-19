@@ -6,6 +6,6 @@
 
 === Volumes não suportados
 
-Os relatórios de Resiliência a Ransomware agora capturam informações sobre volumes suportados e não suportados no relatório **Resumo**. Utilize essas informações para diagnosticar por que os volumes de um sistema podem não ser elegíveis para proteção contra ransomware.
+Os relatórios de Ransomware Resilience agora capturam informações sobre volumes suportados e não suportados no relatório **Summary**. Use essas informações para diagnosticar por que volumes em um sistema podem não ser elegíveis para ransomware protection.
 
 Para mais informações, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-reports.html["Baixe relatórios em Resiliência a Ransomware"^].

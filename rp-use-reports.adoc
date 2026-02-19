@@ -12,7 +12,7 @@ summary: Usando o NetApp Ransomware Resilience, você pode baixar relatórios qu
 
 
 [role="lead"]
-Você pode exportar dados de proteção e baixar os arquivos CSV ou JSON que mostram detalhes de exercícios de prontidão para ataques, proteção, alertas e recuperação.
+NetApp Ransomware Resilience fornece relatórios em formatos CSV e JSON que mostram detalhes de volumes suportados e não suportados, simulações de prontidão para ataques, proteção, alertas e recuperação. Com relatórios, você pode salvar e revisar relatórios offline sobre simulações, nível de proteção, alertas e eventos de recuperação.
 
 
 TIP: Antes de baixar os arquivos, atualize o painel para obter os dados mais recentes em seus relatórios.

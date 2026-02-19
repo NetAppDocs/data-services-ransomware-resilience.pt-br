@@ -12,7 +12,7 @@ summary: Você pode proteger cargas de trabalho contra ataques de ransomware atr
 
 
 [role="lead"]
-Você pode proteger cargas de trabalho contra ataques de ransomware habilitando a proteção consistente da carga de trabalho ou criando estratégias de proteção contra ransomware no NetApp Ransomware Resilience.
+As estratégias de proteção contra ransomware são um recurso fundamental do NetApp Ransomware Resilience: elas dão suporte à detecção, proteção e replicação. As estratégias de proteção são uma parte essencial da sua postura de cibersegurança.
 
 *Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^] .
 
@@ -61,92 +61,9 @@ NOTE: Os destinos de backup não estão disponíveis para cargas de trabalho no 
 
 
 
-=== Políticas de proteção para cargas de trabalho não protegidas por aplicativos NetApp
+==== Políticas de proteção para cargas de trabalho não protegidas por aplicativos NetApp
 
 Se sua carga de trabalho não for gerenciada pelo NetApp Backup and Recovery ou pelo NetApp Ransomware Resilience, ela pode ter snapshots criados como parte do ONTAP ou de outros produtos. Se a proteção FPolicy do ONTAP estiver em vigor, você pode alterá-la usando o ONTAP.
-
-
-
-== Visualizar proteção contra ransomware em uma carga de trabalho
-
-Uma das primeiras etapas para proteger cargas de trabalho é visualizar suas cargas de trabalho atuais e seu status de proteção.  Você pode ver os seguintes tipos de cargas de trabalho:
-
-* Cargas de trabalho de aplicativos
-* Cargas de trabalho em bloco
-* Cargas de trabalho de compartilhamento de arquivos
-* Cargas de trabalho de VM
-
-
-.Passos
-. Na navegação à esquerda do Console, selecione *Proteção* > *Resiliência a Ransomware*.
-. Faça um dos seguintes:
-+
-** No painel Proteção de Dados do Painel, selecione *Exibir tudo*.
-** No menu, selecione *Proteção*.
-+
-image:screen-protection.png["Página de proteção"]
-
-
-
-. Nesta página, você pode visualizar e alterar os detalhes de proteção da carga de trabalho.
-
-
-
-NOTE: Veja link:#add-a-ransomware-protection-strategy["Adicione uma estratégia de proteção contra ransomware"] para saber como usar a Resiliência a Ransomware quando já existe uma política de proteção com Backup e Recovery.
-
-
-
-=== Entenda a página Proteção
-
-A página Proteção mostra as seguintes informações sobre proteção de carga de trabalho:
-
-*Status de proteção*: Uma carga de trabalho pode mostrar um dos seguintes status de proteção para indicar se uma política é aplicada ou não:
-
-* *Protegido*: Uma política é aplicada.  O ARP (ou ARP/AI, dependendo da versão do ONTAP ) é habilitado em todos os volumes relacionados à carga de trabalho.
-* *Em risco*: Nenhuma política é aplicada.  Se uma carga de trabalho não tiver uma política de detecção primária habilitada, ela estará "em risco", mesmo que tenha uma política de snapshot e backup habilitada.
-* *Em andamento*: Uma política está sendo aplicada, mas ainda não foi concluída.
-* *Falha*: Uma política foi aplicada, mas não está funcionando.
-
-
-*Status de detecção*: Uma carga de trabalho pode ter um dos seguintes status de detecção de ransomware:
-
-* *Aprendizado*: Uma política de detecção de ransomware foi recentemente atribuída à carga de trabalho e o Ransomware Resilience está verificando as cargas de trabalho.
-* *Ativo*: Uma política de proteção contra detecção de ransomware está atribuída.
-* *Não definido*: Uma política de proteção de detecção de ransomware não foi atribuída.
-* *Erro*: Uma política de detecção de ransomware foi atribuída, mas o Ransomware Resilience encontrou um erro.
-+
-
-TIP: Quando a proteção está habilitada no Ransomware Resilience, a detecção de alertas e os relatórios começam depois que o status da política de detecção de ransomware muda do modo de aprendizagem para o modo ativo.
-
-
-
-
-NOTE: Atividades suspeitas de comportamento do usuário e atividades relacionadas ao FPolicy (extensões de arquivo suspeitas) são listadas separadamente do status de detecção.
-
-*Política de detecção*: O nome da política de detecção de ransomware aparece, se uma tiver sido atribuída.  Se a política de detecção não tiver sido atribuída, "N/A" aparecerá.
-
-*Destino da replicação*: Se você configurou a replicação de snapshots, os nomes das VMs e dos sistemas de armazenamento de destino serão listados. Se não houver replicação, este campo exibirá "Nenhum".
-
-*Políticas de Snapshot, replicação e backup*: Esta coluna mostra as políticas de snapshot e backup aplicadas à carga de trabalho e o produto ou serviço que está gerenciando essas políticas.
-
-* Gerenciado pelo SnapCenter
-* Gerenciado pelo SnapCenter Plug-in for VMware vSphere
-* Gerenciado por Backup e Recuperação
-* Nome da política de proteção contra ransomware que rege instantâneos e backups
-* Nenhum
-
-
-
-NOTE: Não é possível gerenciar a recuperação no Ransomware Resilience para nenhuma política do SnapCenter.
-
-*Importância da carga de trabalho*
-
-A resiliência ao ransomware atribui uma importância ou prioridade a cada carga de trabalho durante a descoberta com base em uma análise de cada carga de trabalho.  A importância da carga de trabalho é determinada pelas seguintes frequências de snapshot:
-
-* *Crítico*: Mais de uma cópia instantânea é feita por hora (cronograma de proteção altamente agressivo)
-* *Importante*: Cópias de snapshots são criadas com menos frequência do que a cada hora, mas com mais frequência do que a cada dia.
-* *Padrão*: Cópias instantâneas são tiradas mais de uma vez por dia.
-
 
 
 
@@ -394,11 +311,11 @@ image:screen-protection.png["Gerenciar página de estratégia"]
 . Para manter seu Backup and Recovery existente e aplicar apenas uma política de _detection_, deixe a caixa **Replace existing policies** desmarcada.
 . Selecione as configurações de detecção que você deseja:
 +
-....
-*Encryption detection*
-*Suspicious user behavior detection*
-*Block suspicious file extensions*
-....
+** *Detecção de criptografia*
+** *Detecção de comportamento suspeito do usuário*
+** *Bloquear extensões de arquivo suspeitas*
+
+
 . Selecione **Avançar**.
 . Se você selecionou *Detecção de comportamento suspeito do usuário* como uma configuração de detecção, selecione o agente de atividade do usuário ou link:suspicious-user-activity.html#create-a-user-activity-agent["ou criar um"].
 +

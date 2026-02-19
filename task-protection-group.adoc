@@ -58,6 +58,9 @@ image:screen-protection-groups-policy.png["Adicionar grupo de proteção - pági
 
 
 
+TIP: Ao revisar o painel de proteção no Ransomware Resilience, você pode classificar as cargas de trabalho por grupo de proteção.
+
+
 
 === Editar proteção de grupo
 

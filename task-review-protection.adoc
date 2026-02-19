@@ -1,0 +1,95 @@
+---
+sidebar: sidebar 
+permalink: task-review-protection.html 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, detection, protection, policy, malware 
+summary: Você pode proteger cargas de trabalho contra ataques de ransomware atribuindo políticas a uma carga de trabalho no NetApp Ransomware Resilience. 
+---
+= Analise o status de proteção em NetApp Ransomware Resilience
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilience's painel de proteção oferece uma visão geral do status de proteção e da prontidão das suas cargas de trabalho. Use o painel de proteção para obter informações sobre o que está protegido, o que precisa de proteção e qual o escopo da proteção.
+
+Assim que você entender o alcance da sua proteção atual, link:rp-use-protect.html["você pode criar e aplicar estratégias de proteção contra ransomware às suas cargas de trabalho"].
+
+
+
+== Visualizar proteção em uma carga de trabalho
+
+Uma das primeiras etapas para proteger cargas de trabalho é visualizar suas cargas de trabalho atuais e seu status de proteção.  Você pode ver os seguintes tipos de cargas de trabalho:
+
+* Cargas de trabalho de aplicativos
+* Cargas de trabalho em bloco
+* Cargas de trabalho de compartilhamento de arquivos
+* Cargas de trabalho de VM
+
+
+.Passos
+. Na navegação à esquerda do Console, selecione *Proteção* > *Resiliência a Ransomware*.
+. Faça um dos seguintes:
++
+** No painel Proteção de Dados do Painel, selecione *Exibir tudo*.
+** No menu, selecione *Proteção*.
++
+image:screen-protection.png["Página de proteção"]
+
+
+
+. Nesta página, você pode visualizar e alterar os detalhes de proteção da carga de trabalho.
+
+
+
+NOTE: Veja link:rp-use-protect.html#add-a-ransomware-protection-strategy["Adicione uma estratégia de proteção contra ransomware"] para saber como usar a Resiliência a Ransomware quando já existe uma política de proteção com Backup e Recovery.
+
+
+
+== Entenda o painel de proteção
+
+O painel de proteção do Ransomware Resilience exibe informações detalhadas sobre as cargas de trabalho (por exemplo, nome e tipo da carga de trabalho, Console agent, sistema e storage VM), além de insights sobre o status da proteção. Use o painel de proteção para revisar e gerenciar a preparação para ransomware em cargas de trabalho. As seguintes colunas são especialmente úteis para entender sua postura de proteção:
+
+*Status de proteção*: Uma carga de trabalho pode mostrar um dos seguintes status de proteção para indicar se uma política é aplicada ou não:
+
+* *Protegido*: Uma política é aplicada.  O ARP (ou ARP/AI, dependendo da versão do ONTAP ) é habilitado em todos os volumes relacionados à carga de trabalho.
+* *Em risco*: Nenhuma política é aplicada.  Se uma carga de trabalho não tiver uma política de detecção primária habilitada, ela estará "em risco", mesmo que tenha uma política de snapshot e backup habilitada.
+* *Em andamento*: Uma política está sendo aplicada, mas ainda não foi concluída.
+* *Falha*: Uma política foi aplicada, mas não está funcionando.
+
+
+*Status de detecção*:
+
++ Ransomware Resilience fornece informações sobre o escopo das políticas de detecção de ransomware que você configurou em suas cargas de trabalho. Analise o escopo da detecção com os seguintes campos.
+
+* *Status de detecção de criptografia*
+* *Status de detecção de comportamento suspeito do usuário*
+* *Bloquear extensões de arquivo suspeitas*
+
+
+*Políticas de Snapshot, replicação e backup*: Esta coluna mostra o produto ou serviço que está gerenciando a política. Se não houver política, o campo exibirá N/A.
+
+*Importância*
+
+A resiliência ao ransomware atribui uma importância ou prioridade a cada carga de trabalho durante a descoberta com base em uma análise de cada carga de trabalho.  A importância da carga de trabalho é determinada pelas seguintes frequências de snapshot:
+
+* *Crítico*: Mais de uma cópia instantânea é feita por hora (cronograma de proteção altamente agressivo)
+* *Importante*: Cópias de snapshots são criadas com menos frequência do que a cada hora, mas com mais frequência do que a cada dia.
+* *Padrão*: Cópias instantâneas são tiradas mais de uma vez por dia.
+
+
+*Exposição de privacidade*: selecione esta opção para link:task-classify.html["Busca por informações de identificação pessoal com NetApp Data Classification"].
+
+*Replication destination*: Se você configurou a replicação de snapshot, os nomes das storage VMs e sistemas de destino serão listados. Se não houver replicação, este campo exibirá "N/A".
+
+*Destino de backup*: Se você configurou uma estratégia de proteção contra ransomware com backups, o nome do sistema de destino do backup será listado aqui.
+
+
+
+== Próximos passos
+
+* link:rp-use-protect.html["Proteja cargas de trabalho com estratégias de proteção contra ransomware"]
+* link:task-protection-group.html["Gerenciar grupos de proteção"]
+* link:task-classify.html["Escaneie dados de identificação pessoal"]
+

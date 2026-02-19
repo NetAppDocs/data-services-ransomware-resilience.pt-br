@@ -117,7 +117,7 @@ TIP: Para configurar notificações por e-mail no Console, consulte link:https:/
 A página Alertas é exibida.
 
 . Revise todos os incidentes em cada volume para cada alerta.
-. Para revisar alertas adicionais, clique em *Alerta* no menu de navegação no canto superior esquerdo.
+. Para revisar alertas adicionais, selecione *Alerta* nas trilhas de navegação no canto superior esquerdo.
 . Continue com um dos seguintes:
 +
 ** <<Detecte atividades maliciosas e comportamento anômalo do usuário>> .

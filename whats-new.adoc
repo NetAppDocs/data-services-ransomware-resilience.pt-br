@@ -52,7 +52,7 @@ Para mais informações, consulte link:https://docs.netapp.com/us-en/data-servic
 
 === Volumes não suportados
 
-Os relatórios de Resiliência a Ransomware agora capturam informações sobre volumes suportados e não suportados no relatório **Resumo**. Utilize essas informações para diagnosticar por que os volumes de um sistema podem não ser elegíveis para proteção contra ransomware.
+Os relatórios de Ransomware Resilience agora capturam informações sobre volumes suportados e não suportados no relatório **Summary**. Use essas informações para diagnosticar por que volumes em um sistema podem não ser elegíveis para ransomware protection.
 
 Para mais informações, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-reports.html["Baixe relatórios em Resiliência a Ransomware"^].
 
@@ -439,7 +439,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 
 === Avaliação de risco de segurança do Digital Advisor
 
-A BlueXP ransomware protection agora coleta informações sobre riscos de segurança altos e críticos relacionados a um cluster do NetApp Digital Advisor.  Se algum risco for encontrado, a BlueXP ransomware protection fornece uma recomendação no painel *Ações recomendadas* do Painel: "Corrigir uma vulnerabilidade de segurança conhecida no cluster <nome>".  Na recomendação no Painel, clicar em *Revisar e corrigir* sugere revisar o Digital Advisor e um artigo sobre Vulnerabilidade e Exposição Comuns (CVE) para resolver o risco de segurança.  Se houver vários riscos de segurança, revise as informações no Digital Advisor.
+BlueXP ransomware protection agora coleta informações sobre riscos de segurança altos e críticos relacionados a um cluster do NetApp Digital Advisor. Se algum risco for encontrado, BlueXP ransomware protection fornece uma recomendação no painel *Ações recomendadas*: "Corrija uma vulnerabilidade de segurança conhecida no cluster <name>." A partir da recomendação no painel, selecionar *Revisar e corrigir* sugere revisar o Digital Advisor e um artigo de Common Vulnerability & Exposure (CVE) para resolver o risco de segurança. Se houver vários riscos de segurança, revise as informações no Digital Advisor.
 
 Consulte https://docs.netapp.com/us-en/active-iq/index.html["Documentação do Digital Advisor"^] .
 

@@ -56,6 +56,8 @@ sidebar:
       url: "/rp-use-dashboard.html"
     - title: Proteja as cargas de trabalho
       entries:
+      - title: Revisar proteção
+        url: "/task-review-protection.html"
       - title: Proteja cargas de trabalho com estratégias de proteção contra ransomware
         url: "/rp-use-protect.html"
       - title: Gerenciar grupos de proteção

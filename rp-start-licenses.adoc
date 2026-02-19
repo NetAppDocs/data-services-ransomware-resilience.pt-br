@@ -12,9 +12,9 @@ summary: Certifique-se de atender aos requisitos de licenciamento do Ransomware 
 
 
 [role="lead"]
-Com o NetApp Ransomware Resilience, você pode usar diferentes planos de licenciamento.
+NetApp Ransomware Resilience oferece diferentes planos de licenciamento, permitindo que você assine o serviço onde fizer sentido para a sua organização.
 
-Para executar esta tarefa, você precisa da função de administrador da organização, pasta ou projeto. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console"^] .
+Para configurar o licenciamento, você precisa da função de administrador da organização, da pasta ou do projeto https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console"^].
 
 
 
