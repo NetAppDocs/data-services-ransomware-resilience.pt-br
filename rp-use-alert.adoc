@@ -12,7 +12,7 @@ summary: Se o Ransomware Resilience detectar um possível ataque, um alerta apar
 
 
 [role="lead"]
-Quando o NetApp Ransomware Resilience detecta um possível ataque, ele exibe um alerta no Painel de Controle e na área de Notificações. O Ransomware Resilience tira um instantâneo imediatamente. Revise o risco potencial na aba *Alertas* de resiliência contra ransomware.
+Quando NetApp Ransomware Resilience detecta um possível ataque, ele exibe um alerta no Dashboard e na área de Notificações. O Ransomware Resilience imediatamente tira um snapshot. Ao receber um alerta, revise o risco potencial na guia *Alerts* do Ransomware Resilience para avaliar o impacto em seus dados e prevenir um possível ataque de ransomware.
 
 Se o Ransomware Resilience detectar um possível ataque, uma notificação será exibida nas configurações de Notificação do Console e um e-mail será enviado para os endereços configurados. O e-mail inclui informações sobre a gravidade, a carga de trabalho impactada e um link para o alerta na guia *Alerts* do Ransomware Resilience.
 
@@ -25,17 +25,39 @@ Para começar a recuperar seus dados, marque o alerta como pronto para recupera�
 
 Cada alerta pode incluir vários incidentes em diferentes volumes e status.  Revise todos os incidentes.
 
-O Ransomware Resilience fornece informações chamadas _evidências_ sobre o que causou a emissão do alerta, como as seguintes:
 
+
+== Como os alertas são gerados
+
+Ransomware Resilience se baseia em evidências sobre padrões de entropia de dados, tipos de extensão de arquivo e criptografia para gerar alertas. Os alertas são baseados nos seguintes eventos:
+
+* Violação de dados
+* Destruição de dados
 * Extensões de arquivo foram criadas ou alteradas
 * Criação de arquivo com comparação de taxas detectadas e esperadas
 * Exclusão de arquivos com comparação de taxas detectadas e esperadas
+* Comportamento suspeito do usuário
 * Quando a criptografia é alta, sem alterações na extensão do arquivo
 
 
-Um alerta é classificado como um dos seguintes:
 
-* *Ataque potencial*: Um alerta ocorre quando o Autonomous Ransomware Protection detecta uma nova extensão e a ocorrência se repete mais de 20 vezes nas últimas 24 horas (comportamento padrão).
+NOTE: Para alertas de violação de dados, destruição de dados e comportamento suspeito do usuário, você deve configurar link:concept-user-behavior.html["detecção de atividade do usuário"].
+
+
+
+=== Tipos e status de alerta
+
+Os alertas têm um de dois status: *Novo* ou *Inativo*.
+
+Um alerta é classificado como um dos seguintes tipos:
+
+* *Ataque potencial*: Um alerta é classificado como um ataque potencial quando:
++
+** Autonomous Ransomware Protection detecta uma nova extensão e a ocorrência se repete mais de 20 vezes nas últimas 24 horas (comportamento padrão).
+** Violações de dados são detectadas.
+** A destruição de dados foi detectada.
+
+
 * *Aviso*: Um aviso ocorre com base nos seguintes comportamentos:
 +
 ** A detecção de uma nova extensão não foi identificada antes e o mesmo comportamento não se repete vezes suficientes para declará-lo como um ataque.
@@ -50,34 +72,40 @@ NOTE: Para ambientes SAN, os avisos são baseados apenas em alta entropia.
 
 As evidências são baseadas em informações da Proteção Autônoma contra Ransomware no ONTAP. Para mais detalhes, consulte https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Visão geral da proteção autônoma contra ransomware"^] .
 
-Um alerta pode ter um dos seguintes status:
 
-* *Novo*
-* *Inativo*
 
+=== Estados de alerta
 
 Um incidente de alerta pode ter os seguintes estados:
 
-* *Novo*: Todos os incidentes são marcados como "novos" quando são identificados pela primeira vez.
-* *Em análise*: Você pode marcar um incidente como em análise enquanto o avalia.
-* *Rejeitado*: Se você suspeitar que a atividade não é um ataque de ransomware, você pode alterar o status para "Rejeitado".
-+
-
-CAUTION: Depois de rejeitar um ataque, você não poderá reverter seu status. Se você descartar uma carga de trabalho, todas as cópias instantâneas feitas automaticamente em resposta ao possível ataque de ransomware serão excluídas permanentemente.
-
-* *Descartando*: O incidente está em processo de ser descartado.
-* *Resolvido*: O incidente foi corrigido.
-* *Resolvido automaticamente*: Para alertas de baixa prioridade, o incidente é resolvido automaticamente se nenhuma ação for tomada dentro de cinco dias.
+[cols="10%,90%"]
+|===
 
 
+| Estado | Descrição 
 
-TIP: Se você configurou um sistema de gerenciamento de segurança e eventos (SIEM) no Ransomware Resilience na página Configurações, o Ransomware Resilience envia detalhes de alerta para seu sistema SIEM.
 
+| *Novo* | Todos os incidentes são marcados como "novos" quando são identificados pela primeira vez. 
+
+
+| *Em revisão* | Você pode marcar manualmente um incidente de alerta como "em análise" enquanto o avalia. 
+
+
+| *Dispensado*  a| 
+Se suspeitar que a atividade não é um ataque de ransomware, você pode alterar o status para "dispensado". + CUIDADO: Depois de dispensar um ataque, você não pode reverter o status. Se você dispensar uma carga de trabalho, todas as cópias instantâneas feitas automaticamente em resposta ao possível ataque de ransomware serão excluídas permanentemente.
+
+
+
+| *Resolvido* | O incidente foi resolvido. 
+
+
+| *Resolvido automaticamente* | Para alertas de baixa prioridade, o incidente é resolvido automaticamente se nenhuma ação for tomada em relação a ele em cinco dias. 
+|===
 
 
 == Ver alertas
 
-Você pode acessar alertas no Painel de Resiliência de Ransomware ou na aba *Alertas*.
+Você pode acessar alertas no painel de Ransomware Resilience ou na guia *Alerts*.
 
 *Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto, administrador do Ransomware Resilience ou visualizador do Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^] .
 
@@ -112,7 +140,7 @@ TIP: Para configurar notificações por e-mail no Console, consulte link:https:/
 
 .Passos
 . Veja o e-mail.
-. No e-mail, selecione *Exibir alerta* e faça login no Ransomware Resilience.
+. No e-mail, selecione *Ver alerta* e faça login no Ransomware Resilience.
 +
 A página Alertas é exibida.
 
@@ -139,13 +167,15 @@ Você deve ter configurado um agente de atividade do usuário e habilitado uma p
 
 === Ver atividade maliciosa
 
-Quando o Autonomous Ransomware Protection aciona um alerta no Ransomware Resilience, você pode visualizar os seguintes detalhes:
+Quando a Proteção Autônoma contra Ransomware aciona um alerta no NetApp Ransomware Resilience, você pode visualizar os seguintes detalhes:
 
+* Quando o alerta foi acionado
+* Quando o acesso foi alterado ou negado
 * Entropia de dados recebidos
 * Taxa de criação esperada de novos arquivos em comparação com a taxa detectada
 * Taxa de exclusão esperada de arquivos comparada à taxa detectada
 * Taxa de renomeação esperada de arquivos em comparação com a taxa detectada
-* Arquivos e diretórios impactados
+* Cargas de trabalho, volumes, arquivos e diretórios afetados
 
 
 
