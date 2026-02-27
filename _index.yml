@@ -20,28 +20,24 @@ indexpage:
     links:
     - title: Saiba mais sobre resiliência ao ransomware
       url: "/concept-ransomware-resilience.html"
+    - title: Saiba mais sobre detecção de atividade do usuário
+      url: "/concept-user-behavior.html"
     - title: Novidades em Resiliência contra Ransomware
       url: "/whats-new.html"
     - title: Pré-requisitos
       url: "/rp-start-prerequisites.html"
     - title: Início rápido
       url: "/rp-start-quick-start.html"
-    - title: Configurar destinos de backup e habilitar a detecção de ameaças
-      url: "/rp-use-settings.html"
-    - title: Simule um ataque de ransomware
-      url: "/rp-start-simulate.html"
-    - title: Configurar a detecção de atividades suspeitas do usuário
-      url: "/suspicious-user-activity.html"
   - title: Use a resiliência do ransomware
     links:
     - title: Descubra cargas de trabalho
       url: "/rp-start-discover.html"
-    - title: Visualize a integridade da carga de trabalho usando o Painel
+    - title: Ver o estado da carga de trabalho
       url: "/rp-use-dashboard.html"
     - title: Proteja as cargas de trabalho
       url: "/rp-use-protect.html"
-    - title: Procure informações de identificação pessoal com a NetApp Data Classification
-      url: "/task-classify.html"
+    - title: Configurar a detecção de atividades suspeitas do usuário
+      url: "/suspicious-user-activity.html"
     - title: Responder a um alerta detectado
       url: "/rp-use-alert.html"
     - title: Recuperar-se de um ataque

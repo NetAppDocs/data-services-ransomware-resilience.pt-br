@@ -30,44 +30,46 @@ sidebar:
       url: "/rp-start-quick-start.html"
     - title: Configurar resiliência contra ransomware
       url: "/rp-start-setup.html"
-    - title: Resiliência do Access Ransomware
-      url: "/rp-start-login.html"
     - title: Configurar licenciamento
       url: "/rp-start-licenses.html"
     - title: Descubra cargas de trabalho
       url: "/rp-start-discover.html"
-    - title: Simule um ataque de ransomware com um exercício de prontidão
-      url: "/rp-start-simulate.html"
-    - title: Configure backups, detecção de ameaças e simulações de ataque em Configurações
-      url: "/rp-use-settings.html"
-    - title: Configurar SIEM
-      url: "/task-siem.html"
-    - title: Configurar detecção de atividade do usuário
-      entries:
-      - title: Saiba mais sobre detecção de atividade do usuário
-        url: "/concept-user-behavior.html"
-      - title: Requisitos de atividade do usuário
-        url: "/reference-user-activity-requirements.html"
-      - title: Configurar agentes e coletores
-        url: "/suspicious-user-activity.html"
   - title: Use a resiliência do ransomware
     entries:
-    - title: Visualize a integridade da carga de trabalho usando o Painel
+    - title: Resiliência do Access Ransomware
+      url: "/rp-start-login.html"
+    - title: Ver o estado da carga de trabalho
       url: "/rp-use-dashboard.html"
-    - title: Proteja as cargas de trabalho
+    - title: Proteger e detectar
       entries:
       - title: Revisar proteção
         url: "/task-review-protection.html"
-      - title: Proteja cargas de trabalho com estratégias de proteção contra ransomware
+      - title: Configurar destinos de backup
+        url: "/task-backup-destination.html"
+      - title: Proteja as cargas de trabalho
         url: "/rp-use-protect.html"
+      - title: Configurar detecção de atividade do usuário
+        entries:
+        - title: Saiba mais sobre detecção de atividade do usuário
+          url: "/concept-user-behavior.html"
+        - title: Requisitos de detecção de atividade do usuário
+          url: "/reference-user-activity-requirements.html"
+        - title: Configurar agentes e coletores
+          url: "/suspicious-user-activity.html"
       - title: Gerenciar grupos de proteção
         url: "/task-protection-group.html"
       - title: Escaneie dados de identificação pessoal
         url: "/task-classify.html"
-    - title: Responder a um alerta detectado
-      url: "/rp-use-alert.html"
-    - title: Recuperar-se de um ataque de ransomware
-      url: "/rp-use-recover.html"
+    - title: Responder e recuperar
+      entries:
+      - title: Responder a um alerta detectado
+        url: "/rp-use-alert.html"
+      - title: Recuperar-se de um ataque de ransomware
+        url: "/rp-use-recover.html"
+    - title: Realize um exercício de prontidão
+      url: "/rp-start-simulate.html"
+    - title: Configurar SIEM
+      url: "/task-siem.html"
     - title: Baixar relatórios
       url: "/rp-use-reports.html"
   - section: support

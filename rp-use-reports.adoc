@@ -41,7 +41,7 @@ Os arquivos CSV ou JSON incluem dados para todas as cargas de trabalho em todos 
 +
 image:screen-dashboard.png["Página do painel"]
 
-. No Painel ou em outra página, selecione *Atualizar*image:button-refresh.png["Opção de atualização"] opção no canto superior direito para atualizar os dados que aparecerão nos relatórios.
+. No painel de controle ou em outra página, selecione a opção *Atualizar* image:button-refresh.png["Opção de atualização"] no canto superior direito para atualizar os dados que aparecerão nos relatórios.
 . Faça um dos seguintes:
 +
 ** Na página, selecione *Download*image:button-download.png["Opção de download"] opção.

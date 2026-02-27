@@ -449,7 +449,7 @@ Consulte https://docs.netapp.com/us-en/active-iq/index.html["Documentação do D
 
 Com esta versão, você pode definir um destino de backup para um bucket do Google Cloud Platform.  Anteriormente, você só podia adicionar destinos de backup ao NetApp StorageGRID, Amazon Web Services e Microsoft Azure.
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["Saiba mais sobre como configurar as configurações de BlueXP ransomware protection"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-destination.html["Saiba mais sobre como configurar as configurações de BlueXP ransomware protection"].
 
 
 
@@ -477,7 +477,7 @@ Para obter detalhes sobre as ações que cada função pode executar, consulte h
 
 Você pode enviar dados automaticamente para seu sistema de gerenciamento de segurança e eventos (SIEM) para análise e detecção de ameaças.  Com versões anteriores, você podia selecionar apenas o AWS Security Hub como seu SIEM.  Com esta versão, você pode selecionar o AWS Security Hub ou o Splunk Cloud como seu SIEM.
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["Saiba mais sobre como configurar as configurações de BlueXP ransomware protection"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["Saiba mais sobre como configurar as configurações de BlueXP ransomware protection"].
 
 
 
@@ -546,7 +546,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransom
 
 Agora você pode adicionar o Microsoft Azure como destino de backup junto com o AWS e o NetApp StorageGRID.
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["Saiba mais sobre como configurar as definições de proteção"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-destination.html["Saiba mais sobre como configurar as definições de proteção"].
 
 
 
@@ -601,7 +601,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 
 Agora é possível habilitar a detecção de ameaças usando um sistema de gerenciamento de eventos e segurança (SIEM) de terceiros.  O Painel agora mostra uma nova recomendação para "Ativar detecção de ameaças", que pode ser configurada na página Configurações.
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["Saiba mais sobre como configurar opções de configurações"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["Saiba mais sobre como configurar opções de configurações"].
 
 
 
@@ -637,7 +637,7 @@ O link para visualizar a documentação agora está incluído na interface do us
 
 === BlueXP backup and recovery
 
-O serviço de BlueXP backup and recovery não precisa mais estar habilitado no sistema. Ver link:rp-start-prerequisites.html["pré-requisitos"] .  O serviço de BlueXP ransomware protection ajuda a configurar um destino de backup por meio da opção Configurações. Ver link:rp-use-settings.html["Configurar definições"] .
+O serviço de backup e recuperação BlueXP não precisa mais estar previamente ativado no sistema. Consulte link:rp-start-prerequisites.html["pré-requisitos"]. O serviço de proteção contra ransomware BlueXP ajuda a configurar um destino de backup por meio da opção Configurações. Consulte link:task-backup-destination.html["Configurar definições"].
 
 
 
@@ -645,7 +645,7 @@ O serviço de BlueXP backup and recovery não precisa mais estar habilitado no s
 
 Agora você pode configurar destinos de backup nas configurações de BlueXP ransomware protection .
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["Saiba mais sobre como configurar opções de configurações"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-destination.html["Saiba mais sobre como configurar opções de configurações"].
 
 
 
@@ -667,7 +667,7 @@ Agora você pode tornar o backup imutável no armazenamento secundário usando a
 
 === Backup automático para NetApp StorageGRID
 
-Além de usar a AWS, agora você pode escolher o StorageGRID como seu destino de backup. https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["Saiba mais sobre como configurar destinos de backup"] .
+Além de usar AWS, agora você pode escolher StorageGRID como seu destino de backup https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-destination.html["Saiba mais sobre como configurar destinos de backup"].
 
 
 

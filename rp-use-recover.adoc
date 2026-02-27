@@ -40,7 +40,7 @@ Revise as cargas de trabalho que estão no status de recuperação "Restauraçã
 .Passos
 . Faça um dos seguintes:
 +
-** No Painel, revise os totais de "Restauração necessária" no painel Alertas e selecione *Exibir tudo*.
+** No painel de controle, revise os totais de "Restore needed" no painel de Alertas e selecione *View all*.
 ** No menu, selecione *Recuperação*.
 
 

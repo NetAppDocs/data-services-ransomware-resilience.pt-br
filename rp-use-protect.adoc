@@ -280,7 +280,7 @@ O bloqueio de cópia de instantâneo está disponível no ONTAP 9.12.1 e posteri
 *** *Agendamentos de backup*: escolha opções de agendamento para armazenamento secundário e ative o agendamento.
 +
 
-TIP: Para habilitar o bloqueio de backup no armazenamento secundário, configure seus destinos de backup usando a opção *Configurações*. Para obter detalhes, consulte link:rp-use-settings.html["Configurar definições"] .
+TIP: Para ativar o bloqueio de backup no storage secundário, configure seus destinos de backup usando a opção *Configurações*. Para obter detalhes, consulte link:task-backup-destination.html["Configurar definições"].
 
 
 

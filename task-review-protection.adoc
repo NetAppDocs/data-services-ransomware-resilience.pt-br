@@ -32,7 +32,7 @@ Uma das primeiras etapas para proteger cargas de trabalho é visualizar suas car
 . Na navegação à esquerda do Console, selecione *Proteção* > *Resiliência a Ransomware*.
 . Faça um dos seguintes:
 +
-** No painel Proteção de Dados do Painel, selecione *Exibir tudo*.
+** No painel Proteção de Dados do dashboard, selecione *Exibir tudo*.
 ** No menu, selecione *Proteção*.
 +
 image:screen-protection.png["Página de proteção"]

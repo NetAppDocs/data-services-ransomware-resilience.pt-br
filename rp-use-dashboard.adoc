@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-use-dashboard.html 
 keywords: ransomware protection, ransomware protection dashboard, detect ransomware attacks, recover from ransomware attack 
-summary: O NetApp Ransomware Resilience Dashboard fornece informações sobre a integridade da proteção de suas cargas de trabalho.  Você pode determinar rapidamente as cargas de trabalho que estão em risco ou protegidas, as cargas de trabalho impactadas por um incidente ou em recuperação e avaliar a extensão da proteção observando quanto armazenamento está protegido ou em risco.  Você também pode usar o Painel para revisar e agir de acordo com as recomendações de proteção. 
+summary: Use o NetApp Ransomware Resilience para determinar quais workloads exigem proteção ou atenção e para avaliar o nível de proteção, analisando quanto storage está protegido ou em risco. 
 ---
 = Monitore a integridade da carga de trabalho em NetApp Ransomware Resilience
 :hardbreaks:
@@ -12,22 +12,22 @@ summary: O NetApp Ransomware Resilience Dashboard fornece informações sobre a 
 
 
 [role="lead"]
-O NetApp Ransomware Resilience Dashboard fornece informações rápidas sobre a integridade da proteção de suas cargas de trabalho.  Você pode determinar rapidamente as cargas de trabalho que estão em risco ou protegidas, identificar as cargas de trabalho impactadas por um incidente ou em recuperação e avaliar a extensão da proteção observando quanto armazenamento está protegido ou em risco.
+O painel NetApp Ransomware Resilience fornece informações rápidas sobre a integridade da proteção de suas cargas de trabalho. Você pode determinar rapidamente quais cargas de trabalho estão em risco ou protegidas, identificar cargas de trabalho afetadas por um incidente ou em recuperação e avaliar o nível de proteção observando a quantidade de storage protegida ou em risco.
 
-Utilize o Painel de Controle para revisar sugestões de proteção, alterar configurações e baixar relatórios.
+Use o dashboard para revisar sugestões de proteção, alterar configurações e baixar relatórios.
 
 *Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto, administrador do Ransomware Resilience ou visualizador do Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^] .
 
 
 
-== Revise a integridade da carga de trabalho usando o Painel
+== Analise o estado da carga de trabalho usando o painel de controle
 
 .Passos
 . Depois que o Console descobre suas cargas de trabalho, o painel de resiliência contra ransomware exibe a integridade da proteção de dados da carga de trabalho.
 +
 image:screen-dashboard.png["Página do painel"]
 
-. No Painel, você pode realizar as seguintes ações em cada um dos painéis:
+. A partir do dashboard, você pode realizar as seguintes ações em cada um dos painéis:
 +
 ** *Proteção de dados da carga de trabalho*: selecione *Exibir tudo* para ver todas as cargas de trabalho que estão em risco ou protegidas na página Proteção.  As cargas de trabalho correm risco quando os níveis de proteção não correspondem a uma política de proteção. Consulte link:rp-use-protect.html["Proteja as cargas de trabalho"] .
 +
@@ -62,10 +62,10 @@ TIP: Selecione a dica de ferramenta "i" para ver dicas sobre esses dados. Para a
 
 ** *Ações recomendadas*: Para aumentar a proteção, revise cada recomendação e selecione *Revisar e corrigir*.
 +
-Ver link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard["Revise as sugestões de proteção no Painel"] ou link:rp-use-protect.html["Proteja as cargas de trabalho"] .
+Veja link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard["Analise as sugestões de proteção no painel de controle"] ou link:rp-use-protect.html["Proteja as cargas de trabalho"].
 
 +
-O Ransomware Resilience exibe novas recomendações desde sua última visita ao Painel com a tag "Novo" por 24 horas.  As ações aparecem em ordem de prioridade, com as mais importantes no topo.  Revise, aja ou descarte cada recomendação.
+Ransomware Resilience exibe novas recomendações desde sua última visita ao painel com a etiqueta "Novo" por 24 horas. As ações aparecem em ordem de prioridade, com as mais importantes no topo. Analise, execute ou descarte cada recomendação.
 
 +
 O número total de ações não inclui ações que você descartou.
@@ -78,7 +78,7 @@ O número total de ações não inclui ações que você descartou.
 
 
 
-== Revise as recomendações de proteção no Painel
+== Consulte as recomendações de proteção no painel
 
 O Ransomware Resilience avalia a proteção em suas cargas de trabalho e recomenda ações para melhorar essa proteção.
 
@@ -94,7 +94,7 @@ Aqui está uma amostra das recomendações que o Ransomware Resilience oferece.
 | Adicione uma política de proteção contra ransomware. | A carga de trabalho não está protegida no momento. | Atribua uma política à carga de trabalho. Consulte link:rp-use-protect.html["Proteja cargas de trabalho contra ataques de ransomware"] . 
 
 
-| Conecte-se ao SIEM para relatórios de ameaças. | Envie dados para um sistema de gerenciamento de segurança e eventos (SIEM) para análise e detecção de ameaças. | Insira os detalhes do servidor SIEM/XDR para habilitar a detecção de ameaças. Consulte link:rp-use-settings.html["Configurar definições de proteção"] . 
+| Conecte-se ao SIEM para relatórios de ameaças. | Envie dados para um sistema de gerenciamento de segurança e eventos (SIEM) para análise e detecção de ameaças. | Insira os detalhes do servidor SIEM/XDR para ativar a detecção de ameaças. Consulte link:task-siem.html["Conectar a um SIEM"]. 
 
 
 | Melhore a postura de segurança do sistema | O NetApp Digital Advisor identificou pelo menos um risco de segurança alto ou crítico. | Revise todos os riscos de segurança no NetApp Digital Advisor. Consulte https://docs.netapp.com/us-en/active-iq/index.html["Documentação do Digital Advisor"^] . 
@@ -103,7 +103,7 @@ Aqui está uma amostra das recomendações que o Ransomware Resilience oferece.
 | Fortaleça uma política. | Algumas cargas de trabalho podem não ter proteção suficiente.  Fortaleça a proteção das cargas de trabalho com uma política. | Aumente a retenção, adicione backups, imponha backups imutáveis, bloqueie extensões de arquivo suspeitas, habilite a detecção em armazenamento secundário e muito mais. Consulte link:rp-use-protect.html["Proteja cargas de trabalho contra ataques de ransomware"] . 
 
 
-| Prepare <provedor de backup> como um destino de backup para fazer backup dos dados da sua carga de trabalho. | A carga de trabalho não tem nenhum destino de backup no momento. | Adicione destinos de backup a esta carga de trabalho para protegê-la. Consulte link:rp-use-settings.html["Configurar definições de proteção"] . 
+| Prepare <provedor de backup> como um destino de backup para fazer backup dos dados da sua carga de trabalho. | A carga de trabalho não tem nenhum destino de backup no momento. | Adicione destinos de backup a esta carga de trabalho para protegê-la. Consulte link:task-backup-destination.html["Adicionar um destino de backup"]. 
 
 
 | Proteja cargas de trabalho de aplicativos críticos ou altamente importantes contra ransomware. | A página Proteger exibe cargas de trabalho de aplicativos críticas ou altamente importantes (com base no nível de prioridade atribuído) que não estão protegidas. | Atribua uma política a essas cargas de trabalho. Consulte link:rp-use-protect.html["Proteja cargas de trabalho contra ataques de ransomware"] . 

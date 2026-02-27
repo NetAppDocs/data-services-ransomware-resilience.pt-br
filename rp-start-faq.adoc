@@ -120,7 +120,7 @@ UM link:rp-use-protect.html#add-a-ransomware-protection-strategy["estratégia de
 Uma política de backup não é necessária na estratégia de resiliência ao ransomware.
 
 .O Ransomware Resilience está ciente das configurações de proteção no ONTAP?
-Sim, o Ransomware Resilience descobre agendamentos de snapshots definidos no ONTAP. Ele também descobre se o ARP e o FPolicy estão habilitados em todos os volumes de uma carga de trabalho detectada. As informações exibidas no Painel de Resiliência a Ransomware são agregadas de outras soluções e produtos da NetApp .
+Sim, o Ransomware Resilience detecta os agendamentos de snapshots definidos no ONTAP. Ele também detecta se o ARP e o FPolicy estão habilitados em todos os volumes de uma carga de trabalho detectada. As informações exibidas no painel do Ransomware Resilience são agregadas de outras NetApp soluções e produtos.
 
 .A equipe de Resiliência a Ransomware está ciente das políticas já definidas no Backup e Recuperação e no SnapCenter?
 Sim, se você tiver cargas de trabalho gerenciadas no Backup and Recovery ou no SnapCenter, as políticas gerenciadas por esses produtos serão trazidas para o Ransomware Resilience.
