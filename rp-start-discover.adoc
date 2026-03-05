@@ -19,10 +19,7 @@ No painel de controle Discovery, o Ransomware Resilience exibe as configuraçõe
 
 NOTE: A Resiliência contra Ransomware não detecta cargas de trabalho com volumes que utilizam FlexGroup.
 
-O Ransomware Resilience verifica sua proteção de backup atual, cópias de snapshots e opções de proteção autônoma contra ransomware da NetApp . O Ransomware Resilience também detecta informações de proteção do SnapCenter for VMware para datastores de máquinas virtuais, do SnapCenter for Oracle e do NetApp Backup and Recovery para compartilhamentos de arquivos e compartilhamentos de arquivos de máquinas virtuais. Em seguida, ele recomenda maneiras de melhorar sua proteção contra ransomware.
-
-
-IMPORTANT: Embora o Ransomware Resilience reconheça as políticas de SnapCenter, você não pode realizar a recuperação por meio do SnapCenter com o Ransomware Resilience.
+O Ransomware Resilience verifica sua proteção de backup atual, cópias instantâneas e opções de NetApp Autonomous Ransomware Protection. O Ransomware Resilience também detecta informações de proteção do NetApp Backup and Recovery para compartilhamentos de arquivos e compartilhamentos de arquivos de VM. Em seguida, recomenda maneiras de aprimorar sua proteção contra ransomware.
 
 *Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^] .
 

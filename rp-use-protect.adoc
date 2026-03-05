@@ -52,8 +52,6 @@ Além da Ransomware Resilience, você pode usar NetApp Backup and Recovery para 
 
 As informações de proteção dos serviços de Backup & Recovery aparecem no Ransomware Resilience. Você pode adicionar políticas de detecção a esses serviços com o Ransomware Resilience. Adicionar uma política de proteção com o Ransomware Resilience substitui as políticas de proteção existentes.
 
-O Ransomware Resilience também descobre políticas de proteção do SnapCenter para datastores de VM da VMware e do SnapCenter para Oracle. Você não pode usar esses serviços para restaurar com o Ransomware Resilience.
-
 Se uma política de detecção de ransomware estiver sendo gerenciada pelo Autonomous Ransomware Protection (ARP ou ARP/AI, dependendo da versão do ONTAP ) e FPolicy no ONTAP, essas cargas de trabalho serão protegidas e continuarão sendo gerenciadas pelo ARP e FPolicy.
 
 
