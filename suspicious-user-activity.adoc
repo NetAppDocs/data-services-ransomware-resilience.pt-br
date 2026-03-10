@@ -171,9 +171,12 @@ Se houver determinados usuários confiáveis cujo comportamento possa acionar al
 . Para visualizar usuários individuais na interface do usuário, escolha **Selecionar manualmente**. Para carregar uma lista de usuários excluídos, selecione **Carregar**.
 +
 .. Se você selecionou **Select manually**, marque a caixa de seleção ao lado dos nomes dos usuários específicos que deseja excluir.
-.. Se você selecionar **Upload**, primeiro deverá baixar um arquivo CSV que inclui a lista de todos os usuários. Selecione **Download** para acessar a lista.
+.. Se você selecionar **Carregar**, faça o download do arquivo CSV ou JSON que inclui a lista de todos os usuários. Selecione **Baixar** para acessar a lista.
 +
-Analise o arquivo CSV. Remova os nomes de todos os usuários para os quais você deseja manter a detecção. Quando a lista contiver apenas os nomes dos usuários que você deseja excluir da detecção, salve-a. Selecione **Carregar** para localizar o arquivo e, em seguida, escolha-o.
+Em sua máquina local, revise o arquivo. Remova os nomes de todos os usuários para os quais você deseja manter a detecção. Quando a lista incluir apenas os nomes dos usuários que você deseja excluir da detecção, salve-a.
+
++
+Em NetApp Ransomware Resilience, selecione **Carregar**. Localize e carregue o arquivo.
 
 
 
@@ -193,6 +196,8 @@ Você pode adicionar um usuário de volta à detecção depois.
 .Passos
 . No painel de Configurações, localize o cartão Atividade do usuário e selecione **Manage**.
 . Selecione a guia **Usuários excluídos**.
+. Selecione **Adicionar**.
+. Para excluir usuários individuais da interface do usuário, escolha **Select manually**.
 . Localize o nome do usuário que deseja remover da seleção de usuários excluídos. Selecione o menu de ações (`...`) na linha com o nome do usuário e então **Remover**.
 . Na caixa de diálogo, selecione **Remove** para confirmar que deseja remover os usuários selecionados.
 
