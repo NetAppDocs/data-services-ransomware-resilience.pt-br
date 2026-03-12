@@ -243,7 +243,6 @@
   <block id="4fd101b562f1e5e8d87ff8710122a42f" category="inline-link">Aviso para o NetApp Console</block>
   <block id="665acc6d2ee48d5efd698763b6fbf735" category="list-text"><block ref="665acc6d2ee48d5efd698763b6fbf735" category="inline-link-rx"></block></block>
   <block id="6890b4587dca6f7e9bc67d8336265387" category="summary">Limitações conhecidas identificam plataformas, dispositivos ou funções que não são suportados por esta versão do produto.</block>
-  <block id="8be06d01ec24eec813979494ed1cda13" category="doc">Limitações conhecidas do NetApp Ransomware Resilience</block>
   <block id="1eba71d64e6c5e410e558530711e835b" category="paragraph">Limitações conhecidas identificam plataformas, dispositivos ou funções que não são suportados por esta versão do produto ou que não interoperam corretamente com ele. Revise essas limitações cuidadosamente.</block>
   <block id="e742b92803487dd57d41c5028236224e" category="section-title">Problema com a opção de reinicialização do exercício de prontidão</block>
   <block id="20fd4e2b91312c8ee1419aa853c936e1" category="paragraph">Se você selecionar um volume ONTAP 9.11.1 para o exercício de prontidão para ataque de ransomware, o Ransomware Resilience enviará um alerta.  Se você recuperar os dados usando a opção "clone-to-volume" e redefinir o drill, a operação de redefinição falhará.</block>
@@ -283,7 +282,6 @@
   <block id="cee654483027bd7fe0b0908f5113b46f" category="section-title">Descubra novos sistemas</block>
   <block id="12138171b6ceeb4bdc45d66e55bebe1c" category="inline-image-macro">Ações Verticais</block>
   <block id="405f846fd5caab9c6bb41e637ac55c97" category="summary">Encontre uma resposta para uma pergunta frequente sobre a NetApp Ransomware Resilience.</block>
-  <block id="815a60d80ffbc32f6db251b3410900b2" category="doc">Perguntas frequentes sobre a NetApp Ransomware Resilience</block>
   <block id="0257967210bdc685c6f54c2fd5c5300f" category="paragraph">Estas perguntas frequentes podem ajudar se você estiver apenas procurando uma resposta rápida para uma pergunta sobre o NetApp Ransomware Resilience.</block>
   <block id="ea355214fd4bc7c57f471bd92918879b" category="section-title">Implantação</block>
   <block id="924cc6eaf82618251de609e2689ed733" category="paragraph">Você pode usar os seguintes tipos de licença:</block>
@@ -712,7 +710,6 @@
   <block id="b7ac3f69f0c0ac25814be4d03ba11c24" category="list-text">Digite o novo nome da carga de trabalho e selecione *Salvar*.</block>
   <block id="565c83689e020f29cdb2b1a2a0116b1a" category="inline-link-macro">Recuperar-se de um ataque</block>
   <block id="bc1b76060f49fe8ad404d389d8431371" category="summary">Melhore a segurança e a conformidade de privacidade dos seus dados com a NetApp Data Classification para identificar se seus dados incluem informações pessoais ou privadas.</block>
-  <block id="e00e52239c81eaad00507b4b0b815570" category="doc">Procure informações de identificação pessoal com a NetApp Data Classification no ​​Ransomware Resilience</block>
   <block id="604880f6f585767eee17ec85b3c76533" category="inline-link-macro">Classificação de Dados</block>
   <block id="00735a048dd8a101a0cf04ff8cf7c168" category="paragraph"><block ref="2324d2fecbef2eccb7e03b987d67689b" category="inline-link-macro-rx"></block>utiliza processamento de linguagem natural orientado por IA para análise e categorização de dados contextuais, fornecendo insights acionáveis sobre seus dados para atender aos requisitos de conformidade, detectar vulnerabilidades de segurança, otimizar custos e acelerar a migração.</block>
   <block id="d3b14d365ca3277402fce2839d562f60" category="admonition">Esse processo pode impactar a importância da carga de trabalho para ajudar a garantir que você tenha a proteção adequada.</block>
@@ -924,7 +921,6 @@
   <block id="571f33f6eea9a8d4cbc40d9ea733c1e9" category="list-text">Na página Gerenciar estratégias, selecione *Ações*<block ref="c25b92b317848c2a66dcfecc2a02ad99" category="inline-image-macro-rx" type="image"></block> opção para a estratégia que você deseja excluir.</block>
   <block id="b850d388555da9da0c8036cffa6c6951" category="list-text">No menu Ações, selecione *Excluir política*.</block>
   <block id="2626c315654649457283f31cd264c39c" category="summary">Após um ataque, o NetApp Ransomware Resilience verifica se os dados de backup no armazenamento secundário estão limpos, recomenda um ponto de recuperação real (RPA) e orquestra o fluxo de trabalho para uma recuperação resistente a falhas.</block>
-  <block id="113ff3b2aeb407622305a50c77bebec8" category="doc">Recupere-se de um ataque de ransomware (após a neutralização dos incidentes) com a NetApp Ransomware Resilience</block>
   <block id="197d5e3f8c27a534ff428274b4db5d59" category="paragraph">Depois que as cargas de trabalho são marcadas como "Restauração necessária", o NetApp Ransomware Resilience recomenda um ponto de recuperação real (RPA) e orquestra o fluxo de trabalho para uma recuperação resistente a falhas.</block>
   <block id="57a6bb038991f08ac0fdcf64095bd0af" category="paragraph">Você pode restaurar a carga de trabalho selecionando todos os volumes, volumes específicos ou arquivos específicos.</block>
   <block id="b5ccdb3dc0dc7a8afa4ba1ad3929e36a" category="admonition">A recuperação da carga de trabalho pode afetar as cargas de trabalho em execução.  Você deve coordenar os processos de recuperação com as partes interessadas apropriadas.</block>
@@ -1465,7 +1461,6 @@
   <block id="7257a2c29f00e84365c5a48447d9c803" category="inline-link-macro">Habilitar a classificação de dados para identificar riscos de governança e segurança</block>
   <block id="1d1758803ee1f7559973be04f120a0f7" category="inline-link-macro">Enviar alertas para SIEM</block>
   <block id="660ecf2355e5ff3c5a22d2e4a48594e8" category="inline-link-macro">Baixe relatórios de alerta, proteção, treinamento de prontidão, recuperação ou resumo</block>
-  <block id="52210acbff73a572a2ca89fb77371615" category="paragraph">No NetApp Ransomware Resilience, você pode usar o NetApp Data Classification para verificar e classificar os dados em uma carga de trabalho de compartilhamento de arquivos. Classificar dados ajuda a determinar se o conjunto de dados inclui informações de identificação pessoal (PII), o que pode aumentar os riscos de segurança. A classificação de dados é um componente central do NetApp Console e está disponível sem custo adicional.</block>
   <block id="7b36da612c0e3a400f4daecc8016f21e" category="summary">Certifique-se de atender aos requisitos de licenciamento do Ransomware Resilience para proteger seus sistemas e cargas de trabalho.</block>
   <block id="5ef05167488611c5bd4ff0f410595ce4" category="list-text">Teste gratuito de 30 dias</block>
   <block id="e71ba6c3178fa6f6844891e615ad0570" category="list-text">Adquira uma assinatura pré-paga (PAYGO) com o Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace ou Azure Marketplace</block>
@@ -1854,7 +1849,6 @@
   <block id="8c458dae44a326b93145aea4dd0f630e" category="inline-link-macro">Configurar agentes e detectores de atividade de comportamento do usuário</block>
   <block id="1c92ed852b0b86bd1948ec6e816262ce" category="list-text"><block ref="1c92ed852b0b86bd1948ec6e816262ce" category="inline-link-macro-rx"></block></block>
   <block id="92df6f183b2e1cfcc696af23c1edd4cb" category="summary">Antes de criar um agente de atividade do usuário e outros coletores, você deve garantir que atende aos requisitos de sistema operacional, servidor e rede descritos.</block>
-  <block id="9cc59391625fcde368f1996a2950eec4" category="doc">Requisitos para detecção de comportamento do usuário em NetApp Ransomware Resilience</block>
   <block id="fc36a1ad1399ea3c897ac2b166f590bc" category="section-title">Suporte do provedor de nuvem</block>
   <block id="3156b4b992dec700b60fedaa2eca010c" category="paragraph">A detecção de comportamentos suspeitos do usuário é compatível com os seguintes sistemas operacionais:</block>
   <block id="92adf790b863484fc83be969039ec890" category="section-title">Recomendações do servidor</block>
@@ -2063,7 +2057,6 @@
   <block id="9bd1fe262c57584526c5184d4de31827" category="list-text">Se seus clusters ONTAP no local ou sistemas Cloud Volumes ONTAP não estiverem configurados no Console, consulte <block ref="1c09904f3fbf9f22b68e96599d2dcddc" category="inline-link-macro-rx"></block> e <block ref="b04507b2bbabc17c071b912167d3ff4f" category="inline-link-macro-rx"></block>.</block>
   <block id="3eb45f3714606347a6ff182b822b69cc" category="list-text">Para clusters ONTAP ou Cloud Volumes ONTAP, o NetApp Ransomware Resilience exige que a versão do ONTAP seja 9.11.1 ou superior.</block>
   <block id="4b2c42068bb1431d3a8d94e9ca135659" category="paragraph"><block ref="187dbd743d444b65478d146e1c2c85f6" category="inline-link-rx"></block>.</block>
-  <block id="956475ab89164a2884d7750c9285db21" category="doc">Descubra e gerencie cargas de trabalho em NetApp Ransomware Resilience</block>
   <block id="e300a441bfe88a3cd9729e46cfd3c605" category="paragraph">O painel de controle exibe o nível de proteção de dados. O número de cargas de trabalho em risco ou protegidas é atualizado à medida que novas cargas de trabalho são descobertas.</block>
   <block id="3d7e9fe4b06f7b72aa18a4870bc065e4" category="inline-image-macro">Painel de Resiliência a Ransomware</block>
   <block id="401331622ba7c8cd9b2b100526565200" category="paragraph"><block ref="401331622ba7c8cd9b2b100526565200" category="inline-image-macro-rx" type="image"></block></block>
@@ -2170,4 +2163,13 @@
   <block id="1dba6347dc69b3be8eba699851eddc8f" category="paragraph-title">Como funciona a cobrança do Ransomware Resilience?</block>
   <block id="6c1c5737355a8b30e87ad5d7c6da9553" category="inline-link-macro">Atualize uma licença</block>
   <block id="fb8e096a7050c588583ae61ddb846c94" category="admonition">Monitore o tamanho dos dados protegidos no painel de proteção Ransomware Resilience. Para adicionar capacidade, consulte <block ref="0cb59e747afacc80ad7810dc5f26bca9" category="inline-link-macro-rx"></block>.</block>
+  <block id="6a8c5d54f0c5f50eb0ef382973393ca3" category="doc">Avisos legais para NetApp Ransomware Resilience</block>
+  <block id="d12f8c36670d289d5fe004952bfc0d5e" category="doc">Requisitos de detecção de atividade do usuário para NetApp Ransomware Resilience</block>
+  <block id="7df30d939fa4f3d1575169ec6d1894d8" category="doc">Limitações conhecidas na NetApp Ransomware Resilience</block>
+  <block id="e9be3c13b1ed73a120f1b23e2cefb058" category="doc">Descubra cargas de trabalho em NetApp Ransomware Resilience</block>
+  <block id="871215526a8732732fd40b6335388e98" category="doc">Perguntas frequentes sobre NetApp Ransomware Resilience</block>
+  <block id="382e702ef8f61842f6f9c0b76fb23047" category="doc">Recupere-se de um ataque de ransomware com NetApp Ransomware Resilience</block>
+  <block id="a8bb9ad5a88304569c56e3805762683b" category="doc">Verifique informações de identificação pessoal em NetApp Ransomware Resilience</block>
+  <block id="1ca81bce832a538b6144470d9a25c786" category="paragraph">Dentro do NetApp Ransomware Resilience, você pode usar NetApp Data Classification para analisar e classificar os dados em uma carga de trabalho de compartilhamento de arquivos. A classificação de dados ajuda você a determinar se o conjunto de dados inclui informações de identificação pessoal (PII), o que pode aumentar os riscos de segurança.</block>
+  <block id="1954c0eede9cec276e44236c76142770" category="paragraph">A Classificação de Dados é um componente essencial do NetApp Console. Você não precisa de uma licença para usar a Classificação de Dados. Dependendo da sua configuração, a configuração da Classificação de Dados pode gerar custos, que não são cobrados pelo Ransomware Resilience. Para mais informações, consulte <block ref="c5cce5d1091349460847f69d486fd688" category="inline-link-macro-rx"></block>.</block>
 </blocks>

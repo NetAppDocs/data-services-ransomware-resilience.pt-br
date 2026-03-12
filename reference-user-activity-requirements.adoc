@@ -4,7 +4,7 @@ permalink: reference-user-activity-requirements.html
 keywords: data breach detection, data breach, user activity, suspicious, anomalous, requirements, end points, operating systems, networking 
 summary: Antes de criar um agente de atividade do usuário e outros coletores, você deve garantir que atende aos requisitos de sistema operacional, servidor e rede descritos. 
 ---
-= Requisitos para detecção de comportamento do usuário em NetApp Ransomware Resilience
+= Requisitos de detecção de atividade do usuário para NetApp Ransomware Resilience
 :hardbreaks:
 :allow-uri-read: 
 :icons: font

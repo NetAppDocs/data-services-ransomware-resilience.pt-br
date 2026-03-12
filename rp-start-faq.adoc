@@ -4,7 +4,7 @@ permalink: rp-start-faq.html
 keywords: ransomware protection faq, ransomware protection frequently asked questions 
 summary: Encontre uma resposta para uma pergunta frequente sobre a NetApp Ransomware Resilience. 
 ---
-= Perguntas frequentes sobre a NetApp Ransomware Resilience
+= Perguntas frequentes sobre NetApp Ransomware Resilience
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
