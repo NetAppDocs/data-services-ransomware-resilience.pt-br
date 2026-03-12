@@ -23,6 +23,9 @@ Ransomware Resilience é compatível com os seguintes SIEMs:
 Antes de habilitar o SIEM no Ransomware Resilience, você precisa configurar seu sistema SIEM.
 
 
+TIP: A Resiliência a Ransomware também oferece suporte a link:reference-soar.html["orquestração, automação e resposta de segurança (SOAR) playbooks"^].
+
+
 
 == Dados de eventos enviados para um SIEM
 
@@ -256,4 +259,11 @@ NOTE: As informações inseridas dependem do SIEM selecionado.
 +
 A página Configurações mostra "Conectado".
 
+
+
+
+
+== Próximos passos
+
+* link:reference-soar.html["Integre um playbook SOAR"]
 

@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: reference-soar.html 
+keywords: ransomware protection, soar, security orchestration, microsoft sentinel, splunk, automation, threat response, playbook 
+summary: Integre e use playbooks SOAR para automatizar tarefas de resposta a ameaças do NetApp Ransomware Resilience. 
+---
+= Integre um playbook SOAR para NetApp Ransomware Resilience
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Ransomware Resilience oferece orquestração de segurança, automação e playbooks de resposta (SOAR) que permitem automatizar tarefas como resposta a ameaças.
+
+Os playbooks de NetApp Ransomware Resilience oferecem as seguintes funcionalidades:
+
+* Crie um instantâneo de um volume
+* Enriquecer um endereço IP com informações sobre ameaças
+* Enriquecer as informações de armazenamento para um determinado agente e sistema
+* Desconecte um volume para resposta a incidentes
+* Teste de conectividade
+* Analise o status de um trabalho de enriquecimento
+
+
+
+
+== Playbooks
+
+O Ransomware Resilience oferece manuais de procedimentos para Microsoft Sentinel e Splunk. Consulte as respectivas páginas do GitHub para obter detalhes sobre a configuração.
+
+* link:https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks["Microsoft Sentinel"^]
+* link:https://github.com/splunk-soar-connectors/netappransomwareresilience["Splunk"^]
+
+
+
+NOTE: Para Splunk Cloud, você deve estar executando a versão 7.0, 7.1, 7.2, 8.0 ou 8.4 da plataforma. Para mais informações, consulte link:https://splunkbase.splunk.com/app/8483["Splunkbase"^].
+
+
+
+== Mais informações
+
+* link:task-siem.html["Conecte NetApp Ransomware Resilience a um SIEM para análise e detecção de ameaças"]
+
