@@ -53,7 +53,7 @@ image:screen-settings-alert-drill-configure.png["Configurar página de treinamen
 .. Selecione um SVM de armazenamento de teste.
 .. Se você selecionou uma VM de armazenamento CIFS (SMB), os campos **Nome de usuário** e **Senha** serão exibidos.  Digite o nome de usuário e a senha para a VM de armazenamento.
 .. Selecione o tipo de exercício de prontidão. Para uma recuperação manual de uma violação de dados de criptografia, escolha **Recuperação personalizada**. Para recuperação de atividades suspeitas de usuários, escolha **Violação de dados**.
-.. Insira o nome de uma nova carga de trabalho de teste a ser criada.  Não inclua hífens no nome.
+.. Insira o nome da carga de trabalho de teste. Não inclua hífens no nome.
 
 
 . Selecione *Salvar*.
@@ -189,7 +189,7 @@ Após revisar o alerta do exercício de prontidão e restaurar a carga de trabal
 ** Descartado: se você suspeitar que a atividade não é um ataque de ransomware, altere o status para Descartado.
 +
 
-IMPORTANT: Depois de rejeitar um ataque, você não pode alterá-lo de volta.  Se você descartar uma carga de trabalho, todas as cópias de snapshot feitas automaticamente em resposta ao possível ataque de ransomware serão excluídas permanentemente.  Se você ignorar o alerta, o exercício de prontidão será considerado concluído.
+IMPORTANT: Após rejeitar um ataque, não é possível reverter a situação. Se você rejeitar uma carga de trabalho, todas as cópias instantâneas feitas automaticamente em resposta ao possível ataque de ransomware serão excluídas permanentemente. Se você rejeitar o alerta, o exercício de prontidão será considerado concluído.
 
 ** Resolvido: O incidente foi atenuado.
 

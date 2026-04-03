@@ -498,7 +498,6 @@
   <block id="6c66a8a541d348bc3f3a48dc2e58492c" category="list-text">Selecione um sistema de teste.</block>
   <block id="9d5c8a6e3597683b4559e2c596a2ead9" category="list-text">Selecione um SVM de armazenamento de teste.</block>
   <block id="09cb5a7830e25d2457463ef0f909f5a0" category="list-text">Se você selecionou uma VM de armazenamento CIFS (SMB), os campos **Nome de usuário** e **Senha** serão exibidos.  Digite o nome de usuário e a senha para a VM de armazenamento.</block>
-  <block id="6773f809e3f238c4a8a25adcd8e46f13" category="list-text">Insira o nome de uma nova carga de trabalho de teste a ser criada.  Não inclua hífens no nome.</block>
   <block id="b5ffafbc91e02195737c6716b418141e" category="admonition">Você pode editar a configuração do exercício de prontidão mais tarde usando a página Configurações.</block>
   <block id="187666a138e7f6f15224af7bcef93040" category="section-title">Iniciar um exercício de prontidão</block>
   <block id="b30d5003eb8b470d6df77c1edbb96724" category="paragraph">Depois de configurar o exercício de prontidão, você pode iniciá-lo.</block>
@@ -538,7 +537,6 @@
   <block id="402892b652810818eb61e703ca333d06" category="list-text">Selecione *Marcar restauração necessária*.</block>
   <block id="f1a43a1191cd8e11a5db942f4175b31f" category="list-text">Revise a confirmação e selecione *Marcar restauração necessária* na caixa de confirmação.</block>
   <block id="63d4b8d17265522f12b229a2016b08c9" category="list-text">No menu Resiliência contra Ransomware, selecione *Recuperação*.</block>
-  <block id="001b6bed17667ada4d5dad085e5729b3" category="list-text">Selecione a carga de trabalho de teste marcada com "Exercício de prontidão" que você deseja restaurar.</block>
   <block id="f77361b272ce81d8275727f7b1a756a8" category="list-text">Selecione *Restaurar*.</block>
   <block id="98576e747c7efb09ca0d1e50a58ae308" category="list-text">Na página Restaurar, forneça informações para a restauração:</block>
   <block id="05e2304cb46b92601ea1e826aa3fec0b" category="list-text">Selecione a cópia do instantâneo de origem.</block>
@@ -555,7 +553,6 @@
   <block id="b707d985234424bd425b96580911950e" category="list-text">Selecione o alerta novamente.</block>
   <block id="2da9a9f4e6a92f5857d147337ae308f7" category="list-text">Indique o status selecionando *Editar status* e altere o status para um dos seguintes:</block>
   <block id="e0a30b860c06e610cadc21ebf64426da" category="list-text">Descartado: se você suspeitar que a atividade não é um ataque de ransomware, altere o status para Descartado.</block>
-  <block id="ff8d215b189dca41bf900d6545392594" category="admonition">Depois de rejeitar um ataque, você não pode alterá-lo de volta.  Se você descartar uma carga de trabalho, todas as cópias de snapshot feitas automaticamente em resposta ao possível ataque de ransomware serão excluídas permanentemente.  Se você ignorar o alerta, o exercício de prontidão será considerado concluído.</block>
   <block id="36b45588cbfa3653d0bdeb91883b49f4" category="list-text">Resolvido: O incidente foi atenuado.</block>
   <block id="1be5568d0c3f299b7d0fa2b810d4b90d" category="section-title">Relatórios de revisão sobre o exercício de prontidão</block>
   <block id="1618fcb06831249fd4142102d83577f5" category="paragraph">Após a conclusão do exercício de prontidão, talvez você queira revisar e salvar um relatório sobre o exercício.</block>
@@ -2209,4 +2206,7 @@
   <block id="d0c1ba6e120f697911d5bd92a51f0322" category="paragraph">O Ransomware Resilience agora oferece um playbook de orquestração, automação e resposta de segurança (SOAR) para <block ref="d942356c034f7ad3c314a5fae7d11e1d" category="inline-link-macro-rx"></block>. O playbook facilita o gerenciamento de respostas a ameaças, automatiza tarefas e testes e oferece suporte a esforços essenciais de resposta a ransomware, incluindo a criação de snapshots e a desativação de um volume.</block>
   <block id="dce0959f50faa93a47d141f615365404" category="paragraph">O Ransomware Resilience oferece manuais de instruções para Google SecOps, Microsoft Sentinel e Splunk. Consulte as respectivas páginas do GitHub para obter detalhes sobre a configuração.</block>
   <block id="4f61a1c38b74708d0982090b3ace3f21" category="list-text">Não é recomendável usar <block ref="237628f5d72273fb0e39c8149431292e" category="inline-link-macro-rx"></block> com Azure NetApp Files devido às APIs do Azure NetApp Files bloquearem ações automatizadas.</block>
+  <block id="4fcce21aba16e6a89d3c15cbcce7db5a" category="list-text">Insira o nome da carga de trabalho de teste. Não inclua hífens no nome.</block>
+  <block id="922e09477f5763a3965ac29db0b9139d" category="list-text">Selecione a carga de trabalho de teste marcada com "Exercício de prontidão" que você deseja restaurar.</block>
+  <block id="3aecb1c0d4a2579d6c2b4487309b2cdc" category="admonition">Após rejeitar um ataque, não é possível reverter a situação. Se você rejeitar uma carga de trabalho, todas as cópias instantâneas feitas automaticamente em resposta ao possível ataque de ransomware serão excluídas permanentemente. Se você rejeitar o alerta, o exercício de prontidão será considerado concluído.</block>
 </blocks>
