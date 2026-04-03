@@ -1,0 +1,11 @@
+= Playbook SOAR para Google SecOps
+:allow-uri-read: 
+
+
+
+
+=== Playbook SOAR para Google SecOps
+
+O Ransomware Resilience agora oferece um playbook de orquestração, automação e resposta de segurança (SOAR) para link:https://github.com/chronicle/content-hub/tree/main/content/response_integrations/third_party/partner/netappransomwareresiliences["Google SecOps"^]. O playbook facilita o gerenciamento de respostas a ameaças, automatizando tarefas, testes e esforços essenciais de resposta a ransomware, incluindo a criação de snapshots e a desativação de um volume.
+
+Para mais informações, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/reference-soar.html["Integrar playbooks SOAR"^].
