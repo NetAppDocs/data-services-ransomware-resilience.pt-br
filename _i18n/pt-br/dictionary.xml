@@ -1132,12 +1132,7 @@
   <block id="53e68cb1edb551af8b1c0d8fee230e44" category="admonition">Após a autenticação ser bem-sucedida, uma mensagem "Autenticado" será exibida.</block>
   <block id="00bcd4c2f217493f06ecbb6ddfa3862b" category="list-text">Insira os detalhes do espaço de trabalho do Log Analytics para o aplicativo.</block>
   <block id="b263ba58e894356680bda9edd8c52400" category="list-text">Selecione o ID da assinatura, o grupo de recursos e o espaço de trabalho do Log Analytics.</block>
-  <block id="9ccf45c8190b08c78e0be70f31ab71c4" category="section-title">Configurar o Splunk Cloud para detecção de ameaças</block>
-  <block id="4d6d1328084c627bf56727551f4a6626" category="paragraph">Antes de habilitar o Splunk Cloud no Ransomware Resilience, você precisará seguir as seguintes etapas de alto nível no Splunk Cloud:</block>
-  <block id="8a628c54baa5d5a16a963626db04a20f" category="list-text">Habilite um Coletor de Eventos HTTP no Splunk Cloud para receber dados de eventos via HTTP ou HTTPS do Console.</block>
-  <block id="a0df7816503d32b52e0b8eaf94868e56" category="list-text">Crie um token do Event Collector no Splunk Cloud.</block>
   <block id="2c65d4e0cdac9c48880857277c1bc9e3" category="list-title">Etapas para habilitar um coletor de eventos HTTP no Splunk</block>
-  <block id="a99a07d12915c1a94a26205b4a84ba20" category="list-text">Acesse o Splunk Cloud.</block>
   <block id="ce0362998bb10251a5412bcabd9b833c" category="list-text">Selecione *Configurações* &gt; *Entradas de dados*.</block>
   <block id="069c7509480a5fbadda560c7376dca8a" category="list-text">Selecione *Coletor de Eventos HTTP* &gt; *Configurações Globais*.</block>
   <block id="b42b974604014d593eace2a8678716ed" category="list-text">Na alternância Todos os tokens, selecione *Ativado*.</block>
@@ -1162,7 +1157,6 @@
   <block id="322bdafeaec3f2756e524c7676eec70b" category="inline-image-macro">Habilitar página de detalhes de detecção de ameaças</block>
   <block id="a79d3cc091ba614079e19b05bd4144d7" category="paragraph"><block ref="a79d3cc091ba614079e19b05bd4144d7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="53ff0c832c14f6bc98decd93490e2576" category="list-text">Escolha um dos sistemas SIEM.</block>
-  <block id="8b2302df496c7e3838b65f0dfaee3ab4" category="list-text">Insira o token e os detalhes de autenticação que você configurou no AWS Security Hub ou no Splunk Cloud.</block>
   <block id="4cb0caa7f0c97dd44ed525e6237432d2" category="admonition">As informações inseridas dependem do SIEM selecionado.</block>
   <block id="71377237946a16cc4981e8007b83be9b" category="list-text">Selecione *Ativar*.</block>
   <block id="f29be3377655fbc2e89f86e482ef5ca2" category="paragraph">A página Configurações mostra "Conectado".</block>
@@ -2207,6 +2201,16 @@
   <block id="dce0959f50faa93a47d141f615365404" category="paragraph">O Ransomware Resilience oferece manuais de instruções para Google SecOps, Microsoft Sentinel e Splunk. Consulte as respectivas páginas do GitHub para obter detalhes sobre a configuração.</block>
   <block id="4f61a1c38b74708d0982090b3ace3f21" category="list-text">Não é recomendável usar <block ref="237628f5d72273fb0e39c8149431292e" category="inline-link-macro-rx"></block> com Azure NetApp Files devido às APIs do Azure NetApp Files bloquearem ações automatizadas.</block>
   <block id="4fcce21aba16e6a89d3c15cbcce7db5a" category="list-text">Insira o nome da carga de trabalho de teste. Não inclua hífens no nome.</block>
-  <block id="922e09477f5763a3965ac29db0b9139d" category="list-text">Selecione a carga de trabalho de teste marcada com "Exercício de prontidão" que você deseja restaurar.</block>
   <block id="3aecb1c0d4a2579d6c2b4487309b2cdc" category="admonition">Após rejeitar um ataque, não é possível reverter a situação. Se você rejeitar uma carga de trabalho, todas as cópias instantâneas feitas automaticamente em resposta ao possível ataque de ransomware serão excluídas permanentemente. Se você rejeitar o alerta, o exercício de prontidão será considerado concluído.</block>
+  <block id="a1f10863eda000ced0430d0c31580729" category="list-text">O Azure NetApp Files não oferece suporte a FPolicy nem à atividade de comportamento do usuário.</block>
+  <block id="001b6bed17667ada4d5dad085e5729b3" category="list-text">Selecione a carga de trabalho de teste marcada com "Exercício de prontidão" que você deseja restaurar.</block>
+  <block id="5dba46907e72d7502229329d2aafd8a2" category="list-text">Splunk Enterprise</block>
+  <block id="a8fdc49c32c2aa34ebd35cbf9823def6" category="section-title">Configure Splunk Cloud e Splunk Enterprise para detecção de ameaças</block>
+  <block id="681024dbfdb70dd04ac980451d89db64" category="paragraph">O Ransomware Resilience oferece suporte à detecção de ameaças com Splunk Cloud e Splunk Enterprise. Antes de habilitar a conexão do Splunk no Ransomware Resilience, você precisa:</block>
+  <block id="026d482451225403707f4d919cfb8461" category="list-text">Habilite um coletor de eventos HTTP no Splunk Cloud ou Enterprise para receber dados de eventos via HTTP ou HTTPS do Console.</block>
+  <block id="42de63532cd927f3b14ff23339042fae" category="list-text">Crie um token de coletor de eventos no Splunk Cloud ou Enterprise.</block>
+  <block id="b8e9fd0fd0fe8e4c4d930ae7315048e4" category="admonition">Para Splunk Enterprise, é necessário permitir o tráfego público de internet de entrada para que o Ransomware Resilience possa enviar eventos usando os detalhes do coletor de eventos HTTP fornecidos a ele.</block>
+  <block id="261f193d834ffba7dae6c54f99306659" category="list-text">Acesse o ambiente Splunk de sua escolha: Cloud ou Enterprise.</block>
+  <block id="eade5cc0d987bed25c884550a681c364" category="list-text">Acesse o Splunk Cloud ou Enterprise.</block>
+  <block id="e4f58ddb798b11dab7791e0175f6cf0f" category="list-text">Insira o token e os detalhes de autenticação que você configurou no AWS Security Hub, Splunk Cloud ou Splunk Enterprise.</block>
 </blocks>
