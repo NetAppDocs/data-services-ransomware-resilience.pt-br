@@ -1,0 +1,71 @@
+---
+sidebar: sidebar 
+permalink: task-clean-restore-recover.html 
+keywords: clean room, clean restore, secure recovery, recover, isolated recovery environment, ire 
+summary: A NetApp Ransomware Resilience permite controlar e higienizar suas cargas de trabalho com uma restauração limpa. 
+---
+= Recupere cargas de trabalho com restauração limpa em NetApp Ransomware Resilience
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Com o NetApp Ransomware Resilience, você pode realizar uma recuperação guiada após um ataque de ransomware baseado em criptografia, utilizando uma restauração limpa. A restauração limpa identifica caminhos de recuperação otimizados para minimizar a perda de dados e restaurar suas cargas de trabalho online no menor tempo possível.
+
+A opção de restauração completa é uma alternativa à xref:task-custom-restore.html[opção de restauração personalizada].
+
+
+
+== Antes de começar
+
+Você precisa ter configurado um link:task-clean-restore.html["ambiente de recuperação isolado"^] antes de poder realizar uma restauração limpa.
+
+*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^] .
+
+
+
+== Considerações
+
+* Só é possível realizar uma restauração limpa em caso de ataque de ransomware baseado em criptografia.
+* Se o ambiente de recuperação isolado não tiver capacidade para uma nova operação, ela será enfileirada até que haja disponibilidade.
++
+** Você pode monitorar o status das operações de restauração limpa ativas e em fila a qualquer momento no painel de controle do NetApp Ransomware Resilience Recovery.
+
+
+* Ao iniciar uma restauração limpa, o volume original é desmontado, o que pode interromper o acesso de E/S.
+
+
+
+
+== Realizar uma restauração completa
+
+. Na seção **Recuperação**, selecione a carga de trabalho que deseja restaurar. Selecione **Restaurar**.
+. Nas opções de Tipo de restauração, selecione **Restauração limpa** e depois **Avançar**.
+. Selecione o ambiente de recuperação isolado que deseja usar e clique em **Next**.
+. Analise o ambiente de recuperação isolado, confirmando se é o local correto. Selecione **Restaurar**.
+. O Ransomware Resilience realiza a configuração necessária. Assim que a configuração for concluída com sucesso, o Ransomware Resilience exibirá **Configuração concluída**. Para prosseguir com a análise, selecione **Avançar**.
+. Após a conclusão da instalação, selecione **Executar análise**. O NetApp Ransomware Resilience analisa todos os pontos de restauração disponíveis nos sete dias anteriores ao evento de ransomware, exibindo a data e o tipo de ponto de restauração.
++
+image:screenshot-clean-room-analysis.png["Captura de tela da etapa de análise de restauração limpa."]
+
+. Após a conclusão da análise, selecione **Avançar** para planejar sua recuperação. O NetApp Ransomware Resilience apresenta duas opções: **Least data loss** e **Latest unimpacted restore point**. Selecione uma das opções e, opcionalmente, examine os dados de arquivos individuais para cada ponto de restauração.
++
+Para visualizar dados detalhados de eventos de arquivos, selecione um arquivo para analisar seu status de criptografia; quando ele foi criado, modificado ou excluído e qual ponto de restauração corresponde a qual ação.
+
++
+image:clean-restore-plan.png["Captura de tela da etapa do plano de restauração limpa."]
+
+. Após escolher o ponto de restauração, selecione **Avançar** para iniciar a limpeza dos seus arquivos.
+. NetApp Ransomware Resilience começa a limpar a carga de trabalho.
++
+Quando a limpeza for concluída, selecione **Iniciar recuperação** para iniciar a recuperação.
+
+. Escolha se deseja salvar a carga de trabalho original. Para não salvar a carga de trabalho original, selecione **Não, substituir a carga de trabalho original**. Para salvá-la, selecione **Sim, salvar a carga de trabalho original** e insira um novo nome para a carga de trabalho.
+. Selecione **Iniciar recuperação** para iniciar a recuperação.
+. Quando a recuperação for concluída, selecione **Avançar** para prosseguir para a fase final.
+. Selecione **Liberar recursos e encerrar** para liberar os recursos e fechar a sala limpa. Para confirmar que deseja liberar o recurso, selecione **Encerrar**.
+

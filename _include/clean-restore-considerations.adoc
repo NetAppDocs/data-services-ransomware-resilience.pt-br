@@ -1,0 +1,12 @@
+= 
+:allow-uri-read: 
+
+
+* Só é possível realizar uma restauração limpa em caso de ataque de ransomware baseado em criptografia.
+* Se o ambiente de recuperação isolado não tiver capacidade para uma nova operação, ela será enfileirada até que haja disponibilidade.
++
+** Você pode monitorar o status das operações de restauração limpa ativas e em fila a qualquer momento no painel de controle do NetApp Ransomware Resilience Recovery.
+
+
+* Ao iniciar uma restauração limpa, o volume original é desmontado, o que pode interromper o acesso de E/S.
+

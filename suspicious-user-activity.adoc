@@ -4,7 +4,7 @@ permalink: suspicious-user-activity.html
 keywords: data breach detection, data breach, user activity, suspicious, anomalous, 
 summary: A detecção de atividades suspeitas de usuários no Ransomware Resilience permite que você detecte atividades de usuários que podem representar uma ameaça potencial. 
 ---
-= Configurar agentes e coletores para detecção de atividade do usuário em NetApp Ransomware Resilience
+= Configurar a detecção de atividade do usuário em NetApp Ransomware Resilience
 :hardbreaks:
 :allow-uri-read: 
 :icons: font

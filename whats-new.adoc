@@ -18,6 +18,34 @@ Saiba o que há de novo no NetApp Ransomware Resilience.
 
 
 
+== 13 de abril de 2026
+
+
+
+=== Restauração limpa
+
+O Ransomware Resilience agora oferece suporte a restaurações limpas, uma nova opção de recuperação que ajuda você a se recuperar de ataques de ransomware de forma rápida e fácil. As restaurações limpas oferecem fluxos de trabalho guiados que identificam os pontos de restauração ideais para colocar suas cargas de trabalho em funcionamento novamente, minimizando o tempo de inatividade. Os fluxos de trabalho na restauração limpa também fornecem informações detalhadas sobre seus dados em nível de arquivo, garantindo que você possa restaurar cargas de trabalho livres de malware, o que evita a reinfecção e minimiza a perda de dados.
+
+Para saber mais sobre as configurações suportadas e como configurar seu sistema para uma restauração limpa, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["Crie um ambiente de recuperação isolado"^]. Para saber como recuperar com uma restauração limpa, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore-recover["Recupere cargas de trabalho com uma restauração limpa"^].
+
+
+
+=== Suporte SIEM para Splunk Enterprise
+
+O Ransomware Resilience agora oferece suporte ao gerenciamento de informações e eventos de segurança (SIEM) para Splunk Enterprise, permitindo centralizar dados de log e eventos e simplificar a análise e detecção de ameaças.
+
+Para mais informações, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["Conecte NetApp Ransomware Resilience a um SIEM"^].
+
+
+
+=== Aprimoramento da atividade do comportamento do usuário
+
+As informações sobre violações de dados agora são armazenadas por 13 meses após um incidente, permitindo um período mais longo de registro para suas necessidades de relatórios.
+
+Para mais informações, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-user-behavior.html["Saiba mais sobre detecção de atividade do usuário"^].
+
+
+
 == 31 de março de 2026
 
 
