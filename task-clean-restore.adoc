@@ -157,12 +157,7 @@ Este diagrama ilustra um exemplo de configuração de restauração limpa de nuv
 
 image::diagram-clean-recovery-cloud-cloud.png[Diagrama de restauração limpa de nuvem para nuvem]
 
---
-====
-Se você estiver configurando um IRE com a origem no Amazon FSxN para ONTAP, ignore este requisito de endereço IP LIF de dados SVM de sala limpa.
-
-[]
-====
+.Dados SVM de sala limpa LIF IP (crr-data-LIF-IP)
 * Atribua o endereço IP para a interface de dados SVM da sala limpa (LIF). Anote o endereço IP: você precisará desse endereço IP durante o processo de configuração do IRE.
 +
 ** Para Cloud Volumes ONTAP com AWS usando uma restauração limpa de nuvem para nuvem, certifique-se de que o endereço IP esteja alocado à Elastic Network Interface.
@@ -170,6 +165,9 @@ Se você estiver configurando um IRE com a origem no Amazon FSxN para ONTAP, ign
 
 * Permitir o roteamento do endereço IP da LIF de dados da SVM para o IRE.
 
+
+
+NOTE: Se você estiver configurando um IRE com a origem no Amazon FSxN para ONTAP, ignore este requisito de endereço IP LIF de dados SVM de sala limpa.
 
 .Tabela de roteamento do ambiente de produção
 * A tabela de roteamento de produção deve permitir o tráfego da sub-rede IRE para o endereço IP LIF de restauração de dados limpos. Você deve adicionar essa rota à tabela de roteamento de produção.
@@ -216,7 +214,8 @@ Se você estiver configurando um IRE com a origem no Amazon FSxN para ONTAP, ign
 
 .Permissões na nuvem
 * A Resiliência contra Ransomware precisa da chave de acesso e do segredo da AWS com as permissões IAM corretas para realizar a restauração limpa em um ambiente AWS. link:https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["Criar uma política do IAM na AWS"^] com as seguintes permissões, depois anexe a política a um usuário recém-criado. Após criar o usuário, gere as credenciais IAM e forneça-as para a restauração limpa.
-+
+
+
 [source, json]
 ----
 {
@@ -287,20 +286,14 @@ Se você estiver configurando um IRE com a origem no Amazon FSxN para ONTAP, ign
     ]
 }
 ----
-
-
 --
-
+.Do ambiente local para a nuvem
 --
 Este diagrama ilustra um exemplo de configuração de restauração limpa de um ambiente local para a nuvem. Analise o diagrama e os recursos que você precisa configurar antes de criar o IRE.
 
 image:diagram-clean-recovery-cloud-on-prem.png["Diagrama de restauração limpa da nuvem para o ambiente local"]
 
-====
-Se você estiver configurando um IRE com a origem no Amazon FSxN para ONTAP, ignore este requisito de endereço IP LIF de dados SVM de sala limpa.
-
-[]
-====
+.Dados SVM de sala limpa LIF IP (crr-data-LIF-IP)
 * Atribua o endereço IP para a interface de dados SVM da sala limpa (LIF). Anote o endereço IP: você precisará desse endereço IP durante o processo de configuração do IRE.
 +
 ** Para Cloud Volumes ONTAP com AWS usando uma restauração limpa de nuvem para nuvem, certifique-se de que o endereço IP esteja alocado à Elastic Network Interface.
@@ -308,6 +301,9 @@ Se você estiver configurando um IRE com a origem no Amazon FSxN para ONTAP, ign
 
 * Permitir o roteamento do endereço IP da LIF de dados da SVM para o IRE.
 
+
+
+NOTE: Se você estiver configurando um IRE com a origem no Amazon FSxN para ONTAP, ignore este requisito de endereço IP LIF de dados SVM de sala limpa.
 
 .Tabela de roteamento do ambiente de produção
 * A tabela de roteamento de produção deve permitir o tráfego da sub-rede IRE para o endereço IP LIF de restauração de dados limpos. Você deve adicionar essa rota à tabela de roteamento de produção.
@@ -354,7 +350,8 @@ Se você estiver configurando um IRE com a origem no Amazon FSxN para ONTAP, ign
 
 .Permissões na nuvem
 * A Resiliência contra Ransomware precisa da chave de acesso e do segredo da AWS com as permissões IAM corretas para realizar a restauração limpa em um ambiente AWS. link:https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["Criar uma política do IAM na AWS"^] com as seguintes permissões, depois anexe a política a um usuário recém-criado. Após criar o usuário, gere as credenciais IAM e forneça-as para a restauração limpa.
-+
+
+
 [source, json]
 ----
 {
@@ -425,10 +422,8 @@ Se você estiver configurando um IRE com a origem no Amazon FSxN para ONTAP, ign
     ]
 }
 ----
-
-
 --
-
+.De local para local
 --
 Este diagrama ilustra um exemplo de configuração de restauração limpa de um ambiente local para outro. Analise o diagrama e os recursos que você precisa configurar antes de criar o IRE.
 
@@ -502,8 +497,6 @@ Acesso NFS ao: * Agente do console de produção * VLAN do agente do console * V
 
 
 --
-
---
 ====
 
 
@@ -519,7 +512,7 @@ O processo para criar uma sala de recuperação isolada difere dependendo se o a
 --
 . Em Resiliência a Ransomware, selecione **Configurações**.
 . No cartão Restaurações limpas, selecione **Configurar** se este for o seu primeiro ambiente ou **Gerenciar** se você já criou um.
-. Se esta for a sua primeira vez criando um IRE, prossiga para a próxima etapa.
+. Se esta for a primeira vez que você cria um IRE, prossiga para a próxima etapa.
 +
 Se você já criou um IRE, selecione **Adicionar** para criar outro.
 
@@ -536,12 +529,12 @@ image:clean-restore-systems.png["Captura de tela da interface de seleção de si
 . Expanda a seção **Autenticação**.
 +
 ** Insira o ID da **Conta** na nuvem e selecione a **Região** para a conta.
-** Insira a **Chave de acesso** e a **Chave secreta** da conta**.
-** Expanda a seção *Nuvem privada virtual (VPC)*. Insira o ID da VPC onde o IRE será implantado.
+** Insira a **Chave de acesso** e a **Chave secreta** da conta.
+
+
+. Expanda a seção *Nuvem privada virtual (VPC)*. Insira o ID da VPC onde o IRE será implantado.
 +
 image:screenshot-set-up-recovery-environment.png["Captura de tela da configuração de autenticação IRE."]
-
-
 
 . Selecione **Adicionar** para criar o IRE.
 +
@@ -583,7 +576,7 @@ image:clean-restore-compute.png["Captura de tela da interface de seleção de co
 
 --
 ====
-Você pode acompanhar o progresso. Na guia configurações, selecione **Ambientes de recuperação isolados**. A página Ambientes de recuperação isolados exibe todos os IREs e seus status. Selecione **Exibir tarefas** para um detalhamento de todas as tarefas relacionadas a esse ambiente.
+Você pode acompanhar o progresso. Na guia Configurações, selecione **Ambientes de recuperação isolados**. A página Ambientes de recuperação isolados exibe todos os IREs e seus status. Selecione **Exibir tarefas** para um detalhamento de todas as tarefas relacionadas a esse ambiente.
 
 Você pode modificar os sistemas em um IRE após sua criação. Na guia Configurações, selecione **Ambientes de recuperação isolados**. Localize o IRE que deseja editar, selecione o menu de ações  `...` e então **Editar**. Prossiga para modificar os sistemas. Selecione **Salvar** ao concluir.
 

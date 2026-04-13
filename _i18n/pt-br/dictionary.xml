@@ -2195,8 +2195,8 @@
   <block id="261f193d834ffba7dae6c54f99306659" category="list-text">Acesse o ambiente Splunk de sua escolha: Cloud ou Enterprise.</block>
   <block id="eade5cc0d987bed25c884550a681c364" category="list-text">Acesse o Splunk Cloud ou Enterprise.</block>
   <block id="e4f58ddb798b11dab7791e0175f6cf0f" category="list-text">Insira o token e os detalhes de autenticação que você configurou no AWS Security Hub, Splunk Cloud ou Splunk Enterprise.</block>
-  <block id="c49fdbd48abc0805f78e165d087f6c4b" category="admonition-title">Dados SVM de sala limpa LIF IP (crr-data-LIF-IP)</block>
-  <block id="f0778a7682182f497af90edd54b04a18" category="paragraph">Se você estiver configurando um IRE com a origem no Amazon FSxN para ONTAP, ignore este requisito de endereço IP LIF de dados SVM de sala limpa.</block>
+  <block id="c49fdbd48abc0805f78e165d087f6c4b" category="list-title">Dados SVM de sala limpa LIF IP (crr-data-LIF-IP)</block>
+  <block id="f0778a7682182f497af90edd54b04a18" category="admonition">Se você estiver configurando um IRE com a origem no Amazon FSxN para ONTAP, ignore este requisito de endereço IP LIF de dados SVM de sala limpa.</block>
   <block id="074ccc576a0d2f59ff97aa7d5cd6f1db" category="list-text">Atribua o endereço IP para a interface de dados SVM da sala limpa (LIF). Anote o endereço IP: você precisará desse endereço IP durante o processo de configuração do IRE.</block>
   <block id="6e72e986d17ee66e6f3fdfe4e138163d" category="list-text">Para Cloud Volumes ONTAP com AWS usando uma restauração limpa de nuvem para nuvem, certifique-se de que o endereço IP esteja alocado à Elastic Network Interface.</block>
   <block id="b1573f80f25470f8eb281542e0c5be32" category="list-text">Permitir o roteamento do endereço IP da LIF de dados da SVM para o IRE.</block>
@@ -2231,17 +2231,16 @@
   <block id="1e0cb6f175281202fbb8e130dc6ceb5b" category="list-text">Você pode monitorar o status das operações de restauração limpa ativas e em fila a qualquer momento no painel de controle do NetApp Ransomware Resilience Recovery.</block>
   <block id="75b68821e2e55eb56181916eaf645c45" category="list-text">Ao iniciar uma restauração limpa, o volume original é desmontado, o que pode interromper o acesso de E/S.</block>
   <block id="ad2a9811677d640aa02be04e16ed6267" category="doc">Restauração limpa</block>
-  <block id="a27a472ba292f326ddc2e430f964123b" category="paragraph">O Ransomware Resilience agora oferece suporte a restaurações limpas, uma nova opção de recuperação que ajuda você a se recuperar de ataques de ransomware de forma rápida e fácil. As restaurações limpas oferecem fluxos de trabalho guiados que identificam os pontos de restauração ideais para colocar suas cargas de trabalho em funcionamento novamente, minimizando o tempo de inatividade. Os fluxos de trabalho na restauração limpa também fornecem informações detalhadas sobre seus dados em nível de arquivo, garantindo que você possa restaurar cargas de trabalho livres de malware, o que evita a reinfecção e minimiza a perda de dados.</block>
+  <block id="a27a472ba292f326ddc2e430f964123b" category="paragraph">O Ransomware Resilience agora oferece suporte a restaurações limpas, uma nova opção de recuperação que ajuda você a se recuperar de ataques de ransomware de forma rápida e fácil. As restaurações limpas oferecem fluxos de trabalho guiados que identificam os pontos de restauração ideais para colocar suas cargas de trabalho em funcionamento novamente, minimizando o tempo de inatividade. Os fluxos de trabalho na restauração limpa também fornecem informações detalhadas sobre seus dados em nível de arquivo, garantindo que você possa restaurar cargas de trabalho livres de malware, o que evita a reinfecção e minimiza perda de dados.</block>
   <block id="86ef5018580452c81ea6cb2911275e90" category="inline-link-macro">Crie um ambiente de recuperação isolado</block>
   <block id="508a286442ccdd0f0c8a02ce355b62db" category="inline-link-macro">Recupere cargas de trabalho com uma restauração limpa</block>
-  <block id="a9e75b5aa64910e787dec413e103a858" category="paragraph">Para saber mais sobre as configurações suportadas e como configurar seu sistema para uma restauração limpa, consulte <block ref="bce58762a021948ccde0fba2f5f7a845" category="inline-link-macro-rx"></block>. Para saber como recuperar com uma restauração limpa, consulte <block ref="455be04ee07ce68cbcdf924300b59eba" category="inline-link-macro-rx"></block>.</block>
   <block id="1268d987cbc2b2bc1be3c9ba04af7cd1" category="section-title">Suporte SIEM para Splunk Enterprise</block>
   <block id="8d4e1592ef4f14add49e9860e8b367dc" category="paragraph">O Ransomware Resilience agora oferece suporte ao gerenciamento de informações e eventos de segurança (SIEM) para Splunk Enterprise, permitindo centralizar dados de log e eventos e simplificar a análise e detecção de ameaças.</block>
-  <block id="c81c8aac6cfb1c5f690b914eda6a69fd" category="inline-link-macro">Conecte NetApp Ransomware Resilience a um SIEM</block>
-  <block id="dbdca0e081ed0b247153e35ce9b1c298" category="paragraph">Para mais informações, consulte <block ref="d02df671c233387bf6b644be94acfdf7" category="inline-link-macro-rx"></block>.</block>
-  <block id="54dee0adf9652288315f3c7099d462be" category="section-title">Aprimoramento da atividade do comportamento do usuário</block>
-  <block id="7ee4b3a8392885d95b1b7c9f5a6c99e5" category="paragraph">As informações sobre violações de dados agora são armazenadas por 13 meses após um incidente, permitindo um período mais longo de registro para suas necessidades de relatórios.</block>
-  <block id="787e93d4c2f472a6434cd13d74f3f4d4" category="paragraph">Para mais informações, consulte <block ref="1a6935dbce91cdb72e61e2f8c1313b36" category="inline-link-macro-rx"></block>.</block>
+  <block id="c81c8aac6cfb1c5f690b914eda6a69fd" category="inline-link-macro">Conecte Ransomware Resilience a um SIEM</block>
+  <block id="dbdca0e081ed0b247153e35ce9b1c298" category="paragraph">Para obter mais informações, consulte <block ref="d02df671c233387bf6b644be94acfdf7" category="inline-link-macro-rx"></block>.</block>
+  <block id="54dee0adf9652288315f3c7099d462be" category="section-title">Aprimoramento da atividade do usuário</block>
+  <block id="7ee4b3a8392885d95b1b7c9f5a6c99e5" category="paragraph">As informações sobre eventos de violação de dados agora são armazenadas por 13 meses após um incidente, permitindo um período mais longo de registro para suas necessidades de relatórios.</block>
+  <block id="787e93d4c2f472a6434cd13d74f3f4d4" category="paragraph">Para obter mais informações, consulte <block ref="1a6935dbce91cdb72e61e2f8c1313b36" category="inline-link-macro-rx"></block>.</block>
   <block id="ff1d8a11789570b9a7e5f2d8fa4b3245" category="list-text">Se você ainda não adicionou um agente de console para outros serviços, <block ref="51497621bfe4b6ebf6d24d0214cc9366" category="inline-link-macro-rx"></block>.</block>
   <block id="5ce927453063236746bf9f7b1ee339ed" category="list-text">Selecione *Adicionar licença* para acessar a página Licenses and subscriptions do console.</block>
   <block id="5aacdcc38fb6938e8f7950fb8e5395fc" category="doc">Analise o estado de recuperação em NetApp Ransomware Resilience</block>
@@ -2388,7 +2387,7 @@
   <block id="90f9f1ae9aae8bda3367df6cbbd98883" category="paragraph">O processo para criar uma sala de recuperação isolada difere dependendo se o ambiente está na nuvem ou on-premises. Certifique-se de seguir as instruções para o local correto.</block>
   <block id="c8e2277ecfb1427838c488c217f99466" category="open-title">Nuvem</block>
   <block id="0f41fbceabc827d5c5df2618a1c312ad" category="list-text">No cartão Restaurações limpas, selecione **Configurar** se este for o seu primeiro ambiente ou **Gerenciar** se você já criou um.</block>
-  <block id="33319874642cd9fa09af5fae9c62b0f4" category="list-text">Se esta for a sua primeira vez criando um IRE, prossiga para a próxima etapa.</block>
+  <block id="33319874642cd9fa09af5fae9c62b0f4" category="list-text">Se esta for a primeira vez que você cria um IRE, prossiga para a próxima etapa.</block>
   <block id="7a5443fd9ce8d6f45236ac37568d5b41" category="paragraph">Se você já criou um IRE, selecione **Adicionar** para criar outro.</block>
   <block id="b0836e1bf6680e789281aea3293f7647" category="list-text">Para um IRE baseado em nuvem, selecione **Amazon Web Services**.</block>
   <block id="4564ef7a631e6ae4e5c472323c190a1d" category="list-text">Expanda a seção **Nome**. Crie um **Nome** para o ambiente.</block>
@@ -2398,7 +2397,6 @@
   <block id="9aa6cf1eff1a76b0409b3e752312ea85" category="paragraph"><block ref="9aa6cf1eff1a76b0409b3e752312ea85" category="inline-image-macro-rx" type="image"></block></block>
   <block id="89fdf1c0dc132ad5060755aed85034a8" category="list-text">Expanda a seção **Autenticação**.</block>
   <block id="4714db5e444c82e9797cf1040d2e1bb4" category="list-text">Insira o ID da **Conta** na nuvem e selecione a **Região** para a conta.</block>
-  <block id="3aae9af33dfbd98649b0845bbd649675" category="list-text">Insira a **Chave de acesso** e a **Chave secreta** da conta**.</block>
   <block id="a81c4edeb10492c8584a0c9082f6ce84" category="list-text">Expanda a seção *Nuvem privada virtual (VPC)*. Insira o ID da VPC onde o IRE será implantado.</block>
   <block id="c2b8af5a06c2ce8a91c4861ae659df43" category="inline-image-macro">Captura de tela da configuração de autenticação IRE.</block>
   <block id="9a717f23235ddd79acf46b60cbb49654" category="paragraph"><block ref="9a717f23235ddd79acf46b60cbb49654" category="inline-image-macro-rx" type="image"></block></block>
@@ -2422,7 +2420,7 @@
   <block id="8cae18dea7d74591e21c2f2407666e60" category="paragraph"><block ref="8cae18dea7d74591e21c2f2407666e60" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7ca860788f238da4a9c5263bd546d3d2" category="list-text">Expanda a seção *VMs*, que é preenchida com base nas suas informações inseridas na seção *Compute*. Selecione as VMs localizadas no host ESXi que você usará para a verificação de malware durante a restauração limpa. Forneça o *User name* e a *Password* para cada VM que você selecionar.</block>
   <block id="d7b9a49b450fb7d4116d3c4df7a11288" category="list-text">Selecione **Adicionar** para criar o IRE. NetApp Ransomware Resilience testa a conexão após você selecionar adicionar; esse processo pode demorar um pouco.</block>
-  <block id="af131a682b99e37528a95fa21be4b5cc" category="paragraph">Você pode acompanhar o progresso. Na guia configurações, selecione **Ambientes de recuperação isolados**. A página Ambientes de recuperação isolados exibe todos os IREs e seus status. Selecione **Exibir tarefas** para um detalhamento de todas as tarefas relacionadas a esse ambiente.</block>
+  <block id="af131a682b99e37528a95fa21be4b5cc" category="paragraph">Você pode acompanhar o progresso. Na guia Configurações, selecione **Ambientes de recuperação isolados**. A página Ambientes de recuperação isolados exibe todos os IREs e seus status. Selecione **Exibir tarefas** para um detalhamento de todas as tarefas relacionadas a esse ambiente.</block>
   <block id="16a6474800dcc57e48f9c5fecf7f4b0a" category="paragraph">Você pode modificar os sistemas em um IRE após sua criação. Na guia Configurações, selecione **Ambientes de recuperação isolados**. Localize o IRE que deseja editar, selecione o menu de ações <block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block> e então **Editar**. Prossiga para modificar os sistemas. Selecione **Salvar** ao concluir.</block>
   <block id="59f0ec64e6ca9eb2b145c2d0b972a631" category="section-title">Excluir um ambiente de recuperação isolado</block>
   <block id="3b98dd3eb2a4ab1e4dbff3d07d4b9987" category="paragraph">Não é possível excluir um IRE com uma operação de restauração ativa; você pode cancelar a operação de restauração ou aguardar até que a restauração seja concluída e então excluir o IRE.</block>
@@ -2444,4 +2442,8 @@
   <block id="403f4a170e2d1c03d329e0f0dd8d1b84" category="section-title">13 de abril de 2026</block>
   <block id="794c08acf0fdad83a95c363b8c9662f4" category="sidebar">Verificar estado de recuperação</block>
   <block id="d14be6fd318be2bc44adb6224cd0309b" category="sidebar">Recupere com restauração limpa</block>
+  <block id="6ff288c704ac97afbc67708bc23dbc09" category="paragraph">Para saber mais sobre as configurações suportadas e como configurar seu sistema para uma restauração limpa, consulte <block ref="bce58762a021948ccde0fba2f5f7a845" category="inline-link-macro-rx"></block>. Para saber como recuperar com uma restauração limpa, consulte <block ref="c39fc221f9e8d680274efcf9f5170bf4" category="inline-link-macro-rx"></block>.</block>
+  <block id="482b73c713ea8cffc3070c798b03badc" category="open-title">Do ambiente local para a nuvem</block>
+  <block id="8880534a0e139c017e28bbf6bc44e84b" category="open-title">De local para local</block>
+  <block id="9df5336cadaa8da9a21a00f3f55c497b" category="list-text">Insira a **Chave de acesso** e a **Chave secreta** da conta.</block>
 </blocks>

@@ -2,12 +2,7 @@
 :allow-uri-read: 
 
 
-[NOTE]
 .Dados SVM de sala limpa LIF IP (crr-data-LIF-IP)
-====
-Se você estiver configurando um IRE com a origem no Amazon FSxN para ONTAP, ignore este requisito de endereço IP LIF de dados SVM de sala limpa.
-
-====
 * Atribua o endereço IP para a interface de dados SVM da sala limpa (LIF). Anote o endereço IP: você precisará desse endereço IP durante o processo de configuração do IRE.
 +
 ** Para Cloud Volumes ONTAP com AWS usando uma restauração limpa de nuvem para nuvem, certifique-se de que o endereço IP esteja alocado à Elastic Network Interface.
@@ -15,6 +10,9 @@ Se você estiver configurando um IRE com a origem no Amazon FSxN para ONTAP, ign
 
 * Permitir o roteamento do endereço IP da LIF de dados da SVM para o IRE.
 
+
+
+NOTE: Se você estiver configurando um IRE com a origem no Amazon FSxN para ONTAP, ignore este requisito de endereço IP LIF de dados SVM de sala limpa.
 
 .Tabela de roteamento do ambiente de produção
 * A tabela de roteamento de produção deve permitir o tráfego da sub-rede IRE para o endereço IP LIF de restauração de dados limpos. Você deve adicionar essa rota à tabela de roteamento de produção.
@@ -61,7 +59,8 @@ Se você estiver configurando um IRE com a origem no Amazon FSxN para ONTAP, ign
 
 .Permissões na nuvem
 * A Resiliência contra Ransomware precisa da chave de acesso e do segredo da AWS com as permissões IAM corretas para realizar a restauração limpa em um ambiente AWS. link:https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["Criar uma política do IAM na AWS"^] com as seguintes permissões, depois anexe a política a um usuário recém-criado. Após criar o usuário, gere as credenciais IAM e forneça-as para a restauração limpa.
-+
+
+
 [source, json]
 ----
 {
@@ -132,4 +131,3 @@ Se você estiver configurando um IRE com a origem no Amazon FSxN para ONTAP, ign
     ]
 }
 ----
-
