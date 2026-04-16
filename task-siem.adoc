@@ -47,11 +47,24 @@ O Ransomware Resilience pode enviar os seguintes dados de eventos para o seu sis
 +
 ** *incident_id*: O ID do incidente gerado pelo Ransomware Resilience para o volume sob ataque no Ransomware Resilience.
 ** *alert_id*: O ID gerado pelo Ransomware Resilience para a carga de trabalho.
-** *gravidade*: Um dos seguintes níveis de alerta: "CRÍTICO", "ALTO", "MÉDIO", "BAIXO".
+** *Gravidade*: A gravidade dos níveis de alerta: "CRITICAL", "HIGH", "MEDIUM", "LOW".
 ** *description*: Detalhes sobre o alerta que foi detectado, por exemplo, "Um possível ataque de ransomware detectado na carga de trabalho arp_learning_mode_test_2630"
+** *título*: O nome de exibição do alerta detectado
+** *criticality*: Uma avaliação da criticidade do volume em seu ambiente: "CRÍTICO", "IMPORTANTE", "PADRÃO".
+** *incident_status*: O status ativo do incidente, que pode ser: "NEW", "RESOLVED", "DISMISSED", "AUTO_RESOLVED".
+** *first_detected*: O registro de data e hora que indica quando o incidente foi detectado pela primeira vez pelo Ransomware Resilience.
+** *is_readiness_drill*: Um valor booleano que indica se o alerta é um simulado ou um incidente real.
+** *protocolo*: O protocolo usado pelo volume. Os valores possíveis são "iSCSI", "NFS" e "SMB".
+** *alert_type*: O tipo de ameaça detectada. Os valores possíveis são "Criptografia", "Destruição de dados", "Violação de dados" e "Comportamento suspeito do usuário".
+** *user_name*: O nome de usuário do usuário suspeito associado ao alerta.
+** *user_id*: O ID do usuário suspeito associado ao alerta.
+** *client_ips*: Uma lista de endereços IP de clientes associados à atividade suspeita, aplicável somente para alertas de NFS.
 
 
 
+
+
+NOTE: Os campos *user_name* e *user_id* só são relevantes se você tiver configurado xref:concept-user-behavior.adoc[detecção de comportamento do usuário].
 
 
 
