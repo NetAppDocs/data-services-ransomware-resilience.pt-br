@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-start-licenses.html 
 keywords: bluexp license, ransomware protection license, netapp console 
-summary: Certifique-se de atender aos requisitos de licenciamento do Ransomware Resilience para proteger seus sistemas e cargas de trabalho. 
+summary: Certifique-se de atender aos requisitos de licenciamento do Ransomware Resilience para proteger suas cargas de trabalho. 
 ---
 = Configurar licenciamento para NetApp Ransomware Resilience
 :hardbreaks:

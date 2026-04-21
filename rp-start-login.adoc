@@ -41,8 +41,5 @@ Caso contrário, o painel de resiliência do Ransomware será exibido.
 +
 image:screen-dashboard.png["Captura de tela do painel de resiliência do Ransomware"]
 
-. Se você ainda não fez isso, selecione a opção *Descobrir cargas de trabalho*.
-+
-Consulte link:rp-start-discover.html["Descubra cargas de trabalho"] .
-
+. Se esta for a sua primeira vez usando a NetApp Ransomware Resilience, link:rp-start-discover.html["descobrir cargas de trabalho"].
 

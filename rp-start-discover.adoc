@@ -17,7 +17,7 @@ Antes de poder usar o NetApp Ransomware Resilience, ele precisa primeiro descobr
 No painel de controle Discovery, o Ransomware Resilience exibe as configurações de sistema compatíveis e incompatíveis. A ferramenta de Resiliência a Ransomware avalia aplicativos Oracle, datastores VMware, compartilhamentos de arquivos e armazenamento em blocos.
 
 
-NOTE: A Resiliência contra Ransomware não detecta cargas de trabalho com volumes que utilizam FlexGroup.
+NOTE: A Resiliência contra Ransomware não detecta sistemas com volumes que utilizam FlexGroup.
 
 O Ransomware Resilience verifica sua proteção de backup atual, cópias instantâneas e opções de NetApp Autonomous Ransomware Protection. O Ransomware Resilience também detecta informações de proteção do NetApp Backup and Recovery para compartilhamentos de arquivos e compartilhamentos de arquivos de VM. Em seguida, recomenda maneiras de aprimorar sua proteção contra ransomware.
 
@@ -25,31 +25,28 @@ O Ransomware Resilience verifica sua proteção de backup atual, cópias instant
 
 
 
-== Selecione cargas de trabalho para descobrir e proteger
+== Selecione as cargas de trabalho a serem descobertas
 
-Em cada agente do Console, selecione os sistemas onde você deseja descobrir cargas de trabalho.
+Em cada agente do Console, selecione os sistemas nos quais deseja identificar as cargas de trabalho.
+
+A descoberta de cargas de trabalho não as protege automaticamente. O Ransomware Resilience reconhece as políticas de proteção existentes do NetApp Backup and Recovery ou ONTAP durante o processo de descoberta. Quaisquer cargas de trabalho que não possuam proteção exigem que você link:rp-use-protect.html["configurar proteção"].
 
 .Passos
-. No NetApp Console, selecione *Proteção* > *Proteção contra ransomware*.
+. No NetApp Console, selecione *Proteção* > *Resiliência contra ransomware*.
 +
-Se este for seu primeiro login, a página de destino será exibida.
+Se este for seu primeiro acesso, a página inicial será exibida. Para iniciar o teste gratuito, selecione *Iniciar teste gratuito de 30 dias*. Se você já ativou o teste, selecione *Começar descobrindo workloads*.
 
 +
 image:screen-landing.png["Captura de tela da página de destino para Ransomware Resilience"]
 
 +
-
-NOTE: Se você iniciou o teste gratuito, o rótulo do botão *Iniciar teste gratuito de 30 dias* muda para *Começar descobrindo cargas de trabalho*.
-
-. Na página inicial, selecione *Começar descobrindo cargas de trabalho*.
-+
 O Ransomware Resilience encontra sistemas suportados e não suportados.  Este processo pode levar alguns minutos.
 
+. Para descobrir sistemas para um agente de Console específico, selecione a seta para baixo do agente de Console que contém o sistema que você deseja descobrir.
 +
 image:screen-discover-workloads.png["Captura de tela das cargas de trabalho do Discover"]
 
-. Para descobrir cargas de trabalho para um agente de Console específico, selecione *Selecionar sistemas* ao lado do agente de Console onde você deseja descobrir cargas de trabalho.
-. Selecione os sistemas nos quais você deseja descobrir cargas de trabalho.
+. Selecione os sistemas nos quais deseja realizar a descoberta.
 . Selecione *Descobrir*.
 +
 A Resiliência contra Ransomware só descobre dados de carga de trabalho quando você seleciona o sistema. O processo de descoberta pode levar vários minutos.
@@ -75,7 +72,7 @@ Se você adicionou cargas de trabalho a um sistema previamente descoberto, é ne
 
 .Passos
 . Para identificar o momento da última detecção, observe a data e a hora ao lado do ícone *Atualizar* no canto superior direito do painel de controle de Resiliência a Ransomware.
-. No dashboard, selecione o ícone *Atualizar* para encontrar novas cargas de trabalho.
+. No painel de controle, selecione o ícone *Atualizar* para identificar novas cargas de trabalho.
 
 
 
@@ -85,12 +82,12 @@ TIP: Se você encontrar volumes que não estão sendo exibidos para o sistema qu
 
 == Descubra novos sistemas
 
-Se você já descobriu cargas de trabalho, pode encontrar novas ou anteriormente não selecionadas.
+Se você já realizou a descoberta em um sistema e, desde então, adicionou uma carga de trabalho a ele, execute a descoberta novamente para identificar as cargas de trabalho.
 
 .Passos
 . Em NetApp Ransomware Resilience, selecione *Configurações*.
-. No cartão Descoberta de carga de trabalho, selecione *Descobrir cargas de trabalho*. A descoberta pode levar alguns minutos.  Um ícone de carregamento exibe o progresso.
-. O Ransomware Resilience descobre sistemas suportados e não suportados. Não oferece suporte a um sistema se a versão do ONTAP for inferior à versão exigida. Quando você passa o mouse sobre um sistema não suportado, uma dica de ferramenta exibe o motivo. Selecione os sistemas nos quais você deseja descobrir cargas de trabalho.
+. No cartão de descoberta de carga de trabalho, selecione *Descobrir*. A descoberta pode levar alguns minutos. Um ícone de carregamento exibe o progresso.
+. O Ransomware Resilience detecta sistemas suportados e não suportados. Um sistema não é suportado se a versão do ONTAP for inferior à versão necessária. Ao passar o cursor sobre um sistema não suportado, uma dica de ferramenta exibe o motivo. Selecione os sistemas nos quais deseja identificar as cargas de trabalho.
 . Selecione *Descobrir*.
 
 

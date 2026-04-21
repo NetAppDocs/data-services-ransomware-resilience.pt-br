@@ -26,7 +26,7 @@ Para obter detalhes sobre as ações que você ainda pode realizar após o venci
 
 == Desativar políticas de proteção
 
-Se quiser parar de usar políticas de proteção aplicadas às cargas de trabalho, você pode desativá-las usando o Gerenciador do Sistema, chamadas de API ou CLI.
+Se você deseja interromper o uso de políticas de proteção aplicadas a cargas de trabalho, pode desativá-las usando System Manager, chamadas de API ou a CLI.
 
 Você pode desabilitar FPolicy e políticas de backup no Ransomware Resilience aplicando uma política diferente que não as inclua.  Para obter instruções sobre como definir políticas de proteção, consultelink:rp-use-protect.html["Proteja cargas de trabalho contra ataques de ransomware"] .
 
