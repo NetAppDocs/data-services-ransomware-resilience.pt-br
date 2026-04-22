@@ -16,7 +16,6 @@ NOTE: Se você estiver configurando um IRE com a origem no Amazon FSxN para ONTA
 
 .Tabela de roteamento do ambiente de produção
 * A tabela de roteamento de produção deve permitir o tráfego da sub-rede IRE para o endereço IP LIF de restauração de dados limpos. Você deve adicionar essa rota à tabela de roteamento de produção.
-* Os grupos de segurança e firewalls no cluster ONTAP de produção devem permitir tráfego de entrada NFSv4 e NFSv3 para o endereço IP da LIF de dados de restauração limpa. O firewall deve estar aberto para entrada do intervalo CIDR do IRE:
 +
 [cols="1,1,1,1"]
 |===
@@ -40,6 +39,10 @@ NOTE: Se você estiver configurando um IRE com a origem no Amazon FSxN para ONTA
 
 | TCP e UDP | 4049 | Intervalo CIDR IRE VPC | Acesso NFSv3 a partir do IRE 
 |===
+
+
+.Firewall IRE
+* Você deve criar um firewall separado para gerenciar o tráfego de entrada para o crr-data-LIF-IP. Esse firewall deve permitir montagens NFSv3 e NFSv4 a partir do intervalo CIDR da VPC do IRE.
 
 
 .Tabela de rotas IRE

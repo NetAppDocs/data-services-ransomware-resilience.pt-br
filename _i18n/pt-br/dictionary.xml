@@ -2178,7 +2178,6 @@
   <block id="b1573f80f25470f8eb281542e0c5be32" category="list-text">Permitir o roteamento do endereço IP da LIF de dados da SVM para o IRE.</block>
   <block id="9c9dab37f0ac19e3e253ffd75559fad6" category="list-title">Tabela de roteamento do ambiente de produção</block>
   <block id="17e68097ee762fecf78b9e9fdb36d0c8" category="list-text">A tabela de roteamento de produção deve permitir o tráfego da sub-rede IRE para o endereço IP LIF de restauração de dados limpos. Você deve adicionar essa rota à tabela de roteamento de produção.</block>
-  <block id="673c05ce31cb0b56b8af3c9126f1cbb0" category="list-text">Os grupos de segurança e firewalls no cluster ONTAP de produção devem permitir tráfego de entrada NFSv4 e NFSv3 para o endereço IP da LIF de dados de restauração limpa. O firewall deve estar aberto para entrada do intervalo CIDR do IRE:</block>
   <block id="7c1a5f175cfc657a18de4a95621d74e3" category="cell">Porta de destino</block>
   <block id="261addf78c7b2c961032b3dd08ba0b1f" category="cell">Propósito</block>
   <block id="f8dc77f2ac2f7272dc57dd5689ee9d63" category="cell">TCP e UDP</block>
@@ -2457,4 +2456,6 @@
   <block id="6d008767b6b1ed8f9bb99930968157ff" category="summary">Certifique-se de atender aos requisitos de licenciamento do Ransomware Resilience para proteger suas cargas de trabalho.</block>
   <block id="360e5892ccf9a138fa1f7477e6e2db92" category="list-text">Se esta for a sua primeira vez usando a NetApp Ransomware Resilience, <block ref="f19bbe7d2dbc45b6f2a3e4d9d3615c0f" category="inline-link-macro-rx"></block>.</block>
   <block id="df3fb79f22fd0d8a496bd6ab0f7fcb62" category="sidebar">NetApp Ransomware Resilience protege, detecta e oferece suporte à recuperação de cargas de trabalho contra ameaças de ransomware em ambientes on-premises e storage de nuvem. Ransomware Resilience permite backup e recuperação seguros, ajudando as organizações a proteger dados críticos e manter a continuidade dos negócios para Oracle, datastores de VM, storage NAS e muito mais.</block>
+  <block id="d75c1a5d668e6fb6360954c43259df75" category="list-title">Firewall IRE</block>
+  <block id="93222c59d4ce3b5c19ed433527efc1b4" category="list-text">Você deve criar um firewall separado para gerenciar o tráfego de entrada para o crr-data-LIF-IP. Esse firewall deve permitir montagens NFSv3 e NFSv4 a partir do intervalo CIDR da VPC do IRE.</block>
 </blocks>
