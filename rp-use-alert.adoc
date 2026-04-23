@@ -285,7 +285,7 @@ O status do incidente ou incidentes muda para "Arquivado".
 
 == Ver uma lista de arquivos afetados
 
-Antes de restaurar uma carga de trabalho de aplicativo no nível de arquivo, você pode visualizar uma lista de arquivos afetados.  Você pode acessar a página Alertas para baixar uma lista de arquivos afetados.  Em seguida, use a página Recuperação para carregar a lista e escolher quais arquivos restaurar.
+Antes de restaurar uma carga de trabalho no nível do arquivo, você pode visualizar uma lista dos arquivos afetados. Você pode acessar a página de Alertas para baixar uma lista dos arquivos afetados. Em seguida, use a página de Recuperação para carregar a lista e escolher quais arquivos restaurar.
 
 *Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^] .
 
@@ -296,7 +296,7 @@ Use a página Alertas para recuperar a lista de arquivos afetados.
 TIP: Se um volume tiver vários alertas, talvez seja necessário baixar a lista CSV dos arquivos afetados para cada alerta.
 
 . No menu Resiliência contra Ransomware, selecione *Alertas*.
-. Na página Alertas, classifique os resultados por carga de trabalho para mostrar os alertas para a carga de trabalho do aplicativo que você deseja restaurar.
+. Na página de Alertas, classifique os resultados por carga de trabalho para exibir os alertas da carga de trabalho que você deseja restaurar.
 . Na lista de alertas para essa carga de trabalho, selecione um alerta.
 . Para esse alerta, selecione um único incidente.
 +

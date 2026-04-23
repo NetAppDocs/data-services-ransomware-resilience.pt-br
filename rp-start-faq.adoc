@@ -80,9 +80,7 @@ Para licenciamento e faturamento, o Ransomware Resilience pode ser integrado ao 
 == Cargas de trabalho
 
 .O que é uma carga de trabalho no contexto da resiliência a ransomware?
-Uma carga de trabalho é um aplicativo, uma VM ou um compartilhamento de arquivos. Uma carga de trabalho inclui todos os volumes usados por uma única instância do aplicativo.
-
-Por exemplo, considere um banco de dados Oracle implantado em ora3.host.com com `vol1` contendo dados e `vol2` contendo registros. Os dois volumes constituem a carga de trabalho para essa instância do Oracle Database.
+Uma carga de trabalho é uma máquina virtual ou um compartilhamento de arquivos.
 
 .Como o Ransomware Resilience prioriza os dados de carga de trabalho?
 A prioridade da carga de trabalho (crítica, padrão, importante) é determinada pelas frequências de snapshots já aplicadas a cada volume associado à carga de trabalho e pelos backups agendados.

@@ -32,8 +32,6 @@
   <block id="5148a0988dead45b54188f22121bb178" category="paragraph">Agora você pode enviar dados ao seu sistema de gerenciamento de segurança e eventos (SIEM) para análise e detecção de ameaças usando o Microsoft Sentinel.  Anteriormente, você podia selecionar o AWS Security Hub ou o Splunk Cloud como seu SIEM.</block>
   <block id="178324624f63d3f322bedd1a0cf9e6fc" category="section-title">Teste grátis agora por 30 dias</block>
   <block id="31e5266d7eefb6e39e445571b556a4b6" category="paragraph">Com este lançamento, novas implantações da BlueXP ransomware protection agora têm 30 dias de teste gratuito.  Anteriormente, a BlueXP ransomware protection oferecia 90 dias de teste gratuito.  Se você já estiver no teste gratuito de 90 dias, a oferta continuará por 90 dias.</block>
-  <block id="131dcf966228f0c4a90e6e64618c8def" category="section-title">Restaurar a carga de trabalho do aplicativo no nível de arquivo para Podman</block>
-  <block id="b4a1818e2de3da83b0e71c710c96525c" category="paragraph">Antes de restaurar uma carga de trabalho de aplicativo no nível de arquivo, agora você pode visualizar uma lista de arquivos que podem ter sido afetados por um ataque e identificar aqueles que deseja restaurar.  Anteriormente, se os Conectores BlueXP em uma organização (anteriormente uma conta) estivessem usando o Podman, esse recurso era desabilitado.  Agora está habilitado para o Podman.  Você pode deixar que a BlueXP ransomware protection escolha os arquivos a serem restaurados, pode enviar um arquivo CSV que lista todos os arquivos afetados por um alerta ou pode identificar manualmente quais arquivos deseja restaurar.</block>
   <block id="f013b90a0fd96db59795b7cb0b9d2d1b" category="inline-link">Saiba mais sobre como se recuperar de um ataque de ransomware</block>
   <block id="5b647f592bce019e9ea00dd644f72e0d" category="paragraph"><block ref="3233a18d80c5120d82dff0bcc15fb4c4" category="inline-link-rx"></block> .</block>
   <block id="e6ecd439699f8fefa13e20f9536a72a6" category="doc">Detecte comportamento anômalo do usuário usando o Data Infrastructure Insights Storage Workload Security</block>
@@ -153,7 +151,6 @@
   <block id="e1e21525512158b10d87c17fe3eb8be1" category="list-text">*Camada mais externa*: Esta é sua primeira linha de defesa usando firewalls, sistemas de detecção de intrusão e redes privadas virtuais para proteger os limites da rede.</block>
   <block id="3d919b06a70d926da258dcac0b1b3567" category="list-text">*Segurança de rede*: Esta camada se baseia na base com segmentação de rede, monitoramento de tráfego e criptografia.</block>
   <block id="de44ea881a9fa5d914b559d9ddf154c6" category="list-text">*Segurança de identidade*: usa métodos de autenticação, controles de acesso e gerenciamento de identidade para garantir que somente usuários autorizados possam acessar recursos confidenciais.</block>
-  <block id="1fd649bf08bafaf5cfd51a70ba2289a5" category="list-text">*Segurança de aplicativos*: protege aplicativos de software usando práticas de codificação seguras, testes de segurança e autoproteção de aplicativos em tempo de execução.</block>
   <block id="db8257db6100fdc78f6b256a62675d51" category="list-text">*Segurança de dados*: Proteja seus dados com estratégias de proteção de dados, backups e recuperação.  A resiliência do ransomware opera nessa camada.</block>
   <block id="9dde44b4554f7832d0e00963746f8f42" category="inline-image-macro">Diagrama da camada de segurança</block>
   <block id="58cc8c9025afc05f9ee4dee0439c8c7d" category="paragraph"><block ref="58cc8c9025afc05f9ee4dee0439c8c7d" category="inline-image-macro-rx" type="image"></block></block>
@@ -205,7 +202,6 @@
   <block id="b1d747ad7060df692913a3b8e839735e" category="list-text">Inicia cópias rápidas de snapshot usando tecnologias e produtos da NetApp , como ONTAP, Autonomous Ransomware Protection (ARP ou ARP/AI, dependendo da versão do ONTAP ) e FPolicy.</block>
   <block id="5fefe6c4ada89d95390ae77eba79e7db" category="cell">*RECUPERAR*</block>
   <block id="059d032d5bb8125e3e1681f7d9ce6023" category="list-text">Determina o melhor snapshot ou backup e recomenda o melhor ponto de recuperação real (RPA) usando Backup e Recuperação, ONTAP, Proteção Autônoma contra Ransomware (ARP ou ARP/AI, dependendo da sua versão do ONTAP ) e tecnologias e serviços FPolicy.</block>
-  <block id="26871f0800751ffb8b48674992b42dfe" category="list-text">Orquestra a recuperação de cargas de trabalho, incluindo VMs, compartilhamentos de arquivos, armazenamento em bloco e bancos de dados com consistência de aplicativos.</block>
   <block id="4ddd3abee434eb92eb13e6cac3e1ad1d" category="cell">*GOVERNAR*</block>
   <block id="cc4378b1dc9af2e69cb13a88397e2aa7" category="list-text">Atribui as estratégias de proteção contra ransomware</block>
   <block id="90d096ff0013c9c2874a247b26e69950" category="list-text">Ajuda você a monitorar os resultados.</block>
@@ -215,10 +211,7 @@
   <block id="5c9ef0d871938dccceb29ee63fad8ddb" category="list-text">Plataforma Google Cloud</block>
   <block id="6a51ed7bcacdfb13f78abc1e0f69c201" category="list-text">Blob do Microsoft Azure</block>
   <block id="55cf1a0f0fce69fd543500e5761dd26d" category="list-text">NetApp StorageGRID</block>
-  <block id="2fd51284279972a6a1390536b053f3c3" category="paragraph">O Ransomware Resilience protege as seguintes cargas de trabalho baseadas em aplicativos em volumes de dados primários:</block>
-  <block id="ffc184891768c331383cd53bcd1bc968" category="list-text">Compartilhamentos de arquivos NetApp</block>
   <block id="4f0550f066ae72bb8c24fc3f59c323bf" category="list-text">Armazenamento em bloco</block>
-  <block id="ed11408803c4c1aca5fbebbc43d88458" category="list-text">Armazenamentos de dados VMware</block>
   <block id="77460e2b891748333455193aadd137d8" category="paragraph">Você pode se beneficiar ao entender alguma terminologia relacionada à proteção contra ransomware.</block>
   <block id="826a4e8d8facce6f785b2a404538e6cd" category="list-text">*Proteção*: Proteção na resiliência de ransomware significa garantir que instantâneos e backups imutáveis ocorram regularmente em um domínio de segurança diferente usando políticas de proteção.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Avisos legais</block>
@@ -609,10 +602,8 @@
   <block id="cae6793a9f947fdb33e9ebb9c2913794" category="inline-image-macro">Página de status de edição de alerta</block>
   <block id="e6fe1dbe41a0d14f05208f5ee0593783" category="paragraph"><block ref="e6fe1dbe41a0d14f05208f5ee0593783" category="inline-image-macro-rx" type="image"></block></block>
   <block id="03449fca76164b6dcb5b9e314b4a5c2b" category="section-title">Ver uma lista de arquivos afetados</block>
-  <block id="0fd4c032e8d9638089eca51930a25305" category="paragraph">Antes de restaurar uma carga de trabalho de aplicativo no nível de arquivo, você pode visualizar uma lista de arquivos afetados.  Você pode acessar a página Alertas para baixar uma lista de arquivos afetados.  Em seguida, use a página Recuperação para carregar a lista e escolher quais arquivos restaurar.</block>
   <block id="6162015141ec2e05b3da3316c594dc7a" category="paragraph">Use a página Alertas para recuperar a lista de arquivos afetados.</block>
   <block id="adb36d0a41dcf531bb715bb815c75586" category="admonition">Se um volume tiver vários alertas, talvez seja necessário baixar a lista CSV dos arquivos afetados para cada alerta.</block>
-  <block id="eab85082296138dfa241a48f81820ee9" category="list-text">Na página Alertas, classifique os resultados por carga de trabalho para mostrar os alertas para a carga de trabalho do aplicativo que você deseja restaurar.</block>
   <block id="4901f4d01c8a64589f2641ea221c79ee" category="list-text">Na lista de alertas para essa carga de trabalho, selecione um alerta.</block>
   <block id="020c63db3b1b6d893f5b8e59d6f4f282" category="list-text">Para esse alerta, selecione um único incidente.</block>
   <block id="3da0517dff453f03b4448de6079af196" category="inline-image-macro">lista de arquivos impactados para um alerta específico</block>
@@ -657,8 +648,6 @@
   <block id="8db2e9b654cd93f28beeae96f827c30a" category="cell">Aumente a retenção, adicione backups, imponha backups imutáveis, bloqueie extensões de arquivo suspeitas, habilite a detecção em armazenamento secundário e muito mais. Consulte <block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block> .</block>
   <block id="a3b50e444d5d5789130de78ddb2b3e45" category="cell">Prepare &lt;provedor de backup&gt; como um destino de backup para fazer backup dos dados da sua carga de trabalho.</block>
   <block id="e08278c8217792f95a8bc1de9c7a7d8b" category="cell">A carga de trabalho não tem nenhum destino de backup no momento.</block>
-  <block id="3b4633f78219c68314768337af8968bf" category="cell">Proteja cargas de trabalho de aplicativos críticos ou altamente importantes contra ransomware.</block>
-  <block id="9c592743fe6a292e0be5b9e6343dc1ba" category="cell">A página Proteger exibe cargas de trabalho de aplicativos críticas ou altamente importantes (com base no nível de prioridade atribuído) que não estão protegidas.</block>
   <block id="1f03c05bf6e65a368653bb061f47d41c" category="cell">Atribua uma política a essas cargas de trabalho. Consulte <block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block> .</block>
   <block id="09ac1a414033303cc9f61ba014837263" category="cell">Proteja cargas de trabalho de compartilhamento de arquivos críticos ou altamente importantes contra ransomware.</block>
   <block id="723aa86a592f3ac7a3d0c493a7f7f6f8" category="cell">A página Proteção exibe cargas de trabalho críticas ou altamente importantes do tipo Compartilhamento de Arquivos ou Armazenamento de Dados que não estão protegidas.</block>
@@ -759,7 +748,6 @@
   <block id="f37d79a56cb20cdcf206acc1cfa8be14" category="paragraph">Se uma política de detecção de ransomware estiver sendo gerenciada pelo Autonomous Ransomware Protection (ARP ou ARP/AI, dependendo da versão do ONTAP ) e FPolicy no ONTAP, essas cargas de trabalho serão protegidas e continuarão sendo gerenciadas pelo ARP e FPolicy.</block>
   <block id="d62f06f1ca9fb020be7953fe3101f0a3" category="section-title">Políticas de proteção para cargas de trabalho não protegidas por aplicativos NetApp</block>
   <block id="a6f7464fa2fed88291aecd220709e4c3" category="paragraph">Uma das primeiras etapas para proteger cargas de trabalho é visualizar suas cargas de trabalho atuais e seu status de proteção.  Você pode ver os seguintes tipos de cargas de trabalho:</block>
-  <block id="1178945c6ac5c3d230f56a7ae6f7233f" category="list-text">Cargas de trabalho de aplicativos</block>
   <block id="8a5042da8154d7b57ae6ca95c51af501" category="list-text">Cargas de trabalho em bloco</block>
   <block id="f6eb9aea7f708dfdaa2db67cab1a9d7a" category="list-text">Cargas de trabalho de compartilhamento de arquivos</block>
   <block id="001c5efa43c01ae33e4db0d43c8d8fa5" category="list-text">Cargas de trabalho de VM</block>
@@ -925,9 +913,6 @@
   <block id="1a7c3267d0415566593c1285505aa765" category="list-text">Revise suas seleções.</block>
   <block id="6f6897e6c796f284c66b248179fd67ba" category="list-text">No menu superior, selecione *Recuperação* para revisar a carga de trabalho na página Recuperação, onde o status da operação passa pelos estados.</block>
   <block id="4bd702a7df3c8966625d698f05cd0cc6" category="paragraph">O administrador de armazenamento de segurança pode recuperar dados em diferentes níveis:</block>
-  <block id="c2fcef7151504f035e47ba31c3e5ddf5" category="list-text">Recuperação de todos os volumes</block>
-  <block id="068f7fc4b5a2b14387afa21644b54045" category="list-text">Recuperar um aplicativo no nível de volume ou de arquivo e pasta.</block>
-  <block id="318b3b219a722faf75710b5f3a03fc90" category="list-text">Recupere um compartilhamento de arquivos no nível de volume, diretório ou arquivo/pasta.</block>
   <block id="e626ada343290f415dbe5463dd32adc6" category="list-text">Recuperar de um armazenamento de dados no nível de VM.</block>
   <block id="f7c909c79472e02e68ad0d93011cfe0d" category="paragraph">O processo difere dependendo do tipo de carga de trabalho.</block>
   <block id="44dfe1570ed5a548116ca04db0d20450" category="list-text">*Escopo de restauração*: Selecione o tipo de restauração que deseja concluir:</block>
@@ -936,7 +921,6 @@
   <block id="2381a26d342d1f67e865975093ebf01f" category="list-text">Por arquivo: você pode especificar uma pasta ou arquivos individuais para restaurar.</block>
   <block id="46a7598fc73d53164244a0638ecf7951" category="admonition">Para cargas de trabalho SAN, você só pode restaurar por carga de trabalho.</block>
   <block id="529c8dae31154f53895310faea8c67fa" category="admonition">Você pode selecionar até 100 arquivos ou uma única pasta.</block>
-  <block id="908544495ea40587cf39ce2e5f22e4bc" category="list-text">Continue com um dos procedimentos a seguir, dependendo se você escolheu aplicativo, volume ou arquivo.</block>
   <block id="92c289a4edeb4fe9f271012a0186db7e" category="section-title">Restaurar todos os volumes</block>
   <block id="d6423436696bf345f898a3676ed1f0dd" category="list-text">Na página Restaurar, no escopo Restaurar, selecione *Todos os volumes*.</block>
   <block id="60b7fcd27a0d6ec11fae18faa686b7b8" category="inline-image-macro">Restaurar página de todos os volumes</block>
@@ -947,8 +931,6 @@
   <block id="2a8100bf9205c5202d9072f926fc015c" category="list-text">Selecione o agregado.</block>
   <block id="93cd071f37816a758745f9110838474f" category="list-text">Altere o prefixo de volume que será adicionado a todos os novos volumes.</block>
   <block id="51371f4640fbc3d25ac82cefab45418d" category="admonition">O novo nome do volume aparece como prefixo + nome do volume original + nome do backup + data do backup.</block>
-  <block id="6176694f7bff94dfa4c7296ff6dc3769" category="section-title">Restaurar uma carga de trabalho do aplicativo no nível do volume</block>
-  <block id="48c24178716eb1262ba72b16ed76e5c5" category="list-text">Selecione uma carga de trabalho do aplicativo que esteja no estado "Restauração necessária".</block>
   <block id="e97c4e3d59c331da11cb01db2eadc265" category="list-text">Na página Restaurar, no escopo Restaurar, selecione *Por volume*.</block>
   <block id="645aa6060c294634583fc329f68ef054" category="inline-image-macro">Restaurar por página de volume</block>
   <block id="7c4da72b4401875080d62e2c8998be3f" category="paragraph"><block ref="7c4da72b4401875080d62e2c8998be3f" category="inline-image-macro-rx" type="image"></block></block>
@@ -956,8 +938,6 @@
   <block id="cb66ace7c6b9d638625f30c2eadff897" category="admonition">O Ransomware Resilience identifica o melhor ponto de restauração como o backup mais recente imediatamente anterior ao incidente e mostra uma indicação "Recomendado".</block>
   <block id="ce398ae17610821c0664dc141883be1a" category="list-text">Revise o novo nome do volume.</block>
   <block id="e117d7e0417b0abf71f8e538099181f1" category="admonition">O novo nome do volume aparece como o nome do volume original + nome do backup + data do backup.</block>
-  <block id="6412a45d589675b39a03f4d8c440e7a7" category="section-title">Restaurar uma carga de trabalho do aplicativo no nível do arquivo</block>
-  <block id="dda1633bee980c6aee630455ccc23784" category="paragraph">Você pode restaurar uma carga de trabalho de aplicativo no nível de arquivo para o mesmo sistema ou para um sistema diferente.</block>
   <block id="632b8e66b02aebebfc5b46583ee30222" category="list-text">Para ver a lista completa de arquivos, selecione *Clique aqui* na parte superior do painel Arquivos afetados.</block>
   <block id="3e64769073a6ebfad26862c552f42c72" category="list-text">Na página Restaurar, no escopo Restaurar, selecione *Por arquivo*.</block>
   <block id="f1760e95914fef75d7a25a4643d9128a" category="list-text">Na lista de volumes, selecione o volume que contém os arquivos que você deseja restaurar.</block>
@@ -1070,16 +1050,13 @@
   <block id="e9533d3cc3450cc437e3452b21f4e97f" category="list-text">Crie um segredo para o registro.</block>
   <block id="d0d26c22c8bcacd0db2ef7f6857801c1" category="list-text">*Permissões*: Atribua permissões ao aplicativo.</block>
   <block id="634e092bf22459996810a1c2929824dc" category="list-text">*Autenticação*: Insira as credenciais de autenticação para o aplicativo.</block>
-  <block id="7a183e1af9011b3614a78324d4616e15" category="list-title">Etapas para habilitar o Microsoft Sentinel</block>
   <block id="08a65e7044425c8d2c782e9b34c3e654" category="list-text">Acesse o Microsoft Sentinel.</block>
   <block id="8c871324b9c8d6f9e574d61e6af06ac8" category="list-text">Crie um *espaço de trabalho do Log Analytics*.</block>
   <block id="d7f9c1502929f8a9624aeb8a459be84e" category="list-text">Habilite o Microsoft Sentinel para usar o espaço de trabalho do Log Analytics que você acabou de criar.</block>
-  <block id="74ac1228e90a795447fcd3ef5d57fbb9" category="list-title">Etapas para criar uma função personalizada no Microsoft Sentinel</block>
   <block id="c81259b70bf3f6091a6ea9d12a1516c3" category="list-text">Selecione *Assinatura* &gt; *Controle de acesso (IAM)*.</block>
   <block id="0e0b93e5e66d733c957afe1a383637ec" category="list-text">Insira um nome de função personalizado.  Use o nome *Ransomware Resilience Sentinel Configurator*.</block>
   <block id="dcec7acebd109f04b4e2a5e7982c2ca6" category="list-text">Copie o seguinte JSON e cole-o na aba *JSON*.</block>
   <block id="f14b670805869bff13be2818d420e8b9" category="list-text">Revise e salve suas configurações.</block>
-  <block id="1edce0bd61c3bd7df2516cf1c42c87b9" category="list-title">Etapas para registrar o Ransomware Resilience para receber eventos do Microsoft Sentinel</block>
   <block id="cc29294d0b591a10fc322169b7f1f026" category="list-text">Selecione *Entra ID* &gt; *Aplicativos* &gt; *Registros de aplicativos*.</block>
   <block id="5f1387f27bad2647c460bfdb36ec2e0b" category="list-text">Para o *Nome de exibição* do aplicativo, digite "*Resiliência ao Ransomware*".</block>
   <block id="b98526e9d91b1e1635367700d6012267" category="list-text">No campo *Tipo de conta compatível*, selecione *Contas somente neste diretório organizacional*.</block>
@@ -1087,14 +1064,12 @@
   <block id="b99a9a5879442c5ad3ae30c94964ccb3" category="list-text">Selecione *Revisar*.</block>
   <block id="d7f089d595dc5d8b4b35eb5acb6cf354" category="list-text">Selecione *Registrar* para salvar suas configurações.</block>
   <block id="5293737739d192ce4c823f55d6348b38" category="paragraph">Após o registro, o centro de administração do Microsoft Entra exibe o painel Visão geral do aplicativo.</block>
-  <block id="08d457149f23a08e7d52fc0144d0ba4d" category="list-title">Etapas para criar um segredo para o registro</block>
   <block id="110778c40d9a0f7258c68cac989bbe9c" category="list-text">Selecione *Certificados e segredos* &gt; *Segredos do cliente* &gt; *Novo segredo do cliente*.</block>
   <block id="25b912035505a8c7f4db26a790036f2e" category="list-text">Adicione uma descrição para o segredo do seu aplicativo.</block>
   <block id="8d630138be955f4fdc041c611342cd58" category="list-text">Selecione uma *Expiração* para o segredo ou especifique um tempo de vida personalizado.</block>
   <block id="485fdedb0c7094275d346a406c7511bc" category="admonition">A vida útil do segredo do cliente é limitada a dois anos (24 meses) ou menos.  A Microsoft recomenda que você defina um valor de expiração inferior a 12 meses.</block>
   <block id="1ff868ad6c260db8589989baff2a8980" category="list-text">Selecione *Adicionar* para criar seu segredo.</block>
   <block id="c669e93c1e1c1457b26eee151fca6438" category="list-text">Registre o segredo a ser usado na etapa de Autenticação.  O segredo nunca mais será exibido depois que você sair desta página.</block>
-  <block id="260a969e6beee33bb0d12186ae95be83" category="list-title">Etapas para atribuir permissões ao aplicativo</block>
   <block id="9917d3e3752f3388fb31aaf44f32cf72" category="list-text">Selecione *Adicionar* &gt; *Adicionar atribuição de função*.</block>
   <block id="fc9ff510933e7824938a0a7d44b24aeb" category="list-text">Para o campo *Funções de administrador privilegiado*, selecione *Configurador do Ransomware Resilience Sentinel*.</block>
   <block id="fa4157795fdbaed676b0486ebceb9f1a" category="admonition">Esta é a função personalizada que você criou anteriormente.</block>
@@ -1102,19 +1077,16 @@
   <block id="ba79e586f6b5202f28597984ee8243b7" category="list-text">Selecione *Selecionar membros*.  Em seguida, selecione *Ransomware Resilience Sentinel Configurator*.</block>
   <block id="0b08d4bbcc90f50506c6e3c62fa007c9" category="list-text">No campo *O que o usuário pode fazer*, selecione *Permitir que o usuário atribua todas as funções, exceto as funções de administrador privilegiado Proprietário, UAA, RBAC (recomendado)*.</block>
   <block id="0427238efbd6d8ab4d12c132cb4cae7d" category="list-text">Selecione *Revisar e atribuir* para atribuir as permissões.</block>
-  <block id="b37c7df6ed28d0c6b82990a40be5956c" category="list-title">Etapas para inserir credenciais de autenticação para o aplicativo</block>
   <block id="9d4673f4ba59f2e834f5cc5a15b8a533" category="list-text">Insira as credenciais:</block>
   <block id="df399ba2a5bc8f8f94de9d50ed1b4f39" category="list-text">Insira o ID do locatário, o ID do aplicativo cliente e o segredo do aplicativo cliente.</block>
   <block id="53e68cb1edb551af8b1c0d8fee230e44" category="admonition">Após a autenticação ser bem-sucedida, uma mensagem "Autenticado" será exibida.</block>
   <block id="00bcd4c2f217493f06ecbb6ddfa3862b" category="list-text">Insira os detalhes do espaço de trabalho do Log Analytics para o aplicativo.</block>
   <block id="b263ba58e894356680bda9edd8c52400" category="list-text">Selecione o ID da assinatura, o grupo de recursos e o espaço de trabalho do Log Analytics.</block>
-  <block id="2c65d4e0cdac9c48880857277c1bc9e3" category="list-title">Etapas para habilitar um coletor de eventos HTTP no Splunk</block>
   <block id="ce0362998bb10251a5412bcabd9b833c" category="list-text">Selecione *Configurações* &gt; *Entradas de dados*.</block>
   <block id="069c7509480a5fbadda560c7376dca8a" category="list-text">Selecione *Coletor de Eventos HTTP* &gt; *Configurações Globais*.</block>
   <block id="b42b974604014d593eace2a8678716ed" category="list-text">Na alternância Todos os tokens, selecione *Ativado*.</block>
   <block id="1f07cda18625f2e87b3b485165c2fde6" category="list-text">Para que o Coletor de Eventos escute e se comunique por HTTPS em vez de HTTP, selecione *Ativar SSL*.</block>
   <block id="f0f064c9e7c481532480bef9466ae445" category="list-text">Insira uma porta em *Número da porta HTTP* para o Coletor de eventos HTTP.</block>
-  <block id="c660c961cf09ba8531cdfd3369af008b" category="list-title">Etapas para criar um token do Event Collector no Splunk</block>
   <block id="23e1d5a70208de028ca12ba8bef552d9" category="list-text">Selecione *Configurações* &gt; *Adicionar dados*.</block>
   <block id="5c4a26d0a7ecde2f25b0a5d7c482ab87" category="list-text">Selecione *Monitor* &gt; *Coletor de Eventos HTTP*.</block>
   <block id="7afbca3b4e9f4fb695134baafcac5c4d" category="list-text">Digite um nome para o token e selecione *Avançar*.</block>
@@ -1294,13 +1266,8 @@
   <block id="3ad6a80bb44b13a7ad34ad835b0166d5" category="paragraph">Com esta versão, você pode usar uma licença BYOL, que é um arquivo de licença NetApp (NLF) que você obtém do seu representante de vendas da NetApp .</block>
   <block id="a0f248fceae83613cf99c651e3c24be5" category="inline-link">Saiba mais sobre a configuração do licenciamento</block>
   <block id="9d5aaa8966c5e35be75ef082fe317272" category="paragraph"><block ref="52acad0b8ccf8676f5a7124bd999ec73" category="inline-link-rx"></block> .</block>
-  <block id="731d998f19bf5dc5e302b024a5e269ae" category="section-title">Restaurar a carga de trabalho do aplicativo no nível do arquivo</block>
-  <block id="3ca66b2ea6d0090926c6ed42102cd321" category="paragraph">Antes de restaurar uma carga de trabalho de aplicativo no nível de arquivo, agora você pode visualizar uma lista de arquivos que podem ter sido afetados por um ataque e identificar aqueles que deseja restaurar.  Você pode deixar que a BlueXP ransomware protection escolha os arquivos a serem restaurados, pode enviar um arquivo CSV que lista todos os arquivos afetados por um alerta ou pode identificar manualmente quais arquivos deseja restaurar.</block>
   <block id="f117dfa6c0387d743ec4a20f0d5de0bc" category="admonition">Com esta versão, se todos os conectores BlueXP em uma conta não estiverem usando o Podman, o recurso de restauração de arquivo único será habilitado.  Caso contrário, ele será desabilitado para essa conta.</block>
   <block id="a73c37f93df66de7bad711d109e97dec" category="section-title">Baixe uma lista de arquivos afetados</block>
-  <block id="2054cf1c5fa9dc941ee8bea29d93f66c" category="paragraph">Antes de restaurar uma carga de trabalho de aplicativo no nível de arquivo, agora você pode acessar a página Alertas para baixar uma lista de arquivos afetados em um arquivo CSV e, em seguida, usar a página Recuperação para carregar o arquivo CSV.</block>
-  <block id="eb7455ff51d7f3745fb801aa3ad0fb2a" category="inline-link">Saiba mais sobre como baixar arquivos afetados antes de restaurar um aplicativo</block>
-  <block id="29dfc4e316452c829eef22178afa1c8f" category="paragraph"><block ref="280bb568aae28b55ea90793d53388aa1" category="inline-link-rx"></block> .</block>
   <block id="16a3ef0c0012d6ecafe00aeaff08d20c" category="section-title">Excluir plano de proteção</block>
   <block id="0e7f928ba1ebfe3d5652a71f58c576d8" category="paragraph">Com esta versão, agora você pode excluir uma estratégia de proteção contra ransomware.</block>
   <block id="5bc0cd3e3204e2ab72bd03661373648f" category="inline-link">Saiba mais sobre como proteger cargas de trabalho e gerenciar estratégias de proteção contra ransomware</block>
@@ -1469,8 +1436,6 @@
   <block id="67a915151759ecc737f698391f7cfd08" category="section-title">Interoperabilidade</block>
   <block id="10c4fe0b6e00d5560df8e602d85a5bd1" category="paragraph">Sim, o Ransomware Resilience descobre agendamentos de snapshots definidos no ONTAP.</block>
   <block id="282764b1530b129720ca01a123b6f6ce" category="paragraph-title">O que é uma carga de trabalho no contexto da resiliência a ransomware?</block>
-  <block id="10c8ec686acd93b9da39b3efea09bc01" category="paragraph">Uma carga de trabalho é um aplicativo, uma VM ou um compartilhamento de arquivos. Uma carga de trabalho inclui todos os volumes usados por uma única instância do aplicativo.</block>
-  <block id="f7e19062cc2eaeb5901ce8337d69e539" category="paragraph">Por exemplo, considere um banco de dados Oracle implantado em ora3.host.com com<block ref="2b0d59c7031769e80c8e5118b6ec7694" prefix=" " category="inline-code"></block> contendo dados e<block ref="a110e8ed91b0de267a5728888b1f4ed1" prefix=" " category="inline-code"></block> contendo registros. Os dois volumes constituem a carga de trabalho para essa instância do Oracle Database.</block>
   <block id="f4d0f54d022c7715505fb12db9dfaab4" category="paragraph-title">Como o Ransomware Resilience prioriza os dados de carga de trabalho?</block>
   <block id="6f240a888a055fa4629059d3d5328220" category="paragraph">A prioridade da carga de trabalho (crítica, padrão, importante) é determinada pelas frequências de snapshots já aplicadas a cada volume associado à carga de trabalho e pelos backups agendados.</block>
   <block id="79444a9daf1e4ef34a492d7a4ccc93fd" category="paragraph-title">Quais cargas de trabalho o Ransomware Resilience suporta?</block>
@@ -1538,10 +1503,6 @@
   <block id="954e661212d7a62095e6b957259dc36f" category="inline-link-macro">ARP/IA</block>
   <block id="7271886a703021fd0851304115b49ee2" category="paragraph">{asterisco} O Amazon FSx for NetApp ONTAP usa a Proteção Autônoma contra Ransomware (ARP) e não o ARP/AI.  Para obter mais informações sobre a diferença, consulte<block ref="ee25b596f35c0a0b982fc7b7e342f828" category="inline-link-macro-rx"></block> .</block>
   <block id="c71c95f02c8e85a6e5cddd09ad2a5d8b" category="admonition">Para usar ARP/AI no ONTAP, é necessário ter o ONTAP 9.16 ou superior. + O ONTAP não oferece suporte à proteção contra ransomware para volumes FabricPool FlexCache, FlexGroup , grupos de consistência, pontos de montagem, caminhos de montagem, volumes offline e volumes de proteção de dados (DP). Certifique-se de revisar<block ref="49252e6bcf11c366c792cea95977195b" category="inline-link-macro-rx"></block> .</block>
-  <block id="fd3b4579ab972a1738986581275cfcfa" category="list-text">Bancos de dados:</block>
-  <block id="78898e52fcbdc5337204a384f2456d4f" category="list-text">Servidor Microsoft SQL</block>
-  <block id="30162ed78b6c10f731411f2fc440c24f" category="list-text">Oráculo</block>
-  <block id="399bd1ee587245ecac6f39beaa99886f" category="list-text">PostgreSQL</block>
   <block id="acd257a01891523b6ff91a9020b733ba" category="paragraph">Dados suspeitos de atividades do usuário podem ser armazenados na AWS e no Azure nas seguintes regiões:</block>
   <block id="2feeca48692986e9cc471ec61f847fca" category="paragraph">A NetApp fornece suporte para o NetApp Console e seus serviços de nuvem de diversas maneiras. Há diversas opções gratuitas de autoatendimento disponíveis 24 horas por dia, 7 dias por semana, como artigos da base de conhecimento (KB) e um fórum da comunidade. Seu cadastro no suporte inclui suporte técnico remoto por meio de tickets online.</block>
   <block id="317cbd2c4fdbfd06a6c66bcd3f57d7ad" category="paragraph">Para obter suporte técnico relacionado a um serviço de arquivo do provedor de nuvem, sua infraestrutura ou qualquer solução que use o serviço, consulte a documentação desse produto.</block>
@@ -1595,7 +1556,6 @@
   <block id="d605e764d56b8615ebf6dd5f87998855" category="list-text">Leste dos EUA (Norte da Virgínia) (us-east-1)</block>
   <block id="a55a22032fc9fd630abe933324e9d4b9" category="paragraph-title">O Ransomware Resilience está ciente das configurações de proteção no ONTAP?</block>
   <block id="1c8f51534c2fc10dfef26d32d61c7ed3" category="paragraph">Para licenciamento e faturamento, o Ransomware Resilience pode ser integrado ao Backup e Recuperação, mesmo que você não tenha uma licença separada para Backup e Recuperação. Se você tiver o Backup and Recovery e o Ransomware Resilience, quaisquer dados comuns protegidos por ambos os produtos serão cobrados somente pelo Ransomware Resilience.</block>
-  <block id="182b9ed848b82506c10ba162f10e3f5b" category="list-text">Protege dados em cargas de trabalho baseadas em aplicativos, como Oracle, datastores VMware e compartilhamentos de arquivos.</block>
   <block id="6b62768f3f94df043ea31bf9c43b2a42" category="paragraph">A ferramenta de Resiliência a Ransomware pode identificar as seguintes cargas de trabalho: Oracle, compartilhamentos de arquivos, armazenamento em blocos, máquinas virtuais e datastores de máquinas virtuais.</block>
   <block id="897c29783a147c6c7b7844f2d4a9e81a" category="paragraph">Na versão de pré-visualização, o serviço protege cargas de trabalho baseadas em aplicativos do Oracle, datastores de máquinas virtuais e compartilhamentos de arquivos em armazenamento NAS local, bem como Cloud Volumes ONTAP na AWS (usando o protocolo NFS) em organizações BlueXP individualmente e faz backup dos dados para o armazenamento em nuvem da Amazon Web Services.</block>
   <block id="f075180c986e3a7a8e0bad4fcec7c485" category="cell">15.3 (64 bits) a 15.6 (64 bits)</block>
@@ -1647,7 +1607,6 @@
   <block id="48bf90c5e99016f124c48c02a77dc8fd" category="inline-link-macro">Documentação sobre licenças e assinaturas do NetApp Console</block>
   <block id="0fa9a3c869139d736cd7d6df862b94e3" category="list-text"><block ref="0fa9a3c869139d736cd7d6df862b94e3" category="inline-link-macro-rx"></block></block>
   <block id="f20af4e11539d270463e7ed46557be6f" category="paragraph">Antes de poder usar o NetApp Ransomware Resilience, ele precisa primeiro descobrir os dados da carga de trabalho. Durante a descoberta, o Ransomware Resilience analisa todos os volumes e arquivos em sistemas em todos os agentes e projetos do Console dentro de uma organização.</block>
-  <block id="55971de7d1268c37251f60641b742b76" category="paragraph">No painel de controle Discovery, o Ransomware Resilience exibe as configurações de sistema compatíveis e incompatíveis. A ferramenta de Resiliência a Ransomware avalia aplicativos Oracle, datastores VMware, compartilhamentos de arquivos e armazenamento em blocos.</block>
   <block id="ee23d61365a6507dff70606d3790e1de" category="list-text">*Responda* a possíveis ataques de ransomware iniciando automaticamente um instantâneo em um determinado momento, que é bloqueado para que a cópia não possa ser excluída acidentalmente ou maliciosamente. Seus dados de backup permanecerão imutáveis e protegidos de ponta a ponta contra ataques de ransomware, tanto na origem quanto no destino.</block>
   <block id="7e56b5e89b8f29e1bd4a5ecf15c201e8" category="paragraph">Você pode experimentar o Ransomware Resilience com um teste gratuito de 30 dias. A NetApp não cobra pelo uso da versão de teste do Ransomware Resilience.</block>
   <block id="773dd0f5eb55036249a06d189bd46093" category="section-title">Requisitos de comportamento suspeito do usuário</block>
@@ -1905,7 +1864,6 @@
   <block id="ffe6653bcd557bfbd80aff3ce171f491" category="list-text">Para manter seu Backup and Recovery existente e aplicar apenas uma política de _detection_, deixe a caixa **Replace existing policies** desmarcada.</block>
   <block id="aafd4e94bcc37426152d473c41e03659" category="list-text">Ransomware Resilience detecta se existem políticas de Backup and Recovery ativas. Para substituir as políticas existentes, selecione a caixa **Replace existing policies**. Ao selecionar a caixa, o Ransomware Resilience substitui a lista de políticas de detecção por políticas de detecção.</block>
   <block id="037372d8704e59765af4c473d08f5257" category="list-text">Se a carga de trabalho tiver uma política de Backup and Recovery existente que você deseja manter, desmarque **Replace existing policies**. Para substituir as políticas existentes, marque **Replace existing policies**.</block>
-  <block id="2ef974fc1907e25ad7d2ab240867a065" category="list-text">Se o aplicativo ou a máquina virtual for gerenciado pelo NetApp Backup and Recovery ou Ransomware Resilience, o Ransomware Resilience realiza uma restauração consistente com falhas, na qual todos os dados que estavam no volume no mesmo ponto no tempo são restaurados, por exemplo, se o sistema travar.</block>
   <block id="b11b835f559ed8748e33a3412f3c77b2" category="section-title">Restaurar uma carga de trabalho</block>
   <block id="ea9eea4a980add15f1982bc5d385bfc2" category="doc">Gerenciar grupos de proteção em NetApp Ransomware Resilience</block>
   <block id="ed2728c518fe52f7f1f0f734bdf3232f" category="paragraph">NetApp Ransomware Resilience oferece grupos de proteção para facilitar o gerenciamento do seu conjunto de dados. Grupos de proteção são agrupamentos lógicos de cargas de trabalho. Ransomware Resilience pode proteger todos os volumes em um grupo de proteção ao mesmo tempo com uma única estratégia de proteção, poupando você de aplicar uma estratégia a cada carga de trabalho.</block>
@@ -2008,7 +1966,6 @@
   <block id="49408f5917e16f5795da1781a7748aa5" category="list-text">Cargas de trabalho, volumes, arquivos e diretórios afetados</block>
   <block id="a6bd7f80fc17cbb8e58e8dca754bf710" category="list-text">Para bloquear um usuário suspeito em seu ambiente, selecione *Block* ao lado do nome do usuário.</block>
   <block id="e2907e7cb7d68b36821cd11cda209bc3" category="cell">SAN (iSCSI e NVMe)</block>
-  <block id="65072a668477cd315b4302df8afcce32" category="paragraph">NetApp Ransomware Resilience protege seus dados contra ataques de ransomware. Na Ransomware Resilience, a proteção está disponível para cargas de trabalho baseadas em aplicativos do Oracle, datastores de VM e compartilhamentos de arquivos para storage NAS (protocolos NFS e CIFS) e storage SAN (protocolos FC, iSCSI e NVMe). A Ransomware Resilience é compatível com storage no local, bem como Cloud Volumes ONTAP para Amazon Web Services, Cloud Volumes ONTAP para Google Cloud, Cloud Volumes ONTAP para Microsoft Azure, Azure NetApp Files e Amazon FSx for NetApp ONTAP em toda a NetApp Console. Você pode fazer backup de dados para Amazon Web Services, Google Cloud, Microsoft Azure e NetApp StorageGRID.</block>
   <block id="3b9c98c430c62cb3627db641468d7e64" category="list-text">Avalia sua postura de proteção contra ransomware e a exibe em um painel de fácil compreensão, fornecendo recomendações para aprimorar a proteção.</block>
   <block id="9bd1fe262c57584526c5184d4de31827" category="list-text">Se seus clusters ONTAP no local ou sistemas Cloud Volumes ONTAP não estiverem configurados no Console, consulte <block ref="1c09904f3fbf9f22b68e96599d2dcddc" category="inline-link-macro-rx"></block> e <block ref="b04507b2bbabc17c071b912167d3ff4f" category="inline-link-macro-rx"></block>.</block>
   <block id="3eb45f3714606347a6ff182b822b69cc" category="list-text">Para clusters ONTAP ou Cloud Volumes ONTAP, o NetApp Ransomware Resilience exige que a versão do ONTAP seja 9.11.1 ou superior.</block>
@@ -2439,7 +2396,6 @@
   <block id="76c07e024915a14c275975a549a9ee9b" category="list-text">*Recupere* suas cargas de trabalho para ajudar a acelerar o tempo de atividade das cargas de trabalho, orquestrando diversas tecnologias da NetApp. Você pode optar por recuperar volumes específicos. Ransomware Resilience fornece recomendações sobre as melhores opções.</block>
   <block id="857d0c5d34b476c300d20857901434ee" category="list-text">Localiza todos os dados de NAS (protocolos NFS e CIFS) e SAN (FC, iSCSI e NVMe) locais e na nuvem em sistemas conectados ao Console.</block>
   <block id="8d2a9bcb8af52527cb5ef134952b126c" category="list-text">Identifica dados das APIs do ONTAP e do serviço de Backup e Recovery e os associa a cargas de trabalho. Saiba mais sobre <block ref="a16fd9a0601d0464b4c9ce4f59c2454b" category="inline-link-rx"></block>.</block>
-  <block id="aea5e53a84ea68f5c29fd5b651210249" category="list-text">*Carga de trabalho*: Uma carga de trabalho é um agrupamento lógico de recursos de storage dentro de um sistema, por exemplo, um banco de dados Oracle, um armazenamento de dados VMware ou um compartilhamento de arquivos.</block>
   <block id="185b7516beffeca9e791d1462be2e3df" category="paragraph">Se você deseja interromper o uso de políticas de proteção aplicadas a cargas de trabalho, pode desativá-las usando System Manager, chamadas de API ou a CLI.</block>
   <block id="321e92de54fb9050ca985e93dd41037e" category="admonition">A Resiliência contra Ransomware não detecta sistemas com volumes que utilizam FlexGroup.</block>
   <block id="660970b5bfb72eddca5566de07107009" category="section-title">Selecione as cargas de trabalho a serem descobertas</block>
@@ -2458,4 +2414,37 @@
   <block id="df3fb79f22fd0d8a496bd6ab0f7fcb62" category="sidebar">NetApp Ransomware Resilience protege, detecta e oferece suporte à recuperação de cargas de trabalho contra ameaças de ransomware em ambientes on-premises e storage de nuvem. Ransomware Resilience permite backup e recuperação seguros, ajudando as organizações a proteger dados críticos e manter a continuidade dos negócios para Oracle, datastores de VM, storage NAS e muito mais.</block>
   <block id="d75c1a5d668e6fb6360954c43259df75" category="list-title">Firewall IRE</block>
   <block id="93222c59d4ce3b5c19ed433527efc1b4" category="list-text">Você deve criar um firewall separado para gerenciar o tráfego de entrada para o crr-data-LIF-IP. Esse firewall deve permitir montagens NFSv3 e NFSv4 a partir do intervalo CIDR da VPC do IRE.</block>
+  <block id="ed6277eb011dd9324445de0b4deb0234" category="paragraph">NetApp Ransomware Resilience protege seus dados contra ataques de ransomware. Na Ransomware Resilience, a proteção está disponível para compartilhamentos de arquivos para storage NAS (protocolos NFS e CIFS) e storage SAN (protocolos FC, iSCSI e NVMe). A Ransomware Resilience é compatível com storage no local, bem como Cloud Volumes ONTAP para Amazon Web Services, Cloud Volumes ONTAP para Google Cloud, Cloud Volumes ONTAP para Microsoft Azure, Azure NetApp Files e Amazon FSx for NetApp ONTAP em toda a NetApp Console. Você pode fazer backup de dados para Amazon Web Services, Google Cloud, Microsoft Azure e NetApp StorageGRID.</block>
+  <block id="fb1cd4562ec1a61033e9d2c4ab767995" category="list-text">Protege os dados em compartilhamentos de arquivos.</block>
+  <block id="303e01b1cd1cab99501fe839539f4e39" category="list-text">Orquestra a recuperação de cargas de trabalho, incluindo máquinas virtuais, compartilhamentos de arquivos e armazenamento em bloco.</block>
+  <block id="c951303ee0fd5682237895bfad7df328" category="paragraph">Ransomware Resilience protege as seguintes cargas de trabalho em volumes de dados primários:</block>
+  <block id="c2d47b6bc95c845ff73e9809734fad1a" category="list-text">Compartilhamento de arquivos</block>
+  <block id="df8050ed04247af525daf2daa6c322c4" category="list-text">*Carga de trabalho*: Uma carga de trabalho é um agrupamento lógico de recursos de storage dentro de um sistema, por exemplo um compartilhamento de arquivos.</block>
+  <block id="219ae0200ec3ea6dcfb05554d78fc029" category="paragraph">No painel de controle Discovery, o Ransomware Resilience exibe as configurações de sistema suportadas e não suportadas. O Ransomware Resilience avalia compartilhamentos de arquivos e block storage.</block>
+  <block id="69bffd4bb9e455aa5c62ca1f53702cd9" category="paragraph">Uma carga de trabalho é uma máquina virtual ou um compartilhamento de arquivos.</block>
+  <block id="f4154bf5e6042768a9a528579573895f" category="paragraph">Antes de restaurar uma carga de trabalho no nível do arquivo, você pode visualizar uma lista dos arquivos afetados. Você pode acessar a página de Alertas para baixar uma lista dos arquivos afetados. Em seguida, use a página de Recuperação para carregar a lista e escolher quais arquivos restaurar.</block>
+  <block id="3143da82214f4e025a696a23ee63d6dd" category="list-text">Na página de Alertas, classifique os resultados por carga de trabalho para exibir os alertas da carga de trabalho que você deseja restaurar.</block>
+  <block id="ad81d983549cd4869ecbf4e4568dd9a4" category="cell">Proteja cargas de trabalho críticas ou de extrema importância contra ransomware.</block>
+  <block id="90c14c660f3939a93b414d3d4c9b707b" category="cell">A página Proteger exibe as cargas de trabalho críticas ou de alta importância (com base no nível de prioridade atribuído) que não estão protegidas.</block>
+  <block id="74dd01db809dfdbbd3fee87a6f6fd4ae" category="list-text">Se a máquina virtual for gerenciada pelo NetApp Backup and Recovery ou NetApp Ransomware Resilience, o NetApp Ransomware Resilience realiza uma restauração consistente com falhas, na qual todos os dados que estavam no volume naquele mesmo momento são restaurados, por exemplo, se o sistema travar.</block>
+  <block id="14952d9b177967e65f6269de52dfadc6" category="list-text">Recuperar todos os volumes</block>
+  <block id="103e1bfcc7b78c6a613046060aa97751" category="list-text">Recupere um compartilhamento de arquivos no nível de volume, diretório ou arquivo.</block>
+  <block id="138e328417253325f0020bc6f909cf21" category="list-text">Continue com um dos seguintes procedimentos dependendo se você escolheu volume ou arquivo.</block>
+  <block id="66b52194e9444d101bbebc0e5d3c85db" category="list-text">Selecione uma carga de trabalho no estado "Restauração necessária".</block>
+  <block id="c4bf33102c16c6d0f3b82ccd10132cbe" category="section-title">Restaurar uma carga de trabalho no nível do volume</block>
+  <block id="6eeebf96ed736572085b2e60a07707d2" category="section-title">Restaurar uma carga de trabalho no nível do arquivo</block>
+  <block id="330d8bbff953330ca78d7f5a365cf755" category="paragraph">Você pode restaurar uma carga de trabalho no nível do arquivo para o mesmo sistema ou para um sistema diferente.</block>
+  <block id="ac59eb4c3a4cee556cefcce89ff46aa1" category="list-title">Ativar Microsoft Sentinel</block>
+  <block id="db5ac87576026bbb8d31e812518d4d3a" category="list-title">Criar uma função personalizada no Microsoft Sentinel</block>
+  <block id="5714c8ca3850d2c9baed74815356f1ca" category="list-title">Registre o NetApp Ransomware Resilience para receber eventos do Microsoft Sentinel</block>
+  <block id="6629c8b10a65c01c4456e0a111604c4c" category="list-title">Crie um segredo para o cadastro</block>
+  <block id="bf61754a0d34cf517c48ffb1487ba40c" category="list-title">Atribuir permissões</block>
+  <block id="c7439d2223d35c56a0c13dfc89356b4a" category="list-title">Insira credenciais de autenticação</block>
+  <block id="1d0d3e915b82f0548aa65826ac228575" category="list-title">Habilitar um coletor de eventos HTTP no Splunk</block>
+  <block id="e4ae3ec1a7b6078a2a227108e873d56c" category="list-title">Criar um token de coletor de eventos no Splunk</block>
+  <block id="80f321a7a812aa867bed58b03ef5cc65" category="section-title">Restaurar a carga de trabalho no nível do arquivo</block>
+  <block id="7a9b2e033aaa7b0a366213831f6f5670" category="paragraph">Antes de restaurar uma carga de trabalho em nível de arquivo, agora você pode visualizar uma lista de arquivos que podem ter sido afetados por um ataque e identificar aqueles que deseja restaurar. Você pode deixar que a proteção contra ransomware do BlueXP escolha os arquivos a serem restaurados, pode carregar um arquivo CSV que liste todos os arquivos afetados por um alerta ou pode identificar manualmente quais arquivos deseja restaurar.</block>
+  <block id="367e5a02a217d0d56ba1d4196683de67" category="paragraph">Antes de restaurar uma carga de trabalho no nível do arquivo, agora você pode acessar a página de Alertas para baixar uma lista dos arquivos afetados em um arquivo CSV e então usar a página de Recuperação para carregar o arquivo CSV.</block>
+  <block id="b61174a96feeed9315df09125dbf021e" category="inline-link-macro">Saiba mais sobre como baixar os arquivos afetados antes de restaurar uma carga de trabalho</block>
+  <block id="f9ab80c55fbab58c37aab4891dabffae" category="paragraph"><block ref="f9ab80c55fbab58c37aab4891dabffae" category="inline-link-macro-rx"></block></block>
 </blocks>

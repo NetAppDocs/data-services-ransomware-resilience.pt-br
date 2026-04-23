@@ -22,7 +22,6 @@ Assim que você entender o alcance da sua proteção atual, link:rp-use-protect.
 
 Uma das primeiras etapas para proteger cargas de trabalho é visualizar suas cargas de trabalho atuais e seu status de proteção.  Você pode ver os seguintes tipos de cargas de trabalho:
 
-* Cargas de trabalho de aplicativos
 * Cargas de trabalho em bloco
 * Cargas de trabalho de compartilhamento de arquivos
 * Cargas de trabalho de VM

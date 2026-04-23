@@ -485,14 +485,6 @@ Com este lançamento, novas implantações da BlueXP ransomware protection agora
 
 
 
-=== Restaurar a carga de trabalho do aplicativo no nível de arquivo para Podman
-
-Antes de restaurar uma carga de trabalho de aplicativo no nível de arquivo, agora você pode visualizar uma lista de arquivos que podem ter sido afetados por um ataque e identificar aqueles que deseja restaurar.  Anteriormente, se os Conectores BlueXP em uma organização (anteriormente uma conta) estivessem usando o Podman, esse recurso era desabilitado.  Agora está habilitado para o Podman.  Você pode deixar que a BlueXP ransomware protection escolha os arquivos a serem restaurados, pode enviar um arquivo CSV que lista todos os arquivos afetados por um alerta ou pode identificar manualmente quais arquivos deseja restaurar.
-
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["Saiba mais sobre como se recuperar de um ataque de ransomware"] .
-
-
-
 == 30 de setembro de 2024
 
 
@@ -565,9 +557,9 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-licen
 
 
 
-=== Restaurar a carga de trabalho do aplicativo no nível do arquivo
+=== Restaurar a carga de trabalho no nível do arquivo
 
-Antes de restaurar uma carga de trabalho de aplicativo no nível de arquivo, agora você pode visualizar uma lista de arquivos que podem ter sido afetados por um ataque e identificar aqueles que deseja restaurar.  Você pode deixar que a BlueXP ransomware protection escolha os arquivos a serem restaurados, pode enviar um arquivo CSV que lista todos os arquivos afetados por um alerta ou pode identificar manualmente quais arquivos deseja restaurar.
+Antes de restaurar uma carga de trabalho em nível de arquivo, agora você pode visualizar uma lista de arquivos que podem ter sido afetados por um ataque e identificar aqueles que deseja restaurar. Você pode deixar que a proteção contra ransomware do BlueXP escolha os arquivos a serem restaurados, pode carregar um arquivo CSV que liste todos os arquivos afetados por um alerta ou pode identificar manualmente quais arquivos deseja restaurar.
 
 
 NOTE: Com esta versão, se todos os conectores BlueXP em uma conta não estiverem usando o Podman, o recurso de restauração de arquivo único será habilitado.  Caso contrário, ele será desabilitado para essa conta.
@@ -578,9 +570,9 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover
 
 === Baixe uma lista de arquivos afetados
 
-Antes de restaurar uma carga de trabalho de aplicativo no nível de arquivo, agora você pode acessar a página Alertas para baixar uma lista de arquivos afetados em um arquivo CSV e, em seguida, usar a página Recuperação para carregar o arquivo CSV.
+Antes de restaurar uma carga de trabalho no nível do arquivo, agora você pode acessar a página de Alertas para baixar uma lista dos arquivos afetados em um arquivo CSV e então usar a página de Recuperação para carregar o arquivo CSV.
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["Saiba mais sobre como baixar arquivos afetados antes de restaurar um aplicativo"] .
+link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["Saiba mais sobre como baixar os arquivos afetados antes de restaurar uma carga de trabalho"]
 
 
 

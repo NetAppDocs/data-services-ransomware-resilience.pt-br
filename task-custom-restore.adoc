@@ -25,9 +25,8 @@ TIP: O Ransomware Resilience também oferece suporte a um xref:task-clean-restor
 
 O administrador de armazenamento de segurança pode recuperar dados em diferentes níveis:
 
-* Recuperação de todos os volumes
-* Recuperar um aplicativo no nível de volume ou de arquivo e pasta.
-* Recupere um compartilhamento de arquivos no nível de volume, diretório ou arquivo/pasta.
+* Recuperar todos os volumes
+* Recupere um compartilhamento de arquivos no nível de volume, diretório ou arquivo.
 * Recuperar de um armazenamento de dados no nível de VM.
 
 
@@ -54,7 +53,7 @@ TIP: Você pode selecionar até 100 arquivos ou uma única pasta.
 
 
 
-. Continue com um dos procedimentos a seguir, dependendo se você escolheu aplicativo, volume ou arquivo.
+. Continue com um dos seguintes procedimentos dependendo se você escolheu volume ou arquivo.
 
 
 
@@ -62,7 +61,7 @@ TIP: Você pode selecionar até 100 arquivos ou uma única pasta.
 === Restaurar todos os volumes
 
 . No menu Resiliência contra Ransomware, selecione *Recuperação*.
-. Selecione uma carga de trabalho que esteja no estado "Restauração necessária".
+. Selecione uma carga de trabalho no estado "Restauração necessária".
 . Para restaurar, selecione *Restaurar*.
 . Na página Restaurar, no escopo Restaurar, selecione *Todos os volumes*.
 +
@@ -98,10 +97,10 @@ TIP: O novo nome do volume aparece como prefixo + nome do volume original + nome
 
 
 
-=== Restaurar uma carga de trabalho do aplicativo no nível do volume
+=== Restaurar uma carga de trabalho no nível do volume
 
 . No menu Resiliência contra Ransomware, selecione *Recuperação*.
-. Selecione uma carga de trabalho do aplicativo que esteja no estado "Restauração necessária".
+. Selecione uma carga de trabalho no estado "Restauração necessária".
 . Para restaurar, selecione *Restaurar*.
 . Na página Restaurar, no escopo Restaurar, selecione *Por volume*.
 +
@@ -138,11 +137,11 @@ TIP: O novo nome do volume aparece como o nome do volume original + nome do back
 
 
 
-=== Restaurar uma carga de trabalho do aplicativo no nível do arquivo
+=== Restaurar uma carga de trabalho no nível do arquivo
 
-Antes de restaurar uma carga de trabalho de aplicativo no nível de arquivo, você pode visualizar uma lista de arquivos afetados.  Você pode acessar a página Alertas para baixar uma lista de arquivos afetados.  Em seguida, use a página Recuperação para carregar a lista e escolher quais arquivos restaurar.
+Antes de restaurar uma carga de trabalho no nível do arquivo, você pode visualizar uma lista dos arquivos afetados. Você pode acessar a página de Alertas para baixar uma lista dos arquivos afetados. Em seguida, use a página de Recuperação para carregar a lista e escolher quais arquivos restaurar.
 
-Você pode restaurar uma carga de trabalho de aplicativo no nível de arquivo para o mesmo sistema ou para um sistema diferente.
+Você pode restaurar uma carga de trabalho no nível do arquivo para o mesmo sistema ou para um sistema diferente.
 
 
 
@@ -155,7 +154,7 @@ TIP: Se um volume apresentar vários alertas, você precisará baixar a lista CS
 
 .Passos
 . No menu Resiliência contra Ransomware, selecione *Alertas*.
-. Na página Alertas, classifique os resultados por carga de trabalho para mostrar os alertas para a carga de trabalho do aplicativo que você deseja restaurar.
+. Na página de Alertas, classifique os resultados por carga de trabalho para exibir os alertas da carga de trabalho que você deseja restaurar.
 . Na lista de alertas para essa carga de trabalho, selecione um alerta.
 . Para esse alerta, selecione um único incidente.
 +
@@ -173,7 +172,7 @@ Após avaliar os arquivos afetados, você pode restaurá-los.
 
 .Passos
 . No menu Resiliência contra Ransomware, selecione *Recuperação*.
-. Selecione uma carga de trabalho do aplicativo que esteja no estado "Restauração necessária".
+. Selecione uma carga de trabalho no estado "Restauração necessária".
 . Selecione *Restaurar*.
 . Na página Restaurar, no escopo Restaurar, selecione *Por arquivo*.
 . Na lista de volumes, selecione o volume que contém os arquivos que você deseja restaurar.
