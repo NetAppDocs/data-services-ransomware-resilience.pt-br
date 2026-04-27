@@ -457,7 +457,7 @@ image:diagram-clean-recovery-on-prem.png["Diagrama de restauração limpa da nuv
 ** O VMware Tools deve estar instalado e em execução.
 ** O SSH deve estar habilitado.
 ** Você deve ter instalado nfs-common.
-** O Docker precisa estar instalado e em execução.
+** É necessário que o Docker versão 20.x ou superior esteja instalado e em execução.
 ** Você precisa ter no mínimo 40 GB de espaço livre.
 
 
