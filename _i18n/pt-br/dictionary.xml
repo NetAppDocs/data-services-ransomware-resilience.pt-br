@@ -682,15 +682,7 @@
   <block id="0c494aaba0bbfa24f1d3a7438930b616" category="list-text">Selecione uma carga de trabalho, selecione o ícone *Ações* ... à direita e selecione *Editar nome da carga de trabalho*.</block>
   <block id="b7ac3f69f0c0ac25814be4d03ba11c24" category="list-text">Digite o novo nome da carga de trabalho e selecione *Salvar*.</block>
   <block id="565c83689e020f29cdb2b1a2a0116b1a" category="inline-link-macro">Recuperar-se de um ataque</block>
-  <block id="bc1b76060f49fe8ad404d389d8431371" category="summary">Melhore a segurança e a conformidade de privacidade dos seus dados com a NetApp Data Classification para identificar se seus dados incluem informações pessoais ou privadas.</block>
-  <block id="604880f6f585767eee17ec85b3c76533" category="inline-link-macro">Classificação de Dados</block>
-  <block id="00735a048dd8a101a0cf04ff8cf7c168" category="paragraph"><block ref="2324d2fecbef2eccb7e03b987d67689b" category="inline-link-macro-rx"></block>utiliza processamento de linguagem natural orientado por IA para análise e categorização de dados contextuais, fornecendo insights acionáveis sobre seus dados para atender aos requisitos de conformidade, detectar vulnerabilidades de segurança, otimizar custos e acelerar a migração.</block>
-  <block id="d3b14d365ca3277402fce2839d562f60" category="admonition">Esse processo pode impactar a importância da carga de trabalho para ajudar a garantir que você tenha a proteção adequada.</block>
-  <block id="aeb066b15e66f67bbfa9db1332465422" category="section-title">Identifique a exposição à privacidade com a Classificação de Dados</block>
   <block id="ba2c5a24730716f70a2b315220375de6" category="inline-link-macro">para permitir que a Classificação de Dados escaneie seus dados</block>
-  <block id="c4f1661d1e0ca939d13156f9f3d34d48" category="paragraph">Antes de usar a Classificação de Dados na Resiliência do Ransomware, você precisa<block ref="c872c876324415ce189a729b6026b061" category="inline-link-macro-rx"></block> .</block>
-  <block id="ee34749052b0d62bf351eb75d25107b1" category="paragraph">Você pode implantar a Classificação de Dados na página Proteção do Ransomware Resilience.  Siga o procedimento para identificar a exposição de privacidade.  Ao selecionar **Identificar exposição**, caso você ainda não tenha implantado a Classificação de Dados, uma caixa de diálogo permitirá que você habilite a Classificação de Dados.</block>
-  <block id="9ed086de7334074ba1b8a57d92fad8c8" category="paragraph">Para mais informações sobre Classificação de Dados, consulte:</block>
   <block id="06e283ee316863d38f0fea16ba5785cc" category="inline-link">Aprenda sobre Classificação de Dados</block>
   <block id="8b3703ff6ebaa8b98d723211fb1dfc77" category="list-text"><block ref="8b3703ff6ebaa8b98d723211fb1dfc77" category="inline-link-rx"></block></block>
   <block id="93f515959ce6187b986c42fa6959168b" category="inline-link">Categorias de dados privados</block>
@@ -698,30 +690,15 @@
   <block id="499dd7659f4fa7b600ca3796c449e41b" category="inline-link">Investigue os dados armazenados em sua organização</block>
   <block id="23ca466c11f4192b1b942a142ef1083f" category="list-text"><block ref="23ca466c11f4192b1b942a142ef1083f" category="inline-link-rx"></block></block>
   <block id="b4b23bfb09d955d9adbd34e9b10730b7" category="inline-link-macro">Classificação de Dados implantada</block>
-  <block id="6f70238b9dd1b1b13dcaa8388f9eb830" category="paragraph">A varredura de dados PII no Ransomware Resilience está disponível se você tiver<block ref="76ec7a4f27737b4abf63f3c2ea7bce9c" category="inline-link-macro-rx"></block> . A Classificação de Dados está disponível como parte do Console sem custo adicional e pode ser implantada no local ou na nuvem do cliente.</block>
-  <block id="22da148f02a4f9df3c95fa55ebe1f0e4" category="list-text">Na página Proteção, localize uma carga de trabalho de compartilhamento de arquivos na coluna Carga de trabalho.</block>
   <block id="ae026bf5e2ca5066c55b7b1740de800e" category="inline-image-macro">Página de proteção mostrando a coluna Exposição de privacidade</block>
   <block id="9dedf1958376570fec810d3b47c2d3ec" category="paragraph"><block ref="9dedf1958376570fec810d3b47c2d3ec" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6167c82beb8173b9fd8c04acf7729651" category="list-text">Para permitir que a Classificação de Dados verifique seus dados em busca de PII, na coluna *Exposição de privacidade*, selecione *Identificar exposição*.</block>
-  <block id="7058bb0083130a5c71fe119ba40e514f" category="admonition">Se você não tiver implantado a Classificação de Dados, selecionar *Identificar exposição* abrirá uma caixa de diálogo para implantar a Classificação de Dados.  Selecione *Implantar*.  Depois de implantar a Classificação de Dados, você pode retornar à página Proteção e selecionar *Identificar exposição*.</block>
-  <block id="a5795ac9b0de866cf01ea8939331c119" category="paragraph">A digitalização pode levar vários minutos, dependendo do tamanho e do número de arquivos.  Durante a verificação, a página Proteção indica que está identificando arquivos e fornece uma contagem de arquivos.  Quando a digitalização estiver concluída, a coluna Exposição de privacidade classificará o nível de exposição como Baixo, Médio ou Alto.</block>
-  <block id="70f91b9311063ebb918671e1632eea94" category="section-title">Revise a exposição da privacidade</block>
-  <block id="0537b0ecb09c0d9c0d03fe90ad780697" category="paragraph">Após a verificação da Classificação de Dados em busca de PII, avalie o risco.</block>
-  <block id="8a35aa96c6cd6c5a2441282d0cba7849" category="paragraph">Os dados PII são classificados em uma das três designações:</block>
   <block id="d2d08f06bc04a605f3fcfb8f214d6693" category="list-text">*Alto*: Mais de 70% dos arquivos contêm PII</block>
   <block id="28f2318706a91f0a8540b36afa47aa64" category="list-text">*Médio*: Mais de 30% e menos de 70% dos arquivos contêm PII</block>
   <block id="ea1385f5976d3bde8b3b9d5653072157" category="list-text">*Baixo*: Mais de 0% e menos de 30% dos arquivos contêm PII</block>
-  <block id="743c833ae848226cd938cbcdec4813e8" category="list-text">Na página Proteção, localize a carga de trabalho do compartilhamento de arquivos na coluna Carga de trabalho que mostra um status na coluna Exposição de privacidade.</block>
-  <block id="648eb89d24fbd412ac4e5191ba6b3cfc" category="list-text">Selecione o link da carga de trabalho na coluna Carga de trabalho para ver detalhes da carga de trabalho.</block>
   <block id="0bb4a1497d3056f8b2f0423eff14e160" category="inline-image-macro">Tela de detalhes da carga de trabalho mostrando o bloco de exposição de privacidade</block>
   <block id="7b0824f1068863bca201f38cc7763786" category="paragraph"><block ref="7b0824f1068863bca201f38cc7763786" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0d24b9f644f661e7276d0d4f3fdfaa2e" category="list-text">Na página Detalhes da carga de trabalho, observe os detalhes no bloco Exposição de privacidade.</block>
   <block id="dffb203aa27226e3750f92c5c60829df" category="section-title">Impacto da exposição à privacidade na importância da carga de trabalho</block>
   <block id="61915adac4ce0b36ecdb70a5e446a80b" category="paragraph">Alterações na exposição da privacidade podem impactar a importância da carga de trabalho.</block>
-  <block id="a201dfb7539c6083e641a0bc8121201b" category="cell">Quando a exposição da privacidade:</block>
-  <block id="65dc756d3347a26af4774cab05b6f1a6" category="cell">A partir desta exposição de privacidade:</block>
-  <block id="8dc6cf962cd8b6b9d4c2ec1c25942b36" category="cell">Para esta exposição de privacidade:</block>
-  <block id="9a70ecaf65d678d97afe7382a0197469" category="cell">Então, a importância da carga de trabalho faz isso: .</block>
   <block id="e999cd086de455a56c2f7d169210876b" category="cell">*Diminui*</block>
   <block id="a479d5f7790c7e99c1c56e63d46a8d05" category="paragraph">Alto, Médio ou Baixo</block>
   <block id="bd05a001892856f4f5d6aa48b0879798" category="cell">Médio, Baixo ou Nenhum</block>
@@ -735,8 +712,6 @@
   <block id="f8307a8be7170a599a441165be60a2d7" category="cell">Baixo ou Médio</block>
   <block id="655d20c1ca69519ca647684edbb2db35" category="paragraph">Alto</block>
   <block id="f5bfc54a73042ca571add47438fea77e" category="cell">Mudanças de Padrão ou Importante para Crítico</block>
-  <block id="d13de4a83d7b44c2e65495def8ef1c7b" category="section-title">Para maiores informações</block>
-  <block id="420b39017799ccdb233cdc7c2b2d4d58" category="paragraph">Para obter detalhes sobre a Classificação de Dados, consulte a documentação da Classificação de Dados:</block>
   <block id="903c9d0250ec5956f3a9e1f0a3469c20" category="summary">Você pode proteger cargas de trabalho contra ataques de ransomware atribuindo políticas a uma carga de trabalho no NetApp Ransomware Resilience.</block>
   <block id="54a418aa76c7e9afaa77a58a34a3d3ed" category="doc">Proteja cargas de trabalho com estratégias de proteção de NetApp Ransomware Resilience</block>
   <block id="9d76fd8cddbcb128567856bd698d409e" category="section-title">Entenda as estratégias de proteção contra ransomware</block>
@@ -2075,8 +2050,6 @@
   <block id="7df30d939fa4f3d1575169ec6d1894d8" category="doc">Limitações conhecidas na NetApp Ransomware Resilience</block>
   <block id="e9be3c13b1ed73a120f1b23e2cefb058" category="doc">Descubra cargas de trabalho em NetApp Ransomware Resilience</block>
   <block id="871215526a8732732fd40b6335388e98" category="doc">Perguntas frequentes sobre NetApp Ransomware Resilience</block>
-  <block id="1ca81bce832a538b6144470d9a25c786" category="paragraph">Dentro do NetApp Ransomware Resilience, você pode usar NetApp Data Classification para analisar e classificar os dados em uma carga de trabalho de compartilhamento de arquivos. A classificação de dados ajuda você a determinar se o conjunto de dados inclui informações de identificação pessoal (PII), o que pode aumentar os riscos de segurança.</block>
-  <block id="1954c0eede9cec276e44236c76142770" category="paragraph">A Classificação de Dados é um componente essencial do NetApp Console. Você não precisa de uma licença para usar a Classificação de Dados. Dependendo da sua configuração, a configuração da Classificação de Dados pode gerar custos, que não são cobrados pelo Ransomware Resilience. Para mais informações, consulte <block ref="c5cce5d1091349460847f69d486fd688" category="inline-link-macro-rx"></block>.</block>
   <block id="70c542a285cfdf5cc22587e58fc3fcbb" category="doc">Playbooks do SOAR para Microsoft Sentinel e Splunk</block>
   <block id="2f9304fe9b427489507405bef9a0bb9f" category="inline-link-macro">Splunk</block>
   <block id="c75f115758f26a9b54a9d51601b66cf9" category="inline-link-macro">Integrar playbooks SOAR</block>
@@ -2355,7 +2328,6 @@
   <block id="138cbd11459ece46267adb92ab34ee1f" category="paragraph">Após avaliar os arquivos afetados, você pode restaurá-los.</block>
   <block id="403f4a170e2d1c03d329e0f0dd8d1b84" category="section-title">13 de abril de 2026</block>
   <block id="794c08acf0fdad83a95c363b8c9662f4" category="sidebar">Verificar estado de recuperação</block>
-  <block id="d14be6fd318be2bc44adb6224cd0309b" category="sidebar">Recupere com restauração limpa</block>
   <block id="6ff288c704ac97afbc67708bc23dbc09" category="paragraph">Para saber mais sobre as configurações suportadas e como configurar seu sistema para uma restauração limpa, consulte <block ref="bce58762a021948ccde0fba2f5f7a845" category="inline-link-macro-rx"></block>. Para saber como recuperar com uma restauração limpa, consulte <block ref="c39fc221f9e8d680274efcf9f5170bf4" category="inline-link-macro-rx"></block>.</block>
   <block id="482b73c713ea8cffc3070c798b03badc" category="open-title">Do ambiente local para a nuvem</block>
   <block id="8880534a0e139c017e28bbf6bc44e84b" category="open-title">De local para local</block>
@@ -2447,4 +2419,22 @@
   <block id="b61174a96feeed9315df09125dbf021e" category="inline-link-macro">Saiba mais sobre como baixar os arquivos afetados antes de restaurar uma carga de trabalho</block>
   <block id="f9ab80c55fbab58c37aab4891dabffae" category="paragraph"><block ref="f9ab80c55fbab58c37aab4891dabffae" category="inline-link-macro-rx"></block></block>
   <block id="23bb3b926c6da9edf1342c50a0cbf22e" category="list-text">É necessário que o Docker versão 20.x ou superior esteja instalado e em execução.</block>
+  <block id="337f89149c6ad76d149c111687549e82" category="summary">Ransomware Resilience pode identificar exposições de privacidade em seus dados que ajudam você a melhorar a segurança de suas cargas de trabalho.</block>
+  <block id="2f43f805784f8d4ccf5eecb446bb36af" category="paragraph">Dentro do NetApp Ransomware Resilience, você pode usar NetApp Data Classification para identificar exposições de privacidade e proteger seus dados de forma proativa. Identificar exposições de privacidade revela se um conjunto de dados inclui informações de identificação pessoal (PII). Exposições de privacidade podem aumentar os riscos de segurança e alterar a designação de importância da carga de trabalho.</block>
+  <block id="fa8dac95fc1c211dbfe88b9f20fc8136" category="section-title">Identifique exposições de privacidade</block>
+  <block id="8c5e5072ac9e7825c5c9f373d2f1937a" category="paragraph">Antes de identificar vulnerabilidades de privacidade na Resiliência a Ransomware, você precisa de <block ref="c872c876324415ce189a729b6026b061" category="inline-link-macro-rx"></block>.</block>
+  <block id="43e618d6407986d787a8d0e2c9b466e7" category="inline-link-macro">pode acarretar custos</block>
+  <block id="d12546195d910bd6bdcd0c2558c63365" category="paragraph">A Classificação de Dados é um componente essencial do NetApp Console e um produto separado do Ransomware Resilience. Seu uso não requer licença. Dependendo da sua configuração, implantação <block ref="7e7dc9a1a76801355616ea493c3dce9e" category="inline-link-macro-rx"></block>, que não é cobrada pelo Ransomware Resilience.</block>
+  <block id="ce9cc130bc25a69c11fdf2053c205381" category="paragraph">Você pode implementar Data Classification na página Protection do Ransomware Resilience. Siga o procedimento para identificar a exposição à privacidade. Ao selecionar **Identificar exposição**, uma caixa de diálogo será exibida; selecione *Implantar Classification gratuitamente*. Após a implementação bem-sucedida, você pode retornar ao Ransomware Resilience para identificar a exposição na carga de trabalho.</block>
+  <block id="52e9471e9883639fa069802b2af375d6" category="paragraph">A verificação de dados PII no Ransomware Resilience está disponível se você tiver <block ref="76ec7a4f27737b4abf63f3c2ea7bce9c" category="inline-link-macro-rx"></block>.</block>
+  <block id="5afb28d9607fc0dfe3e7066a9a67cb87" category="list-text">Na página Proteção, localize uma carga de trabalho de compartilhamento de arquivos na coluna Carga de trabalho.</block>
+  <block id="1c124aeff3f31fd0eb4b2a910d95eecd" category="list-text">Na coluna *Exposição à privacidade*, selecione *Identificar exposição*. A verificação pode levar vários minutos.</block>
+  <block id="885d53eecb4dbc5294b615795243a7c8" category="list-text">Quando a digitalização for concluída, revise sua exposição. A exposição é classificada em uma das três categorias a seguir:</block>
+  <block id="8343a5d017382b35f03dd3e6e3a97a4d" category="inline-xref">impacto da exposição da privacidade na importância da carga de trabalho</block>
+  <block id="24bb1248c7c9f44b075b9c7dbccc782a" category="list-text">Para visualizar mais detalhes sobre a exposição da privacidade, selecione o nome da carga de trabalho e avalie <block ref="61dd50589a2fef3583fd959f8d71ff50" category="inline-xref-macro-rx"></block>.</block>
+  <block id="532a317daa1b8ba820044c5ab5f734c1" category="cell">Alteração na exposição à privacidade</block>
+  <block id="f5eb9155d3b6975ee55efb74e561e33d" category="cell">Exposição prévia</block>
+  <block id="79297b17dc9f8b6a6e468bfe48b8e0e4" category="cell">Exposição atual</block>
+  <block id="cbe03757132fcab02b71ae82dd1e0884" category="cell">Mudança na importância da carga de trabalho</block>
+  <block id="2f976de5f743c1cf88b6945568efbc4d" category="paragraph">Para obter informações sobre como remediar a exposição de privacidade, consulte a documentação de Data Classification:</block>
 </blocks>

@@ -66,14 +66,14 @@ sidebar:
         url: "/rp-use-alert.html"
       - title: Verificar estado de recuperação
         url: "/rp-use-recover.html"
-      - title: Recupere com uma restauração personalizada
-        url: "/rp-use-recover.html"
-      - title: Realizar uma restauração completa
+      - title: Recupere-se com uma restauração limpa
         entries:
         - title: Crie um ambiente de recuperação isolado
           url: "/task-clean-restore.html"
-        - title: Recupere com restauração limpa
+        - title: Realizar uma restauração completa
           url: "/task-clean-restore-recover.html"
+      - title: Recupere com uma restauração personalizada
+        url: "/rp-use-recover.html"
     - title: Realize um exercício de prontidão
       url: "/rp-start-simulate.html"
     - title: Configurar SIEM
