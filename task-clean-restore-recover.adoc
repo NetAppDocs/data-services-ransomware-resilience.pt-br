@@ -46,7 +46,7 @@ Você precisa ter configurado um link:task-clean-restore.html["ambiente de recup
 . Selecione o ambiente de recuperação isolado que deseja usar e clique em **Next**.
 . Analise o ambiente de recuperação isolado, confirmando se é o local correto. Selecione **Restaurar**.
 . O Ransomware Resilience realiza a configuração necessária. Assim que a configuração for concluída com sucesso, o Ransomware Resilience exibirá **Configuração concluída**. Para prosseguir com a análise, selecione **Avançar**.
-. Após a conclusão da instalação, selecione **Executar análise**. O NetApp Ransomware Resilience analisa todos os pontos de restauração disponíveis nos sete dias anteriores ao evento de ransomware, exibindo a data e o tipo de ponto de restauração.
+. Após a conclusão da instalação, selecione **Executar análise**. Ransomware Resilience procura pontos de restauração disponíveis anteriores ao evento de ransomware, exibindo a data e o tipo do ponto de restauração. Ransomware Resilience busca pontos de restauração em intervalos de sete dias. Se um ponto de restauração não estiver disponível nos primeiros sete dias, Ransomware Resilience começa a analisar o período de sete dias anterior e repete o processo até encontrar um caminho de recuperação viável.
 +
 image:screenshot-clean-room-analysis.png["Captura de tela da etapa de análise de restauração limpa."]
 
@@ -57,11 +57,13 @@ Para visualizar dados detalhados de eventos de arquivos, selecione um arquivo pa
 +
 image:clean-restore-plan.png["Captura de tela da etapa do plano de restauração limpa."]
 
-. Após escolher o ponto de restauração, selecione **Avançar** para iniciar a limpeza dos seus arquivos.
-. NetApp Ransomware Resilience começa a limpar a carga de trabalho.
+. Após escolher o ponto de restauração, selecione **Avançar** para iniciar a limpeza dos seus arquivos. NetApp Ransomware Resilience começa a limpar a carga de trabalho.
+. Escolha o destino de recuperação.
 +
-Quando a limpeza for concluída, selecione **Iniciar recuperação** para iniciar a recuperação.
+.. Se você selecionou *Alternativo*, escolha o *Sistema*, a *VM de Armazenamento* e o *Agregado* para o qual deseja recuperar. Insira um nome para o *Novo volume*.
 
+
+. Quando a limpeza for concluída, selecione **Iniciar recuperação** para iniciar a recuperação.
 . Escolha se deseja salvar a carga de trabalho original. Para não salvar a carga de trabalho original, selecione **Não, substituir a carga de trabalho original**. Para salvá-la, selecione **Sim, salvar a carga de trabalho original** e insira um novo nome para a carga de trabalho.
 . Selecione **Iniciar recuperação** para iniciar a recuperação.
 . Quando a recuperação for concluída, selecione **Avançar** para prosseguir para a fase final.

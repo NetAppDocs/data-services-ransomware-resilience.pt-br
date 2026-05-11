@@ -518,8 +518,9 @@ O processo para criar uma sala de recuperação isolada difere dependendo se o a
 --
 . Em Resiliência a Ransomware, selecione **Configurações**.
 . No cartão Restauração limpa, selecione **Adicionar** para criar o ambiente de recuperação isolado.
-. Para um IRE baseado em nuvem, selecione **Amazon Web Services**.
+. Na seção Tipo, escolha *Somente limpeza*.
 . Expanda a seção **Nome**. Insira um **Nome** para o ambiente.
+. Para um IRE baseado em nuvem, selecione **Amazon Web Services**.
 . Expanda a seção *Sistemas*. Selecione os sistemas que deseja conectar ao IRE. Para cada sistema selecionado, você deve fornecer o endereço IP, a máscara de sub-rede e o gateway da storage VM.
 +
 
@@ -549,8 +550,9 @@ O Ransomware Resilience testa a conexão após você selecionar add, o que pode 
 --
 . Em Resiliência a Ransomware, selecione **Configurações**.
 . No cartão Restaurações limpas, selecione **Adicionar** se este for o seu primeiro ambiente ou **Gerenciar** se você já criou um.
-. Para localização, selecione **On-premises**.
+. Na seção Tipo, escolha *Somente limpeza*.
 . Expanda a seção *Nome*. Atribua um **Nome** ao IRE.
+. Para localização, selecione **On-premises**.
 . Expanda a seção *Sistemas*. Selecione os sistemas que deseja conectar ao IRE. Atribua um endereço IP de VM de armazenamento, máscara de sub-rede e gateway para cada sistema que tenha cargas de trabalho a serem recuperadas no IRE.
 +
 Cada sistema que você selecionar deve ter um endereço IP atribuído. Você pode selecionar sistemas primários ou secundários. Os sistemas secundários podem ser usados para análise e recuperação caso o sistema primário não possua snapshots não criptografados ou esteja indisponível.
