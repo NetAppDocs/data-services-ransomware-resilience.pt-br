@@ -122,7 +122,7 @@ Para evitar esses conflitos, o Ransomware Resilience executa o sysprep na VM clo
 
 Ao criar o IRE para fontes locais, você tem a opção de adicionar uma fonte secundária.
 
-Se a fonte primária estiver disponível, a restauração limpa deve ser restaurada na fonte primária. Se a fonte primária não estiver disponível e você configurou uma fonte secundária, a restauração limpa será restaurada na fonte secundária.
+Se a fonte primária não estiver disponível e você configurou uma fonte secundária, a restauração limpa será restaurada na fonte secundária.
 
 Por padrão, o processo de restauração limpa analisa snapshots do ambiente de origem. Se o ambiente de origem estiver indisponível ou se não houver um snapshot não criptografado disponível na origem, a restauração limpa analisará snapshots em um sistema secundário se você tiver configurado um.
 

@@ -6,9 +6,9 @@
 
 === Melhorias de restauração limpa
 
-A restauração completa agora oferece suporte à recuperação para clusters alternativos e à análise além de sete dias.
+A restauração limpa agora oferece suporte à recuperação para um local alternativo, permitindo restaurar volumes para diferentes sistemas, VMs de armazenamento e agregados gerenciados pelo mesmo agente do Console. Além disso, a restauração limpa removeu a limitação de sete dias na busca por snapshots viáveis para recuperação. A restauração limpa agora continua procurando por um ponto de recuperação viável entre os snapshots disponíveis, independentemente da distância desde o ataque de ransomware.
 
-link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["Recupere cargas de trabalho com uma restauração limpa"^].
+link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore-recover.html["Recupere cargas de trabalho com uma restauração limpa"^].
 
 
 
