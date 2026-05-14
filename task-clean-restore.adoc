@@ -120,7 +120,7 @@ Para evitar esses conflitos, o Ransomware Resilience executa o sysprep na VM clo
 
 === Fontes secundárias
 
-Ao criar o IRE para fontes locais, você tem a opção de adicionar uma fonte secundária.
+Ao criar o IRE, você tem a opção de adicionar uma fonte secundária.
 
 Se a fonte primária não estiver disponível e você configurou uma fonte secundária, a restauração limpa será restaurada na fonte secundária.
 

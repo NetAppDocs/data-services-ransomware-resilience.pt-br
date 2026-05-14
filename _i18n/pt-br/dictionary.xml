@@ -2199,7 +2199,6 @@
   <block id="42d5a005352158447d080ff821694db4" category="list-text">Utilizar a mesma identidade de máquina pode gerar problemas de licenciamento e ativação.</block>
   <block id="2b973fe4e18c7b4ee211cfe2a2373d41" category="paragraph">Para evitar esses conflitos, o Ransomware Resilience executa o sysprep na VM clonada, o que redefine o SID, o CN e a identidade da máquina. A redefinição desses valores garante que a VM clonada opere como uma instância única e independente, sem interferir na VM de origem.</block>
   <block id="c94b2ef9dde0531d36cb0d4e5d7b4b72" category="section-title">Fontes secundárias</block>
-  <block id="08607b19598a980be86467b52da1e4d3" category="paragraph">Ao criar o IRE para fontes locais, você tem a opção de adicionar uma fonte secundária.</block>
   <block id="4a03772068b579d9b09ff0433b7acadd" category="paragraph">Por padrão, o processo de restauração limpa analisa snapshots do ambiente de origem. Se o ambiente de origem estiver indisponível ou se não houver um snapshot não criptografado disponível na origem, a restauração limpa analisará snapshots em um sistema secundário se você tiver configurado um.</block>
   <block id="bf6aff190124dd12362477474eddaf9b" category="paragraph">A restauração limpa é oferecida como parte do Ransomware Resilience. Nenhuma licença adicional é necessária para realizar uma restauração limpa ou criar um IRE.</block>
   <block id="2c5f8b1bf69ff1fef550992679ff59b6" category="paragraph">Habilitar a restauração limpa pode gerar cobranças de provedores de nuvem terceiros. Dependendo de como você usa o serviço, essas cobranças podem ser recorrentes enquanto os ambientes de restauração limpa existirem.</block>
@@ -2493,4 +2492,5 @@
   <block id="84c03f1b38aa942e542555e111083674" category="paragraph"><block ref="84c03f1b38aa942e542555e111083674" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f5cfed6a695ca584c4de91e043cec8df" category="list-text">Selecione **Liberar recursos e sair** para liberar os recursos e fechar a sala limpa. Para confirmar, selecione **Finalizar**.</block>
   <block id="ee9eb963788511d80fc2e4d572229dfc" category="paragraph">Se a fonte primária não estiver disponível e você configurou uma fonte secundária, a restauração limpa será restaurada na fonte secundária.</block>
+  <block id="1ed548d363a0d2a6ce0c5db113b94db8" category="paragraph">Ao criar o IRE, você tem a opção de adicionar uma fonte secundária.</block>
 </blocks>
