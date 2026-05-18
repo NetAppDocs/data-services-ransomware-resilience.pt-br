@@ -62,6 +62,9 @@ Ao restaurar um volume usando a restauração limpa, você tem a opção de rest
 +
 image:screenshot-clean-room-analysis.png["Captura de tela da etapa de análise de restauração limpa."]
 
++
+Enquanto a análise estiver em andamento, você pode selecionar **Parar**. Parar a análise exige que o processo de restauração completa seja iniciado novamente.
+
 . Após a conclusão da análise, selecione **Avançar** para planejar sua recuperação. O NetApp Ransomware Resilience apresenta duas opções: **Least data loss** e **Latest unimpacted restore point**. Selecione uma das opções e, opcionalmente, examine os dados de arquivos individuais para cada ponto de restauração.
 +
 Para visualizar dados detalhados de eventos de arquivos, selecione um arquivo para analisar seu status de criptografia e metadados: quando foi criado, modificado ou excluído e qual ponto de recuperação corresponde a qual ação.

@@ -1454,7 +1454,6 @@
   <block id="096f3522cfa2f31de45d052b740adc65" category="cell">Cloud Volumes ONTAP para AWS</block>
   <block id="05bcab512eefa1e7e2cc2d1e45970a7d" category="cell">CIFS e NFS</block>
   <block id="1f03f70fe9097fcc16686889bafaf634" category="cell">9.11.1 e posterior</block>
-  <block id="d32574662083c44bd1c1e27441a5f5f6" category="cell">SAN (FC, iSCSI e NVMe)</block>
   <block id="ce2276d280ca79bc5d0b33e7903a7d49" category="cell">9.17.1 e posterior</block>
   <block id="a6810a0b37cbc417c34b4dffc16f07a1" category="cell">Cloud Volumes ONTAP para Google Cloud Platform</block>
   <block id="9722c69e4736d9b151d70e30b917a4e1" category="cell">Cloud Volumes ONTAP para Microsoft Azure</block>
@@ -1562,7 +1561,6 @@
   <block id="4256b08931f8c14d28bbf33199e1b022" category="paragraph">O recurso Resiliência a Ransomware agora permite editar o status dos alertas de comportamento do usuário. Você pode descartar e resolver alertas manualmente.</block>
   <block id="8fe404d4b8af36b9844eb288d2706bbe" category="inline-link-macro">Gerencie alertas em Resiliência a Ransomware</block>
   <block id="869c8807275d576171cb34b892652da6" category="paragraph">Para mais informações, consulte <block ref="ca80a6cafecee489657bc722219fb267" category="inline-link-macro-rx"></block>.</block>
-  <block id="22a81a009e8d21bf17e2788fdbfa4a6d" category="paragraph">O sistema Amazon FSx for NetApp ONTAP é compatível com o Ransomware Resilience. As seguintes limitações se aplicam ao Amazon FSx para ONTAP:</block>
   <block id="ab066b3292d8ab61ef3b5c77169cdd19" category="section-title">Mais informações</block>
   <block id="48bf90c5e99016f124c48c02a77dc8fd" category="inline-link-macro">Documentação sobre licenças e assinaturas do NetApp Console</block>
   <block id="0fa9a3c869139d736cd7d6df862b94e3" category="list-text"><block ref="0fa9a3c869139d736cd7d6df862b94e3" category="inline-link-macro-rx"></block></block>
@@ -1771,7 +1769,6 @@
   <block id="e37ee5388292007ad9d3935327219122" category="paragraph">Para mais informações, consulte <block ref="5988324edfd7d92a7675cb7a08ac2a7e" category="inline-link-macro-rx"></block>.</block>
   <block id="58c30bd4c949be43357ab1b7557703b5" category="list-text">As políticas de backup não são compatíveis com Amazon FSx for ONTAP. Nesse ambiente, você deve executar operações de backup usando o Amazon FSx for backups. Você pode restaurar essas cargas de trabalho usando Ransomware Resilience.</block>
   <block id="2a0c2a157bd80927f000333567138b57" category="section-title">Limitações do Azure NetApp Files</block>
-  <block id="9ccc8d744240b4ff1c9fb964a84a7d3c" category="paragraph">Azure NetApp Files é compatível com Ransomware Resilience. As seguintes limitações se aplicam ao Azure NetApp Files:</block>
   <block id="b285edab772b215df16e97f47e6cf852" category="list-text">Estratégias de proteção contra ransomware com políticas de backup não são compatíveis com o Azure NetApp Files. Em vez disso, você pode usar Azure NetApp Files backup.</block>
   <block id="af5eb4e584c938e9f8b3531d944e3a59" category="list-text">Estratégias de proteção contra ransomware com replicação não são suportadas para Azure NetApp Files.</block>
   <block id="1c312af1f49befaddd00883a617fa8ba" category="list-text">Ao selecionar uma estratégia de proteção, certifique-se de que sua programação de snapshots seja compatível com o Azure NetApp Files. A programação de snapshots mais frequente disponível no Azure NetApp Files é a cada hora.</block>
@@ -2499,4 +2496,26 @@
   <block id="7f3418b9bbded932a1a1585ec05f42c3" category="inline-link-macro">detecção de atividade suspeita do usuário</block>
   <block id="df790109011414a6034217652cd48d7c" category="inline-link-macro">restaurações limpas</block>
   <block id="c40aa9438834745dead5ab833fb4ad95" category="list-text">Analise também os requisitos para <block ref="8195b6c486e4af94bbefa0d6c4fe0d9d" category="inline-link-macro-rx"></block> e <block ref="5909784b16712ef276fd16aaaa47a088" category="inline-link-macro-rx"></block>.</block>
+  <block id="ff3968cf2fd662dd2275d75511ef33af" category="cell">CIFS, NFS, SAN (iSCSI e NVMe)</block>
+  <block id="d334ebc491af4228eb4cd8e0de126818" category="admonition">A detecção de atividades suspeitas do usuário não é compatível com Azure NetApp Files ou Google Cloud NetApp Volumes. Para obter mais informações sobre o suporte à detecção de atividades suspeitas do usuário, consulte <block ref="69d552b440ad08cbfe2c75fd459bcf87" category="inline-link-macro-rx"></block>.</block>
+  <block id="a1b7351b5e78c5f7b3c07f1f9b210761" category="doc">Suporte do Google Cloud NetApp Volumes (prévia)</block>
+  <block id="d80af1c0606a32f418ab576db57cacc1" category="paragraph">O Ransomware Resilience agora oferece suporte a sistemas Google Cloud NetApp Volumes, permitindo que você detecte e responda a ameaças de ransomware no Google Cloud NetApp Volumes com eficiência. Ao realizar a descoberta, o Ransomware Resilience exibe automaticamente as cargas de trabalho dos sistemas Google Cloud NetApp Volumes. Quando você descobre os sistemas, eles aparecem no painel do Ransomware Resilience. O suporte para Google Cloud NetApp Volumes no Ransomware Resilience está atualmente em versão prévia.</block>
+  <block id="35b27350003f459df80234524883b5fc" category="inline-link-macro">Limitações na resiliência a ransomware</block>
+  <block id="cae4e00f2196b1be86c3e1e5dec224f5" category="paragraph">Para obter mais informações, consulte <block ref="d50b16a5274f0acc6be171c51d532ef9" category="inline-link-macro-rx"></block>. Para obter informações sobre o escopo do suporte do Google Cloud NetApp Volumes, consulte <block ref="27362f7d9843ec19f9f3145cc1ee646c" category="inline-link-macro-rx"></block>.</block>
+  <block id="f5523776592686b65cfe8d99ccda44ac" category="paragraph">A restauração limpa agora oferece suporte a relatórios. Com os relatórios, você pode revisar e avaliar restaurações limpas, salvando essas informações offline como um arquivo CSV.</block>
+  <block id="b5be0bbdf1965d7e362ac1fcae7cb4bb" category="paragraph">A restauração limpa agora também permite interromper a análise. Se você interromper a análise, deverá iniciar a restauração limpa novamente.</block>
+  <block id="4756b9491ac344d3e27adc7e34c8640b" category="paragraph">Para saber mais sobre relatórios, consulte <block ref="225fa9dfe1003c8a72e52db2e5a89a50" category="inline-link-macro-rx"></block>. Para saber mais sobre recuperação, consulte <block ref="c39fc221f9e8d680274efcf9f5170bf4" category="inline-link-macro-rx"></block>.</block>
+  <block id="fd3b4579ab972a1738986581275cfcfa" category="list-text">Bancos de dados:</block>
+  <block id="78898e52fcbdc5337204a384f2456d4f" category="list-text">Microsoft SQL Server</block>
+  <block id="30162ed78b6c10f731411f2fc440c24f" category="list-text">Oracle</block>
+  <block id="ed11408803c4c1aca5fbebbc43d88458" category="list-text">Armazenamentos de dados VMware</block>
+  <block id="67e04a8275d417d66dbae3b41f8b109f" category="paragraph">A detecção de atividades de comportamento do usuário é compatível com o Ransomware Resilience para cargas de trabalho em sistemas ONTAP locais, bem como em Amazon FsxN para NetApp ONTAP e sistemas Cloud Volumes ONTAP que estejam alinhados com <block ref="12d7be4f3da31a90f0de3bba45ddeec1" category="inline-xref-macro-rx"></block>.</block>
+  <block id="d46a6d4256967df0f7292fba7af7750e" category="paragraph">As seguintes limitações se aplicam ao Amazon FSx para ONTAP:</block>
+  <block id="0a3365d021ca1305c9f785f72440818f" category="paragraph">As seguintes limitações se aplicam ao Azure NetApp Files:</block>
+  <block id="36a3b80be6de8003f2c8586abef3da11" category="section-title">Limitações do Google Cloud NetApp Volumes</block>
+  <block id="03b202e92a2bf372a4034ee95f36d4a7" category="paragraph">As seguintes limitações se aplicam ao Google Cloud NetApp Volumes:</block>
+  <block id="f74751df940b5d304cec8e85cc517212" category="list-text">Atualmente, você só pode aplicar estratégias de proteção baseadas em criptografia e FPolicy às cargas de trabalho do Google Cloud NetApp Volumes. Não é possível aplicar estratégias de proteção baseadas no comportamento do usuário.</block>
+  <block id="fd97f891be8e4ff9fd31d19ccffe7cfa" category="list-text">Estratégias de proteção com replicação não são suportadas atualmente para Google Cloud NetApp Volumes</block>
+  <block id="98d8c0e0a6e1f848e25119bcb40e31fb" category="paragraph">Enquanto a análise estiver em andamento, você pode selecionar **Parar**. Parar a análise exige que o processo de restauração completa seja iniciado novamente.</block>
+  <block id="3bfca6a430fa87d8630a8459fe8a4aa1" category="section-title">18 de maio de 2026</block>
 </blocks>
