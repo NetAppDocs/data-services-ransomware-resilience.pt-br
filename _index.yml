@@ -34,7 +34,7 @@ indexpage:
       url: "/rp-use-dashboard.html"
     - title: Proteja as cargas de trabalho
       url: "/rp-use-protect.html"
-    - title: Configurar a detecção de atividades suspeitas do usuário
+    - title: Configurar detecção de atividade do usuário
       url: "/suspicious-user-activity.html"
     - title: Responder a um alerta detectado
       url: "/rp-use-alert.html"

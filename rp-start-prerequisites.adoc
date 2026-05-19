@@ -61,7 +61,7 @@ Certifique-se de estar usando um sistema compatível:
 {asterisco} O Amazon FSx for NetApp ONTAP usa a Proteção Autônoma contra Ransomware (ARP) e não o ARP/AI.  Para obter mais informações sobre a diferença, consultelink:https://docs.netapp.com/us-en/ontap/anti-ransomware/#arp-ai["ARP/IA"^] .
 
 
-NOTE: A detecção de atividades suspeitas do usuário não é compatível com Azure NetApp Files ou Google Cloud NetApp Volumes. Para obter mais informações sobre o suporte à detecção de atividades suspeitas do usuário, consulte link:reference-user-activity-requirements.html["Requisitos de detecção de atividade do usuário"].
+NOTE: A detecção de atividade do usuário não é compatível com Azure NetApp Files ou Google Cloud NetApp Volumes. Para obter mais informações sobre a compatibilidade com a detecção de atividade do usuário, consulte link:reference-user-activity-requirements.html["Requisitos de detecção de atividade do usuário"].
 
 
 
@@ -114,9 +114,9 @@ A Resiliência contra Ransomware ajuda a configurar um destino de backup atravé
 
 
 
-== Requisitos de comportamento suspeito do usuário
+== Requisitos de detecção de comportamento do usuário
 
-Para que o Ransomware Resilience forneça alertas sobre comportamentos suspeitos de usuários, você deve configurar um agente de atividade do usuário. Para instalar um agente de atividade do usuário, certifique-se de que seu sistema atenda link:reference-user-activity-requirements.html["os requisitos"].
+Para que a Resiliência a Ransomware forneça alertas sobre o comportamento do usuário, você deve configurar um agente de atividade do usuário. Para instalar um agente de atividade do usuário, certifique-se de que seu sistema atenda link:reference-user-activity-requirements.html["os requisitos"].
 
 
 

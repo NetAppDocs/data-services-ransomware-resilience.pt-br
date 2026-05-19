@@ -20,7 +20,7 @@ Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-
 
 
 
-=== Aprimoramento da atividade do usuário
+=== Aprimoramento da detecção do comportamento do usuário
 
 As informações sobre eventos de violação de dados agora são armazenadas por 13 meses após um incidente, permitindo um período mais longo de registro para suas necessidades de relatórios.
 

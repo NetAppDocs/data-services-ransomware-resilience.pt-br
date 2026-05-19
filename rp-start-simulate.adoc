@@ -52,7 +52,7 @@ image:screen-settings-alert-drill-configure.png["Configurar página de treinamen
 .. Selecione um sistema de teste.
 .. Selecione um SVM de armazenamento de teste.
 .. Se você selecionou uma VM de armazenamento CIFS (SMB), os campos **Nome de usuário** e **Senha** serão exibidos.  Digite o nome de usuário e a senha para a VM de armazenamento.
-.. Selecione o tipo de exercício de prontidão. Para uma recuperação manual de uma violação de dados de criptografia, escolha **Recuperação personalizada**. Para recuperação de atividades suspeitas de usuários, escolha **Violação de dados**.
+.. Selecione o tipo de exercício de prontidão. Para uma recuperação manual de uma violação de dados criptografados, escolha **Recuperação personalizada**. Para recuperação de comportamento suspeito do usuário, escolha **Violação de dados**.
 .. Insira o nome da carga de trabalho de teste. Não inclua hífens no nome.
 
 

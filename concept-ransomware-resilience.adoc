@@ -162,6 +162,34 @@ image:diagram-rp-architecture-preview3.png["Diagrama mostrando a arquitetura de 
 |===
 
 
+=== Tipos de ataque
+
+A resiliência contra ransomware reconhece cinco tipos de ataques:
+
+[cols="25,75"]
+|===
+| Tipo de ataque | Definição 
+
+
+| Criptografia (entropia) | A NetApp Ransomware Resilience reconhece padrões anormais de IOPS, entropia de dados e sufixos de arquivo não padronizados. 
+
+
+| Criptografia (comportamento do usuário) | Ransomware Resilience identifica atividades anômalas de leitura, gravação e renomeação de arquivos realizadas por um usuário específico. 
+
+
+| Violação de dados | A Resiliência contra Ransomware detecta padrões anômalos de acesso de leitura a arquivos realizados por um usuário específico. 
+
+
+| Destruição de dados | A ferramenta de Ransomware Resilience detecta a exclusão em massa de arquivos por um usuário específico. 
+
+
+| Comportamento suspeito do usuário | A resiliência a ransomware identifica comportamentos anômalos que vão além do escopo de violação de dados, destruição de dados ou criptografia. 
+|===
+
+NOTE: Para identificar um usuário específico responsável por um ataque, você deve configurar link:concept-user-behavior.html["Detecção do comportamento do usuário."] Review link:rp-reference-limitations.html["limitações"] para verificar se o seu sistema oferece suporte à detecção de atividade do usuário.
+
+
+
 == Destinos de backup, sistemas e fontes de dados de carga de trabalho suportados
 
 O Ransomware Resilience oferece suporte aos seguintes destinos de backup, sistemas e fontes de dados:
@@ -219,7 +247,7 @@ O Ransomware Resilience oferece suporte aos seguintes destinos de backup, sistem
 {asterisco} O Amazon FSx for NetApp ONTAP usa a Proteção Autônoma contra Ransomware (ARP) e não o ARP/AI.  Para obter mais informações sobre a diferença, consultelink:https://docs.netapp.com/us-en/ontap/anti-ransomware/#arp-ai["ARP/IA"^] .
 
 
-NOTE: A detecção de atividades suspeitas do usuário não é compatível com Azure NetApp Files ou Google Cloud NetApp Volumes. Para obter mais informações sobre o suporte à detecção de atividades suspeitas do usuário, consulte link:reference-user-activity-requirements.html["Requisitos de detecção de atividade do usuário"].
+NOTE: A detecção de atividade do usuário não é compatível com Azure NetApp Files ou Google Cloud NetApp Volumes. Para obter mais informações sobre a compatibilidade com a detecção de atividade do usuário, consulte link:reference-user-activity-requirements.html["Requisitos de detecção de atividade do usuário"].
 
 
 NOTE: Para usar ARP/AI no ONTAP, é necessário ter o ONTAP 9.16 ou superior. + O ONTAP não oferece suporte à proteção contra ransomware para volumes FabricPool FlexCache, FlexGroup , grupos de consistência, pontos de montagem, caminhos de montagem, volumes offline e volumes de proteção de dados (DP). Certifique-se de revisarlink:https://docs.netapp.com/us-en/ontap/anti-ransomware/use-cases-restrictions-concept.html["Configurações suportadas e não suportadas no ONTAP"^] .

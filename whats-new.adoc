@@ -96,7 +96,7 @@ Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-
 
 
 
-=== Aprimoramento da atividade do usuário
+=== Aprimoramento da detecção do comportamento do usuário
 
 As informações sobre eventos de violação de dados agora são armazenadas por 13 meses após um incidente, permitindo um período mais longo de registro para suas necessidades de relatórios.
 
@@ -134,13 +134,13 @@ Para mais informações, consulte link:https://docs.netapp.com/us-en/data-servic
 
 === Excluir usuários em massa dos alertas de comportamento do usuário
 
-Ransomware Resilience agora suporta o upload de uma lista JSON de usuários para excluir dos alertas de atividade de comportamento do usuário, além das opções existentes na UI e baseadas em CSV.
+O Ransomware Resilience agora suporta o upload de uma lista JSON de usuários para exclusão dos alertas de comportamento do usuário, além das opções existentes na interface do usuário e em formato CSV.
 
 Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#exclude-users-from-alerts["Excluir usuários dos alertas"^].
 
 
 
-=== Aprimoramentos na atividade de comportamento do usuário
+=== Aprimoramentos na detecção do comportamento do usuário
 
 Ransomware Resilience aprimorou a compreensão do comportamento do usuário ao adicionar alertas por e-mail e incluir eventos de comportamento do usuário nos dados de eventos SIEM compatíveis (AWS Security Hub, Microsoft Sentinel e Splunk Cloud). Esses aprimoramentos fornecem informações mais precisas sobre o monitoramento de segurança e conformidade.
 
@@ -168,7 +168,7 @@ Para obter mais informações, consulte o link: Para obter mais informações, c
 
 
 
-=== Suporte de grupo de proteção para atividade de comportamento do usuário
+=== Suporte do grupo de proteção para detecção de comportamento do usuário
 
 Os grupos de proteção Ransomware Resilience agora oferecem suporte a políticas de detecção para detecção de comportamento suspeito do usuário. Ao aplicar uma estratégia de proteção contra ransomware a um grupo de proteção, ela aplica uma política em todas as cargas de trabalho, simplificando o gerenciamento da sua postura de cibersegurança.
 
@@ -275,13 +275,13 @@ Diferentemente da detecção de criptografia pelo ARP na camada de armazenamento
 
 IMPORTANT: Você deve usar o novolink:#new-user-roles-for-data-breach-detection["Administrador de comportamento do usuário do Ransomware Resilience e visualizador de comportamento do usuário do Ransomware Resilience"] funções para acessar configurações de detecção de comportamento suspeito do usuário.
 
-Para mais informações, consultelink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["Habilitar detecção de atividades suspeitas de usuários"] elink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html#view-anomalous-user-behavior["Visualizar comportamento anômalo do usuário"] .
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["Ativar detecção de atividade do usuário"] e link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html#view-anomalous-user-behavior["Visualizar comportamento anômalo do usuário"].
 
 
 
 ==== Detecções adicionais de atividades suspeitas de usuários
 
-Além da detecção de violações de dados, o Ransomware Resilience também detecta os seguintes tipos de alerta com base na atividade suspeita observada do usuário:
+Além da detecção de violações de dados, o Ransomware Resilience também detecta os seguintes tipos de alertas com base na atividade observada do usuário:
 
 * **Destruição de dados - ataque potencial** - Um alerta com a gravidade do ataque potencial é criado quando o número de exclusões de arquivos excede a norma histórica.
 * **Comportamento suspeito do usuário - ataque potencial** - Um alerta com a gravidade do ataque potencial é criado quando são observadas operações de leitura, renomeação e exclusão em uma sequência semelhante a um ataque de ransomware
@@ -292,7 +292,7 @@ Além da detecção de violações de dados, o Ransomware Resilience também det
 
 ==== Novas funções de usuário para detecção de violação de dados
 
-Para gerenciar alertas de atividades suspeitas do usuário, o Ransomware Resilience introduziu duas novas funções para administradores da organização do Console concederem acesso à detecção de atividades suspeitas do usuário: administrador de comportamento do usuário do Ransomware Resilience e visualizador de comportamento do usuário do Ransomware Resilience.
+Para gerenciar alertas de atividade do usuário, o Ransomware Resilience introduziu duas novas funções para administradores da organização do Console concederem acesso à detecção de atividade suspeita do usuário: Ransomware Resilience user behavior admin e Ransomware Resilience user behavior viewer.
 
 Você deve ser um administrador de comportamento do usuário para configurar configurações de comportamento suspeito do usuário. A função de administrador do Ransomware Resilience não tem suporte para configurar comportamentos suspeitos do usuário.
 

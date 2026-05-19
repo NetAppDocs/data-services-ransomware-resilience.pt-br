@@ -27,13 +27,13 @@ Diferentemente da detecção de criptografia pelo ARP na camada de armazenamento
 
 IMPORTANT: Você deve usar o novolink:#new-user-roles-for-data-breach-detection["Administrador de comportamento do usuário do Ransomware Resilience e visualizador de comportamento do usuário do Ransomware Resilience"] funções para acessar configurações de detecção de comportamento suspeito do usuário.
 
-Para mais informações, consultelink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["Habilitar detecção de atividades suspeitas de usuários"] elink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html#view-anomalous-user-behavior["Visualizar comportamento anômalo do usuário"] .
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["Ativar detecção de atividade do usuário"] e link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html#view-anomalous-user-behavior["Visualizar comportamento anômalo do usuário"].
 
 
 
 ==== Detecções adicionais de atividades suspeitas de usuários
 
-Além da detecção de violações de dados, o Ransomware Resilience também detecta os seguintes tipos de alerta com base na atividade suspeita observada do usuário:
+Além da detecção de violações de dados, o Ransomware Resilience também detecta os seguintes tipos de alertas com base na atividade observada do usuário:
 
 * **Destruição de dados - ataque potencial** - Um alerta com a gravidade do ataque potencial é criado quando o número de exclusões de arquivos excede a norma histórica.
 * **Comportamento suspeito do usuário - ataque potencial** - Um alerta com a gravidade do ataque potencial é criado quando são observadas operações de leitura, renomeação e exclusão em uma sequência semelhante a um ataque de ransomware
@@ -44,7 +44,7 @@ Além da detecção de violações de dados, o Ransomware Resilience também det
 
 ==== Novas funções de usuário para detecção de violação de dados
 
-Para gerenciar alertas de atividades suspeitas do usuário, o Ransomware Resilience introduziu duas novas funções para administradores da organização do Console concederem acesso à detecção de atividades suspeitas do usuário: administrador de comportamento do usuário do Ransomware Resilience e visualizador de comportamento do usuário do Ransomware Resilience.
+Para gerenciar alertas de atividade do usuário, o Ransomware Resilience introduziu duas novas funções para administradores da organização do Console concederem acesso à detecção de atividade suspeita do usuário: Ransomware Resilience user behavior admin e Ransomware Resilience user behavior viewer.
 
 Você deve ser um administrador de comportamento do usuário para configurar configurações de comportamento suspeito do usuário. A função de administrador do Ransomware Resilience não tem suporte para configurar comportamentos suspeitos do usuário.
 

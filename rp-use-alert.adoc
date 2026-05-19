@@ -161,7 +161,7 @@ A página Alertas é exibida.
 
 Observando a aba Alertas, você pode identificar se há atividade maliciosa ou comportamento anômalo do usuário.
 
-Você deve ter configurado um agente de atividade do usuário e habilitado uma política de proteção com detecção de comportamento do usuário para visualizar alertas em nível de usuário. A coluna *Usuário suspeito* aparece no painel de alertas somente quando a detecção de comportamento do usuário está habilitada. Para habilitar a detecção de usuários suspeitos, consulte link:suspicious-user-activity.html["Atividade suspeita do usuário"].
+Para visualizar alertas em nível de usuário, você precisa ter configurado um agente de atividade do usuário e habilitado uma política de proteção com detecção de comportamento do usuário. A coluna *Usuário suspeito* aparece no painel de alertas somente quando a detecção de comportamento do usuário está habilitada. Para obter mais informações, link:suspicious-user-activity.html["Aprenda sobre detecção de atividade do usuário"].
 
 
 
@@ -195,7 +195,7 @@ image:screen-alerts-incidents3.png["Página de incidentes de alerta"]
 
 === Visualizar comportamento anômalo do usuário
 
-Se você configurou a detecção de usuários suspeitos para visualizar comportamentos anômalos de usuários, pode ver dados em nível de usuário e bloquear usuários específicos. Para ativar as configurações de usuários suspeitos, consulte link:suspicious-user-activity.html["Configurar agentes e coletores para detecção de atividade do usuário"].
+Se você configurou a detecção de comportamento do usuário, pode visualizar dados em nível de usuário e bloquear usuários específicos. Para ativar a detecção de atividade do usuário, consulte link:suspicious-user-activity.html["Configurar agentes e coletores"].
 
 .Passos
 . No menu Resiliência contra Ransomware, selecione *Alertas*.
