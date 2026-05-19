@@ -100,6 +100,52 @@ O servidor deve atender aos seguintes requisitos mínimos:
 
 
 
+=== Recomendações de dimensionamento
+
+Ao coletar eventos de usuário, certifique-se de que a máquina que hospeda o agente de atividade do usuário tenha o tamanho adequado para suportar a taxa de eventos. Isso significa garantir que você tenha coletores de dados suficientes e CPU e RAM suficientes na máquina que hospeda o agente de atividade do usuário para tolerar o número de eventos por segundo. Para aumentar o número de coletores de dados, pode ser necessário aumentar a capacidade de RAM ou CPU. Ransomware Resilience suporta até 50 coletores de dados por agente de atividade do usuário.
+
+A tabela a seguir fornece orientações gerais para dimensionamento:
+
+|===
+| Configuração da máquina do agente de atividade do usuário | Número de coletores de dados | Taxa máxima de eventos 
+
+
+| 4 núcleos, 16GB | 10 coletores de dados | 20.000 eventos/segundo 
+
+
+| 4 núcleos, 32GB | 20 coletores de dados | 20.000 eventos/segundo 
+|===
+Você também pode calcular suas necessidades específicas. Ao calcular o tamanho adequado, recomenda-se qualificar com uma taxa de buffer de 30%. Use esta fórmula para determinar se sua configuração pode lidar com a carga.
+
+[listing]
+----
+Where E is the sum of all events per second across all data collectors:
+
+E + (0.3 x E) < 20,000 events/second
+----
+.O Ransomware Resilience fornece um script para calcular a taxa de dados de eventos. Aprenda como calcular a taxa de dados de eventos no Ransomware Resilience.
+[%collapsible]
+====
+O Ransomware Resilience fornece um script que você pode executar em seu sistema para calcular a taxa de dados de eventos. Por padrão, o script é executado para um máximo de cinco máquinas virtuais de armazenamento (SVMs). Se o seu ambiente incluir mais de 5 SVMs, você pode modificar o script de acordo. Independentemente do número de SVMs, o script leva aproximadamente cinco minutos para obter uma leitura da taxa média de eventos. Antes de executar o script, você deve ter:
+
+* link:suspicious-user-activity.html["Configurou um agente de atividade do usuário"]
+* O endereço IP do cluster
+* Nome de usuário e senha do administrador do cluster
+* Instalado `sshpass` na máquina Linux (você pode instalar com o comando `sudo yum install -y sshpass`)
+
+
+.Passos
+. No cluster que hospeda o agente de atividade do usuário, execute o script como admin: `/opt/netapp/cloudsecure/agent/install/svm_event_rate_checker.sh`
+. Quando solicitado, forneça o endereço IP do cluster, o nome de usuário do administrador e a senha do administrador.
+. O script leva aproximadamente cinco minutos para ser executado. Ao terminar, a linha de comando exibe a taxa de eventos, por exemplo "Svm svm_rate está gerando 100 eventos/seg."
++
+Use a taxa de eventos para calcular o dimensionamento.
+
+
+
+====
+
+
 == regras de acesso à rede em nuvem
 
 Analise as regras de acesso à rede em nuvem para a sua região geográfica (Ásia-Pacífico, Europa ou Estados Unidos).
