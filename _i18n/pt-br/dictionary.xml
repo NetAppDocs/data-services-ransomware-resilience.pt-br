@@ -2544,4 +2544,7 @@
   <block id="1003fdbfa95a1ad8e273ca1560375f69" category="paragraph">Os coletores de dados são criados automaticamente quando você ativa uma estratégia de proteção contra ransomware com detecção de atividade do usuário. Para obter mais informações, consulte <block ref="197232a118beafa8882aae5625527a41" category="inline-link-macro-rx"></block>.</block>
   <block id="d4f53dbb2dd23ad3f2c3d3656c20777b" category="section-title">Responder a alertas de atividade do usuário</block>
   <block id="d0073f8a1f393dd14a8d4168ebf29ac2" category="paragraph">Após configurar a detecção de atividade do usuário, você pode monitorar eventos na página de alertas. Para mais informações, consulte <block ref="8143bbb79caf2751151f26d9d0abf580" category="inline-link-macro-rx"></block>.</block>
+  <block id="3f8fbfed6e13f7cb7fb11b080bdb9718" category="inline-link-macro">Crie um grupo de proteção no Ransomware Resilience</block>
+  <block id="afe30c0d6b10a23db7ce0d1907082557" category="paragraph">A Resiliência contra Ransomware agora oferece suporte à criação de grupos de proteção para cargas de trabalho em sistemas Google Cloud NetApp Volumes, permitindo que você organize várias cargas de trabalho sob uma única política para simplificar o gerenciamento. Para mais informações, consulte <block ref="002b0319872c1627d4b50bdcb04f2ca6" category="inline-link-macro-rx"></block>.</block>
+  <block id="54ab5224cb7ab20d9d094be05a20cb88" category="section-title">26 de maio de 2026</block>
 </blocks>
