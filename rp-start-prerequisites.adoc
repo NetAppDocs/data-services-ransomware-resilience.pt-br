@@ -106,11 +106,10 @@ NOTE: Se você conectou um cluster ONTAP ao Console com credenciais que não sã
 +
 Consulte o https://docs.netapp.com/us-en/console-setup-admin/reference-permissions.html["Lista de permissões AWS, Azure ou S3"^] para mais detalhes.
 
-* O NetApp Backup and Recovery não precisa ser habilitado no sistema.
-+
-A Resiliência contra Ransomware ajuda a configurar um destino de backup através da opção Configurações. Consulte link:task-backup-destination.html["Adicionar um destino de backup"].
 
 
+
+NOTE: Você pode link:task-backup-destination.html["configurar um destino de backup no Ransomware Resilience"]. Se suas cargas de trabalho estiverem protegidas pelo NetApp Backup and Recovery, o Ransomware Resilience reconhece automaticamente os detalhes da proteção, incluindo snapshots e destinos de backup. NetApp Backup and Recovery _não_ é obrigatório para usar o Ransomware Resilience.
 
 
 
