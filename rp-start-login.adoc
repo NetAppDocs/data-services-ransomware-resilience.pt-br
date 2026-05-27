@@ -16,7 +16,7 @@ Para obter acesso ao NetApp Ransomware Resilience, você deve fazer login atrav�
 
 Para fazer login no Console, você pode usar suas credenciais do Site de Suporte da NetApp ou pode se inscrever para um login na nuvem da NetApp usando seu e-mail e uma senha. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["Saiba mais sobre como fazer login"^] .
 
-*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto, administrador do Ransomware Resilience ou visualizador do Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^] .
+*Função de console necessária* Para executar esta tarefa, você precisa da link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Superadministrador"^], função de administrador do Ransomware Resilience ou de visualizador do Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^].
 
 .Passos
 . Abra um navegador da web e vá paralink:https://console.netapp.com/["o Console"^] .

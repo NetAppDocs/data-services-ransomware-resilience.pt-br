@@ -16,7 +16,7 @@ summary: Antes de realizar uma restauração completa no NetApp Ransomware Resil
 [role="lead"]
 NetApp Ransomware Resilience oferece restaurações limpas, que proporcionam uma recuperação guiada após ataques de ransomware. Para realizar uma restauração limpa, você deve primeiro criar um ambiente de recuperação isolado (IRE), seja localmente ou em um ambiente de nuvem compatível. No IRE, você cria uma área segura onde o Ransomware Resilience isola a carga de trabalho para identificar quais arquivos estão íntegros e quais foram afetados pelo ransomware.
 
-*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^] .
+*Função de console necessária* Para executar esta tarefa, você precisa da link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Superadministrador"^] ou função de administrador do Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^].
 
 
 

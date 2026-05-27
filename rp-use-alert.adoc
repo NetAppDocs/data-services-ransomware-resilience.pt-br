@@ -107,7 +107,7 @@ Se suspeitar que a atividade não é um ataque de ransomware, você pode alterar
 
 Você pode acessar alertas no painel de Ransomware Resilience ou na guia *Alerts*.
 
-*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto, administrador do Ransomware Resilience ou visualizador do Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^] .
+*Função de console necessária* Para executar esta tarefa, você precisa da link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Superadministrador"^], função de administrador do Ransomware Resilience ou de visualizador do Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^].
 
 .Passos
 . No dashboard de NetApp Ransomware Resilience, revise o painel de Alertas.
@@ -136,7 +136,7 @@ Quando o Ransomware Resilience detecta um possível ataque, ele envia uma notifi
 
 TIP: Para configurar notificações por e-mail no Console, consulte link:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings["Definir configurações de notificação por e-mail"^].
 
-*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto, administrador do Ransomware Resilience ou visualizador do Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^] .
+*Função de console necessária* Para executar esta tarefa, você precisa da link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Superadministrador"^], função de administrador do Ransomware Resilience ou de visualizador do Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^].
 
 .Passos
 . Veja o e-mail.
@@ -217,7 +217,7 @@ TIP: Para reativar os alertas para um usuário, retorne o alerta. Selecione os t
 
 Após interromper o ataque, notifique o administrador de storage que os dados estão prontos para que ele possa iniciar o processo de recuperação.
 
-*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^] .
+*Função de console necessária* Para executar esta tarefa, você precisa da link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Superadministrador"^] ou função de administrador do Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^].
 
 .Passos
 . No menu Resiliência contra Ransomware, selecione *Alertas*.
@@ -250,7 +250,7 @@ Se você descartar uma carga de trabalho, todas as cópias de instantâneos feit
 
 CAUTION: Se você descartar um alerta, não poderá alterar seu status nem desfazer essa alteração.
 
-*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^] .
+*Função de console necessária* Para executar esta tarefa, você precisa da link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Superadministrador"^] ou função de administrador do Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^].
 
 .Passos
 . No menu Resiliência contra Ransomware, selecione *Alertas*.
@@ -287,7 +287,7 @@ O status do incidente ou incidentes muda para "Arquivado".
 
 Antes de restaurar uma carga de trabalho no nível do arquivo, você pode visualizar uma lista dos arquivos afetados. Você pode acessar a página de Alertas para baixar uma lista dos arquivos afetados. Em seguida, use a página de Recuperação para carregar a lista e escolher quais arquivos restaurar.
 
-*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^] .
+*Função de console necessária* Para executar esta tarefa, você precisa da link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Superadministrador"^] ou função de administrador do Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^].
 
 .Passos
 Use a página Alertas para recuperar a lista de arquivos afetados.
