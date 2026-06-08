@@ -168,10 +168,10 @@ A resiliência contra ransomware reconhece cinco tipos de ataques:
 
 [cols="25,75"]
 |===
-| Tipo de ataque | Definição 
+| Tipo de ataque | Descrição 
 
 
-| Criptografia (entropia) | A NetApp Ransomware Resilience reconhece padrões anormais de IOPS, entropia de dados e sufixos de arquivo não padronizados. 
+| Criptografia (entropia) | A resiliência contra ransomware reconhece padrões anormais de IOPS, entropia de dados e sufixos de arquivo não padronizados. 
 
 
 | Criptografia (comportamento do usuário) | Ransomware Resilience identifica atividades anômalas de leitura, gravação e renomeação de arquivos realizadas por um usuário específico. 

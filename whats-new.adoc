@@ -18,6 +18,30 @@ Saiba o que há de novo no NetApp Ransomware Resilience.
 
 
 
+== 08 de junho de 2026
+
+
+
+=== Maior flexibilidade para estratégias de proteção
+
+A Resiliência contra Ransomware agora oferece mais flexibilidade na escolha de estratégias de detecção de ransomware. Anteriormente, todas as estratégias de proteção contra ransomware precisavam incluir a detecção de criptografia. Agora, você pode ativar uma estratégia de proteção contra ransomware com apenas a detecção do comportamento do usuário.
+
+As estratégias de proteção ainda podem incluir tanto a detecção de criptografia _quanto_ a detecção de comportamento suspeito do usuário. O bloqueio de extensões de arquivo também pode ser adicionado a qualquer estratégia de proteção.
+
+Se você desativar parte da estratégia de proteção para uma política existente, quaisquer alertas existentes criados na versão anterior da política só poderão ser marcados como "Resolvidos" e não como "Descartados". Por exemplo, se você tinha uma estratégia de proteção que incluía detecção de criptografia e comportamento suspeito do usuário, mas desativou a detecção de criptografia, você só poderá resolver um alerta de criptografia existente para essa carga de trabalho.
+
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Proteja cargas de trabalho com estratégias de proteção de NetApp Ransomware Resilience"^].
+
+
+
+=== Aprimoramentos do playbook SOAR
+
+Os playbooks SOAR de Resiliência a Ransomware agora fornecem etapas de remediação após você bloquear um usuário ou desativar um volume. Agora você pode reativar um volume e desbloquear um usuário se a ação for considerada não uma ameaça de ransomware.
+
+link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/reference-soar.html["Integre um playbook SOAR"^].
+
+
+
 == 26 de maio de 2026
 
 
@@ -112,7 +136,7 @@ Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-
 
 As informações sobre eventos de violação de dados agora são armazenadas por 13 meses após um incidente, permitindo um período mais longo de registro para suas necessidades de relatórios.
 
-Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-user-behavior.html["Saiba mais sobre detecção de atividade do usuário"^].
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-user-behavior.html["Aprenda sobre detecção de comportamento do usuário"^].
 
 
 
