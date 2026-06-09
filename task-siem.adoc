@@ -69,13 +69,13 @@ NOTE: Os campos *user_name* e *user_id* só são relevantes se você tiver confi
 
 == Configurar o AWS Security Hub para detecção de ameaças
 
-Antes de habilitar o AWS Security Hub no NetApp Ransomware Resilience, você precisa executar as seguintes etapas de alto nível no AWS Security Hub:
+Antes de habilitar o AWS Security Hub na Resiliência a Ransomware, você precisa realizar configurações de segurança no AWS Security Hub:
 
 * Configure permissões no AWS Security Hub.
 * Configure a chave de acesso de autenticação e a chave secreta no AWS Security Hub.  (Essas etapas não são fornecidas aqui.)
 
 
-.Etapas para configurar permissões no AWS Security Hub
+.Configure as permissões no AWS Security Hub
 . Acesse o *console do AWS IAM*.
 . Selecione *Políticas*.
 . Crie uma política usando o seguinte código no formato JSON:

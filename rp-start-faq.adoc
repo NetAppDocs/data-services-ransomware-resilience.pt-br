@@ -94,10 +94,10 @@ A ferramenta de Resiliência a Ransomware pode identificar as seguintes cargas d
 A Resiliência a Ransomware descobre os volumes e as extensões de arquivo e os associa à carga de trabalho apropriada.
 
 .O que é uma carga de trabalho protegida?
-Na Resiliência a Ransomware, uma carga de trabalho exibe o status *protegida* quando possui uma política de _detecção_ primária ativada, o que significa que... link:concept-ransomware-resilience.html["Proteção Autônoma contra Ransomware (ARP)"] Está habilitado em todos os volumes relacionados à carga de trabalho.
+Na Resiliência a Ransomware, uma carga de trabalho exibe o status *protegido* quando possui uma política de _detecção_ ativada. A política de detecção deve consistir em detecção de criptografia ou detecção de comportamento suspeito do usuário (ou ambos). Também pode incluir detecção de extensão de arquivo suspeita. Para mais informações, consulte link:rp-use-protect.html#add-a-ransomware-protection-strategy["política de detecção"].
 
 .O que é uma carga de trabalho "de risco"?
-Se uma carga de trabalho não tiver uma política de detecção primária ativada, ela será rotulada como "em risco", mesmo que tenha uma política de backup e snapshot ativada. Para proteção contra ransomware, você deve habilitar um link:rp-use-protect.html#add-a-ransomware-protection-strategy["política de detecção"].
+Se uma carga de trabalho não tiver uma política de detecção ativada, ela será rotulada como "em risco", mesmo que tenha uma política de backup e snapshot ativada. Para proteção contra ransomware, você deve ativar uma link:rp-use-protect.html#add-a-ransomware-protection-strategy["política de detecção"].
 
 .Adicionei um novo volume, mas ele ainda não apareceu. O que devo fazer?
 Se você adicionou um novo volume ao seu ambiente, inicie a descoberta da carga de trabalho novamente. Após o volume ter sido descoberto, link:rp-use-protect.html#add-a-ransomware-protection-strategy["Aplicar políticas de proteção para proteger o novo volume."].

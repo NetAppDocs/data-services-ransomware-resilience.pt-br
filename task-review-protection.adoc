@@ -52,10 +52,10 @@ O painel de proteção do Ransomware Resilience exibe informações detalhadas s
 
 *Status de proteção*: Uma carga de trabalho pode mostrar um dos seguintes status de proteção para indicar se uma política é aplicada ou não:
 
-* *Protegido*: Uma política é aplicada.  O ARP (ou ARP/AI, dependendo da versão do ONTAP ) é habilitado em todos os volumes relacionados à carga de trabalho.
-* *Em risco*: Nenhuma política é aplicada.  Se uma carga de trabalho não tiver uma política de detecção primária habilitada, ela estará "em risco", mesmo que tenha uma política de snapshot e backup habilitada.
-* *Em andamento*: Uma política está sendo aplicada, mas ainda não foi concluída.
-* *Falha*: Uma política foi aplicada, mas não está funcionando.
+* *Protegido*: Uma política de detecção foi aplicada.
+* *Em risco*: Nenhuma política é aplicada. Se uma carga de trabalho não tiver uma política de detecção ativada, ela estará "em risco" mesmo que tenha uma política de snapshot e de backup ativadas.
+* *Em andamento*: Uma política está sendo aplicada, mas a operação ainda não foi concluída.
+* *Falha*: Uma política foi configurada, mas ocorreu um erro.
 
 
 *Status de detecção*:
