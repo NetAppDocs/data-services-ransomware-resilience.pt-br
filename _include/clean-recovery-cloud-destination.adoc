@@ -12,7 +12,7 @@
 
 
 
-NOTE: Se você estiver configurando um IRE com a origem no Amazon FSxN para ONTAP, ignore este requisito de endereço IP LIF de dados SVM de sala limpa.
+NOTE: Se você estiver configurando um IRE com a origem no Amazon FSx for NetApp ONTAP, ignore este requisito de IP LIF de dados SVM de sala limpa.
 
 .Tabela de roteamento do ambiente de produção
 * A tabela de roteamento de produção deve permitir o tráfego da sub-rede IRE para o endereço IP LIF de restauração de dados limpos. Você deve adicionar essa rota à tabela de roteamento de produção.

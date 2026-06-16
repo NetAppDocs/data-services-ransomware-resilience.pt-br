@@ -6,7 +6,7 @@
 | Ambiente | Protocolo | Versões suportadas 
 
 
-| Amazon FSx for NetApp ONTAP* | CIFS, NFS e SAN | N / D 
+| Amazon FSx for NetApp ONTAP | CIFS, NFS e SAN | N / D 
 
 
 | Azure NetApp Files | CIFS e NFS | N / D 
@@ -38,7 +38,5 @@
 
 | Google Cloud NetApp Volumes | CIFS, NFS, SAN (iSCSI e NVMe) | N / D 
 |===
-{asterisco} O Amazon FSx for NetApp ONTAP usa a Proteção Autônoma contra Ransomware (ARP) e não o ARP/AI.  Para obter mais informações sobre a diferença, consultelink:https://docs.netapp.com/us-en/ontap/anti-ransomware/#arp-ai["ARP/IA"^] .
-
 
 NOTE: A detecção de atividade do usuário não é compatível com Azure NetApp Files ou Google Cloud NetApp Volumes. Para obter mais informações sobre a compatibilidade com a detecção de atividade do usuário, consulte link:reference-user-activity-requirements.html["Requisitos de detecção de atividade do usuário"].

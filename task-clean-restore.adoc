@@ -76,7 +76,7 @@ Você também pode visualizar o histórico dos arquivos na etapa de planejamento
 
 
 
-| Nuvem: Amazon FSxN para ONTAP | Nuvem: AWS  a| 
+| Nuvem: Amazon FSx for NetApp ONTAP | Nuvem: AWS  a| 
 ** Leste dos EUA 1
 ** EU Central 1
 
@@ -167,7 +167,7 @@ image::diagram-clean-recovery-cloud-cloud.png[Diagrama de restauração limpa de
 
 
 
-NOTE: Se você estiver configurando um IRE com a origem no Amazon FSxN para ONTAP, ignore este requisito de endereço IP LIF de dados SVM de sala limpa.
+NOTE: Se você estiver configurando um IRE com a origem no Amazon FSx for NetApp ONTAP, ignore este requisito de IP LIF de dados SVM de sala limpa.
 
 .Tabela de roteamento do ambiente de produção
 * A tabela de roteamento de produção deve permitir o tráfego da sub-rede IRE para o endereço IP LIF de restauração de dados limpos. Você deve adicionar essa rota à tabela de roteamento de produção.
@@ -306,7 +306,7 @@ image:diagram-clean-recovery-cloud-on-prem.png["Diagrama de restauração limpa 
 
 
 
-NOTE: Se você estiver configurando um IRE com a origem no Amazon FSxN para ONTAP, ignore este requisito de endereço IP LIF de dados SVM de sala limpa.
+NOTE: Se você estiver configurando um IRE com a origem no Amazon FSx for NetApp ONTAP, ignore este requisito de IP LIF de dados SVM de sala limpa.
 
 .Tabela de roteamento do ambiente de produção
 * A tabela de roteamento de produção deve permitir o tráfego da sub-rede IRE para o endereço IP LIF de restauração de dados limpos. Você deve adicionar essa rota à tabela de roteamento de produção.
@@ -524,7 +524,7 @@ O processo para criar uma sala de recuperação isolada difere dependendo se o a
 . Expanda a seção *Sistemas*. Selecione os sistemas que deseja conectar ao IRE. Para cada sistema selecionado, você deve fornecer o endereço IP, a máscara de sub-rede e o gateway da storage VM.
 +
 
-NOTE: Para IREs implantados no Amazon FSxN para ONTAP, você não precisa fornecer essas informações.
+NOTE: Para IREs implantados no Amazon FSx for NetApp ONTAP, você não precisa fornecer essas informações.
 
 +
 image:clean-restore-systems.png["Captura de tela da interface de seleção de sistemas."]
