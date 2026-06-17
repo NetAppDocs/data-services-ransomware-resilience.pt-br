@@ -78,6 +78,7 @@ NOTE: Se você tiver vários agentes do Console em uma única organização do C
 
 
 * O agente do Console deve ter o `cloudmanager-ransomware-protection` contêiner em estado ativo.
+* Existe um limite de 3.000 cargas de trabalho por agente do Console.
 * Para clusters ONTAP ou Cloud Volumes ONTAP, o Ransomware Resilience requer versão do ONTAP 9.11.1 ou superior.
 +
 
