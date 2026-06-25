@@ -36,7 +36,7 @@
 | SAN (iSCSI e NVMe) | 9.17.1 e posterior 
 
 
-| Google Cloud NetApp Volumes | CIFS, NFS, SAN (iSCSI e NVMe) | N / D 
+| Google Cloud NetApp Volumes | CIFS e NFS | N / D 
 |===
 
 NOTE: A detecção de atividade do usuário não é compatível com Azure NetApp Files ou Google Cloud NetApp Volumes. Para obter mais informações sobre a compatibilidade com a detecção de atividade do usuário, consulte link:reference-user-activity-requirements.html["Requisitos de detecção de atividade do usuário"].

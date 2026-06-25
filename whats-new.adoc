@@ -738,9 +738,10 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 
 Se não houver políticas de snapshot ou backup na carga de trabalho, você poderá criar uma estratégia de proteção contra ransomware, que pode incluir as seguintes políticas criadas neste serviço:
 
-* Política de instantâneo
-* Política de backup
 * Política de detecção
+* Política de backup
+* Política de instantâneo
+* Política de replicação
 
 
 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Saiba mais sobre como proteger cargas de trabalho"] .
