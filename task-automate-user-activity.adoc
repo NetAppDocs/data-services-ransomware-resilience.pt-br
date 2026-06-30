@@ -1,0 +1,78 @@
+---
+sidebar: sidebar 
+permalink: task-automate-user-activity.html 
+keywords: data breach detection, data breach, user activity, automated response 
+summary: NetApp Ransomware Resilience permite criar respostas automatizadas a eventos de atividade do usuário, possibilitando criar automaticamente um snapshot ou bloquear um usuário. 
+---
+= Automatize as respostas aos alertas de atividade do usuário no NetApp Ransomware Resilience
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilience oferece suporte à criação de respostas automatizadas para link:concept-user-behavior.html["eventos de atividade do usuário"]. Com respostas automatizadas, o Ransomware Resilience pode criar um snapshot ou bloquear um usuário quando um ataque ou aviso é detectado, possibilitando uma resposta mais rápida a eventos de ransomware.
+
+Respostas automatizadas são suportadas para eventos de criptografia (comportamento do usuário), violação de dados e destruição de dados. Você precisa ter link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent["configurou um agente de atividade do usuário, habilitou uma política com detecção de atividade do usuário e criou um conector de diretório de usuários"] antes de criar uma resposta automatizada.
+
+
+
+== Criar uma resposta automatizada
+
+Você só pode proteger uma máquina virtual de armazenamento com pelo menos uma carga de trabalho que esteja protegida com uma política de detecção de comportamento suspeito do usuário.
+
+.Passos
+. Em Resiliência a Ransomware, selecione **Configurações**.
+. No bloco de monitoramento de atividades do usuário, selecione **Gerenciar**.
+. Selecione a guia **Respostas automatizadas**.
+. Selecione **Adicionar** para criar o comportamento.
+. Digite um **nome** para a resposta automática.
+. Escolha o tipo de evento que acionará a resposta: **Ataque** ou **Aviso**. Saiba mais sobre as diferentes link:rp-use-alert.html#alert-types-and-statuses["tipos de alertas"].
+. Escolha a resposta:
++
+** **Bloquear acesso do usuário**: o usuário é bloqueado de todas as VMs de armazenamento protegidas pelo NetApp Ransomware Resilience quando o alerta é acionado.
++
+Se você escolher esta opção, também deverá selecionar a duração do bloqueio. Pode ser um intervalo entre 1 e 24 horas ou permanente.
+
+** **Tire snapshots**: Crie um snapshot das cargas de trabalho afetadas para usar em uma possível recuperação. Os snapshots são mantidos por sete dias.
+
+
+. Selecione os tipos de alerta que acionam a resposta automática:
++
+|===
+
+
+| Tipo de alerta | Descrição 
+
+
+| Criptografia (comportamento do usuário) | Ransomware Resilience identifica atividades anômalas de leitura, gravação e renomeação de arquivos realizadas por um usuário específico. 
+
+
+| Violação de dados | A Resiliência contra Ransomware detecta padrões anômalos de acesso de leitura a arquivos realizados por um usuário específico. 
+
+
+| Destruição de dados | A ferramenta de Ransomware Resilience detecta a exclusão em massa de arquivos por um usuário específico. 
+|===
+. Selecione as máquinas virtuais de armazenamento às quais deseja aplicar a resposta automatizada.
+. Selecione **Adicionar** para criar a resposta automática.
+
+
+
+
+== Modificar uma resposta automática
+
+Após criar uma resposta automatizada, você pode pausar, reiniciar ou modificar a resposta. Você pode modificar o nome da resposta, os tipos de alertas que acionam a resposta, as VMs de armazenamento e a ação executada.
+
+.Passos
+. Em Resiliência a Ransomware, selecione **Configurações**.
+. No bloco de monitoramento de atividades do usuário, selecione **Gerenciar**.
+. Selecione a guia **Respostas automatizadas**.
+. Selecione a resposta automática que você deseja modificar.
+. Para pausar ou excluir a resposta, selecione o menu de ações e então **Pausar** (ou **Iniciar**) ou **Excluir**.
++
+Para modificar a resposta, selecione **Edit**.
+
+. Você pode modificar qualquer uma das configurações, exceto a gravidade do alerta.
+. Selecione **Salvar** para capturar as alterações.
+

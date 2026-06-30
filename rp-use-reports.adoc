@@ -50,3 +50,10 @@ image:screen-dashboard.png["Página do painel"]
 image:screen-reports.png["Página de relatórios mostrando o relatório do exercício de prontidão"]
 
 
+
+
+
+== Mais informações
+
+* link:task-automate-user-activity.html["Automatize as respostas aos eventos de atividade do usuário"]
+

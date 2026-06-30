@@ -1,0 +1,11 @@
+= Respostas automatizadas a alertas de atividade do usuário
+:allow-uri-read: 
+
+
+
+
+=== Respostas automatizadas a alertas de atividade do usuário
+
+NetApp Ransomware Resilience agora oferece suporte à criação automática de snapshots e ao bloqueio de usuários quando um alerta de atividade do usuário é gerado. Com respostas automatizadas, você pode bloquear um usuário assim que um aviso for gerado e criar um snapshot para recuperação, permitindo uma resposta mais rápida sem intervenção manual.
+
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-automate-user-activity.html["Automatize as respostas aos alertas de atividade do usuário"^].
