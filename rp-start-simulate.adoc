@@ -12,7 +12,7 @@ summary: Realize um exercício de preparação para ransomware simulando um ataq
 
 
 [role="lead"]
-Execute um exercício de preparação para ataque de ransomware simulando um ataque em uma nova carga de trabalho de amostra.  Investigue o ataque simulado e recupere a carga de trabalho.  Use este recurso para testar notificações de alerta, resposta e recuperação.  Execute a broca sempre que necessário.
+Execute um exercício de prontidão para ataque de ransomware no NetApp Ransomware Resilience para testar sua preparação para um ataque real. Com o exercício de prontidão, o Ransomware Resilience simula um ataque em uma nova carga de trabalho de amostra, permitindo que você investigue o ataque simulado e realize uma recuperação sem impactar seus dados de produção. O exercício de prontidão ajuda você a se familiarizar com as notificações de alerta e a se preparar para a resposta e recuperação. Você pode executar o exercício com a frequência necessária.
 
 
 TIP: Seus dados reais de carga de trabalho não são afetados.
@@ -23,37 +23,27 @@ Você pode executar exercícios de prontidão em cargas de trabalho NFS e CIFS (
 
 == Configurar um exercício de preparação para ataque de ransomware
 
-Antes de executar uma simulação, configure um exercício na página Configurações.  Acesse a página Configurações na opção Ações no menu superior.
-
-Você precisa inserir um nome de usuário e uma senha para as seguintes situações:
-
-* Se ocorrerem alterações no nome de usuário ou na senha da VM de armazenamento selecionada anteriormente
-* Se você selecionar uma VM de armazenamento CIFS (SMB) diferente
-* Se você inserir um nome de carga de trabalho de teste diferente
-
-
 *Função de console necessária* Para executar esta tarefa, você precisa da link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Superadministrador"^] ou função de administrador do Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^].
 
 .Passos
-. No menu NetApp Ransomware Resilience , selecione o botão *Executar teste de prontidão* no canto superior direito.
+. Em Resiliência a Ransomware, selecione **Configurações**.
+. No bloco de treinamento de prontidão, selecione **Configurar**.
+. Selecione o **tipo de exercício de prontidão**.
 +
-image:screen-dashboard.png["Página do painel mostrando o botão Executar exercício de prontidão"]
+** **Recuperação personalizada**: Este procedimento cria um alerta e permite que você execute link:rp-use-recover.html["personalizar uma restauração"] onde você configura o ponto de recuperação.
+** **Restauração limpa**: Este exercício cria um alerta e, em seguida, leva você ao link:task-clean-restore-recover.html["restauração limpa"] processo de recuperação, que orienta você para pontos de recuperação otimizados.
+** **Recuperação de violação de dados**: Este exercício cria um alerta para um evento de violação de dados iniciado pelo usuário. Você deve ter configurado link:suspicious-user-activity.html["um agente de atividade do usuário"] antes de poder habilitar este tipo de exercício.
 
-. No cartão de exercício de prontidão na página Configurações, selecione *Configurar*.
-+
-O Console exibe a página Configurar exercício de prontidão.
 
+. Escolha o ambiente onde o teste de prontidão será criado.
 +
-image:screen-settings-alert-drill-configure.png["Configurar página de treinamento de prontidão"]
+.. Selecione o **Agente do console** e o **Sistema**.
+.. Após selecionar o **Sistema**, escolha a **Storage VM** na lista pré-preenchida.
+.. Forneça um nome para a **Nova carga de trabalho de teste**. A carga de trabalho de teste será precedida por "rps_test_".
+.. Se o exercício de prontidão for para recuperação de violação de dados, selecione o **User activity agent** para o ambiente de exercício.
++
+image:screen-settings-alert-drill-configure.png["Captura de tela das opções de configuração do exercício de prontidão."]
 
-. Faça o seguinte:
-+
-.. Selecione o agente do Console que você deseja usar para o exercício de prontidão.
-.. Selecione um sistema de teste.
-.. Selecione um SVM de armazenamento de teste.
-.. Se você selecionou uma VM de armazenamento CIFS (SMB), os campos **Nome de usuário** e **Senha** serão exibidos.  Digite o nome de usuário e a senha para a VM de armazenamento.
-.. Selecione o tipo de exercício de prontidão. Para uma recuperação manual de uma violação de dados criptografados, escolha **Recuperação personalizada**. Para recuperação de comportamento suspeito do usuário, escolha **Violação de dados**.
-.. Insira o nome da carga de trabalho de teste. Não inclua hífens no nome.
 
 
 . Selecione *Salvar*.
@@ -70,25 +60,20 @@ Depois de configurar o exercício de prontidão, você pode iniciá-lo.
 
 *Função de console necessária* Para executar esta tarefa, você precisa da link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Superadministrador"^] ou função de administrador do Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^].
 
-Quando você inicia o exercício de prontidão, o Ransomware Resilience ignora o modo de aprendizado e inicia o exercício no modo ativo.  O status de detecção da carga de trabalho é Ativo.
-
-
-TIP: Uma carga de trabalho pode ter um status de detecção de ransomware *Modo de aprendizagem* quando uma política de detecção é atribuída recentemente e o Ransomware Resilience verifica as cargas de trabalho.
-
 .Passos
-. Faça um dos seguintes:
+. Para iniciar o exercício:
 +
-** No menu Resiliência contra Ransomware, selecione o botão *Executar teste de prontidão* no canto superior direito.
+** No painel de controle de NetApp Ransomware Resilience, selecione o botão *Executar teste de prontidão* no canto superior direito.
 +
 image:screen-dashboard.png["Página do painel mostrando o botão Executar exercício de prontidão"]
 
-** OU, na página Configurações, no cartão de exercício de prontidão, selecione *Iniciar*.
+** Ou acesse **Configurações**. No bloco Readiness drill, selecione *Iniciar*.
 
 
 
 
 
-NOTE: Não é possível editar a configuração do exercício de prontidão enquanto o exercício estiver em execução. Você pode reiniciar a broca para pará-la e modificar a configuração.
+NOTE: Não é possível editar a configuração do exercício de prontidão enquanto ele estiver em execução. Para modificar o exercício de prontidão, selecione **Redefinir** e depois edite o exercício.
 
 
 
@@ -106,7 +91,7 @@ O Console exibe a página Alertas.  Na coluna ID do alerta, você vê "Exercíci
 +
 image:screen-alerts-readiness.png["Página de alertas mostrando o alerta de exercício de prontidão"]
 
-. Selecione o alerta com a indicação "Exercício de prontidão".  Uma lista de alertas de incidentes aparece na página de detalhes Alertas.
+. Selecione o alerta com a indicação "Readiness drill".
 +
 image:screen-alerts-readiness-details.png["Página de detalhes de alertas mostrando o alerta de exercício de prontidão"]
 
@@ -117,21 +102,14 @@ image:screen-alerts-readiness-incidents2.png["Página de incidente mostrando o a
 
 
 
-Aqui estão algumas coisas que você deve procurar:
+Ao analisar o incidente, considere:
 
-* Observe a gravidade potencial do ataque.
+* A gravidade potencial do ataque.
 +
 Se a gravidade indicar que um usuário é suspeito de atividade maliciosa, revise o nome do usuário. Você também podelink:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["bloquear o usuário."]
 
-* Observe a atividade do arquivo e os processos suspeitos:
-+
-** Observe os dados detectados recebidos em comparação com os dados esperados.
-** Observe a taxa de criação de arquivos detectada em comparação com a taxa esperada.
-** Observe a taxa de renomeação de arquivos detectada em comparação com a taxa esperada.
-** Observe a taxa de exclusão em comparação com a taxa esperada.
-
-
-* Veja a lista de arquivos afetados.  Veja as extensões que podem estar causando o ataque.
+* Atividade de arquivos versus taxas esperadas. Isso inclui taxa de leitura/gravação, criação de arquivos, renomeação de arquivos e exclusão.
+* A lista dos arquivos afetados. Observe as extensões que podem estar causando o ataque.
 * Determine o impacto e a amplitude do ataque analisando o número de arquivos e diretórios afetados.
 
 
@@ -145,46 +123,30 @@ Após revisar o alerta do exercício de prontidão, restaure a carga de trabalho
 
 .Passos
 . Retorne à página de detalhes do alerta.
-. Se a carga de trabalho de teste precisar ser restaurada, faça o seguinte:
+. Caso seja necessário restaurar a carga de trabalho de teste, selecione **Marcar como restauração necessária** e, em seguida, selecione esse botão novamente na caixa de diálogo de confirmação.
+. No menu Resiliência contra Ransomware, selecione *Recuperação*.
+. Selecione a carga de trabalho de teste marcada com a etiqueta "Readiness drill" que você deseja restaurar.
+. Selecione *Restaurar*.
+. Siga as instruções para o estilo de recuperação que você configurou:
 +
-** Selecione *Marcar restauração necessária*.
-** Revise a confirmação e selecione *Marcar restauração necessária* na caixa de confirmação.
-+
-*** No menu Resiliência contra Ransomware, selecione *Recuperação*.
-*** Selecione a carga de trabalho de teste marcada com "Exercício de prontidão" que você deseja restaurar.
-*** Selecione *Restaurar*.
-*** Na página Restaurar, forneça informações para a restauração:
-
-
-** Selecione a cópia do instantâneo de origem.
-** Selecione o volume de destino.
-
-
-. Na página de revisão de restauração, selecione *Restaurar*.
-+
-O Console exibe o status da restauração do exercício de prontidão como "Em andamento" na página Recuperação.
-
-+
-Após a conclusão da restauração, o Console altera o status da carga de trabalho para *Restaurada*.
-
-. Revise a carga de trabalho restaurada.
+** link:task-clean-restore-recover.html["Recupere-se com uma restauração limpa"]
+** link:task-custom-restore.html["Recupere com uma restauração personalizada"]
 
 
 
-TIP: Para obter detalhes sobre o processo de restauração, consultelink:rp-use-recover.html["Recuperar-se de um ataque de ransomware (após os incidentes serem neutralizados)"] .
 
 
 
-== Alterar o status dos alertas após o exercício de prontidão
+== Altere o status de alerta após o exercício de prontidão
 
 Após revisar o alerta do exercício de prontidão e restaurar a carga de trabalho, altere o status do alerta, se necessário.
 
-*Função necessária no Console* Administrador da organização, administrador de pasta ou projeto ou administrador de resiliência contra ransomware. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console para todos os serviços"^] .
+*Função de console necessária* Administrador da organização, administrador de pasta ou projeto ou administrador de NetApp Ransomware Resilience https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console para todos os serviços"^].
 
 .Passos
 . Retorne à página de detalhes do alerta.
 . Selecione o alerta novamente.
-. Indique o status selecionando *Editar status* e altere o status para um dos seguintes:
+. Indique o status selecionando *Editar* ao lado do status. Altere o status para um dos seguintes:
 +
 ** Descartado: se você suspeitar que a atividade não é um ataque de ransomware, altere o status para Descartado.
 +
@@ -200,7 +162,7 @@ IMPORTANT: Após rejeitar um ataque, não é possível reverter a situação. Se
 
 == Relatórios de revisão sobre o exercício de prontidão
 
-Após a conclusão do exercício de prontidão, talvez você queira revisar e salvar um relatório sobre o exercício.
+Após a conclusão do exercício de prontidão, você pode gerar e salvar um relatório sobre o exercício. O relatório do exercício é um arquivo JSON que captura informações como a política de detecção, o tipo de alerta e o registro de data e hora, detalhes do ataque e o status da recuperação.
 
 *Função de console necessária* Para executar esta tarefa, você precisa da link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Superadministrador"^], função de administrador do Ransomware Resilience ou de visualizador do Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^].
 
