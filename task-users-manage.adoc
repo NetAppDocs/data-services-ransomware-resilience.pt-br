@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: task-users-manage.html 
 keywords: user activity detection, 
-summary: Após criar o conector de diretório de usuários no NetApp Ransomware Resilience, você pode bloquear e desbloquear usuários e excluí-los dos alertas. 
+summary: Após criar o conector de diretório de usuários no NetApp Ransomware Resilience, você pode bloquear e desbloquear usuários e excluí-los dos alertas. Você também pode excluir caminhos de arquivos da geração de alertas. 
 ---
-= Gerencie o bloqueio de usuários e alertas no NetApp Ransomware Resilience
+= Gerencie alertas e usuários bloqueados no NetApp Ransomware Resilience
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Após criar o conector de diretório de usuários no NetApp Ransomware Resilience, você pode bloquear e desbloquear usuários quando ocorrerem eventos de ransomware e avaliá-los. Você também pode excluir usuários seletivamente dos alertas de ransomware se tiver certeza de que suas ações não são ataques.
+Após configurar o monitoramento do comportamento do usuário no NetApp Ransomware Resilience, você pode personalizar alertas e gerenciar usuários bloqueados. Personalizar os alertas permite que você exclua usuários ou caminhos de arquivos específicos da geração de um alerta. Bloquear usuários serve para responder a eventos de ransomware e impedir atividades maliciosas de usuários.
 
 Você precisa ter link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent["configurou um agente de atividade do usuário, habilitou uma política com detecção de atividade do usuário e criou um conector de diretório de usuários"] para bloquear usuários.
 
@@ -46,7 +46,7 @@ Você pode bloquear usuários quando acreditar que eles são responsáveis por a
 
 
 
-== Gerenciar alertas de usuário
+== Excluir usuários dos alertas
 
 Se houver determinados usuários confiáveis cujo comportamento possa acionar alertas de comportamento do usuário, você pode excluí-los dos alertas.
 
@@ -73,14 +73,33 @@ Em NetApp Ransomware Resilience, selecione **Carregar**. Localize e carregue o a
 
 TIP: Você também pode excluir um usuário diretamente de um alerta. Para mais informações, consulte link:rp-use-alert.html["Responder a alertas de ransomware"].
 
-.Remova usuários da lista de usuários excluídos
-. No painel de Configurações, localize o bloco Monitoramento de atividade do usuário e selecione **Gerenciar**.
+.Remover usuários da lista de usuários excluídos
+. No painel de Configurações, localize o cartão Atividade do usuário e selecione **Manage**.
 . Selecione a guia **Excluído do monitoramento**.
 . Selecione **Adicionar**.
-. Para excluir usuários individuais da interface do usuário, escolha **Selecionar manualmente**.
-. Localize o nome do usuário que você deseja remover da lista de usuários excluídos. Selecione o menu de ações (`...`) na linha com o nome do usuário e então **Remover**.
+. Para excluir usuários individuais da interface do usuário, escolha **Select manually**.
+. Localize o nome do usuário que deseja remover da seleção de usuários excluídos. Selecione o menu de ações (`...`) na linha com o nome do usuário e então **Remover**.
 . Na caixa de diálogo, selecione **Remove** para confirmar que deseja remover os usuários selecionados.
 
+
+
+
+== Excluir caminhos de arquivos do monitoramento
+
+Cada caminho de arquivo deve começar com o nome de um volume. Ele pode incluir até três subdiretórios para esse volume, por exemplo "volume/diretório/subdiretório/subdiretório2". Você pode excluir caminhos de arquivo inserindo-os manualmente ou carregando um arquivo CSV que liste os caminhos.
+
+.Passos
+. Em Resiliência a Ransomware, selecione **Configurações**.
+. No bloco de monitoramento de atividades do usuário, selecione **Gerenciar**.
+. Selecione a guia *Excluído do monitoramento*.
+. Selecione **Adicionar** para inserir os caminhos dos arquivos a serem excluídos.
+. Para inserir os caminhos dos arquivos na interface do usuário, selecione a opção *Inserir manualmente* e digite o caminho do arquivo, por exemplo "volume/diretório/subdiretório/". Para inserir caminhos de arquivos adicionais, selecione **Selecionar caminho do arquivo**.
+. Para carregar uma lista de caminhos de arquivos, selecione o botão de opção **Carregar**. Selecione o botão de upload para escolher o arquivo CSV.
+. Selecione **Adicionar**.
+
+
+.Resultado
+Quando a operação for concluída com sucesso, NetApp Ransomware Resilience começará a excluir os arquivos nos caminhos selecionados do monitoramento de comportamento suspeito do usuário. Você pode revisar a lista de caminhos a qualquer momento no menu Configurações. Se você precisar ativar novamente o monitoramento para os caminhos de arquivo, basta removê-los da lista.
 
 
 

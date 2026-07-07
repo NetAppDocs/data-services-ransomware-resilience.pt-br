@@ -56,7 +56,7 @@ sidebar:
           url: "/reference-user-activity-requirements.html"
         - title: Configurar agentes e coletores
           url: "/suspicious-user-activity.html"
-        - title: Gerenciar alertas e bloqueios de usuários
+        - title: Gerencie alertas e usuários bloqueados
           url: "/task-users-manage.html"
       - title: Gerenciar grupos de proteção
         url: "/task-protection-group.html"
