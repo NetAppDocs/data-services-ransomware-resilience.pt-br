@@ -2611,7 +2611,6 @@
   <block id="ddebb8e31f83ddb3bde0b3a0292845dc" category="doc">Excluir caminhos de arquivos dos alertas de comportamento do usuário</block>
   <block id="33239db9e04a3b1473f3468fd2d9d99b" category="paragraph">O Ransomware Resilience permite excluir caminhos de arquivo específicos dos alertas de monitoramento de comportamento do usuário. Você pode excluir caminhos de arquivo se souber que eles não estão em risco ou se estiver realizando operações em arquivos em um volume que possam acionar alertas.</block>
   <block id="f1780a3dd9362a514caa277752b942f2" category="inline-link-macro">Excluir caminhos de arquivos dos alertas</block>
-  <block id="4cbd1bb5d6b8178b77b88be565a35c9b" category="paragraph">Para obter mais informações, consulte <block ref="8c33118b4350e89c06a1a557095207c2" category="inline-link-macro-rx"></block>.</block>
   <block id="1d20fa647694e6811cd363111cf77538" category="inline-link-macro">caminhos de arquivo e usuários específicos</block>
   <block id="2e9d0337668c42840413047306ef5b57" category="admonition">Para alertas de violação de dados, destruição de dados e comportamento suspeito do usuário, você deve configurar <block ref="9403988536e87b1b5fabe2157e11581a" category="inline-link-macro-rx"></block>. Você também pode impedir <block ref="bd37368d247ac8892eb2f81e8ff6fc76" category="inline-link-macro-rx"></block> de gerar alertas.</block>
   <block id="75cd3815cc2e90d9679458215fb968dd" category="inline-link-macro">Gerencie as configurações de alerta e os usuários bloqueados</block>
@@ -2632,4 +2631,5 @@
   <block id="67510fe1e2eaace9d146396c21a7a119" category="paragraph">Quando a operação for concluída com sucesso, NetApp Ransomware Resilience começará a excluir os arquivos nos caminhos selecionados do monitoramento de comportamento suspeito do usuário. Você pode revisar a lista de caminhos a qualquer momento no menu Configurações. Se você precisar ativar novamente o monitoramento para os caminhos de arquivo, basta removê-los da lista.</block>
   <block id="ea1fca7315926f55d77bcab3ed051982" category="section-title">07 de julho de 2026</block>
   <block id="4c0600f62cb13917f7a785731376b1cb" category="sidebar">Gerencie alertas e usuários bloqueados</block>
+  <block id="5f2a57952e65084ab1bcb535d4662440" category="paragraph">Para mais informações, consulte <block ref="8c33118b4350e89c06a1a557095207c2" category="inline-link-macro-rx"></block>.</block>
 </blocks>
