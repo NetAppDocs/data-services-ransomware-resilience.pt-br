@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-start-simulate.html 
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert, simulate, readiness drill, practice, ransomware attack, ransomware attack response, ransomware attack readiness drill 
-summary: Realize um exercício de preparação para ransomware simulando um ataque de ransomware em uma carga de trabalho de amostra recém-criada.  Em seguida, investigue o ataque simulado e recupere a carga de trabalho de amostra.  Você pode executar um exercício de prontidão para ransomware várias vezes. 
+summary: Realize um exercício de prontidão para ransomware simulando um ataque de ransomware em uma carga de trabalho de amostra. Em seguida, investigue o ataque simulado e recupere a carga de trabalho de amostra. Você pode executar um exercício de prontidão para ransomware várias vezes. 
 ---
 = Realizar um exercício de preparação para ataques de ransomware no NetApp Ransomware Resilience
 :hardbreaks:
@@ -14,10 +14,19 @@ summary: Realize um exercício de preparação para ransomware simulando um ataq
 [role="lead"]
 Execute um exercício de prontidão para ataque de ransomware no NetApp Ransomware Resilience para testar sua preparação para um ataque real. Com o exercício de prontidão, o Ransomware Resilience simula um ataque em uma nova carga de trabalho de amostra, permitindo que você investigue o ataque simulado e realize uma recuperação sem impactar seus dados de produção. O exercício de prontidão ajuda você a se familiarizar com as notificações de alerta e a se preparar para a resposta e recuperação. Você pode executar o exercício com a frequência necessária.
 
-
-TIP: Seus dados reais de carga de trabalho não são afetados.
-
 Você pode executar exercícios de prontidão em cargas de trabalho NFS e CIFS (SMB).
+
+
+
+== Como funcionam os exercícios de prontidão
+
+O Ransomware Resilience oferece suporte a três tipos de exercícios: link:task-clean-restore-recover.html["restauração limpa"], link:rp-use-recover.html["recuperação personalizada"] e link:suspicious-user-activity.html["recuperação de violação de dados"]. Os exercícios de restauração limpa e recuperação personalizada simulam ataques baseados em criptografia (entropia) e diferem no método de recuperação que oferecem. Os exercícios de recuperação de violação de dados simulam a exfiltração com padrões de leitura incomuns em seus dados.
+
+Ao configurar um exercício de prontidão, o Ransomware Resilience cria um volume de teste, aplica proteção contra ransomware com uma política de snapshot ao volume, valida a conectividade, monta o volume, copia os dados de referência, desmonta o volume e cria um snapshot de referência.
+
+Ao iniciar o drill, o Ransomware Resilience monta o volume e simula um ataque de ransomware. Se o drill de prontidão for para recuperação personalizada ou restauração limpa, os dados de referência do volume de teste são substituídos por extensões de arquivo conhecidas por serem de ransomware e arquivos criptografados/com entropia modificada. Para um drill de recuperação de violação de dados, os arquivos não são substituídos; em vez disso, o Ransomware Resilience simula um invasor lendo e exfiltrando dados sistematicamente. Independentemente do tipo de drill, o Ransomware Resilience dispara um alerta e verifica se o alerta foi gerado com sucesso.
+
+Ao executar o exercício, você pode testar sua resposta a alertas e, opcionalmente, percorrer o processo de recuperação sem afetar dados reais.
 
 
 
@@ -30,9 +39,9 @@ Você pode executar exercícios de prontidão em cargas de trabalho NFS e CIFS (
 . No bloco de treinamento de prontidão, selecione **Configurar**.
 . Selecione o **tipo de exercício de prontidão**.
 +
-** **Recuperação personalizada**: Este procedimento cria um alerta e permite que você execute link:rp-use-recover.html["personalizar uma restauração"] onde você configura o ponto de recuperação.
-** **Restauração limpa**: Este exercício cria um alerta e, em seguida, leva você ao link:task-clean-restore-recover.html["restauração limpa"] processo de recuperação, que orienta você para pontos de recuperação otimizados.
-** **Recuperação de violação de dados**: Este exercício cria um alerta para um evento de violação de dados iniciado pelo usuário. Você deve ter configurado link:suspicious-user-activity.html["um agente de atividade do usuário"] antes de poder habilitar este tipo de exercício.
+** **Recuperação personalizada**: Responda a um ataque de criptografia (entropia) com um link:rp-use-recover.html["restauração personalizada"] onde você configura o ponto de recuperação.
+** **Restauração limpa**: Responda a um ataque de criptografia (entropia) com um link:task-clean-restore-recover.html["restauração limpa"] processo de recuperação, que orienta você para pontos de recuperação otimizados.
+** **Recuperação de violação de dados**: você precisa ter configurado link:suspicious-user-activity.html["um agente de atividade do usuário"] antes de habilitar este tipo de simulação.
 
 
 . Escolha o ambiente onde o teste de prontidão será criado.

@@ -22,6 +22,9 @@ Respostas automatizadas são suportadas para eventos de criptografia (comportame
 
 Você só pode proteger uma máquina virtual de armazenamento com pelo menos uma carga de trabalho que esteja protegida com uma política de detecção de comportamento suspeito do usuário.
 
+
+NOTE: Para respostas automatizadas a comportamentos suspeitos de usuários, você só pode tirar um instantâneo. Bloquear um usuário não é compatível como resposta automatizada a comportamentos suspeitos de usuários.
+
 .Passos
 . Em Resiliência a Ransomware, selecione **Configurações**.
 . No bloco de monitoramento de atividades do usuário, selecione **Gerenciar**.
@@ -53,6 +56,9 @@ Se você escolher esta opção, também deverá selecionar a duração do bloque
 
 
 | Destruição de dados | A ferramenta de Ransomware Resilience detecta a exclusão em massa de arquivos por um usuário específico. 
+
+
+| Comportamento suspeito do usuário | A resiliência a ransomware identifica comportamentos anômalos que vão além do escopo de violação de dados, destruição de dados ou criptografia. 
 |===
 . Selecione as máquinas virtuais de armazenamento às quais deseja aplicar a resposta automatizada.
 . Selecione **Adicionar** para criar a resposta automática.
