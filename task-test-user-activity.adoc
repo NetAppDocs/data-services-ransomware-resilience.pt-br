@@ -1,0 +1,220 @@
+---
+sidebar: sidebar 
+permalink: task-test-user-activity.html 
+keywords: readiness drill, data breach, data destruction, script, shell, python, user activity detection, simulation 
+summary: NetApp Ransomware Resilience oferece um script que, ao ativar o monitoramento da atividade do usuário, permite testar ataques de ransomware baseados em criptografia e eventos de violação de dados. 
+---
+= Simular comportamento malicioso do usuário em NetApp Ransomware Resilience
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Ao configurar o monitoramento da atividade do usuário no NetApp Ransomware Resilience, você pode executar um script de teste para simular eventos de comportamento suspeito do usuário.
+
+Este script foi desenvolvido para simular ataques de ransomware baseados em criptografia realizados por usuários conhecidos. Com comandos adicionais, você também pode simular ataques de violação de dados ou destruição de dados.
+
+
+
+[[about-the-script]]
+== Sobre o script
+
+O script de teste fica disponível quando você habilita o monitoramento de atividade do usuário em uma máquina. Você pode executar o script com shell ou Python.
+
+Você deve executar o script em um volume de uma máquina virtual de armazenamento onde você criou um coletor de dados. O script deve ser executado em um volume de dados de teste que inclua pelo menos 100 arquivos em vários subdiretórios; você pode gerar esses arquivos programaticamente com o script. Pause o coletor de dados antes de criar os dados de teste e retome-o em seguida.
+
+
+
+[[considerations]]
+== Considerações
+
+* O script simula eventos de criptografia de usuário. Ele só pode ser executado em sistemas Linux.
+* Se o seu sistema utiliza NFSv4.1, você precisa estar executando ONTAP 9.15.1 ou posterior.
+* Você pode executar o script como um script de shell ou com Python.
++
+
+NOTE: Há <<pré-requisitos>> para executar o script Python.
+
+
+
+
+
+[[before-you-begin]]
+== Antes de começar
+
+Você precisa ter criado link:suspicious-user-activity.html["um coletor de dados"] no sistema onde deseja realizar o teste. Isso requer criar um agente de atividade do usuário e, em seguida, ativar uma estratégia de proteção contra ransomware com detecção de comportamento suspeito do usuário.
+
+
+
+[[requirements-for-python-script]]
+[[prerequisites]]
+=== Requisitos para o script Python
+
+Para executar o script em Python, você precisa ter:
+
+* link:https://www.python.org/["Versão do Python 3.5.2 ou posterior instalada"^]
+* link:https://bootstrap.pypa.io/["Pip instalado"^]
+* Instalou a biblioteca PyCryptodome: `pip install pycryptodome`
+
+
+
+TIP: Você pode verificar sua versão do Python com o comando `python --version`. Você pode testar a instalação do pip com o comando `pip --version`. Você pode testar a instalação do PyCryptodome com o comando `pip show pycryptodome`.
+
+
+
+[[simulate-an-encryption-event]]
+== Simule um evento de criptografia
+
+.Prepare o sistema
+. Monte o volume de destino onde os arquivos de exemplo serão criados na máquina Linux. Você pode montar uma exportação NFS ou CIFS.
++
+[role="tabbed-block"]
+====
+.NFS
+--
+[code]
+----
+mount -t nfs -o vers=4.0 <SVM_data_LIF_IP>:/<export_path>/<mountPoint>
+mount -t nfs -o vers=4.0 <SVM_data_LIF_IP>:/<export_path>/<destinationLinuxFolder>
+----
+--
+.CIFS
+--
+[code]
+----
+mount -t cifs //<SVM_data_LIF_IP>/<share_name> /root/destinationfolder/ -o username=<username>
+----
+--
+====
+. Proteja o link:suspicious-user-activity.html["volume alvo"].
+. Pause o coletor de dados.
++
+Em NetApp Ransomware Resilience, selecione **Configurações** e, no bloco de monitoramento de detecção de usuários, selecione **Gerenciar**. Na guia Coletor de dados, selecione o coletor de dados para a storage VM e, em seguida, **Pausar**.
+
+. Adicione os arquivos a serem criptografados. Você pode copiar manualmente os arquivos a serem criptografados para a pasta ou volume de destino ou usar um dos scripts incluídos para criar os arquivos programaticamente. Você deve adicionar no mínimo 100 arquivos.
++
+Para criar os arquivos programaticamente:
+
++
+[role="tabbed-block"]
+====
+.Shell
+--
+.. Faça login no host que executa o agente de atividade do usuário.
+.. Monte um compartilhamento NFS ou CIFS da VM de armazenamento do filer para a máquina que executa o agente de atividade do usuário. Altere o diretório de trabalho para o volume apropriado para teste.
+.. Copie o script do diretório de instalação do agente de diretório do usuário para o local de montagem de destino:
++
+[code]
+----
+cp <AGENT_INSTALL_DIR>/agent/install/ransomware_simulation/shell/create_dataset.sh
+----
+.. Execute o  `./create_dataset.sh` comando usando os scripts dentro do diretório montado para criar a pasta e os arquivos do conjunto de dados de teste. Este comando cria 100 arquivos (não vazios) com extensões diferentes dentro da pasta montada, em um diretório chamado "test_dataset".
+
+
+--
+.Python
+--
+.. Faça login no host que executa o agente de atividade do usuário.
+.. Monte um compartilhamento NFS ou CIFS da VM de armazenamento do filer para a máquina que executa o agente de atividade do usuário. Altere o diretório de trabalho para o volume apropriado para teste.
+.. Copie o script do diretório de instalação do agente de diretório do usuário para o volume de destino:
++
+[code]
+----
+cp <AGENT_INSTALL_DIR>/agent/install/ransomware_simulation/python/create_dataset.py
+----
+.. Crie o conjunto de dados de teste: `python create_dataset.py`.
++
+Este comando cria 100 arquivos (não vazios) com extensões diferentes dentro da pasta montada, em um diretório chamado "test_dataset".
+
+
+
+--
+====
+. Retome o coletor.
++
+Em Ransomware Resilience, selecione **Configurações** e, no bloco de monitoramento de detecção de usuários, selecione **Gerenciar**. Na guia Coletor de dados, selecione o coletor de dados para a storage VM e, em seguida, **Retomar**.
+
+
+
+.Simule o ataque
++
+
+[role="tabbed-block"]
+====
+.Shell
+--
+. Copie o script do diretório de instalação do Agent para o local de montagem de destino: `<AGENT_INSTALL_DIR>/agent/install/ransomware_simulation/shell/simulate_attack.sh`.
+. Execute o script no diretório montado para criptografar o conjunto de dados de teste: `./simulate_attack.sh`.
+
+
+--
+.Python
+--
+. Copie o script do diretório de instalação do Agent para o local de montagem de destino: `<AGENT_INSTALL_DIR>/agent/install/ransomware_simulation/shell/simulate_attack.py`.
+. Execute o script para criptografar os dados: `python simulate_attack.py` em "test_dataset".
+
+
+--
+====
+.Resultado
+Após executar o script, você pode link:rp-use-alert.html["revise o alerta no menu Alertas de Resiliência a Ransomware"].
+
+.Gere alertas adicionais em NetApp Ransomware Resilience
+Como o Ransomware Resilience se adapta ao comportamento do usuário, ele não gerará alertas subsequentes se a mesma ação for repetida nos mesmos dados por um usuário dentro de 24 horas, portanto, você não pode simplesmente criptografar os dados novamente para gerar outro alerta. Em vez disso, para gerar alertas adicionais, você deve repetir o processo: recriar os dados de teste e depois criptografá-los.
+
+
+
+[[simulate-data-breach-and-data-destruction-alerts]]
+== Simule alertas de violação de dados e destruição de dados
+
+A NetApp Ransomware Resilience também oferece suporte à simulação de uma violação ou destruição de dados.
+
+
+NOTE: Um usuário deve estar ativo no sistema por mais de sete dias para que um alerta de usuário seja registrado.
+
+.Passos
+. Monte o volume protegido:
++
+[code]
+----
+sudo mount -t nfs -o rw,hard,nfsvers=4.0,proto=tcp,noac,actimeo=0,lookupcache=none <SVM_data_LIF_IP>:/<export_path> /root/<volume>
+----
+. Pause o coletor de dados:
++
+Em NetApp Ransomware Resilience, selecione **Configurações** e, no bloco de monitoramento de detecção de usuários, selecione **Gerenciar**. Na guia Coletor de dados, selecione o coletor de dados para a storage VM e, em seguida, **Pausar**.
+
+. Crie um conjunto de dados. Este comando cria um conjunto de dados com 5.000 arquivos:
++
+[code]
+----
+mkdir -p ./data5k; seq -w 1 5000 | xargs -n1 -P2 -I{} bash -c 'sz=$((RANDOM%16+5)); LC_ALL=C tr -dc "A-Za-z0-9\n" < /dev/urandom | head -c "$((sz*1024))" > ./data5k/file_{}.txt'
+----
+. Retome as operações no coletor de dados:
++
+Em Ransomware Resilience, selecione **Configurações** e, no bloco de monitoramento de detecção de usuários, selecione **Gerenciar**. Na guia Coletor de dados, selecione o coletor de dados para a storage VM e, em seguida, **Retomar**.
+
+. Realize uma leitura em massa:
++
+.. Limpe o cache:
++
+[code]
+----
+sudo sync && echo 3 | sudo tee /proc/sys/vm/drop_caches >/dev/null
+----
+.. Realize uma leitura em todos os arquivos para simular uma violação de dados:
++
+[code]
+----
+find ./data5k -type f -print0 | xargs -0 -n1 -P4 -I{} dd if={} of=/dev/null bs=1M iflag=direct status=none
+----
+
+
+. Aguarde até que o alerta de violação de dados apareça. Você pode confirmar a presença do alerta no link:rp-use-alert.html["Painel de alertas"] e investigar os detalhes do alerta.
+. Após extrair as informações desejadas do alerta, exclua os dados:
++
+[code]
+----
+ sudo setpriv --reuid 60001 --regid 60001 --groups 60001 bash -lc 'id -u; id -g; id -G; rm -rf ./data5k'
+----
+

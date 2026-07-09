@@ -18,6 +18,7 @@ Assim que você entender o alcance da sua proteção atual, link:rp-use-protect.
 
 
 
+[[view-protection-on-a-workload]]
 == Visualizar proteção em uma carga de trabalho
 
 Uma das primeiras etapas para proteger cargas de trabalho é visualizar suas cargas de trabalho atuais e seu status de proteção.  Você pode ver os seguintes tipos de cargas de trabalho:
@@ -46,6 +47,7 @@ NOTE: Veja link:rp-use-protect.html#add-a-ransomware-protection-strategy["Adicio
 
 
 
+[[understand-the-protection-dashboard]]
 == Entenda o painel de proteção
 
 O painel de proteção do Ransomware Resilience exibe informações detalhadas sobre as cargas de trabalho (por exemplo, nome e tipo da carga de trabalho, Console agent, sistema e storage VM), além de insights sobre o status da proteção. Use o painel de proteção para revisar e gerenciar a preparação para ransomware em cargas de trabalho. As seguintes colunas são especialmente úteis para entender sua postura de proteção:
@@ -86,6 +88,7 @@ A resiliência ao ransomware atribui uma importância ou prioridade a cada carga
 
 
 
+[[next-steps]]
 == Próximos passos
 
 * link:rp-use-protect.html["Proteja cargas de trabalho com estratégias de proteção contra ransomware"]

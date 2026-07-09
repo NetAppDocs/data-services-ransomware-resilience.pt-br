@@ -4,6 +4,7 @@
 
 
 
+[[google-cloud-netapp-volumes-support-preview]]
 === Suporte do Google Cloud NetApp Volumes (prévia)
 
 O Ransomware Resilience agora oferece suporte a sistemas Google Cloud NetApp Volumes, permitindo que você detecte e responda a ameaças de ransomware no Google Cloud NetApp Volumes com eficiência. Ao realizar a descoberta, o Ransomware Resilience exibe automaticamente as cargas de trabalho dos sistemas Google Cloud NetApp Volumes. Quando você descobre os sistemas, eles aparecem no painel do Ransomware Resilience. O suporte para Google Cloud NetApp Volumes no Ransomware Resilience está atualmente em versão prévia.
@@ -12,6 +13,7 @@ Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-
 
 
 
+[[clean-restore-enhancements]]
 === Melhorias de restauração limpa
 
 A restauração limpa agora oferece suporte a relatórios. Com os relatórios, você pode revisar e avaliar restaurações limpas, salvando essas informações offline como um arquivo CSV.

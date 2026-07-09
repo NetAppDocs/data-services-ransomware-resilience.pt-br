@@ -19,6 +19,7 @@ TIP: O Ransomware Resilience também oferece suporte a um xref:task-clean-restor
 
 
 
+[[restore-a-workload]]
 == Restaurar uma carga de trabalho
 
 *Função de console necessária* Administrador da organização, administrador de pasta ou projeto ou administrador de proteção contra ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console para todos os serviços"^].
@@ -58,6 +59,7 @@ TIP: Você pode selecionar até 100 arquivos ou uma única pasta.
 
 
 
+[[restore-all-volumes]]
 === Restaurar todos os volumes
 
 . No menu Resiliência contra Ransomware, selecione *Recuperação*.
@@ -97,6 +99,7 @@ TIP: O novo nome do volume aparece como prefixo + nome do volume original + nome
 
 
 
+[[restore-a-workload-at-the-volume-level]]
 === Restaurar uma carga de trabalho no nível do volume
 
 . No menu Resiliência contra Ransomware, selecione *Recuperação*.
@@ -137,6 +140,7 @@ TIP: O novo nome do volume aparece como o nome do volume original + nome do back
 
 
 
+[[restore-a-workload-at-the-file-level]]
 === Restaurar uma carga de trabalho no nível do arquivo
 
 Antes de restaurar uma carga de trabalho no nível do arquivo, você pode visualizar uma lista dos arquivos afetados. Você pode acessar a página de Alertas para baixar uma lista dos arquivos afetados. Em seguida, use a página de Recuperação para carregar a lista e escolher quais arquivos restaurar.
@@ -223,6 +227,7 @@ TIP: Se você não especificar um caminho para a restauração, os arquivos ser�
 
 
 
+[[restore-a-file-share-or-datastore]]
 === Restaurar um compartilhamento de arquivos ou armazenamento de dados
 
 . Depois de selecionar um compartilhamento de arquivos ou armazenamento de dados para restaurar, na página Restaurar, no escopo Restaurar, selecione *Por volume*.
@@ -263,6 +268,7 @@ TIP: Se você não especificar um caminho para a restauração, os arquivos ser�
 
 
 
+[[restore-a-vm-file-share-at-the-vm-level]]
 === Restaurar um compartilhamento de arquivos de VM no nível da VM
 
 Na página Recuperação, depois de selecionar uma VM para restaurar, continue com estas etapas.

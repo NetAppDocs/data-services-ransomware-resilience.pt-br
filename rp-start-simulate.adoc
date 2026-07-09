@@ -18,6 +18,7 @@ Você pode executar exercícios de prontidão em cargas de trabalho NFS e CIFS (
 
 
 
+[[how-readiness-drills-work]]
 == Como funcionam os exercícios de prontidão
 
 O Ransomware Resilience oferece suporte a três tipos de exercícios: link:task-clean-restore-recover.html["restauração limpa"], link:rp-use-recover.html["recuperação personalizada"] e link:suspicious-user-activity.html["recuperação de violação de dados"]. Os exercícios de restauração limpa e recuperação personalizada simulam ataques baseados em criptografia (entropia) e diferem no método de recuperação que oferecem. Os exercícios de recuperação de violação de dados simulam a exfiltração com padrões de leitura incomuns em seus dados.
@@ -30,6 +31,7 @@ Ao executar o exercício, você pode testar sua resposta a alertas e, opcionalme
 
 
 
+[[configure-a-ransomware-attack-readiness-drill]]
 == Configurar um exercício de preparação para ataque de ransomware
 
 *Função de console necessária* Para executar esta tarefa, você precisa da link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Superadministrador"^] ou função de administrador do Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^].
@@ -63,6 +65,7 @@ TIP: Você pode editar a configuração do exercício de prontidão mais tarde u
 
 
 
+[[start-a-readiness-drill]]
 == Iniciar um exercício de prontidão
 
 Depois de configurar o exercício de prontidão, você pode iniciá-lo.
@@ -86,6 +89,7 @@ NOTE: Não é possível editar a configuração do exercício de prontidão enqu
 
 
 
+[[respond-to-a-readiness-drill-alert]]
 == Responder a um alerta de exercício de prontidão
 
 Teste sua prontidão respondendo a um alerta de treinamento de prontidão.
@@ -124,6 +128,7 @@ Se a gravidade indicar que um usuário é suspeito de atividade maliciosa, revis
 
 
 
+[[restore-the-test-workload]]
 == Restaurar a carga de trabalho de teste
 
 Após revisar o alerta do exercício de prontidão, restaure a carga de trabalho do teste, se necessário.
@@ -146,6 +151,7 @@ Após revisar o alerta do exercício de prontidão, restaure a carga de trabalho
 
 
 
+[[change-the-alert-status-after-the-readiness-drill]]
 == Altere o status de alerta após o exercício de prontidão
 
 Após revisar o alerta do exercício de prontidão e restaurar a carga de trabalho, altere o status do alerta, se necessário.
@@ -169,6 +175,7 @@ IMPORTANT: Após rejeitar um ataque, não é possível reverter a situação. Se
 
 
 
+[[review-reports-on-the-readiness-drill]]
 == Relatórios de revisão sobre o exercício de prontidão
 
 Após a conclusão do exercício de prontidão, você pode gerar e salvar um relatório sobre o exercício. O relatório do exercício é um arquivo JSON que captura informações como a política de detecção, o tipo de alerta e o registro de data e hora, detalhes do ataque e o status da recuperação.

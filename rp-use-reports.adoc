@@ -53,6 +53,7 @@ image:screen-reports.png["Página de relatórios mostrando o relatório do exerc
 
 
 
+[[more-information]]
 == Mais informações
 
 * link:task-automate-user-activity.html["Automatize as respostas aos eventos de atividade do usuário"]

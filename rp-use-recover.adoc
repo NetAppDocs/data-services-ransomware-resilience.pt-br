@@ -33,6 +33,7 @@ Uma carga de trabalho pode ter um dos seguintes status de restauração:
 
 
 
+[[view-workloads-that-are-ready-to-be-restored]]
 == Exibir cargas de trabalho que estão prontas para serem restauradas
 
 Revise as cargas de trabalho que estão no status de recuperação "Restauração necessária".
@@ -50,6 +51,7 @@ image:screen-recovery2.png["Página de recuperação"]
 
 
 
+[[recover-a-workload]]
 == Recuperar uma carga de trabalho
 
 Após avaliar as cargas de trabalho, você tem duas opções para restaurar sua carga de trabalho:

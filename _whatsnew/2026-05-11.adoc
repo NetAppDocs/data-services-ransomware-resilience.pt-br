@@ -4,6 +4,7 @@
 
 
 
+[[clean-restore-enhancements]]
 === Melhorias de restauração limpa
 
 A restauração limpa agora oferece suporte à recuperação para um local alternativo, permitindo restaurar volumes para diferentes sistemas, VMs de armazenamento e agregados gerenciados pelo mesmo agente do Console. Além disso, a restauração limpa removeu a limitação de sete dias na busca por snapshots viáveis para recuperação. A restauração limpa agora continua procurando por um ponto de recuperação viável entre os snapshots disponíveis, independentemente da distância desde o ataque de ransomware.
@@ -12,6 +13,7 @@ link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clea
 
 
 
+[[google-secops-siem-support]]
 === Suporte do Google SecOps SIEM
 
 O Ransomware Resilience agora oferece suporte ao gerenciamento de informações e eventos de segurança (SIEM) com o Google SecOps, permitindo que você envie dados automaticamente para o Google SecOps para uma análise e detecção de ameaças simplificadas.
@@ -20,6 +22,7 @@ Para obter informações sobre a configuração, consulte link:https://docs.neta
 
 
 
+[[azure-netapp-files-support-is-now-generally-available]]
 === O suporte para Azure NetApp Files agora está geralmente disponível
 
 O Ransomware Resilience agora oferece suporte a sistemas Azure NetApp Files, permitindo que você detecte e responda a ameaças de ransomware no Azure NetApp Files com eficiência. Ao descobrir cargas de trabalho, o Ransomware Resilience agora apresenta Azure NetApp Files e as exibe no painel de proteção. O suporte do Ransomware Resilience para Azure NetApp Files inclui estratégias de detecção e proteção apenas com snapshots. O suporte para Azure NetApp Files já está disponível para o público em geral (GA).
@@ -28,6 +31,7 @@ Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-
 
 
 
+[[soar-support-for-blocking-users]]
 === Suporte SOAR para bloqueio de usuários
 
 O Ransomware Resilience agora oferece suporte ao bloqueio de usuários individuais com Google SecOps e playbooks do Splunk SOAR. Com essa adição, você pode automatizar o bloqueio de usuários quando o Ransomware Resilience detectar atividades suspeitas de usuários, como uma violação de dados ou exclusão em massa de dados.

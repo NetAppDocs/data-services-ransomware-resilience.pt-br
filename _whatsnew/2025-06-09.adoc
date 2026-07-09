@@ -4,12 +4,14 @@
 
 
 
+[[landing-page-updates]]
 === Atualizações da página de destino
 
 Esta versão inclui atualizações na página inicial da BlueXP ransomware protection, o que facilita o início do teste gratuito e a descoberta.
 
 
 
+[[readiness-drill-updates]]
 === Atualizações de exercícios de prontidão
 
 Anteriormente, você podia executar um exercício de prontidão para ransomware simulando um ataque em uma nova carga de trabalho de amostra.  Com esse recurso, você pode investigar o ataque simulado e recuperar a carga de trabalho.  Use este recurso para testar notificações de alerta, resposta e recuperação.  Execute e programe esses exercícios sempre que necessário.
@@ -22,6 +24,7 @@ Para mais detalhes, consulte https://docs.netapp.com/us-en/data-services-ransomw
 
 
 
+[[enable-bluexp-classification-updates]]
 === Habilitar atualizações de BlueXP classification
 
 Antes de usar a BlueXP classification no serviço de BlueXP ransomware protection , você precisa habilitar a BlueXP classification para verificar seus dados.  Classificar dados ajuda você a encontrar informações de identificação pessoal (PII), o que pode aumentar os riscos de segurança.

@@ -16,6 +16,7 @@ Estas perguntas frequentes podem ajudar se você estiver apenas procurando uma r
 
 
 
+[[deployment]]
 == Implantação
 
 .Você precisa de uma licença para usar o Ransomware Resilience?
@@ -49,6 +50,7 @@ Ao considerar o dimensionamento, os custos de licenciamento são baseados na cap
 
 
 
+[[access]]
 == Acesso
 
 .Qual é a URL de Resiliência a Ransomware?
@@ -65,6 +67,7 @@ Você pode acessar o NetApp Console com qualquer navegador web moderno.
 
 
 
+[[interoperability]]
 == Interoperabilidade
 
 .O Ransomware Resilience está ciente das configurações de proteção no ONTAP?
@@ -77,6 +80,7 @@ Para licenciamento e faturamento, o Ransomware Resilience pode ser integrado ao 
 
 
 
+[[workloads]]
 == Cargas de trabalho
 
 .O que é uma carga de trabalho no contexto da resiliência a ransomware?
@@ -104,6 +108,7 @@ Se você adicionou um novo volume ao seu ambiente, inicie a descoberta da carga 
 
 
 
+[[protection-policies]]
 == Políticas de proteção
 
 .As políticas de resiliência a ransomware coexistem com outros tipos de políticas de carga de trabalho?

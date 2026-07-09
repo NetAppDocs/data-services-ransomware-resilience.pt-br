@@ -20,6 +20,7 @@ NetApp Ransomware Resilience oferece restaurações limpas, que proporcionam uma
 
 
 
+[[learn-about-clean-restores]]
 == Saiba mais sobre restaurações limpas
 
 Ao realizar uma restauração completa, o Ransomware Resilience guia você por um processo de várias etapas que otimiza a recuperação.
@@ -48,6 +49,7 @@ Você também pode visualizar o histórico dos arquivos na etapa de planejamento
 
 
 
+[[supported-configurations]]
 == Configurações suportadas
 
 * Você só pode criar um IRE por conta do Ransomware Resilience. Cada IRE pode ter três salas limpas.
@@ -92,6 +94,7 @@ NOTE: A execução de uma restauração completa em um ambiente baseado em nuvem
 
 
 
+[[considerations]]
 == Considerações
 
 * Só é possível realizar uma restauração limpa em caso de ataque de ransomware baseado em criptografia.
@@ -105,6 +108,7 @@ NOTE: A execução de uma restauração completa em um ambiente baseado em nuvem
 
 
 
+[[additional-considerations-for-on-premises-environments]]
 === Considerações adicionais para ambientes locais
 
 Se você estiver implantando um IRE local, quando uma VM do Windows é clonada para a análise de recuperação em uma restauração limpa, a VM clonada mantém a mesma configuração da origem. Isso pode causar conflitos:
@@ -118,6 +122,7 @@ Para evitar esses conflitos, o Ransomware Resilience executa o sysprep na VM clo
 
 
 
+[[secondary-sources]]
 === Fontes secundárias
 
 Ao criar o IRE, você tem a opção de adicionar uma fonte secundária.
@@ -128,6 +133,7 @@ Por padrão, o processo de restauração limpa analisa snapshots do ambiente de 
 
 
 
+[[cost-and-licensing]]
 == Custos e licenciamento
 
 A restauração limpa é oferecida como parte do Ransomware Resilience. Nenhuma licença adicional é necessária para realizar uma restauração limpa ou criar um IRE.
@@ -142,6 +148,7 @@ Custos de terceiros podem incluir a criação e implantação de instâncias de 
 
 
 
+[[prerequisites]]
 == Pré-requisitos
 
 Certifique-se de ter concluído os pré-requisitos para o tipo de implantação de restauração limpa escolhido. Selecione a guia correspondente à configuração do IRE desejada.
@@ -506,6 +513,7 @@ Acesso NFS ao: * Agente do console de produção * VLAN do agente do console * V
 ====
 
 
+[[create-an-isolated-recovery-environment]]
 == Crie um ambiente de recuperação isolado
 
 Antes de realizar uma restauração limpa, você deve criar uma sala de recuperação isolada.
@@ -593,6 +601,7 @@ TIP: Se precisar alterar algum detalhe do IRE, selecione *Configurações* na ba
 
 
 
+[[delete-an-isolated-recovery-environment]]
 == Excluir um ambiente de recuperação isolado
 
 Não é possível excluir um IRE com uma operação de restauração ativa; você pode cancelar a operação de restauração ou aguardar até que a restauração seja concluída e então excluir o IRE.

@@ -29,6 +29,7 @@ NOTE: Os destinos de backup não estão disponíveis para cargas de trabalho em 
 
 
 
+[[add-storagegrid-as-a-backup-destination]]
 == Adicionar StorageGRID como destino de backup
 
 Para configurar o NetApp StorageGRID como um destino de backup, insira as seguintes informações.
@@ -72,6 +73,7 @@ image:screen-settings-backup-destinations-list2.png["Captura de tela dos destino
 
 
 
+[[add-amazon-web-services-as-a-backup-destination]]
 == Adicionar Amazon Web Services como destino de backup
 
 Para configurar a AWS como destino de backup, insira as seguintes informações.
@@ -129,6 +131,7 @@ image:screen-settings-backup-destinations-list2.png["Página de destinos de back
 
 
 
+[[add-google-cloud-platform-as-a-backup-destination]]
 == Adicionar o Google Cloud Platform como destino de backup
 
 Para configurar o Google Cloud Platform (GCP) como destino de backup, insira as seguintes informações.
@@ -167,6 +170,7 @@ O novo destino de backup é adicionado à lista de destinos de backup.
 
 
 
+[[add-microsoft-azure-as-a-backup-destination]]
 == Adicionar o Microsoft Azure como destino de backup
 
 Para configurar o Azure como um destino de backup, insira as seguintes informações.

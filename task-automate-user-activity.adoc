@@ -18,6 +18,7 @@ Respostas automatizadas são suportadas para eventos de criptografia (comportame
 
 
 
+[[create-an-automated-response]]
 == Criar uma resposta automatizada
 
 Você só pode proteger uma máquina virtual de armazenamento com pelo menos uma carga de trabalho que esteja protegida com uma política de detecção de comportamento suspeito do usuário.
@@ -66,6 +67,7 @@ Se você escolher esta opção, também deverá selecionar a duração do bloque
 
 
 
+[[modify-an-automated-response]]
 == Modificar uma resposta automática
 
 Após criar uma resposta automatizada, você pode pausar, reiniciar ou modificar a resposta. Você pode modificar o nome da resposta, os tipos de alertas que acionam a resposta, as VMs de armazenamento e a ação executada.

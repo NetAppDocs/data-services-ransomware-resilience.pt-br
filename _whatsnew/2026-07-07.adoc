@@ -4,6 +4,7 @@
 
 
 
+[[exclude-file-paths-from-user-behavior-alerts]]
 === Excluir caminhos de arquivos dos alertas de comportamento do usuário
 
 O Ransomware Resilience permite excluir caminhos de arquivo específicos dos alertas de monitoramento de comportamento do usuário. Você pode excluir caminhos de arquivo se souber que eles não estão em risco ou se estiver realizando operações em arquivos em um volume que possam acionar alertas.

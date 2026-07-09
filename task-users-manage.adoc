@@ -20,6 +20,7 @@ TIP: Você pode link:task-automate-user-activity.html["automatizar respostas"] a
 
 
 
+[[manage-blocked-users]]
 == Gerenciar usuários bloqueados
 
 Você pode bloquear usuários quando acreditar que eles são responsáveis por atividades maliciosas.
@@ -46,6 +47,7 @@ Você pode bloquear usuários quando acreditar que eles são responsáveis por a
 
 
 
+[[exclude-users-from-alerts]]
 == Excluir usuários dos alertas
 
 Se houver determinados usuários confiáveis cujo comportamento possa acionar alertas de comportamento do usuário, você pode excluí-los dos alertas.
@@ -84,6 +86,7 @@ TIP: Você também pode excluir um usuário diretamente de um alerta. Para mais 
 
 
 
+[[exclude-file-paths-from-monitoring]]
 == Excluir caminhos de arquivos do monitoramento
 
 Cada caminho de arquivo deve começar com o nome de um volume. Ele pode incluir até três subdiretórios para esse volume, por exemplo "volume/diretório/subdiretório/subdiretório2". Você pode excluir caminhos de arquivo inserindo-os manualmente ou carregando um arquivo CSV que liste os caminhos.
@@ -103,6 +106,7 @@ Quando a operação for concluída com sucesso, NetApp Ransomware Resilience com
 
 
 
+[[next-steps]]
 == Próximos passos
 
 * link:task-automate-user-activity.html["Automatize respostas a eventos de detecção de atividade do usuário"]

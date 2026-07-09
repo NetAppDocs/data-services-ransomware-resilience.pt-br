@@ -28,6 +28,7 @@ Os playbooks de NetApp Ransomware Resilience oferecem as seguintes funcionalidad
 
 
 
+[[playbooks]]
 == Playbooks
 
 O Ransomware Resilience oferece manuais de instruções para Google SecOps, Microsoft Sentinel e Splunk. Consulte as respectivas páginas do GitHub para obter detalhes sobre a configuração.

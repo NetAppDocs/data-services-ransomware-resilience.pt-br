@@ -4,12 +4,14 @@
 
 
 
+[[extension-blocking-is-enabled-at-the-workload-level]]
 === O bloqueio de extensões está habilitado no nível da carga de trabalho.
 
 Ao ativar o bloqueio de extensão, ele passa a ser ativado no nível da carga de trabalho, e não no nível da máquina virtual de armazenamento.
 
 
 
+[[edit-user-behavior-alert-status]]
 === Editar o status de alerta de comportamento do usuário
 
 O recurso Resiliência a Ransomware agora permite editar o status dos alertas de comportamento do usuário. Você pode descartar e resolver alertas manualmente.
@@ -18,6 +20,7 @@ Para mais informações, consulte link:https://docs.netapp.com/us-en/data-servic
 
 
 
+[[support-for-multiple-console-agents]]
 === Suporte para vários agentes de console
 
 O Ransomware Resilience agora suporta o uso de vários agentes de console para gerenciar os mesmos sistemas.
