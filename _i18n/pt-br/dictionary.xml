@@ -2700,4 +2700,10 @@
   <block id="92e8752dc37f12422b8f4598efa4f75e" category="list-text">Após extrair as informações desejadas do alerta, exclua os dados:</block>
   <block id="b30a6af22c230e409ffe8e8aea6d40cd" category="sidebar">Simular ataques</block>
   <block id="9146963b2f60b37c2a323f89b7563bb7" category="sidebar">Simular eventos de usuário malicioso</block>
+  <block id="edf20e41ca56535f9914b651d4176206" category="section-title">Modelo ARM para Microsoft Sentinel</block>
+  <block id="7add8fc88b51e4a92eb3463aed73b61d" category="paragraph">O Ransomware Resilience agora oferece um modelo Azure Resource Manager (ARM) para conexão com o Microsoft Sentinel como um SIEM, oferecendo um método secundário para facilitar a implantação.</block>
+  <block id="5b782deb754617d2be1da0beb60e5b16" category="inline-link-macro">Conecte-se a um SIEM para detecção e análise de ameaças</block>
+  <block id="861174940ee146accf84fbe687b7ff1c" category="paragraph">Para mais informações, consulte <block ref="9ce2483ddf8d37cd167d593bafc6e6e7" category="inline-link-macro-rx"></block>.</block>
+  <block id="ae00487184e64f3a5e5738cc82621c2c" category="list-text">Microsoft Sentinel*</block>
+  <block id="daea42ccacab5543f1ae62da54cc9877" category="paragraph">{asterisk}Ransomware Resilience também fornece um modelo Azure Resource Manager (ARM) para Microsoft Sentinel.</block>
 </blocks>

@@ -17,10 +17,12 @@ Ransomware Resilience é compatível com os seguintes sistemas SIEM:
 
 * AWS Security Hub
 * Google SecOps
-* Microsoft Sentinel
+* Microsoft Sentinel*
 * Splunk Cloud
 * Splunk Enterprise
 
+
+{asterisk}Ransomware Resilience também fornece um modelo Azure Resource Manager (ARM) para Microsoft Sentinel.
 
 
 TIP: A resiliência contra ransomware também oferece link:reference-soar.html["orquestração, automação e resposta de segurança (SOAR) playbooks"^].
