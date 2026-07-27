@@ -1481,10 +1481,8 @@
   <block id="d51c0020ded66c680ed4bf4dab57a782" category="paragraph">O Ransomware Resilience detecta atividades suspeitas do usuário analisando eventos de atividade do usuário gerados pelo FPolicy no ONTAP. Para coletar dados de atividade do usuário, você precisa implantar um ou mais agentes de atividade do usuário. O agente é um servidor Linux ou VM com conectividade com dispositivos no seu locatário.</block>
   <block id="b9300e15e3fa20c1dc3ecfabbbb96a7b" category="section-title">Requisitos do sistema operacional</block>
   <block id="afea8c44acd019a3a489f7a3ddeb5c8e" category="admonition">A máquina que você usa para o agente de atividade do usuário não deve estar executando nenhum outro software de nível de aplicativo. Um servidor dedicado é recomendado.</block>
-  <block id="19edca9ea70315410039bf08b3ffecda" category="paragraph">O<block ref="0a342b59ecdcede0571340b9ed11633f" prefix=" " category="inline-code"></block> É necessário um comando para a instalação. O<block ref="beb493211c3135923a11284ef26bf909" prefix=" " category="inline-code"></block> O comando é necessário para instalação, execução de scripts e desinstalação.</block>
   <block id="a54c13ad42512dbfec4e8a44d793a52e" category="section-title">Requisitos do servidor</block>
   <block id="34af15b56c0def7a2806fd4b03537e12" category="list-text">**Espaço em disco**: 36 GB de espaço livre em disco</block>
-  <block id="68eda0e29d8e074409c51f53581f3a64" category="admonition">Alocar espaço adicional em disco para permitir a criação do sistema de arquivos. Certifique-se de que haja pelo menos 35 GB de espaço livre no sistema de arquivos. + Se<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block> É uma pasta montada de um armazenamento NAS; os usuários locais devem ter acesso a esta pasta. A criação do agente de atividade do usuário pode falhar se os usuários locais não tiverem as permissões necessárias.</block>
   <block id="52554f7429cd5c72cd3c3e9561412160" category="admonition">Recomenda-se sincronizar a hora tanto no sistema ONTAP quanto na máquina do agente de atividade do usuário usando o Protocolo de Tempo de Rede (NTP) ou o Protocolo de Tempo de Rede Simples (SNTP).</block>
   <block id="77469c598ab2b5984e8dafd3d15a2315" category="section-title">regras de acesso à rede em nuvem</block>
   <block id="c793f078b8fd1dcce9dfd5ae57f2a51c" category="paragraph">Analise as regras de acesso à rede em nuvem para a sua região geográfica (Ásia-Pacífico, Europa ou Estados Unidos).</block>
@@ -1496,14 +1494,12 @@
   <block id="f2ca52b87225d79d40f899aebabeec45" category="cell">Agente de atividade do usuário</block>
   <block id="b7169d36c5259a3a051359ca51dbd682" category="cell">Acesso à resiliência contra ransomware</block>
   <block id="0cd58d8585970b5311e84ca2c34ba5ef" category="section-title">Regras na rede</block>
-  <block id="1b09a58921479be87f9dae639915150f" category="cell">389(LDAP) 636 (LDAPs / start-tls)</block>
   <block id="84caee864977bc98db0b0df24853f63c" category="cell">URL do servidor LDAP</block>
   <block id="b272c206ad7d80ebc1e17385c8d4450c" category="cell">Conectar ao LDAP</block>
   <block id="3e1d4f7104327b6aa02e8d988c873b86" category="cell">Endereço IP de gerenciamento do cluster ou SVM (dependendo da configuração do coletor SVM)</block>
   <block id="9bf305870fa281c6eff0d16d2e8d6b6d" category="cell">Comunicação de API com ONTAP</block>
   <block id="c1d0965e767c67506aa60bc80d5b716e" category="cell">35000 - 55000</block>
   <block id="4f1eb19420b75b94e053a805cd0feb1d" category="paragraph">Dados SVM LIF endereços IP</block>
-  <block id="3b04fff3171347ca78c0c2fb925106dd" category="cell">Comunicação do ONTAP para o agente de atividade do usuário para eventos Fpolicy. Essas portas devem ser abertas para o agente de atividade do usuário para que o ONTAP possa enviar eventos a ele, incluindo qualquer firewall no próprio agente de atividade do usuário (se houver). + **NOTA:** Não é necessário reservar *todas* essas portas, mas as portas reservadas devem estar dentro desse intervalo. Recomenda-se começar reservando 100 portas e aumentar esse número se necessário.</block>
   <block id="3756ac460c094adc890ad7f26460010b" category="cell">35000-55000</block>
   <block id="0e948943e8277507eeeec08bbb91d3b4" category="cell">IP de gerenciamento de cluster</block>
   <block id="f41a23af01b3d7e16d16141a3f6003df" category="cell">Comunicação do endereço IP de gerenciamento do cluster ONTAP para o agente de atividade do usuário para *eventos EMS*. Essas portas devem ser abertas para o agente de atividade do usuário para que o ONTAP possa enviar eventos EMS para ele, incluindo qualquer firewall no próprio agente de atividade do usuário. + **NOTA:** Não é necessário reservar *todas* essas portas, mas as portas reservadas devem estar dentro desse intervalo. Recomenda-se começar reservando 100 portas e aumentar esse número se necessário.</block>
@@ -1584,7 +1580,6 @@
   <block id="e7d932b2a7bf9471a38ac8c68fbf83ad" category="list-text">&lt;site_name&gt;.cs01-ap-1.cloudinsights.netapp.com/br/</block>
   <block id="8f31785e58dfdc396495a127fdd7d7dd" category="list-text">&lt;site_name&gt;.c01-ap-1.cloudinsights.netapp.com/br/</block>
   <block id="edc2894193def90c2ccbb8f855d6f564" category="list-text">&lt;site_name&gt;.c02-ap-1.cloudinsights.netapp.com/br/</block>
-  <block id="b7293bd6a9f7cb8e5890a221fe74d3cb" category="list-text">gentlogin.cs01-ap-1.cloudinsights.netapp.com/br/</block>
   <block id="00c7e633a09840b7e60ee5de5aec797b" category="list-text">&lt;site_name&gt;.cs01-eu-1.cloudinsights.netapp.com/br/</block>
   <block id="54d1f56395e5ec9d39e9a416c61b311a" category="list-text">&lt;site_name&gt;.c01-eu-1.cloudinsights.netapp.com/br/</block>
   <block id="0ba615943513b9683a0e9b145f96e5b2" category="list-text">&lt;site_name&gt;.c02-eu-1.cloudinsights.netapp.com/br/</block>
@@ -1612,12 +1607,9 @@
   <block id="75a6a9319b6e0275c06122285e74cd15" category="inline-link-macro">crie os agentes e coletores necessários e ative a estratégia de proteção contra ransomware adequada</block>
   <block id="cce78dc6ebbec7385a01f2146d6d01c8" category="section-title">Próximos passos</block>
   <block id="92df6f183b2e1cfcc696af23c1edd4cb" category="summary">Antes de criar um agente de atividade do usuário e outros coletores, você deve garantir que atende aos requisitos de sistema operacional, servidor e rede descritos.</block>
-  <block id="fc36a1ad1399ea3c897ac2b166f590bc" category="section-title">Suporte do provedor de nuvem</block>
   <block id="3156b4b992dec700b60fedaa2eca010c" category="paragraph">A detecção de comportamentos suspeitos do usuário é compatível com os seguintes sistemas operacionais:</block>
   <block id="92adf790b863484fc83be969039ec890" category="section-title">Recomendações do servidor</block>
-  <block id="28296e91eb448ead6c0f37548d3101a8" category="list-text">Recomenda-se instalar o agente de atividade do usuário em um sistema separado do seu ambiente de Ransomware Resilience. Caso opte por instalá-los na mesma máquina, reserve de 50 a 55 GB de espaço de disco. Para Linux, aloque de 25 a 30 GB de espaço para<block ref="4bf2f0d069734974e4d76e679433aa07" prefix=" " category="inline-code"></block> e 25 GB para<block ref="ea5f88360fb7c06d3270b165b4dad226" prefix=" " category="inline-code"></block>.</block>
   <block id="b81a18d778d8d2491614ae90532db84f" category="admonition">Durante a instalação inicial, substitua a <block ref="50cff7c5933e29331b88e32e4f2a101d" prefix=" " category="inline-code"></block> por uma permissão de caractere curinga <block ref="3389dae361af79b04c9c8e7057f60cc6" prefix="(" category="inline-code"></block>. Após o agente ser ativado e estar totalmente operacional, você pode substituir a permissão pelo nome do site. Entre em contato com seu representante da NetApp para obter o nome do site.</block>
-  <block id="9625968bd02420d60f939947dec5ee63" category="admonition">O agente de atividade do usuário utiliza a tecnologia NetApp Data Insights Infrastructure, daí o uso de <block ref="08f7b82cf54cd7bdcab171ad9bd445cc" prefix=" " category="inline-code"></block> endpoints. Para mais informações, consulte</block>
   <block id="c4f09ee186bb94e99b8c3f938adf8816" category="section-title">Implantações de agentes de atividade do usuário baseadas em APAC</block>
   <block id="869af1b4577e081268bf8ee592a6018e" category="section-title">Implantações de agentes de atividade do usuário baseadas na Europa</block>
   <block id="ae6cc9c44044939bcbbefd693857f742" category="section-title">Implantações de agentes de atividade do usuário baseados nos EUA</block>
@@ -2369,7 +2361,6 @@
   <block id="3b35700f5db77466b9829093b579bafc" category="list-text">Nome de usuário e senha do administrador do cluster</block>
   <block id="8357c5714e49295e422957fed4ec2caa" category="list-text">Instalado<block ref="2fa62e05d832f87969a8d99226be5a74" prefix=" " category="inline-code"></block> na máquina Linux (você pode instalar com o comando<block ref="bd20ec476e804fab40ab36d6175d1936" prefix=" " category="inline-code"></block>)</block>
   <block id="361ccd8284c6f49a106851d9aeaab8b2" category="list-text">No cluster que hospeda o agente de atividade do usuário, execute o script como admin:<block ref="3b9c122b681f59f04f03105e338591ce" prefix=" " category="inline-code"></block></block>
-  <block id="e0e0df3692200b73a8808571748906b3" category="list-text">Quando solicitado, forneça o endereço IP do cluster, o nome de usuário do administrador e a senha do administrador.</block>
   <block id="2757451d7ac78a3fd169d2600d54a8ad" category="list-text">O script leva aproximadamente cinco minutos para ser executado. Ao terminar, a linha de comando exibe a taxa de eventos, por exemplo "Svm svm_rate está gerando 100 eventos/seg."</block>
   <block id="73e368716ffe1eef8733ba4acf297472" category="paragraph">Use a taxa de eventos para calcular o dimensionamento.</block>
   <block id="caa617e3833cdf64d33905efb6a82682" category="paragraph">Se você _não_ estiver usando DII, siga as instruções de configuração aqui.</block>
@@ -2405,7 +2396,6 @@
   <block id="73ec7da766dca94cf1c4b669985cd2a5" category="list-text"><block ref="73ec7da766dca94cf1c4b669985cd2a5" category="inline-link-macro-rx"></block></block>
   <block id="f2947fbfc4001f394585c42e28740767" category="inline-link-macro">Configurar agentes e detectores de comportamento do usuário</block>
   <block id="ad709ceaf0cfdbb15b5cbf9fdce90fd8" category="list-text"><block ref="ad709ceaf0cfdbb15b5cbf9fdce90fd8" category="inline-link-macro-rx"></block></block>
-  <block id="f79eb8967b3c8df9a5242b71bfa6765b" category="paragraph">Os dados de comportamento do usuário podem ser armazenados na AWS e no Azure nas seguintes regiões:</block>
   <block id="f7d8c82b937f1272bcd68f037f70dcbb" category="list-text">Azure NetApp Files não oferece suporte a FPolicy nem à detecção de comportamento do usuário. Azure NetApp Files também não oferece suporte à análise forense de entropia.</block>
   <block id="30d4c1b67b11bb42e2278b195f299c80" category="list-text">Atualmente, você só pode aplicar estratégias de proteção baseadas em criptografia e FPolicy às cargas de trabalho do Google Cloud NetApp Volumes. Não é possível aplicar estratégias de proteção baseadas no comportamento do usuário.</block>
   <block id="37377fd884c4cf3b9e7e8e0ed97e4865" category="paragraph-title">Que tipos de ataques o Ransomware Resilience reconhece?</block>
@@ -2480,7 +2470,6 @@
   <block id="7eba97a8ef53163c9fd30177df926301" category="admonition">Se você estiver configurando um IRE com a origem no Amazon FSx for NetApp ONTAP, ignore este requisito de IP LIF de dados SVM de sala limpa.</block>
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="cell">Amazon FSx for NetApp ONTAP</block>
   <block id="7e04984fc8cb78806e36cbf9552342fd" category="admonition">A detecção de atividade do usuário não é suportada atualmente para cargas de trabalho SAN. Você pode usar a detecção de atividade do usuário com cargas de trabalho NAS no Amazon FSx for NetApp ONTAP, Cloud Volumes ONTAP e ONTAP.</block>
-  <block id="d3009064cbb364032ea2a7bc94ab246b" category="paragraph">A detecção do comportamento do usuário é suportada no Ransomware Resilience para cargas de trabalho em sistemas ONTAP locais, bem como em Amazon FSx for NetApp ONTAP e sistemas Cloud Volumes ONTAP que estejam alinhados com <block ref="12d7be4f3da31a90f0de3bba45ddeec1" category="inline-xref-macro-rx"></block>.</block>
   <block id="0270ec13158ac8d81c5022ad41a38235" category="admonition">Se você estiver configurando estratégias de proteção para Amazon FSx for NetApp ONTAP e Azure NetApp Files, consulte <block ref="f35eaad9edb95ec2be22c4403bf0d360" category="inline-link-macro-rx"></block>.</block>
   <block id="b70244907e8a4cb4fbb47d6e9fdda53a" category="cell">Nuvem: Amazon FSx for NetApp ONTAP</block>
   <block id="b4bada7d854e6650f9cc28e404fe40fb" category="admonition">Para IREs implantados no Amazon FSx for NetApp ONTAP, você não precisa fornecer essas informações.</block>
@@ -2726,4 +2715,16 @@
   <block id="d17b23053b2c8905a1374dfbb3177a6c" category="list-text">Selecione *Conectar* para iniciar a conexão com NetApp Ransomware Resilience.</block>
   <block id="256edba68011601436675d5223414692" category="admonition">Você pode editar a configuração do SIEM depois de criá-la. Você pode editar todos os campos exceto o nome.</block>
   <block id="ac750267020c9b3c0e32de825d9b57fc" category="section-title">20 de julho de 2026</block>
+  <block id="65e105b8a7c994c340c0237dcf7e5970" category="section-title">Suporte do provedor de nuvem do agente de atividade do usuário</block>
+  <block id="9ebc4352a5afdb84f0bff93ebd15df5b" category="paragraph">Para habilitar a detecção do comportamento do usuário, você deve criar um agente de atividade do usuário. O agente de atividade do usuário é um ambiente executável para coletores de dados, que compartilham eventos de atividade do usuário com o Ransomware Resilience.</block>
+  <block id="b176415a669a2bcfa34dd5a6868e1756" category="paragraph">O agente de atividade do usuário pode ser implantado na AWS e no Azure nas seguintes regiões:</block>
+  <block id="6cf349ef77d3b894c407f147f9b0f9a7" category="admonition">A implementação regional do agente de atividade do usuário não afeta o agente do Console. A implementação do agente do Console é independente dessas regiões.</block>
+  <block id="a17da1e1013a5f5e4cb001153fe98736" category="paragraph">O<block ref="0a342b59ecdcede0571340b9ed11633f" prefix=" " category="inline-code"></block> comando é necessário para instalação. O<block ref="beb493211c3135923a11284ef26bf909" prefix=" " category="inline-code"></block> comando é necessário para instalação, execução de scripts e desinstalação.</block>
+  <block id="c9636848fc1b9b62740a33de6f0bad1f" category="list-text">Aloque espaço de disco extra para permitir a criação do sistema de arquivos. Certifique-se de que haja pelo menos 35 GB de espaço livre no sistema de arquivos. + Se <block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block> for uma pasta montada de um armazenamento NAS, os usuários locais devem ter acesso a essa pasta. A criação do agente de atividade do usuário pode falhar se os usuários locais não tiverem as permissões necessárias.</block>
+  <block id="1a283fc89a251e8e273bf67b6e692071" category="list-text">Recomenda-se instalar o agente de atividade do usuário em um sistema separado do seu ambiente de Ransomware Resilience. Caso você instale o agente e o Ransomware Resilience na mesma máquina, reserve de 50 a 55 GB de espaço de disco. Para Linux, aloque de 25 a 30 GB de espaço para<block ref="4bf2f0d069734974e4d76e679433aa07" prefix=" " category="inline-code"></block> e 25 GB para<block ref="ea5f88360fb7c06d3270b165b4dad226" prefix=" " category="inline-code"></block>.</block>
+  <block id="ccde7d5f2c38977ff57bfa0294ad83d7" category="list-text">Quando solicitado, forneça o endereço IP do cluster, o nome de usuário do administrador e a senha do administrador.</block>
+  <block id="2c04ca6afac47fae351d7176c354ba9b" category="admonition">O agente de atividade do usuário utiliza a tecnologia NetApp Data Insights Infrastructure, daí o uso de <block ref="08f7b82cf54cd7bdcab171ad9bd445cc" prefix=" " category="inline-code"></block> endpoints. Para obter mais informações, consulte <block ref="12c485f306c08c5a6939aa54065b62ed" category="inline-link-macro-rx"></block>.</block>
+  <block id="012f0abca78822d24d27455403c3d089" category="list-text">agentlogin.cs01-ap-1.cloudinsights.netapp.com/br/</block>
+  <block id="dcac1ae04e45c773239f95ecd0c5f082" category="cell">389(LDAP) 636 (LDAPS / start-tls)</block>
+  <block id="c44e1219325e37378db9611536ddafc3" category="cell">Comunicação do ONTAP para o agente de atividade do usuário para eventos Fpolicy. Essas portas devem ser abertas para o agente de atividade do usuário para que o ONTAP possa enviar eventos a ele, incluindo qualquer firewall no próprio agente de atividade do usuário (se houver). + **NOTA:** você não precisa reservar *todas* essas portas, mas as portas que você reservar para isso devem estar dentro deste intervalo. Recomenda-se começar reservando 100 portas e aumentar se necessário.</block>
 </blocks>
