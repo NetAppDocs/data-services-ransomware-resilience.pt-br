@@ -34,12 +34,39 @@ Ao executar o exercício, você pode testar sua resposta a alertas e, opcionalme
 [[configure-a-ransomware-attack-readiness-drill]]
 == Configurar um exercício de preparação para ataque de ransomware
 
+Antes de executar uma simulação, você deve configurar o exercício de prontidão. Você deve criar o exercício de prontidão para um tipo específico de ataque de ransomware. Ransomware Resilience reconhece cinco tipos de ataques:
+
+[cols="25,75"]
+|===
+| Tipo de ataque | Descrição 
+
+
+| Criptografia (entropia) | A resiliência contra ransomware reconhece padrões anormais de IOPS, entropia de dados e sufixos de arquivo não padronizados. 
+
+
+| Criptografia (comportamento do usuário) | Ransomware Resilience identifica atividades anômalas de leitura, gravação e renomeação de arquivos realizadas por um usuário específico. 
+
+
+| Violação de dados | A Resiliência contra Ransomware detecta padrões anômalos de acesso de leitura a arquivos realizados por um usuário específico. 
+
+
+| Destruição de dados | A ferramenta de Ransomware Resilience detecta a exclusão em massa de arquivos por um usuário específico. 
+
+
+| Comportamento suspeito do usuário | A resiliência a ransomware identifica comportamentos anômalos que vão além do escopo de violação de dados, destruição de dados ou criptografia. 
+|===
 *Função de console necessária* Para executar esta tarefa, você precisa da link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Superadministrador"^] ou função de administrador do Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^].
 
 .Passos
 . Em Resiliência a Ransomware, selecione **Configurações**.
-. No bloco de treinamento de prontidão, selecione **Configurar**.
-. Selecione o **tipo de exercício de prontidão**.
+. No cartão de treinamento de prontidão na página Configurações, selecione *Configurar*.
++
+O Console exibe a página Configure readiness drill.
+
++
+image:screen-settings-alert-drill-configure.png["Configurar página de teste de prontidão"]
+
+. Selecione o *tipo de ataque de ransomware*.
 +
 ** **Recuperação personalizada**: Responda a um ataque de criptografia (entropia) com um link:rp-use-recover.html["restauração personalizada"] onde você configura o ponto de recuperação.
 ** **Restauração limpa**: Responda a um ataque de criptografia (entropia) com um link:task-clean-restore-recover.html["restauração limpa"] processo de recuperação, que orienta você para pontos de recuperação otimizados.
@@ -52,16 +79,13 @@ Ao executar o exercício, você pode testar sua resposta a alertas e, opcionalme
 .. Após selecionar o **Sistema**, escolha a **Storage VM** na lista pré-preenchida.
 .. Forneça um nome para a **Nova carga de trabalho de teste**. A carga de trabalho de teste será precedida por "rps_test_".
 .. Se o exercício de prontidão for para recuperação de violação de dados, selecione o **User activity agent** para o ambiente de exercício.
-+
-image:screen-settings-alert-drill-configure.png["Captura de tela das opções de configuração do exercício de prontidão."]
-
 
 
 . Selecione *Salvar*.
 
 
 
-TIP: Você pode editar a configuração do exercício de prontidão mais tarde usando a página Configurações.
+TIP: Você pode editar a configuração do exercício de prontidão depois na página de Configurações.
 
 
 
@@ -73,15 +97,8 @@ Depois de configurar o exercício de prontidão, você pode iniciá-lo.
 *Função de console necessária* Para executar esta tarefa, você precisa da link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Superadministrador"^] ou função de administrador do Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^].
 
 .Passos
-. Para iniciar o exercício:
-+
-** No painel de controle de NetApp Ransomware Resilience, selecione o botão *Executar teste de prontidão* no canto superior direito.
-+
-image:screen-dashboard.png["Página do painel mostrando o botão Executar exercício de prontidão"]
-
-** Ou acesse **Configurações**. No bloco Readiness drill, selecione *Iniciar*.
-
-
+. Em Resiliência a Ransomware, selecione **Configurações**.
+. Na página Configurações, selecione *Iniciar*.
 
 
 
@@ -98,13 +115,7 @@ Teste sua prontidão respondendo a um alerta de treinamento de prontidão.
 
 .Passos
 . No menu Resiliência contra Ransomware, selecione *Alertas*.
-+
-O Console exibe a página Alertas.  Na coluna ID do alerta, você vê "Exercício de prontidão" ao lado do ID.
-
-+
-image:screen-alerts-readiness.png["Página de alertas mostrando o alerta de exercício de prontidão"]
-
-. Selecione o alerta com a indicação "Readiness drill".
+. Selecione o alerta com a indicação "Simulado de prontidão". Uma lista de alertas de incidentes aparece na página de detalhes dos alertas.
 +
 image:screen-alerts-readiness-details.png["Página de detalhes de alertas mostrando o alerta de exercício de prontidão"]
 
@@ -121,8 +132,15 @@ Ao analisar o incidente, considere:
 +
 Se a gravidade indicar que um usuário é suspeito de atividade maliciosa, revise o nome do usuário. Você também podelink:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["bloquear o usuário."]
 
-* Atividade de arquivos versus taxas esperadas. Isso inclui taxa de leitura/gravação, criação de arquivos, renomeação de arquivos e exclusão.
-* A lista dos arquivos afetados. Observe as extensões que podem estar causando o ataque.
+* Analise a atividade do arquivo e os processos suspeitos:
++
+** Veja os dados detectados em comparação com os dados esperados.
+** Observe a taxa de criação de arquivos detectada em comparação com a taxa esperada.
+** Observe a taxa de renomeação de arquivos detectada em comparação com a taxa esperada.
+** Observe a taxa de exclusão em comparação com a taxa esperada.
+
+
+* Analise a lista de arquivos afetados. Observe as extensões que podem estar causando o ataque.
 * Determine o impacto e a amplitude do ataque analisando o número de arquivos e diretórios afetados.
 
 

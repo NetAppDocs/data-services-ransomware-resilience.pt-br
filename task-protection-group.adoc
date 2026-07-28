@@ -23,6 +23,8 @@ NetApp Ransomware Resilience oferece grupos de proteção para facilitar o geren
 
 Você pode criar grupos independentemente do status de proteção (ou seja, grupos não protegidos e grupos protegidos). Ao adicionar uma política de proteção a um grupo de proteção, a nova política substitui qualquer política existente, incluindo políticas gerenciadas NetApp Backup and Recovery.
 
+As cargas de trabalho em um grupo de proteção devem ser do mesmo tipo de carga de trabalho; ou seja, você não pode misturar cargas de trabalho de bloco e de sistema de arquivos. As cargas de trabalho também devem pertencer ao mesmo tipo de sistema. Por exemplo, um grupo de proteção pode incluir todas as cargas de trabalho de sistema de arquivos ONTAP locais; você não pode adicionar cargas de trabalho do Amazon FSx for NetApp ONTAP ao mesmo grupo de proteção.
+
 .Passos
 . No menu Resiliência contra Ransomware, selecione *Proteção*.
 +
@@ -37,6 +39,7 @@ image:screen-protection-groups.png["Página de grupos de proteção"]
 image:screen-protection-groups-add.png["Adicionar página de grupo de proteção"]
 
 . Digite um nome para o grupo de proteção.
+. Selecione o **Tipo de carga de trabalho** (bloco ou sistema de arquivos) e o **Tipo de sistema**.
 . Selecione as cargas de trabalho a serem adicionadas ao grupo.
 +
 
@@ -66,7 +69,10 @@ TIP: Ao revisar o painel de proteção no Ransomware Resilience, você pode clas
 [[edit-group-protection]]
 === Editar proteção de grupo
 
-Você pode alterar a política de detecção em um grupo existente.
+${post_edited_translations.segment}
+
+
+NOTE: Se um grupo de proteção foi criado antes de agosto de 2026 e inclui cargas de trabalho de tipos diferentes (por exemplo, mistura cargas de trabalho de bloco e de sistema de arquivos) ou de tipos de sistema diferentes, você não pode adicionar novas cargas de trabalho ao grupo de proteção. Você pode remover cargas de trabalho para garantir que haja apenas um tipo de carga de trabalho e sistema presente, então poderá adicionar cargas de trabalho. Essa alteração foi feita para garantir que as estratégias de proteção contra ransomware sejam aplicadas de forma uniforme em todos os tipos de carga de trabalho e sistemas.
 
 .Passos
 . No menu Resiliência contra Ransomware, selecione *Proteção*.

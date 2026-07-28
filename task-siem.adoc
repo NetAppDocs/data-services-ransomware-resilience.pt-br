@@ -376,6 +376,22 @@ NOTE: Você pode editar a configuração do SIEM depois de criá-la. Você pode 
 
 
 
+[[disable-a-siem-system]]
+== ${post_edited_translations.segment}
+
+Você pode pausar temporariamente o envio de dados de eventos para um sistema SIEM ou excluir o sistema SIEM se não precisar mais do SIEM. Se você pausar o SIEM, poderá retomá-lo a qualquer momento.
+
+.Passos
+. Em NetApp Ransomware Resilience, selecione *Configurações*.
+. No bloco SIEM, selecione *Gerenciar*.
+. Selecione o menu de ações (`...` para o sistema SIEM que você deseja interromper, depois selecione *Pausar* ou *Excluir*.
++
+Se você estiver excluindo, selecione *Excluir* na caixa de diálogo de confirmação para concluir a ação.
+
+
+
+
+
 [[next-steps]]
 == Próximos passos
 

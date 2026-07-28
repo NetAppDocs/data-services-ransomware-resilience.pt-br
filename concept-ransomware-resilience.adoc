@@ -172,7 +172,7 @@ image:diagram-rp-architecture-preview3.png["Diagrama mostrando a arquitetura de 
 [[attack-types]]
 === Tipos de ataque
 
-A resiliência contra ransomware reconhece cinco tipos de ataques:
+A Resiliência contra Ransomware reconhece cinco tipos de ataques de ransomware:
 
 [cols="25,75"]
 |===

@@ -438,18 +438,12 @@
   <block id="004823325f4227a58d03f7083e873d82" category="doc">Realizar um exercício de preparação para ataques de ransomware no NetApp Ransomware Resilience</block>
   <block id="b308768da13f40be05907e77ea473622" category="paragraph">Você pode executar exercícios de prontidão em cargas de trabalho NFS e CIFS (SMB).</block>
   <block id="b6db234bfb48479bbe03939977a7b42c" category="section-title">Configurar um exercício de preparação para ataque de ransomware</block>
-  <block id="008b8b82922cab3483d70d8899f74b5c" category="inline-image-macro">Página do painel mostrando o botão Executar exercício de prontidão</block>
-  <block id="3e3777c0093c940cbceb8cd58c4f9dac" category="paragraph"><block ref="3e3777c0093c940cbceb8cd58c4f9dac" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b5ffafbc91e02195737c6716b418141e" category="admonition">Você pode editar a configuração do exercício de prontidão mais tarde usando a página Configurações.</block>
   <block id="187666a138e7f6f15224af7bcef93040" category="section-title">Iniciar um exercício de prontidão</block>
   <block id="b30d5003eb8b470d6df77c1edbb96724" category="paragraph">Depois de configurar o exercício de prontidão, você pode iniciá-lo.</block>
   <block id="365d382b2d9ecca9b0d40171c69b38ff" category="list-text">Faça um dos seguintes:</block>
   <block id="1e4a43fb392ed69a6d5a047ba0d88826" category="section-title">Responder a um alerta de exercício de prontidão</block>
   <block id="6128067a6b325891717a7cfc23e60bae" category="paragraph">Teste sua prontidão respondendo a um alerta de treinamento de prontidão.</block>
   <block id="e9ebf76599d54488581ec7e47b518db1" category="list-text">No menu Resiliência contra Ransomware, selecione *Alertas*.</block>
-  <block id="fd60ef582b0cdfbc6e56efcd83e3669a" category="paragraph">O Console exibe a página Alertas.  Na coluna ID do alerta, você vê "Exercício de prontidão" ao lado do ID.</block>
-  <block id="bfb2eabf2e2f3750c3b857a9c0072bfa" category="inline-image-macro">Página de alertas mostrando o alerta de exercício de prontidão</block>
-  <block id="fd9f53769c15c2cf878c35f4cbc5a081" category="paragraph"><block ref="fd9f53769c15c2cf878c35f4cbc5a081" category="inline-image-macro-rx" type="image"></block></block>
   <block id="81ec450a746d2846c599b97e0284672a" category="inline-image-macro">Página de detalhes de alertas mostrando o alerta de exercício de prontidão</block>
   <block id="2869923d8a7e4947ee11eff41f3267f2" category="paragraph"><block ref="2869923d8a7e4947ee11eff41f3267f2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c7173a995c95a8992913692d7f8b29a3" category="list-text">Revise os incidentes de alerta.</block>
@@ -763,7 +757,6 @@
   <block id="f724f66c90177c8dac8336038a0778c0" category="list-text">Se sua política de detecção incluir detecção de comportamento do usuário, selecione o coletor de dados que deseja usar e depois **Avançar**.</block>
   <block id="0fc76de5572d1186f1358665dff6076f" category="list-text">Revise as seleções para o grupo de proteção.</block>
   <block id="eda3b9c0a863dbdeae5ac8cceaa9106b" category="section-title">Editar proteção de grupo</block>
-  <block id="109a3a62d5a108a8bab007233de0c046" category="paragraph">Você pode alterar a política de detecção em um grupo existente.</block>
   <block id="ecfb3b2431beb33b5fe2ef7c83f7fb1b" category="list-text">Na página Proteção, selecione a aba *Grupos de proteção* e selecione o grupo cuja política você deseja modificar.</block>
   <block id="a26badbee19c22b720b3fd3aab2acb10" category="list-text">Na página de visão geral do grupo de proteção, selecione *Editar proteção*.</block>
   <block id="5e98270982ef1359c1d22eb22e2503e8" category="list-text">Na visão geral do destino de backup, selecione um destino de backup existente ou **Adicione um novo destino de backup**.</block>
@@ -2337,7 +2330,6 @@
   <block id="0a3365d021ca1305c9f785f72440818f" category="paragraph">As seguintes limitações se aplicam ao Azure NetApp Files:</block>
   <block id="36a3b80be6de8003f2c8586abef3da11" category="section-title">Limitações do Google Cloud NetApp Volumes</block>
   <block id="03b202e92a2bf372a4034ee95f36d4a7" category="paragraph">As seguintes limitações se aplicam ao Google Cloud NetApp Volumes:</block>
-  <block id="fd97f891be8e4ff9fd31d19ccffe7cfa" category="list-text">Estratégias de proteção com replicação não são suportadas atualmente para Google Cloud NetApp Volumes</block>
   <block id="98d8c0e0a6e1f848e25119bcb40e31fb" category="paragraph">Enquanto a análise estiver em andamento, você pode selecionar **Parar**. Parar a análise exige que o processo de restauração completa seja iniciado novamente.</block>
   <block id="3bfca6a430fa87d8630a8459fe8a4aa1" category="section-title">18 de maio de 2026</block>
   <block id="2e16025a0775d82fdc475daeb18a1fe1" category="list-text">Ajuda você a monitorar os resultados.</block>
@@ -2374,7 +2366,6 @@
   <block id="ecac6e0599f3e07a4eb088d4ffb44a1d" category="section-title">Aprimoramentos na detecção do comportamento do usuário</block>
   <block id="d3e94cc4397c8143c67e5435f39f1c9d" category="section-title">Aprimoramento da detecção do comportamento do usuário</block>
   <block id="d8e08662cf603a3c4ee9aaf071e19599" category="section-title">Tipos de ataque</block>
-  <block id="e4234a1d906d9cdc9c698d93ee4a1039" category="paragraph">A resiliência contra ransomware reconhece cinco tipos de ataques:</block>
   <block id="fa56851239948098bf91b1314fa7effe" category="cell">Tipo de ataque</block>
   <block id="c4ffd36782688a65f942ba6948827e83" category="cell">Criptografia (entropia)</block>
   <block id="403901db25c61c486833fc82dd2d7acd" category="cell">Criptografia (comportamento do usuário)</block>
@@ -2543,8 +2534,6 @@
   <block id="67f8bfb01063a7bf1e47bc5de6e7fcb9" category="list-text"><block ref="67f8bfb01063a7bf1e47bc5de6e7fcb9" category="inline-link-macro-rx"></block></block>
   <block id="f210e90dbf694c894759f78cc6d8b222" category="section-title">29 de junho de 2026</block>
   <block id="acd27fc46144e7ce943b73180eb0d3a8" category="paragraph">Execute um exercício de prontidão para ataque de ransomware no NetApp Ransomware Resilience para testar sua preparação para um ataque real. Com o exercício de prontidão, o Ransomware Resilience simula um ataque em uma nova carga de trabalho de amostra, permitindo que você investigue o ataque simulado e realize uma recuperação sem impactar seus dados de produção. O exercício de prontidão ajuda você a se familiarizar com as notificações de alerta e a se preparar para a resposta e recuperação. Você pode executar o exercício com a frequência necessária.</block>
-  <block id="537f8bf1cb00339aa74d0eb9f514b0df" category="list-text">No bloco de treinamento de prontidão, selecione **Configurar**.</block>
-  <block id="58217f0a1f8bf12ba3006ea914fc528d" category="list-text">Selecione o **tipo de exercício de prontidão**.</block>
   <block id="65b568f05372e5de535ad8c825aeb375" category="inline-link-macro">restauração limpa</block>
   <block id="532361f2ad995113181b7cf1df1c5462" category="inline-link-macro">um agente de atividade do usuário</block>
   <block id="74e66061c3c27ae398760dc1adda70dc" category="list-text">Escolha o ambiente onde o teste de prontidão será criado.</block>
@@ -2552,16 +2541,8 @@
   <block id="7cbdec3ae1628850b555ad8bb540d67e" category="list-text">Após selecionar o **Sistema**, escolha a **Storage VM** na lista pré-preenchida.</block>
   <block id="3db3fb74a2b36310b9059bb1932ec7ce" category="list-text">Forneça um nome para a **Nova carga de trabalho de teste**. A carga de trabalho de teste será precedida por "rps_test_".</block>
   <block id="c30460d790febc2f1a11000f7e9dae5a" category="list-text">Se o exercício de prontidão for para recuperação de violação de dados, selecione o **User activity agent** para o ambiente de exercício.</block>
-  <block id="c622e795c00706524901f4150a5ebe4e" category="inline-image-macro">Captura de tela das opções de configuração do exercício de prontidão.</block>
-  <block id="f4f81b5211932d1ec08f7bbee3d205fe" category="paragraph"><block ref="f4f81b5211932d1ec08f7bbee3d205fe" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="022d85fe9248458ef65cf16481972329" category="list-text">Para iniciar o exercício:</block>
-  <block id="81107e8f37cdb96dee7eb88d136b8e27" category="list-text">No painel de controle de NetApp Ransomware Resilience, selecione o botão *Executar teste de prontidão* no canto superior direito.</block>
-  <block id="b3833f107edd43c29b6874a2a10bef7a" category="list-text">Ou acesse **Configurações**. No bloco Readiness drill, selecione *Iniciar*.</block>
-  <block id="3798ead7c288ba8d157f0c0b116976de" category="list-text">Selecione o alerta com a indicação "Readiness drill".</block>
   <block id="aa888903a6021760fd560a3f35a5fe39" category="paragraph">Ao analisar o incidente, considere:</block>
   <block id="aa823a078e061b627817667be59a3966" category="list-text">A gravidade potencial do ataque.</block>
-  <block id="b20c07ab3d395d21be11ec99cd4f86bc" category="list-text">Atividade de arquivos versus taxas esperadas. Isso inclui taxa de leitura/gravação, criação de arquivos, renomeação de arquivos e exclusão.</block>
-  <block id="79937840afd2a2e82d05deb4a76fb903" category="list-text">A lista dos arquivos afetados. Observe as extensões que podem estar causando o ataque.</block>
   <block id="993613047b942198cc7322f8e11f7420" category="list-text">Caso seja necessário restaurar a carga de trabalho de teste, selecione **Marcar como restauração necessária** e, em seguida, selecione esse botão novamente na caixa de diálogo de confirmação.</block>
   <block id="d5e852ec035f9425ed8495bf6d48334d" category="list-text">Selecione a carga de trabalho de teste marcada com a etiqueta "Readiness drill" que você deseja restaurar.</block>
   <block id="6fa33edafac526b51cd549a1e05b2a96" category="list-text">Siga as instruções para o estilo de recuperação que você configurou:</block>
@@ -2727,4 +2708,48 @@
   <block id="012f0abca78822d24d27455403c3d089" category="list-text">agentlogin.cs01-ap-1.cloudinsights.netapp.com/br/</block>
   <block id="dcac1ae04e45c773239f95ecd0c5f082" category="cell">389(LDAP) 636 (LDAPS / start-tls)</block>
   <block id="c44e1219325e37378db9611536ddafc3" category="cell">Comunicação do ONTAP para o agente de atividade do usuário para eventos Fpolicy. Essas portas devem ser abertas para o agente de atividade do usuário para que o ONTAP possa enviar eventos a ele, incluindo qualquer firewall no próprio agente de atividade do usuário (se houver). + **NOTA:** você não precisa reservar *todas* essas portas, mas as portas que você reservar para isso devem estar dentro deste intervalo. Recomenda-se começar reservando 100 portas e aumentar se necessário.</block>
+  <block id="752cfb7f100699ed10b934470fc8824c" category="doc">${post_edited_translations.segment}</block>
+  <block id="3a53d7e702e0596f76d0deb9f8cc03ea" category="paragraph">A Resiliência contra Ransomware agora exige que os grupos de proteção incluam apenas um tipo de carga de trabalho e um tipo de sistema. Ao criar um novo grupo de proteção, você deve designar tanto o tipo de carga de trabalho (sistema de arquivos ou bloco) quanto o sistema para a carga de trabalho. Essa melhoria garante que a estratégia de proteção contra ransomware escolhida para o grupo de proteção possa ser aplicada com sucesso a todas as cargas de trabalho do grupo.</block>
+  <block id="372c0699ee751a2658f1b4a897349a47" category="paragraph">Se você já possui grupos de proteção que combinam tipos de sistema e de carga de trabalho, pode continuar a usá-los, mas não pode adicionar cargas de trabalho ao grupo de proteção.</block>
+  <block id="9cc8304f699313927313d2034fff7636" category="paragraph">Para obter mais informações, consulte <block ref="6971a647ce964528556f81913b109378" category="inline-link-macro-rx"></block>.</block>
+  <block id="3813b173292c59d50038bdf05c6b0021" category="section-title">Aprimoramento do treinamento de prontidão</block>
+  <block id="cf649f651dc2f032117c490236422d53" category="paragraph">O Ransomware Resilience agora permite que você realize simulações de prontidão com base no tipo de ataque. O Ransomware Resilience detecta cinco tipos de ataques, e você pode realizar simulações de prontidão para cada um deles para simular o ataque e o processo de recuperação e entender sua prontidão para um ataque de ransomware.</block>
+  <block id="400f918ffe7626d9fd96dbfc4fa0f591" category="paragraph">Para obter mais informações, consulte <block ref="70ab6610cf4ffc0f4f5683c14443a025" category="inline-link-macro-rx"></block>.</block>
+  <block id="363260f41aed8104ffe114ccda875937" category="section-title">Pausar ou excluir um sistema SIEM</block>
+  <block id="b18d1990e5bda04c0ed4210a1113e197" category="paragraph">A Resiliência contra Ransomware agora inclui opções na interface do usuário para pausar ou excluir um sistema SIEM. Essa melhoria facilita a desativação temporária do sistema para solução de problemas ou manutenção ou sua remoção completa.</block>
+  <block id="90c6a30d04a39029a6e718b3311fb6ab" category="inline-link-macro">${post_edited_translations.segment}</block>
+  <block id="904e41b296efab284eaa1062cf1e6a27" category="paragraph">Para obter mais informações, consulte <block ref="1d48f23238788ac75029406ac49f8f92" category="inline-link-macro-rx"></block>.</block>
+  <block id="684a7ad3aa334bfb6a33e395013bd6dc" category="paragraph">A Resiliência contra Ransomware reconhece cinco tipos de ataques de ransomware:</block>
+  <block id="c561c7b7a5170672935dea9403fc0a6f" category="inline-link-macro">Webhooks DII</block>
+  <block id="ce4bce909d8d6789b9f388dbbef0758a" category="admonition">Se você configurou Workload Security, pode configurar alertas através de <block ref="23692858bbea3b07ede2665f2c7f119e" category="inline-link-macro-rx"></block>.</block>
+  <block id="c6bd820ffcfcad26c449f0454fae72c1" category="list-text">Estratégias de proteção com replicação não são suportadas atualmente para Google Cloud NetApp Volumes</block>
+  <block id="392d723534b3a09775f3b6831eba4f37" category="section-title">Limitações de armazenamento SAN</block>
+  <block id="eecebb362641b58fec88bb08c4168447" category="paragraph">As seguintes limitações se aplicam às cargas de trabalho SAN (armazenamento em blocos):</block>
+  <block id="aff0472c8383011d738831a8c39c42c6" category="list-text">O Ransomware Resilience não oferece suporte atualmente a cargas de trabalho SAN do Google Cloud NetApp Volumes.</block>
+  <block id="2d2a397baa743b0954cf57d074ff1a05" category="list-text">Quando o Ransomware Resilience gera avisos para cargas de trabalho SAN, eles são baseados apenas em alta entropia.</block>
+  <block id="41bc5402792c9ae6e031743791c37485" category="list-text">As cargas de trabalho SAN só podem ser restauradas usando um <block ref="f4ee3b399c8cc5fca837364c0d9badb9" category="inline-link-macro-rx"></block>. A restauração limpa não está disponível atualmente para cargas de trabalho SAN.</block>
+  <block id="2428514fe4a71be9aaa049c0588b7a22" category="paragraph">Antes de executar uma simulação, você deve configurar o exercício de prontidão. Você deve criar o exercício de prontidão para um tipo específico de ataque de ransomware. Ransomware Resilience reconhece cinco tipos de ataques:</block>
+  <block id="e820571d07203de22d81bf2d3a43c57d" category="list-text">No cartão de treinamento de prontidão na página Configurações, selecione *Configurar*.</block>
+  <block id="5a6ea2c21bfdd4f145b28691ccbbba4f" category="paragraph">O Console exibe a página Configure readiness drill.</block>
+  <block id="f39a3376d8471d16df7b03506f1e81b3" category="inline-image-macro">Configurar página de teste de prontidão</block>
+  <block id="4733f8632e3639026823ab315aa1fde4" category="paragraph"><block ref="4733f8632e3639026823ab315aa1fde4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="041d149b109ce93c233e52cd24f679bf" category="list-text">Selecione o *tipo de ataque de ransomware*.</block>
+  <block id="3e3abe279e1b4b9cb995944aa686b70e" category="admonition">Você pode editar a configuração do exercício de prontidão depois na página de Configurações.</block>
+  <block id="cd1d22ed0befcc45c91a35f2cfdb7c98" category="list-text">Na página Configurações, selecione *Iniciar*.</block>
+  <block id="918afe8d47cac8e65affe228df4d1798" category="list-text">Selecione o alerta com a indicação "Simulado de prontidão". Uma lista de alertas de incidentes aparece na página de detalhes dos alertas.</block>
+  <block id="d1a6a8bb73f911c1ba89071429162c43" category="list-text">Analise a atividade do arquivo e os processos suspeitos:</block>
+  <block id="fdb29353d86a86580fc253dc319e3e0b" category="list-text">Veja os dados detectados em comparação com os dados esperados.</block>
+  <block id="929c013ec98095ed1024dac131501e30" category="list-text">Observe a taxa de criação de arquivos detectada em comparação com a taxa esperada.</block>
+  <block id="1a1d9c1ba30af27c48d2816231dc83e8" category="list-text">Observe a taxa de renomeação de arquivos detectada em comparação com a taxa esperada.</block>
+  <block id="452eacf856e21da57eb379e95122df3c" category="list-text">Observe a taxa de exclusão em comparação com a taxa esperada.</block>
+  <block id="f86fe9463862bcb6c0a89b3fdbb1028b" category="list-text">Analise a lista de arquivos afetados. Observe as extensões que podem estar causando o ataque.</block>
+  <block id="e7830468e161b7991b165f7f665b33d1" category="paragraph">As cargas de trabalho em um grupo de proteção devem ser do mesmo tipo de carga de trabalho; ou seja, você não pode misturar cargas de trabalho de bloco e de sistema de arquivos. As cargas de trabalho também devem pertencer ao mesmo tipo de sistema. Por exemplo, um grupo de proteção pode incluir todas as cargas de trabalho de sistema de arquivos ONTAP locais; você não pode adicionar cargas de trabalho do Amazon FSx for NetApp ONTAP ao mesmo grupo de proteção.</block>
+  <block id="b7b39081fc845a35c1a59f4b6fc016e8" category="list-text">Selecione o **Tipo de carga de trabalho** (bloco ou sistema de arquivos) e o **Tipo de sistema**.</block>
+  <block id="fb1317cc51c838fac76b98177912063f" category="paragraph">${post_edited_translations.segment}</block>
+  <block id="178f74ca677d1dd5ce9bba8b91d1914f" category="admonition">Se um grupo de proteção foi criado antes de agosto de 2026 e inclui cargas de trabalho de tipos diferentes (por exemplo, mistura cargas de trabalho de bloco e de sistema de arquivos) ou de tipos de sistema diferentes, você não pode adicionar novas cargas de trabalho ao grupo de proteção. Você pode remover cargas de trabalho para garantir que haja apenas um tipo de carga de trabalho e sistema presente, então poderá adicionar cargas de trabalho. Essa alteração foi feita para garantir que as estratégias de proteção contra ransomware sejam aplicadas de forma uniforme em todos os tipos de carga de trabalho e sistemas.</block>
+  <block id="75cd9bb10cb7645a7eb4cd70d1070213" category="paragraph">Você pode pausar temporariamente o envio de dados de eventos para um sistema SIEM ou excluir o sistema SIEM se não precisar mais do SIEM. Se você pausar o SIEM, poderá retomá-lo a qualquer momento.</block>
+  <block id="1b143209e630713aded7a96e6e2719fb" category="list-text">No bloco SIEM, selecione *Gerenciar*.</block>
+  <block id="4f453d8498e817d93a2c0554465ba5c9" category="list-text">Selecione o menu de ações <block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block> para o sistema SIEM que você deseja interromper, depois selecione *Pausar* ou *Excluir*.</block>
+  <block id="38ddf84a5ab8383176b784d60f3f4942" category="paragraph">Se você estiver excluindo, selecione *Excluir* na caixa de diálogo de confirmação para concluir a ação.</block>
+  <block id="24cebcb9541a6a3a7ee2888a734c6961" category="section-title">27 de julho de 2026</block>
 </blocks>
