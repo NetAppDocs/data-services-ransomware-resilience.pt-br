@@ -55,30 +55,30 @@ Antes de executar uma simulação, você deve configurar o exercício de prontid
 
 | Comportamento suspeito do usuário | A resiliência a ransomware identifica comportamentos anômalos que vão além do escopo de violação de dados, destruição de dados ou criptografia. 
 |===
+
+NOTE: Você deve configurar link:concept-user-behavior.html["detecção de atividade do usuário"] para detectar criptografia (comportamento do usuário), violação de dados, destruição de dados e ataques com comportamento suspeito do usuário.
+
 *Função de console necessária* Para executar esta tarefa, você precisa da link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Superadministrador"^] ou função de administrador do Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^].
+
+.Antes de começar
+* Para configurar um exercício de prontidão para qualquer tipo de ataque de ransomware que não seja criptografia (entropia), você deve ter configurado link:concept-user-behavior.html["detecção de atividade do usuário"].
+* Ao criar um teste de prontidão para uma carga de trabalho CIFS, você deve inserir as credenciais do usuário. Você deve criar um usuário de teste dedicado, que não seja de produção, para os testes de prontidão, especialmente ao testar tipos de ataque relacionados à atividade do usuário (ou seja, violação de dados). Se você usar um usuário de produção real, o Ransomware Resilience sinaliza o usuário, o que pode resultar no bloqueio do usuário ao acesso aos dados de produção. Se você usar um usuário de teste, todos os usuários mantêm o acesso normal aos dados.
+
 
 .Passos
 . Em Resiliência a Ransomware, selecione **Configurações**.
 . No cartão de treinamento de prontidão na página Configurações, selecione *Configurar*.
 +
-O Console exibe a página Configure readiness drill.
-
-+
 image:screen-settings-alert-drill-configure.png["Configurar página de teste de prontidão"]
 
 . Selecione o *tipo de ataque de ransomware*.
-+
-** **Recuperação personalizada**: Responda a um ataque de criptografia (entropia) com um link:rp-use-recover.html["restauração personalizada"] onde você configura o ponto de recuperação.
-** **Restauração limpa**: Responda a um ataque de criptografia (entropia) com um link:task-clean-restore-recover.html["restauração limpa"] processo de recuperação, que orienta você para pontos de recuperação otimizados.
-** **Recuperação de violação de dados**: você precisa ter configurado link:suspicious-user-activity.html["um agente de atividade do usuário"] antes de habilitar este tipo de simulação.
-
-
 . Escolha o ambiente onde o teste de prontidão será criado.
 +
-.. Selecione o **Agente do console** e o **Sistema**.
-.. Após selecionar o **Sistema**, escolha a **Storage VM** na lista pré-preenchida.
-.. Forneça um nome para a **Nova carga de trabalho de teste**. A carga de trabalho de teste será precedida por "rps_test_".
-.. Se o exercício de prontidão for para recuperação de violação de dados, selecione o **User activity agent** para o ambiente de exercício.
+.. Selecione o **Console agent** e o **Primary system**.
+.. Após escolher o sistema principal, escolha a **Storage VM** na lista pré-preenchida.
+.. Se a máquina virtual de armazenamento usar o protocolo CIFS, insira as credenciais do Active Directory. Opcionalmente, você pode inserir o **domínio do Active Directory**; você deve inserir o **nome de usuário** e a **senha**. Recomenda-se que você insira as credenciais de um usuário de teste dedicado.
+.. Forneça um nome para a **Nova carga de trabalho de teste**. A carga de trabalho de teste será precedida por  `rps_test_`.
+.. Se o exercício de prontidão for para um tipo de ataque de atividade do usuário, selecione o **User activity agent** para o ambiente de exercício.
 
 
 . Selecione *Salvar*.

@@ -21,3 +21,5 @@
 
 | Comportamento suspeito do usuário | A resiliência a ransomware identifica comportamentos anômalos que vão além do escopo de violação de dados, destruição de dados ou criptografia. 
 |===
+
+NOTE: Você deve configurar link:concept-user-behavior.html["detecção de atividade do usuário"] para detectar criptografia (comportamento do usuário), violação de dados, destruição de dados e ataques com comportamento suspeito do usuário.
