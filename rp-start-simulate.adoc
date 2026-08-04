@@ -62,7 +62,7 @@ NOTE: Você deve configurar link:concept-user-behavior.html["detecção de ativi
 
 .Antes de começar
 * Para configurar um exercício de prontidão para qualquer tipo de ataque de ransomware que não seja criptografia (entropia), você deve ter configurado link:concept-user-behavior.html["detecção de atividade do usuário"].
-* Ao criar um teste de prontidão para uma carga de trabalho CIFS, você deve inserir as credenciais do usuário. Você deve criar um usuário de teste dedicado, que não seja de produção, para os testes de prontidão, especialmente ao testar tipos de ataque relacionados à atividade do usuário (ou seja, violação de dados). Se você usar um usuário de produção real, o Ransomware Resilience sinaliza o usuário, o que pode resultar no bloqueio do usuário ao acesso aos dados de produção. Se você usar um usuário de teste, todos os usuários mantêm o acesso normal aos dados.
+* Ao criar um teste de prontidão para uma carga de trabalho CIFS, você deve inserir as credenciais do usuário. Você deve criar um usuário de teste dedicado, que não seja de produção, para os testes de prontidão, especialmente ao testar tipos de ataque relacionados à atividade do usuário (ou seja, violação de dados). Se você usar um usuário de produção real e esse usuário apresentar comportamento suspeito em outros volumes de produção, esses alertas poderão aparecer no teste de prontidão em vez de gerar um alerta real.
 
 
 .Passos
