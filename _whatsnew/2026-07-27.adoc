@@ -1,11 +1,11 @@
-= ${post_edited_translations.segment}
+= Padronize grupos de proteção com base na carga de trabalho e no tipo de sistema
 :allow-uri-read: 
 
 
 
 
 [[standardize-protection-groups-based-on-workload-and-system-type]]
-=== ${post_edited_translations.segment}
+=== Padronize grupos de proteção com base na carga de trabalho e no tipo de sistema
 
 A Resiliência contra Ransomware agora exige que os grupos de proteção incluam apenas um tipo de carga de trabalho e um tipo de sistema. Ao criar um novo grupo de proteção, você deve designar tanto o tipo de carga de trabalho (sistema de arquivos ou bloco) quanto o sistema para a carga de trabalho. Essa melhoria garante que a estratégia de proteção contra ransomware escolhida para o grupo de proteção possa ser aplicada com sucesso a todas as cargas de trabalho do grupo.
 
@@ -29,4 +29,4 @@ Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-
 
 A Resiliência contra Ransomware agora inclui opções na interface do usuário para pausar ou excluir um sistema SIEM. Essa melhoria facilita a desativação temporária do sistema para solução de problemas ou manutenção ou sua remoção completa.
 
-Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html#disable-a-siem-system["${post_edited_translations.segment}"^].
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html#disable-a-siem-system["Desativar um sistema SIEM"^].

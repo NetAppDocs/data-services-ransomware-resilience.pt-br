@@ -69,7 +69,7 @@ TIP: Ao revisar o painel de proteção no Ransomware Resilience, você pode clas
 [[edit-group-protection]]
 === Editar proteção de grupo
 
-${post_edited_translations.segment}
+Você pode alterar a política de detecção em um grupo existente ou adicionar e remover cargas de trabalho.
 
 
 NOTE: Se um grupo de proteção foi criado antes de agosto de 2026 e inclui cargas de trabalho de tipos diferentes (por exemplo, mistura cargas de trabalho de bloco e de sistema de arquivos) ou de tipos de sistema diferentes, você não pode adicionar novas cargas de trabalho ao grupo de proteção. Você pode remover cargas de trabalho para garantir que haja apenas um tipo de carga de trabalho e sistema presente, então poderá adicionar cargas de trabalho. Essa alteração foi feita para garantir que as estratégias de proteção contra ransomware sejam aplicadas de forma uniforme em todos os tipos de carga de trabalho e sistemas.

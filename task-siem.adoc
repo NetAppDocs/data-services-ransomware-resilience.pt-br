@@ -377,7 +377,7 @@ NOTE: Você pode editar a configuração do SIEM depois de criá-la. Você pode 
 
 
 [[disable-a-siem-system]]
-== ${post_edited_translations.segment}
+== Desativar um sistema SIEM
 
 Você pode pausar temporariamente o envio de dados de eventos para um sistema SIEM ou excluir o sistema SIEM se não precisar mais do SIEM. Se você pausar o SIEM, poderá retomá-lo a qualquer momento.
 
