@@ -1,0 +1,113 @@
+---
+sidebar: sidebar 
+permalink: troubleshoot-user-activity.html 
+keywords: user activity detection, troubleshoot 
+summary: Caso você encontre algum problema ao instalar o agente de atividade do usuário no NetApp Ransomware Resilience, revise os seguintes cenários comuns e suas soluções. 
+---
+= Solucione problemas do agente de atividade do usuário no NetApp Ransomware Resilience
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Se você encontrar algum problema ao instalar ou executar o agente de atividade do usuário no NetApp Ransomware Resilience, revise os seguintes cenários comuns e suas soluções.
+
+
+
+[[installation-issues]]
+== Problemas de instalação
+
+[cols="20,80"]
+|===
+
+
+| Problema | Resolução 
+
+
+| A instalação do agente de atividade do usuário falha ao criar a pasta /opt/netapp/cloudsecure/agent/logs/agent.log e o arquivo install.log não fornece informações relevantes. | Esse erro ocorre durante a inicialização do agente. O erro não é registrado nos arquivos de log porque ocorre antes da inicialização. O erro é redirecionado para a saída padrão. Use o comando  `journalctl -u cloudsecure-agent.service` para revisar o erro. 
+
+
+| A instalação do agente de atividade do usuário falha com o erro "Esta distribuição Linux não é compatível. Encerrando a instalação." | Este erro indica que seu sistema não atende aos requisitos do sistema. Verifique os requisitos do sistema e faça as atualizações necessárias antes de tentar a instalação. 
+
+
+| A instalação do agente de atividade do usuário falha com o erro "-bash: unzip: command not found". | Certifique-se de ter instalado o unzip; se o Yum estiver instalado, execute  `yum install unzip` para instalar o unzip. Em seguida, tente a instalação novamente. 
+
+
+| A máquina virtual do agente de atividade do usuário está atrás de um servidor proxy Zscaler e a instalação está falhando. | Desative a inspeção SSL no servidor proxy Zscaler para a URL *.cloudinsights.netapp.com/br/. 
+
+
+| Ao instalar o agente, a instalação trava após a descompactação. | Se o  `chmod 755 -Rf` comando falhar durante a instalação do agente, significa que está sendo executado por um usuário  `sudo` sem privilégios de root, com arquivos no diretório de trabalho que pertencem a outro usuário, e as permissões não podem ser alteradas. Como resultado, a instalação falha. Para resolver, crie um novo diretório chamado "cloudsecure", acesse esse diretório, copie e cole o comando de instalação completo  `token=... ./cloudsecure-agent-install.sh` e pressione Enter. A instalação deve prosseguir. Se a instalação ainda falhar, abra um chamado de suporte. 
+
+
+| O script cloudsecure-agent-symptom-collector.sh falha com o erro "ERROR: Failed to create /tmp/cloudsecure-agent-symptoms.zip" | Instale a ferramenta zip com o comando  `yum install zip` e, em seguida, execute  `cloudsecure-agent-symptom-collector.sh` novamente. 
+
+
+| A instalação do agente de atividade do usuário falha com o erro "useradd: não foi possível criar o diretório /home/cssys." | Não foi possível criar o diretório de login do usuário no diretório base devido a um erro de permissões. Crie um usuário cssys e adicione seu diretório de login manualmente com o comando  `sudo useradd <user_name> -m -d HOME_DIR`. Neste comando,  `-m`cria o diretório base caso não exista;  `-d`designa HOME_DIR como o diretório de login. 
+|===
+
+
+[[post-installation-issues]]
+== Problemas pós-instalação
+
+[cols="20,80"]
+|===
+
+
+| Problema | Resolução 
+
+
+ a| 
+O agente de atividade do usuário não está em execução após a instalação. Após executar o comando  `systemctl status cloudsecure-agent.service`, a saída exibida é:
+
+[source]
+----
+[root@demo ~]# systemctl status cloudsecure-agent.service +
+agent.service - Workload Security Agent Daemon Service
+Loaded: loaded (/usr/lib/systemd/system/cloudsecure-agent.service; enabled; vendor preset: disabled) +
+Active: activating (auto-restart) (Result: exit-code) since Tue 2021-08-03 21:12:26 PDT; 2s ago +
+Process: 25889 ExecStart=/bin/bash /opt/netapp/cloudsecure/agent/bin/cloudsecure-agent (code=exited status=126) +
+Main PID: 25889 (code=exited, status=126), +
+Aug 03 21:12:26 demo systemd[1]: cloudsecure-agent.service: main process exited, code=exited, status=126/n/a +
+Aug 03 21:12:26 demo systemd[1]: Unit cloudsecure-agent.serve
+---- a| 
+Se /opt/netapp for um ponto de montagem NFS e o usuário cssys não tiver acesso a essa pasta, a instalação falhará. O usuário cssys é um usuário local criado pelo instalador do agente de atividade do usuário que pode não ter permissão para acessar o compartilhamento montado.
+
+Você pode verificar as permissões tentando acessar  `/opt/netapp/cloudsecure/agent/bin/cloudsecure-agent` usando o usuário cssys. Se for exibida a mensagem "Permissão negada", as permissões apropriadas não foram configuradas. Instale em um diretório local da máquina em vez de uma pasta montada.
+
+
+
+| O agente estava conectado por meio de um servidor proxy, mas o servidor proxy mudou desde a instalação. Como posso alterar a configuração do servidor proxy?  a| 
+Edite as configurações de servidor proxy no agent.properties:
+
+.Passos
+. Altere para a pasta que contém o arquivo de propriedades: `cd /opt/netapp/cloudsecure/conf`
+. Abra o arquivo agent.properties em um editor de texto.
+. Adicione ou modifique as seguintes linhas:
++
+[source]
+----
+AGENT_PROXY_HOST=<proxy.vm.url> +
+AGENT_PROXY_PORT=<portValue> +
+AGENT_PROXY_USER=<user> +
+AGENT_PROXY_PASSWORD=<password>
+----
+. Salve o arquivo.
+. Reinicie o agente: `sudo systemctl restart cloudsecure-agent.service`.
+
+
+
+
+| O agente foi instalado com sucesso e estava em execução, mas parou inesperadamente.  a| 
+.Passos
+. Autentique-se via SSH na máquina do agente para verificar o status do serviço. Verifique o status do serviço do agente via  `sudo systemctl status cloudsecure-agent.service`.
+. Verifique os registros em busca da mensagem "Failed to start Workload Security daemon service."
+. Verifique se o usuário cssys existe na máquina do agente de atividade do usuário. Execute estes comandos para verificar se o usuário e o grupo cssys existem, respectivamente: `sudo id cssys` depois  `sudo groups cssys`.
+. Se o usuário ou grupo não existir, uma política de monitoramento centralizada pode ter excluído o usuário cssys. Crie o usuário e o grupo cssys manualmente executando os seguintes comandos: `sudo useradd cssys` então  `sudo groupadd cssys`.
+. Reinicie o serviço do agente: `sudo systemctl restart cloudsecure-agent.service`.
+
+
+
+
+| O estado do agente de atividade do usuário não está conectado | Reinicie o agente. Autentique-se via SSH na máquina do agente de atividade do usuário e reinicie o agente com o comando  `sudo systemctl restart cloudsecure-agent.service`. Após reiniciar, verifique o status do agente com o comando  `sudo systemctl status cloudsecure-agent.service`. Se a operação de reinicialização for bem-sucedida, a saída exibirá "CONNECTED" 
+|===
