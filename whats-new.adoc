@@ -18,6 +18,20 @@ Saiba o que há de novo no NetApp Ransomware Resilience.
 
 
 
+[[13-august-2026]]
+== 13 de agosto de 2026
+
+
+
+[[delete-a-data-collector]]
+=== Excluir um coletor de dados
+
+O Ransomware Resilience agora permite excluir um coletor de dados. O coletor de dados é criado automaticamente quando você ativa a detecção de atividade do usuário em cargas de trabalho; se o coletor de dados ficar obsoleto, agora você pode excluí-lo manualmente.
+
+Para mais informações, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#delete-a-data-collector["Excluir um coletor de dados"^].
+
+
+
 [[03-august-2026]]
 == 03 de agosto de 2026
 
