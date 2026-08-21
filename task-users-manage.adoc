@@ -11,7 +11,7 @@ summary: Após criar o conector de diretório de usuários no NetApp Ransomware 
 
 
 [role="lead"]
-Após configurar o monitoramento do comportamento do usuário no NetApp Ransomware Resilience, você pode personalizar alertas e gerenciar usuários bloqueados. Personalizar os alertas permite que você exclua usuários ou caminhos de arquivos específicos da geração de um alerta. Bloquear usuários serve para responder a eventos de ransomware e impedir atividades maliciosas de usuários.
+Após configurar a detecção de atividade do usuário no NetApp Ransomware Resilience, você pode gerenciar usuários bloqueados e personalizar alertas. Você pode excluir usuários ou caminhos de arquivos específicos dos alertas e bloquear usuários em resposta a eventos de ransomware para ajudar a prevenir atividades maliciosas.
 
 Você precisa ter link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent["configurou um agente de atividade do usuário, habilitou uma política com detecção de atividade do usuário e criou um conector de diretório de usuários"] para bloquear usuários.
 

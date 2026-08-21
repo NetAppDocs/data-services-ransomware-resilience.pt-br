@@ -11,7 +11,7 @@ summary: NetApp Ransomware Resilience oferece um script que, ao ativar o monitor
 
 
 [role="lead"]
-Ao configurar o monitoramento da atividade do usuário no NetApp Ransomware Resilience, você pode executar um script de teste para simular eventos de comportamento suspeito do usuário.
+Ao configurar o monitoramento da atividade do usuário no NetApp Ransomware Resilience, você pode executar um script de teste para simular eventos de comportamento suspeito do usuário para validação e teste.
 
 Este script foi desenvolvido para simular ataques de ransomware baseados em criptografia realizados por usuários conhecidos. Com comandos adicionais, você também pode simular ataques de violação de dados ou destruição de dados.
 

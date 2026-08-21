@@ -12,9 +12,9 @@ summary: 'Após um ataque, o NetApp Ransomware Resilience verifica se os dados d
 
 
 [role="lead"]
-Após as cargas de trabalho serem marcadas como "Restauração necessária", NetApp Ransomware Resilience recomenda um ponto de recuperação real (RPA) e orquestra o fluxo de trabalho para uma recuperação resistente a falhas.
+Após uma carga de trabalho ser marcada como *Restauração necessária*, o NetApp Ransomware Resilience recomenda um ponto de recuperação real (RPA) e orienta você durante o fluxo de trabalho de recuperação.
 
-* Se a máquina virtual for gerenciada pelo NetApp Backup and Recovery ou NetApp Ransomware Resilience, o NetApp Ransomware Resilience realiza uma restauração consistente com falhas, na qual todos os dados que estavam no volume naquele mesmo momento são restaurados, por exemplo, se o sistema travar.
+* Se a máquina virtual for gerenciada pelo NetApp Backup and Recovery ou pelo NetApp Ransomware Resilience, o NetApp Ransomware Resilience realiza uma restauração consistente com falhas, de forma que todos os dados do mesmo ponto no tempo sejam restaurados, como ocorreria após uma falha do sistema.
 +
 Você pode restaurar a carga de trabalho selecionando todos os volumes, volumes específicos ou arquivos específicos.
 

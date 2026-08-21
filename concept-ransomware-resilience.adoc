@@ -14,7 +14,7 @@ summary: O Ransomware Resilience permite que você visualize informações relev
 
 
 [role="lead"]
-Ataques de ransomware podem bloquear o acesso aos seus dados e os invasores podem pedir resgate em troca da liberação de dados ou descriptografia.  De acordo com o IDC, não é incomum que vítimas de ransomware sofram múltiplos ataques de ransomware.  O ataque pode interromper o acesso aos seus dados por um dia ou várias semanas.
+A NetApp Ransomware Resilience ajuda você a avaliar sua prontidão contra ransomware, proteger cargas de trabalho, detectar ameaças e recuperar dados. Ela fornece alertas e etapas de remediação recomendadas para melhorar sua postura de segurança.
 
 NetApp Ransomware Resilience protege seus dados contra ataques de ransomware. Na Ransomware Resilience, a proteção está disponível para compartilhamentos de arquivos para storage NAS (protocolos NFS e CIFS) e storage SAN (protocolos FC, iSCSI e NVMe). A Ransomware Resilience é compatível com storage no local, bem como Cloud Volumes ONTAP para Amazon Web Services, Cloud Volumes ONTAP para Google Cloud, Cloud Volumes ONTAP para Microsoft Azure, Azure NetApp Files e Amazon FSx for NetApp ONTAP em toda a NetApp Console. Você pode fazer backup de dados para Amazon Web Services, Google Cloud, Microsoft Azure e NetApp StorageGRID.
 

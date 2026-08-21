@@ -12,9 +12,9 @@ summary: A detecção de atividade do usuário no Ransomware Resilience permite 
 
 
 [role="lead"]
-NetApp Ransomware Resilience a detecção de comportamento do usuário ajuda você a prevenir eventos de ransomware em nível de usuário. Para habilitar a detecção de comportamento do usuário no Ransomware Resilience, você deve instalar pelo menos um agente de atividade do usuário, que cria um ambiente de coleta de dados para monitorar o comportamento do usuário em busca de padrões anômalos que se assemelham a eventos de ransomware.
+Utilize a detecção de comportamento do usuário do NetApp Ransomware Resilience para identificar atividades suspeitas que possam indicar ransomware, violação de dados ou eventos de destruição de dados. Para habilitar, instale pelo menos um agente de atividade do usuário para criar o ambiente de coleta de dados.
 
-Um agente de atividade do usuário hospeda um coletor de dados e um conector de diretório de usuários, que enviam dados para um local SaaS para análise.
+Um agente de atividade do usuário hospeda um coletor de dados e um conector de diretório de usuários, que enviam dados para um local na nuvem para análise.
 
 * O **coletor de dados** coleta dados de atividade do usuário do ONTAP. O coletor de dados é criado automaticamente quando você cria uma estratégia de proteção com detecção de comportamento do usuário.
 * O **conector de diretório de usuários** se conecta ao seu diretório para mapear IDs de usuário a nomes de usuário. Você deve configurar o conector de diretório de usuários.
@@ -23,9 +23,9 @@ Um agente de atividade do usuário hospeda um coletor de dados e um conector de 
 O agente de atividade do usuário, o coletor de dados e o conector do diretório de usuários podem ser gerenciados a partir do painel de configurações de Ransomware Resilience.
 
 
-NOTE: Se você já utiliza NetApp Data Infrastructure Insights (DII) Workload Security, é recomendável usar os mesmos agentes do Workload Security para Ransomware Resilience. Você não precisa implantar agentes separados do Workload Security para Ransomware Resilience, porém, o uso dos mesmos agentes do Workload Security requer um relacionamento de pareamento entre a organização do Ransomware Resilience Console e o tenant do DII Storage Workload Security. Entre em contato com seu representante de conta para habilitar esse pareamento.
+NOTE: Se você já utiliza NetApp Data Infrastructure Insights (DII) Workload Security, use os mesmos agentes do Workload Security para a Resiliência a Ransomware. Você não precisa implantar agentes separados do Workload Security para a Resiliência a Ransomware. No entanto, usar os mesmos agentes do Workload Security exige uma relação de emparelhamento entre a organização do Console de Resiliência a Ransomware e o tenant do DII Storage Workload Security. Entre em contato com seu representante de conta para habilitar esse emparelhamento.
 
-Se você _não_ estiver usando DII, siga as instruções de configuração aqui.
+Se você não estiver usando o DII, siga as instruções de configuração aqui.
 
 
 
@@ -44,7 +44,7 @@ Garanta que cada função seja aplicada no nível organizacional.
 [[create-a-user-activity-agent]]
 == Crie um agente de atividade do usuário
 
-Os agentes de atividade do usuário são ambientes executáveis para link:#add-a-data-collector["coletores de dados"]; coletores de dados compartilham eventos de atividade do usuário com o Ransomware Resilience. Você deve criar pelo menos um agente de atividade do usuário para habilitar a detecção de atividade do usuário.
+Os agentes de atividade do usuário são ambientes executáveis para link:#add-a-data-collector["coletores de dados"] que compartilham eventos de atividade do usuário com o Ransomware Resilience. Você deve criar pelo menos um agente de atividade do usuário para habilitar a detecção de atividade do usuário.
 
 .Passos
 . Se esta for a primeira vez que você cria um agente de atividade do usuário, acesse o **Painel**. No bloco **Atividade do usuário**, selecione **Ativar**.

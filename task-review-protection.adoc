@@ -12,7 +12,7 @@ summary: Você pode proteger cargas de trabalho contra ataques de ransomware atr
 
 
 [role="lead"]
-NetApp Ransomware Resilience's painel de proteção oferece uma visão geral do status de proteção e da prontidão das suas cargas de trabalho. Use o painel de proteção para obter informações sobre o que está protegido, o que precisa de proteção e qual o escopo da proteção.
+Use o painel de proteção no NetApp Ransomware Resilience para revisar o status da proteção das cargas de trabalho, identificar as cargas de trabalho que precisam de atenção e entender sua cobertura geral de proteção.
 
 Assim que você entender o alcance da sua proteção atual, link:rp-use-protect.html["você pode criar e aplicar estratégias de proteção contra ransomware às suas cargas de trabalho"].
 

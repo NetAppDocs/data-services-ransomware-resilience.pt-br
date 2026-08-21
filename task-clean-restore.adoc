@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-clean-restore.html 
 keywords: clean room, clean restore, secure recovery, restore, isolated recovery environment 
-summary: Antes de realizar uma restauração completa no NetApp Ransomware Resilience, você deve criar um ambiente de recuperação isolado para proteger e limpar o ambiente. 
+summary: Antes de realizar uma restauração completa no NetApp Ransomware Resilience, você deve criar um ambiente de recuperação isolado para isolar e limpar o ambiente. 
 ---
 = Configure o ambiente para uma restauração limpa em NetApp Ransomware Resilience
 :hardbreaks:
@@ -35,7 +35,7 @@ A etapa de análise também exibe o número de arquivos revisados, indicando qua
 
 * **PLANO**: Escolha as opções de recuperação fornecidas:
 +
-** _Último ponto de restauração não afetado_: o ponto de restauração mais rápido a partir do snapshot não criptografado mais recente anterior ao ataque
+** _Último ponto de restauração não afetado_: o ponto de restauração mais rápido do snapshot não criptografado mais recente anterior ao ataque
 ** _Perda mínima de dados_: a versão mais recente de cada arquivo não criptografado de diferentes snapshots
 +
 Você também pode visualizar o histórico dos arquivos na etapa de planejamento, para ver quando os ataques de ransomware afetaram os arquivos e como o ponto de recuperação se relaciona temporalmente a esse evento.
@@ -44,7 +44,7 @@ Você também pode visualizar o histórico dos arquivos na etapa de planejamento
 
 * **LIMPEZA**: O NetApp Ransomware Resilience remove o malware do ponto de recuperação. Se algum arquivo não puder ser limpo, ele será excluído da recuperação e colocado em quarentena em um local separado.
 * **RESTAURAR**: NetApp Ransomware Resilience restaura os dados limpos para o ambiente de origem.
-* **FIM**: A NetApp Ransomware Resilience fornece um resumo detalhado do processo e encerra a sala limpa, liberando os recursos provisionados durante a configuração para eliminar custos futuros medidos.
+* **FIM**: O NetApp Ransomware Resilience fornece um resumo detalhado do processo e encerra a clean room, liberando os recursos provisionados durante a configuração para eliminar custos futuros medidos.
 
 
 
@@ -604,7 +604,7 @@ TIP: Se você precisar alterar algum detalhe do IRE, selecione *Configurações*
 Não é possível excluir um IRE com uma operação de restauração ativa; você pode cancelar a operação de restauração ou aguardar até que a restauração seja concluída e então excluir o IRE.
 
 
-IMPORTANT: Ao excluir o IRE, o SVM da sala limpa e o volume de metadados também serão excluídos. Após a exclusão desses ativos, não será mais possível gerar relatórios para a restauração limpa.
+IMPORTANT: Ao excluir o IRE, o SVM da sala limpa e o volume de metadados também são excluídos. Após a exclusão desses ativos, você não poderá mais gerar relatórios para a restauração limpa.
 
 . Acesse as **Configurações**.
 . No cartão de limpeza e recuperação de isolamento, selecione **Manage**.

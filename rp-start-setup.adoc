@@ -12,7 +12,7 @@ summary: Para usar o Ransomware Resilience, siga algumas etapas para configurá-
 
 
 [role="lead"]
-Você pode facilmente implantar o NetApp Ransomware Resilience. Antes de começar, reviselink:rp-start-prerequisites.html["pré-requisitos"] para garantir que seu ambiente esteja pronto.
+Configure o NetApp Ransomware Resilience preparando um destino de backup, revisando os pré-requisitos e configurando o NetApp Console e o agente do Console.
 
 
 
@@ -63,7 +63,7 @@ Para obter detalhes sobre como gerenciar seu armazenamento do Azure no Console, 
 [[set-up-the-netapp-console]]
 == Configurar o NetApp Console
 
-O próximo passo é configurar o Console e a Resiliência contra Ransomware.
+O próximo passo é configurar o NetApp Console e o NetApp Ransomware Resilience.
 
 Análise https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-standard-mode.html["Requisitos do console para o modo padrão"^] .
 
@@ -72,9 +72,9 @@ Análise https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-stan
 [[create-a-console-agent]]
 === Criar um agente de console
 
-Entre em contato com seu representante de vendas da NetApp para experimentar ou usar este serviço.  Então, quando você usar o agente do Console, ele incluirá os recursos apropriados para Resiliência de Ransomware.
+Contate seu representante de vendas da NetApp para experimentar ou usar este serviço. Em seguida, o agente do Console inclui os recursos necessários para o NetApp Ransomware Resilience.
 
-Para criar um agente do Console usando o Ransomware Resilience, entre em contato com o administrador da organização do Console que tem permissões para criar agentes do Console e consulte a documentação que descreve https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["como criar um agente de console"^] .
+Para criar um agente do Console para Resiliência a Ransomware, entre em contato com o administrador da sua organização do Console que tem permissão para criar agentes do Console e consulte  https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["como criar um agente de console"^].
 
 
-NOTE: Se você tiver vários agentes do Console, o Ransomware Resilience verificará os dados de todos os agentes do Console além daquele que é exibido no Console.  Este serviço descobre todos os projetos e todos os agentes do Console associados a esta organização.
+NOTE: Se você tiver vários agentes do Console, o Ransomware Resilience verifica os dados em todos os agentes do Console, não apenas naquele que está sendo exibido no Console. O serviço verifica os dados em todos os projetos e agentes do Console associados à organização.

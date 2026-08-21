@@ -12,7 +12,7 @@ summary: Encontre uma resposta para uma pergunta frequente sobre a NetApp Ransom
 
 
 [role="lead"]
-Estas perguntas frequentes podem ajudar se você estiver apenas procurando uma resposta rápida para uma pergunta sobre o NetApp Ransomware Resilience.
+Use este FAQ para obter respostas rápidas sobre o NetApp Ransomware Resilience.
 
 
 
@@ -28,7 +28,7 @@ Você pode usar os seguintes tipos de licença:
 
 
 .Como habilitar a resiliência a ransomware?
-Você pode acessar o Ransomware Resilience no NetApp Console. Certifique-se de que você tem link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["funções de acesso"] e link:rp-start-prerequisites.html["pré-requisitos"]. Se você configurou com sucesso um agente de console, poderá então... link:rp-start-discover.html["descobrir cargas de trabalho"].
+Você pode acessar a Ransomware Resilience pelo NetApp Console. Certifique-se de que você tem os link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["funções de acesso"] necessários e atende aos link:rp-start-prerequisites.html["pré-requisitos"]. Se você configurou um agente do Console com sucesso, você pode então link:rp-start-discover.html["descobrir cargas de trabalho"].
 
 Para mais informações, consultelink:rp-start-login.html["Resiliência do Access Ransomware"] elink:rp-start-quick-start.html["Guia de início rápido para resiliência a ransomware"] .
 

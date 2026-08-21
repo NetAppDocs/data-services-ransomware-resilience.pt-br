@@ -12,16 +12,16 @@ summary: Se o Ransomware Resilience detectar um possível ataque, um alerta apar
 
 
 [role="lead"]
-Quando NetApp Ransomware Resilience detecta um possível ataque, ele exibe um alerta no painel e no menu Notificações. O Ransomware Resilience tira um instantâneo imediatamente. Ao receber um alerta, revise o risco potencial na guia *Alertas* do Ransomware Resilience para avaliar o impacto em seus dados e prevenir um possível ataque de ransomware.
+Quando o NetApp Ransomware Resilience detecta um possível ataque, ele exibe um alerta no painel de controle e no menu Notificações e captura imediatamente um instantâneo. Analise o alerta na aba *Alertas* para avaliar o risco aos seus dados e decidir sobre uma resposta.
 
 Se o Ransomware Resilience detectar um possível ataque, uma notificação será exibida nas configurações de Notificação do Console e um e-mail será enviado para os endereços configurados. O e-mail inclui informações sobre a gravidade, a carga de trabalho impactada e um link para o alerta na guia *Alerts* do Ransomware Resilience.
 
-Você pode descartar falsos positivos ou decidir recuperar seus dados imediatamente.
+Você pode descartar falsos positivos ou iniciar a recuperação imediatamente.
 
 
 TIP: Se você ignorar o alerta, o Ransomware Resilience aprende esse comportamento, associa-o às operações normais e para de enviar alertas sobre eventos semelhantes.
 
-Para começar a recuperar seus dados, marque o alerta como pronto para recuperação para que seu administrador de armazenamento possa iniciar o processo de recuperação.
+Para iniciar a recuperação, marque o alerta como pronto para recuperação para que o administrador de storage possa iniciar o processo de recuperação.
 
 Cada alerta pode incluir vários incidentes em diferentes volumes e status.  Revise todos os incidentes.
 

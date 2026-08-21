@@ -12,7 +12,7 @@ summary: Certifique-se de atender aos requisitos de licenciamento do Ransomware 
 
 
 [role="lead"]
-NetApp Ransomware Resilience oferece diferentes planos de licenciamento, permitindo que você assine o serviço onde fizer sentido para a sua organização.
+Escolha entre as opções de licenciamento de avaliação, pagamento conforme o uso e BYOL para o NetApp Ransomware Resilience, de acordo com a sua organização.
 
 Para configurar o licenciamento, você precisa da função de administrador da organização, da pasta ou do projeto https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console"^].
 
@@ -176,7 +176,7 @@ NOTE: Um e-mail será enviado a você, incluindo o número de série do Ransomwa
 +
 image:screen-license-dw-add-license.png["Captura de tela da página Adicionar licença."]
 
-. Na página Adicionar licença, selecione *Inserir número de série* e insira o número de série do e-mail enviado a você.  Selecione *Adicionar licença*.
+. Na página Adicionar Licença, selecione *Inserir Número de Série* e insira o número de série do e-mail enviado para você. Selecione *Adicionar Licença*.
 . Para visualizar detalhes da licença em Licenses and subscriptions, na navegação à esquerda do Console, selecione *Governança* > * Licenses and subscriptions*.
 +
 ** Para ver informações sobre a assinatura, selecione *Assinaturas*.
@@ -259,7 +259,7 @@ image:screen-license-dw-add-license.png["Captura de tela da página Adicionar li
 +
 Se sua conta do site de suporte da NetApp não estiver disponível na lista suspensa, https://docs.netapp.com/us-en/console-setup-admin/task-adding-nss-accounts.html["adicione a conta NSS ao Console"^] .
 
-** Se você tiver o arquivo de licença zvondolr (necessário quando instalado em um site escuro), selecione a opção *Carregar arquivo de licença* e siga as instruções para anexar o arquivo.
+** Se você tiver o arquivo de licença (necessário para instalação em um site de conteúdo restrito), selecione a opção *Carregar arquivo de licença* e siga as instruções para anexar o arquivo.
 
 
 . Selecione *Adicionar licença*.
