@@ -265,44 +265,48 @@ NOTE: Se você optar por copiar e modificar uma estratégia existente, o Ransomw
 +
 Se você quiser alterar as extensões de arquivo bloqueadas, edite-as no Gerenciador do Sistema.
 
-+
+
+
+
+
+
+
 
 NOTE: Você pode escolher qualquer combinação das políticas de detecção. A política de detecção deve incluir detecção de criptografia ou detecção de comportamento suspeito do usuário.
 
-
-
-** *Política de instantâneos*:
+* *Política de instantâneos*:
 +
-*** *Nome base da política de instantâneo*: Selecione uma política ou selecione *Criar* e insira um nome para a política de instantâneo.
-*** *Bloqueio de instantâneo*: ative esta opção para bloquear as cópias de instantâneo no armazenamento primário para que elas não possam ser modificadas ou excluídas por um determinado período de tempo, mesmo que um ataque de ransomware chegue ao destino do armazenamento de backup.  Isso também é chamado de _armazenamento imutável_.  Isso permite um tempo de restauração mais rápido.
+** *Nome base da política de instantâneo*: Selecione uma política ou selecione *Criar* e insira um nome para a política de instantâneo.
+** *Bloqueio de instantâneo*: ative esta opção para bloquear as cópias de instantâneo no armazenamento primário para que elas não possam ser modificadas ou excluídas por um determinado período de tempo, mesmo que um ataque de ransomware chegue ao destino do armazenamento de backup.  Isso também é chamado de _armazenamento imutável_.  Isso permite um tempo de restauração mais rápido.
 +
 Quando um snapshot é bloqueado, o tempo de expiração do volume é definido como o tempo de expiração da cópia do snapshot.
 
 +
 O bloqueio de cópia de instantâneo está disponível no ONTAP 9.12.1 e posteriores.  Para saber mais sobre SnapLock, consulte https://docs.netapp.com/us-en/ontap/snaplock/index.html["SnapLock no ONTAP"^] .
 
-*** *Agendamentos de instantâneos*: escolha opções de agendamento, o número de cópias de instantâneos a serem mantidas e selecione para habilitar o agendamento.
+** *Agendamentos de instantâneos*: escolha opções de agendamento, o número de cópias de instantâneos a serem mantidas e selecione para habilitar o agendamento.
 
 
-** *Política de replicação*:
+* *Política de replicação*:
 +
-*** *Nome base da política de replicação*: Insira um novo nome ou escolha um existente. O nome base é o prefixo adicionado a todos os instantâneos.
-*** *Agendamentos de replicação*: Alterne as frequências que deseja ativar (por hora, diariamente, semanalmente ou mensalmente) e defina o valor de retenção (o número de snapshots replicados a serem mantidos) para cada agendamento ativado.
+** *Nome base da política de replicação*: Insira um novo nome ou escolha um existente. O nome base é o prefixo adicionado a todos os instantâneos.
+** *Agendamentos de replicação*: Alterne as frequências que deseja ativar (por hora, diariamente, semanalmente ou mensalmente) e defina o valor de retenção (o número de snapshots replicados a serem mantidos) para cada agendamento ativado.
 
 
-** *Política de backup*:
+* *Política de backup*:
 +
-*** *Nome base da política de backup*: insira um novo nome ou escolha um nome existente.
-*** *Agendamentos de backup*: escolha opções de agendamento para armazenamento secundário e ative o agendamento.
+** *Nome base da política de backup*: insira um novo nome ou escolha um nome existente.
+** *Agendamentos de backup*: escolha opções de agendamento para armazenamento secundário e ative o agendamento.
 +
 
 TIP: Para ativar o bloqueio de backup no storage secundário, configure seus destinos de backup usando a opção *Configurações*. Para obter detalhes, consulte link:task-backup-destination.html["Configurar definições"].
 
++
+... Selecione *Adicionar*.
 
 
 
 
-. Selecione *Adicionar*.
 
 
 

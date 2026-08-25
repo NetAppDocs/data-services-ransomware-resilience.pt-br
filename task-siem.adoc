@@ -17,12 +17,10 @@ O Ransomware Resilience permite configurar qualquer sistema SIEM com <<webhooks,
 
 * AWS Security Hub
 * Google SecOps
-* Microsoft Sentinel*
+* Microsoft Sentinel
 * Splunk Cloud
 * Splunk Enterprise
 
-
-{asterisk}Ransomware Resilience também fornece um modelo Azure Resource Manager (ARM) para Microsoft Sentinel.
 
 
 TIP: A resiliência contra ransomware também oferece link:reference-soar.html["orquestração, automação e resposta de segurança (SOAR) playbooks"^].
@@ -61,6 +59,19 @@ O Ransomware Resilience pode enviar os seguintes dados de eventos para o seu sis
 
 
 NOTE: Os campos *user_name* e *user_id* só são relevantes se você tiver configurado xref:concept-user-behavior.adoc[detecção de comportamento do usuário].
+
+
+
+[[event-delivery-route]]
+=== Rota de entrega do evento
+
+A Resiliência contra Ransomware permite o envio de eventos SIEM por meio do NetApp Console e do agente do Console. Você pode escolher a rota de envio que preferir durante a configuração.
+
+Com a entrega via NetApp Console, os eventos são enviados diretamente do NetApp Console para o seu endpoint SIEM. Seu endpoint SIEM precisa estar acessível pela internet pública para receber eventos.
+
+Para entrega através do agente do Console, os eventos são roteados pelo agente do Console que reside em sua rede. Essa opção é ideal para ambientes locais com listas de permissão de endereços IP restritivas e não requer conectividade de entrada. O agente do Console deve ser capaz de alcançar o endpoint do SIEM pela rede. Isso significa que ele pode resolver o nome do host do endpoint, conectar-se à porta necessária e passar pelos controles de firewall ou proxy.
+
+A entrega de eventos por meio do agente do Console é compatível com o Google SecOps, Splunk e configurações de SIEM baseadas em webhook.
 
 
 
@@ -164,6 +175,10 @@ image:screen-settings-threat-detection-3options.png["Habilitar página de detalh
 .. Insira o *URL do Webhook* que você copiou do URL do endpoint do webhook do Google SecOps.
 .. Insira a *chave secreta* e a *chave da API* do Google SecOps.
 
+
+. Escolha a <<Rota de entrega do evento>>. Para entregar eventos SIEM ao seu endpoint SIEM, selecione **Entregar via NetApp Console**. Para rotear eventos pelo agente do Console já presente na sua rede, selecione **Entregar via agente do Console**.
++
+Se você selecionou *Entregar via agente do Console*, selecione o agente do Console a ser usado no menu suspenso.
 
 . Selecione *Conectar* para começar a enviar dados SIEM.
 
@@ -275,14 +290,18 @@ NOTE: Após a autenticação ser bem-sucedida, uma mensagem "Autenticado" será 
 
 
 .Autenticar o Microsoft Sentinel em NetApp Ransomware Resilience
-. Em Ransomware Resilience, selecione *Configurações* na barra lateral.
-+
-image:screen-settings2.png["Página de configurações"]
+Para o Microsoft Sentinel SIEM, você pode escolher uma implantação automática, na qual o Ransomware Resilience implanta os recursos com base nas permissões que você fornecer. Como alternativa, você pode realizar uma implantação manual, na qual você implanta os recursos com base em um modelo ARM fornecido.
 
+[role="tabbed-block"]
+====
+.Implantação automática
+--
+. Em Ransomware Resilience, selecione *Configurações* na barra lateral.
 . Na página Configurações, selecione *Conectar* no bloco de conexão SIEM e, em seguida, escolha *Microsoft Sentinel* no menu suspenso.
 +
 image:screen-settings-threat-detection-3options.png["Habilitar página de detalhes de detecção de ameaças"]
 
+. Selecione *Automático* como o método de implantação.
 . Revise as seções *Pré-requisitos*, *Inscrição* e *Permissões* para garantir que você concluiu cada etapa com sucesso.
 . Expanda a seção *autenticação*.
 +
@@ -293,6 +312,52 @@ image:screen-settings-threat-detection-3options.png["Habilitar página de detalh
 . Selecione *Conectar* para começar a enviar dados SIEM.
 
 
+--
+.Implantação manual
+--
+. Em Ransomware Resilience, selecione *Configurações* na barra lateral.
++
+image:screen-settings2.png["Página de configurações"]
+
+. Na página Configurações, selecione *Conectar* no bloco de conexão SIEM e, em seguida, escolha *Microsoft Sentinel* no menu suspenso.
++
+image:screen-settings-threat-detection-3options.png["Habilitar página de detalhes de detecção de ameaças"]
+
+. Selecione *Manual* como o método de implantação.
+. Revise as seções *Pré-requisitos*, *Inscrição* e *Permissões* para garantir que você concluiu cada etapa com sucesso.
+. Expanda a seção *ARM Template Deployment*.
+. Atribua a função de Publicador de Métricas de Monitoramento.
++
+.. Na sua assinatura do Azure, acesse *Controle de acesso (IAM)*.
+.. Selecione *Adicionar atribuição de função*.
+.. Procure e selecione *Monitoring Metrics Publisher*.
+.. Adicione a atribuição de função à entidade de serviço do registro do aplicativo criado na etapa de Registration.
+.. *Revisar + atribuir*.
+
+
+. Retorne à interface do usuário de Resiliência a Ransomware. Copie o JSON do ARM template para criar a tabela personalizada do Log Analytics, o Ponto de Extremidade de Coleta de Dados (DCE), a Regra de Coleta de Dados (DCR) e as regras analíticas do Sentinel em seu ambiente Azure.
+. No portal do Azure, pesquise por *Implantar um modelo personalizado*.
+. Selecione *Criar seu próprio modelo* no editor.
+. Cole o JSON copiado no editor. Selecione *Salvar*.
+. Insira o *Nome do espaço de trabalho*, que é o nome do seu espaço de trabalho do Log Analytics. Você pode obter essa informação na página de visão geral do espaço de trabalho no portal do Azure.
+. Selecione *Revisar + criar*. Revise as seleções e clique em *Criar* para implantar.
+. Após a implantação, colete as seguintes informações para autenticação no Ransomware Resilience:
++
+** *Ponto de extremidade de ingestão de logs*: abra o recurso Ponto de extremidade de coleta de dados (`rps-alerts-dce` e copie o valor de Ingestão de logs exibido na página de visão geral.
+** *ID Imutável da Regra de Coleta de Dados*: abra o recurso Regra de Coleta de Dados (`rps-alerts-dcr`` e copie o ID Imutável na página de visão geral.
+
+
+. Expanda a seção *autenticação*.
++
+.. Insira o *ID do diretório (locatário)*, *ID do aplicativo (locatário)* e *segredo do cliente*. Selecione *Autenticar* e aguarde até que a interface do usuário confirme que as credenciais foram autenticadas.
+.. Insira o *Log Ingestion Endpoint* e o *DCR immutable ID* que você copiou anteriormente.
+
+
+. Selecione *Connect* para criar a conexão.
+
+
+--
+====
 
 
 [[configure-splunk-cloud-and-splunk-enterprise-for-threat-detection]]
@@ -344,6 +409,10 @@ image:screen-settings-threat-detection-3options.png["Habilitar página de detalh
 .. Insira o token do coletor de eventos que você criou no Splunk.
 
 
+. Escolha a <<Rota de entrega do evento>>. Para entregar eventos SIEM ao seu endpoint SIEM, selecione **Entregar via NetApp Console**. Para rotear eventos pelo agente do Console já presente na sua rede, selecione **Entregar via agente do Console**.
++
+Se você selecionou *Entregar via agente do Console*, selecione o agente do Console a ser usado no menu suspenso.
+
 . Selecione *Conectar* para começar a enviar dados SIEM.
 
 
@@ -366,6 +435,10 @@ Para adicionar parâmetros adicionais, copie-os da lista ao lado dos campos de e
 
 +
 image:siem-webhook.png["Captura de tela da configuração do webhook do SIEM."]
+
+. Escolha a <<Rota de entrega do evento>>. Para entregar eventos SIEM ao seu endpoint SIEM, selecione **Entregar via NetApp Console**. Para rotear eventos pelo agente do Console já presente na sua rede, selecione **Entregar via agente do Console**.
++
+Se você selecionou *Entregar via agente do Console*, selecione o agente do Console a ser usado no menu suspenso.
 
 . Opcionalmente, selecione *Enviar mensagem de teste* para testar a conectividade.
 . Selecione *Conectar* para iniciar a conexão com NetApp Ransomware Resilience.
