@@ -54,8 +54,8 @@ O painel de proteção do Ransomware Resilience exibe informações detalhadas s
 
 *Status de proteção*: Uma carga de trabalho pode mostrar um dos seguintes status de proteção para indicar se uma política é aplicada ou não:
 
-* *Protegido*: Uma política de detecção foi aplicada.
-* *Em risco*: Nenhuma política é aplicada. Se uma carga de trabalho não tiver uma política de detecção ativada, ela estará "em risco" mesmo que tenha uma política de snapshot e de backup ativadas.
+* *Protegido*: Uma política de criptografia ou de detecção de atividade do usuário está ativada.
+* *Em risco*: Se uma carga de trabalho não tiver uma política de proteção com detecção de criptografia ou detecção de atividade do usuário ativada, ela será classificada como em risco. Mesmo que a carga de trabalho tenha proteção por snapshot e backup, além de bloqueio de extensão de arquivo, ela ainda será considerada em risco se a detecção de criptografia ou a detecção de comportamento do usuário não estiverem ativadas.
 * *Em andamento*: Uma política está sendo aplicada, mas a operação ainda não foi concluída.
 * *Falha*: Uma política foi configurada, mas ocorreu um erro.
 

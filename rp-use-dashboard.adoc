@@ -30,7 +30,7 @@ image:screen-dashboard.png["Página do painel"]
 
 . A partir do dashboard, você pode realizar as seguintes ações em cada painel:
 +
-** *Proteção de dados da carga de trabalho*: selecione *Exibir tudo* para ver todas as cargas de trabalho que estão em risco ou protegidas na página Proteção.  As cargas de trabalho correm risco quando os níveis de proteção não correspondem a uma política de proteção. Consulte link:rp-use-protect.html["Proteja as cargas de trabalho"] .
+** *Proteção de dados da carga de trabalho*: selecione *Exibir tudo* para ver todas as cargas de trabalho que estão em risco ou protegidas na página Proteção. Sem a detecção de criptografia ou a detecção de atividade do usuário, a carga de trabalho é considerada em risco. Consulte link:rp-use-protect.html["Proteja as cargas de trabalho"].
 +
 
 TIP: Selecione a dica de ferramenta "i" para ver dicas sobre esses dados. Para aumentar o limite de carga de trabalho, selecione *Aumentar limite de carga de trabalho* dentro desta nota. Selecionar isso leva você para a página de Suporte do Console, onde você pode criar um tíquete de caso.

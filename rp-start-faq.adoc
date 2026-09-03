@@ -42,7 +42,7 @@ Você pode experimentar o Ransomware Resilience com um teste gratuito de 30 dias
 
 Se você tiver o Backup and Recovery e o Ransomware Resilience, quaisquer dados comuns protegidos por ambos os produtos serão cobrados somente pelo Ransomware Resilience.
 
-Quando uma carga de trabalho é classificada como protegida, ela é contabilizada na capacidade contratada ou na assinatura PAYGO. Ransomware Resilience classifica uma carga de trabalho como protegida quando uma política de detecção está habilitada com pelo menos uma política de snapshot ou de backup. Cargas de trabalho descobertas com uma política de detecção, mas _sem_ nenhuma política de backup ou snapshot, são classificadas como em risco. Cargas de trabalho em risco não são contabilizadas na capacidade contratada.
+Quando uma carga de trabalho é classificada como protegida, ela é contabilizada na capacidade contratada ou na assinatura PAYGO. O Ransomware Resilience classifica uma carga de trabalho como protegida quando uma política de criptografia ou de detecção de atividade do usuário está habilitada. Sem pelo menos uma dessas políticas de detecção, uma carga de trabalho é classificada como em risco. Cargas de trabalho em risco não são contabilizadas na capacidade contratada.
 
 As cargas de trabalho protegidas são contabilizadas na capacidade adquirida ou na assinatura após o término do período de avaliação gratuita. Ransomware Resilience é cobrada por GB para os dados associados às cargas de trabalho protegidas (conforme relatado pelo ONTAP) antes das eficiências.
 
@@ -98,10 +98,14 @@ A ferramenta de Resiliência a Ransomware pode identificar as seguintes cargas d
 A Resiliência a Ransomware descobre os volumes e as extensões de arquivo e os associa à carga de trabalho apropriada.
 
 .O que é uma carga de trabalho protegida?
-Na Resiliência a Ransomware, uma carga de trabalho exibe o status *protegido* quando possui uma política de _detecção_ ativada. A política de detecção deve consistir em detecção de criptografia ou detecção de comportamento suspeito do usuário (ou ambos). Também pode incluir detecção de extensão de arquivo suspeita. Para mais informações, consulte link:rp-use-protect.html#add-a-ransomware-protection-strategy["política de detecção"].
+Na Resiliência a Ransomware, uma carga de trabalho exibe o status *protegido* quando possui uma política de _detecção_ ativada. A política de detecção deve consistir em detecção de criptografia ou detecção de comportamento suspeito do usuário (ou ambos). Para obter mais informações, consulte link:rp-use-protect.html#add-a-ransomware-protection-strategy["política de detecção"].
 
 .O que é uma carga de trabalho "de risco"?
-Se uma carga de trabalho não tiver uma política de detecção ativada, ela será rotulada como "em risco", mesmo que tenha uma política de backup e snapshot ativada. Para proteção contra ransomware, você deve ativar uma link:rp-use-protect.html#add-a-ransomware-protection-strategy["política de detecção"].
+Uma carga de trabalho deve ter uma política de proteção contra ransomware com detecção de criptografia ou detecção de comportamento do usuário habilitada para ser considerada protegida. Sem pelo menos uma dessas estratégias de detecção, a carga de trabalho é classificada como em risco. Se uma carga de trabalho tiver uma política de backup ou snapshot, mas não incluir detecção de criptografia ou detecção de comportamento do usuário habilitada, ela será considerada em risco.
+
+A Resiliência contra Ransomware também oferece detecção de extensões de arquivo suspeitas. Se a detecção de extensões de arquivo suspeitas for a única política de detecção ativada, a carga de trabalho será classificada como de risco.
+
+Para proteção contra ransomware, você deve ativar uma link:rp-use-protect.html#add-a-ransomware-protection-strategy["política de detecção"].
 
 .Adicionei um novo volume, mas ele ainda não apareceu. O que devo fazer?
 Se você adicionou um novo volume ao seu ambiente, inicie a descoberta da carga de trabalho novamente. Após o volume ter sido descoberto, link:rp-use-protect.html#add-a-ransomware-protection-strategy["Aplicar políticas de proteção para proteger o novo volume."].
