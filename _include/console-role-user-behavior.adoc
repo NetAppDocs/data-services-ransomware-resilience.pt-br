@@ -2,4 +2,4 @@
 :allow-uri-read: 
 
 
-*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador de comportamento do usuário Ransomware Resilience. Você não pode executar esta tarefa com a função de administrador do Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^] .
+*Função de console necessária* Para executar esta tarefa, você precisa da função de administrador de comportamento do usuário do NetApp Ransomware Resilience. Você não pode executar esta tarefa com a link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Superadministrador"^] ou a função de administrador do NetApp Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^].

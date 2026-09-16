@@ -48,6 +48,16 @@ As cargas de trabalho protegidas são contabilizadas na capacidade adquirida ou 
 
 Ao considerar o dimensionamento, os custos de licenciamento são baseados na capacidade lógica do sistema de arquivos ativo, independentemente de os dados residirem em camadas de armazenamento quentes ou frias. O espaço consumido por snapshots não está incluído nesse cálculo, mesmo que esses snapshots estejam armazenados em uma camada fria.
 
+.O que acontece depois que seu período de teste termina ou sua licença expira?
+Após o término do período de avaliação gratuita ou o vencimento da licença ou assinatura, as cargas de trabalho permanecem visíveis no NetApp Ransomware Resilience, a menos que você as exclua. Com uma licença ou período de avaliação expirado, você pode:
+
+* Exibir cargas de trabalho e integridade da carga de trabalho
+* Excluir recursos como políticas
+* Execute todas as operações agendadas criadas durante o período de teste ou sob a licença
+
+
+Para desativar o NetApp Ransomware Resilience, envie uma solicitação de suporte. A solicitação deve incluir o ID da sua organização e informar que você deseja desativar o serviço.
+
 
 
 [[access]]

@@ -18,6 +18,29 @@ Saiba o que há de novo no NetApp Ransomware Resilience.
 
 
 
+[[16-september-2026]]
+== 16 de setembro de 2026
+
+
+
+[[enhanced-support-for-clean-restores]]
+=== Suporte aprimorado para restaurações limpas
+
+Agora, restaurações limpas estão disponíveis para recuperação após comportamentos suspeitos do usuário e ataques de criptografia baseados no usuário. Essa melhoria complementa o suporte já existente para ataques baseados em criptografia (entropia). Essa funcionalidade aprimorada permite que você aproveite a abordagem guiada da restauração limpa, identificando os pontos de restauração ideais para minimizar a perda de dados e acelerar a recuperação.
+
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["Crie um ambiente de recuperação isolado para uma restauração limpa"^].
+
+
+
+[[san-support-for-google-cloud-netapp-volumes]]
+=== Suporte a SAN para o Google Cloud NetApp Volumes
+
+A NetApp Ransomware Resilience agora oferece suporte a cargas de trabalho SAN do Google Cloud NetApp Volumes, permitindo que você detecte ataques de ransomware baseados em criptografia para cargas de trabalho SAN. O suporte para SAN no Google Cloud NetApp Volumes já está disponível de forma geral.
+
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html#supported-systems["sistemas suportados"^] e link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-limitations.html["Armazenamento SAN na resiliência a ransomware"^].
+
+
+
 [[25-august-2026]]
 == 25 de agosto de 2026
 
@@ -159,7 +182,7 @@ Para mais informações, consulte link:https://docs.netapp.com/us-en/data-servic
 [[automated-responses-to-user-activity-alerts]]
 === Respostas automatizadas a alertas de atividade do usuário
 
-NetApp Ransomware Resilience agora oferece suporte à criação automática de snapshots e ao bloqueio de usuários quando um alerta de atividade do usuário é gerado. Com respostas automatizadas, você pode bloquear um usuário assim que um aviso for gerado e criar um snapshot para recuperação, permitindo uma resposta mais rápida sem intervenção manual.
+A NetApp Ransomware Resilience agora oferece suporte a respostas automatizadas a eventos de atividade do usuário. Você pode bloquear usuários automaticamente e criar um snapshot quando um alerta de atividade do usuário for gerado. Essas ações permitem uma resposta mais rápida sem intervenção manual.
 
 Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-automate-user-activity.html["Automatize as respostas aos alertas de atividade do usuário"^].
 
@@ -197,8 +220,8 @@ link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/reference
 
 
 
-[[google-cloud-netapp-volumes-support-preview]]
-=== Suporte do Google Cloud NetApp Volumes (prévia)
+[[protection-groups-in-google-cloud-netapp-volumes-support-preview]]
+=== Grupos de proteção no Google Cloud NetApp Volumes com suporte (prévia)
 
 A Resiliência contra Ransomware agora oferece suporte à criação de grupos de proteção para cargas de trabalho em sistemas Google Cloud NetApp Volumes, permitindo que você organize várias cargas de trabalho sob uma única política para simplificar o gerenciamento.
 

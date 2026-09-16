@@ -30,7 +30,7 @@ Você precisa ter configurado um link:task-clean-restore.html["ambiente de recup
 [[considerations]]
 == Considerações
 
-* Só é possível realizar uma restauração limpa em caso de ataque de ransomware baseado em criptografia.
+* Você só pode realizar uma restauração limpa para ataques baseados em criptografia (tanto comportamento do usuário quanto entropia) e ataques de comportamento suspeito do usuário. A restauração limpa não é compatível com ataques de violação de dados e destruição de dados.
 * Se o ambiente de recuperação isolado não tiver capacidade para uma nova operação, ela será enfileirada até que haja disponibilidade.
 +
 ** Você pode monitorar o status das operações de restauração limpa ativas e em fila a qualquer momento no painel de controle do NetApp Ransomware Resilience Recovery.

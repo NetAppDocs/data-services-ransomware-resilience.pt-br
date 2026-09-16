@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-automate-user-activity.html 
-keywords: data breach detection, data breach, user activity, automated response 
+keywords: data breach detection, data breach, user activity, automated response, block user, automate, ransomware response 
 summary: NetApp Ransomware Resilience permite criar respostas automatizadas a eventos de atividade do usuário, possibilitando criar automaticamente um snapshot ou bloquear um usuário. 
 ---
 = Automatize as respostas aos alertas de atividade do usuário no NetApp Ransomware Resilience
@@ -12,9 +12,16 @@ summary: NetApp Ransomware Resilience permite criar respostas automatizadas a ev
 
 
 [role="lead"]
-Com o NetApp Ransomware Resilience, você pode automatizar respostas a link:concept-user-behavior.html["eventos de atividade do usuário"]. Com respostas automatizadas, o Ransomware Resilience pode criar um snapshot ou bloquear um usuário quando um ataque ou aviso for detectado, permitindo uma resposta mais rápida a eventos de ransomware.
+Com o NetApp Ransomware Resilience, você pode automatizar as respostas a link:concept-user-behavior.html["eventos de atividade do usuário"]. Quando um alerta de atividade do usuário é acionado, o Ransomware Resilience pode:
+
+* Bloquear um usuário
+* Criar um snapshot
+
 
 Respostas automatizadas são suportadas para criptografia (comportamento do usuário), violação de dados e destruição de dados. Você deve ter link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent["configurou um agente de atividade do usuário, habilitou uma política com detecção de atividade do usuário e criou um conector de diretório de usuários"] antes de criar uma resposta automatizada. Quando uma resposta automatizada é acionada, NetApp Ransomware Resilience envia um alerta por e-mail.
+
+
+NOTE: Se o alerta for acionado por comportamento suspeito do usuário, você só pode tirar uma captura instantânea. Bloquear um usuário não está disponível como resposta automática a comportamento suspeito do usuário.
 
 
 
@@ -22,9 +29,6 @@ Respostas automatizadas são suportadas para criptografia (comportamento do usu�
 == Criar uma resposta automatizada
 
 Você só pode proteger uma máquina virtual de armazenamento com pelo menos uma carga de trabalho que esteja protegida com uma política de detecção de comportamento suspeito do usuário.
-
-
-NOTE: Para respostas automatizadas a comportamentos suspeitos de usuários, você só pode tirar um instantâneo. Bloquear um usuário não é compatível como resposta automatizada a comportamentos suspeitos de usuários.
 
 .Passos
 . Em Resiliência a Ransomware, selecione **Configurações**.
@@ -84,3 +88,10 @@ Para modificar a resposta, selecione **Edit**.
 . Você pode modificar qualquer uma das configurações, exceto a gravidade do alerta.
 . Selecione **Salvar** para capturar as alterações.
 
+
+
+
+[[next-steps]]
+== Próximos passos
+
+link:task-users-manage.html["Gerenciar usuários bloqueados"]
