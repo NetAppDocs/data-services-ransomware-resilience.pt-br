@@ -82,9 +82,7 @@ Se sua carga de trabalho não for gerenciada pelo NetApp Backup and Recovery ou 
 Você pode escolher uma das seguintes políticas predefinidas de Resiliência contra Ransomware, que estão alinhadas com a importância da carga de trabalho.
 
 
-NOTE: A política **Extensão de usuário de criptografia** é a única política predefinida que oferece suporte à detecção de comportamento suspeito do usuário.
-
-+ A **política de replicação crítica** é a única política predefinida que suporta a replicação de snapshots para o ONTAP.
+NOTE: A política **Encryption user extension** é a única política predefinida que oferece suporte à detecção de comportamento suspeito do usuário. A política **Critical replication policy** é a única política predefinida que oferece suporte à replicação de snapshots para o ONTAP.
 
 [cols="10,15a,20,15,15,15"]
 |===

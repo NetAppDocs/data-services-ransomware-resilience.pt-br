@@ -43,7 +43,7 @@ Se você tiver problemas para instalar ou executar o agente de atividade do usu�
 | O script cloudsecure-agent-symptom-collector.sh falha com o erro "ERROR: Failed to create /tmp/cloudsecure-agent-symptoms.zip" | Instale a ferramenta zip com o comando  `yum install zip` e, em seguida, execute  `cloudsecure-agent-symptom-collector.sh` novamente. 
 
 
-| A instalação do agente de atividade do usuário falha com o erro "useradd: não foi possível criar o diretório /home/cssys." | Não foi possível criar o diretório de login do usuário no diretório base devido a um erro de permissões. Crie um usuário cssys e adicione seu diretório de login manualmente com o comando  `sudo useradd <user_name> -m -d HOME_DIR`. Neste comando,  `-m`cria o diretório base caso não exista;  `-d`designa HOME_DIR como o diretório de login. 
+| A instalação do agente de atividade do usuário falha com o erro "useradd: não foi possível criar o diretório /home/cssys." | O diretório de login do usuário não pode ser criado no diretório base devido a um erro de permissões. Crie um usuário cssys e adicione seu diretório de login manualmente com o comando  `sudo useradd <user_name> -m -d HOME_DIR`. Neste comando,  `-m`cria o diretório base caso não exista;  `-d`designa HOME_DIR como o diretório de login. 
 |===
 
 
