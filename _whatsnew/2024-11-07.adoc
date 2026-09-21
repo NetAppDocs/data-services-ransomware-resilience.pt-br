@@ -20,7 +20,7 @@ Para iniciar a verificação, na página Proteção, selecione *Identificar expo
 
 Agora você pode enviar dados ao seu sistema de gerenciamento de segurança e eventos (SIEM) para análise e detecção de ameaças usando o Microsoft Sentinel.  Anteriormente, você podia selecionar o AWS Security Hub ou o Splunk Cloud como seu SIEM.
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["Saiba mais sobre como configurar as configurações de BlueXP ransomware protection"].
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-sentinel.html["Saiba mais sobre como configurar as configurações de BlueXP ransomware protection"].
 
 
 
