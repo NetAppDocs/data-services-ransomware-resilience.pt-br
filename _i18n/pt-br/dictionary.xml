@@ -2870,4 +2870,7 @@
   <block id="b4432b2cbe32a1565ba15c5575ec34aa" category="sidebar">Configure o AWS Security Hub</block>
   <block id="ece99177ef46def4743253388748336e" category="sidebar">Configurar o Microsoft Sentinel</block>
   <block id="373bd242e28dd9ed5ab41176e809e7db" category="sidebar">Configurar o Splunk Cloud e o Enterprise</block>
+  <block id="e9cbe0aaa0ffb3834bf6a16e6c4f6881" category="inline-link-macro">restaurar uma carga de trabalho</block>
+  <block id="1b4c5e5585c892abb8e8dd8b4b4145d8" category="list-text">A restauração em nível de arquivo não está disponível quando você <block ref="825823111b1491b7b84194a9322124b7" category="inline-link-macro-rx"></block> para o Azure NetApp Files.</block>
+  <block id="be477216a2a05782605c951939d5638a" category="section-title">Adicionar funções no Azure e autenticar o Microsoft Sentinel na Resiliência contra ransomware</block>
 </blocks>
