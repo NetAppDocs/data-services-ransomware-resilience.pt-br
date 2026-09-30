@@ -2244,7 +2244,6 @@
   <block id="aafdf7d684cdbc06940987bf451e6069" category="section-title">Requisitos de detecção de comportamento do usuário</block>
   <block id="8258c7e67c72fe5a72748135c6b87a68" category="paragraph">Para que a Resiliência a Ransomware forneça alertas sobre o comportamento do usuário, você deve configurar um agente de atividade do usuário. Para instalar um agente de atividade do usuário, certifique-se de que seu sistema atenda <block ref="423b5fb22336ee99727442d2bf2268c5" category="inline-link-macro-rx"></block>.</block>
   <block id="88e7bcbfec161904679f03f8797894a6" category="inline-link-macro">detecção de comportamento suspeito do usuário</block>
-  <block id="b499f45630896bc77ad77d6591c41b0f" category="list-text">Analise também os requisitos para <block ref="019fa8a22de443e4055edc5a56d223fe" category="inline-link-macro-rx"></block> e <block ref="5909784b16712ef276fd16aaaa47a088" category="inline-link-macro-rx"></block>.</block>
   <block id="63fde6d770b2c8ba714c1f08a582c093" category="inline-link-macro">Aprimore a proteção configurando a detecção do comportamento do usuário</block>
   <block id="8c1efc202ff8276c615ec5ce66929176" category="list-text">Opcionalmente, <block ref="6775eab4a283e419045522f21b7d2960" category="inline-link-macro-rx"></block></block>
   <block id="109acfe0b7e8d2f9308c5731f4ac86cf" category="inline-link-macro">Configurar um playbook SOAR</block>
@@ -2670,7 +2669,6 @@
   <block id="cfb664a7c55a4ffead74e1674d2f33eb" category="summary">Comece a usar o NetApp Ransomware Resilience em poucos passos.</block>
   <block id="b6d95b844bfe25407e74be4d50d288fa" category="paragraph">Use este guia de início rápido para configurar o NetApp Ransomware Resilience, descobrir cargas de trabalho e configurar a proteção.</block>
   <block id="116246596fad0beb7ffba5f0c89883e1" category="inline-link-macro">Analise as funções de usuário do o Ransomware Resilience e atribua permissões aos usuários que acessam o serviço</block>
-  <block id="5809338b3950a9c2eb01defed9f67578" category="list-text"><block ref="5809338b3950a9c2eb01defed9f67578" category="inline-link-macro-rx"></block></block>
   <block id="177f71f748fd13cdfe5346fed8eb6369" category="paragraph">Essas tarefas exigem a função _Ransomware Resilience admin_. Para configurar a detecção de comportamento do usuário, você também precisa da função _Ransomware Resilience user behavior admin_.</block>
   <block id="520186e595ac4a2b12f766d5e60dae3a" category="paragraph">Após configurar a proteção, você pode:</block>
   <block id="16f66cf83117826af1028c7315808f5b" category="paragraph">Configure o NetApp Ransomware Resilience preparando um destino de backup, revisando os pré-requisitos e configurando o NetApp Console e o agente do Console.</block>
@@ -2873,4 +2871,6 @@
   <block id="e9cbe0aaa0ffb3834bf6a16e6c4f6881" category="inline-link-macro">restaurar uma carga de trabalho</block>
   <block id="1b4c5e5585c892abb8e8dd8b4b4145d8" category="list-text">A restauração em nível de arquivo não está disponível quando você <block ref="825823111b1491b7b84194a9322124b7" category="inline-link-macro-rx"></block> para o Azure NetApp Files.</block>
   <block id="be477216a2a05782605c951939d5638a" category="section-title">Adicionar funções no Azure e autenticar o Microsoft Sentinel na Resiliência contra ransomware</block>
+  <block id="dedb015aaf7f105f1187fe35f028dd0f" category="list-text">Analise os requisitos para <block ref="019fa8a22de443e4055edc5a56d223fe" category="inline-link-macro-rx"></block> e <block ref="5909784b16712ef276fd16aaaa47a088" category="inline-link-macro-rx"></block>.</block>
+  <block id="823ff360f4694fe5d6e7799f5cab531b" category="list-text"><block ref="823ff360f4694fe5d6e7799f5cab531b" category="inline-link-macro-rx"></block></block>
 </blocks>
