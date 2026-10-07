@@ -32,6 +32,11 @@ Você pode acessar a Ransomware Resilience pelo NetApp Console. Certifique-se de
 
 Para mais informações, consultelink:rp-start-login.html["Resiliência do Access Ransomware"] elink:rp-start-quick-start.html["Guia de início rápido para resiliência a ransomware"] .
 
+.Quais requisitos do agente do Console existem para a Ransomware Resilience?
+link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Revise e defina as permissões adequadas para os usuários."] Certifique-se de que pelo menos um agente ativo do Console na sua organização do Console esteja conectado a um sistema compatível. O agente do Console deve ter o `cloudmanager-ransomware-protection` contêiner em estado ativo.
+
+Além disso, existe um limite de 3.000 cargas de trabalho por agente do Console. Você pode enviar uma solicitação para estender esse limite.
+
 .A Resiliência a Ransomware está disponível nos modos padrão, restrito e privado?
 A Resiliência a Ransomware está disponível atualmente apenas no modo padrão.
 
@@ -56,7 +61,7 @@ Após o término do período de avaliação gratuita ou o vencimento da licença
 * Execute todas as operações agendadas criadas durante o período de teste ou sob a licença
 
 
-Para desativar o NetApp Ransomware Resilience, envie uma solicitação de suporte. A solicitação deve incluir o ID da sua organização e informar que você deseja desativar o serviço.
+Para desativar o Ransomware Resilience, envie uma solicitação de suporte. A solicitação deve incluir o ID da sua organização e informar que você deseja desativar o serviço.
 
 
 
@@ -111,7 +116,7 @@ A Resiliência a Ransomware descobre os volumes e as extensões de arquivo e os 
 Na Resiliência a Ransomware, uma carga de trabalho exibe o status *protegido* quando possui uma política de _detecção_ ativada. A política de detecção deve consistir em detecção de criptografia ou detecção de comportamento suspeito do usuário (ou ambos). Para obter mais informações, consulte link:rp-use-protect.html#add-a-ransomware-protection-strategy["política de detecção"].
 
 .O que é uma carga de trabalho "de risco"?
-Uma carga de trabalho deve ter uma política de proteção contra ransomware com detecção de criptografia ou detecção de comportamento do usuário habilitada para ser considerada protegida. Sem pelo menos uma dessas estratégias de detecção, a carga de trabalho é classificada como em risco. Se uma carga de trabalho tiver uma política de backup ou snapshot, mas não incluir detecção de criptografia ou detecção de comportamento do usuário habilitada, ela será considerada em risco.
+Para ser considerada protegida, uma carga de trabalho deve ter uma política de proteção contra ransomware com a detecção de criptografia ou a detecção de comportamento do usuário habilitada. Sem pelo menos uma dessas estratégias de detecção, a carga de trabalho é classificada como em risco. Se uma carga de trabalho tiver uma política de backup ou snapshot, mas não tiver a detecção de criptografia ou a detecção de comportamento do usuário habilitada, ela será considerada em risco.
 
 A Resiliência contra Ransomware também oferece detecção de extensões de arquivo suspeitas. Se a detecção de extensões de arquivo suspeitas for a única política de detecção ativada, a carga de trabalho será classificada como de risco.
 
@@ -155,13 +160,13 @@ Saiba mais sobre link:concept-ransomware-resilience.html#attack-types["tipos de 
 Sim, o Ransomware Resilience detecta os agendamentos de snapshots definidos no ONTAP. Ele também detecta se o ARP e o FPolicy estão habilitados em todos os volumes de uma carga de trabalho detectada. As informações exibidas no painel do Ransomware Resilience são agregadas de outras NetApp soluções e produtos.
 
 .A Resiliência a Ransomware está ciente das políticas já criadas em NetApp Backup and Recovery?
-Sim, se você tiver cargas de trabalho gerenciadas em Backup and Recovery, as políticas gerenciadas por esses produtos serão integradas ao Ransomware Resilience.
+Sim, se você tiver cargas de trabalho gerenciadas no Backup and Recovery, essas políticas serão incorporadas ao Ransomware Resilience.
 
 .É possível modificar as políticas herdadas do NetApp Backup and Recovery?
 Não, você não pode modificar as políticas gerenciadas pelo NetApp Backup and Recovery a partir do Ransomware Resilience. Você gerencia quaisquer alterações nessas políticas no NetApp Backup and Recovery.
 
-.Se existirem políticas do ONTAP (como ARP, FPolicy e snapshots), essas políticas são alteradas no Ransomware Resilience?
-Não. O Ransomware Resilience não modifica nenhuma política de detecção existente (configurações ARP, FPolicy) do ONTAP.
+.Se existirem políticas do ONTAP (como ARP, FPolicy e snapshots), o Ransomware Resilience as altera?
+O Ransomware Resilience não modifica nenhuma política de detecção existente (configurações de ARP, FPolicy) do ONTAP. Se você modificar alguma configuração no Ransomware Resilience, poderá substituir as configurações do ONTAP.
 
 .O que acontece se você adicionar novas políticas em Backup and Recovery depois de se inscrever no Ransomware Resilience?
 A Resiliência contra Ransomware reconhece políticas recém-criadas e alterações de políticas em NetApp Backup and Recovery.
