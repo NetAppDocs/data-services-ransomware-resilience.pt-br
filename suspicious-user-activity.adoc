@@ -22,9 +22,6 @@ Um agente de atividade do usuário hospeda um coletor de dados e um conector de 
 
 O agente de atividade do usuário, o coletor de dados e o conector do diretório de usuários podem ser gerenciados a partir do painel de configurações de Ransomware Resilience.
 
-
-NOTE: Se você já utiliza NetApp Data Infrastructure Insights (DII) Workload Security, use os mesmos agentes do Workload Security para a Resiliência a Ransomware. Você não precisa implantar agentes separados do Workload Security para a Resiliência a Ransomware. No entanto, usar os mesmos agentes do Workload Security exige uma relação de emparelhamento entre a organização do Console de Resiliência a Ransomware e o tenant do DII Storage Workload Security. Entre em contato com seu representante de conta para habilitar esse emparelhamento.
-
 Se você não estiver usando o DII, siga as instruções de configuração aqui.
 
 
@@ -38,6 +35,13 @@ Se você não estiver usando o DII, siga as instruções de configuração aqui.
 *Função de console necessária* Para ativar a detecção de comportamento do usuário, você precisa da **função de administrador da organização**. Para configurações subsequentes de detecção de comportamento do usuário, você precisa da **função de administrador de comportamento do usuário de Ransomware Resilience**. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Saiba mais sobre as funções de resiliência contra ransomware para o NetApp Console"^].
 
 Garanta que cada função seja aplicada no nível organizacional.
+
+
+
+[[considerations-for-data-infrastructure-insights-dii-workload-security-users]]
+=== Considerações para usuários do Workload Security do Data Infrastructure Insights (DII)
+
+Se você já utiliza NetApp Data Infrastructure Insights (DII) Workload Security, use os mesmos agentes do Workload Security para a Resiliência a Ransomware. Você não precisa implantar agentes separados do Workload Security para a Resiliência a Ransomware. No entanto, usar os mesmos agentes do Workload Security exige uma relação de emparelhamento entre a organização do Console de Resiliência a Ransomware e o tenant do DII Storage Workload Security. Entre em contato com seu representante de conta para habilitar esse emparelhamento.
 
 
 

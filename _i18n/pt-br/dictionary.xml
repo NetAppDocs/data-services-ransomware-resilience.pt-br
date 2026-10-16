@@ -1170,7 +1170,6 @@
   <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">Perguntas frequentes</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conhecimento e suporte</block>
   <block id="51fecb5d19a6637dea83445678fd4ffa" category="section-title">Backups de dados</block>
-  <block id="4fa0264ac4080dbcb96449b3dd2eff57" category="paragraph">A licença do Ransomware Resilience não inclui produtos NetApp adicionais. No entanto, o Ransomware Resilience pode ser integrado ao NetApp Backup and Recovery, mesmo que você não tenha uma licença separada para Backup and Recovery.</block>
   <block id="6ff0e20f052119502398978ae7712412" category="paragraph">Siga os links em cada etapa para obter informações detalhadas.</block>
   <block id="220434cdb736458843fe145fbd4b9ca9" category="inline-link-macro">Certifique-se de ter instalado um agente do Console</block>
   <block id="ff6929fd02a6e7a1c0faa4152fe13ffe" category="list-text"><block ref="ff6929fd02a6e7a1c0faa4152fe13ffe" category="inline-link-macro-rx"></block></block>
@@ -1340,7 +1339,6 @@
   <block id="5c024c0f8096e0fba857f661afe2dbd0" category="list-text">Europa (Frankfurt) (eu-central-1)</block>
   <block id="d605e764d56b8615ebf6dd5f87998855" category="list-text">Leste dos EUA (Norte da Virgínia) (us-east-1)</block>
   <block id="a55a22032fc9fd630abe933324e9d4b9" category="paragraph-title">O Ransomware Resilience está ciente das configurações de proteção no ONTAP?</block>
-  <block id="1c8f51534c2fc10dfef26d32d61c7ed3" category="paragraph">Para licenciamento e faturamento, o Ransomware Resilience pode ser integrado ao Backup e Recuperação, mesmo que você não tenha uma licença separada para Backup e Recuperação. Se você tiver o Backup and Recovery e o Ransomware Resilience, quaisquer dados comuns protegidos por ambos os produtos serão cobrados somente pelo Ransomware Resilience.</block>
   <block id="6b62768f3f94df043ea31bf9c43b2a42" category="paragraph">A ferramenta de Resiliência a Ransomware pode identificar as seguintes cargas de trabalho: Oracle, compartilhamentos de arquivos, armazenamento em blocos, máquinas virtuais e datastores de máquinas virtuais.</block>
   <block id="897c29783a147c6c7b7844f2d4a9e81a" category="paragraph">Na versão de pré-visualização, o serviço protege cargas de trabalho baseadas em aplicativos do Oracle, datastores de máquinas virtuais e compartilhamentos de arquivos em armazenamento NAS local, bem como Cloud Volumes ONTAP na AWS (usando o protocolo NFS) em organizações BlueXP individualmente e faz backup dos dados para o armazenamento em nuvem da Amazon Web Services.</block>
   <block id="f075180c986e3a7a8e0bad4fcec7c485" category="cell">15.3 (64 bits) a 15.6 (64 bits)</block>
@@ -1728,7 +1726,6 @@
   <block id="b720eb62a1de68d6cb9c9dbea3c63907" category="list-text">Aplica recuperação personalizada para atender às políticas de RPO. Ransomware Resilience orquestra a recuperação de incidentes de ransomware por meio do NetApp Backup and Recovery.</block>
   <block id="5d81d4b181b1f6e47c262988038cd67d" category="paragraph">O Ransomware Resilience verifica sua proteção de backup atual, cópias instantâneas e opções de NetApp Autonomous Ransomware Protection. O Ransomware Resilience também detecta informações de proteção do NetApp Backup and Recovery para compartilhamentos de arquivos e compartilhamentos de arquivos de VM. Em seguida, recomenda maneiras de aprimorar sua proteção contra ransomware.</block>
   <block id="c048f8419f5606e294e716a232b223a2" category="paragraph-title">Como a resiliência a ransomware interage com NetApp Backup and Recovery?</block>
-  <block id="eadde9be35eb975c3bbd5558937ea6ce" category="paragraph">Ransomware Resilience funciona com NetApp Backup and Recovery para descobrir e definir políticas de snapshot e backup para cargas de trabalho de compartilhamento de arquivos. Ransomware Resilience também funciona com NetApp Backup and Recovery para realizar a recuperação consistente de arquivos e cargas de trabalho.</block>
   <block id="79b8a65e3601fc128a20382435361146" category="paragraph-title">A Resiliência a Ransomware está ciente das políticas já criadas em NetApp Backup and Recovery?</block>
   <block id="f88bf8ade397c623545ba47ce5394409" category="paragraph-title">É possível modificar as políticas herdadas do NetApp Backup and Recovery?</block>
   <block id="dd9161665fa6e8f8df843bd9c2b959be" category="paragraph">Não, você não pode modificar as políticas gerenciadas pelo NetApp Backup and Recovery a partir do Ransomware Resilience. Você gerencia quaisquer alterações nessas políticas no NetApp Backup and Recovery.</block>
@@ -2877,4 +2874,11 @@
   <block id="33770507195ff31d97a8192589460055" category="paragraph">O Ransomware Resilience não modifica nenhuma política de detecção existente (configurações de ARP, FPolicy) do ONTAP. Se você modificar alguma configuração no Ransomware Resilience, poderá substituir as configurações do ONTAP.</block>
   <block id="73f9341af639bb7291bbf568f90c32a7" category="list-text">Existe um limite de 3.000 cargas de trabalho por agente do Console. Você pode enviar uma solicitação para estender esse limite.</block>
   <block id="450c303d7338ae99abb9140e57f1802f" category="paragraph">A função de _Super admin_ ou _Organization admin_ é necessária para implantar um agente do Console e atribuir permissões.</block>
+  <block id="8c6998a19384eedc205556ec1d5a77b6" category="paragraph-title">A licença de Resiliência a Ransomware inclui produtos adicionais da NetApp?</block>
+  <block id="46b0217d78ea89c9c081b6abcf978050" category="paragraph">Não, a licença de Resiliência a Ransomware não inclui produtos adicionais da NetApp.</block>
+  <block id="2017d158145a1f82958e603226f6511f" category="paragraph">Se você tiver uma licença ativa do Backup and Recovery e do Ransomware Resilience, o Ransomware Resilience detecta as políticas de snapshot e backup definidas no Backup and Recovery. Você não pode editar as políticas do Backup and Recovery no Ransomware Resilience, mas pode substituí-las.</block>
+  <block id="e7a03cecb86b19d317d9b0b42a7c67fc" category="paragraph">O Ransomware Resilience também funciona com o Backup and Recovery para realizar uma recuperação consistente de arquivos e cargas de trabalho. Para cargas de trabalho descobertas e protegidas pelo Ransomware Resilience e pelo Backup and Recovery, você pode realizar a recuperação em qualquer um dos serviços.</block>
+  <block id="a8e75ad6008293b62f2f0e9d9831a35d" category="paragraph-title">O que preciso saber se já habilitei a detecção de atividade do usuário por meio do Data Infrastructure Insights Workload Security?</block>
+  <block id="1d1aa737543f7a38b5529fc14884bb9a" category="paragraph">A licença do Ransomware Resilience não inclui produtos NetApp adicionais.</block>
+  <block id="806ec63eaaf32091114d52559b568902" category="section-title">Considerações para usuários do Workload Security do Data Infrastructure Insights (DII)</block>
 </blocks>
