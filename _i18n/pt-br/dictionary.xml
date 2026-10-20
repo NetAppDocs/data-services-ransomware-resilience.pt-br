@@ -2881,4 +2881,6 @@
   <block id="a8e75ad6008293b62f2f0e9d9831a35d" category="paragraph-title">O que preciso saber se já habilitei a detecção de atividade do usuário por meio do Data Infrastructure Insights Workload Security?</block>
   <block id="1d1aa737543f7a38b5529fc14884bb9a" category="paragraph">A licença do Ransomware Resilience não inclui produtos NetApp adicionais.</block>
   <block id="806ec63eaaf32091114d52559b568902" category="section-title">Considerações para usuários do Workload Security do Data Infrastructure Insights (DII)</block>
+  <block id="7d20abced2097011f465f4a9fe86d1f4" category="paragraph">Ao ativar a detecção de atividade do usuário no Ransomware Resilience, o sistema usa as credenciais atualmente salvas no Console para gerenciar seus coletores de dados. Se você já havia habilitado a detecção de atividade do usuário por meio do Data Infrastructure Insights (DII) Workload Security, as credenciais do Console substituirão as que você usava anteriormente no DII para gerenciar os coletores de dados.</block>
+  <block id="cbb0b1774db28ef79ba2a2fa819d9cfb" category="list-text">O suporte para os níveis de serviço Flex do Google Cloud NetApp Volumes está atualmente em prévia.</block>
 </blocks>
