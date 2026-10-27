@@ -1,0 +1,196 @@
+---
+sidebar: sidebar 
+permalink: concept-strategy.html 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, detection, protection, policy, malware 
+summary: Aprenda sobre estratégias de proteção contra ransomware no NetApp Ransomware Resilience. As estratégias de proteção permitem a detecção, bem como snapshots, backup e replicação para criar uma base de referência para a recuperação. 
+---
+= Aprenda sobre estratégias de proteção no NetApp Ransomware Resilience
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+No NetApp Ransomware Resilience, as estratégias de proteção são um elemento essencial da sua postura de defesa contra ransomware. As estratégias de proteção abrangem _detecção_, _proteção_ e _replicação_, permitindo que você detecte ataques de ransomware, proteja-se contra eles e estabeleça uma base para a recuperação.
+
+
+
+[[protection-strategy-elements]]
+== Elementos da estratégia de proteção
+
+As estratégias de proteção consistem em três elementos: detecção, proteção e replicação.
+
+* **As políticas de detecção** identificam ameaças de ransomware. Você tem três opções de detecção:
++
+** Detecção de criptografia
+** Atividade suspeita do usuário
+** Bloquear extensões de arquivo suspeitas
++
+Sua política de detecção pode incluir todas as três opções ou uma combinação. Ela deve incluir detecção de criptografia ou link:suspicious-user-activity.html["atividade suspeita do usuário (que requer configuração adicional)"].
+
+
+
+* **Políticas de proteção** incluem políticas de snapshot e backup.  Políticas de detecção e snapshot são necessárias em uma estratégia de proteção.  As políticas de backup são opcionais.
++
+Se você estiver usando outros produtos da NetApp para proteger sua carga de trabalho, o Ransomware Resilience os descobre e oferece a opção de:
+
++
+** Use uma política de detecção de ransomware e continue usando as políticas de Snapshot e de backup criadas por outras ferramentas NetApp, ou
+** Use o Ransomware Resilience para gerenciar a detecção, snapshots e backups.
+
+
+* **As políticas de replicação** permitem replicar snapshots do Ransomware Resilience para um site secundário. Os cronogramas de replicação podem ser definidos para frequências horárias, diárias, semanais ou mensais.
++
+Atualmente, você só pode replicar snapshots para armazenamento ONTAP local.
+
+
+
+
+NOTE: Se você estiver configurando estratégias de proteção para o Amazon FSx for NetApp ONTAP ou o Azure NetApp Files, consulte link:rp-reference-limitations.html["as limitações para cada serviço"].
+
+
+TIP: Para um gerenciamento e uma proteção aprimorados do seu conjunto de dados, você pode link:task-protection-group.html["cargas de trabalho em grupo"] para proteger coletivamente volumes sob uma única estratégia.
+
+
+
+[[protection-policies-with-other-netapp-managed-services]]
+== Políticas de proteção com outros serviços gerenciados pela NetApp
+
+Além da resiliência contra ransomware, você pode usar o NetApp Backup and Recovery para gerenciar a proteção de compartilhamentos de arquivos.
+
+As informações de proteção dos serviços de Backup and Recovery aparecem no Ransomware Resilience. Você pode adicionar uma política de detecção de ransomware a uma política existente do Backup and Recovery. Você também pode adicionar políticas de backup por meio do Ransomware Resilience, que substituem as políticas de proteção existentes do Backup and Recovery.
+
+Se uma política de detecção de ransomware estiver sendo gerenciada pelo Autonomous Ransomware Protection (ARP ou ARP/AI, dependendo da versão do ONTAP ) e FPolicy no ONTAP, essas cargas de trabalho serão protegidas e continuarão sendo gerenciadas pelo ARP e FPolicy.
+
+
+NOTE: Os destinos de backup não estão disponíveis para cargas de trabalho no Amazon FSx for NetApp ONTAP ou Azure NetApp Files. Realize operações de backup usando o serviço de backup do FSx for ONTAP. Você define políticas de backup para cargas de trabalho no FSx for ONTAP na AWS, não no Ransomware Resilience. As políticas de backup aparecem no Ransomware Resilience e permanecem inalteradas em relação à AWS.
+
+
+
+[[protection-policies-for-workloads-not-protected-by-netapp-applications]]
+=== Políticas de proteção para cargas de trabalho não protegidas por aplicativos NetApp
+
+Se sua carga de trabalho não for gerenciada pelo NetApp Backup and Recovery ou pelo NetApp Ransomware Resilience, ela pode ter snapshots criados como parte do ONTAP ou de outros produtos. Se a proteção FPolicy do ONTAP estiver em vigor, você pode alterá-la usando o ONTAP.
+
+
+
+[[predefined-policies]]
+== Políticas predefinidas
+
+Você pode escolher uma das seguintes políticas predefinidas de Resiliência contra Ransomware, que estão alinhadas com a importância da carga de trabalho.
+
+
+NOTE: A política **Extensão de usuário de criptografia** é a única política predefinida que oferece suporte à detecção de atividade suspeita do usuário. + A política **Replicação crítica** é a única política predefinida que oferece suporte à replicação de snapshots para o ONTAP.
+
+[cols="10,15a,20,15,15,15"]
+|===
+| Nível de política | Instantâneo | Freqüência | Retenção (dias) | Número de cópias instantâneas | Número máximo de cópias instantâneas 
+
+
+.4+| *Política de carga de trabalho crítica*  a| 
+A cada quarto de hora
+| A cada 15 minutos | 3 | 288 | 309 
+
+
+| Diário  a| 
+A cada 1 dia
+| 14 | 14 | 309 
+
+
+| Semanalmente  a| 
+A cada 1 semana
+| 35 | 5 | 309 
+
+
+| Mensal  a| 
+A cada 30 dias
+| 60 | 2 | 309 
+
+
+.4+| *Política importante de carga de trabalho*  a| 
+A cada meia hora
+| A cada 30 minutos | 3 | 144 | 165 
+
+
+| Diário  a| 
+A cada 1 dia
+| 14 | 14 | 165 
+
+
+| Semanalmente  a| 
+A cada 1 semana
+| 35 | 5 | 165 
+
+
+| Mensal  a| 
+A cada 30 dias
+| 60 | 2 | 165 
+
+
+.4+| *Política de carga de trabalho padrão*  a| 
+A cada meia hora
+| A cada 30 minutos | 3 | 72 | 93 
+
+
+| Diário  a| 
+A cada 1 dia
+| 14 | 14 | 93 
+
+
+| Semanalmente  a| 
+A cada 1 semana
+| 35 | 5 | 93 
+
+
+| Mensal  a| 
+A cada 30 dias
+| 60 | 2 | 93 
+
+
+.4+| *Extensão de usuário de criptografia*  a| 
+A cada meia hora
+| A cada 30 minutos | 3 | 72 | 93 
+
+
+| Diário  a| 
+A cada 1 dia
+| 14 | 14 | 93 
+
+
+| Semanalmente  a| 
+A cada 1 semana
+| 35 | 5 | 93 
+
+
+| Mensal  a| 
+A cada 30 dias
+| 60 | 2 | 93 
+
+
+.4+| *Política de replicação crítica*  a| 
+A cada quarto de hora
+| A cada 15 minutos | 3 | 288 | 309 
+
+
+| Diário  a| 
+A cada 1 dia
+| 14 | 14 | 309 
+
+
+| Semanalmente  a| 
+A cada 1 semana
+| 35 | 5 | 309 
+
+
+| Mensal  a| 
+A cada 30 dias
+| 60 | 2 | 309 
+|===
+
+
+[[next-steps]]
+== Próximos passos
+
+* link:rp-use-protect.html["Proteja as cargas de trabalho com resiliência contra ransomware."]
+
