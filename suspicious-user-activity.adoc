@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: suspicious-user-activity.html 
-keywords: data breach detection, data breach, user activity, suspicious, anomalous, 
+keywords: data breach detection, data breach, user activity, suspicious, anomalous behavior, user activity monitoring 
 summary: A detecção de atividade do usuário no Ransomware Resilience permite detectar atividades do usuário que possam representar uma ameaça potencial. 
 ---
 = Configurar a detecção de atividade do usuário em NetApp Ransomware Resilience
@@ -22,7 +22,7 @@ Um agente de atividade do usuário hospeda um coletor de dados e um conector de 
 
 O agente de atividade do usuário, o coletor de dados e o conector do diretório de usuários podem ser gerenciados a partir do painel de configurações de Ransomware Resilience.
 
-Se você não estiver usando o DII, siga as instruções de configuração aqui.
+Se você não estiver usando o NetApp Data Infrastructure Insights (DII), siga as instruções de configuração aqui.
 
 
 
@@ -52,15 +52,57 @@ Ao ativar a detecção de atividade do usuário no Ransomware Resilience, o sist
 
 Os agentes de atividade do usuário são ambientes executáveis para link:#add-a-data-collector["coletores de dados"] que compartilham eventos de atividade do usuário com o Ransomware Resilience. Você deve criar pelo menos um agente de atividade do usuário para habilitar a detecção de atividade do usuário.
 
-.Passos
-. Se esta for a primeira vez que você cria um agente de atividade do usuário, acesse o **Painel**. No bloco **Atividade do usuário**, selecione **Ativar**.
-+
-Se você estiver adicionando um agente de atividade de usuário adicional, vá para *Configurações*, localize o bloco **Atividade do usuário** e selecione **Gerenciar**. Na tela Atividade do usuário, selecione a aba **Agentes de atividade do usuário** e depois **Adicionar**.
 
-. Selecione um **Provedor de nuvem** e depois uma **Região**. Selecione **Avançar**.
+NOTE: Após a criação do locatário, não é possível alterar a região. A criação do locatário leva aproximadamente cinco minutos e não pode ser cancelada depois de iniciada.
+
+.Passos
+Você pode criar um agente de atividade do usuário usando uma configuração *Manual* ou *Automática*. Com a configuração automática, você precisa fornecer o agente do Console, o nome DNS da VM ou endereço IP e a chave SSH da VM para que o Ransomware Resilience possa criar o tenant. Com a configuração manual, o Ransomware Resilience fornece os comandos para criar o tenant manualmente.
+
+[role="tabbed-block"]
+====
+.Manual
+--
+. Se esta for a primeira vez que você cria um agente de atividade do usuário, acesse o **Dashboard**. No bloco **User activity monitoring**, selecione **Activate**.
++
+Se você estiver adicionando um agente adicional de atividade do usuário, acesse *Configurações*, localize o bloco **Monitoramento de atividade do usuário** e selecione **Gerenciar**. Na tela de atividade do usuário, selecione a guia **Agentes de atividade do usuário** e, em seguida, **Adicionar**.
+
+. Selecione um **provedor de nuvem** e, em seguida, uma **região**.
+. Selecione **Criar locatário**.
++
+O processo de criação de locatário leva aproximadamente cinco minutos. Após selecionar *Criar locatário*, você pode selecionar *Executar em segundo plano* para retornar ao painel e continuar com outras operações.
+
+. Insira o *nome do agente de atividade do usuário*.
+. Selecione *Manual* como método de configuração.
+. Na etapa *Permitir locatário*, o Ransomware Resilience fornece a URL do agente de atividade do usuário. Copie e cole a URL para permitir conexões.
+. Abra um terminal no seu ambiente de nuvem para instalar o agente de atividade do usuário.
++
+.. Opcionalmente, se você estiver usando um servidor proxy, preencha a variável do seu servidor proxy e execute o comando de exportação mostrado. `export https_proxy='USER:PASSWORD@PROXY_SERVER:<port>'`. Se o servidor proxy não exigir autenticação, omita os campos de usuário e senha. Nesse caso, o comando será semelhante `export https_proxy='https://proxy.company.com:<port>'`.
+.. No mesmo terminal, copie e cole o comando de instalação. O trecho de código é válido por apenas duas horas e só pode ser usado para instalar um agente de atividade do usuário.
++
+Caso você precise instalar agentes adicionais de atividade do usuário, repita esse processo para gerar um novo trecho de instalação.
+
+
+
+. Selecione *Avançar*.
+. Analise os detalhes do agente de atividade do locatário e do usuário. Se tudo estiver correto, selecione *Ativar* para concluir o processo.
+
+
+--
+.Automático
+--
+. Se esta for a primeira vez que você cria um agente de atividade do usuário, acesse o **Dashboard**. No bloco **User activity monitoring**, selecione **Activate**.
++
+Se você estiver adicionando um agente adicional de atividade do usuário, acesse *Configurações*, localize o bloco **Monitoramento de atividade do usuário** e selecione **Gerenciar**. Na tela de atividade do usuário, selecione a guia **Agentes de atividade do usuário** e, em seguida, **Adicionar**.
+
+. Selecione um **provedor de nuvem** e, em seguida, uma **região**.
+. Selecione **Criar locatário**.
++
+O processo de criação de locatário leva aproximadamente cinco minutos. Após selecionar *Criar locatário*, você pode selecionar *Executar em segundo plano* para retornar ao painel e continuar com outras operações.
+
+. Digite um nome para o *nome do agente de atividade do usuário*.
+. Selecione *Automático* como método de configuração.
 . Forneça os detalhes do agente de atividade do usuário:
 +
-** **Nome do agente de atividade do usuário**
 ** *Agente de console* - O agente de console deve estar na mesma rede que o agente de atividade do usuário e ter conectividade SSH com o endereço IP do agente de atividade do usuário.
 ** *Nome DNS ou endereço IP da VM*
 ** *Chave SSH da VM* - Insira a chave SSH usando este formato:
@@ -81,6 +123,8 @@ image:user-activity-agent.png["Captura de tela da interface do agente de adiçã
 . Confirme se o agente de atividade do usuário foi criado com sucesso. No bloco de monitoramento de atividade do usuário, uma implantação bem-sucedida é exibida como **Em execução**.
 
 
+--
+====
 .Resultado
 Após a criação bem-sucedida do agente de atividade do usuário, retorne ao menu **Configurações** e selecione **Gerenciar** no bloco de monitoramento de atividade do usuário. Selecione a guia **Agentes de atividade do usuário** e selecione o agente de atividade do usuário para visualizar detalhes sobre ele, incluindo coletores de dados e conectores de diretório de usuários.
 
@@ -134,7 +178,7 @@ Para mapear IDs de usuário para nomes de usuário, você deve criar um conector
 | *Tipo de diretório de usuário* | O tipo de diretório 
 
 
-| *Endereço IP do servidor ou nome de domínio* | O endereço IP ou o Nome de Domínio Totalmente Qualificado (FQDN) do servidor que hospeda a conexão. 
+| *Endereço IP do servidor ou nome de domínio* | O endereço IP ou o nome de domínio totalmente qualificado (FQDN) do servidor que hospeda a conexão 
 
 
 | *Nome da floresta ou nome da pesquisa*  a| 
@@ -164,9 +208,10 @@ Forneça os detalhes do mapeamento de atributos:
 ** *SID* (se você estiver usando LDAP)
 ** *Nome de usuário*
 ** *ID Unix* (se você estiver usando NFS)
-** Se selecionar *Incluir atributos opcionais*, você também poderá adicionar um endereço de e-mail, número de telefone, função, estado, país, departamento, foto, nome do gerente ou grupos. Selecione *Avançado* para adicionar uma consulta de pesquisa opcional.
+** Se selecionar *Incluir atributos opcionais*, você também poderá adicionar um endereço de e-mail, número de telefone, função, estado, país, departamento, foto, DN do gerente ou grupos.
 
 
+. Selecione *Advanced* para adicionar uma consulta de pesquisa opcional.
 . Selecione **Adicionar**.
 . Retorne à guia de conectores do diretório do usuário para verificar o status do seu conector do diretório do usuário. Se criado com sucesso, o status do conector do diretório do usuário será exibido como *Em execução*.
 
@@ -191,7 +236,7 @@ Forneça os detalhes do mapeamento de atributos:
 
 Após configurar a detecção de atividade do usuário, você pode monitorar eventos na página de alertas. Para mais informações, consulte link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["Detectar atividades maliciosas e comportamentos suspeitos de usuários"].
 
-Você também pode link:task-automate-user-activity.html["Automatize as respostas aos eventos de atividade do usuário"].
+Você também pode link:task-automate-user-activity.html["automatizar respostas a eventos de atividade do usuário"].
 
 
 
