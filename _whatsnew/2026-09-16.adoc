@@ -1,11 +1,11 @@
-= Suporte aprimorado para restaurações limpas
+= Suporte para restauração limpa em casos de comportamento suspeito do usuário e ataques de criptografia baseados no usuário
 :allow-uri-read: 
 
 
 
 
-[[enhanced-support-for-clean-restores]]
-=== Suporte aprimorado para restaurações limpas
+[[clean-restore-support-for-suspicious-user-behavior-and-user-based-encryption-attacks]]
+=== Suporte para restauração limpa em casos de comportamento suspeito do usuário e ataques de criptografia baseados no usuário
 
 Agora, restaurações limpas estão disponíveis para recuperação após comportamentos suspeitos do usuário e ataques de criptografia baseados no usuário. Essa melhoria complementa o suporte já existente para ataques baseados em criptografia (entropia). Essa funcionalidade aprimorada permite que você aproveite a abordagem guiada da restauração limpa, identificando os pontos de restauração ideais para minimizar a perda de dados e acelerar a recuperação.
 
