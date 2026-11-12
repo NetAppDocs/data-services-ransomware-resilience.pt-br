@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-clean-restore.html 
 keywords: clean room, clean restore, secure recovery, restore, isolated recovery environment 
-summary: Antes de realizar uma restauração completa no NetApp Ransomware Resilience, você deve criar um ambiente de recuperação isolado para isolar e limpar o ambiente. 
+summary: Crie um ambiente de recuperação isolado no NetApp Ransomware Resilience para isolar e limpar cargas de trabalho, revisar configurações compatíveis e preparar uma restauração limpa. 
 ---
 = Configure o ambiente para uma restauração limpa em NetApp Ransomware Resilience
 :hardbreaks:
@@ -97,8 +97,8 @@ NOTE: A execução de uma restauração completa em um ambiente baseado em nuvem
 [[considerations]]
 == Considerações
 
-* Você só pode realizar uma restauração completa para ataques baseados em criptografia (tanto de comportamento do usuário quanto de entropia) e ataques de comportamento suspeito do usuário. A restauração completa não é compatível com ataques de violação de dados e destruição de dados.
-* Se o ambiente de recuperação isolado não tiver capacidade para uma nova operação, ela será enfileirada até que haja disponibilidade.
+* Você pode realizar uma restauração limpa apenas para ataques baseados em criptografia (tanto comportamento do usuário quanto entropia) e ataques de comportamento suspeito do usuário. A restauração limpa não é compatível com ataques de violação de dados e destruição de dados.
+* Se o ambiente de recuperação isolado não tiver capacidade para uma nova operação, a operação fica na fila até que haja capacidade disponível.
 +
 ** Você pode monitorar o status das operações de restauração limpa ativas e em fila a qualquer momento no painel de controle do NetApp Ransomware Resilience Recovery.
 
@@ -111,7 +111,7 @@ NOTE: A execução de uma restauração completa em um ambiente baseado em nuvem
 [[additional-considerations-for-on-premises-environments]]
 === Considerações adicionais para ambientes locais
 
-Se você estiver implantando um IRE local, quando uma VM do Windows é clonada para a análise de recuperação em uma restauração limpa, a VM clonada mantém a mesma configuração da origem. Isso pode causar conflitos:
+Se você estiver implantando um IRE local, quando uma VM do Windows for clonada para a análise de recuperação em uma restauração limpa, a VM clonada manterá a mesma configuração da origem. Essa duplicação pode causar conflitos:
 
 * Utilizar o mesmo identificador de segurança (SID) resulta em conflitos de autenticação e segurança.
 * Utilizar o mesmo nome de computador (CN) causa conflitos de rede.
@@ -125,7 +125,7 @@ Para evitar esses conflitos, o Ransomware Resilience executa o sysprep na VM clo
 [[secondary-sources]]
 === Fontes secundárias
 
-Ao criar o IRE, você tem a opção de adicionar uma fonte secundária.
+Ao criar o IRE, você pode adicionar uma fonte secundária.
 
 Se a fonte primária estiver indisponível e você tiver configurado uma fonte secundária, os dados serão restaurados para a fonte secundária.
 
@@ -151,7 +151,7 @@ Custos de terceiros podem incluir a criação e implantação de instâncias de 
 [[prerequisites]]
 == Pré-requisitos
 
-Certifique-se de ter concluído os pré-requisitos para o tipo de implantação de restauração limpa escolhido. Selecione a guia correspondente à configuração do IRE desejada.
+Confirme se você concluiu os pré-requisitos para o tipo de implantação de restauração limpa escolhido. Selecione a guia correspondente à configuração do IRE escolhida.
 
 
 NOTE: Ao criar o IRE, você deve adicionar todos os sistemas (primários ou secundários) que deseja usar para análise durante a etapa de seleção do sistema.
@@ -217,7 +217,7 @@ NOTE: Se você estiver configurando um IRE com a origem no Amazon FSx for NetApp
 * Para o IRE, provisione uma VPC dentro do intervalo de endereços IP do seu ambiente de produção. O endereço IP não deve entrar em conflito com nenhum endereço IP existente.
 +
 ** A VPC deve ter uma capacidade mínima de 64 endereços IP (uma máscara de rede /26).
-** A VPC deve permitir acesso à internet pública. Caso contrário, o agente do Console não funcionará
+** A VPC deve permitir acesso à internet pública. Caso contrário, o agente do Console não funcionará.
 
 
 
@@ -356,7 +356,7 @@ NOTE: Se você estiver configurando um IRE com a origem no Amazon FSx for NetApp
 * Para o IRE, provisione uma VPC dentro do intervalo de endereços IP do seu ambiente de produção. O endereço IP não deve entrar em conflito com nenhum endereço IP existente.
 +
 ** A VPC deve ter uma capacidade mínima de 64 endereços IP (uma máscara de rede /26).
-** A VPC deve permitir acesso à internet pública. Caso contrário, o agente do Console não funcionará
+** A VPC deve permitir acesso à internet pública. Caso contrário, o agente do Console não funcionará.
 
 
 
@@ -475,7 +475,7 @@ image:diagram-clean-recovery-on-prem.png["Diagrama de restauração limpa de um 
 ** O VMware Tools deve estar instalado e em execução.
 ** O WinRM precisa estar ativado.
 ** O endereço IP precisa ser configurado.
-** Certifique-se de ter a licença apropriada para permitir a clonagem de VMs base.
+** Você precisa ter a licença apropriada para permitir a clonagem de máquinas virtuais base.
 ** A máquina virtual precisa estar ligada.
 
 
@@ -519,6 +519,9 @@ Acesso NFS ao: * Agente do console de produção * VLAN do agente do console * V
 Antes de realizar uma restauração limpa, você deve criar um ambiente de recuperação isolado.
 
 O processo para criar um ambiente de recuperação isolado difere dependendo se o ambiente está na nuvem ou no local. Certifique-se de seguir as instruções para o local correto.
+
+
+TIP: link:https://www.netapp.com/video/6Vj0Ijo3mno/netapp-ransomware-resilience-clean-restore/["Assista a um vídeo que orienta você na implantação de recuperação isolada."^]
 
 [role="tabbed-block"]
 ====
@@ -610,10 +613,18 @@ TIP: Se você precisar alterar algum detalhe do IRE, selecione *Configurações*
 Não é possível excluir um IRE com uma operação de restauração ativa; você pode cancelar a operação de restauração ou aguardar até que a restauração seja concluída e então excluir o IRE.
 
 
-IMPORTANT: Ao excluir o IRE, o SVM da sala limpa e o volume de metadados também são excluídos. Após a exclusão desses ativos, você não poderá mais gerar relatórios para a restauração limpa.
+IMPORTANT: Se você excluir o IRE, a SVM de clean room e o volume de metadados também serão excluídos. Depois que esses ativos forem excluídos, você não poderá mais gerar relatórios para a restauração limpa.
 
 . Acesse as **Configurações**.
 . No cartão de limpeza e recuperação de isolamento, selecione **Manage**.
 . Identifique a sala limpa que deseja excluir. Selecione o menu de ações (`...`) para o IRE e então **Excluir**.
 . Na caixa de diálogo, selecione **Excluir** para confirmar a operação.
+
+
+
+
+[[more-information]]
+== Mais informações
+
+* link:https://www.youtube.com/watch?v=6Vj0Ijo3mno&t=6s["VÍDEO: implantação de ambiente de recuperação isolado"]
 

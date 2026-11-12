@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-clean-restore-recover.html 
 keywords: clean room, clean restore, secure recovery, recover, isolated recovery environment, ire 
-summary: A NetApp Ransomware Resilience permite controlar e higienizar suas cargas de trabalho com uma restauração limpa. 
+summary: Recupere cargas de trabalho após um ataque de ransomware usando a restauração limpa para analisar snapshots, remover malware e restaurar os dados para o local original ou para um local alternativo. 
 ---
 = Recupere cargas de trabalho com restauração limpa em NetApp Ransomware Resilience
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: A NetApp Ransomware Resilience permite controlar e higienizar suas carg
 
 
 [role="lead"]
-Com o NetApp Ransomware Resilience, você pode realizar uma recuperação guiada após um ataque de ransomware baseado em criptografia, utilizando uma restauração limpa. A restauração limpa identifica caminhos de recuperação otimizados para minimizar a perda de dados e restaurar suas cargas de trabalho online no menor tempo possível.
+Com o NetApp Ransomware Resilience, você pode realizar uma recuperação guiada após um ataque de ransomware baseado em criptografia, usando uma restauração limpa. A restauração limpa identifica caminhos de recuperação otimizados para minimizar a perda de dados e trazer suas cargas de trabalho de volta online o mais rápido possível.
 
 
 
@@ -30,8 +30,8 @@ Você precisa ter configurado um link:task-clean-restore.html["ambiente de recup
 [[considerations]]
 == Considerações
 
-* Você só pode realizar uma restauração completa para ataques baseados em criptografia (tanto de comportamento do usuário quanto de entropia) e ataques de comportamento suspeito do usuário. A restauração completa não é compatível com ataques de violação de dados e destruição de dados.
-* Se o ambiente de recuperação isolado não tiver capacidade para uma nova operação, ela será enfileirada até que haja disponibilidade.
+* Você pode realizar uma restauração limpa apenas para ataques baseados em criptografia (tanto comportamento do usuário quanto entropia) e ataques de comportamento suspeito do usuário. A restauração limpa não é compatível com ataques de violação de dados e destruição de dados.
+* Se o ambiente de recuperação isolado não tiver capacidade para uma nova operação, a operação fica na fila até que haja capacidade disponível.
 +
 ** Você pode monitorar o status das operações de restauração limpa ativas e em fila a qualquer momento no painel de controle do NetApp Ransomware Resilience Recovery.
 
@@ -44,7 +44,7 @@ Você precisa ter configurado um link:task-clean-restore.html["ambiente de recup
 [[considerations-for-restoring-to-an-alternate-location]]
 === Considerações para a restauração em um local alternativo
 
-Ao restaurar um volume usando a restauração limpa, você tem a opção de restaurá-lo para um local alternativo gerenciado pelo mesmo agente do Console. O novo local pode estar no mesmo sistema, em uma VM de armazenamento ou em um agregado diferente. Ao restaurar para um local alternativo:
+Ao restaurar um volume usando a restauração limpa, você pode restaurá-lo em um local alternativo gerenciado pelo mesmo agente do Console. O novo local pode estar no mesmo ou em um sistema diferente, na mesma ou em uma VM de armazenamento diferente, ou no mesmo ou em um agregado diferente. Ao restaurar em um local alternativo:
 
 * O ARP é ativado automaticamente no novo volume.
 * O caminho de junção é definido com base no nome que você fornecer. Por exemplo: `<Data LIF IP address of destination storage VM>:<new volume name>`.
@@ -61,13 +61,13 @@ Ao restaurar um volume usando a restauração limpa, você tem a opção de rest
 . Nas opções de Tipo de restauração, selecione **Restauração limpa** e depois **Avançar**.
 . Selecione o ambiente de recuperação isolado que deseja usar e clique em **Next**.
 . Analise o ambiente de recuperação isolado, confirmando se é o local correto. Selecione **Restaurar**.
-. O Ransomware Resilience realiza a configuração necessária. Assim que a configuração for concluída com sucesso, o Ransomware Resilience atualiza o status. Para prosseguir, selecione **Avançar**.
+. O Ransomware Resilience realiza a configuração necessária. Após a conclusão bem-sucedida da configuração, o Ransomware Resilience atualiza o status. Para prosseguir, selecione **Avançar**.
 . Após a conclusão da configuração, selecione **Executar análise**. Ransomware Resilience busca o snapshot mais recente não afetado.
 +
 image:screenshot-clean-room-analysis.png["Captura de tela da etapa de análise de restauração limpa."]
 
 +
-Enquanto a análise estiver em andamento, você pode selecionar **Parar**. Parar a análise exige que o processo de restauração completa seja iniciado novamente.
+Enquanto a análise estiver em andamento, você pode selecionar **Parar**. Se você interromper a análise, deverá iniciar o processo de restauração limpa novamente.
 
 . Após a conclusão da análise, selecione **Avançar** para planejar sua recuperação. O NetApp Ransomware Resilience apresenta duas opções: **Least data loss** e **Latest unimpacted restore point**. Selecione uma das opções e, opcionalmente, examine os dados de arquivos individuais para cada ponto de restauração.
 +
@@ -76,16 +76,16 @@ Para visualizar dados detalhados de eventos de arquivos, selecione um arquivo pa
 +
 image:clean-restore-plan.png["Captura de tela da etapa do plano de restauração limpa."]
 
-. Após escolher o seu ponto de recuperação, selecione **Criar ponto de recuperação**. O Ransomware Resilience inicia uma série de tarefas para criar o ponto de recuperação. Assim que esse processo for concluído, selecione **Avançar**.
+. Após escolher seu ponto de restauração, selecione **Criar ponto de restauração**. O Ransomware Resilience inicia uma série de tarefas para criar o ponto de restauração. Após a conclusão desse processo, selecione **Avançar**.
 . Selecione **Iniciar limpeza** para começar a remover o malware dos arquivos.
-. Assim que a limpeza for concluída, selecione **Next**.
+. Após a conclusão da limpeza, selecione **Avançar**.
 . Escolha o destino de recuperação:
 +
 ** Selecione **Primário (original)** para restaurar para o destino original.
 +
 Se o local principal estiver indisponível e link:task-clean-restore.html#secondary-sources["Você configurou uma fonte secundária"], você pode restaurar para a fonte **Secondary**.
 
-** Selecione **Alternate** para restaurar em um novo volume. Escolha o **System**, a **Storage VM** e o **Aggregate** para o novo volume e, em seguida, forneça um **novo nome de volume**.
+** Selecione **Alternate** para restaurar em um novo volume. Escolha **System**, **Storage VM** e **Aggregate** para o novo volume e, em seguida, forneça um **New volume name**.
 +
 image:alternate-recovery-destination.png["Captura de tela do destino de recuperação alternativo"]
 

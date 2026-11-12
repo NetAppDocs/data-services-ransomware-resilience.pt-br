@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-start-prerequisites.html 
 keywords: bluexp ransomware protection, ransomware protection prerequisites, resilience 
-summary: Comece a usar o NetApp Ransomware Resilience verificando o suporte ao seu ambiente, acesso à rede, login e navegador da web. 
+summary: Verifique os requisitos do sistema, do NetApp Console, do ONTAP, de backup e de detecção de comportamento do usuário antes de implementar o NetApp Ransomware Resilience. 
 ---
 = Pré-requisitos de NetApp Ransomware Resilience
 :hardbreaks:
@@ -12,7 +12,7 @@ summary: Comece a usar o NetApp Ransomware Resilience verificando o suporte ao s
 
 
 [role="lead"]
-Antes de implementar o NetApp Ransomware Resilience, verifique se seu ambiente, acesso à rede e navegador atendem aos requisitos.
+Antes de implementar o NetApp Ransomware Resilience, verifique se seus sistemas, a configuração do NetApp Console, a versão do ONTAP e os destinos de backup atendem aos requisitos.
 
 Analise os seguintes requisitos.
 
@@ -21,7 +21,7 @@ Analise os seguintes requisitos.
 [[supported-systems]]
 == Sistemas suportados
 
-Certifique-se de estar usando um sistema compatível:
+Confirme se você está usando um sistema compatível:
 
 |===
 | Ambiente | Protocolo | Versões suportadas 
@@ -75,13 +75,13 @@ A configuração do seu NetApp Console requer:
 ** Se seus clusters ONTAP no local ou sistemas Cloud Volumes ONTAP não estiverem configurados no Console, consulte link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html["Aprenda a configurar um agente de console"^] e link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["requisitos padrão do console"^].
 +
 
-NOTE: Se você tiver vários agentes do Console em uma única organização do Console, o Ransomware Resilience verificará os recursos do ONTAP em todos os agentes do Console, além daquele que estiver selecionado na interface do usuário do Console.
+NOTE: Se você tiver vários agentes do Console em uma única organização do Console, o Ransomware Resilience verifica os recursos do ONTAP em todos os agentes do Console, não apenas no que está selecionado no Console UI.
 
 
 
 * O agente do Console deve ter o `cloudmanager-ransomware-protection` contêiner em estado ativo.
 * Existe um limite de 3.000 cargas de trabalho por agente do Console. Você pode enviar uma solicitação para estender esse limite.
-* Para clusters ONTAP ou Cloud Volumes ONTAP, o Ransomware Resilience requer versão do ONTAP 9.11.1 ou superior.
+* Para clusters do ONTAP ou do Cloud Volumes ONTAP, o Ransomware Resilience requer a versão 9.11.1 ou posterior do ONTAP.
 +
 
 NOTE: Para usar a Resiliência a Ransomware em cargas de trabalho SAN, você precisa estar executando o ONTAP 9.17.1 ou posterior.
@@ -119,14 +119,14 @@ NOTE: Você pode link:task-backup-destination.html["configurar um destino de bac
 [[user-behavior-detection-requirements]]
 == Requisitos de detecção de comportamento do usuário
 
-Para que a Resiliência a Ransomware forneça alertas sobre o comportamento do usuário, você deve configurar um agente de atividade do usuário. Para instalar um agente de atividade do usuário, certifique-se de que seu sistema atenda link:reference-user-activity-requirements.html["os requisitos"].
+Para que a Ransomware Resilience forneça alertas sobre o comportamento do usuário, você deve configurar um agente de atividade do usuário. Para instalar um agente de atividade do usuário, confirme se o seu sistema atende aos requisitos link:reference-user-activity-requirements.html["os requisitos"].
 
 
 
 [[clean-restore-prerequisites]]
 == Pré-requisitos de restauração limpa
 
-O Ransomware Resilience oferece restaurações limpas, que proporcionam um processo de recuperação guiado que descobre os melhores caminhos de recuperação. Para usar a restauração limpa, link:task-clean-restore.html["certifique-se de que cumpre os pré-requisitos"].
+O Ransomware Resilience oferece restaurações limpas, que proporcionam um processo de recuperação guiado que descobre os melhores caminhos de recuperação. Para usar a restauração limpa, link:task-clean-restore.html["Confirme que você atende aos pré-requisitos"].
 
 
 

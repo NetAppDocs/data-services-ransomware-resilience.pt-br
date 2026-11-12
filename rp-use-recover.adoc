@@ -21,7 +21,7 @@ Você pode restaurar a carga de trabalho selecionando todos os volumes, volumes 
 
 
 
-TIP: A recuperação da carga de trabalho pode afetar as cargas de trabalho em execução.  Você deve coordenar os processos de recuperação com as partes interessadas apropriadas.
+TIP: A recuperação de cargas de trabalho pode afetar as cargas de trabalho em execução. Coordene os processos de recuperação com as partes interessadas relevantes.
 
 Uma carga de trabalho pode ter um dos seguintes status de restauração:
 

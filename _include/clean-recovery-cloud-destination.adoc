@@ -55,7 +55,7 @@ NOTE: Se você estiver configurando um IRE com a origem no Amazon FSx for NetApp
 * Para o IRE, provisione uma VPC dentro do intervalo de endereços IP do seu ambiente de produção. O endereço IP não deve entrar em conflito com nenhum endereço IP existente.
 +
 ** A VPC deve ter uma capacidade mínima de 64 endereços IP (uma máscara de rede /26).
-** A VPC deve permitir acesso à internet pública. Caso contrário, o agente do Console não funcionará
+** A VPC deve permitir acesso à internet pública. Caso contrário, o agente do Console não funcionará.
 
 
 

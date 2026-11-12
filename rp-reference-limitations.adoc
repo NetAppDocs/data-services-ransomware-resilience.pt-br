@@ -12,7 +12,7 @@ summary: Limitações conhecidas identificam plataformas, dispositivos ou funç�
 
 
 [role="lead"]
-Limitações conhecidas identificam plataformas, dispositivos ou funções que não são suportados por esta versão do produto ou que não interoperam corretamente com ele. Revise essas limitações cuidadosamente.
+As limitações conhecidas identificam as plataformas, os dispositivos e as funções que o NetApp Ransomware Resilience não suporta ou que não interoperam corretamente com ele. Analise as limitações que se aplicam ao seu ambiente.
 
 
 
@@ -28,7 +28,7 @@ Se você selecionar um volume ONTAP 9.11.1 para o exercício de prontidão para 
 
 As seguintes limitações se aplicam ao Amazon FSx para ONTAP:
 
-* As políticas de backup não são compatíveis com o Amazon FSx for ONTAP. Nesse ambiente, você deve executar operações de backup usando os backups do Amazon FSx. Você pode restaurar essas cargas de trabalho usando o Ransomware Resilience.
+* As políticas de backup não são compatíveis com o Amazon FSx for ONTAP. Nesse ambiente, use os backups do Amazon FSx para realizar operações de backup. Você pode restaurar essas cargas de trabalho usando o Ransomware Resilience.
 * As operações de restauração são executadas somente a partir de instantâneos.
 
 
@@ -43,7 +43,7 @@ As seguintes limitações se aplicam ao Azure NetApp Files:
 * Estratégias de proteção contra ransomware com replicação não são suportadas para Azure NetApp Files.
 * Azure NetApp Files não oferece suporte a FPolicy nem à detecção de comportamento do usuário. Azure NetApp Files também não oferece suporte à análise forense de entropia.
 * Ao selecionar uma estratégia de proteção, certifique-se de que sua programação de snapshots seja compatível com o Azure NetApp Files. A programação de snapshots mais frequente disponível no Azure NetApp Files é a cada hora.
-* Não é recomendável usar link:reference-soar.html["Playbooks SOAR"] com Azure NetApp Files devido às APIs do Azure NetApp Files bloquearem ações automatizadas.
+* Evite usar link:reference-soar.html["Playbooks SOAR"] com o Azure NetApp Files porque as APIs do Azure NetApp Files bloqueiam ações automatizadas.
 * Alguns dados de eventos não estão incluídos em link:task-siem.html["Relatórios SIEM"] para configurações do Azure NetApp Files.
 * A restauração em nível de arquivo não está disponível quando você link:task-custom-restore.html["restaurar uma carga de trabalho"] para o Azure NetApp Files.
 
@@ -75,4 +75,4 @@ As seguintes limitações se aplicam às cargas de trabalho SAN (armazenamento e
 [[multi-admin-verification]]
 == Verificação de múltiplos administradores
 
-A verificação multiadministradora não é compatível com o Ransomware Resilience nem com o NetApp Console. Se você configurou link:https://docs.netapp.com/us-en/ontap/multi-admin-verify/["Verificação multi-administrador no ONTAP"^], não poderá ativar a proteção, realizar um teste de prontidão ou executar qualquer operação de restauração. Você deve desativar a verificação multiadministradora antes de tentar qualquer uma dessas operações.
+A verificação de múltiplos administradores não é compatível com o Ransomware Resilience nem com o NetApp Console. Se você configurou link:https://docs.netapp.com/us-en/ontap/multi-admin-verify/["Verificação multi-administrador no ONTAP"^], não poderá ativar a proteção, realizar um teste de prontidão nem executar nenhuma operação de restauração. Desative a verificação de múltiplos administradores antes de tentar qualquer uma dessas operações.
