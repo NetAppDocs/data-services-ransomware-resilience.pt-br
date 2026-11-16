@@ -50,13 +50,20 @@ TIP: Para ver mais detalhes sobre as cargas de trabalho, role para a direita.
 image:screen-protection-groups-policy.png["Adicionar grupo de proteção - página Política"]
 
 . Selecione uma estratégia de proteção para o grupo.
+. Se sua política incluir o bloqueio de extensões de arquivo suspeitas, selecione o ícone de lápis para configurações opcionais com bloqueio de extensões de arquivo.
++
+A opção de bloquear extensões de arquivo suspeitas usa a lista padrão que você configurou para a organização. Para link:task-file-extensions.html["usar uma lista personalizada"]que você criou, selecione o ícone de lápis.
+
++
+Se você configurou listas de extensões de arquivo bloqueadas no ONTAP, poderá substituir essas listas selecionando *Substituir listas do ONTAP por listas do Ransomware Resilience*. Em seguida, escolha se deseja que a SVM *Permita todas as extensões de arquivo, exceto a lista de bloqueio* ou *Bloqueie todas as extensões de arquivo, exceto a lista de permissões*. Depois, selecione a lista no menu suspenso. Todas as VMs de storage (SVMs) na carga de trabalho usarão essa lista; depois, você poderá aplicar listas diferentes a SVMs diferentes na carga de trabalho.
+
 . Se a estratégia de proteção incluir replicação, revise as configurações de replicação.
 +
 .. Para replicar todos os snapshots para o mesmo destino, marque a opção **Usar o mesmo destino para cada carga de trabalho**. Selecione um *Sistema de destino* e uma *VM de armazenamento de destino* para as cargas de trabalho na seção Agente do console. Para usar destinos diferentes, desmarque essa caixa. Analise cada carga de trabalho em cada agente do Console e atribua um *Sistema de destino* e uma *VM de armazenamento de destino* para cada carga de trabalho. Selecione **Próximo**.
 
 
 . Para configurar uma política de backup, escolha uma e selecione **Avançar**.
-. Se sua política de detecção incluir detecção de comportamento do usuário, selecione o coletor de dados que deseja usar e depois **Avançar**.
+. Se a sua política incluir a detecção de comportamento do usuário, selecione o coletor de dados que você deseja usar e, em seguida, **Avançar**.
 . Revise as seleções para o grupo de proteção.
 . Para finalizar o grupo de proteção, selecione *Add*.
 

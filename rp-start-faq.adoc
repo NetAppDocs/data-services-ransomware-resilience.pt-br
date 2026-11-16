@@ -176,7 +176,7 @@ Sim, se você tiver cargas de trabalho gerenciadas no Backup and Recovery, essas
 Não, você não pode modificar as políticas gerenciadas pelo NetApp Backup and Recovery a partir do Ransomware Resilience. Você gerencia quaisquer alterações nessas políticas no NetApp Backup and Recovery.
 
 .Se existirem políticas do ONTAP (como ARP, FPolicy e snapshots), o Ransomware Resilience as altera?
-O Ransomware Resilience não modifica nenhuma política de detecção existente (configurações de ARP, FPolicy) do ONTAP. Se você modificar alguma configuração no Ransomware Resilience, poderá substituir as configurações do ONTAP.
+Não automaticamente. O Ransomware Resilience não modifica nenhuma política de detecção existente (configurações ARP, FPolicy) do ONTAP, a menos que você altere essas configurações manualmente no Ransomware Resilience.
 
 .O que acontece se você adicionar novas políticas em Backup and Recovery depois de se inscrever no Ransomware Resilience?
 A Resiliência contra Ransomware reconhece políticas recém-criadas e alterações de políticas em NetApp Backup and Recovery.

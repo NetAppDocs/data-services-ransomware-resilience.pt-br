@@ -72,6 +72,14 @@ As seguintes limitações se aplicam às cargas de trabalho SAN (armazenamento e
 
 
 
+[[metrocluster-limitations]]
+== MetroCluster limitações
+
+* A restauração limpa não é compatível no momento com as cargas de trabalho do MetroCluster.
+
+
+
+
 [[multi-admin-verification]]
 == Verificação de múltiplos administradores
 
