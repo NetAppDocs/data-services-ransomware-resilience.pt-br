@@ -12,9 +12,9 @@ summary: Configure as listas de extensões de arquivo suportadas ou bloqueadas n
 
 
 [role="lead"]
-O NetApp Ransomware Resilience permite configurar uma estratégia de proteção que bloqueia extensões de arquivo suspeitas. O Ransomware Resilience fornece uma lista padrão de extensões de arquivo suspeitas conhecidas para bloquear e evitar ataques de ransomware. Você pode personalizar a lista de extensões de arquivo, adicionando ou removendo entradas conforme necessário.
+O NetApp Ransomware Resilience permite configurar uma estratégia de proteção que bloqueia extensões de arquivo suspeitas. O NetApp Ransomware Resilience fornece uma lista padrão de extensões de arquivo suspeitas conhecidas para bloquear arquivos suspeitos no momento da criação e evitar ataques de ransomware. Você pode personalizar a lista de extensões de arquivo, adicionando ou removendo entradas conforme necessário.
 
-Ao configurar a proteção com bloqueio de extensões de arquivo suspeitas, você a define no nível da carga de trabalho. No entanto, você pode personalizar as extensões de arquivo no nível da máquina virtual de storage (SVM), o que significa que diferentes SVMs na mesma carga de trabalho podem usar listas diferentes.
+Ao configurar a proteção com bloqueio de extensões de arquivo suspeitas, a configuração é definida no nível da carga de trabalho. No entanto, você pode personalizar a lista de extensões de arquivo no nível da máquina virtual de armazenamento (SVM), o que significa que diferentes SVMs na mesma carga de trabalho podem usar listas diferentes.
 
 
 
@@ -32,21 +32,23 @@ Existem duas abordagens para configurar listas de extensões de arquivo:
 [[file-extension-blocking-from-ontap]]
 === Bloqueio de extensão de arquivo do ONTAP
 
-Se você configurou no ONTAP o bloqueio de extensões de arquivo específicas, o Ransomware Resilience reconhecerá essas configurações. Se você configurar link:rp-use-protect.html["configurar proteção"] no Ransomware Resilience o bloqueio de extensões de arquivo suspeitas, o Ransomware Resilience passará a usar uma lista padrão mais selecionada de extensões de arquivo, a menos que você tenha configurado um padrão diferente.
+Se você configurou extensões de arquivo específicas no ONTAP para serem bloqueadas, o Ransomware Resilience reconhece essa lista. Se você tentar ativar o bloqueio de arquivos suspeitos no Ransomware Resilience e isso for bloqueado, você tem listas demais de extensões de arquivo bloqueadas ativadas. Remova uma das listas no ONTAP para prosseguir.
+
+A lista padrão fornecida pelo Ransomware Resilience é uma lista mais criteriosa de extensões de arquivo criadas por malware e ransomware do que no ONTAP.
 
 
 
 [[default-file-extensions]]
 === Extensões de arquivo padrão
 
-O Ransomware Resilience fornece uma lista padrão de extensões de arquivo bloqueadas chamada "NetApp." Por padrão, todas as cargas de trabalho habilitadas para bloquear extensões de arquivo suspeitas usam essa lista, que contém mais de 3.900 extensões de arquivo maliciosas conhecidas. Você pode modificar essa lista ou copiá-la para usá-la como base para uma lista personalizada.
+O Ransomware Resilience fornece uma lista padrão de extensões de arquivo bloqueadas chamada "NetApp." Quando essa lista é selecionada para o bloqueio de extensões de arquivo suspeitas, o Ransomware Resilience bloqueia arquivos com extensões presentes na lista. Você pode modificar essa lista ou copiá-la para usá-la como base para uma lista personalizada. Você pode <<default,também defina uma lista padrão diferente>>.
 
 Você pode definir uma lista diferente como padrão. Depois que uma lista for definida como padrão, todas as cargas de trabalho habilitadas para bloqueio de arquivos usarão essa lista, a menos que você selecione manualmente outra lista.
 
 
 
-[[create-a-file-extensions-list]]
-== Crie uma lista de extensões de arquivo
+[[create-a-file-extension-list]]
+== Criar uma lista de extensões de arquivo
 
 .Passos
 . Em Resiliência a Ransomware, selecione **Configurações**.
@@ -56,14 +58,14 @@ Você pode definir uma lista diferente como padrão. Depois que uma lista for de
 . Selecione como a lista deve funcionar:
 +
 ** Selecione *Bloquear extensões* para sinalizar automaticamente qualquer extensão de arquivo da lista como ameaça de ransomware.
-** Selecione *Permitir extensões* para permitir apenas solicitações de extensões de arquivo da lista.
+** Selecione *Permitir extensões* para permitir apenas arquivos com extensões presentes na lista.
 
 
 . Escolha como criar a lista:
 +
 ** Selecione a aba *Copiar lista* para criar com base em uma lista existente.
 +
-Analise a lista de extensões de arquivo. Selecione o "X" ao lado do tipo de extensão de arquivo para excluir extensões. Selecione *+ Adicionar à lista* para adicionar extensões adicionais; essa seleção leva você à guia *Inserir manualmente*.
+Analise a lista de extensões de arquivo. Selecione o "X" ao lado do tipo de extensão de arquivo para excluir extensões. Selecione *+ Adicionar à lista* para adicionar extensões; essa seleção leva você à guia *Inserir manualmente*.
 
 ** Selecione a guia *Upload* para adicionar uma lista de extensões de arquivo a partir de um arquivo CSV.
 +
@@ -84,7 +86,7 @@ image:blocked-file-extensions.png["Captura de tela das extensões de arquivo blo
 [[svm]]
 == Aplicar uma lista de extensões de arquivo a uma SVM
 
-Ao atribuir uma estratégia de proteção contra ransomware com a política de bloqueio de extensões de arquivo suspeitas, você pode designar uma lista específica de extensões de arquivo para toda a carga de trabalho. Após aplicar a política de proteção, você pode aplicar listas diferentes a diferentes SVMs.
+Ao atribuir uma estratégia de proteção contra ransomware com a política de bloqueio de extensões de arquivo suspeitas, você pode designar uma lista específica de extensões de arquivo para toda a carga de trabalho. Depois de aplicar uma política de proteção, você pode aplicar listas diferentes a diferentes SVMs.
 
 A carga de trabalho deve incluir uma política de detecção que bloqueie extensões de arquivo suspeitas antes que você possa executar esta tarefa. Saiba como link:rp-use-protect.html["configurar uma estratégia de proteção contra ransomware"]. Você só pode atribuir uma lista de extensões de arquivo a cada SVM.
 
@@ -92,7 +94,7 @@ A carga de trabalho deve incluir uma política de detecção que bloqueie extens
 . Em Resiliência a Ransomware, selecione **Configurações**.
 . Sob o título Extensões de arquivo, selecione **Gerenciar**.
 . Selecione a aba *VM de armazenamento*.
-. Analise a lista de SVMs com a proteção de bloqueio contra extensões de arquivo suspeitas ativada. Você pode ver qual SVM usa qual lista. Para alterar a lista, selecione *Alterar lista*.
+. Consulte a lista de SVMs com as proteções contra extensões suspeitas de arquivos de bloco ativadas. Você pode ver qual SVM usa qual lista. Para alterar a lista, selecione *Alterar lista*.
 . Na caixa de diálogo selecione a nova lista no menu suspenso e em seguida selecione *Salvar*.
 
 
@@ -124,6 +126,7 @@ Como alternativa, selecione o menu de ações no final da linha da extensão de 
 . Selecione *Salvar* para modificar a lista.
 
 
+[[default]]
 .Defina uma lista de extensões de arquivo como padrão
 . Em Resiliência a Ransomware, selecione **Configurações**.
 . Sob o título Extensões de arquivo, selecione **Gerenciar**.
@@ -132,9 +135,9 @@ Como alternativa, selecione o menu de ações no final da linha da extensão de 
 
 
 .Excluir uma lista de extensões de arquivo
-Não é possível excluir uma lista que esteja aplicada a uma SVM. Primeiro, você deve <<svm,alterar a lista associada à SVM>>.
+Não é possível excluir uma lista que esteja aplicada a uma SVM. Primeiro, você precisa <<svm,alterar a lista associada à SVM>>.
 
-Você não pode excluir a lista da NetApp.
+Você não pode excluir a lista NetApp.
 
 . Em Resiliência a Ransomware, selecione **Configurações**.
 . Sob o título Extensões de arquivo, selecione **Gerenciar**.

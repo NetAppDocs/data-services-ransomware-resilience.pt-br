@@ -42,7 +42,7 @@ Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-
 [[managed-blocked-file-extensions]]
 === Gerenciamento de extensões de arquivo bloqueadas
 
-O Ransomware Resilience agora oferece a capacidade de personalizar a lista de extensões de arquivo permitidas ou bloqueadas em uma carga de trabalho quando você ativou a opção de proteção *Bloquear extensões de arquivo suspeitas*. Com essa melhoria, você pode configurar a carga de trabalho para permitir apenas tipos de arquivo específicos na máquina virtual de storage (SVM) ou para bloquear extensões de arquivo específicas. Se você migrar uma carga de trabalho existente usando o FPolicy para bloquear extensões de arquivo suspeitas com o Ransomware Resilience, o sistema usará, por padrão, uma lista de extensões mais refinada, embora você possa personalizá-la. Essa melhoria oferece um controle mais granular sobre a opção de extensão de arquivo e também permite criar listas diferentes para diferentes SVMs.
+O Ransomware Resilience agora oferece a capacidade de personalizar a lista de extensões de arquivo permitidas ou bloqueadas em uma carga de trabalho quando você ativou a opção de proteção *Bloquear extensões de arquivo suspeitas*. Com essa melhoria, você pode configurar a carga de trabalho para permitir apenas tipos de arquivo específicos na máquina virtual de storage (SVM) ou para bloquear extensões de arquivo específicas. Essa melhoria oferece um controle mais granular sobre a opção de extensão de arquivo e também permite criar listas diferentes para diferentes SVMs.
 
 Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-file-extensions.html["Gerencie extensões de arquivo bloqueadas no Ransomware Resilience"].
 
