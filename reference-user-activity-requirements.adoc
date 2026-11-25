@@ -12,14 +12,14 @@ summary: Antes de criar um agente de atividade do usuário, você deve garantir 
 
 
 [role="lead"]
-A detecção de comportamento do usuário do NetApp Ransomware Resilience permite que você responda a eventos de ransomware no nível do usuário. Você deve criar um tenant e um conjunto de agentes para habilitar a detecção de comportamento do usuário. Antes de habilitar a detecção, você deve garantir que atende aos requisitos descritos de sistema operacional, servidor e rede para que o Ransomware Resilience possa detectar e relatar eventos corretamente.
+A detecção de atividade do usuário do NetApp Ransomware Resilience permite que você responda a eventos de ransomware no nível do usuário. Você precisa criar um tenant e um conjunto de agentes para habilitar a detecção de atividade do usuário. Antes de habilitar a detecção, você deve garantir que atenda aos requisitos de sistema operacional, servidor e rede descritos para que o NetApp Ransomware Resilience possa detectar e relatar eventos corretamente.
 
 
 
-[[cloud-provider-support]]
-== Suporte do provedor de nuvem
+[[user-activity-tenant]]
+== Tenant de atividade do usuário
 
-Para habilitar a detecção do comportamento do usuário, você deve criar um ambiente executável para os coletores de dados, que compartilham eventos de atividade do usuário com o Ransomware Resilience.
+Para habilitar a detecção de atividades do usuário, um tenant é configurado para permitir que eventos de atividade do usuário sejam compartilhados com o Ransomware Resilience. Você pode selecionar a região e o provedor de nuvem onde deseja que o Ransomware Resilience implante o tenant.
 
 
 NOTE: A implantação regional do locatário não afeta o agente do Console. A implantação do agente do Console é independente dessas regiões.
@@ -42,8 +42,17 @@ O locatário pode ser implantado na AWS e no Azure nas seguintes regiões:
 |===
 
 
+[[user-activity-agent-requirements]]
+== Requisitos do agente de atividade do usuário
+
+Após a criação do locatário, você deve criar um agente de atividade do usuário para habilitar a detecção de atividade do usuário. O agente de atividade do usuário não é o agente do Console; ele precisa ser implantado como uma instância de computação separada.
+
+Certifique-se de que seu agente de atividade do usuário atenda aos seguintes requisitos e siga as recomendações.
+
+
+
 [[operating-system-requirements]]
-== Requisitos do sistema operacional
+=== Requisitos do sistema operacional
 
 A detecção de comportamentos suspeitos do usuário é compatível com os seguintes sistemas operacionais:
 
@@ -86,7 +95,7 @@ O  `unzip`comando é necessário para instalação. O  `sudo su -`comando é nec
 
 
 [[server-requirements]]
-== Requisitos do servidor
+=== Requisitos do servidor
 
 O servidor deve atender aos seguintes requisitos mínimos:
 
@@ -97,8 +106,7 @@ O servidor deve atender aos seguintes requisitos mínimos:
 
 
 
-[[server-recommendations]]
-=== Recomendações do servidor
+==== Recomendações do servidor
 
 * Aloque espaço de disco extra para permitir a criação do sistema de arquivos. Certifique-se de que haja pelo menos 35 GB de espaço livre no sistema de arquivos. + Se `/opt` for uma pasta montada do armazenamento NAS, os usuários locais devem ter acesso a essa pasta. A criação do agente de atividade do usuário pode falhar se os usuários locais não tiverem as permissões necessárias.
 * Instale o agente de atividade do usuário em um sistema separado do seu ambiente do Ransomware Resilience. Se você instalar o agente e o Ransomware Resilience na mesma máquina, reserve de 50 a 55 GB de espaço de disco. Para Linux, aloque de 25 a 30 GB de espaço para `/opt/netapp` e 25 GB para `/var/log/netapp`.
@@ -107,8 +115,7 @@ O servidor deve atender aos seguintes requisitos mínimos:
 
 
 
-[[sizing-recommendations]]
-=== Recomendações de dimensionamento
+==== Recomendações de dimensionamento
 
 Ao coletar eventos de usuário, certifique-se de que a máquina que hospeda o agente de atividade do usuário esteja dimensionada para acomodar sua taxa de eventos. Isso significa garantir que você tenha coletores de dados suficientes e CPU e RAM suficientes na máquina que hospeda o agente de atividade do usuário para lidar com o número de eventos por segundo. Para aumentar o número de coletores de dados, pode ser necessário aumentar a capacidade de RAM ou CPU. O Ransomware Resilience oferece suporte a até 50 coletores de dados por agente de atividade do usuário.
 
@@ -131,7 +138,7 @@ Where E is the sum of all events per second across all data collectors:
 
 E + (0.3 x E) < 20,000 events/second
 ----
-.Calcule a taxa de dados de eventos no Ransomware Resilience.
+.Calcule a taxa de dados do evento no Ransomware Resilience
 [%collapsible]
 ====
 O Ransomware Resilience fornece um script que você pode executar em seu sistema para calcular a taxa de dados de eventos. Por padrão, o script é executado para no máximo cinco SVMs. Se o seu ambiente incluir mais de cinco SVMs, você pode modificar o script de acordo. Independentemente do número de SVMs, o script leva aproximadamente cinco minutos para obter uma leitura da taxa média de eventos. Antes de executar o script, você deve ter:
@@ -155,7 +162,7 @@ Use a taxa de eventos para calcular o dimensionamento.
 
 
 [[cloud-network-access-rules]]
-== regras de acesso à rede em nuvem
+=== regras de acesso à rede em nuvem
 
 Analise as regras de acesso à rede em nuvem para a sua região geográfica (Ásia-Pacífico, Europa ou Estados Unidos).
 
@@ -167,8 +174,7 @@ NOTE: O agente de atividade do usuário usa a tecnologia Data Infrastructure Ins
 
 
 
-[[apac-based-user-activity-agent-deployments]]
-=== Implantações de agentes de atividade do usuário baseadas em APAC
+==== Implantações de agentes de atividade do usuário na região da Ásia-Pacífico
 
 [cols="1,1,1,3,1"]
 |===
@@ -185,8 +191,7 @@ NOTE: O agente de atividade do usuário usa a tecnologia Data Infrastructure Ins
 |===
 
 
-[[europe-based-user-activity-agent-deployments]]
-=== Implantações de agentes de atividade do usuário baseadas na Europa
+==== Implantações de agentes de atividade do usuário baseadas na Europa
 
 [cols="1,1,1,3,1"]
 |===
@@ -203,8 +208,7 @@ NOTE: O agente de atividade do usuário usa a tecnologia Data Infrastructure Ins
 |===
 
 
-[[us-based-user-activity-agent-deployments]]
-=== Implantações de agentes de atividade do usuário baseados nos EUA
+==== Implantações de agentes de atividade do usuário baseados nos EUA
 
 [cols="1,1,1,3,1"]
 |===
@@ -222,7 +226,7 @@ NOTE: O agente de atividade do usuário usa a tecnologia Data Infrastructure Ins
 
 
 [[in-network-rules]]
-== Regras na rede
+=== Regras na rede
 
 [cols="5*"]
 |===
