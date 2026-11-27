@@ -1244,15 +1244,12 @@
   <block id="a1123cd59d7bd876c080c33906ae65ce" category="list-text">*Serviço*: Selecione o serviço ao qual o problema está associado. Por exemplo, * NetApp Console* quando específico para um problema de suporte técnico com fluxos de trabalho ou funcionalidade dentro do Console.</block>
   <block id="987df7518e2afb50a860647c832afd13" category="list-text">*Sistema*: Se aplicável ao armazenamento, selecione * Cloud Volumes ONTAP* ou *On-Prem* e, em seguida, o ambiente de trabalho associado.</block>
   <block id="8f8e8a86e5f52b6186a37bdf266c4320" category="paragraph">A lista de sistemas está dentro do escopo da organização do Console e do agente do Console que você selecionou no banner superior.</block>
-  <block id="77c89527ec8a9f89b24c5579d19b3b4b" category="paragraph"><block ref="77c89527ec8a9f89b24c5579d19b3b4b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="178fdaf97b1d1577437f11ee9d5e5229" category="paragraph">Esse erro pode significar que a conta NSS e a empresa registrada à qual ela está associada não são a mesma empresa registrada para o número de série da conta do NetApp Console (por exemplo, 960xxxx) ou o número de série do ambiente de trabalho. Você pode buscar assistência usando uma das seguintes opções:</block>
   <block id="e1100b46295d42ed50ba7a4630710164" category="section-title">Gerencie seus casos de suporte</block>
   <block id="316508a3483178100806a9d44b49aba2" category="paragraph">Você pode visualizar e gerenciar casos de suporte ativos e resolvidos diretamente do Console. Você pode gerenciar os casos associados à sua conta NSS e à sua empresa.</block>
   <block id="9163e8bca6fd93c080d35ab49e3efdfa" category="list-text">No NetApp Console, selecione *Ajuda &gt; Suporte*.</block>
   <block id="2019fd19051c3ef493dbbb9ca65bab87" category="list-text">Selecione *Gerenciamento de casos* e, se solicitado, adicione sua conta NSS ao Console.</block>
   <block id="75e54e3a6fdbf43ed890669e079d7594" category="paragraph">A página *Gerenciamento de casos* mostra casos abertos relacionados à conta NSS associada à sua conta de usuário do Console. Esta é a mesma conta NSS que aparece no topo da página *Gerenciamento NSS*.</block>
-  <block id="8ac6be88c1aa79062825a147fb263b0e" category="list-text">Altere as colunas que aparecem na tabela selecionando<block ref="500a336e7ba1c54bcffba4e27bda4eb6" category="inline-image-macro-rx" type="image"></block> e então escolher as colunas que você gostaria de exibir.</block>
-  <block id="049b7b9fab1242f5e715952973c9474d" category="list-text">Gerencie um caso existente selecionando<block ref="7381d9baeaf62eb099ce84f1a21ed5ca" category="inline-image-macro-rx" type="image"></block> e selecionando uma das opções disponíveis:</block>
   <block id="776abbf4d80cbef17bd3c86ff37b2257" category="paragraph">O registro de suporte é necessário para receber suporte técnico específico para o NetApp Console e suas soluções de armazenamento e serviços de dados. O registro de suporte também é necessário para habilitar fluxos de trabalho importantes para sistemas Cloud Volumes ONTAP .</block>
   <block id="ba4e23e03f4354a0f1ef2781272c8477" category="paragraph">O registro para suporte não habilita o suporte da NetApp para um serviço de arquivo do provedor de nuvem. Para obter suporte técnico relacionado a um serviço de arquivo do provedor de nuvem, sua infraestrutura ou qualquer solução que use o serviço, consulte "Obter ajuda" na documentação do produto.</block>
   <block id="869a868c87f6fb61410cfd773b4f1bab" category="list-text">Registrando o número de série da sua conta do NetApp Console (seu número de série 960xxxxxxxxx de 20 dígitos localizado na página Recursos de suporte no Console).</block>
@@ -1395,10 +1392,6 @@
   <block id="ad53fda1a18da9db9d8aa1d460952aa5" category="list-text">Replicação secundária para ONTAP</block>
   <block id="447fce6406d4a8e99de98a2d5d107536" category="list-text">Se sua estratégia incluir replicação, selecione o **Sistema de destino** e a **VM de armazenamento de destino**. Selecione **Próximo**.</block>
   <block id="6f540707e47351a26c8e3c79ccce18ea" category="list-text">*Proteção*: Inclui o status e os detalhes de todas as cargas de trabalho, incluindo o número total de cargas protegidas e em risco.</block>
-  <block id="38fc1b337c0ea26463916fc2913205c1" category="paragraph"><block ref="38fc1b337c0ea26463916fc2913205c1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7019a39846e9a2c7f7a80eaba91e4a41" category="paragraph"><block ref="7019a39846e9a2c7f7a80eaba91e4a41" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1d593c3f7480ada9580d93cd753c3f93" category="paragraph">Este é um ID gerado pelo sistema que mapeia para seu e-mail. Na página *NSS Management*, você pode exibir seu e-mail do<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block> menu.</block>
-  <block id="872eaae7deb6035c20f9bfe6deefd03d" category="list-text">Se você precisar atualizar seus tokens de credenciais de login, também há uma opção *Atualizar credenciais* no<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block> menu.</block>
   <block id="667dffcf5676fe0bd645082d2a512fef" category="section-title">12 de janeiro de 2026</block>
   <block id="49fa679e35a13dc09de6805c384904d1" category="list-text">Para configurar uma política de backup, escolha uma e selecione **Avançar**.</block>
   <block id="389e0c39aeda061370262a9fa330d865" category="doc">Volumes não suportados</block>
@@ -3032,4 +3025,11 @@
   <block id="a49273673c8a9345469d7e992d85038e" category="paragraph">Certifique-se de que seu agente de atividade do usuário atenda aos seguintes requisitos e siga as recomendações.</block>
   <block id="a543ceb615fbbd830a521dc1f498b0c6" category="example-title">Calcule a taxa de dados do evento no Ransomware Resilience</block>
   <block id="6617d9fa7ab8a50760603157d306a320" category="section-title">Implantações de agentes de atividade do usuário na região da Ásia-Pacífico</block>
+  <block id="6a01d74a3f012349cadafc7f0c97c86d" category="paragraph"><block ref="6a01d74a3f012349cadafc7f0c97c86d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e461a14ef18284f75a2b6063d614da64" category="list-text">Altere as colunas que aparecem na tabela selecionando <block ref="561341289de713dd5ea2cd49d1743cab" category="inline-image-macro-rx" type="image"></block> e escolhendo as colunas que deseja exibir.</block>
+  <block id="cb70a108f4a6413201209cb4b6024938" category="list-text">Gerencie um caso existente selecionando <block ref="babe7781192bcd33c63a8532a0937e8b" category="inline-image-macro-rx" type="image"></block> e selecionando uma das opções disponíveis:</block>
+  <block id="9c0825883c050c64e9b59af470120939" category="paragraph"><block ref="9c0825883c050c64e9b59af470120939" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="357be4e47fe6e7132dca092006062510" category="paragraph"><block ref="357be4e47fe6e7132dca092006062510" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="848755f433bd66788db4d5c6e554252d" category="paragraph">Este é um ID gerado pelo sistema que corresponde ao seu e-mail. Na página *Gerenciamento de NSS*, você pode visualizar seu e-mail no <block ref="6a3f89871d33c6cbc194f4f6a8275a65" category="inline-image-macro-rx" type="image"></block> menu.</block>
+  <block id="5c680c883d2069f8039766ada41f7c1f" category="list-text">Se você precisar atualizar seus tokens de credencial de login, também há a opção *Atualizar Credenciais* no <block ref="6a3f89871d33c6cbc194f4f6a8275a65" category="inline-image-macro-rx" type="image"></block> menu.</block>
 </blocks>
